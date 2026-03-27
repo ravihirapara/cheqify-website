@@ -1,0 +1,8 @@
+# BMM Workflow Status
+# Tracks completion of BMAD methodology workflows
+
+product-brief:
+  status: complete
+  file: "_bmad-output/planning-artifacts/product-brief-cheqify-app-2026-03-26.md"
+  completed: 2026-03-27
+  project: chequify.app
