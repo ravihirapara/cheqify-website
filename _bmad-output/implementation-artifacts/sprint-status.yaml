@@ -38,7 +38,7 @@ development_status:
   epic-1: in-progress
   1-1-initialize-shadcn-ui-and-brand-design-tokens: review
   1-2-dark-light-mode-theme-switching: review
-  1-3-internationalization-infrastructure: backlog
+  1-3-internationalization-infrastructure: review
   epic-1-retrospective: optional
 
   # Epic 2: Site Navigation & Layout
