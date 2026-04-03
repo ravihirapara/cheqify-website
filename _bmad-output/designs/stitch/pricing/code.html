@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing | Cheqify.app</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#006a62",
+                        "surface-container-low": "#eff4ff",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#70f8e8",
+                        "surface-container-high": "#dce9ff",
+                        "primary-container": "#00b4a6",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#49617c",
+                        "inverse-surface": "#1f3148",
+                        "on-background": "#081c32",
+                        "surface-container": "#e5eeff",
+                        "tertiary-container": "#ee845d",
+                        "primary-fixed-dim": "#4fdbcc",
+                        "secondary": "#48607c",
+                        "tertiary-fixed": "#ffdbcf",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#005049",
+                        "secondary-fixed": "#d1e4ff",
+                        "on-tertiary-container": "#671f00",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#9b4423",
+                        "on-secondary-fixed": "#001d35",
+                        "secondary-fixed-dim": "#b0c9e8",
+                        "on-primary-container": "#003f39",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#bbcac6",
+                        "surface-tint": "#006a62",
+                        "on-tertiary-fixed": "#380d00",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#00201d",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#d2e4ff",
+                        "surface-container-highest": "#d2e4ff",
+                        "surface-dim": "#c8dbf9",
+                        "surface-bright": "#f8f9ff",
+                        "outline": "#6c7a77",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#c3dcfd",
+                        "on-primary": "#ffffff",
+                        "background": "#f8f9ff",
+                        "tertiary-fixed-dim": "#ffb59b",
+                        "on-surface-variant": "#3c4947",
+                        "on-surface": "#081c32",
+                        "on-tertiary-fixed-variant": "#7c2e0d",
+                        "inverse-primary": "#4fdbcc",
+                        "on-secondary-fixed-variant": "#304963"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-header shadow-sm">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-2xl font-bold tracking-tight text-slate-900">Cheqify.app</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200 font-medium text-sm" href="#">Home</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200 font-medium text-sm" href="#">Features</a>
+<a class="text-teal-600 border-b-2 border-teal-600 pb-1 font-medium text-sm" href="#">Pricing</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200 font-medium text-sm" href="#">Blog</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200 font-medium text-sm" href="#">Contact</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200 font-medium text-sm" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex gap-2">
+<span class="material-symbols-outlined p-2 text-on-surface-variant cursor-pointer hover:bg-surface-container transition-colors rounded-full">language</span>
+<span class="material-symbols-outlined p-2 text-on-surface-variant cursor-pointer hover:bg-surface-container transition-colors rounded-full">dark_mode</span>
+</div>
+<button class="px-4 py-2 text-sm font-semibold text-primary hover:opacity-80 transition-all">Login</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm shadow-lg hover:opacity-90 active:scale-95 transition-all">Start Free</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 text-center mb-24">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container/20 text-primary font-bold text-xs tracking-widest uppercase mb-6">Pricing Plans</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-background mb-8 leading-[1.1]">
+                Simple, transparent <br/><span class="text-primary">editorial pricing.</span>
+</h1>
+<p class="text-on-surface-variant text-xl max-w-2xl mx-auto leading-relaxed">
+                Choose the plan that fits your growth. Start for free, upgrade when you're ready. <span class="font-bold text-primary">No credit card required.</span>
+</p>
+</section>
+<!-- Pricing Cards -->
+<section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+<!-- Free Tier (Highlighted) -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-2 border-primary relative flex flex-col h-full shadow-[0_20px_40px_rgba(0,106,98,0.08)]">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Recommended</div>
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-2">Free</h3>
+<p class="text-on-surface-variant text-sm mb-6">Perfect for individuals and side projects.</p>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-extrabold text-on-background">$0</span>
+<span class="text-on-surface-variant text-sm">/ forever</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Up to 3 active projects</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Standard analytics dashboard</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Community support access</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant/50">
+<span class="material-symbols-outlined text-lg">cancel</span>
+<span class="line-through">Custom domain integration</span>
+</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-bold shadow-lg hover:opacity-90 active:scale-95 transition-all">Start Free</button>
+<p class="text-center text-[10px] text-on-surface-variant mt-4 font-medium">NO CREDIT CARD REQUIRED</p>
+</div>
+<!-- Pro Tier -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(8,28,50,0.06)]">
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-2">Professional</h3>
+<p class="text-on-surface-variant text-sm mb-6">Advanced features for power users.</p>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-extrabold text-on-background">$24</span>
+<span class="text-on-surface-variant text-sm">/ month</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Unlimited active projects</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Advanced data export (CSV/PDF)</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Custom domain integration</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Priority email support</span>
+</li>
+</ul>
+<button class="w-full py-4 bg-surface-container-highest text-primary rounded-xl font-bold hover:bg-primary hover:text-on-primary active:scale-95 transition-all">Start Free</button>
+<p class="text-center text-[10px] text-on-surface-variant mt-4 font-medium uppercase">14-day pro trial included</p>
+</div>
+<!-- Team Tier -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col h-full transition-all duration-300 hover:shadow-[0_20px_40px_rgba(8,28,50,0.06)]">
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-2">Team</h3>
+<p class="text-on-surface-variant text-sm mb-6">Scalable solutions for growing teams.</p>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-extrabold text-on-background">$79</span>
+<span class="text-on-surface-variant text-sm">/ month</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Up to 10 team seats</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Collaborative workspaces</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>SSO &amp; Security features</span>
+</li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Dedicated account manager</span>
+</li>
+</ul>
+<button class="w-full py-4 bg-surface-container-highest text-primary rounded-xl font-bold hover:bg-primary hover:text-on-primary active:scale-95 transition-all">Start Free</button>
+<p class="text-center text-[10px] text-on-surface-variant mt-4 font-medium uppercase">Contact sales for enterprise</p>
+</div>
+</section>
+<!-- Feature Comparison Table -->
+<section class="max-w-5xl mx-auto px-6 mb-32">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold tracking-tight mb-4">Compare all features</h2>
+<p class="text-on-surface-variant">A deep dive into everything Cheqify.app offers across plans.</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/30">
+<th class="py-6 px-4 text-sm font-bold text-on-background">Feature</th>
+<th class="py-6 px-4 text-sm font-bold text-on-background text-center">Free</th>
+<th class="py-6 px-4 text-sm font-bold text-on-background text-center">Professional</th>
+<th class="py-6 px-4 text-sm font-bold text-on-background text-center">Team</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<!-- Category: Management -->
+<tr>
+<td class="py-6 px-4 text-xs font-bold uppercase tracking-widest text-primary pt-10" colspan="4">Management</td>
+</tr>
+<tr>
+<td class="py-4 px-4 text-sm text-on-surface-variant">Active Projects</td>
+<td class="py-4 px-4 text-sm text-center">3</td>
+<td class="py-4 px-4 text-sm text-center">Unlimited</td>
+<td class="py-4 px-4 text-sm text-center">Unlimited</td>
+</tr>
+<tr>
+<td class="py-4 px-4 text-sm text-on-surface-variant">Storage</td>
+<td class="py-4 px-4 text-sm text-center">500MB</td>
+<td class="py-4 px-4 text-sm text-center">10GB</td>
+<td class="py-4 px-4 text-sm text-center">100GB</td>
+</tr>
+<tr>
+<td class="py-4 px-4 text-sm text-on-surface-variant">Team Seats</td>
+<td class="py-4 px-4 text-sm text-center">1</td>
+<td class="py-4 px-4 text-sm text-center">1</td>
+<td class="py-4 px-4 text-sm text-center">Up to 10</td>
+</tr>
+<!-- Category: Analytics -->
+<tr>
+<td class="py-6 px-4 text-xs font-bold uppercase tracking-widest text-primary pt-10" colspan="4">Analytics</td>
+</tr>
+<tr>
+<td class="py-4 px-4 text-sm text-on-surface-variant">Data Retention</td>
+<td class="py-4 px-4 text-sm text-center">30 Days</td>
+<td class="py-4 px-4 text-sm text-center">1 Year</td>
+<td class="py-4 px-4 text-sm text-center">Unlimited</td>
+</tr>
+<tr>
+<td class="py-4 px-4 text-sm text-on-surface-variant">Custom Reports</td>
+<td class="py-4 px-4 text-sm text-center"><span class="material-symbols-outlined text-on-surface-variant/30 text-lg">remove</span></td>
+<td class="py-4 px-4 text-sm text-center"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+<td class="py-4 px-4 text-sm text-center"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+</tr>
+<tr>
+<td class="py-4 px-4 text-sm text-on-surface-variant">Real-time Tracking</td>
+<td class="py-4 px-4 text-sm text-center"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+<td class="py-4 px-4 text-sm text-center"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+<td class="py-4 px-4 text-sm text-center"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-6">
+<div class="bg-gradient-to-br from-primary to-primary-container p-12 md:p-20 rounded-[2rem] text-center text-on-primary shadow-2xl relative overflow-hidden">
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to curate your workflow?</h2>
+<p class="text-white/80 text-xl mb-12 max-w-xl mx-auto">Join 15,000+ users who trust Cheqify for their editorial and financial management.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-all active:scale-95 shadow-xl">Get Started Now</button>
+<span class="text-white/60 font-medium text-sm">No credit card required • Cancel anytime</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light border-t border-outline-variant/30 w-full py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 mb-16">
+<div class="col-span-2">
+<div class="text-2xl font-bold text-on-background mb-6 tracking-tight">Cheqify.app</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-xs mb-8">
+          The precision-engineered platform for modern digital curation and financial authority.
+        </p>
+<div class="flex gap-5">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">chat_bubble</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-background text-sm uppercase tracking-wider">Product</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Features</a></li>
+<li><a class="text-primary font-bold text-sm underline underline-offset-4" href="#">Pricing</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Integrations</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">API Docs</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-background text-sm uppercase tracking-wider">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Blog</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Help Center</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Community</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Guides</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-background text-sm uppercase tracking-wider">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Partners</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-background text-sm uppercase tracking-wider">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Cookie Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Security</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+<p class="text-on-surface-variant/60 text-sm font-medium">© 2024 Cheqify.app. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant/60 hover:text-primary text-xs font-medium uppercase tracking-tighter" href="#">Status</a>
+<a class="text-on-surface-variant/60 hover:text-primary text-xs font-medium uppercase tracking-tighter" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

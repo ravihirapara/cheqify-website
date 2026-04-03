@@ -86,7 +86,8 @@
       "Bash(rm D:/cheqify-website/package.json)",
       "Bash(npx create-next-app@latest cheqify-website --typescript --tailwind --eslint --app --src-dir --import-alias \"~/*\" --use-npm --no-turbopack --yes)",
       "Bash(npx bmad-cli:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(npx shadcn@latest init -d -y)"
     ]
   }
 }

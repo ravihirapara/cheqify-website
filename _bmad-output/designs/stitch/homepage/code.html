@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#006a62",
+                    "surface-container-low": "#eff4ff",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#70f8e8",
+                    "surface-container-high": "#dce9ff",
+                    "primary-container": "#00b4a6",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#49617c",
+                    "inverse-surface": "#1f3148",
+                    "on-background": "#081c32",
+                    "surface-container": "#e5eeff",
+                    "tertiary-container": "#ee845d",
+                    "primary-fixed-dim": "#4fdbcc",
+                    "secondary": "#48607c",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#005049",
+                    "secondary-fixed": "#d1e4ff",
+                    "on-tertiary-container": "#671f00",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#9b4423",
+                    "on-secondary-fixed": "#001d35",
+                    "secondary-fixed-dim": "#b0c9e8",
+                    "on-primary-container": "#003f39",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#bbcac6",
+                    "surface-tint": "#006a62",
+                    "on-tertiary-fixed": "#380d00",
+                    "surface": "#f8f9ff",
+                    "on-primary-fixed": "#00201d",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#d2e4ff",
+                    "surface-container-highest": "#d2e4ff",
+                    "surface-dim": "#c8dbf9",
+                    "surface-bright": "#f8f9ff",
+                    "outline": "#6c7a77",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#c3dcfd",
+                    "on-primary": "#ffffff",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb59b",
+                    "on-surface-variant": "#3c4947",
+                    "on-surface": "#081c32",
+                    "on-tertiary-fixed-variant": "#7c2e0d",
+                    "inverse-primary": "#4fdbcc",
+                    "on-secondary-fixed-variant": "#304963"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Cheqify.app</div>
+<div class="hidden md:flex space-x-8 font-inter antialiased text-sm font-medium">
+<a class="text-teal-600 dark:text-teal-400 border-b-2 border-teal-600 pb-1" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-200" href="#">Features</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-200" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-200" href="#">Contact</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-200" href="#">About</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-slate-600 material-symbols-outlined hover:opacity-80 transition-all" data-icon="language">language</button>
+<button class="hidden md:block text-slate-600 font-medium px-4 py-2">Login</button>
+<button class="bg-primary text-white px-6 py-2.5 rounded-xl font-semibold scale-95 active:scale-90 transition-all duration-200 shadow-sm hover:opacity-90">Start Free</button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-16 lg:py-24">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container/20 text-on-primary-fixed-variant text-sm font-semibold tracking-wide">
+                        NEW: AUTO-RECONCILIATION
+                    </div>
+<h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight text-on-background leading-tight">
+                        Print Error-Free <span class="text-primary">Cheques</span> in Under 2 Minutes
+                    </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                        Print, track, and manage cheques from any device. Works with 300+ Indian banks. No training needed.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all duration-200">Start Free</button>
+<button class="border-2 border-outline-variant text-primary px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined">play_circle</span> Watch Demo
+                        </button>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">
+                        No credit card required. Free forever for basic use.
+                    </p>
+</div>
+<div class="relative">
+<div class="absolute -z-10 inset-0 bg-gradient-to-tr from-primary/10 to-transparent blur-3xl rounded-full"></div>
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_20px_40px_rgba(8,28,50,0.06)] p-2 border border-outline-variant/10">
+<img alt="Cheqify Dashboard" class="rounded-lg shadow-inner w-full" data-alt="Modern high-fidelity SaaS dashboard showing financial analytics charts and cheque status monitoring interface with clean minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADdFhWN6VQXoaFdOAuTOwvE4Gkq2m9wBp91ZYc9qqPs4XCVPbm_4akkHa-n73CCESIbb_daCmY2bKT8scq-KmVhXrud1a41Knlem-QvYFoXygFiaqV3RF02Ap6dxxQezdBdJ2r1LWlV2oj-kYUNSYg-QqjY0_WGvvKWTVlKH8qon1Yrov30--1xAFL79T-4zzIVmzCje4dqtkTGFwEUGvNWxc0_R8_drIMcZDwCA4LYnJ2YVBohA9AFX-sEpwoi7PH7hBzgbEbXV0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-surface-container-low py-10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<span class="text-sm font-semibold text-on-surface">Bank-Grade Security</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="account_balance">account_balance</span>
+<span class="text-sm font-semibold text-on-surface">300+ Indian Banks</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="devices">devices</span>
+<span class="text-sm font-semibold text-on-surface">Works on Any Device</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="text-sm font-semibold text-on-surface">Free Forever</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bank Logo Strip -->
+<section class="py-12 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-xs font-bold uppercase tracking-widest text-outline mb-10">Supporting 300+ Indian Financial Institutions</p>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
+<span class="font-bold text-lg text-secondary">SBI</span>
+<span class="font-bold text-lg text-secondary">HDFC BANK</span>
+<span class="font-bold text-lg text-secondary">ICICI Bank</span>
+<span class="font-bold text-lg text-secondary">AXIS BANK</span>
+<span class="font-bold text-lg text-secondary">PNB</span>
+<span class="font-bold text-lg text-secondary">Kotak</span>
+<span class="font-bold text-lg text-secondary">BOB</span>
+<span class="font-bold text-lg text-secondary">Yes Bank</span>
+<span class="text-sm font-semibold text-primary">300+ more</span>
+</div>
+</div>
+</section>
+<!-- How it Works -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-20">
+<h2 class="text-3xl font-bold tracking-tight mb-4">Start Printing in Minutes</h2>
+<p class="text-on-surface-variant">Simple, fast, and secure process to modernize your banking workflow.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<!-- Steps -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white text-xl font-bold mb-6">1</div>
+<h3 class="text-xl font-bold mb-3">Sign Up</h3>
+<p class="text-on-surface-variant text-sm">Create your free account in 30 seconds. No card needed.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white text-xl font-bold mb-6">2</div>
+<h3 class="text-xl font-bold mb-3">Set Up Your Cheque</h3>
+<p class="text-on-surface-variant text-sm">Select your bank and enter details once. Templates are ready.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white text-xl font-bold mb-6">3</div>
+<h3 class="text-xl font-bold mb-3">Print</h3>
+<p class="text-on-surface-variant text-sm">Hit print and watch your professional cheque roll out.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tabbed Features Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-12 items-center">
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-bold tracking-tight mb-10">Powering Every Step of the Cheque Lifecycle</h2>
+<div class="space-y-4">
+<button class="w-full text-left p-6 rounded-xl bg-surface-container-lowest border-l-4 border-primary shadow-sm flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="print">print</span>
+<div>
+<h4 class="font-bold text-lg">Cheque Printing</h4>
+<p class="text-sm text-on-surface-variant mt-1">Precise alignment for 300+ Indian banks. Never waste a leaf again.</p>
+</div>
+</button>
+<button class="w-full text-left p-6 rounded-xl hover:bg-surface transition-colors flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="history">history</span>
+<div>
+<h4 class="font-bold text-lg">Lifecycle Tracking</h4>
+<p class="text-sm text-on-surface-variant mt-1">Track issued, cleared, and cancelled cheques in real-time.</p>
+</div>
+</button>
+<button class="w-full text-left p-6 rounded-xl hover:bg-surface transition-colors flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="dashboard_customize">dashboard_customize</span>
+<div>
+<h4 class="font-bold text-lg">Owner Dashboard</h4>
+<p class="text-sm text-on-surface-variant mt-1">Comprehensive view of all bank accounts and total outstandings.</p>
+</div>
+</button>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-xl">
+<img alt="Feature Screenshot" class="rounded-lg w-full" data-alt="Close up of a professional software interface showing detailed cheque tracking table with status badges and bank logos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV7gqg81i1hmrPAB2EyLCN-3htpL6250X5ENkY4VzQZ2_zsgLji9DUOKWeVcRfuFqEl-22EdUljJKYUN2JE06aJdASJlZrrKocMLEy4KugrGyxbSgpckI0sbbc8eNe7ZB86MMQmGv2LbDY0TvO3QA7yaYrbJTEB4WSLUN3CZMcQzWuWGAg7ttAf36MxthsSL0w4kKEl3vzAQHD2A4dyFX8uoZdLaJwiHBBK0AQh7KpY7B_85Cux7SAzBgvTtEifg8botVzjvxHcTw"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="py-20 bg-primary">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center text-white">
+<div>
+<div class="text-5xl font-extrabold mb-2">1.2M+</div>
+<div class="text-primary-fixed uppercase tracking-widest text-xs font-bold">Cheques Printed</div>
+</div>
+<div>
+<div class="text-5xl font-extrabold mb-2">50,000+</div>
+<div class="text-primary-fixed uppercase tracking-widest text-xs font-bold">Active Users</div>
+</div>
+<div>
+<div class="text-5xl font-extrabold mb-2">300+</div>
+<div class="text-primary-fixed uppercase tracking-widest text-xs font-bold">Banks Supported</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-16">Loved by Finance Teams Across India</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface mb-8">"We used to manually write 50 cheques a day. Cheqify has saved us hours and eliminated errors. The tracking feature is a life-saver for audits."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200">
+<img alt="User Profile" class="rounded-full w-full h-full object-cover" data-alt="Portrait of a smiling professional man in a business casual attire, office setting background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyHsB29SH_tl9eMrhYqJLD39JbfqYA_SMTdUWDnfkIUxqLRo5GM-V-UZT7usqnXMZlV3l9k1sO8So0jSl_MT9rD63d8nGp5KnnNFTEMNW0UHOTaub4zrpZCMcOCT91Ji_PmQ3WIihgZV87KMDxS9YtklwaVZDMgrbhF6eu_p902H-PcrZPkZqxYm5MCZubb6aFfK-t4GZc4wsfrNEvJ5BhgS7Kfcw5775ghD2JAyG3F7GZiiYyJfD4I1eqdCC6NXxb9JDEYwyftCg"/>
+</div>
+<div>
+<h5 class="font-bold">Rahul Sharma</h5>
+<p class="text-xs text-on-surface-variant">Finance Head, Techflow Sol</p>
+</div>
+</div>
+</div>
+<div class="p-8 rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface mb-8">"The UI is so clean. I didn't need any training. My accounts team adopted it instantly. Works perfectly with our HDFC and SBI current accounts."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200">
+<img alt="User Profile" class="rounded-full w-full h-full object-cover" data-alt="Portrait of a professional young woman in a smart blazer, light gray background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSIIH3NtduHFZNdQ8KyFMA2JCbbFF0OZ8UMzhTaJPXs-gGBR0fa_Ba1oeAzq4MKiKt8J2cvOiRUQsV32X3G5r-pYYK3bEvt6ZhXrZ0khOnJjldSATzFf4gqdwNvd-_wA4-r_0yeX5GYqPgJ13gyTSwCTQ5vTNls3be-cNGlXnH-YYIp0zIArq77fer515ly47krc-WxohwpBuWiLzbQSuvFE5VMAwDpEwjC54RBo2JVdc9gxcMvHsK0dO_YzF8y4t3dUPXPUmFdOE"/>
+</div>
+<div>
+<h5 class="font-bold">Ananya Verma</h5>
+<p class="text-xs text-on-surface-variant">Chartered Accountant</p>
+</div>
+</div>
+</div>
+<div class="p-8 rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface mb-8">"Zero leaf wastage since we started. The alignment settings are precise. Highly recommended for any SME looking to professionalize."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200">
+<img alt="User Profile" class="rounded-full w-full h-full object-cover" data-alt="Portrait of a mature businessman in a professional suit, modern office corridor background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5m_sJJCIJdT82jdyaq0WG5oEZP0DN2UzXFMmLGm5vVcEOS-3kcuKJY5bQMP1GCOpiHN98QyAudBDinBT6pQ-kyQLKvIYJpOXnMAL4Mv_JjfTbeT532n4QcsfrK8Npbd5QKx1rwTBzFd8ETff4XQjnO4q9Qa_-b7qTbmRA-ieufl0xBEhJx-WCqcKYpjPV3MdiPxkW5J0AneZ0JE6XNhaAbdJaPyYb8D9K3atT6lIzzaBlBwxZgoGodO45apDW2wW8EzmWT9aBs84"/>
+</div>
+<div>
+<h5 class="font-bold">Vikram Iyer</h5>
+<p class="text-xs text-on-surface-variant">Director, GreenWay Logistics</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24">
+<div class="max-w-5xl mx-auto px-6 text-center bg-primary rounded-[2.5rem] py-16 text-white relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(112,248,232,0.15),transparent)]"></div>
+<h2 class="text-4xl font-bold mb-6 relative z-10">Modernize Your Cheque Printing Today</h2>
+<p class="text-xl text-primary-fixed mb-10 opacity-90 relative z-10">Join 50,000+ businesses and start for free.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+<button class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-all">Start Free</button>
+<button class="bg-transparent border border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">Contact Sales</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark py-16 px-6 border-t border-outline-variant/30">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-12">
+<div class="lg:col-span-2">
+<div class="text-2xl font-bold tracking-tight text-on-background mb-6">Cheqify.app</div>
+<p class="text-on-surface-variant max-w-xs mb-8 leading-relaxed">
+                        Automating financial workflows for the modern Indian enterprise with bank-grade security and precision.
+                    </p>
+<div class="flex gap-5">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="font-bold text-on-surface mb-6 uppercase text-xs tracking-widest">Product</h6>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Features</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Pricing</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Bank List</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-on-surface mb-6 uppercase text-xs tracking-widest">Resources</h6>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Blog</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Support</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Guides</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-on-surface mb-6 uppercase text-xs tracking-widest">Company</h6>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">About</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-on-surface mb-6 uppercase text-xs tracking-widest">Legal</h6>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Privacy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Terms</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Security</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm">© 2024 Cheqify.app. All rights reserved.</p>
+<div class="flex gap-6 text-xs font-semibold text-on-surface-variant uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Cookie Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

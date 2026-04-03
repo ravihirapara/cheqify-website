@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#006a62",
+                    "surface-container-low": "#eff4ff",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#70f8e8",
+                    "surface-container-high": "#dce9ff",
+                    "primary-container": "#00b4a6",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#49617c",
+                    "inverse-surface": "#1f3148",
+                    "on-background": "#081c32",
+                    "surface-container": "#e5eeff",
+                    "tertiary-container": "#ee845d",
+                    "primary-fixed-dim": "#4fdbcc",
+                    "secondary": "#48607c",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#005049",
+                    "secondary-fixed": "#d1e4ff",
+                    "on-tertiary-container": "#671f00",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#9b4423",
+                    "on-secondary-fixed": "#001d35",
+                    "secondary-fixed-dim": "#b0c9e8",
+                    "on-primary-container": "#003f39",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#bbcac6",
+                    "surface-tint": "#006a62",
+                    "on-tertiary-fixed": "#380d00",
+                    "surface": "#f8f9ff",
+                    "on-primary-fixed": "#00201d",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#d2e4ff",
+                    "surface-container-highest": "#d2e4ff",
+                    "surface-dim": "#c8dbf9",
+                    "surface-bright": "#f8f9ff",
+                    "outline": "#6c7a77",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#c3dcfd",
+                    "on-primary": "#ffffff",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb59b",
+                    "on-surface-variant": "#3c4947",
+                    "on-surface": "#081c32",
+                    "on-tertiary-fixed-variant": "#7c2e0d",
+                    "inverse-primary": "#4fdbcc",
+                    "on-secondary-fixed-variant": "#304963"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-2xl font-bold tracking-tight text-slate-900">Cheqify.app</div>
+<div class="hidden md:flex items-center space-x-8 font-inter antialiased text-sm font-medium">
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200" href="#">Home</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200" href="#">Features</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200" href="#">Pricing</a>
+<a class="text-teal-600 border-b-2 border-teal-600 pb-1" href="#">Blog</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200" href="#">Contact</a>
+<a class="text-slate-600 hover:text-teal-600 transition-all duration-200" href="#">About</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-slate-600 cursor-pointer hover:opacity-80 transition-all duration-200">language</span>
+<span class="material-symbols-outlined text-slate-600 cursor-pointer hover:opacity-80 transition-all duration-200">dark_mode</span>
+<button class="px-5 py-2 text-sm font-semibold text-teal-600 hover:opacity-80 transition-all">Login</button>
+<button class="bg-teal-600 text-white px-5 py-2 rounded-xl text-sm font-semibold hover:opacity-90 transition-all scale-95 active:scale-90">Start Free</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Editorial Header -->
+<header class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl mx-auto text-center">
+<span class="text-primary font-semibold tracking-widest text-xs uppercase mb-4 block">Insights &amp; Expertise</span>
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-on-background mb-6">The Curator <span class="text-primary">Journal</span></h1>
+<p class="text-lg text-on-surface-variant leading-relaxed">Deep dives into fintech efficiency, operational excellence, and the future of automated payment workflows.</p>
+</div>
+<div class="flex gap-2 pb-2 overflow-x-auto no-scrollbar">
+<span class="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium whitespace-nowrap cursor-pointer">All Posts</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-highest rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer">Engineering</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-highest rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer">Productivity</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-highest rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer">Updates</span>
+</div>
+</div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Main Content Area -->
+<div class="lg:col-span-8 space-y-16">
+<!-- Featured Post: Bento-style Asymmetric Layout -->
+<section>
+<article class="group relative overflow-hidden rounded-[2rem] bg-surface-container-lowest transition-all hover:shadow-[0_20px_40px_rgba(8,28,50,0.06)] flex flex-col md:flex-row min-h-[450px]">
+<div class="w-full md:w-3/5 relative overflow-hidden">
+<img alt="Featured Article" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern high-tech workspace with multiple clean monitors displaying complex financial data visualizations in a bright minimalist office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLsTVQlmCTesGsWpFW70EnUYfa3kepjFZPO08gDaDCnLqeYjR0Z7le-9D9u_37xCz7ohTbCUjbpUCUUCsCx6AkzcQ4KNwEQDaPJIbfl17GJC73k-WaGP1m4op0gwzENCmASeaG69JyiSyOMgQ6_jgHOH64-DOW0rEIQ3vefJoGif52XEsde8b-6fBTSVgoTUeqwMgXpOHytCnYmEbcgdQou0ymAfCHrrmUmJmSIRo21nUYHYRZFst4_MQF4K_Z_3XqBVMTcPb6VzI"/>
+</div>
+<div class="w-full md:w-2/5 p-8 md:p-12 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-6">
+<span class="bg-primary-container/20 text-on-primary-container px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">Editor's Choice</span>
+<span class="text-on-surface-variant text-xs font-medium">12 min read</span>
+</div>
+<h2 class="text-3xl font-bold tracking-tight text-on-background mb-4 leading-tight group-hover:text-primary transition-colors">Mastering Global Cash Flow in 2024</h2>
+<p class="text-on-surface-variant mb-8 line-clamp-3">Discover how modern enterprises are leveraging AI-driven reconciliation to reduce operational friction and unlock dormant capital across international borders.</p>
+<div class="flex items-center gap-4 mt-auto">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Author" data-alt="Portrait of a professional man in a dark blue business suit smiling subtly against a soft grey studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbClMCwBsf3FE1NR6ADO1wqBlWs2MGlcmQMVpJsyZUcvG0FHg9PXZJexKf1FgYhVd6C1je4Eh892KCqysAaiSX6tNgu7eplwq8Tyhky_t98DBR1xVlDLUesvCiOfBFRgDBh9s1zAy-Z9KIvO2w11eyeTEoyRUCPv2v-0aFj25-ZU0QQM0Yi8qoLH3PS3t93AoOOpOIvTwu7mrNZ02siUo7OLH24IO_Kj_FdZ4t8EttGB-MlPKrbjfzzrkuttOYVz6gQSw2Ped-8UA"/>
+</div>
+<div>
+<p class="text-sm font-bold text-on-background">Marcus Thorne</p>
+<p class="text-xs text-on-surface-variant">Director of Strategy</p>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Latest Posts Grid -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold text-on-background tracking-tight">Latest Analysis</h3>
+<div class="h-px flex-1 bg-outline-variant/30 mx-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Post 1 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-2xl mb-6 bg-surface-container-low">
+<img alt="Post 1" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Abstract visualization of financial growth using sleek 3D bars and teal glowing particles in a dark clean environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYp5KvGlqtMhl0ZEbUNxhIrUZb2RxwbiDsl5G-zk0DFOp2PinQSALsphCYI43N-wwky7xcTA3NeM8_9x27fjovADsyWOBG7p15FPyeK0FukAuQk3tq7hAWyMEaIyMqQt33BtFLGoryVVKKJ8tHpop87K9P3B01-TTCi5GmLWUzj1cuBoZGhWxgWu4mc6jHx21zvX7lre4hHxl-qsuW3t5PlmgcddsBTYPXQ72zidNoqibdNbmFOddE_Z68ciy4gP0rUzDCxCvyEDU"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Productivity</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">May 14, 2024</span>
+</div>
+<h4 class="text-xl font-bold text-on-background mb-3 group-hover:text-primary transition-colors">Automating the Audit Trail: A Guide</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-2">The manual audit is dead. Learn how to implement real-time compliance tracking that satisfies even the most rigorous standards.</p>
+</article>
+<!-- Post 2 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-2xl mb-6 bg-surface-container-low">
+<img alt="Post 2" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elegant close-up of a digital tablet displaying minimalist business graphs and clean typography on a white desk with natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4QFFUDVLu4U_YScOCLkfZlo337ztKlOKM_iTtdLFDKcgHLdhD-7CqtVbc4EMdYiuG8XX487CVqD85fJEa-NTKB7-m65PJor3DOcgBzxZ2BV5f4NgHwyHjW6BI-jT0Vm5-htS5FTs5aA5Npccc7IS0yvAXqO5MXCnSxMah4i8QCM7WTmlCmm8hBHIJ9GES8p1OpbnRoO_jsr_RXcLSvoHGlMiUpN_QWpWQerP7PV8U4CblL0DqSNo7nuQ3GbjvRsNrqZH6Hf7YrzE"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Engineering</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">May 11, 2024</span>
+</div>
+<h4 class="text-xl font-bold text-on-background mb-3 group-hover:text-primary transition-colors">The Security Infrastructure of Cheqify</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-2">An inside look at our multi-layered encryption protocols and how we handle 256-bit transactional security at scale.</p>
+</article>
+<!-- Post 3 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-2xl mb-6 bg-surface-container-low">
+<img alt="Post 3" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Stylized graphic showing interconnected nodes representing a global financial network with a polished metallic finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa6A4jlIs27IH5IVMnFV8JLob0n4hs_REz5981g32yM5o2mMTuwa0cJDLaQOOcAIdSHr9QFycsKS7Uc9SU5hqvu6uQICrW7OVDUQNnm4Ope_yQ6wPE1m5S4nhKXrIl24ggJ4Msh5pW8ZL1wV6rSsMZX9rCYoDqtMMn7whNBFCxT-AjCIKoxtjirWUzBlRRlRn9Z9bZg6tXcdf6Ni2gQ-h3B4-kFcDmsnGYDVdb9n--pSVJEhTfF9nTgn-tOF8RK-zrwV-kdmkLnyE"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Updates</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">May 08, 2024</span>
+</div>
+<h4 class="text-xl font-bold text-on-background mb-3 group-hover:text-primary transition-colors">Q2 Release: New Multi-Currency Vaults</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-2">Manage over 45 currencies with instant settlement capabilities. Explore the biggest update to Cheqify yet.</p>
+</article>
+<!-- Post 4 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-2xl mb-6 bg-surface-container-low">
+<img alt="Post 4" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Collaborative meeting in a sunlit modern boardroom with large windows and clean contemporary furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8IP667RIYD6zHEUV-EcIgx5D_UFGcyz2pdwA8Rjx1n5jQ1zAo4JBc1iMMpvoCD9AZG3q6o5ZlpCPyZrNOMe1hpMHrVQq7b5n3DfmSxVFx-kXQ51bBG8vcGFqet60GMuQ-KEnV7NqP5_6M2ddG2Ordys_yR0LYqenx5EYnEnwPAk0NJ8nHy9anR_GdCC5uCGGMjuGkVVsQO9XThABlOv6XvyOl2BTrZJTQ0VcKggSmIadx2WbuwolJZdOE2EXIODkxA2mQ97OjZ-M"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Culture</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">April 29, 2024</span>
+</div>
+<h4 class="text-xl font-bold text-on-background mb-3 group-hover:text-primary transition-colors">Building Remote-First Financial Teams</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-2">How to maintain strict fiscal controls and team alignment while operating as a fully distributed organization.</p>
+</article>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-surface-container-highest text-primary px-8 py-3 rounded-full font-bold hover:bg-surface-container-high transition-all">Load More Articles</button>
+</div>
+</section>
+</div>
+<!-- Sidebar -->
+<aside class="lg:col-span-4 space-y-10">
+<!-- CTA Sidebar Card -->
+<div class="bg-primary p-8 rounded-[2rem] text-on-primary relative overflow-hidden group">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold mb-4 tracking-tight leading-tight">Ready to curate your finances?</h3>
+<p class="text-white/80 text-sm mb-8 leading-relaxed">Join 2,500+ high-growth companies managing their cash flow with absolute precision.</p>
+<button class="w-full bg-white text-primary py-4 rounded-xl font-extrabold hover:shadow-lg hover:-translate-y-1 transition-all active:scale-95">Start Free Trial</button>
+<p class="text-center mt-4 text-xs text-white/60">No credit card required • 14-day free trial</p>
+</div>
+</div>
+<!-- Newsletter -->
+<div class="bg-surface-container-low p-8 rounded-[2rem]">
+<h3 class="text-xl font-bold text-on-background mb-2">Weekly Briefing</h3>
+<p class="text-on-surface-variant text-sm mb-6">The most important fintech news, delivered to your inbox every Monday.</p>
+<form class="space-y-3">
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-none rounded-xl py-3 px-4 text-sm focus:ring-2 focus:ring-primary/40 focus:bg-white transition-all placeholder:text-outline-variant" placeholder="email@address.com" type="email"/>
+</div>
+<button class="w-full bg-on-background text-white py-3 rounded-xl font-bold hover:opacity-90 transition-all" type="submit">Subscribe</button>
+</form>
+</div>
+<!-- Trending Topics -->
+<div>
+<h3 class="text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-6 px-2">Trending Topics</h3>
+<div class="flex flex-wrap gap-2">
+<a class="px-4 py-2 border border-outline-variant/30 rounded-lg text-sm font-medium hover:bg-surface-container transition-colors" href="#">#SaaS_Scaling</a>
+<a class="px-4 py-2 border border-outline-variant/30 rounded-lg text-sm font-medium hover:bg-surface-container transition-colors" href="#">#FinOps</a>
+<a class="px-4 py-2 border border-outline-variant/30 rounded-lg text-sm font-medium hover:bg-surface-container transition-colors" href="#">#DigitalCurator</a>
+<a class="px-4 py-2 border border-outline-variant/30 rounded-lg text-sm font-medium hover:bg-surface-container transition-colors" href="#">#AI_Automation</a>
+<a class="px-4 py-2 border border-outline-variant/30 rounded-lg text-sm font-medium hover:bg-surface-container transition-colors" href="#">#Security_Protocols</a>
+</div>
+</div>
+<!-- Author Spotlight -->
+<div class="p-2">
+<h3 class="text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-6">Expert Voices</h3>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<img alt="Author 1" class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of a friendly bearded man wearing a white casual shirt in a bright natural light environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcMnuYK1cutcCpJwd_IKy2PzVUJKX1z6VxGKK59LFyysC1ODBrdcy9dd1EYCDp9wIORH7H4NmFtdz-Rmi_5ekQE-NldpyyY_7tYoyabpcCAnt_xQstP5NbVw5sBO96rq2I5xmMgSs0ainPm-j8HiVFBdZiG-xPJhaq1gZh0NTPzFwcsLdfU2bx1tyX8VMkHBqOKzoYzADWBRTEegmQgKUPVGHkhscKu5Vi6tQlvyrOgmdLv58O77AOtgRXNEXGaZh663_R2fEBhuo"/>
+<div>
+<h4 class="text-sm font-bold text-on-background">Dr. Elena Rodriguez</h4>
+<p class="text-xs text-on-surface-variant">Lead Data Scientist</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Author 2" class="w-12 h-12 rounded-full object-cover" data-alt="Close-up portrait of a professional woman with glasses and dark hair smiling warmly in a contemporary office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFyrPf8RKHBwIqFv60j8ec9w1on5cn8S5BZXpt4wPC3AGPIFgyniW4vLdMWKu0aLlV9jqi-ydsdLxbiC0Zgmj0XEA4FkVxA281QZziwo1enFbajGkwjJ75uLQwaSIA_AinHKwsvhjCWFIgV2sptyvdr8imZnXZ4uoaVxZOx6mTG2kJDdsVcPb9ijrBwx4FQK-wyhmthz3NPRxg74HmzveKKTi0FwWEjraHWIDXDYlKbyAkvBNvRznwwRDv-2Z3Pz_3JV2NSBxUsr4"/>
+<div>
+<h4 class="text-sm font-bold text-on-background">Sarah Jenkins</h4>
+<p class="text-xs text-on-surface-variant">VP of Engineering</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light border-t border-outline-variant/20 w-full py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mb-16">
+<div class="col-span-2">
+<div class="text-2xl font-bold tracking-tight text-on-background mb-6">Cheqify.app</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-xs">
+            Elevating financial management for the digital age with editorial precision and automated power.
+          </p>
+</div>
+<div>
+<h4 class="font-bold text-on-background text-sm uppercase tracking-widest mb-6">Product</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Features</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Pricing</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Integrations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-background text-sm uppercase tracking-widest mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-primary font-bold text-sm" href="#">Blog</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Support</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Guides</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-background text-sm uppercase tracking-widest mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">About</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-background text-sm uppercase tracking-widest mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Privacy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Terms</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Security</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-on-surface-variant text-sm font-medium">© 2024 Cheqify.app. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all duration-200">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all duration-200">rss_feed</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all duration-200">alternate_email</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

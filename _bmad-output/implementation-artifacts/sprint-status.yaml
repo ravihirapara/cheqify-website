@@ -1,0 +1,102 @@
+# generated: 2026-04-03
+# project: Cheqify.app
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review
+
+generated: "2026-04-03"
+project: "Cheqify.app"
+tracking_system: "file-system"
+story_location: "_bmad-output/implementation-artifacts"
+
+development_status:
+  # Epic 1: Project Foundation & Design System
+  epic-1: in-progress
+  1-1-initialize-shadcn-ui-and-brand-design-tokens: in-progress
+  1-2-dark-light-mode-theme-switching: backlog
+  1-3-internationalization-infrastructure: backlog
+  epic-1-retrospective: optional
+
+  # Epic 2: Site Navigation & Layout
+  epic-2: backlog
+  2-1-sticky-header-with-navigation: backlog
+  2-2-mobile-navigation-menu: backlog
+  2-3-site-footer: backlog
+  epic-2-retrospective: optional
+
+  # Epic 3: Homepage
+  epic-3: backlog
+  3-1-hero-section: backlog
+  3-2-trust-bar-and-bank-logos: backlog
+  3-3-how-it-works-section: backlog
+  3-4-features-tabs-section: backlog
+  3-5-social-proof-testimonials-and-final-cta: backlog
+  3-6-demo-video-embed: backlog
+  epic-3-retrospective: optional
+
+  # Epic 4: Features Page
+  epic-4: backlog
+  4-1-features-page-with-detailed-tabs: backlog
+  epic-4-retrospective: optional
+
+  # Epic 5: Pricing Page
+  epic-5: backlog
+  5-1-pricing-plans-display: backlog
+  5-2-feature-comparison-table: backlog
+  epic-5-retrospective: optional
+
+  # Epic 6: Blog
+  epic-6: backlog
+  6-1-blog-listing-page: backlog
+  6-2-individual-blog-post-page: backlog
+  6-3-blog-seed-content: backlog
+  epic-6-retrospective: optional
+
+  # Epic 7: Contact Page & Live Chat
+  epic-7: backlog
+  7-1-contact-page-with-formspree-form: backlog
+  7-2-tawk-to-live-chat-integration: backlog
+  epic-7-retrospective: optional
+
+  # Epic 8: About Us & Privacy Policy Pages
+  epic-8: backlog
+  8-1-about-us-page: backlog
+  8-2-privacy-policy-page: backlog
+  epic-8-retrospective: optional
+
+  # Epic 9: Cookie Consent & Analytics
+  epic-9: backlog
+  9-1-cookie-consent-banner: backlog
+  9-2-google-analytics-4-integration: backlog
+  epic-9-retrospective: optional
+
+  # Epic 10: SEO & Multi-Language Content
+  epic-10: backlog
+  10-1-per-page-seo-metadata: backlog
+  10-2-structured-data-and-sitemap: backlog
+  10-3-multi-language-content-population: backlog
+  epic-10-retrospective: optional

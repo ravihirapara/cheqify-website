@@ -6,3 +6,39 @@ product-brief:
   file: "_bmad-output/planning-artifacts/product-brief-cheqify-app-2026-03-26.md"
   completed: 2026-03-27
   project: chequify.app
+
+prd:
+  status: complete
+  file: "_bmad-output/planning-artifacts/prd.md"
+  completed: 2026-04-03
+  project: chequify.app
+
+create-ux-design:
+  status: complete
+  file: "_bmad-output/planning-artifacts/ux-design-specification.md"
+  completed: 2026-03-27
+  project: chequify.app
+
+create-architecture:
+  status: complete
+  file: "_bmad-output/planning-artifacts/architecture.md"
+  completed: 2026-04-03
+  project: chequify.app
+
+create-epics-and-stories:
+  status: complete
+  file: "_bmad-output/planning-artifacts/epics.md"
+  completed: 2026-04-03
+  project: chequify.app
+
+implementation-readiness:
+  status: complete
+  file: "_bmad-output/planning-artifacts/implementation-readiness-report-2026-04-03.md"
+  completed: 2026-04-03
+  project: chequify.app
+
+sprint-planning:
+  status: complete
+  file: "_bmad-output/implementation-artifacts/sprint-status.yaml"
+  completed: 2026-04-03
+  project: chequify.app
