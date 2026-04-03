@@ -1,3 +1,5 @@
+import { ThemeToggle } from "~/components/layout/theme-toggle";
+
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center bg-background">
@@ -9,6 +11,7 @@ export default function Home() {
           Print Error-Free Cheques in Under 2 Minutes
         </p>
         <p className="text-sm text-muted-foreground">Coming Soon</p>
+        <ThemeToggle />
       </main>
     </div>
   );

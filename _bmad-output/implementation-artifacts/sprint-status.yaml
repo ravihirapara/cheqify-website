@@ -37,7 +37,7 @@ development_status:
   # Epic 1: Project Foundation & Design System
   epic-1: in-progress
   1-1-initialize-shadcn-ui-and-brand-design-tokens: review
-  1-2-dark-light-mode-theme-switching: backlog
+  1-2-dark-light-mode-theme-switching: review
   1-3-internationalization-infrastructure: backlog
   epic-1-retrospective: optional
 
