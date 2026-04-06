@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
+import remarkGfm from "remark-gfm";
 import html from "remark-html";
 
 export interface BlogPostMeta {
@@ -66,7 +67,7 @@ export async function getBlogPost(
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content: markdown } = matter(fileContent);
 
-  const processed = await remark().use(html).process(markdown);
+  const processed = await remark().use(remarkGfm).use(html).process(markdown);
   const contentHtml = processed.toString();
 
   return {

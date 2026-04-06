@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "~/i18n/navigation";
 import { getBlogPost, getBlogPosts } from "~/lib/blog";
 import { routing } from "~/i18n/routing";
