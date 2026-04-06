@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useForm, ValidationError } from "@formspree/react";
-import { Loader2, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Loader2, Send, CheckCircle, AlertCircle, ChevronDown } from "lucide-react";
 import { cn } from "~/lib/utils";
 
 const SUBJECT_KEYS = ["general", "support", "enterprise", "feedback"] as const;
@@ -78,11 +78,12 @@ export function ContactForm() {
           >
             {t("subjectLabel")}
           </label>
+          <div className="relative">
           <select
             id="subject"
             name="subject"
             required
-            className="w-full appearance-none rounded-xl border-none bg-muted px-5 py-4 text-foreground outline-none transition-all focus:ring-2 focus:ring-primary/40"
+            className="w-full appearance-none rounded-xl border-none bg-muted px-5 py-4 pr-12 text-foreground outline-none transition-all focus:ring-2 focus:ring-primary/40"
           >
             {SUBJECT_KEYS.map((key) => (
               <option key={key} value={key}>
@@ -90,6 +91,8 @@ export function ContactForm() {
               </option>
             ))}
           </select>
+          <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
+          </div>
           <ValidationError
             prefix="Subject"
             field="subject"
