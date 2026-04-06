@@ -189,5 +189,50 @@
       "card6Title": "Bank-Grade Security",
       "card6Description": "256-bit encryption and secure data handling ensure your financial information stays protected at all times."
     }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Pricing | Cheqify.app",
+      "description": "Cheqify is 100% free. Every feature included. No credit card. No hidden costs. Free forever."
+    },
+    "hero": {
+      "badge": "PRICING",
+      "headlinePart1": "Completely Free.",
+      "headlineHighlight": "No Strings Attached.",
+      "subheading": "Every feature. Every bank. Every device. No credit card required. No hidden costs. Free forever.",
+      "cta": "Start Free"
+    },
+    "allFeatures": {
+      "label": "EVERYTHING INCLUDED",
+      "title": "Everything Included",
+      "subtitle": "No tiers, no limits, no paywalls. You get the full product.",
+      "feature1": "300+ Pre-Built Bank Layouts",
+      "feature2": "Smart Auto-Fill",
+      "feature3": "MICR Validation",
+      "feature4": "Batch Printing",
+      "feature5": "Import from Excel/CSV",
+      "feature6": "Lifecycle Tracking",
+      "feature7": "Real-Time Alerts",
+      "feature8": "Owner Dashboard",
+      "feature9": "Team Management",
+      "feature10": "Export Reports (PDF, Excel, CSV)",
+      "feature11": "Bank Reconciliation",
+      "feature12": "Unlimited Projects",
+      "feature13": "Works on Any Device",
+      "feature14": "Multi-Language Support",
+      "cta": "Start Free",
+      "note": "No credit card required"
+    },
+    "whyFree": {
+      "heading": "Why is Cheqify Free?",
+      "card1Title": "Accessible to Everyone",
+      "card1Description": "We believe cheque management should be accessible to every business, regardless of size or budget.",
+      "card2Title": "No Hidden Costs",
+      "card2Description": "No hidden costs \u2014 we\u2019re funded to grow, not to charge. You will never see a surprise bill.",
+      "card3Title": "Core is Always Free",
+      "card3Description": "Premium features may come later, but the core product you see today will always remain free.",
+      "card4Title": "Compare with ChequePot",
+      "card4Description": "Other tools like ChequePot charge for basic cheque printing. Cheqify gives you everything \u2014 for free."
+    }
   }
 }
