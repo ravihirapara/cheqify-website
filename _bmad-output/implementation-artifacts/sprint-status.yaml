@@ -95,8 +95,8 @@ development_status:
   epic-9-retrospective: optional
 
   # Epic 10: SEO & Multi-Language Content
-  epic-10: in-progress
+  epic-10: done
   10-1-per-page-seo-metadata: done
   10-2-structured-data-and-sitemap: done
-  10-3-multi-language-content-population: backlog
+  10-3-multi-language-content-population: done
   epic-10-retrospective: optional
