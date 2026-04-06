@@ -50,9 +50,9 @@ export function Hero() {
 
           {/* Product Visual Placeholder */}
           <div className="relative mt-12 lg:mt-0">
-            <div className="absolute -inset-4 -z-10 rounded-full bg-gradient-to-tr from-primary/10 to-transparent blur-3xl" />
+            <div className="absolute -inset-8 -z-10 rounded-full bg-gradient-to-tr from-primary/10 to-transparent blur-3xl" />
             <div
-              className="overflow-hidden rounded-xl border border-border/10 bg-background p-2 shadow-[0_20px_40px_rgba(8,28,50,0.08)]"
+              className="w-full overflow-hidden rounded-xl border border-border/10 bg-background p-2 shadow-[0_20px_40px_rgba(8,28,50,0.06)]"
               role="img"
               aria-label={t("hero.productScreenshotAlt")}
             >

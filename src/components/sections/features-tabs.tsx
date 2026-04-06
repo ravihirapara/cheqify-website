@@ -72,7 +72,7 @@ export function FeaturesTabs() {
 
           {/* Right side: product screenshot placeholder */}
           <div className="mt-8 lg:mt-0">
-            <div className="overflow-hidden rounded-xl border border-border/10 bg-background p-3 shadow-xl">
+            <div className="w-full overflow-hidden rounded-xl border border-border/10 bg-background p-4 shadow-xl">
               <div className="rounded-lg bg-card p-4">
                 {FEATURES.map((feature) => {
                   const Icon = feature.icon;
