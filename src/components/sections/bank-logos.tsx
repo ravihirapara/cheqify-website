@@ -1,24 +1,25 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-const BANK_NAMES = [
-  "SBI",
-  "HDFC",
-  "ICICI",
-  "Axis",
-  "PNB",
-  "Kotak",
-  "BOB",
-  "Yes Bank",
-  "IndusInd",
+const BANKS = [
+  { name: "SBI", src: "/images/banks/sbi.svg" },
+  { name: "HDFC", src: "/images/banks/hdfc.svg" },
+  { name: "ICICI", src: "/images/banks/icici.svg" },
+  { name: "Axis", src: "/images/banks/axis.svg" },
+  { name: "PNB", src: "/images/banks/pnb.svg" },
+  { name: "Kotak", src: "/images/banks/kotak.svg" },
+  { name: "BOB", src: "/images/banks/bob.svg" },
+  { name: "Yes Bank", src: "/images/banks/yesbank.svg" },
+  { name: "IndusInd", src: "/images/banks/indusind.svg" },
 ];
 
 export function BankLogos() {
   const t = useTranslations("home.bankLogos");
 
   // Duplicate the list for seamless infinite scroll
-  const allBanks = [...BANK_NAMES, ...BANK_NAMES];
+  const allBanks = [...BANKS, ...BANKS];
 
   return (
     <section className="py-12">
@@ -39,14 +40,20 @@ export function BankLogos() {
           {t("heading")}
         </p>
         <div className="overflow-hidden">
-          <div className="marquee-track flex items-center gap-8 whitespace-nowrap transition-all hover:opacity-100 md:gap-16">
+          <div className="marquee-track flex items-center gap-8 whitespace-nowrap md:gap-16">
             {allBanks.map((bank, idx) => (
-              <span
-                key={`${bank}-${idx}`}
-                className="text-lg font-bold text-muted-foreground"
+              <div
+                key={`${bank.name}-${idx}`}
+                className="opacity-60 transition-opacity hover:opacity-100"
               >
-                {bank}
-              </span>
+                <Image
+                  src={bank.src}
+                  alt={bank.name}
+                  width={120}
+                  height={40}
+                  className="h-8 w-auto dark:invert"
+                />
+              </div>
             ))}
             <span className="text-lg font-bold text-primary">
               {t("moreBanks")}
