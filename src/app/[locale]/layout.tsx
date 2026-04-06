@@ -6,6 +6,8 @@ import { ThemeProvider } from "~/components/layout/theme-provider";
 import { Header } from "~/components/layout/header";
 import { Footer } from "~/components/layout/footer";
 import { TawkTo } from "~/components/layout/tawk-to";
+import { CookieConsent } from "~/components/layout/cookie-consent";
+import { GoogleAnalytics } from "~/components/layout/google-analytics";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -38,7 +40,9 @@ export default async function LocaleLayout({
               {children}
             </main>
             <Footer />
-            <TawkTo enabled={false} />
+            <CookieConsent />
+            <TawkTo />
+            <GoogleAnalytics />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

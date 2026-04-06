@@ -37,6 +37,12 @@
     },
     "theme": {
       "toggleTheme": "Toggle theme"
+    },
+    "cookies": {
+      "message": "We use cookies for analytics and live chat to improve your experience.",
+      "accept": "Accept",
+      "decline": "Decline",
+      "privacy": "Privacy Policy"
     }
   },
   "home": {
