@@ -42,10 +42,8 @@
     "hero": {
       "headline": "Print Error-Free Cheques in Under 2 Minutes",
       "subheadline": "Print, track, and manage cheques from any device. Works with 300+ Indian banks. No training needed — just sign up and print.",
-      "noCreditCard": "No credit card required. Free forever for basic use."
-    },
-    "placeholder": {
-      "comingSoon": "Coming Soon"
+      "noCreditCard": "No credit card required. Free forever for basic use.",
+      "productScreenshotAlt": "Cheqify app — cheque printing dashboard"
     }
   }
 }
