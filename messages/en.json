@@ -205,6 +205,8 @@
     "readMore": "Read More",
     "minRead": "min read",
     "backToBlog": "Back to Blog",
+    "prevPost": "Previous",
+    "nextPost": "Next",
     "cta": {
       "heading": "Ready to simplify your cheque management?",
       "description": "Start printing error-free cheques in under 2 minutes. Free forever — no credit card required."

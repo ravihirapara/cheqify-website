@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "~/i18n/navigation";
 import { getBlogPost, getBlogPosts } from "~/lib/blog";
 import { routing } from "~/i18n/routing";
@@ -50,6 +50,12 @@ export default async function BlogPostPage({
     notFound();
   }
 
+  // Get all posts to find prev/next
+  const allPosts = getBlogPosts(locale);
+  const currentIndex = allPosts.findIndex((p) => p.slug === slug);
+  const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
+  const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+
   const formattedDate = new Date(post.meta.date).toLocaleDateString(locale, {
     year: "numeric",
     month: "long",
@@ -57,7 +63,7 @@ export default async function BlogPostPage({
   });
 
   return (
-    <section className="px-6 pb-20 pt-32">
+    <section className="px-6 pb-20 pt-16">
       <div className="mx-auto max-w-3xl">
         {/* Back to blog */}
         <Link
@@ -105,7 +111,6 @@ export default async function BlogPostPage({
 
         {/* In-article CTA */}
         <div className="mt-12 overflow-hidden rounded-[2rem] bg-primary px-6 py-12 text-center">
-          <div className="pointer-events-none absolute inset-0 opacity-30" />
           <div className="relative mx-auto max-w-xl">
             <h3 className="text-2xl font-bold tracking-tight text-primary-foreground">
               {t("cta.heading")}
@@ -123,6 +128,42 @@ export default async function BlogPostPage({
             </a>
           </div>
         </div>
+
+        {/* Prev / Next Navigation */}
+        <nav className="mt-12 grid grid-cols-2 gap-4">
+          {prevPost ? (
+            <Link
+              href={`/blog/${prevPost.slug}`}
+              className="group flex items-start gap-3 rounded-xl border border-border p-4 transition-all hover:border-primary/30 hover:shadow-sm"
+            >
+              <ChevronLeft className="mt-1 h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+              <div className="min-w-0">
+                <p className="text-xs font-medium text-muted-foreground">{t("prevPost")}</p>
+                <p className="mt-1 truncate text-sm font-semibold text-foreground group-hover:text-primary">
+                  {prevPost.title}
+                </p>
+              </div>
+            </Link>
+          ) : (
+            <div />
+          )}
+          {nextPost ? (
+            <Link
+              href={`/blog/${nextPost.slug}`}
+              className="group flex items-start justify-end gap-3 rounded-xl border border-border p-4 text-right transition-all hover:border-primary/30 hover:shadow-sm"
+            >
+              <div className="min-w-0">
+                <p className="text-xs font-medium text-muted-foreground">{t("nextPost")}</p>
+                <p className="mt-1 truncate text-sm font-semibold text-foreground group-hover:text-primary">
+                  {nextPost.title}
+                </p>
+              </div>
+              <ChevronRight className="mt-1 h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+            </Link>
+          ) : (
+            <div />
+          )}
+        </nav>
       </div>
     </section>
   );
