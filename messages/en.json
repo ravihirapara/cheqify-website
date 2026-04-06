@@ -250,5 +250,46 @@
       "card4Title": "Compare with ChequePot",
       "card4Description": "Other tools like ChequePot charge for basic cheque printing. Cheqify gives you everything \u2014 for free."
     }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Us | Cheqify.app",
+      "description": "Get in touch with the Cheqify team for support, sales inquiries, or feedback about our cheque management platform."
+    },
+    "hero": {
+      "badge": "Get in Touch",
+      "heading": "We're here to help with your",
+      "headlineHighlight": "cheque management.",
+      "subheading": "Have questions about Cheqify or need technical support? Our dedicated team is ready to assist you in streamlining your cheque printing and management workflow."
+    },
+    "info": {
+      "supportTitle": "Customer Support",
+      "supportDescription": "Get help with technical issues, account setup, and cheque printing queries.",
+      "supportEmail": "support@cheqify.app",
+      "salesTitle": "Sales & Business",
+      "salesDescription": "Learn more about enterprise features, bulk usage, and partnership opportunities.",
+      "salesEmail": "hello@cheqify.app",
+      "responseTime": "Average response time:",
+      "responseTimeValue": "Under 24 hours"
+    },
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "you@company.com",
+      "subjectLabel": "Subject",
+      "subjectOptions": {
+        "general": "General Inquiry",
+        "support": "Technical Support",
+        "enterprise": "Enterprise / Business",
+        "feedback": "Feedback"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "consent": "I agree to the Privacy Policy and consent to receiving communication regarding my inquiry.",
+      "submit": "Send Message",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    }
   }
 }

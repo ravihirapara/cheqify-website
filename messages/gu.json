@@ -250,5 +250,46 @@
       "card4Title": "ChequePot સાથે સરખાવો",
       "card4Description": "ChequePot જેવા અન્ય ટૂલ્સ બેઝિક ચેક છાપવા માટે શુલ્ક લે છે. Cheqify તમને બધું આપે છે — મફત."
     }
+  },
+  "contact": {
+    "meta": {
+      "title": "સંપર્ક કરો | Cheqify.app",
+      "description": "સહાય, વેચાણ પૂછપરછ, અથવા અમારા ચેક મેનેજમેન્ટ પ્લેટફોર્મ વિશે પ્રતિસાદ માટે Cheqify ટીમનો સંપર્ક કરો."
+    },
+    "hero": {
+      "badge": "સંપર્ક કરો",
+      "heading": "અમે તમારી મદદ માટે અહીં છીએ",
+      "headlineHighlight": "ચેક મેનેજમેન્ટ.",
+      "subheading": "Cheqify વિશે કોઈ પ્રશ્નો છે અથવા ટેકનિકલ સહાય જોઈએ છે? અમારી સમર્પિત ટીમ તમારા ચેક છાપવા અને મેનેજમેન્ટ વર્કફ્લોને સરળ બનાવવામાં તમારી સહાય કરવા તૈયાર છે."
+    },
+    "info": {
+      "supportTitle": "ગ્રાહક સહાય",
+      "supportDescription": "ટેકનિકલ સમસ્યાઓ, એકાઉન્ટ સેટઅપ અને ચેક છાપવાના પ્રશ્નોમાં મદદ મેળવો.",
+      "supportEmail": "support@cheqify.app",
+      "salesTitle": "વેચાણ અને વ્યવસાય",
+      "salesDescription": "એન્ટરપ્રાઇઝ સુવિધાઓ, બલ્ક ઉપયોગ અને ભાગીદારીની તકો વિશે વધુ જાણો.",
+      "salesEmail": "hello@cheqify.app",
+      "responseTime": "સરેરાશ પ્રતિસાદ સમય:",
+      "responseTimeValue": "24 કલાકથી ઓછો"
+    },
+    "form": {
+      "nameLabel": "પૂરું નામ",
+      "namePlaceholder": "તમારું પૂરું નામ",
+      "emailLabel": "ઈમેલ સરનામું",
+      "emailPlaceholder": "you@company.com",
+      "subjectLabel": "વિષય",
+      "subjectOptions": {
+        "general": "સામાન્ય પૂછપરછ",
+        "support": "ટેકનિકલ સહાય",
+        "enterprise": "એન્ટરપ્રાઇઝ / વ્યવસાય",
+        "feedback": "પ્રતિસાદ"
+      },
+      "messageLabel": "સંદેશ",
+      "messagePlaceholder": "અમે તમારી કેવી રીતે મદદ કરી શકીએ?",
+      "consent": "હું ગોપનીયતા નીતિ સાથે સંમત છું અને મારી પૂછપરછ સંબંધિત સંચાર પ્રાપ્ત કરવા માટે સંમતિ આપું છું.",
+      "submit": "સંદેશ મોકલો",
+      "success": "સંદેશ મોકલાયો! અમે ટૂંક સમયમાં તમારો સંપર્ક કરીશું.",
+      "error": "કંઈક ખોટું થયું. કૃપા કરીને ફરી પ્રયાસ કરો."
+    }
   }
 }
