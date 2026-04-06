@@ -1,24 +1,46 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const BANKS = [
-  { name: "SBI", src: "/images/banks/sbi.svg" },
-  { name: "HDFC", src: "/images/banks/hdfc.svg" },
-  { name: "ICICI", src: "/images/banks/icici.svg" },
-  { name: "Axis", src: "/images/banks/axis.svg" },
-  { name: "PNB", src: "/images/banks/pnb.svg" },
-  { name: "Kotak", src: "/images/banks/kotak.svg" },
-  { name: "BOB", src: "/images/banks/bob.svg" },
-  { name: "Yes Bank", src: "/images/banks/yesbank.svg" },
-  { name: "IndusInd", src: "/images/banks/indusind.svg" },
+  { name: "SBI", color: "#1a4b8c" },
+  { name: "HDFC", color: "#004b87" },
+  { name: "ICICI", color: "#f58220" },
+  { name: "Axis", color: "#97144d" },
+  { name: "PNB", color: "#cc0000" },
+  { name: "Kotak", color: "#ed1c24" },
+  { name: "BOB", color: "#f47920" },
+  { name: "Yes Bank", color: "#0066b3" },
+  { name: "IndusInd", color: "#1a3f6f" },
 ];
+
+function BankLogo({ name, color }: { name: string; color: string }) {
+  return (
+    <svg
+      viewBox="0 0 140 40"
+      className="h-10 w-auto"
+      role="img"
+      aria-label={name}
+    >
+      <circle cx="16" cy="20" r="10" fill={color} />
+      <text
+        x="82"
+        y="26"
+        textAnchor="middle"
+        fontFamily="Arial, Helvetica, sans-serif"
+        fontSize="16"
+        fontWeight="bold"
+        fill={color}
+      >
+        {name}
+      </text>
+    </svg>
+  );
+}
 
 export function BankLogos() {
   const t = useTranslations("home.bankLogos");
 
-  // Duplicate the list for seamless infinite scroll
   const allBanks = [...BANKS, ...BANKS];
 
   return (
@@ -46,14 +68,7 @@ export function BankLogos() {
                 key={`${bank.name}-${idx}`}
                 className="opacity-60 transition-opacity hover:opacity-100"
               >
-                <Image
-                  src={bank.src}
-                  alt={bank.name}
-                  width={120}
-                  height={40}
-                  unoptimized
-                  className="h-10 w-auto dark:invert"
-                />
+                <BankLogo name={bank.name} color={bank.color} />
               </div>
             ))}
             <span className="text-lg font-bold text-primary">
