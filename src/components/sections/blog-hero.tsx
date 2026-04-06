@@ -7,7 +7,7 @@ export function BlogHero() {
 
   return (
     <header className="mb-16">
-      <div className="mx-auto max-w-2xl text-center">
+      <div className="mx-auto max-w-3xl text-center">
         <span className="mb-4 block text-xs font-semibold uppercase tracking-widest text-primary">
           {t("badge")}
         </span>
