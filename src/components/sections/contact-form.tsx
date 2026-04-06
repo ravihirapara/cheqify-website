@@ -16,7 +16,7 @@ export function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-xl border border-border/15 bg-card p-8 shadow-lg md:p-12">
+      <div className="flex flex-col items-center justify-center rounded-xl border border-border/15 bg-white p-8 shadow-[0_20px_40px_rgba(8,28,50,0.06)] dark:bg-card md:p-12">
         <CheckCircle className="mb-4 h-16 w-16 text-primary" />
         <p className="text-center text-lg font-semibold">{t("success")}</p>
       </div>
@@ -24,7 +24,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="rounded-xl border border-border/15 bg-card p-8 shadow-lg md:p-12">
+    <div className="rounded-xl border border-border/15 bg-white p-8 shadow-[0_20px_40px_rgba(8,28,50,0.06)] dark:bg-card md:p-12">
       <form onSubmit={handleSubmit} className="space-y-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Full Name */}
