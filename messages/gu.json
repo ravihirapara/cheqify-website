@@ -269,8 +269,10 @@
       "salesTitle": "વેચાણ અને વ્યવસાય",
       "salesDescription": "એન્ટરપ્રાઇઝ સુવિધાઓ, બલ્ક ઉપયોગ અને ભાગીદારીની તકો વિશે વધુ જાણો.",
       "salesEmail": "hello@cheqify.app",
-      "responseTime": "સરેરાશ પ્રતિસાદ સમય:",
-      "responseTimeValue": "24 કલાકથી ઓછો"
+      "officeTitle": "અમારી ઓફિસ",
+      "officeAddress": "અમદાવાદ, ગુજરાત, ભારત",
+      "officeHours": "સોમ-શુક્ર, સવારે 10:00 - સાંજે 7:00 IST",
+      "officeEmail": "hello@cheqify.app"
     },
     "form": {
       "nameLabel": "પૂરું નામ",

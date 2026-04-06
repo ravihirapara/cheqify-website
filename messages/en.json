@@ -269,8 +269,10 @@
       "salesTitle": "Sales & Business",
       "salesDescription": "Learn more about enterprise features, bulk usage, and partnership opportunities.",
       "salesEmail": "hello@cheqify.app",
-      "responseTime": "Average response time:",
-      "responseTimeValue": "Under 24 hours"
+      "officeTitle": "Our Office",
+      "officeAddress": "Ahmedabad, Gujarat, India",
+      "officeHours": "Mon-Fri, 10:00 AM - 7:00 PM IST",
+      "officeEmail": "hello@cheqify.app"
     },
     "form": {
       "nameLabel": "Full Name",

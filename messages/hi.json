@@ -269,8 +269,10 @@
       "salesTitle": "बिक्री और व्यापार",
       "salesDescription": "एंटरप्राइज़ सुविधाओं, बल्क उपयोग और साझेदारी के अवसरों के बारे में अधिक जानें।",
       "salesEmail": "hello@cheqify.app",
-      "responseTime": "औसत प्रतिक्रिया समय:",
-      "responseTimeValue": "24 घंटे से कम"
+      "officeTitle": "हमारा कार्यालय",
+      "officeAddress": "अहमदाबाद, गुजरात, भारत",
+      "officeHours": "सोम-शुक्र, सुबह 10:00 - शाम 7:00 IST",
+      "officeEmail": "hello@cheqify.app"
     },
     "form": {
       "nameLabel": "पूरा नाम",

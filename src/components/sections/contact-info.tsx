@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Headset, Briefcase, Clock } from "lucide-react";
+import { Headset, Briefcase, MapPin, Clock, Mail } from "lucide-react";
 
 export function ContactInfo() {
   const t = useTranslations("contact.info");
@@ -44,17 +44,28 @@ export function ContactInfo() {
         </div>
       </div>
 
-      {/* Response Time Card */}
-      <div className="flex items-center gap-4 rounded-xl border border-border/15 bg-card p-8">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-          <Clock className="h-6 w-6" />
+      {/* Office Card */}
+      <div className="relative overflow-hidden rounded-xl bg-foreground p-10 text-background">
+        <div className="relative z-10">
+          <h3 className="mb-6 text-2xl font-bold">{t("officeTitle")}</h3>
+          <div className="space-y-4">
+            <div className="flex items-start gap-4">
+              <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <p className="text-sm">{t("officeAddress")}</p>
+            </div>
+            <div className="flex items-start gap-4">
+              <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <p className="text-sm">{t("officeHours")}</p>
+            </div>
+            <div className="flex items-start gap-4">
+              <Mail className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <a href={`mailto:${t("officeEmail")}`} className="text-sm text-primary hover:underline">
+                {t("officeEmail")}
+              </a>
+            </div>
+          </div>
         </div>
-        <div>
-          <p className="text-sm text-muted-foreground">{t("responseTime")}</p>
-          <p className="text-lg font-semibold text-primary">
-            {t("responseTimeValue")}
-          </p>
-        </div>
+        <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-primary/20 blur-[100px]" />
       </div>
     </div>
   );
