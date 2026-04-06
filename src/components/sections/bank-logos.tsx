@@ -21,24 +21,12 @@ export function BankLogos() {
 
   return (
     <section className="py-12">
-      <style>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .marquee-track {
-          animation: marquee 20s linear infinite;
-        }
-        .marquee-track:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="mb-10 text-center text-xs font-bold uppercase tracking-widest text-muted-foreground">
           {t("heading")}
         </p>
         <div className="overflow-hidden">
-          <div className="marquee-track flex items-center gap-12 whitespace-nowrap md:gap-16">
+          <div className="flex animate-[marquee_20s_linear_infinite] items-center gap-12 whitespace-nowrap hover:[animation-play-state:paused] md:gap-16">
             {allBanks.map((bank, idx) => (
               <span
                 key={`${bank.name}-${idx}`}
