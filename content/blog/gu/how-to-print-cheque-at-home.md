@@ -5,7 +5,7 @@ date: "2026-04-02"
 author: "Cheqify Team"
 slug: "how-to-print-cheque-at-home"
 lang: "gu"
-tags: ["Guide", "Productivity"]
+tags: ["Cheque Guide", "Cheque Productivity"]
 image: ""
 ---
 

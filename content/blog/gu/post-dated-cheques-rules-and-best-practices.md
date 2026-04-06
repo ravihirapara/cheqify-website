@@ -5,7 +5,7 @@ date: "2026-04-03"
 author: "Cheqify Team"
 slug: "post-dated-cheques-rules-and-best-practices"
 lang: "gu"
-tags: ["Banking", "Guide"]
+tags: ["Banking & RBI", "Cheque Guide"]
 image: ""
 ---
 
