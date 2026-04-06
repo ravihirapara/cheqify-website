@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "~/i18n/navigation";
-import { Printer, AlertTriangle, ArrowLeftRight } from "lucide-react";
+import { Printer, AlertTriangle, ArrowLeftRight, Shield, Calendar, ScanLine } from "lucide-react";
 import type { BlogPostMeta } from "~/lib/blog";
 
 interface BlogCardProps {
@@ -14,12 +14,18 @@ const SLUG_ICONS: Record<string, typeof Printer> = {
   "how-to-print-cheque-at-home": Printer,
   "cheque-bounce-reasons-and-solutions": AlertTriangle,
   "cheqify-vs-manual-cheque-writing": ArrowLeftRight,
+  "how-to-avoid-cheque-fraud-in-india": Shield,
+  "post-dated-cheques-rules-and-best-practices": Calendar,
+  "what-is-micr-code-on-cheque": ScanLine,
 };
 
 const SLUG_COLORS: Record<string, string> = {
   "how-to-print-cheque-at-home": "from-primary/20 to-primary/5",
   "cheque-bounce-reasons-and-solutions": "from-red-400/20 to-orange-400/5",
   "cheqify-vs-manual-cheque-writing": "from-blue-400/20 to-primary/5",
+  "how-to-avoid-cheque-fraud-in-india": "from-red-500/20 to-red-400/5",
+  "post-dated-cheques-rules-and-best-practices": "from-amber-400/20 to-yellow-400/5",
+  "what-is-micr-code-on-cheque": "from-blue-500/20 to-blue-400/5",
 };
 
 function BlogImage({ slug, className }: { slug: string; className?: string }) {
