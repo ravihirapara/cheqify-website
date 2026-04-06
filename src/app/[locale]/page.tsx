@@ -25,9 +25,31 @@ export async function generateMetadata({
   });
 }
 
+const JSONLD_ORGANIZATION = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Cheqify.app",
+  url: "https://cheqify.app",
+  description:
+    "Cheque printing and lifecycle management platform for Indian businesses.",
+};
+
+const JSONLD_WEBSITE = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Cheqify.app",
+  url: "https://cheqify.app",
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([JSONLD_ORGANIZATION, JSONLD_WEBSITE]),
+        }}
+      />
       <Hero />
       <TrustBar />
       <BankLogos />

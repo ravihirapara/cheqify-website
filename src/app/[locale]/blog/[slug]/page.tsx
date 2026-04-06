@@ -76,8 +76,30 @@ export default async function BlogPostPage({
     day: "numeric",
   });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.meta.title,
+    description: post.meta.description,
+    datePublished: post.meta.date,
+    author: {
+      "@type": "Person",
+      name: post.meta.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Cheqify.app",
+      url: "https://cheqify.app",
+    },
+    mainEntityOfPage: `https://cheqify.app/${locale}/blog/${slug}`,
+  };
+
   return (
     <section className="px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-3xl">
         {/* Back to blog */}
         <Link
