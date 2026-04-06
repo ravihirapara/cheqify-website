@@ -62,9 +62,6 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
                 {tag}
               </span>
             ))}
-            <span className="text-xs font-medium text-muted-foreground">
-              5 {t("minRead")}
-            </span>
           </div>
           <Link href={`/blog/${post.slug}`}>
             <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight text-foreground transition-colors group-hover:text-primary">
