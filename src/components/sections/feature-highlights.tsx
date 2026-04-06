@@ -1,12 +1,22 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ShieldCheck, Wallet, BellRing } from "lucide-react";
+import {
+  ShieldCheck,
+  Wallet,
+  BellRing,
+  GraduationCap,
+  Monitor,
+  Lock,
+} from "lucide-react";
 
 const CARDS = [
   { key: "card1", icon: ShieldCheck },
   { key: "card2", icon: Wallet },
   { key: "card3", icon: BellRing },
+  { key: "card4", icon: GraduationCap },
+  { key: "card5", icon: Monitor },
+  { key: "card6", icon: Lock },
 ] as const;
 
 export function FeatureHighlights() {
@@ -26,7 +36,7 @@ export function FeatureHighlights() {
         </div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:grid-rows-2">
           {CARDS.map((card) => {
             const Icon = card.icon;
             return (

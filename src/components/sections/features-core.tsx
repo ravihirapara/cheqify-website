@@ -7,6 +7,12 @@ import { CheckCircle } from "lucide-react";
 
 const TABS = ["printing", "tracking", "dashboard"] as const;
 
+const FEATURE_COUNTS: Record<string, number> = {
+  printing: 11,
+  tracking: 10,
+  dashboard: 10,
+};
+
 type TabKey = (typeof TABS)[number];
 
 export function FeaturesCore() {
@@ -57,7 +63,7 @@ export function FeaturesCore() {
                 </p>
               </div>
               <ul className="space-y-4">
-                {[1, 2, 3].map((i) => (
+                {Array.from({ length: FEATURE_COUNTS[activeTab] }, (_, i) => i + 1).map((i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-primary" />
                     <div>
