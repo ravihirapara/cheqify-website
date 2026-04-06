@@ -5,7 +5,7 @@ date: "2026-04-01"
 author: "Cheqify Team"
 slug: "how-to-avoid-cheque-fraud-in-india"
 lang: "en"
-tags: ["cheque fraud", "security", "guide"]
+tags: ["Security", "Guide"]
 image: ""
 ---
 

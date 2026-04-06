@@ -136,7 +136,7 @@ Cheqify.app provides error-free cheque printing in under 2 minutes, complete che
 - Homepage — hero section, value proposition, CTA, demo video, screenshots, trust builders
 - Features — detailed breakdown of all three pillars (printing, lifecycle tracking, owner dashboard)
 - Pricing — freemium model, plan comparison
-- Blog — SEO-driven content targeting cheque-related search queries
+- Blog — SEO-driven content targeting cheque-related search queries, with tag-based filtering (Guide, Banking, Security, Comparison, Productivity)
 - Contact — contact form, support information
 - About Us — company story, mission, team
 - Privacy Policy — legal compliance

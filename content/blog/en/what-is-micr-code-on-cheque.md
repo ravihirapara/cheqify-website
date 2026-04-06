@@ -5,7 +5,7 @@ date: "2026-03-28"
 author: "Cheqify Team"
 slug: "what-is-micr-code-on-cheque"
 lang: "en"
-tags: ["MICR code", "banking", "education"]
+tags: ["Banking", "Guide"]
 image: ""
 ---
 

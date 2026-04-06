@@ -5,7 +5,7 @@ date: "2026-04-05"
 author: "Cheqify Team"
 slug: "cheqify-vs-manual-cheque-writing"
 lang: "en"
-tags: ["cheque printing software", "comparison", "productivity"]
+tags: ["Comparison", "Productivity"]
 image: ""
 ---
 

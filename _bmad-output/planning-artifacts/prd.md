@@ -346,6 +346,7 @@ Statically generated multi-page application (MPA) built with Next.js App Router.
 - **FR26:** Visitor can discover blog content in all 3 supported languages
 - **FR27:** System renders blog articles from static markdown files (MVP) with Sanity.io migration path
 - **FR28:** Visitor can see in-article CTAs to sign up for Cheqify
+- **FR53:** Visitor can filter blog articles by tag categories (Guide, Banking, Security, Comparison, Productivity)
 
 ### Contact Page
 

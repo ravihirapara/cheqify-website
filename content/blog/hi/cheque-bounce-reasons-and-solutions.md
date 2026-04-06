@@ -5,7 +5,7 @@ date: "2026-04-04"
 author: "Cheqify Team"
 slug: "cheque-bounce-reasons-and-solutions"
 lang: "hi"
-tags: ["चेक बाउंस", "बैंकिंग", "गाइड"]
+tags: ["Guide", "Banking"]
 image: ""
 ---
 

@@ -5,7 +5,7 @@ date: "2026-04-05"
 author: "Cheqify Team"
 slug: "cheqify-vs-manual-cheque-writing"
 lang: "gu"
-tags: ["ચેક છાપવાનું સૉફ્ટવેર", "સરખામણી", "ઉત્પાદકતા"]
+tags: ["Comparison", "Productivity"]
 image: ""
 ---
 
