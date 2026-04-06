@@ -87,7 +87,19 @@
       "Bash(npx create-next-app@latest cheqify-website --typescript --tailwind --eslint --app --src-dir --import-alias \"~/*\" --use-npm --no-turbopack --yes)",
       "Bash(npx bmad-cli:*)",
       "Bash(cp:*)",
-      "Bash(npx shadcn@latest init -d -y)"
+      "Bash(npx shadcn@latest init -d -y)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(rm -f public/next.svg public/vercel.svg public/file.svg public/globe.svg public/window.svg)",
+      "Bash(mkdir -p src/components/layout src/components/sections src/data src/i18n public/images)",
+      "Bash(npm run:*)",
+      "Bash(echo \"EXIT_CODE: $?\")",
+      "Bash(git reset:*)",
+      "Bash(ls:*)",
+      "Bash(git rm:*)",
+      "Bash(grep \"^date:\" content/blog/en/*.md)",
+      "Bash(sort -t'\"' -k2 -r)",
+      "Bash(grep:*)"
     ]
   }
 }

@@ -64,9 +64,9 @@ development_status:
   epic-4-retrospective: optional
 
   # Epic 5: Pricing Page
-  epic-5: in-progress
-  5-1-pricing-plans-display: in-progress
-  5-2-feature-comparison-table: in-progress
+  epic-5: done
+  5-1-pricing-plans-display: done
+  5-2-feature-comparison-table: done
   epic-5-retrospective: optional
 
   # Epic 6: Blog
@@ -77,9 +77,9 @@ development_status:
   epic-6-retrospective: optional
 
   # Epic 7: Contact Page & Live Chat
-  epic-7: in-progress
-  7-1-contact-page-with-formspree-form: in-progress
-  7-2-tawk-to-live-chat-integration: in-progress
+  epic-7: done
+  7-1-contact-page-with-formspree-form: done
+  7-2-tawk-to-live-chat-integration: done
   epic-7-retrospective: optional
 
   # Epic 8: About Us & Privacy Policy Pages
@@ -89,9 +89,9 @@ development_status:
   epic-8-retrospective: optional
 
   # Epic 9: Cookie Consent & Analytics
-  epic-9: backlog
-  9-1-cookie-consent-banner: backlog
-  9-2-google-analytics-4-integration: backlog
+  epic-9: done
+  9-1-cookie-consent-banner: done
+  9-2-google-analytics-4-integration: done
   epic-9-retrospective: optional
 
   # Epic 10: SEO & Multi-Language Content
