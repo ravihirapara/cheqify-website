@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Headset, Briefcase, MapPin, Clock, Mail } from "lucide-react";
+import { Headset, Briefcase, MapPin, Phone, Clock, Mail } from "lucide-react";
 
 export function ContactInfo() {
   const t = useTranslations("contact.info");
@@ -52,6 +52,10 @@ export function ContactInfo() {
             <div className="flex items-start gap-4">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
               <p className="text-sm">{t("officeAddress")}</p>
+            </div>
+            <div className="flex items-start gap-4">
+              <Phone className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <a href={`tel:${t("officePhone")}`} className="text-sm hover:text-primary">{t("officePhone")}</a>
             </div>
             <div className="flex items-start gap-4">
               <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
