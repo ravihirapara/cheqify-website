@@ -1,9 +1,16 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-const BANKS = [
-  { name: "SBI", color: "#1a4b8c" },
+interface BankEntry {
+  name: string;
+  logo?: string;
+  color: string;
+}
+
+const BANKS: BankEntry[] = [
+  { name: "SBI", logo: "/images/banks/sbi.png", color: "#1a4b8c" },
   { name: "HDFC", color: "#004b87" },
   { name: "ICICI", color: "#f58220" },
   { name: "Axis", color: "#97144d" },
@@ -14,15 +21,28 @@ const BANKS = [
   { name: "IndusInd", color: "#1a3f6f" },
 ];
 
-function BankLogo({ name, color }: { name: string; color: string }) {
+function BankLogo({ bank }: { bank: BankEntry }) {
+  if (bank.logo) {
+    return (
+      <Image
+        src={bank.logo}
+        alt={bank.name}
+        width={140}
+        height={40}
+        unoptimized
+        className="h-10 w-auto object-contain"
+      />
+    );
+  }
+
   return (
     <svg
       viewBox="0 0 140 40"
       className="h-10 w-auto"
       role="img"
-      aria-label={name}
+      aria-label={bank.name}
     >
-      <circle cx="16" cy="20" r="10" fill={color} />
+      <circle cx="16" cy="20" r="10" fill={bank.color} />
       <text
         x="82"
         y="26"
@@ -30,9 +50,9 @@ function BankLogo({ name, color }: { name: string; color: string }) {
         fontFamily="Arial, Helvetica, sans-serif"
         fontSize="16"
         fontWeight="bold"
-        fill={color}
+        fill={bank.color}
       >
-        {name}
+        {bank.name}
       </text>
     </svg>
   );
@@ -68,7 +88,7 @@ export function BankLogos() {
                 key={`${bank.name}-${idx}`}
                 className="opacity-60 transition-opacity hover:opacity-100"
               >
-                <BankLogo name={bank.name} color={bank.color} />
+                <BankLogo bank={bank} />
               </div>
             ))}
             <span className="text-lg font-bold text-primary">
