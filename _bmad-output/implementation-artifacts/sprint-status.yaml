@@ -49,13 +49,13 @@ development_status:
   epic-2-retrospective: optional
 
   # Epic 3: Homepage
-  epic-3: in-progress
+  epic-3: done
   3-1-hero-section: done
   3-2-trust-bar-and-bank-logos: done
   3-3-how-it-works-section: done
   3-4-features-tabs-section: done
   3-5-social-proof-testimonials-and-final-cta: done
-  3-6-demo-video-embed: backlog
+  3-6-demo-video-embed: done
   epic-3-retrospective: optional
 
   # Epic 4: Features Page

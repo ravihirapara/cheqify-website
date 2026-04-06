@@ -102,6 +102,12 @@
       "heading": "Ready to Print Error-Free Cheques?",
       "subheading": "Join thousands of businesses that trust Cheqify. Start free — no credit card required.",
       "learnMore": "Learn More"
+    },
+    "demoVideo": {
+      "heading": "See Cheqify in Action",
+      "subheading": "Watch how easy it is to print error-free cheques",
+      "playButton": "Play Demo Video",
+      "placeholder": "Demo video coming soon"
     }
   }
 }
