@@ -80,20 +80,40 @@ export function FeaturesTabs() {
                   return (
                     <div key={feature.key} className="space-y-4">
                       {/* Mock header */}
-                      <div className="flex items-center gap-3 border-b border-border pb-3">
+                      <div className="flex items-center gap-3 border-b border-border pb-4">
                         <Icon className="h-5 w-5 text-primary" />
                         <div className="h-4 w-32 rounded bg-muted" />
-                        <div className="ml-auto h-7 w-20 rounded-lg bg-primary/10" />
+                        <div className="ml-auto h-8 w-24 rounded-lg bg-primary/10" />
+                      </div>
+                      {/* Stat cards */}
+                      <div className="grid grid-cols-3 gap-3">
+                        <div className="rounded-lg bg-primary/10 p-4">
+                          <div className="h-2 w-2/3 rounded bg-primary/30" />
+                          <div className="mt-2 h-5 w-3/4 rounded bg-primary/20" />
+                        </div>
+                        <div className="rounded-lg bg-accent p-4">
+                          <div className="h-2 w-2/3 rounded bg-primary/30" />
+                          <div className="mt-2 h-5 w-3/4 rounded bg-primary/20" />
+                        </div>
+                        <div className="rounded-lg bg-muted p-4">
+                          <div className="h-2 w-2/3 rounded bg-muted-foreground/20" />
+                          <div className="mt-2 h-5 w-3/4 rounded bg-muted-foreground/10" />
+                        </div>
                       </div>
                       {/* Mock content rows */}
-                      <div className="space-y-3">
+                      <div className="space-y-3 rounded-lg border border-border p-4">
+                        <div className="mb-3 flex items-center gap-3 border-b border-border pb-3">
+                          <div className="h-3 w-20 rounded bg-muted-foreground/20" />
+                          <div className="h-3 w-24 rounded bg-muted-foreground/20" />
+                          <div className="ml-auto h-3 w-16 rounded bg-muted-foreground/20" />
+                        </div>
                         <div className="flex items-center gap-3">
                           <div className="h-8 w-8 rounded-lg bg-primary/10" />
                           <div className="flex-1 space-y-1">
                             <div className="h-3 w-3/4 rounded bg-muted" />
                             <div className="h-2 w-1/2 rounded bg-muted/60" />
                           </div>
-                          <div className="h-5 w-16 rounded-full bg-green-100 dark:bg-green-900/30" />
+                          <div className="h-6 w-20 rounded-full bg-green-100 dark:bg-green-900/30" />
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="h-8 w-8 rounded-lg bg-accent" />
@@ -101,7 +121,7 @@ export function FeaturesTabs() {
                             <div className="h-3 w-2/3 rounded bg-muted" />
                             <div className="h-2 w-1/3 rounded bg-muted/60" />
                           </div>
-                          <div className="h-5 w-16 rounded-full bg-yellow-100 dark:bg-yellow-900/30" />
+                          <div className="h-6 w-20 rounded-full bg-yellow-100 dark:bg-yellow-900/30" />
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="h-8 w-8 rounded-lg bg-primary/10" />
@@ -109,18 +129,26 @@ export function FeaturesTabs() {
                             <div className="h-3 w-4/5 rounded bg-muted" />
                             <div className="h-2 w-2/5 rounded bg-muted/60" />
                           </div>
-                          <div className="h-5 w-16 rounded-full bg-primary/10" />
+                          <div className="h-6 w-20 rounded-full bg-green-100 dark:bg-green-900/30" />
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="h-8 w-8 rounded-lg bg-muted" />
+                          <div className="flex-1 space-y-1">
+                            <div className="h-3 w-3/5 rounded bg-muted" />
+                            <div className="h-2 w-1/4 rounded bg-muted/60" />
+                          </div>
+                          <div className="h-6 w-20 rounded-full bg-primary/10" />
                         </div>
                       </div>
                       {/* Mock chart area */}
-                      <div className="mt-2 flex items-end gap-1 border-t border-border pt-4">
-                        <div className="h-8 flex-1 rounded-t bg-primary/20" />
-                        <div className="h-12 flex-1 rounded-t bg-primary/30" />
-                        <div className="h-16 flex-1 rounded-t bg-primary/40" />
-                        <div className="h-10 flex-1 rounded-t bg-primary/25" />
-                        <div className="h-20 flex-1 rounded-t bg-primary" />
-                        <div className="h-14 flex-1 rounded-t bg-primary/35" />
-                        <div className="h-6 flex-1 rounded-t bg-primary/15" />
+                      <div className="flex items-end gap-1 border-t border-border pt-4">
+                        <div className="h-10 flex-1 rounded-t bg-primary/20" />
+                        <div className="h-16 flex-1 rounded-t bg-primary/30" />
+                        <div className="h-24 flex-1 rounded-t bg-primary/40" />
+                        <div className="h-14 flex-1 rounded-t bg-primary/25" />
+                        <div className="h-28 flex-1 rounded-t bg-primary" />
+                        <div className="h-18 flex-1 rounded-t bg-primary/35" />
+                        <div className="h-8 flex-1 rounded-t bg-primary/15" />
                       </div>
                     </div>
                   );
