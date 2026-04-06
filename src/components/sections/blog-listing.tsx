@@ -33,7 +33,7 @@ export function BlogListing({ posts }: BlogListingProps) {
 
   return (
     <>
-      <nav className="mb-12 flex gap-2 overflow-x-auto" aria-label="Filter by tag">
+      <nav className="mb-12 flex flex-wrap justify-center gap-2" aria-label="Filter by tag">
         <button
           type="button"
           onClick={() => setActiveTag(null)}
