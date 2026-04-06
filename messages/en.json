@@ -77,6 +77,31 @@
       "dashboard": "Owner Dashboard",
       "dashboardDescription": "Get a bird's-eye view of all cheque activity across your business. Monitor team performance, track outstanding payments, and make data-driven decisions.",
       "dashboardFeatures": "Business overview,Team activity monitoring,Outstanding payment tracking,Analytics and insights,Multi-project support"
+    },
+    "stats": {
+      "chequesPrinted": "50,000+",
+      "chequesPrintedLabel": "Cheques Printed",
+      "activeUsers": "2,000+",
+      "activeUsersLabel": "Active Users",
+      "banksSupported": "300+",
+      "banksSupportedLabel": "Banks Supported"
+    },
+    "testimonials": {
+      "heading": "What Our Users Say",
+      "t1Quote": "Cheqify eliminated cheque errors completely. We used to have 2-3 bounced cheques a month due to handwriting mistakes. Now zero.",
+      "t1Name": "Ramesh Patel",
+      "t1Role": "Trading Business Owner, Ahmedabad",
+      "t2Quote": "The lifecycle tracking saved us hours every week. I no longer need to call vendors to ask if they deposited the cheque.",
+      "t2Name": "Priya Sharma",
+      "t2Role": "Accounts Manager, Surat",
+      "t3Quote": "I only print 2-3 cheques a year but Cheqify makes it effortless. The free plan is perfect for personal use.",
+      "t3Name": "Amit Desai",
+      "t3Role": "Individual User, Mumbai"
+    },
+    "finalCta": {
+      "heading": "Ready to Print Error-Free Cheques?",
+      "subheading": "Join thousands of businesses that trust Cheqify. Start free — no credit card required.",
+      "learnMore": "Learn More"
     }
   }
 }
