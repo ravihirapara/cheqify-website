@@ -23,7 +23,7 @@ export function FeatureHighlights() {
   const t = useTranslations("features.highlights");
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="bg-card py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-16 text-center">
