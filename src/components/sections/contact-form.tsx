@@ -7,7 +7,7 @@ import { cn } from "~/lib/utils";
 
 const SUBJECT_KEYS = ["general", "support", "enterprise", "feedback"] as const;
 
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "xpznqkdl";
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "xnjolgzl";
 
 export function ContactForm() {
   const t = useTranslations("contact.form");
