@@ -109,26 +109,6 @@ export default async function BlogPostPage({
           />
         </article>
 
-        {/* In-article CTA */}
-        <div className="mt-12 overflow-hidden rounded-[2rem] bg-primary px-6 py-12 text-center">
-          <div className="relative mx-auto max-w-xl">
-            <h3 className="text-2xl font-bold tracking-tight text-primary-foreground">
-              {t("cta.heading")}
-            </h3>
-            <p className="mt-3 text-primary-foreground/70">
-              {t("cta.description")}
-            </p>
-            <a
-              href="https://app.cheqify.app/register"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-xl bg-white px-8 py-3 font-bold text-primary hover:shadow-lg"
-            >
-              {tCta("startFree")}
-            </a>
-          </div>
-        </div>
-
         {/* Prev / Next Navigation */}
         <nav className="mt-12 grid grid-cols-2 gap-4">
           {prevPost ? (
