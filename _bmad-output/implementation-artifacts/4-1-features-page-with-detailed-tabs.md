@@ -81,9 +81,12 @@ Claude Opus 4.6 (1M context)
 
 ### Completion Notes List
 
-- ✅ FeaturesHero: badge, split headline, CTAs, elevated mock dashboard placeholder
-- ✅ FeaturesCore: horizontal tabs, 3 pillars with feature lists and screenshot placeholders
-- ✅ FeatureHighlights: 3-card grid with icons, hover shadow, scale animation
+- ✅ FeaturesHero: badge, split headline, unified CTAs (same as homepage), elevated mock dashboard
+- ✅ FeaturesCore: 10 consolidated features in alternating left-right layout (competitor-style)
+  - Merged related features: Smart Auto-Fill, MICR+Error Prevention, Batch+Import, etc.
+  - Removed Multi-Currency (not a product feature)
+  - Added Import Cheques and Pre-Built Bank Layouts
+- ✅ FeatureHighlights: 6-card grid (added Zero Training, Any Device, Bank-Grade Security)
 - ✅ Features page with generateMetadata, composed from 4 sections
 - ✅ All translations in EN/HI/GU
 - ✅ Build: zero errors | Lint: zero errors

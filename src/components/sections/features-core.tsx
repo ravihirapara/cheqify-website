@@ -1,70 +1,112 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { CheckCircle, Printer, BarChart3, LayoutDashboard } from "lucide-react";
+import {
+  Building2,
+  Wand2,
+  ShieldCheck,
+  Layers,
+  GitGraph,
+  Bell,
+  BarChart3,
+  Briefcase,
+  Users,
+  FileSpreadsheet,
+} from "lucide-react";
 import { cn } from "~/lib/utils";
 
-const PILLARS = [
-  { key: "printing", icon: Printer, count: 11 },
-  { key: "tracking", icon: BarChart3, count: 10 },
-  { key: "dashboard", icon: LayoutDashboard, count: 10 },
+const FEATURES = [
+  { index: 1, icon: Building2 },
+  { index: 2, icon: Wand2 },
+  { index: 3, icon: ShieldCheck },
+  { index: 4, icon: Layers },
+  { index: 5, icon: GitGraph },
+  { index: 6, icon: Bell },
+  { index: 7, icon: BarChart3 },
+  { index: 8, icon: Briefcase },
+  { index: 9, icon: Users },
+  { index: 10, icon: FileSpreadsheet },
 ] as const;
 
 export function FeaturesCore() {
   const t = useTranslations("features.core");
 
   return (
-    <>
-      {PILLARS.map((pillar, idx) => {
-        const Icon = pillar.icon;
-        const isAlt = idx % 2 === 1;
+    <section className="py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="mx-auto mb-16 max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            {t("heading")}
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+            {t("subheading")}
+          </p>
+        </div>
 
-        return (
-          <section
-            key={pillar.key}
-            className={cn("py-16 md:py-24", isAlt ? "bg-card" : "")}
-          >
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              {/* Pillar Header */}
-              <div className="mb-12 max-w-3xl">
-                <div className="mb-4 flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                    <Icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                    {t(`${pillar.key}Title`)}
-                  </h2>
-                </div>
-                <p className="text-lg leading-relaxed text-muted-foreground">
-                  {t(`${pillar.key}Description`)}
-                </p>
-              </div>
+        {/* Alternating Feature Rows */}
+        <div className="space-y-0">
+          {FEATURES.map((feature, idx) => {
+            const Icon = feature.icon;
+            const isOdd = feature.index % 2 === 1;
+            const isLast = idx === FEATURES.length - 1;
 
-              {/* Feature Cards Grid */}
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {Array.from({ length: pillar.count }, (_, i) => i + 1).map(
-                  (i) => (
-                    <div
-                      key={i}
-                      className="flex items-start gap-3 rounded-xl border border-border/50 bg-background p-5 transition-shadow hover:shadow-md"
-                    >
-                      <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <div>
-                        <h3 className="font-semibold text-foreground">
-                          {t(`${pillar.key}Feature${i}Title`)}
-                        </h3>
-                        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                          {t(`${pillar.key}Feature${i}Description`)}
-                        </p>
-                      </div>
-                    </div>
-                  )
+            return (
+              <div
+                key={feature.index}
+                className={cn(
+                  "py-12",
+                  !isLast && "border-b border-border/30"
                 )}
+              >
+                <div
+                  className={cn(
+                    "lg:grid lg:grid-cols-2 lg:gap-16 items-center",
+                    !isOdd && "lg:direction-rtl"
+                  )}
+                >
+                  {/* Screenshot Placeholder - first on odd, second on even (desktop) */}
+                  <div
+                    className={cn(
+                      "order-2 mt-8 lg:mt-0",
+                      isOdd ? "lg:order-1" : "lg:order-2"
+                    )}
+                  >
+                    <div className="overflow-hidden rounded-xl border border-border/50 bg-card p-6 shadow-sm">
+                      <div className="flex aspect-video items-center justify-center rounded-lg bg-muted/50">
+                        <Icon className="h-12 w-12 text-muted-foreground/40" />
+                      </div>
+                      <p className="mt-3 text-center text-xs text-muted-foreground/60">
+                        {t(`feature${feature.index}ScreenshotAlt`)}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Text Content - always on top on mobile */}
+                  <div
+                    className={cn(
+                      "order-1",
+                      isOdd ? "lg:order-2" : "lg:order-1"
+                    )}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                        <Icon className="h-5 w-5 text-primary" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-foreground">
+                        {t(`feature${feature.index}Title`)}
+                      </h3>
+                    </div>
+                    <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                      {t(`feature${feature.index}Description`)}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </section>
-        );
-      })}
-    </>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
