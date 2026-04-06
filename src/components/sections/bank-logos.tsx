@@ -51,7 +51,8 @@ export function BankLogos() {
                   alt={bank.name}
                   width={120}
                   height={40}
-                  className="h-8 w-auto dark:invert"
+                  unoptimized
+                  className="h-10 w-auto dark:invert"
                 />
               </div>
             ))}
