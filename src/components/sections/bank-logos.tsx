@@ -17,24 +17,41 @@ const BANK_NAMES = [
 export function BankLogos() {
   const t = useTranslations("home.bankLogos");
 
+  // Duplicate the list for seamless infinite scroll
+  const allBanks = [...BANK_NAMES, ...BANK_NAMES];
+
   return (
     <section className="py-12">
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+          animation: marquee 20s linear infinite;
+        }
+        .marquee-track:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="mb-6 text-center text-sm font-medium text-muted-foreground">
+        <p className="mb-10 text-center text-xs font-bold uppercase tracking-widest text-muted-foreground">
           {t("heading")}
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          {BANK_NAMES.map((bank) => (
-            <span
-              key={bank}
-              className="rounded-lg border border-border bg-card px-4 py-2 text-sm font-medium text-muted-foreground"
-            >
-              {bank}
+        <div className="overflow-hidden">
+          <div className="marquee-track flex items-center gap-8 whitespace-nowrap opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0 md:gap-16">
+            {allBanks.map((bank, idx) => (
+              <span
+                key={`${bank}-${idx}`}
+                className="text-lg font-bold text-secondary"
+              >
+                {bank}
+              </span>
+            ))}
+            <span className="text-lg font-bold text-primary">
+              {t("moreBanks")}
             </span>
-          ))}
-          <span className="rounded-lg border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-medium text-primary">
-            {t("moreBanks")}
-          </span>
+          </div>
         </div>
       </div>
     </section>

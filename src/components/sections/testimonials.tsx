@@ -1,9 +1,19 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Quote } from "lucide-react";
+import { Star } from "lucide-react";
 
 const TESTIMONIALS = ["t1", "t2", "t3"] as const;
+
+function StarRating() {
+  return (
+    <div className="flex gap-1">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+      ))}
+    </div>
+  );
+}
 
 export function Testimonials() {
   const t = useTranslations("home.testimonials");
@@ -18,19 +28,24 @@ export function Testimonials() {
           {TESTIMONIALS.map((key) => (
             <div
               key={key}
-              className="flex flex-col rounded-xl border border-border bg-card p-6"
+              className="flex flex-col rounded-xl bg-card p-8 shadow-sm transition-shadow hover:shadow-md"
             >
-              <Quote className="h-8 w-8 text-primary/30" />
-              <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+              <StarRating />
+              <blockquote className="mt-4 flex-1 italic leading-relaxed text-muted-foreground">
                 {t(`${key}Quote`)}
               </blockquote>
-              <div className="mt-6 border-t border-border pt-4">
-                <p className="text-sm font-semibold text-foreground">
-                  {t(`${key}Name`)}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {t(`${key}Role`)}
-                </p>
+              <div className="mt-6 flex items-center gap-3 border-t border-border pt-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
+                  {t(`${key}Name`).charAt(0)}
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-foreground">
+                    {t(`${key}Name`)}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    {t(`${key}Role`)}
+                  </p>
+                </div>
               </div>
             </div>
           ))}

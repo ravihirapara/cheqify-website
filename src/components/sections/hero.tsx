@@ -14,8 +14,13 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
           {/* Text Content */}
           <div className="text-center lg:text-left">
+            <div className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold tracking-wide text-primary">
+              {t("hero.badge")}
+            </div>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
-              {t("hero.headline")}
+              {t("hero.headlinePart1")}
+              <span className="text-primary">{t("hero.headlineHighlight")}</span>
+              {t("hero.headlinePart2")}
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               {t("hero.subheadline")}
