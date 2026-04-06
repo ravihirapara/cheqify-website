@@ -56,10 +56,12 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
           <BlogImage slug={post.slug} className="h-full min-h-[250px] w-full" />
         </div>
         <div className="flex w-full flex-col justify-center p-8 md:w-2/5 md:p-12">
-          <div className="mb-6 flex items-center gap-3">
-            <span className="rounded-lg bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
-              {t("featured")}
-            </span>
+          <div className="mb-6 flex flex-wrap items-center gap-2">
+            {post.tags.map((tag) => (
+              <span key={tag} className="rounded-md bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
+                {tag}
+              </span>
+            ))}
             <span className="text-xs font-medium text-muted-foreground">
               5 {t("minRead")}
             </span>
@@ -88,12 +90,12 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
       <div className="mb-6 aspect-[16/10] overflow-hidden rounded-2xl">
         <BlogImage slug={post.slug} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
       </div>
-      <div className="mb-3 flex items-center gap-3">
-        {post.tags[0] && (
-          <span className="text-xs font-bold uppercase tracking-wider text-primary">
-            {post.tags[0]}
+      <div className="mb-3 flex flex-wrap items-center gap-2">
+        {post.tags.map((tag) => (
+          <span key={tag} className="rounded-md bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
+            {tag}
           </span>
-        )}
+        ))}
         <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />
         <span className="text-xs text-muted-foreground">{formattedDate}</span>
       </div>
