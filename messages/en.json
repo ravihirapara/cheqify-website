@@ -5,8 +5,8 @@
       "features": "Features",
       "pricing": "Pricing",
       "blog": "Blog",
-      "contact": "Contact",
-      "about": "About"
+      "contact": "Contact Us",
+      "about": "About Us"
     },
     "cta": {
       "startFree": "Start Free",
@@ -255,6 +255,42 @@
       "card3Description": "Premium features may come later, but the core product you see today will always remain free.",
       "card4Title": "Compare with ChequePot",
       "card4Description": "Other tools like ChequePot charge for basic cheque printing. Cheqify gives you everything \u2014 for free."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Us | Cheqify.app",
+      "description": "Learn about Cheqify's mission to simplify cheque management for Indian businesses. Meet the team behind the product."
+    },
+    "hero": {
+      "badge": "Our Mission",
+      "headline": "Simplifying cheque management for every Indian business.",
+      "subheadline": "We believe every business deserves error-free cheque printing — without paying for it. Cheqify was built to make that a reality."
+    },
+    "story": {
+      "heading": "Why we built Cheqify.",
+      "paragraph1": "For decades, Indian businesses have relied on handwritten cheques — a process riddled with errors, bounces, and wasted time. Small business owners, accountants, and finance teams deserved better.",
+      "paragraph2": "We started Cheqify with a simple observation: printing a cheque should be as easy as printing a letter. No expensive software, no complex setup, no recurring fees. Just pick your bank, enter the details, and print.",
+      "quote": "Every bounced cheque costs time, money, and trust. We built Cheqify so that never has to happen again.",
+      "imageAlt": "Cheqify team workspace"
+    },
+    "values": {
+      "heading": "What We Stand For",
+      "subheading": "The principles that guide everything we build.",
+      "value1Title": "Simplicity First",
+      "value1Description": "We strip away complexity so you can focus on what matters. No training manuals, no onboarding calls — just sign up and start printing.",
+      "value1ImageAlt": "Simple and clean interface",
+      "value2Title": "Absolute Accuracy",
+      "value2Description": "Every cheque printed through Cheqify is validated for MICR codes, amounts, and formatting. Zero errors, zero bounces.",
+      "value3Title": "Free for Everyone",
+      "value3Description": "Cheque management shouldn't be a luxury. Our core product is free forever — no hidden costs, no surprise bills.",
+      "value4Title": "Built for India",
+      "value4Description": "300+ bank formats, multi-language support, and workflows designed for how Indian businesses actually operate."
+    },
+    "cta": {
+      "heading": "Ready to simplify your cheque management?",
+      "subheading": "Join thousands of Indian businesses that trust Cheqify. Start free — no credit card required.",
+      "scheduleDemo": "Schedule Demo"
     }
   },
   "contact": {
