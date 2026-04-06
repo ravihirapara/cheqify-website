@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "~/i18n/navigation";
+import { Globe, Mail } from "lucide-react";
 
 const FOOTER_LINKS = [
   {
@@ -37,33 +38,49 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-card">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
-          {/* Logo + Tagline */}
-          <div className="sm:col-span-2 lg:col-span-1">
+    <footer className="border-t border-border/30 py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
+          {/* Logo + Description + Social */}
+          <div className="lg:col-span-2">
             <Link href="/" className="inline-block">
-              <span className="text-xl font-bold text-foreground">
+              <span className="text-2xl font-bold tracking-tight text-foreground">
                 Cheqify<span className="text-primary">.app</span>
               </span>
             </Link>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {t("footer.tagline")}
+            <p className="mt-6 max-w-xs leading-relaxed text-muted-foreground">
+              {t("footer.description")}
             </p>
+            <div className="mt-8 flex gap-5">
+              <a
+                href="https://cheqify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground transition-all hover:bg-primary hover:text-primary-foreground"
+              >
+                <Globe className="h-5 w-5" />
+              </a>
+              <a
+                href="mailto:hello@cheqify.app"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground transition-all hover:bg-primary hover:text-primary-foreground"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* Link Columns */}
           {FOOTER_LINKS.map((column) => (
             <div key={column.titleKey}>
-              <h3 className="text-sm font-semibold text-foreground">
+              <h3 className="mb-6 text-xs font-bold uppercase tracking-widest text-foreground">
                 {t(`footer.${column.titleKey}`)}
               </h3>
-              <ul className="mt-3 space-y-2">
+              <ul className="space-y-4">
                 {column.links.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                     >
                       {t(link.labelKey)}
                     </Link>
@@ -75,8 +92,8 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 border-t border-border pt-8">
-          <p className="text-center text-sm text-muted-foreground">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-border/30 pt-8 md:flex-row">
+          <p className="text-sm text-muted-foreground">
             {t("footer.copyright", { year })}
           </p>
         </div>

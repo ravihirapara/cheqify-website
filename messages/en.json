@@ -16,6 +16,7 @@
     "footer": {
       "copyright": "© {year} Cheqify.app. All rights reserved.",
       "tagline": "Print Error-Free Cheques in Under 2 Minutes",
+      "description": "Simplifying cheque management for Indian businesses with error-free printing, lifecycle tracking, and real-time visibility.",
       "product": "Product",
       "resources": "Resources",
       "company": "Company",
@@ -188,6 +189,25 @@
       "card5Description": "Desktop, tablet, or phone — access Cheqify from anywhere with no software installation required.",
       "card6Title": "Bank-Grade Security",
       "card6Description": "256-bit encryption and secure data handling ensure your financial information stays protected at all times."
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog | Cheqify.app",
+      "description": "Cheque management tips, guides, and best practices for Indian businesses. Learn how to print cheques, prevent bounces, and streamline your workflow."
+    },
+    "hero": {
+      "badge": "Insights & Knowledge",
+      "heading": "Cheqify Blog",
+      "subheading": "Cheque management tips, guides, and best practices for Indian businesses."
+    },
+    "featured": "Featured",
+    "readMore": "Read More",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog",
+    "cta": {
+      "heading": "Ready to simplify your cheque management?",
+      "description": "Start printing error-free cheques in under 2 minutes. Free forever — no credit card required."
     }
   },
   "pricing": {
