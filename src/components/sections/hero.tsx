@@ -49,23 +49,67 @@ export function Hero() {
           </div>
 
           {/* Product Visual Placeholder */}
-          <div className="mt-12 lg:mt-0">
+          <div className="relative mt-12 lg:mt-0">
+            <div className="absolute -inset-4 -z-10 rounded-full bg-gradient-to-tr from-primary/10 to-transparent blur-3xl" />
             <div
-              className="mx-auto aspect-video max-w-lg overflow-hidden rounded-2xl border border-border bg-card shadow-lg lg:max-w-none"
+              className="overflow-hidden rounded-xl border border-border/10 bg-background p-2 shadow-[0_20px_40px_rgba(8,28,50,0.08)]"
               role="img"
               aria-label={t("hero.productScreenshotAlt")}
             >
-              <div className="flex h-full flex-col items-center justify-center gap-4 p-8">
-                {/* Placeholder styled as app preview */}
-                <div className="h-3 w-3/4 rounded-full bg-primary/20" />
-                <div className="h-3 w-1/2 rounded-full bg-primary/10" />
-                <div className="mt-4 grid w-full grid-cols-3 gap-3">
-                  <div className="aspect-square rounded-xl bg-primary/10" />
-                  <div className="aspect-square rounded-xl bg-primary/15" />
-                  <div className="aspect-square rounded-xl bg-primary/10" />
+              {/* Mock dashboard UI */}
+              <div className="rounded-lg bg-card p-4">
+                {/* Top bar */}
+                <div className="flex items-center gap-2 border-b border-border pb-3">
+                  <div className="h-3 w-3 rounded-full bg-red-400" />
+                  <div className="h-3 w-3 rounded-full bg-yellow-400" />
+                  <div className="h-3 w-3 rounded-full bg-green-400" />
+                  <div className="ml-4 h-4 w-48 rounded bg-muted" />
                 </div>
-                <div className="mt-2 h-3 w-2/3 rounded-full bg-muted" />
-                <div className="h-3 w-1/3 rounded-full bg-muted" />
+                {/* Sidebar + content */}
+                <div className="mt-4 flex gap-4">
+                  <div className="hidden w-32 space-y-3 sm:block">
+                    <div className="h-3 w-full rounded bg-primary/20" />
+                    <div className="h-3 w-3/4 rounded bg-muted" />
+                    <div className="h-3 w-full rounded bg-muted" />
+                    <div className="h-3 w-2/3 rounded bg-muted" />
+                  </div>
+                  <div className="flex-1 space-y-3">
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="rounded-lg bg-primary/10 p-4">
+                        <div className="h-2 w-1/2 rounded bg-primary/30" />
+                        <div className="mt-2 h-5 w-3/4 rounded bg-primary/20" />
+                      </div>
+                      <div className="rounded-lg bg-accent p-4">
+                        <div className="h-2 w-1/2 rounded bg-primary/30" />
+                        <div className="mt-2 h-5 w-3/4 rounded bg-primary/20" />
+                      </div>
+                      <div className="rounded-lg bg-muted p-4">
+                        <div className="h-2 w-1/2 rounded bg-muted-foreground/20" />
+                        <div className="mt-2 h-5 w-3/4 rounded bg-muted-foreground/10" />
+                      </div>
+                    </div>
+                    {/* Table rows */}
+                    <div className="rounded-lg border border-border p-3">
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-3">
+                          <div className="h-3 w-16 rounded bg-muted" />
+                          <div className="h-3 flex-1 rounded bg-muted" />
+                          <div className="h-5 w-16 rounded-full bg-green-100 dark:bg-green-900/30" />
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="h-3 w-16 rounded bg-muted" />
+                          <div className="h-3 flex-1 rounded bg-muted" />
+                          <div className="h-5 w-16 rounded-full bg-yellow-100 dark:bg-yellow-900/30" />
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="h-3 w-16 rounded bg-muted" />
+                          <div className="h-3 flex-1 rounded bg-muted" />
+                          <div className="h-5 w-16 rounded-full bg-primary/10" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
