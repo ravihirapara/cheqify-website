@@ -5,6 +5,7 @@ import { routing } from "~/i18n/routing";
 import { ThemeProvider } from "~/components/layout/theme-provider";
 import { Header } from "~/components/layout/header";
 import { Footer } from "~/components/layout/footer";
+import { TawkTo } from "~/components/layout/tawk-to";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -37,6 +38,7 @@ export default async function LocaleLayout({
               {children}
             </main>
             <Footer />
+            <TawkTo enabled={false} />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

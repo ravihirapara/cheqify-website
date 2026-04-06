@@ -77,9 +77,9 @@ development_status:
   epic-6-retrospective: optional
 
   # Epic 7: Contact Page & Live Chat
-  epic-7: backlog
-  7-1-contact-page-with-formspree-form: backlog
-  7-2-tawk-to-live-chat-integration: backlog
+  epic-7: in-progress
+  7-1-contact-page-with-formspree-form: in-progress
+  7-2-tawk-to-live-chat-integration: in-progress
   epic-7-retrospective: optional
 
   # Epic 8: About Us & Privacy Policy Pages
