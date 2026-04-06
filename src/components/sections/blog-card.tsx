@@ -2,11 +2,35 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "~/i18n/navigation";
+import { Printer, AlertTriangle, ArrowLeftRight } from "lucide-react";
 import type { BlogPostMeta } from "~/lib/blog";
 
 interface BlogCardProps {
   post: BlogPostMeta;
   featured?: boolean;
+}
+
+const SLUG_ICONS: Record<string, typeof Printer> = {
+  "how-to-print-cheque-at-home": Printer,
+  "cheque-bounce-reasons-and-solutions": AlertTriangle,
+  "cheqify-vs-manual-cheque-writing": ArrowLeftRight,
+};
+
+const SLUG_COLORS: Record<string, string> = {
+  "how-to-print-cheque-at-home": "from-primary/20 to-primary/5",
+  "cheque-bounce-reasons-and-solutions": "from-red-400/20 to-orange-400/5",
+  "cheqify-vs-manual-cheque-writing": "from-blue-400/20 to-primary/5",
+};
+
+function BlogImage({ slug, className }: { slug: string; className?: string }) {
+  const Icon = SLUG_ICONS[slug] ?? Printer;
+  const gradient = SLUG_COLORS[slug] ?? "from-primary/20 to-primary/5";
+
+  return (
+    <div className={`flex items-center justify-center bg-gradient-to-br ${gradient} ${className ?? ""}`}>
+      <Icon className="h-16 w-16 text-primary/40" />
+    </div>
+  );
 }
 
 export function BlogCard({ post, featured = false }: BlogCardProps) {
@@ -21,22 +45,8 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
   if (featured) {
     return (
       <article className="group relative flex min-h-[450px] flex-col overflow-hidden rounded-[2rem] bg-card transition-all hover:shadow-lg md:flex-row">
-        <div className="relative w-full overflow-hidden bg-muted md:w-3/5">
-          <div className="flex h-full min-h-[250px] items-center justify-center text-muted-foreground">
-            <svg
-              className="h-16 w-16 opacity-30"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
-          </div>
+        <div className="relative w-full overflow-hidden md:w-3/5">
+          <BlogImage slug={post.slug} className="h-full min-h-[250px] w-full" />
         </div>
         <div className="flex w-full flex-col justify-center p-8 md:w-2/5 md:p-12">
           <div className="mb-6 flex items-center gap-3">
@@ -68,22 +78,8 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
 
   return (
     <article className="group">
-      <div className="mb-6 aspect-[16/10] overflow-hidden rounded-2xl bg-muted">
-        <div className="flex h-full items-center justify-center text-muted-foreground">
-          <svg
-            className="h-12 w-12 opacity-30"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-            />
-          </svg>
-        </div>
+      <div className="mb-6 aspect-[16/10] overflow-hidden rounded-2xl">
+        <BlogImage slug={post.slug} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
       </div>
       <div className="mb-3 flex items-center gap-3">
         {post.tags[0] && (
