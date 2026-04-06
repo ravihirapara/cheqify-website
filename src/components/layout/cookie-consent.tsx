@@ -30,13 +30,11 @@ export function CookieConsent() {
 
   function accept() {
     localStorage.setItem(STORAGE_KEY, "accepted");
-    setConsent("accepted");
     window.dispatchEvent(new Event("cookie-consent-change"));
   }
 
   function decline() {
     localStorage.setItem(STORAGE_KEY, "declined");
-    setConsent("declined");
     window.dispatchEvent(new Event("cookie-consent-change"));
   }
 

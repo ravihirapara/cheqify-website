@@ -45,10 +45,7 @@ export function MobileNav() {
           aria-label={t("header.navigation")}
         >
           {NAV_ITEMS.map((item) => {
-            const isActive =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+            const isActive = pathname.startsWith(item.href);
 
             return (
               <Link

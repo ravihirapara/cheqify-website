@@ -32,10 +32,7 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex lg:items-center lg:gap-1" aria-label="Main navigation">
           {NAV_ITEMS.map((item) => {
-            const isActive =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+            const isActive = pathname.startsWith(item.href);
 
             return (
               <Link

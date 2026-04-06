@@ -293,6 +293,49 @@
       "scheduleDemo": "Schedule Demo"
     }
   },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | Cheqify.app",
+      "description": "Learn how Cheqify collects, uses, and protects your data. Read our full privacy policy covering contact forms, analytics, and cookies."
+    },
+    "hero": {
+      "badge": "Compliance & Legal",
+      "title": "Privacy Policy",
+      "description": "Your trust is our most valuable asset. This policy outlines how we protect and manage your data.",
+      "lastUpdated": "Last Updated: April 6, 2026"
+    },
+    "sections": {
+      "introTitle": "1. Introduction",
+      "introP1": "Welcome to Cheqify.app. We are committed to protecting your personal information and your right to privacy. This policy applies to all information collected through our website and any related services.",
+      "introP2": "When you use our services, you trust us with your personal data. We take this responsibility seriously and aim to be transparent about what we collect and how we use it.",
+      "collectionTitle": "2. Information Collection",
+      "directTitle": "Directly Provided",
+      "directDescription": "We collect your name, email address, and message when you submit the contact form via Formspree. We do not store this data on our servers — it is processed by Formspree.",
+      "automatedTitle": "Automated Logs",
+      "automatedDescription": "When you accept cookies, Google Analytics 4 (GA4) collects page views and usage data. Tawk.to live chat collects chat transcripts. No tracking occurs without your consent.",
+      "usageTitle": "3. How We Use Data",
+      "usageIntro": "We process your information for the following purposes:",
+      "usage1": "To respond to your contact form inquiries and provide support.",
+      "usage2": "To analyze website traffic and improve user experience via GA4.",
+      "usage3": "To provide real-time chat support via Tawk.to.",
+      "usage4": "To remember your cookie consent and language preferences.",
+      "securityTitle": "4. Data Security",
+      "securityP1": "We implement appropriate technical and organizational security measures to protect your personal information. Our website is served over HTTPS and all third-party integrations follow industry security standards.",
+      "securityP2": "However, no electronic transmission over the internet can be guaranteed to be 100% secure. We strive to protect your data but cannot guarantee absolute security.",
+      "rightsTitle": "5. Your Privacy Rights",
+      "rightsIntro": "You have certain rights regarding your personal data under applicable data protection laws:",
+      "right1": "Request Correction",
+      "right2": "Request Deletion",
+      "right3": "Data Portability",
+      "right4": "Object to Processing"
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "description": "If you have questions or comments about this policy, you may contact us at:",
+      "email": "contact.cheqify@gmail.com",
+      "address": "813, Silver Trade Center, Near Moon Garden, VIP Circle, Utran, Surat 394105"
+    }
+  },
   "contact": {
     "meta": {
       "title": "Contact Us | Cheqify.app",
