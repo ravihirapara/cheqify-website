@@ -1,7 +1,7 @@
 ---
 title: "Cheque Bounce: Reasons and Solutions"
 description: "Learn the common reasons for cheque bounce in India and how to prevent them. Understand legal implications and how Cheqify helps eliminate bounce errors."
-date: "2026-03-25"
+date: "2026-04-04"
 author: "Cheqify Team"
 slug: "cheque-bounce-reasons-and-solutions"
 lang: "en"

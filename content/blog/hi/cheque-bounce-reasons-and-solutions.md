@@ -1,7 +1,7 @@
 ---
 title: "चेक बाउंस: कारण और समाधान"
 description: "भारत में चेक बाउंस के सामान्य कारण और उन्हें कैसे रोकें। कानूनी प्रभाव और Cheqify कैसे बाउंस त्रुटियों को समाप्त करने में मदद करता है।"
-date: "2026-03-25"
+date: "2026-04-04"
 author: "Cheqify Team"
 slug: "cheque-bounce-reasons-and-solutions"
 lang: "hi"

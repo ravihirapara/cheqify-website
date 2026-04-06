@@ -1,7 +1,7 @@
 ---
 title: "ચેક બાઉન્સ: કારણો અને ઉકેલો"
 description: "ભારતમાં ચેક બાઉન્સના સામાન્ય કારણો અને તેને કેવી રીતે અટકાવવું. કાનૂની અસરો અને Cheqify બાઉન્સ ભૂલોને દૂર કરવામાં કેવી રીતે મદદ કરે છે તે જાણો."
-date: "2026-03-25"
+date: "2026-04-04"
 author: "Cheqify Team"
 slug: "cheque-bounce-reasons-and-solutions"
 lang: "gu"

@@ -1,7 +1,7 @@
 ---
 title: "How to Print a Cheque at Home"
 description: "Step-by-step guide to printing cheques at home using Cheqify. Learn what you need, how to set up, and start printing error-free cheques in minutes."
-date: "2026-04-01"
+date: "2026-04-02"
 author: "Cheqify Team"
 slug: "how-to-print-cheque-at-home"
 lang: "en"
