@@ -61,7 +61,7 @@ export function Footer() {
                 <Globe className="h-5 w-5" />
               </a>
               <a
-                href="mailto:hello@cheqify.app"
+                href="mailto:contact.cheqify@gmail.com"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground transition-all hover:bg-primary hover:text-primary-foreground"
               >
                 <Mail className="h-5 w-5" />
