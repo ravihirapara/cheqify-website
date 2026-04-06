@@ -54,6 +54,16 @@
     "bankLogos": {
       "heading": "Trusted by businesses across India",
       "moreBanks": "300+ more"
+    },
+    "howItWorks": {
+      "heading": "How It Works",
+      "subheading": "Get started in 3 simple steps",
+      "step1Title": "Sign Up",
+      "step1Description": "Create your free account in seconds. No credit card needed.",
+      "step2Title": "Set Up Your Cheque",
+      "step2Description": "Enter payee details, amount, and select your bank. Cheqify formats everything automatically.",
+      "step3Title": "Print",
+      "step3Description": "Print on any standard cheque leaf using your regular printer. Error-free, every time."
     }
   }
 }
