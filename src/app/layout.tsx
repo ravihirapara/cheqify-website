@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "~/components/layout/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -12,11 +11,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html suppressHydrationWarning className="h-full antialiased">
-      <body className="min-h-full flex flex-col">
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  );
+  return children;
 }

@@ -15,13 +15,24 @@
     },
     "footer": {
       "copyright": "© {year} Cheqify.app. सभी अधिकार सुरक्षित।",
-      "tagline": "2 मिनट से कम में त्रुटि-मुक्त चेक प्रिंट करें"
+      "tagline": "2 मिनट से कम में त्रुटि-मुक्त चेक प्रिंट करें",
+      "product": "उत्पाद",
+      "resources": "संसाधन",
+      "company": "कंपनी",
+      "legal": "कानूनी",
+      "privacy": "गोपनीयता नीति"
     },
     "language": {
       "en": "English",
       "hi": "हिन्दी",
       "gu": "ગુજરાતી",
       "switchLanguage": "भाषा बदलें"
+    },
+    "header": {
+      "logoAlt": "Cheqify.app — चेक प्रिंटिंग सॉफ़्टवेयर",
+      "skipToContent": "सामग्री पर जाएँ",
+      "openMenu": "मेनू खोलें",
+      "navigation": "नेविगेशन"
     },
     "theme": {
       "toggleTheme": "थीम बदलें"

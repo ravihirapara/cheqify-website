@@ -42,10 +42,10 @@ development_status:
   epic-1-retrospective: optional
 
   # Epic 2: Site Navigation & Layout
-  epic-2: backlog
-  2-1-sticky-header-with-navigation: backlog
-  2-2-mobile-navigation-menu: backlog
-  2-3-site-footer: backlog
+  epic-2: done
+  2-1-sticky-header-with-navigation: done
+  2-2-mobile-navigation-menu: done
+  2-3-site-footer: done
   epic-2-retrospective: optional
 
   # Epic 3: Homepage

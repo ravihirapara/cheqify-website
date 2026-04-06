@@ -15,13 +15,24 @@
     },
     "footer": {
       "copyright": "© {year} Cheqify.app. All rights reserved.",
-      "tagline": "Print Error-Free Cheques in Under 2 Minutes"
+      "tagline": "Print Error-Free Cheques in Under 2 Minutes",
+      "product": "Product",
+      "resources": "Resources",
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy Policy"
     },
     "language": {
       "en": "English",
       "hi": "हिन्दी",
       "gu": "ગુજરાતી",
       "switchLanguage": "Switch Language"
+    },
+    "header": {
+      "logoAlt": "Cheqify.app — Cheque Printing Software",
+      "skipToContent": "Skip to content",
+      "openMenu": "Open menu",
+      "navigation": "Navigation"
     },
     "theme": {
       "toggleTheme": "Toggle theme"
