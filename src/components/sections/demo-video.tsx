@@ -24,7 +24,8 @@ export function DemoVideo() {
               <div className="flex h-full flex-col items-center justify-center gap-4">
                 <button
                   type="button"
-                  className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-110"
+                  disabled
+                  className="flex h-16 w-16 cursor-not-allowed items-center justify-center rounded-full bg-primary/50 text-primary-foreground shadow-lg"
                   aria-label={t("playButton")}
                 >
                   <Play className="ml-1 h-7 w-7" />

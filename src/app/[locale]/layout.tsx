@@ -28,7 +28,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning className="h-full antialiased">
+    <html lang={locale} suppressHydrationWarning className="h-full scroll-smooth antialiased">
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <NextIntlClientProvider locale={locale} messages={messages}>

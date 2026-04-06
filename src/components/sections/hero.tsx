@@ -25,13 +25,14 @@ export function Hero() {
                 href="https://app.cheqify.app/register"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full sm:w-auto"
               >
-                <Button variant="default" className="h-12 px-8 text-base">
+                <Button variant="default" className="h-12 w-full px-8 text-base sm:w-auto">
                   {tCta("startFree")}
                 </Button>
               </a>
-              <a href="#demo">
-                <Button variant="outline" className="h-12 px-8 text-base">
+              <a href="#demo" className="w-full sm:w-auto">
+                <Button variant="outline" className="h-12 w-full px-8 text-base sm:w-auto">
                   <Play className="mr-2 h-4 w-4" />
                   {tCta("watchDemo")}
                 </Button>

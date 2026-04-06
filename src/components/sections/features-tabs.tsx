@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "~/components/ui/tabs";
 import { Printer, BarChart3, LayoutDashboard, Check } from "lucide-react";
 
+const FEATURE_INDICES = [1, 2, 3, 4, 5] as const;
+
 const TABS = [
   { key: "printing", icon: Printer },
   { key: "tracking", icon: BarChart3 },
@@ -43,46 +45,44 @@ export function FeaturesTabs() {
                 })}
               </TabsList>
             </div>
-            {TABS.map((tab) => (
-              <TabsContent key={tab.key} value={tab.key} className="mt-8">
-                <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
-                  <div>
-                    <p className="text-base leading-relaxed text-muted-foreground">
-                      {t(`${tab.key}Description`)}
-                    </p>
-                    <ul className="mt-6 space-y-3">
-                      {t(`${tab.key}Features`)
-                        .split(",")
-                        .map((feature) => (
+            {TABS.map((tab) => {
+              const Icon = tab.icon;
+              return (
+                <TabsContent key={tab.key} value={tab.key} className="mt-8">
+                  <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
+                    <div>
+                      <p className="text-base leading-relaxed text-muted-foreground">
+                        {t(`${tab.key}Description`)}
+                      </p>
+                      <ul className="mt-6 space-y-3">
+                        {FEATURE_INDICES.map((i) => (
                           <li
-                            key={feature}
+                            key={i}
                             className="flex items-center gap-3 text-sm text-foreground"
                           >
                             <Check className="h-4 w-4 shrink-0 text-primary" />
-                            {feature}
+                            {t(`${tab.key}Feature${i}`)}
                           </li>
                         ))}
-                    </ul>
-                  </div>
-                  {/* Placeholder for product screenshot */}
-                  <div className="mt-8 lg:mt-0">
-                    <div className="aspect-video overflow-hidden rounded-xl border border-border bg-background shadow-sm">
-                      <div className="flex h-full items-center justify-center">
-                        <div className="text-center">
-                          {(() => {
-                            const Icon = tab.icon;
-                            return <Icon className="mx-auto h-12 w-12 text-primary/30" />;
-                          })()}
-                          <p className="mt-2 text-sm text-muted-foreground">
-                            {t(tab.key)}
-                          </p>
+                      </ul>
+                    </div>
+                    {/* Placeholder for product screenshot */}
+                    <div className="mt-8 lg:mt-0">
+                      <div className="aspect-video overflow-hidden rounded-xl border border-border bg-background shadow-sm">
+                        <div className="flex h-full items-center justify-center">
+                          <div className="text-center">
+                            <Icon className="mx-auto h-12 w-12 text-primary/30" />
+                            <p className="mt-2 text-sm text-muted-foreground">
+                              {t(tab.key)}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </TabsContent>
-            ))}
+                </TabsContent>
+              );
+            })}
           </Tabs>
         </div>
       </div>
