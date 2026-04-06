@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "~/i18n/navigation";
 import { Printer, AlertTriangle, ArrowLeftRight, Shield, Calendar, ScanLine } from "lucide-react";
+import { cn } from "~/lib/utils";
 import type { BlogPostMeta } from "~/lib/blog";
 
 interface BlogCardProps {
@@ -33,7 +34,7 @@ function BlogImage({ slug, className }: { slug: string; className?: string }) {
   const gradient = SLUG_COLORS[slug] ?? "from-primary/20 to-primary/5";
 
   return (
-    <div className={`flex items-center justify-center bg-gradient-to-br ${gradient} ${className ?? ""}`}>
+    <div className={cn("flex items-center justify-center bg-gradient-to-br", gradient, className)}>
       <Icon className="h-16 w-16 text-primary/40" />
     </div>
   );

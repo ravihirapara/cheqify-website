@@ -2,8 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { Heart, ShieldCheck, Gift, Scale } from "lucide-react";
-import { cn } from "~/lib/utils";
-
 const CARDS = [
   { key: "card1", icon: Heart },
   { key: "card2", icon: ShieldCheck },
@@ -26,9 +24,7 @@ export function WhyFree() {
           {CARDS.map(({ key, icon: Icon }) => (
             <div
               key={key}
-              className={cn(
-                "rounded-2xl border border-border bg-background p-6 transition-shadow hover:shadow-md"
-              )}
+              className="rounded-2xl border border-border bg-background p-6 transition-shadow hover:shadow-md"
             >
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                 <Icon className="h-5 w-5 text-primary" />

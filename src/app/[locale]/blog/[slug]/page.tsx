@@ -43,7 +43,6 @@ export default async function BlogPostPage({
 }) {
   const { locale, slug } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
-  const tCta = await getTranslations({ locale, namespace: "common.cta" });
   const post = await getBlogPost(locale, slug);
 
   if (!post) {
@@ -63,7 +62,7 @@ export default async function BlogPostPage({
   });
 
   return (
-    <section className="px-6 pb-20 pt-16">
+    <section className="px-6 py-16 md:py-24">
       <div className="mx-auto max-w-3xl">
         {/* Back to blog */}
         <Link

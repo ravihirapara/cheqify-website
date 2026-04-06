@@ -28,7 +28,7 @@ export default async function BlogPage({
   const [featured, ...rest] = posts;
 
   return (
-    <section className="px-6 pb-20 pt-32">
+    <section className="px-6 py-16 md:py-24">
       <div className="mx-auto max-w-7xl">
         <BlogHero />
 
