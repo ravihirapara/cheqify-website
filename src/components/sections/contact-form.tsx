@@ -11,7 +11,6 @@ const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "xnjolgzl";
 
 export function ContactForm() {
   const t = useTranslations("contact.form");
-  const tInfo = useTranslations("contact.info");
   const [state, handleSubmit] = useForm(FORMSPREE_ID);
 
   if (state.succeeded) {
@@ -167,15 +166,6 @@ export function ContactForm() {
           )}
         </button>
 
-        {/* Response Time */}
-        <div className="pt-6 text-center">
-          <p className="text-sm text-muted-foreground">
-            {tInfo("responseTime")}{" "}
-            <span className="font-semibold text-primary">
-              {tInfo("responseTimeValue")}
-            </span>
-          </p>
-        </div>
       </form>
     </div>
   );
