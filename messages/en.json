@@ -124,5 +124,63 @@
       "playButton": "Play Demo Video",
       "placeholder": "Demo video coming soon"
     }
+  },
+  "features": {
+    "meta": {
+      "title": "Features | Cheqify.app",
+      "description": "Explore Cheqify's powerful cheque printing, lifecycle tracking, and owner dashboard features designed for modern businesses."
+    },
+    "hero": {
+      "badge": "Product Features",
+      "headlinePart1": "The modern stack for ",
+      "headlineHighlight": "financial precision.",
+      "subheadline": "A centralized platform designed to handle the complexity of cheque management with editorial-grade simplicity and iron-clad security.",
+      "startFree": "Start Free Trial",
+      "learnMore": "Book a Demo",
+      "screenshotAlt": "Financial dashboard overview"
+    },
+    "core": {
+      "heading": "Core Ecosystem",
+      "printing": "Cheque Printing",
+      "tracking": "Lifecycle Tracking",
+      "dashboard": "Owner Dashboard",
+      "printingTitle": "Zero-Error Cheque Printing",
+      "printingDescription": "Eliminate the manual stress of handwriting. Our system supports any bank format globally with pixel-perfect alignment.",
+      "printingFeature1Title": "2-Minute Setup",
+      "printingFeature1Description": "Connect your existing printer and start issuing in moments.",
+      "printingFeature2Title": "Smart Formatting",
+      "printingFeature2Description": "Automatically converts amounts to words with multiple currency support.",
+      "printingFeature3Title": "Bulk Printing",
+      "printingFeature3Description": "Handle vendor payments at scale with our robust batch processor.",
+      "printingScreenshotAlt": "Cheque printing interface",
+      "trackingTitle": "Complete Lifecycle Tracking",
+      "trackingDescription": "Never lose track of a single leaf. From the moment it leaves the book until it clears the bank, you have absolute oversight.",
+      "trackingFeature1Title": "Journey Map",
+      "trackingFeature1Description": "Track cheques through every stage: unused, prepared, signed, and cleared.",
+      "trackingFeature2Title": "Real-Time Status",
+      "trackingFeature2Description": "Get instant updates on cheque deposits, clearances, and returns.",
+      "trackingFeature3Title": "Smart Alerts",
+      "trackingFeature3Description": "Automatically flag returned or stopped cheques and notify stakeholders instantly.",
+      "trackingScreenshotAlt": "Lifecycle tracking pipeline",
+      "dashboardTitle": "Powerful Owner Dashboard",
+      "dashboardDescription": "Get a bird's-eye view of all cheque activity across your business. Monitor performance and make data-driven decisions.",
+      "dashboardFeature1Title": "Business Overview",
+      "dashboardFeature1Description": "Consolidated view of all accounts, cheques, and payment status in one place.",
+      "dashboardFeature2Title": "Team Monitoring",
+      "dashboardFeature2Description": "Track team activity and ensure accountability across all cheque operations.",
+      "dashboardFeature3Title": "Analytics & Insights",
+      "dashboardFeature3Description": "Data-driven reports and visualizations to optimize your financial workflows.",
+      "dashboardScreenshotAlt": "Owner dashboard interface"
+    },
+    "highlights": {
+      "heading": "Precision Engineering",
+      "subheading": "Micro-features that define the macro experience of elite financial management.",
+      "card1Title": "Audit-Ready Logs",
+      "card1Description": "Every action, from click to print, is logged with high-fidelity timestamps and user identity for total accountability.",
+      "card2Title": "Multi-Bank Ledger",
+      "card2Description": "Consolidate records across hundreds of accounts. Manage diverse bank formats within a single, unified interface.",
+      "card3Title": "Low-Balance Alerts",
+      "card3Description": "Smart notifications for PDC (Post-Dated Cheques) ensure you maintain liquidity before clearing dates arrive."
+    }
   }
 }

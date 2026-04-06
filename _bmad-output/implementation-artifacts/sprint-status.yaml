@@ -59,8 +59,8 @@ development_status:
   epic-3-retrospective: optional
 
   # Epic 4: Features Page
-  epic-4: backlog
-  4-1-features-page-with-detailed-tabs: backlog
+  epic-4: done
+  4-1-features-page-with-detailed-tabs: done
   epic-4-retrospective: optional
 
   # Epic 5: Pricing Page

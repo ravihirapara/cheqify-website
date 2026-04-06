@@ -1,0 +1,144 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { Button } from "~/components/ui/button";
+
+export function FeaturesHero() {
+  const t = useTranslations("features.hero");
+
+  return (
+    <section className="py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+          {/* Text Content */}
+          <div>
+            <span className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">
+              {t("badge")}
+            </span>
+            <h1 className="mb-8 text-5xl font-extrabold leading-[1.1] tracking-tight text-foreground md:text-6xl">
+              {t("headlinePart1")}
+              <span className="text-primary">{t("headlineHighlight")}</span>
+            </h1>
+            <p className="mb-10 max-w-xl text-xl leading-relaxed text-muted-foreground">
+              {t("subheadline")}
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://app.cheqify.app/register"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="default"
+                  className="h-12 px-8 text-base font-semibold shadow-lg"
+                >
+                  {t("startFree")}
+                </Button>
+              </a>
+              <Button
+                variant="secondary"
+                className="h-12 px-8 text-base font-semibold"
+              >
+                {t("learnMore")}
+              </Button>
+            </div>
+          </div>
+
+          {/* Product Visual Placeholder */}
+          <div className="relative">
+            <div className="absolute -inset-4 -z-10 bg-gradient-to-tr from-primary/10 to-transparent blur-3xl" />
+            <div
+              className="w-full overflow-hidden rounded-xl border border-border/10 bg-background p-2 shadow-2xl"
+              role="img"
+              aria-label={t("screenshotAlt")}
+            >
+              <div className="rounded-lg bg-card p-5">
+                {/* Top bar */}
+                <div className="flex items-center gap-2 border-b border-border pb-4">
+                  <div className="h-3 w-3 rounded-full bg-red-400" />
+                  <div className="h-3 w-3 rounded-full bg-yellow-400" />
+                  <div className="h-3 w-3 rounded-full bg-green-400" />
+                  <div className="ml-4 h-4 w-48 rounded bg-muted" />
+                  <div className="ml-auto h-4 w-20 rounded bg-muted" />
+                </div>
+                {/* Sidebar + content */}
+                <div className="mt-5 flex gap-5">
+                  <div className="hidden w-36 space-y-4 sm:block">
+                    <div className="h-4 w-full rounded bg-primary/20" />
+                    <div className="h-3 w-3/4 rounded bg-muted" />
+                    <div className="h-3 w-full rounded bg-muted" />
+                    <div className="h-3 w-2/3 rounded bg-muted" />
+                    <div className="mt-6 h-3 w-full rounded bg-muted" />
+                    <div className="h-3 w-4/5 rounded bg-muted" />
+                    <div className="h-3 w-3/5 rounded bg-muted" />
+                  </div>
+                  <div className="flex-1 space-y-4">
+                    {/* Stat cards */}
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="rounded-lg bg-primary/10 p-5">
+                        <div className="h-2 w-2/3 rounded bg-primary/30" />
+                        <div className="mt-3 h-6 w-3/4 rounded bg-primary/20" />
+                      </div>
+                      <div className="rounded-lg bg-accent p-5">
+                        <div className="h-2 w-2/3 rounded bg-primary/30" />
+                        <div className="mt-3 h-6 w-3/4 rounded bg-primary/20" />
+                      </div>
+                      <div className="rounded-lg bg-muted p-5">
+                        <div className="h-2 w-2/3 rounded bg-muted-foreground/20" />
+                        <div className="mt-3 h-6 w-3/4 rounded bg-muted-foreground/10" />
+                      </div>
+                    </div>
+                    {/* Table */}
+                    <div className="rounded-lg border border-border p-4">
+                      <div className="mb-3 flex items-center gap-3 border-b border-border pb-3">
+                        <div className="h-3 w-20 rounded bg-muted-foreground/20" />
+                        <div className="h-3 w-24 rounded bg-muted-foreground/20" />
+                        <div className="ml-auto h-3 w-16 rounded bg-muted-foreground/20" />
+                      </div>
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-3">
+                          <div className="h-8 w-8 rounded bg-primary/10" />
+                          <div className="flex-1 space-y-1">
+                            <div className="h-3 w-3/4 rounded bg-muted" />
+                            <div className="h-2 w-1/2 rounded bg-muted/60" />
+                          </div>
+                          <div className="h-6 w-20 rounded-full bg-green-100 dark:bg-green-900/30" />
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="h-8 w-8 rounded bg-accent" />
+                          <div className="flex-1 space-y-1">
+                            <div className="h-3 w-2/3 rounded bg-muted" />
+                            <div className="h-2 w-1/3 rounded bg-muted/60" />
+                          </div>
+                          <div className="h-6 w-20 rounded-full bg-yellow-100 dark:bg-yellow-900/30" />
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="h-8 w-8 rounded bg-primary/10" />
+                          <div className="flex-1 space-y-1">
+                            <div className="h-3 w-4/5 rounded bg-muted" />
+                            <div className="h-2 w-2/5 rounded bg-muted/60" />
+                          </div>
+                          <div className="h-6 w-20 rounded-full bg-green-100 dark:bg-green-900/30" />
+                        </div>
+                      </div>
+                    </div>
+                    {/* Chart */}
+                    <div className="flex items-end gap-1 border-t border-border pt-4">
+                      <div className="h-10 flex-1 rounded-t bg-primary/20" />
+                      <div className="h-16 flex-1 rounded-t bg-primary/30" />
+                      <div className="h-24 flex-1 rounded-t bg-primary/40" />
+                      <div className="h-14 flex-1 rounded-t bg-primary/25" />
+                      <div className="h-28 flex-1 rounded-t bg-primary" />
+                      <div className="h-20 flex-1 rounded-t bg-primary/35" />
+                      <div className="h-8 flex-1 rounded-t bg-primary/15" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
