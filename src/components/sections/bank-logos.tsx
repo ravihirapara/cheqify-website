@@ -39,11 +39,11 @@ export function BankLogos() {
           {t("heading")}
         </p>
         <div className="overflow-hidden">
-          <div className="marquee-track flex items-center gap-8 whitespace-nowrap opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0 md:gap-16">
+          <div className="marquee-track flex items-center gap-8 whitespace-nowrap transition-all hover:opacity-100 md:gap-16">
             {allBanks.map((bank, idx) => (
               <span
                 key={`${bank}-${idx}`}
-                className="text-lg font-bold text-secondary"
+                className="text-lg font-bold text-muted-foreground"
               >
                 {bank}
               </span>
