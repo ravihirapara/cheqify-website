@@ -10,7 +10,7 @@ export function ContactInfo() {
     <div className="space-y-12">
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
         {/* Support Card */}
-        <div className="rounded-xl border border-border/15 bg-card p-8 transition-all hover:bg-muted/50">
+        <div className="rounded-xl border border-border/15 bg-white p-8 shadow-sm transition-all hover:shadow-md dark:bg-card">
           <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
             <Headset className="h-6 w-6" />
           </div>
@@ -27,7 +27,7 @@ export function ContactInfo() {
         </div>
 
         {/* Sales Card */}
-        <div className="rounded-xl border border-border/15 bg-card p-8 transition-all hover:bg-muted/50">
+        <div className="rounded-xl border border-border/15 bg-white p-8 shadow-sm transition-all hover:shadow-md dark:bg-card">
           <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500/10 text-orange-600 dark:text-orange-400">
             <Briefcase className="h-6 w-6" />
           </div>
