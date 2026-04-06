@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link, usePathname } from "~/i18n/navigation";
 import { cn } from "~/lib/utils";
 import { Button } from "~/components/ui/button";
@@ -35,9 +36,13 @@ export function MobileNav() {
       <SheetContent side="right" showCloseButton>
         <SheetHeader>
           <SheetTitle>
-            <span className="text-xl font-bold text-foreground">
-              Cheqify<span className="text-primary">.app</span>
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt={t("header.logoAlt")}
+              width={120}
+              height={34}
+              className="h-7 w-auto"
+            />
           </SheetTitle>
         </SheetHeader>
         <nav

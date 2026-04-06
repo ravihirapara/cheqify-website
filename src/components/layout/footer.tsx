@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link } from "~/i18n/navigation";
 import { Globe, Mail } from "lucide-react";
 
@@ -44,9 +45,13 @@ export function Footer() {
           {/* Logo + Description + Social */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block">
-              <span className="text-2xl font-bold tracking-tight text-foreground">
-                Cheqify<span className="text-primary">.app</span>
-              </span>
+              <Image
+                src="/images/logo.png"
+                alt={t("footer.tagline")}
+                width={160}
+                height={45}
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="mt-6 max-w-xs leading-relaxed text-muted-foreground">
               {t("footer.description")}

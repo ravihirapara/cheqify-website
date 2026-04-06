@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "~/i18n/navigation";
+import Image from "next/image";
 import { cn } from "~/lib/utils";
 import { Button } from "~/components/ui/button";
 import { ThemeToggle } from "~/components/layout/theme-toggle";
@@ -23,10 +24,15 @@ export function Header() {
       </a>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center gap-1" aria-label={t("header.logoAlt")}>
-          <span className="text-xl font-bold text-foreground">
-            Cheqify<span className="text-primary">.app</span>
-          </span>
+        <Link href="/" className="flex shrink-0 items-center" aria-label={t("header.logoAlt")}>
+          <Image
+            src="/images/logo.png"
+            alt={t("header.logoAlt")}
+            width={140}
+            height={40}
+            priority
+            className="h-8 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
