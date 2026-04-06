@@ -64,9 +64,9 @@ development_status:
   epic-4-retrospective: optional
 
   # Epic 5: Pricing Page
-  epic-5: backlog
-  5-1-pricing-plans-display: backlog
-  5-2-feature-comparison-table: backlog
+  epic-5: in-progress
+  5-1-pricing-plans-display: in-progress
+  5-2-feature-comparison-table: in-progress
   epic-5-retrospective: optional
 
   # Epic 6: Blog
