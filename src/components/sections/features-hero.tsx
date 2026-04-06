@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Button } from "~/components/ui/button";
+import { Link } from "~/i18n/navigation";
 import { Play } from "lucide-react";
 
 export function FeaturesHero() {
@@ -35,12 +36,12 @@ export function FeaturesHero() {
                   {tCta("startFree")}
                 </Button>
               </a>
-              <a href="#demo" className="w-full sm:w-auto">
+              <Link href="/#demo" className="w-full sm:w-auto">
                 <Button variant="outline" className="h-12 w-full px-8 text-base sm:w-auto">
                   <Play className="mr-2 h-4 w-4" />
                   {tCta("watchDemo")}
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
 

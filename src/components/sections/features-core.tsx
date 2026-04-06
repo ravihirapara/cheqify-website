@@ -59,12 +59,7 @@ export function FeaturesCore() {
                   !isLast && "border-b border-border/30"
                 )}
               >
-                <div
-                  className={cn(
-                    "lg:grid lg:grid-cols-2 lg:gap-16 items-center",
-                    !isOdd && "lg:direction-rtl"
-                  )}
-                >
+                <div className="items-center lg:grid lg:grid-cols-2 lg:gap-16">
                   {/* Screenshot Placeholder - first on odd, second on even (desktop) */}
                   <div
                     className={cn(
@@ -72,7 +67,7 @@ export function FeaturesCore() {
                       isOdd ? "lg:order-1" : "lg:order-2"
                     )}
                   >
-                    <div className="overflow-hidden rounded-xl border border-border/50 bg-card p-6 shadow-sm">
+                    <div className="overflow-hidden rounded-xl border border-border/50 bg-background p-6 shadow-sm">
                       <div className="flex aspect-video items-center justify-center rounded-lg bg-muted/50">
                         <Icon className="h-12 w-12 text-muted-foreground/40" />
                       </div>
