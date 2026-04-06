@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { buildSeoMetadata } from "~/lib/seo";
 import { ContactHero } from "~/components/sections/contact-hero";
 import { ContactInfo } from "~/components/sections/contact-info";
 import { ContactForm } from "~/components/sections/contact-form";
@@ -11,10 +12,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact.meta" });
 
-  return {
+  return buildSeoMetadata({
     title: t("title"),
     description: t("description"),
-  };
+    locale,
+    pathname: "/contact",
+  });
 }
 
 export default function ContactPage() {

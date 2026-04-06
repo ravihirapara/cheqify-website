@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { buildSeoMetadata } from "~/lib/seo";
 import { PrivacyHero } from "~/components/sections/privacy-hero";
 import { PrivacyContent } from "~/components/sections/privacy-content";
 
@@ -10,10 +11,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "privacy.meta" });
 
-  return {
+  return buildSeoMetadata({
     title: t("title"),
     description: t("description"),
-  };
+    locale,
+    pathname: "/privacy",
+  });
 }
 
 export default function PrivacyPage() {

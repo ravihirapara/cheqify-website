@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { buildSeoMetadata } from "~/lib/seo";
 import { FeaturesHero } from "~/components/sections/features-hero";
 import { FeaturesCore } from "~/components/sections/features-core";
 import { FeatureHighlights } from "~/components/sections/feature-highlights";
@@ -12,10 +13,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "features.meta" });
 
-  return {
+  return buildSeoMetadata({
     title: t("title"),
     description: t("description"),
-  };
+    locale,
+    pathname: "/features",
+  });
 }
 
 export default function FeaturesPage() {

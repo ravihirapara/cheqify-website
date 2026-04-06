@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { buildSeoMetadata } from "~/lib/seo";
 import { getBlogPosts } from "~/lib/blog";
 import { BlogHero } from "~/components/sections/blog-hero";
 import { BlogListing } from "~/components/sections/blog-listing";
@@ -11,10 +12,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog.meta" });
 
-  return {
+  return buildSeoMetadata({
     title: t("title"),
     description: t("description"),
-  };
+    locale,
+    pathname: "/blog",
+  });
 }
 
 export default async function BlogPage({

@@ -46,6 +46,10 @@
     }
   },
   "home": {
+    "meta": {
+      "title": "Cheqify.app — Print Error-Free Cheques",
+      "description": "Print, track, and manage cheques from any device. 300+ Indian banks, MICR validation, batch printing. Free forever."
+    },
     "hero": {
       "badge": "NEW: AUTO-RECONCILIATION",
       "headlinePart1": "Print Error-Free ",

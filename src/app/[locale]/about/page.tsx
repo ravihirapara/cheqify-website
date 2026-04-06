@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { buildSeoMetadata } from "~/lib/seo";
 import { AboutHero } from "~/components/sections/about-hero";
 import { AboutStory } from "~/components/sections/about-story";
 import { AboutValues } from "~/components/sections/about-values";
@@ -12,10 +13,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about.meta" });
 
-  return {
+  return buildSeoMetadata({
     title: t("title"),
     description: t("description"),
-  };
+    locale,
+    pathname: "/about",
+  });
 }
 
 export default function AboutPage() {

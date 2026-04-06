@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "~/i18n/navigation";
 import { getBlogPost, getBlogPosts } from "~/lib/blog";
+import { buildSeoMetadata } from "~/lib/seo";
 import { routing } from "~/i18n/routing";
 
 export function generateStaticParams() {
@@ -31,8 +32,22 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.meta.title} | Cheqify.app`,
-    description: post.meta.description,
+    ...buildSeoMetadata({
+      title: `${post.meta.title} | Cheqify.app`,
+      description: post.meta.description,
+      locale,
+      pathname: `/blog/${slug}`,
+    }),
+    openGraph: {
+      title: post.meta.title,
+      description: post.meta.description,
+      url: `https://cheqify.app/${locale}/blog/${slug}`,
+      siteName: "Cheqify.app",
+      locale,
+      type: "article",
+      publishedTime: post.meta.date,
+      authors: [post.meta.author],
+    },
   };
 }
 

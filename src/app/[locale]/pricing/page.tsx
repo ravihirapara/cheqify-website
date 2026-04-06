@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { buildSeoMetadata } from "~/lib/seo";
 import { PricingHero } from "~/components/sections/pricing-hero";
 import { PricingCards } from "~/components/sections/pricing-cards";
 import { WhyFree } from "~/components/sections/why-free";
@@ -12,10 +13,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "pricing.meta" });
 
-  return {
+  return buildSeoMetadata({
     title: t("title"),
     description: t("description"),
-  };
+    locale,
+    pathname: "/pricing",
+  });
 }
 
 export default function PricingPage() {
