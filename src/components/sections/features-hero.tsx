@@ -2,45 +2,45 @@
 
 import { useTranslations } from "next-intl";
 import { Button } from "~/components/ui/button";
+import { Play } from "lucide-react";
 
 export function FeaturesHero() {
   const t = useTranslations("features.hero");
+  const tCta = useTranslations("common.cta");
 
   return (
     <section className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           {/* Text Content */}
-          <div>
+          <div className="text-center lg:text-left">
             <span className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">
               {t("badge")}
             </span>
-            <h1 className="mb-8 text-5xl font-extrabold leading-[1.1] tracking-tight text-foreground md:text-6xl">
+            <h1 className="mb-8 text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
               {t("headlinePart1")}
               <span className="text-primary">{t("headlineHighlight")}</span>
             </h1>
-            <p className="mb-10 max-w-xl text-xl leading-relaxed text-muted-foreground">
+            <p className="mb-10 max-w-xl text-lg leading-relaxed text-muted-foreground">
               {t("subheadline")}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
               <a
                 href="https://app.cheqify.app/register"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full sm:w-auto"
               >
-                <Button
-                  variant="default"
-                  className="h-12 px-8 text-base font-semibold shadow-lg"
-                >
-                  {t("startFree")}
+                <Button variant="default" className="h-12 w-full px-8 text-base sm:w-auto">
+                  {tCta("startFree")}
                 </Button>
               </a>
-              <Button
-                variant="secondary"
-                className="h-12 px-8 text-base font-semibold"
-              >
-                {t("learnMore")}
-              </Button>
+              <a href="#demo" className="w-full sm:w-auto">
+                <Button variant="outline" className="h-12 w-full px-8 text-base sm:w-auto">
+                  <Play className="mr-2 h-4 w-4" />
+                  {tCta("watchDemo")}
+                </Button>
+              </a>
             </div>
           </div>
 
