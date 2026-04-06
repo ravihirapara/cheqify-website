@@ -70,10 +70,10 @@ development_status:
   epic-5-retrospective: optional
 
   # Epic 6: Blog
-  epic-6: backlog
-  6-1-blog-listing-page: backlog
-  6-2-individual-blog-post-page: backlog
-  6-3-blog-seed-content: backlog
+  epic-6: in-progress
+  6-1-blog-listing-page: in-progress
+  6-2-individual-blog-post-page: in-progress
+  6-3-blog-seed-content: in-progress
   epic-6-retrospective: optional
 
   # Epic 7: Contact Page & Live Chat
