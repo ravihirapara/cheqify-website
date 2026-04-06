@@ -20,9 +20,9 @@ export function ContactInfo() {
           </p>
           <a
             className="text-sm font-semibold text-primary hover:underline"
-            href={`mailto:${t("supportEmail")}`}
+            href={`tel:${t("supportPhone")}`}
           >
-            {t("supportEmail")}
+            {t("supportPhone")}
           </a>
         </div>
 
