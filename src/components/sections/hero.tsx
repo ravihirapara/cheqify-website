@@ -144,6 +144,16 @@ export function Hero() {
                         </div>
                       </div>
                     </div>
+                    {/* Chart area */}
+                    <div className="flex items-end gap-1 border-t border-border pt-4">
+                      <div className="h-10 flex-1 rounded-t bg-primary/20" />
+                      <div className="h-16 flex-1 rounded-t bg-primary/30" />
+                      <div className="h-24 flex-1 rounded-t bg-primary/40" />
+                      <div className="h-14 flex-1 rounded-t bg-primary/25" />
+                      <div className="h-28 flex-1 rounded-t bg-primary" />
+                      <div className="h-18 flex-1 rounded-t bg-primary/35" />
+                      <div className="h-8 flex-1 rounded-t bg-primary/15" />
+                    </div>
                   </div>
                 </div>
               </div>
