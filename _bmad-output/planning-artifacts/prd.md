@@ -345,8 +345,9 @@ Statically generated multi-page application (MPA) built with Next.js App Router.
 - **FR25:** Visitor can read individual blog articles
 - **FR26:** Visitor can discover blog content in all 3 supported languages
 - **FR27:** System renders blog articles from static markdown files (MVP) with Sanity.io migration path
-- **FR28:** Visitor can see in-article CTAs to sign up for Cheqify
-- **FR53:** Visitor can filter blog articles by tag categories (Guide, Banking, Security, Comparison, Productivity)
+- **FR28:** Visitor can navigate between blog posts using prev/next navigation
+- **FR53:** Visitor can filter blog articles by tag categories (Cheque Guide, Banking & RBI, Cheque Security, Software Comparison, Cheque Productivity)
+- **FR54:** Blog includes 6 seed articles covering cheque printing, bounce prevention, fraud, MICR, PDC rules, and software comparison
 
 ### Contact Page
 

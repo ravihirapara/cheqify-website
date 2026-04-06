@@ -1,6 +1,6 @@
 # Story 6.2: Individual Blog Post Page
 
-Status: in-progress
+Status: done
 
 ## Story
 

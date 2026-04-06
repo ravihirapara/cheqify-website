@@ -1,6 +1,6 @@
 # Story 6.1: Blog Listing Page
 
-Status: in-progress
+Status: done
 
 ## Story
 

@@ -527,11 +527,17 @@ So that I can discover Cheqify through SEO search results.
 
 **Given** the blog is live
 **When** a visitor browses the blog
-**Then** at least 3 seed articles are available in all 3 languages:
-**And** Article 1: "How to Print a Cheque at Home"
+**Then** at least 6 seed articles are available in all 3 languages:
+**And** Article 1: "Cheqify vs Manual Cheque Writing"
 **And** Article 2: "Cheque Bounce: Reasons and Solutions"
-**And** Article 3: "Cheqify vs Manual Cheque Writing"
+**And** Article 3: "Post-Dated Cheques: Rules and Best Practices"
+**And** Article 4: "How to Print a Cheque at Home"
+**And** Article 5: "How to Avoid Cheque Fraud in India"
+**And** Article 6: "What is MICR Code on a Cheque?"
 **And** each article has proper frontmatter (title, description, date, author, slug, lang, tags, image)
+**And** articles use SEO-friendly tag categories: Cheque Guide, Banking & RBI, Cheque Security, Software Comparison, Cheque Productivity
+**And** blog listing supports tag-based filtering with clickable pills
+**And** blog posts include prev/next navigation
 
 ## Epic 7: Contact Page & Live Chat
 

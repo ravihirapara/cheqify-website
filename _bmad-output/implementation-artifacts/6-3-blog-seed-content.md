@@ -1,6 +1,6 @@
 # Story 6.3: Blog Seed Content
 
-Status: in-progress
+Status: done
 
 ## Story
 

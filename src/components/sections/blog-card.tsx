@@ -1,6 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { Link } from "~/i18n/navigation";
 import { Printer, AlertTriangle, ArrowLeftRight, Shield, Calendar, ScanLine } from "lucide-react";
 import { cn } from "~/lib/utils";
@@ -41,8 +40,6 @@ function BlogImage({ slug, className }: { slug: string; className?: string }) {
 }
 
 export function BlogCard({ post, featured = false }: BlogCardProps) {
-  const t = useTranslations("blog");
-
   const formattedDate = new Date(post.date).toLocaleDateString(post.lang, {
     year: "numeric",
     month: "long",
