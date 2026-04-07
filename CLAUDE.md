@@ -36,7 +36,7 @@ Use the `/` command to invoke BMAD workflows:
 
 ### Current Project Phase
 
-Starting fresh - needs product brief creation first.
+Starting fresh - needs product brief creation first..
 
 ## Dev Commands
 
