@@ -1,6 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { routing } from "~/i18n/routing";
 import { ContactHero } from "~/components/sections/contact-hero";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 import { ContactInfo } from "~/components/sections/contact-info";
 import { ContactForm } from "~/components/sections/contact-form";
 

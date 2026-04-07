@@ -1,35 +1,25 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Check, X, Minus } from "lucide-react";
+import { Check, X } from "lucide-react";
 
-const FEATURE_COUNT = 12;
+const FEATURES = [
+  { num: 1, cheqifyWins: false },
+  { num: 2, cheqifyWins: true },
+  { num: 3, cheqifyWins: true },
+  { num: 4, cheqifyWins: true },
+  { num: 5, cheqifyWins: true },
+  { num: 6, cheqifyWins: true },
+  { num: 7, cheqifyWins: true },
+  { num: 8, cheqifyWins: true },
+  { num: 9, cheqifyWins: true },
+  { num: 10, cheqifyWins: true },
+  { num: 11, cheqifyWins: true },
+  { num: 12, cheqifyWins: true },
+] as const;
 
-const CHEQIFY_STATUS: Record<number, "win" | "tie"> = {
-  1: "tie",
-  2: "win",
-  3: "win",
-  4: "win",
-  5: "win",
-  6: "win",
-  7: "win",
-  8: "win",
-  9: "win",
-  10: "win",
-  11: "win",
-  12: "win",
-};
-
-function StatusIcon({ value, isWin }: { value: string; isWin: boolean }) {
-  const lower = value.toLowerCase();
-  if (lower === "no" || lower === "नहीं" || lower === "ना") {
-    return <X className="mr-2 inline h-5 w-5 text-red-500" />;
-  }
-  if (isWin) {
-    return <Check className="mr-2 inline h-5 w-5 text-green-500" />;
-  }
-  return <Minus className="mr-2 inline h-5 w-5 text-muted-foreground" />;
-}
+// ChequePot loses on these features (shows X icon)
+const CHEQUEPOT_LOSES = new Set([4, 6, 7, 8, 11]);
 
 export function ComparisonTable() {
   const t = useTranslations("comparison.table");
@@ -46,43 +36,44 @@ export function ComparisonTable() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-border shadow-sm">
-          {/* Header */}
-          <div className="grid grid-cols-3 bg-muted/50 px-4 py-4 text-sm font-bold uppercase tracking-wider md:px-6">
-            <div className="text-muted-foreground">Feature</div>
-            <div className="text-center text-primary">{t("cheqify")}</div>
-            <div className="text-center text-muted-foreground">{t("chequepot")}</div>
-          </div>
-
-          {/* Rows */}
-          {Array.from({ length: FEATURE_COUNT }).map((_, i) => {
-            const num = i + 1;
-            const status = CHEQIFY_STATUS[num];
-            return (
-              <div
-                key={num}
-                className={`grid grid-cols-3 items-center px-4 py-3.5 text-sm md:px-6 ${
-                  i % 2 === 0 ? "bg-background" : "bg-muted/20"
-                }`}
-              >
-                <div className="font-medium text-foreground">
-                  {t(`feature${num}`)}
-                </div>
-                <div className="text-center">
-                  <StatusIcon value={t(`cheqify${num}`)} isWin={status === "win"} />
-                  <span className={status === "win" ? "font-semibold text-foreground" : "text-muted-foreground"}>
-                    {t(`cheqify${num}`)}
-                  </span>
-                </div>
-                <div className="text-center">
-                  <StatusIcon value={t(`chequepot${num}`)} isWin={false} />
-                  <span className="text-muted-foreground">
-                    {t(`chequepot${num}`)}
-                  </span>
-                </div>
-              </div>
-            );
-          })}
+        <div className="mx-auto max-w-4xl overflow-x-auto">
+          <table className="w-full min-w-[500px] border-collapse overflow-hidden rounded-2xl border border-border shadow-sm" aria-label={t("heading")}>
+            <thead>
+              <tr className="bg-muted/50 text-sm font-bold uppercase tracking-wider">
+                <th scope="col" className="px-4 py-4 text-left text-muted-foreground md:px-6">Feature</th>
+                <th scope="col" className="px-4 py-4 text-center text-primary md:px-6">{t("cheqify")}</th>
+                <th scope="col" className="px-4 py-4 text-center text-muted-foreground md:px-6">{t("chequepot")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {FEATURES.map(({ num, cheqifyWins }, i) => (
+                <tr
+                  key={num}
+                  className={`text-sm ${i % 2 === 0 ? "bg-background" : "bg-muted/20"}`}
+                >
+                  <td className="px-4 py-3.5 font-medium text-foreground md:px-6">
+                    {t(`feature${num}`)}
+                  </td>
+                  <td className="px-4 py-3.5 text-center md:px-6">
+                    <Check className="mr-1 inline h-5 w-5 text-green-500" />
+                    <span className={cheqifyWins ? "font-semibold text-foreground" : "text-muted-foreground"}>
+                      {t(`cheqify${num}`)}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3.5 text-center md:px-6">
+                    {CHEQUEPOT_LOSES.has(num) ? (
+                      <X className="mr-1 inline h-5 w-5 text-red-500" />
+                    ) : (
+                      <Check className="mr-1 inline h-5 w-5 text-muted-foreground" />
+                    )}
+                    <span className="text-muted-foreground">
+                      {t(`chequepot${num}`)}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

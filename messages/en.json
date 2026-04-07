@@ -492,6 +492,15 @@
       "heading": "The Clear Winner",
       "subheading": "Thousands of Indian businesses have already switched from ChequePot to Cheqify. Join them today — it's completely free.",
       "cta": "Switch to Cheqify — It's Free"
+    },
+    "breadcrumb": "Comparison",
+    "faq": {
+      "q1": "Is Cheqify really free compared to ChequePot?",
+      "a1": "Yes, Cheqify is 100% free with all features included. ChequePot charges for basic cheque printing functionality. Cheqify offers 300+ bank formats, lifecycle tracking, batch printing, and team management at zero cost.",
+      "q2": "How does Cheqify compare to ChequePot in features?",
+      "a2": "Cheqify offers significantly more features than ChequePot including automatic MICR validation, lifecycle tracking, owner dashboard, team management, multi-language support (English, Hindi, Gujarati), mobile responsive design, and export reports in PDF, Excel, and CSV formats.",
+      "q3": "Can I switch from ChequePot to Cheqify?",
+      "a3": "Yes, switching is easy. Sign up for free at Cheqify, select your bank from 300+ pre-loaded formats, and start printing cheques immediately. No data migration needed — just start fresh with better tools at zero cost."
     }
   }
 }

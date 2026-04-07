@@ -1,6 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { routing } from "~/i18n/routing";
 import { PrivacyHero } from "~/components/sections/privacy-hero";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 import { PrivacyContent } from "~/components/sections/privacy-content";
 
 export async function generateMetadata({

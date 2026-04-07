@@ -1,6 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
+import { routing } from "~/i18n/routing";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 import { AboutHero } from "~/components/sections/about-hero";
 import { AboutStory } from "~/components/sections/about-story";
 import { AboutValues } from "~/components/sections/about-values";

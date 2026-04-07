@@ -11,6 +11,7 @@ export const PAGES = [
   "/contact",
   "/about",
   "/privacy",
+  "/comparison",
 ] as const;
 
 /** Generate all locale+page route combinations */

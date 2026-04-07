@@ -1,5 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { routing } from "~/i18n/routing";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 import { Hero } from "~/components/sections/hero";
 import { TrustBar } from "~/components/sections/trust-bar";
 import { BankLogos } from "~/components/sections/bank-logos";
