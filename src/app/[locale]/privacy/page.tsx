@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { PrivacyHero } from "~/components/sections/privacy-hero";
 import { PrivacyContent } from "~/components/sections/privacy-content";
@@ -19,7 +19,13 @@ export async function generateMetadata({
   });
 }
 
-export default function PrivacyPage() {
+export default async function PrivacyPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <PrivacyHero />

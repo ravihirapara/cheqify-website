@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { PricingHero } from "~/components/sections/pricing-hero";
 import { PricingCards } from "~/components/sections/pricing-cards";
@@ -21,7 +21,13 @@ export async function generateMetadata({
   });
 }
 
-export default function PricingPage() {
+export default async function PricingPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <PricingHero />

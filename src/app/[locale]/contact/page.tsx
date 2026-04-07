@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { ContactHero } from "~/components/sections/contact-hero";
 import { ContactInfo } from "~/components/sections/contact-info";
@@ -20,7 +20,13 @@ export async function generateMetadata({
   });
 }
 
-export default function ContactPage() {
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <ContactHero />

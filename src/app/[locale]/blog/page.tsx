@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { getBlogPosts } from "~/lib/blog";
 import { BlogHero } from "~/components/sections/blog-hero";
@@ -26,6 +26,7 @@ export default async function BlogPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const posts = getBlogPosts(locale);
 
   return (

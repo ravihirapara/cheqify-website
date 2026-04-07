@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { Hero } from "~/components/sections/hero";
 import { TrustBar } from "~/components/sections/trust-bar";
@@ -41,7 +41,13 @@ const JSONLD_WEBSITE = {
   url: "https://cheqify.app",
 };
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <script

@@ -84,8 +84,8 @@ development_status:
 
   # Epic 8: About Us & Privacy Policy Pages
   epic-8: done
-  8-1-about-us-page: review
-  8-2-privacy-policy-page: review
+  8-1-about-us-page: done
+  8-2-privacy-policy-page: done
   epic-8-retrospective: optional
 
   # Epic 9: Cookie Consent & Analytics

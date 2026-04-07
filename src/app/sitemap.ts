@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getBlogPosts } from "~/lib/blog";
 
+export const dynamic = "force-static";
+
 const BASE_URL = "https://cheqify.app";
 const LOCALES = ["en", "hi", "gu"];
 const STATIC_PAGES = ["", "/features", "/pricing", "/blog", "/contact", "/about", "/privacy"];

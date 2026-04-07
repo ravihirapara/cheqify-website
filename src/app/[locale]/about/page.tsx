@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { AboutHero } from "~/components/sections/about-hero";
 import { AboutStory } from "~/components/sections/about-story";
@@ -21,7 +21,13 @@ export async function generateMetadata({
   });
 }
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <AboutHero />
