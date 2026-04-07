@@ -99,7 +99,24 @@
       "Bash(git rm:*)",
       "Bash(grep \"^date:\" content/blog/en/*.md)",
       "Bash(sort -t'\"' -k2 -r)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(npx playwright:*)",
+      "Bash(cmd //c \"taskkill /PID 13384 /F\")",
+      "Bash(netlify --version)",
+      "Bash(npx netlify:*)",
+      "Bash(cp \"d:/chequeprint/public/favicon.ico\" \"D:/cheqify-website/public/favicon.ico\")",
+      "Bash(cp \"d:/chequeprint/public/favicon-16x16.png\" \"D:/cheqify-website/public/favicon-16x16.png\")",
+      "Bash(cp \"d:/chequeprint/public/favicon-32x32.png\" \"D:/cheqify-website/public/favicon-32x32.png\")",
+      "Bash(cp \"D:/Bank name/SBI-removebg-preview.png\" \"D:/cheqify-website/public/images/banks/sbi.png\")",
+      "Bash(cp \"D:/Bank name/HDFC.png\" \"D:/cheqify-website/public/images/banks/hdfc.png\")",
+      "Bash(cp \"D:/Bank name/ICICI_Bank-removebg-preview.png\" \"D:/cheqify-website/public/images/banks/icici.png\")",
+      "Bash(cp \"D:/Bank name/Axis_Logo__Bank_-removebg-preview.png\" \"D:/cheqify-website/public/images/banks/axis.png\")",
+      "Bash(cp \"D:/Bank name/Kotak-removebg-preview.png\" \"D:/cheqify-website/public/images/banks/kotak.png\")",
+      "Bash(SANITY_API_TOKEN=\"skiWuZm1G6CHX5MT9FakjwJu539SXgQkvAYNmcDpiqnse68cmIV6ReuMvA7RubsnfWqJNVtfVDzj8Kzv6Av0yv5WbcCXK406wg0kHBTdhbhPDqUVfckXLklfA3Z4uv9GZPFSa3ubY01oF2qJyUX7vOIOKIG3zeQGFocuBMoGSrwQjgfWjIZf\" node scripts/migrate-to-sanity.mjs)",
+      "Bash(npx sanity:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(rm -f sanity.config.ts sanity.cli.ts)",
+      "Bash(rm -rf sanity/ scripts/migrate-to-sanity.mjs src/lib/sanity.ts)"
     ]
   }
 }
