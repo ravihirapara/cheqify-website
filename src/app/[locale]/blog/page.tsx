@@ -33,7 +33,7 @@ export default async function BlogPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const posts = getBlogPosts(locale);
+  const posts = await getBlogPosts(locale);
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Blog", path: "/blog" }]);
 
   return (

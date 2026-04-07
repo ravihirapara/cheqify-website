@@ -1,17 +1,18 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
+import { PortableText } from "@portabletext/react";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "~/i18n/navigation";
 import { getBlogPost, getBlogPosts } from "~/lib/blog";
 import { buildSeoMetadata } from "~/lib/seo";
 import { routing } from "~/i18n/routing";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
 
   for (const locale of routing.locales) {
-    const posts = getBlogPosts(locale);
+    const posts = await getBlogPosts(locale);
     for (const post of posts) {
       params.push({ locale, slug: post.slug });
     }
@@ -67,7 +68,7 @@ export default async function BlogPostPage({
   }
 
   // Get all posts to find prev/next
-  const allPosts = getBlogPosts(locale);
+  const allPosts = await getBlogPosts(locale);
   const currentIndex = allPosts.findIndex((p) => p.slug === slug);
   const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
@@ -147,10 +148,9 @@ export default async function BlogPostPage({
           </div>
 
           {/* Content */}
-          <div
-            className="blog-content max-w-none text-foreground/90"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
+          <div className="blog-content max-w-none text-foreground/90">
+            <PortableText value={post.content} />
+          </div>
         </article>
 
         {/* Prev / Next Navigation */}

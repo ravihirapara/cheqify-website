@@ -7,10 +7,9 @@ const BASE_URL = "https://cheqify.app";
 const LOCALES = ["en", "hi", "gu"];
 const STATIC_PAGES = ["", "/features", "/pricing", "/blog", "/contact", "/about", "/privacy", "/comparison"];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
 
-  // Static pages × locales
   for (const page of STATIC_PAGES) {
     for (const locale of LOCALES) {
       entries.push({
@@ -22,9 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Blog posts × locales
   for (const locale of LOCALES) {
-    const posts = getBlogPosts(locale);
+    const posts = await getBlogPosts(locale);
     for (const post of posts) {
       entries.push({
         url: `${BASE_URL}/${locale}/blog/${post.slug}`,
