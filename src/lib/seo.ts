@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const BASE_URL = "https://cheqify.app";
-const OG_IMAGE = "/images/og-default.webp";
+const OG_IMAGE = "/images/og-cheqify.jpg";
 const LOCALES = ["en", "hi", "gu"] as const;
 
 export function buildSeoMetadata({
@@ -52,7 +52,7 @@ export function buildSeoMetadata({
           url: `${BASE_URL}${OG_IMAGE}`,
           width: 1200,
           height: 630,
-          alt: title,
+          alt: `${title} — Free cheque printing software for Indian businesses`,
         },
       ],
     },
@@ -60,7 +60,12 @@ export function buildSeoMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [`${BASE_URL}${OG_IMAGE}`],
+      images: [
+        {
+          url: `${BASE_URL}${OG_IMAGE}`,
+          alt: `${title} — Free cheque printing software for Indian businesses`,
+        },
+      ],
     },
   };
 }

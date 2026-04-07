@@ -1,17 +1,16 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const BANKS = [
-  { name: "SBI", color: "#1a4b8c" },
-  { name: "HDFC Bank", color: "#004b87" },
-  { name: "ICICI Bank", color: "#f58220" },
-  { name: "Axis Bank", color: "#97144d" },
-  { name: "PNB", color: "#cc0000" },
-  { name: "Kotak", color: "#ed1c24" },
-  { name: "BOB", color: "#f47920" },
-  { name: "Yes Bank", color: "#0066b3" },
-  { name: "IndusInd", color: "#1a3f6f" },
+  { name: "State Bank of India", logo: "/images/banks/sbi.png" },
+  { name: "HDFC Bank", logo: "/images/banks/hdfc.png" },
+  { name: "ICICI Bank", logo: "/images/banks/icici.png" },
+  { name: "Axis Bank", logo: "/images/banks/axis.png" },
+  { name: "Kotak Mahindra Bank", logo: "/images/banks/kotak.png" },
+  { name: "Bank of Baroda", logo: "/images/banks/bob.png" },
+  { name: "Yes Bank", logo: "/images/banks/yesbank.png" },
 ];
 
 export function BankLogos() {
@@ -26,15 +25,16 @@ export function BankLogos() {
           {t("heading")}
         </p>
         <div className="overflow-hidden">
-          <div className="flex animate-[marquee_20s_linear_infinite] items-center gap-12 whitespace-nowrap hover:[animation-play-state:paused] md:gap-16">
+          <div className="flex animate-[marquee_25s_linear_infinite] items-center gap-12 whitespace-nowrap hover:[animation-play-state:paused] md:gap-16">
             {allBanks.map((bank, idx) => (
-              <span
+              <Image
                 key={`${bank.name}-${idx}`}
-                className="text-xl font-bold opacity-50 transition-opacity hover:opacity-100"
-                style={{ color: bank.color }}
-              >
-                {bank.name}
-              </span>
+                src={bank.logo}
+                alt={`${bank.name} logo — supported by Cheqify`}
+                width={200}
+                height={60}
+                className="h-12 w-auto opacity-80 transition-opacity hover:opacity-100 md:h-16"
+              />
             ))}
             <span className="text-lg font-bold text-primary">
               {t("moreBanks")}
