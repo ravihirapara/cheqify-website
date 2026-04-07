@@ -1,9 +1,5 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { remark } from "remark";
-import remarkGfm from "remark-gfm";
-import html from "remark-html";
+import { sanityClient } from "./sanity";
+import type { PortableTextBlock } from "@portabletext/react";
 
 export interface BlogPostMeta {
   title: string;
@@ -14,73 +10,87 @@ export interface BlogPostMeta {
   lang: string;
   tags: string[];
   image: string;
+  order: number;
 }
 
 export interface BlogPost {
   meta: BlogPostMeta;
-  content: string;
+  content: PortableTextBlock[];
 }
 
-const BLOG_DIR = path.join(process.cwd(), "content", "blog");
+const LOCALE_FIELDS: Record<string, { title: string; description: string; body: string }> = {
+  en: { title: "title_en", description: "description_en", body: "body_en" },
+  hi: { title: "title_hi", description: "description_hi", body: "body_hi" },
+  gu: { title: "title_gu", description: "description_gu", body: "body_gu" },
+};
 
-export function getBlogPosts(locale: string): BlogPostMeta[] {
-  const dir = path.join(BLOG_DIR, locale);
+function getFields(locale: string) {
+  return LOCALE_FIELDS[locale] || LOCALE_FIELDS.en;
+}
 
-  if (!fs.existsSync(dir)) {
-    return [];
-  }
+export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
+  const f = getFields(locale);
 
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md"));
+  const query = `*[_type == "blogPost"] | order(order asc) {
+    "title": ${f.title},
+    "description": ${f.description},
+    "slug": slug.current,
+    tags,
+    order,
+    author,
+    _createdAt
+  }`;
 
-  const posts = files.map((filename) => {
-    const filePath = path.join(dir, filename);
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const { data } = matter(fileContent);
+  const posts = await sanityClient.fetch(query);
 
-    return {
-      title: data.title ?? "",
-      description: data.description ?? "",
-      date: data.date ?? "",
-      author: data.author ?? "",
-      slug: data.slug ?? filename.replace(/\.md$/, ""),
-      lang: data.lang ?? locale,
-      tags: data.tags ?? [],
-      image: data.image ?? "",
-    } satisfies BlogPostMeta;
-  });
-
-  return posts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  return (posts || [])
+    .filter((p: Record<string, string>) => p.title)
+    .map((p: Record<string, unknown>) => ({
+      title: (p.title as string) || "",
+      description: (p.description as string) || "",
+      date: (p._createdAt as string) || "",
+      author: (p.author as string) || "Cheqify Team",
+      slug: (p.slug as string) || "",
+      lang: locale,
+      tags: (p.tags as string[]) || [],
+      image: "",
+      order: (p.order as number) || 999,
+    }));
 }
 
 export async function getBlogPost(
   locale: string,
   slug: string
 ): Promise<BlogPost | null> {
-  const filePath = path.join(BLOG_DIR, locale, `${slug}.md`);
+  const f = getFields(locale);
 
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
+  const query = `*[_type == "blogPost" && slug.current == $slug][0]{
+    "title": ${f.title},
+    "description": ${f.description},
+    "body": ${f.body},
+    "slug": slug.current,
+    tags,
+    order,
+    author,
+    _createdAt
+  }`;
 
-  const fileContent = fs.readFileSync(filePath, "utf-8");
-  const { data, content: markdown } = matter(fileContent);
+  const post = await sanityClient.fetch(query, { slug });
 
-  const processed = await remark().use(remarkGfm).use(html).process(markdown);
-  const contentHtml = processed.toString();
+  if (!post) return null;
 
   return {
     meta: {
-      title: data.title ?? "",
-      description: data.description ?? "",
-      date: data.date ?? "",
-      author: data.author ?? "",
-      slug: data.slug ?? slug,
-      lang: data.lang ?? locale,
-      tags: data.tags ?? [],
-      image: data.image ?? "",
+      title: post.title || "",
+      description: post.description || "",
+      date: post._createdAt || "",
+      author: post.author || "Cheqify Team",
+      slug: post.slug,
+      lang: locale,
+      tags: post.tags || [],
+      image: "",
+      order: post.order || 999,
     },
-    content: contentHtml,
+    content: post.body || [],
   };
 }

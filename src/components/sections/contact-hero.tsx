@@ -7,7 +7,7 @@ export function ContactHero() {
 
   return (
     <section className="mx-auto mb-12 max-w-7xl px-6 pt-16 text-center md:pt-24">
-      <span className="mb-4 inline-block text-xs font-bold uppercase tracking-widest text-primary">
+      <span className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">
         {t("badge")}
       </span>
       <h1 className="mb-6 text-5xl font-extrabold leading-tight tracking-tight md:text-6xl">
