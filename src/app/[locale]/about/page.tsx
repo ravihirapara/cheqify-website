@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { AboutHero } from "~/components/sections/about-hero";
 import { AboutStory } from "~/components/sections/about-story";
 import { AboutValues } from "~/components/sections/about-values";
@@ -28,8 +29,10 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "About", path: "/about" }]);
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <AboutHero />
       <AboutStory />
       <AboutValues />

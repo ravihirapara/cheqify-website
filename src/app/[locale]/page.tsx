@@ -32,6 +32,8 @@ const JSONLD_ORGANIZATION = {
   url: "https://cheqify.app",
   description:
     "Cheque printing and lifecycle management platform for Indian businesses.",
+  areaServed: "IN",
+  sameAs: ["https://cheqify.app"],
 };
 
 const JSONLD_WEBSITE = {
@@ -39,6 +41,24 @@ const JSONLD_WEBSITE = {
   "@type": "WebSite",
   name: "Cheqify.app",
   url: "https://cheqify.app",
+};
+
+const JSONLD_SOFTWARE = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Cheqify.app",
+  description:
+    "Print error-free cheques in under 2 minutes. 300+ bank layouts, MICR validation, batch printing, and lifecycle tracking.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Web",
+  url: "https://app.cheqify.app",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "INR",
+  },
+  featureList:
+    "Cheque Printing, MICR Validation, Batch Printing, Lifecycle Tracking, Bank Reconciliation, Multi-Language Support",
 };
 
 export default async function Home({
@@ -53,7 +73,7 @@ export default async function Home({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([JSONLD_ORGANIZATION, JSONLD_WEBSITE]),
+          __html: JSON.stringify([JSONLD_ORGANIZATION, JSONLD_WEBSITE, JSONLD_SOFTWARE]),
         }}
       />
       <Hero />

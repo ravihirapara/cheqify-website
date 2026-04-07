@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { PricingHero } from "~/components/sections/pricing-hero";
 import { PricingCards } from "~/components/sections/pricing-cards";
 import { WhyFree } from "~/components/sections/why-free";
@@ -75,8 +76,10 @@ export default async function PricingPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Pricing", path: "/pricing" }]);
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(PRICING_FAQ_JSONLD) }}

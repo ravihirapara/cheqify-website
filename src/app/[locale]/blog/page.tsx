@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { getBlogPosts } from "~/lib/blog";
 import { BlogHero } from "~/components/sections/blog-hero";
 import { BlogListing } from "~/components/sections/blog-listing";
@@ -28,9 +29,11 @@ export default async function BlogPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const posts = getBlogPosts(locale);
+  const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Blog", path: "/blog" }]);
 
   return (
     <section className="px-6 py-16 md:py-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <div className="mx-auto max-w-7xl">
         <BlogHero />
         <BlogListing posts={posts} />

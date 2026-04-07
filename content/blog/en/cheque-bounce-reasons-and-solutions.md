@@ -75,6 +75,6 @@ While Cheqify cannot control your bank balance, it eliminates almost every other
 
 ## Stop Cheque Bounces Today
 
-Most cheque bounces are caused by preventable errors. Cheqify eliminates the printing and formatting errors that lead to dishonour — so you can focus on running your business.
+Most cheque bounces are caused by preventable errors. Cheqify eliminates the printing and formatting errors that lead to dishonour — so you can focus on running your business. Learn more about [how Cheqify prevents errors](/en/features) — it's [100% free](/en/pricing).
 
 [Start using Cheqify for free](https://app.cheqify.app/register)

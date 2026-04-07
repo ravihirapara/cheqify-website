@@ -80,6 +80,6 @@ Managing dozens or hundreds of post-dated cheques manually is error-prone and st
 
 ## Take Control of Your Post-Dated Cheques
 
-Stop relying on memory or spreadsheets to manage PDCs. With Cheqify, you get automated reminders, clear tracking, and a complete audit trail for every post-dated cheque.
+Stop relying on memory or spreadsheets to manage PDCs. With Cheqify, you get automated reminders, clear tracking, and a complete audit trail for every post-dated cheque. See all [lifecycle tracking features](/en/features) — [everything is free](/en/pricing).
 
 [Get started with Cheqify for free](https://app.cheqify.app/register)

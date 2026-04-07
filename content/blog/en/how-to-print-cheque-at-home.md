@@ -60,6 +60,6 @@ If you need to print multiple cheques for vendor payments, salary disbursements,
 
 ## Start Printing Cheques Today
 
-Printing cheques at home is simpler than you think. With Cheqify, you get 300+ bank formats, automatic error prevention, and professional output — all for free.
+Printing cheques at home is simpler than you think. With Cheqify, you get 300+ bank formats, automatic error prevention, and professional output — all for free. Explore all [Cheqify features](/en/features) or check our [pricing — it's completely free](/en/pricing).
 
 [Start printing cheques for free with Cheqify](https://app.cheqify.app/register)

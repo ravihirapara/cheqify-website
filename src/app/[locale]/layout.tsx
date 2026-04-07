@@ -34,6 +34,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning className="h-full scroll-smooth antialiased">
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://embed.tawk.to" />
+        <link rel="dns-prefetch" href="https://embed.tawk.to" />
+      </head>
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <NextIntlClientProvider locale={locale} messages={messages}>

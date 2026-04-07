@@ -103,6 +103,6 @@ This eliminates one of the most common causes of cheque rejection and ensures ev
 
 ## Never Worry About MICR Errors Again
 
-Incorrect MICR codes lead to rejected cheques, delayed payments, and unnecessary hassle. Cheqify validates every MICR code before printing, so you can be confident that your cheques will process correctly every time.
+Incorrect MICR codes lead to rejected cheques, delayed payments, and unnecessary hassle. Cheqify validates every MICR code before printing, so you can be confident that your cheques will process correctly every time. Explore all [Cheqify features](/en/features) including MICR validation — [100% free](/en/pricing).
 
 [Start printing validated cheques with Cheqify](https://app.cheqify.app/register)

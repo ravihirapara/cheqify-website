@@ -75,7 +75,7 @@ The decision is straightforward. Cheqify gives you everything manual writing doe
 - **For small businesses** — Save hours every month on vendor payments.
 - **For growing companies** — Scale cheque operations with batch printing and team management.
 
-Every feature is included in the free plan. No tiers, no limits, no credit card required.
+Every feature is included in the free plan. No tiers, no limits, no credit card required. See our [complete feature list](/en/features) and [pricing details](/en/pricing).
 
 ## Make the Switch Today
 

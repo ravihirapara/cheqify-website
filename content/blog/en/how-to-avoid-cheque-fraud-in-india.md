@@ -75,6 +75,6 @@ Cheqify is designed with security as a core principle, and several features dire
 
 ## Protect Your Business Starting Today
 
-Cheque fraud is preventable with the right processes and tools. By switching from handwritten to digitally printed cheques and maintaining a complete audit trail, you significantly reduce your exposure to fraud.
+Cheque fraud is preventable with the right processes and tools. By switching from handwritten to digitally printed cheques and maintaining a complete audit trail, you significantly reduce your exposure to fraud. See all [security features Cheqify offers](/en/features) — and it's [completely free](/en/pricing).
 
 [Try Cheqify free and secure your cheque process](https://app.cheqify.app/register)

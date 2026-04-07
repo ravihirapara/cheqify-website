@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { FeaturesHero } from "~/components/sections/features-hero";
 import { FeaturesCore } from "~/components/sections/features-core";
 import { FeatureHighlights } from "~/components/sections/feature-highlights";
@@ -28,8 +29,10 @@ export default async function FeaturesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Features", path: "/features" }]);
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <FeaturesHero />
       <FeaturesCore />
       <FeatureHighlights />

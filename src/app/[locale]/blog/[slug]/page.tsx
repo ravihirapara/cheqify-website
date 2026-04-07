@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "~/i18n/navigation";
 import { getBlogPost, getBlogPosts } from "~/lib/blog";
@@ -77,6 +78,11 @@ export default async function BlogPostPage({
     day: "numeric",
   });
 
+  const breadcrumbs = buildBreadcrumbJsonLd(locale, [
+    { name: "Blog", path: "/blog" },
+    { name: post.meta.title, path: `/blog/${slug}` },
+  ]);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -97,6 +103,7 @@ export default async function BlogPostPage({
 
   return (
     <section className="px-6 py-16 md:py-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
