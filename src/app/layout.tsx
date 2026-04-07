@@ -13,8 +13,13 @@ export const metadata: Metadata = {
   description: "Print Error-Free Cheques in Under 2 Minutes",
   metadataBase: new URL("https://cheqify.app"),
   manifest: "/manifest.json",
-  other: {
-    "google-site-verification": "",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
   },
 };
 
