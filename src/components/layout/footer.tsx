@@ -47,7 +47,7 @@ export function Footer() {
             <Link href="/" className="inline-block">
               <Image
                 src="/images/logo.png"
-                alt={t("footer.tagline")}
+                alt="Cheqify.app logo"
                 width={160}
                 height={45}
                 className="h-10 w-auto"
