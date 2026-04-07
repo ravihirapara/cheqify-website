@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const BANKS = [
+const BANKS: { name: string; logo: string; className?: string }[] = [
   { name: "State Bank of India", logo: "/images/banks/sbi.png" },
   { name: "HDFC Bank", logo: "/images/banks/hdfc.png" },
   { name: "ICICI Bank", logo: "/images/banks/icici.png" },
@@ -11,6 +11,10 @@ const BANKS = [
   { name: "Kotak Mahindra Bank", logo: "/images/banks/kotak.png" },
   { name: "Bank of Baroda", logo: "/images/banks/bob.png" },
   { name: "Yes Bank", logo: "/images/banks/yesbank.png" },
+  { name: "IDFC First Bank", logo: "/images/banks/idfc.png" },
+  { name: "IndusInd Bank", logo: "/images/banks/indusind.png" },
+  { name: "Varachha Co-Op Bank", logo: "/images/banks/varachha.png", className: "!w-20 md:!w-44" },
+  { name: "Kalupur Bank", logo: "/images/banks/kalupur.png" },
 ];
 
 export function BankLogos() {
@@ -33,7 +37,7 @@ export function BankLogos() {
                 alt={`${bank.name} logo — supported by Cheqify`}
                 width={200}
                 height={60}
-                className="h-12 w-auto opacity-80 transition-opacity hover:opacity-100 md:h-16"
+                className={`h-12 w-auto opacity-80 transition-opacity hover:opacity-100 md:h-16 ${bank.className || ""}`}
               />
             ))}
             <span className="text-lg font-bold text-primary">

@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Play } from "lucide-react";
 
 export function DemoVideo() {
   const t = useTranslations("home.demoVideo");
@@ -19,21 +18,15 @@ export function DemoVideo() {
         </div>
         <div className="mt-12 flex justify-center">
           <div className="w-full max-w-3xl">
-            {/* Video placeholder — replace with real embed when video is available */}
-            <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card shadow-lg">
-              <div className="flex h-full flex-col items-center justify-center gap-4">
-                <button
-                  type="button"
-                  disabled
-                  className="flex h-16 w-16 cursor-not-allowed items-center justify-center rounded-full bg-primary/50 text-primary-foreground shadow-lg"
-                  aria-label={t("playButton")}
-                >
-                  <Play className="ml-1 h-7 w-7" />
-                </button>
-                <p className="text-sm text-muted-foreground">
-                  {t("placeholder")}
-                </p>
-              </div>
+            <div className="relative aspect-video overflow-hidden rounded-2xl border border-border shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/DiihuB-hEiY"
+                title="Cheqify Demo — Free Cheque Printing Software for Indian Businesses"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

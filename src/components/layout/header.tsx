@@ -28,10 +28,10 @@ export function Header() {
           <Image
             src="/images/logo.png"
             alt={t("header.logoAlt")}
-            width={140}
-            height={40}
+            width={180}
+            height={50}
             priority
-            className="h-8 w-auto"
+            className="h-10 w-auto md:h-11"
           />
         </Link>
 

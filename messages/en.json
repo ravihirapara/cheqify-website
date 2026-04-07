@@ -51,11 +51,41 @@
       "description": "Print, track, and manage cheques from any device. 300+ Indian banks, MICR validation, batch printing. Free forever."
     },
     "hero": {
-      "badge": "NEW: AUTO-RECONCILIATION",
-      "headlinePart1": "Print Error-Free ",
-      "headlineHighlight": "Cheques",
-      "headlinePart2": " in Under 2 Minutes",
-      "subheadline": "Print, track, and manage cheques from any device. Works with 300+ Indian banks. Automatic amount-in-words, MICR validation, and batch printing. No training needed — just sign up and start printing error-free cheques instantly.",
+      "slides": [
+        {
+          "badge": "FREE CHEQUE PRINTING",
+          "part1": "Print Error-Free ",
+          "highlight": "Cheques",
+          "part2": " in Under 2 Minutes",
+          "description": "Print, track, and manage cheques from any device. Works with 300+ Indian banks. Automatic amount-in-words, MICR validation, and batch printing.",
+          "cta": "Start Free",
+          "ctaLink": "https://app.cheqify.app/register",
+          "cta2": "Explore Features",
+          "cta2Link": "/features"
+        },
+        {
+          "badge": "LIFECYCLE TRACKING",
+          "part1": "Track Every ",
+          "highlight": "Cheque",
+          "part2": " from Issue to Clearance",
+          "description": "Know instantly if a cheque is deposited, cleared, or bounced. Get real-time alerts, auto-reminders for post-dated cheques, and a complete audit trail.",
+          "cta": "Start Tracking",
+          "ctaLink": "https://app.cheqify.app/register",
+          "cta2": "Explore Features",
+          "cta2Link": "/features"
+        },
+        {
+          "badge": "300+ BANK FORMATS",
+          "part1": "300+ Indian ",
+          "highlight": "Bank Formats",
+          "part2": " Ready to Print",
+          "description": "SBI, HDFC, ICICI, Axis, PNB, Kotak, and hundreds more. Every bank layout pre-loaded with correct MICR positioning. Just select your bank and print.",
+          "cta": "Explore Features",
+          "ctaLink": "https://app.cheqify.app/register",
+          "cta2": "Explore Features",
+          "cta2Link": "/features"
+        }
+      ],
       "noCreditCard": "No credit card required. Free forever for basic use.",
       "productScreenshotAlt": "Cheqify app — cheque printing dashboard"
     },
