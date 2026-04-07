@@ -21,7 +21,8 @@
       "resources": "Resources",
       "company": "Company",
       "legal": "Legal",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy Policy",
+      "compare": "Cheqify vs ChequePot"
     },
     "language": {
       "en": "English",
@@ -413,6 +414,84 @@
       "submit": "Send Message",
       "success": "Message sent! We'll get back to you soon.",
       "error": "Something went wrong. Please try again."
+    }
+  },
+  "comparison": {
+    "meta": {
+      "title": "Cheqify vs ChequePot — Free Cheque Printing Comparison | Cheqify.app",
+      "description": "Compare Cheqify with ChequePot side-by-side. See why Cheqify is the best free ChequePot alternative with 300+ bank formats, lifecycle tracking, and zero cost."
+    },
+    "hero": {
+      "badge": "SIDE-BY-SIDE COMPARISON",
+      "headlinePart1": "See Why ",
+      "headlineHighlight": "Cheqify",
+      "headlinePart2": " is the Better Choice",
+      "subheading": "ChequePot charges for basic cheque printing. Cheqify gives you everything — 300+ bank formats, lifecycle tracking, batch printing, and team management — completely free.",
+      "cta": "Start Free",
+      "cta2": "Explore Features"
+    },
+    "table": {
+      "heading": "Feature-by-Feature Comparison",
+      "subheading": "A detailed look at what each platform offers",
+      "cheqify": "Cheqify",
+      "chequepot": "ChequePot",
+      "feature1": "Cheque Printing",
+      "cheqify1": "Yes",
+      "chequepot1": "Yes",
+      "feature2": "Price",
+      "cheqify2": "Free Forever",
+      "chequepot2": "Paid",
+      "feature3": "Bank Formats",
+      "cheqify3": "300+",
+      "chequepot3": "Limited",
+      "feature4": "MICR Validation",
+      "cheqify4": "Automatic",
+      "chequepot4": "No",
+      "feature5": "Batch Printing",
+      "cheqify5": "Yes (Excel/CSV)",
+      "chequepot5": "Limited",
+      "feature6": "Lifecycle Tracking",
+      "cheqify6": "Full Tracking",
+      "chequepot6": "No",
+      "feature7": "Owner Dashboard",
+      "cheqify7": "Yes",
+      "chequepot7": "No",
+      "feature8": "Team Management",
+      "cheqify8": "Yes",
+      "chequepot8": "No",
+      "feature9": "Amount in Words",
+      "cheqify9": "Automatic",
+      "chequepot9": "Manual",
+      "feature10": "Multi-Language",
+      "cheqify10": "3 Languages",
+      "chequepot10": "English Only",
+      "feature11": "Mobile Responsive",
+      "cheqify11": "Yes",
+      "chequepot11": "No",
+      "feature12": "Export Reports",
+      "cheqify12": "PDF, Excel, CSV",
+      "chequepot12": "Limited"
+    },
+    "advantages": {
+      "heading": "Why Businesses Choose Cheqify",
+      "subheading": "The key advantages that set Cheqify apart",
+      "card1Title": "Free Forever",
+      "card1Description": "Every feature included at zero cost. No hidden charges, no credit card, no surprise bills — ever.",
+      "card2Title": "Modern Interface",
+      "card2Description": "Clean, intuitive design that works on any device. No outdated software to install or maintain.",
+      "card3Title": "300+ Bank Formats",
+      "card3Description": "Pre-loaded layouts for every major Indian bank with correct MICR positioning. Just select and print.",
+      "card4Title": "Lifecycle Tracking",
+      "card4Description": "Track every cheque from issue to clearance. Real-time alerts for deposits, bounces, and post-dated cheques.",
+      "card5Title": "Real-Time Alerts",
+      "card5Description": "Get notified instantly when cheques are deposited, cleared, or bounced. Never miss a status change.",
+      "card6Title": "Works Anywhere",
+      "card6Description": "Access from desktop, laptop, tablet, or mobile. No installation required — just open your browser."
+    },
+    "verdict": {
+      "heading": "The Clear Winner",
+      "subheading": "Thousands of Indian businesses have already switched from ChequePot to Cheqify. Join them today — it's completely free.",
+      "cta": "Switch to Cheqify — It's Free"
     }
   }
 }

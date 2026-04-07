@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 
 const BASE_URL = "https://cheqify.app";
 const LOCALES = ["en", "hi", "gu"];
-const STATIC_PAGES = ["", "/features", "/pricing", "/blog", "/contact", "/about", "/privacy"];
+const STATIC_PAGES = ["", "/features", "/pricing", "/blog", "/contact", "/about", "/privacy", "/comparison"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
