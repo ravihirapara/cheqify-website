@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Button } from "~/components/ui/button";
 import { Link } from "~/i18n/navigation";
@@ -70,78 +71,38 @@ export function Hero() {
                 {/* Product Visual */}
                 <div className="relative mt-12 lg:mt-0">
                   <div className="absolute -inset-8 -z-10 rounded-full bg-gradient-to-tr from-primary/10 to-transparent blur-3xl" />
-                  <div
-                    className="w-full overflow-hidden rounded-xl border border-border/10 bg-background p-2 shadow-[0_20px_40px_rgba(8,28,50,0.06)]"
-                    role="img"
-                    aria-label={t("hero.productScreenshotAlt")}
-                  >
-                    <div className="rounded-lg bg-card p-5">
-                      {/* Top bar */}
-                      <div className="flex items-center gap-2 border-b border-border pb-4">
-                        <div className="h-3 w-3 rounded-full bg-red-400" />
-                        <div className="h-3 w-3 rounded-full bg-yellow-400" />
-                        <div className="h-3 w-3 rounded-full bg-green-400" />
-                        <div className="ml-4 h-4 w-48 rounded bg-muted" />
-                        <div className="ml-auto h-4 w-20 rounded bg-muted" />
-                      </div>
-                      {/* Sidebar + content */}
-                      <div className="mt-5 flex gap-5">
-                        <div className="hidden w-36 space-y-4 sm:block">
-                          <div className="h-4 w-full rounded bg-primary/20" />
-                          <div className="h-3 w-3/4 rounded bg-muted" />
-                          <div className="h-3 w-full rounded bg-muted" />
-                          <div className="h-3 w-2/3 rounded bg-muted" />
-                          <div className="mt-6 h-3 w-full rounded bg-muted" />
-                          <div className="h-3 w-4/5 rounded bg-muted" />
-                          <div className="h-3 w-3/5 rounded bg-muted" />
-                        </div>
-                        <div className="flex-1 space-y-4">
-                          <div className="grid grid-cols-3 gap-3">
-                            <div className="rounded-lg bg-primary/10 p-5">
-                              <div className="h-2 w-2/3 rounded bg-primary/30" />
-                              <div className="mt-3 h-6 w-3/4 rounded bg-primary/20" />
-                            </div>
-                            <div className="rounded-lg bg-accent p-5">
-                              <div className="h-2 w-2/3 rounded bg-primary/30" />
-                              <div className="mt-3 h-6 w-3/4 rounded bg-primary/20" />
-                            </div>
-                            <div className="rounded-lg bg-muted p-5">
-                              <div className="h-2 w-2/3 rounded bg-muted-foreground/20" />
-                              <div className="mt-3 h-6 w-3/4 rounded bg-muted-foreground/10" />
-                            </div>
-                          </div>
-                          <div className="rounded-lg border border-border p-4">
-                            <div className="mb-3 flex items-center gap-3 border-b border-border pb-3">
-                              <div className="h-3 w-20 rounded bg-muted-foreground/20" />
-                              <div className="h-3 w-24 rounded bg-muted-foreground/20" />
-                              <div className="ml-auto h-3 w-16 rounded bg-muted-foreground/20" />
-                            </div>
-                            <div className="space-y-3">
-                              {[1, 2, 3, 4].map((r) => (
-                                <div key={r} className="flex items-center gap-3">
-                                  <div className="h-8 w-8 rounded bg-primary/10" />
-                                  <div className="flex-1 space-y-1">
-                                    <div className="h-3 w-3/4 rounded bg-muted" />
-                                    <div className="h-2 w-1/2 rounded bg-muted/60" />
-                                  </div>
-                                  <div className="h-6 w-20 rounded-full bg-green-100 dark:bg-green-900/30" />
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                          <div className="flex items-end gap-1 border-t border-border pt-4">
-                            <div className="h-10 flex-1 rounded-t bg-primary/20" />
-                            <div className="h-16 flex-1 rounded-t bg-primary/30" />
-                            <div className="h-24 flex-1 rounded-t bg-primary/40" />
-                            <div className="h-14 flex-1 rounded-t bg-primary/25" />
-                            <div className="h-28 flex-1 rounded-t bg-primary" />
-                            <div className="h-20 flex-1 rounded-t bg-primary/35" />
-                            <div className="h-8 flex-1 rounded-t bg-primary/15" />
-                          </div>
-                        </div>
-                      </div>
+                  {i === 1 ? (
+                    <div className="w-full scale-110 lg:scale-125">
+                      <Image
+                        src="/images/indian-bank-cheque-formats-hdfc-axis-baroda.png"
+                        alt="Indian bank cheque formats — HDFC, Axis Bank, Bank of Baroda printed cheques"
+                        width={1200}
+                        height={800}
+                        className="h-auto w-full"
+                      />
                     </div>
-                  </div>
+                  ) : i === 2 ? (
+                    <div className="w-full">
+                      <Image
+                        src="/images/cheque-lifecycle-tracking-dashboard.png"
+                        alt="Cheqify cheque lifecycle tracking dashboard — track cheques from issue to clearance"
+                        width={1200}
+                        height={800}
+                        className="h-auto w-full"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-full">
+                      <Image
+                        src="/images/print-error-free-cheque-in-minutes.png"
+                        alt="Print error-free cheques in under 2 minutes with Cheqify"
+                        width={1200}
+                        height={800}
+                        className="h-auto w-full"
+                        priority
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

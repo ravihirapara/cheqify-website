@@ -65,23 +65,23 @@
           "cta2Link": "/features"
         },
         {
-          "badge": "LIFECYCLE TRACKING",
-          "part1": "Track Every ",
-          "highlight": "Cheque",
-          "part2": " from Issue to Clearance",
-          "description": "Know instantly if a cheque is deposited, cleared, or bounced. Get real-time alerts, auto-reminders for post-dated cheques, and a complete audit trail.",
-          "cta": "Start Tracking",
-          "ctaLink": "https://app.cheqify.app/register",
-          "cta2": "Explore Features",
-          "cta2Link": "/features"
-        },
-        {
           "badge": "300+ BANK FORMATS",
           "part1": "300+ Indian ",
           "highlight": "Bank Formats",
           "part2": " Ready to Print",
           "description": "SBI, HDFC, ICICI, Axis, PNB, Kotak, and hundreds more. Every bank layout pre-loaded with correct MICR positioning. Just select your bank and print.",
           "cta": "Explore Features",
+          "ctaLink": "https://app.cheqify.app/register",
+          "cta2": "Explore Features",
+          "cta2Link": "/features"
+        },
+        {
+          "badge": "LIFECYCLE TRACKING",
+          "part1": "Track Every ",
+          "highlight": "Cheque",
+          "part2": " from Issue to Clearance",
+          "description": "Know instantly if a cheque is deposited, cleared, or bounced. Get real-time alerts, auto-reminders for post-dated cheques, and a complete audit trail.",
+          "cta": "Start Tracking",
           "ctaLink": "https://app.cheqify.app/register",
           "cta2": "Explore Features",
           "cta2Link": "/features"

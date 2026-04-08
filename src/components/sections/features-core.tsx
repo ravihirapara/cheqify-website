@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import {
   Building2,
@@ -67,6 +68,17 @@ export function FeaturesCore() {
                       isOdd ? "lg:order-1" : "lg:order-2"
                     )}
                   >
+                    {feature.index === 1 ? (
+                      <div className="w-full">
+                        <Image
+                          src="/images/browse-cheque-templates-bank-layouts.png"
+                          alt="Browse 300+ pre-built Indian bank cheque templates in Cheqify"
+                          width={1200}
+                          height={800}
+                          className="h-auto w-full"
+                        />
+                      </div>
+                    ) : (
                     <div className="overflow-hidden rounded-xl border border-border/50 bg-background p-6 shadow-sm">
                       <div className="flex aspect-video items-center justify-center rounded-lg bg-muted/50">
                         <Icon className="h-12 w-12 text-muted-foreground/40" />
@@ -75,6 +87,7 @@ export function FeaturesCore() {
                         {t(`feature${feature.index}ScreenshotAlt`)}
                       </p>
                     </div>
+                    )}
                   </div>
 
                   {/* Text Content - always on top on mobile */}
