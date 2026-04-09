@@ -33,7 +33,7 @@ export function FeaturesCore() {
   const t = useTranslations("features.core");
 
   return (
-    <section className="bg-card py-16 md:py-24">
+    <section className="bg-card py-8 md:py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto mb-4 max-w-3xl text-center">
