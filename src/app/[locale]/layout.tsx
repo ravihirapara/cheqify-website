@@ -8,6 +8,7 @@ import { Footer } from "~/components/layout/footer";
 import { TawkTo } from "~/components/layout/tawk-to";
 import { CookieConsent } from "~/components/layout/cookie-consent";
 import { GoogleAnalytics } from "~/components/layout/google-analytics";
+import { PostHogProvider } from "~/components/layout/posthog-provider";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -41,18 +42,20 @@ export default async function LocaleLayout({
         <link rel="dns-prefetch" href="https://embed.tawk.to" />
       </head>
       <body className="min-h-full flex flex-col">
-        <ThemeProvider>
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <Header />
-            <main id="main-content" className="flex-1">
-              {children}
-            </main>
-            <Footer />
-            <CookieConsent />
-            <TawkTo />
-            <GoogleAnalytics />
-          </NextIntlClientProvider>
-        </ThemeProvider>
+        <PostHogProvider>
+          <ThemeProvider>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+              <Header />
+              <main id="main-content" className="flex-1">
+                {children}
+              </main>
+              <Footer />
+              <CookieConsent />
+              <TawkTo />
+              <GoogleAnalytics />
+            </NextIntlClientProvider>
+          </ThemeProvider>
+        </PostHogProvider>
       </body>
     </html>
   );
