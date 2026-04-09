@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 
 export function AboutStory() {
@@ -28,14 +29,14 @@ export function AboutStory() {
 
           {/* Image Column */}
           <div className="relative">
-            <div className="aspect-square overflow-hidden rounded-xl bg-muted shadow-2xl">
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
-                <div className="text-center text-muted-foreground">
-                  <div className="mx-auto mb-4 h-24 w-24 rounded-full bg-primary/10 p-6">
-                    <ShieldCheck className="h-full w-full text-primary" />
-                  </div>
-                </div>
-              </div>
+            <div className="overflow-hidden rounded-xl shadow-2xl">
+              <Image
+                src="/images/why-we-built-cheqify.png"
+                alt={t("imageAlt")}
+                width={600}
+                height={400}
+                className="h-auto w-full"
+              />
             </div>
             {/* Decorative badge card */}
             <div className="absolute -bottom-10 -left-10 hidden max-w-xs rounded-xl bg-card p-8 shadow-xl md:block">
