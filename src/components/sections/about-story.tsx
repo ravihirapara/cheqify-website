@@ -28,7 +28,7 @@ export function AboutStory() {
           </div>
 
           {/* Image Column */}
-          <div className="relative">
+          <div className="relative pb-16">
             <div className="overflow-hidden rounded-xl shadow-2xl">
               <Image
                 src="/images/why-we-built-cheqify.png"
@@ -39,7 +39,7 @@ export function AboutStory() {
               />
             </div>
             {/* Decorative badge card */}
-            <div className="absolute -bottom-10 -left-10 hidden max-w-xs rounded-xl bg-card p-8 shadow-xl md:block">
+            <div className="absolute -bottom-6 -left-10 hidden max-w-xs rounded-xl bg-card p-8 shadow-xl md:block">
               <div className="mb-4 flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <ShieldCheck className="h-6 w-6" />
