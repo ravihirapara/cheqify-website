@@ -8,7 +8,7 @@ export function PrivacyHero() {
 
   return (
     <section className="py-24 md:py-32">
-      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
         <Badge
           variant="outline"
           className="mb-4 text-xs font-bold uppercase tracking-widest text-primary"

@@ -21,7 +21,7 @@ export function PrivacyContent() {
   const t = useTranslations("privacy");
 
   return (
-    <article className="mx-auto max-w-3xl space-y-16 px-4 pb-24 sm:px-6 lg:px-8">
+    <article className="mx-auto max-w-5xl space-y-16 px-4 pb-24 sm:px-6 lg:px-8">
       {/* Section 1: Introduction */}
       <section className="space-y-6">
         <div className="mb-2 flex items-center gap-4">
