@@ -109,13 +109,8 @@ export function FeaturesCore() {
                         />
                       </div>
                     ) : (
-                    <div className="overflow-hidden rounded-xl border border-border/50 bg-background p-6 shadow-sm">
-                      <div className="flex aspect-video items-center justify-center rounded-lg bg-muted/50">
-                        <Icon className="h-12 w-12 text-muted-foreground/40" />
-                      </div>
-                      <p className="mt-3 text-center text-xs text-muted-foreground/60">
-                        {t(`feature${feature.index}ScreenshotAlt`)}
-                      </p>
+                    <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/30">
+                      <Icon className="h-12 w-12 text-muted-foreground/30" />
                     </div>
                     )}
                   </div>
