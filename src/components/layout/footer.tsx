@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Link } from "~/i18n/navigation";
 import { Globe, Mail } from "lucide-react";
@@ -37,6 +38,7 @@ const FOOTER_LINKS = [
 
 export function Footer() {
   const t = useTranslations("common");
+  const pathname = usePathname();
   const year = new Date().getFullYear();
 
   return (
@@ -95,7 +97,9 @@ export function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                      className={`text-sm font-medium transition-colors hover:text-primary ${
+                        pathname.endsWith(link.href) ? "text-primary" : "text-muted-foreground"
+                      }`}
                     >
                       {t(link.labelKey)}
                     </Link>
