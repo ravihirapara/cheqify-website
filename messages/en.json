@@ -316,6 +316,7 @@
       "subheading": "The principles that guide everything we build.",
       "value1Title": "Simplicity First",
       "value1Description": "We strip away complexity so you can focus on what matters. No training manuals, no onboarding calls — just sign up and start printing.",
+      "value1Description2": "Select your bank, fill in the details, and hit print — it takes less than 2 minutes. Our clean, distraction-free interface is designed so anyone on your team can use it from day one, whether they're tech-savvy or not.",
       "value1ImageAlt": "Simple and clean interface",
       "value2Title": "Absolute Accuracy",
       "value2Description": "Every cheque printed through Cheqify is validated for MICR codes, amounts, and formatting. Zero errors, zero bounces.",

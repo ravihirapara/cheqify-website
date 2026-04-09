@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Sparkles, Shield, Heart, Globe } from "lucide-react";
+import { Sparkles, Heart, Globe } from "lucide-react";
 
 export function AboutValues() {
   const t = useTranslations("about.values");
@@ -19,35 +19,38 @@ export function AboutValues() {
 
         <div className="grid gap-6 md:grid-cols-3">
           {/* Card 1: Simplicity First — 2-col span */}
-          <div className="group flex flex-col justify-between rounded-xl bg-card p-10 transition-all duration-300 hover:shadow-lg md:col-span-2">
-            <div>
-              <Sparkles className="mb-6 h-10 w-10 text-primary" />
-              <h3 className="mb-4 text-2xl font-bold text-foreground">
-                {t("value1Title")}
-              </h3>
-              <p className="leading-relaxed text-muted-foreground">
-                {t("value1Description")}
-              </p>
-            </div>
-            <div className="relative mt-8 h-40 overflow-hidden rounded-lg">
-              <Image
-                src="/images/app-screenshot.webp"
-                alt={t("value1ImageAlt")}
-                fill
-                className="object-cover grayscale transition-all group-hover:grayscale-0"
-              />
-            </div>
+          <div className="group rounded-xl bg-card p-10 transition-all duration-300 hover:shadow-lg md:col-span-2">
+            <Sparkles className="mb-6 h-10 w-10 text-primary" />
+            <h3 className="mb-4 text-2xl font-bold text-foreground">
+              {t("value1Title")}
+            </h3>
+            <p className="leading-relaxed text-muted-foreground">
+              {t("value1Description")}
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              {t("value1Description2")}
+            </p>
           </div>
 
           {/* Card 2: Absolute Accuracy — dark bg */}
-          <div className="flex flex-col justify-center rounded-xl bg-primary p-10 text-center text-primary-foreground">
-            <Shield className="mx-auto mb-6 h-16 w-16 opacity-50" />
-            <h3 className="mb-4 text-2xl font-bold">
-              {t("value2Title")}
-            </h3>
-            <p className="leading-relaxed opacity-90">
-              {t("value2Description")}
-            </p>
+          <div className="flex flex-col justify-between rounded-xl bg-primary p-10 text-center text-primary-foreground">
+            <div>
+              <h3 className="mb-4 text-2xl font-bold">
+                {t("value2Title")}
+              </h3>
+              <p className="leading-relaxed opacity-90">
+                {t("value2Description")}
+              </p>
+            </div>
+            <div className="relative mt-6 overflow-hidden rounded-lg">
+              <Image
+                src="/images/absolute-accuracy.webp"
+                alt={t("value2Title")}
+                width={800}
+                height={533}
+                className="h-auto w-full rounded-lg"
+              />
+            </div>
           </div>
 
           {/* Card 3: Free for Everyone — highlighted surface */}
