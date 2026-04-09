@@ -33,7 +33,7 @@ export function FeaturesCore() {
   const t = useTranslations("features.core");
 
   return (
-    <section className="bg-card py-8 md:py-12">
+    <section className="bg-card py-4 md:py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto mb-4 max-w-3xl text-center">
@@ -49,7 +49,7 @@ export function FeaturesCore() {
         <div className="space-y-0">
           {FEATURES.map((feature, idx) => {
             const Icon = feature.icon;
-            const isOdd = feature.index % 2 === 1;
+            const isOdd = idx % 2 === 0;
             const isLast = idx === FEATURES.length - 1;
 
             return (
