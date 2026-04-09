@@ -40,7 +40,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border/30 py-16" style={{ backgroundColor: "#eff4ff" }}>
+    <footer className="border-t border-primary/10 bg-gradient-to-b from-primary/5 to-background py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
           {/* Logo + Description + Social */}
@@ -62,13 +62,13 @@ export function Footer() {
                 href="https://cheqify.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground transition-all hover:bg-primary hover:text-primary-foreground"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-primary/5 text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:shadow-md"
               >
                 <Globe className="h-5 w-5" />
               </a>
               <a
                 href="mailto:contact.cheqify@gmail.com"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground transition-all hover:bg-primary hover:text-primary-foreground"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-primary/5 text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:shadow-md"
               >
                 <Mail className="h-5 w-5" />
               </a>
@@ -78,7 +78,7 @@ export function Footer() {
           {/* Link Columns */}
           {FOOTER_LINKS.map((column) => (
             <div key={column.titleKey}>
-              <h3 className="mb-6 text-xs font-bold uppercase tracking-widest text-foreground">
+              <h3 className="mb-6 text-xs font-bold uppercase tracking-widest text-primary">
                 {t(`footer.${column.titleKey}`)}
               </h3>
               <ul className="space-y-4">
@@ -98,9 +98,12 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-border/30 pt-8 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-primary/10 pt-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
             {t("footer.copyright", { year })}
+          </p>
+          <p className="text-sm font-medium text-muted-foreground/70">
+            {t("footer.tagline")}
           </p>
         </div>
       </div>
