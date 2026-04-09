@@ -88,6 +88,26 @@ export function FeaturesCore() {
                           className="h-auto w-full"
                         />
                       </div>
+                    ) : feature.index === 8 ? (
+                      <div className="w-full">
+                        <Image
+                          src="/images/multi-company.webp"
+                          alt={t("feature8ScreenshotAlt")}
+                          width={800}
+                          height={600}
+                          className="h-auto w-full"
+                        />
+                      </div>
+                    ) : feature.index === 9 ? (
+                      <div className="w-full">
+                        <Image
+                          src="/images/team-management.webp"
+                          alt={t("feature9ScreenshotAlt")}
+                          width={800}
+                          height={600}
+                          className="h-auto w-full"
+                        />
+                      </div>
                     ) : (
                     <div className="overflow-hidden rounded-xl border border-border/50 bg-background p-6 shadow-sm">
                       <div className="flex aspect-video items-center justify-center rounded-lg bg-muted/50">
