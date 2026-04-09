@@ -109,7 +109,7 @@ export function FeaturesCore() {
                         />
                       </div>
                     ) : (
-                    <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/30">
+                    <div className="flex aspect-[3/2] max-h-[300px] items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/30">
                       <Icon className="h-12 w-12 text-muted-foreground/30" />
                     </div>
                     )}
