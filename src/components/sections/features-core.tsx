@@ -56,7 +56,7 @@ export function FeaturesCore() {
               <div
                 key={feature.index}
                 className={cn(
-                  "py-12",
+                  "py-6",
                   !isLast && "border-b border-border/30"
                 )}
               >
