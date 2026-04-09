@@ -89,7 +89,7 @@ export function Footer() {
           {/* Link Columns */}
           {FOOTER_LINKS.map((column) => (
             <div key={column.titleKey}>
-              <h3 className="mb-6 text-xs font-bold uppercase tracking-widest text-primary">
+              <h3 className="mb-6 text-xs font-bold uppercase tracking-widest text-foreground">
                 {t(`footer.${column.titleKey}`)}
               </h3>
               <ul className="space-y-4">
