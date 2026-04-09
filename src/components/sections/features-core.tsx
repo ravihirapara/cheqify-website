@@ -12,6 +12,7 @@ import {
   Briefcase,
   Users,
   FileSpreadsheet,
+  Smartphone,
 } from "lucide-react";
 import { cn } from "~/lib/utils";
 
@@ -25,6 +26,7 @@ const FEATURES = [
   { index: 8, icon: Briefcase },
   { index: 9, icon: Users },
   { index: 10, icon: FileSpreadsheet },
+  { index: 11, icon: Smartphone },
 ] as const;
 
 export function FeaturesCore() {

@@ -213,7 +213,10 @@
       "feature9ScreenshotAlt": "Team management and audit trail",
       "feature10Title": "Export & Bank Reconciliation",
       "feature10Description": "Export data in PDF, Excel, CSV. Match issued cheques with bank statements. Complete payment history searchable by date, payee, or amount.",
-      "feature10ScreenshotAlt": "Export and bank reconciliation"
+      "feature10ScreenshotAlt": "Export and bank reconciliation",
+      "feature11Title": "Mobile-Friendly Access",
+      "feature11Description": "Manage your cheques on the go from any smartphone or tablet. The fully responsive interface adapts to any screen size — review, approve, and track cheques from anywhere, anytime.",
+      "feature11ScreenshotAlt": "Cheqify mobile-friendly interface on smartphone"
     },
     "highlights": {
       "heading": "Precision Engineering",
