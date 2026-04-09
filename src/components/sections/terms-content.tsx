@@ -10,8 +10,6 @@ import {
   Scale,
   RefreshCw,
   CheckCircle,
-  Mail,
-  MapPin,
 } from "lucide-react";
 
 export function TermsContent() {
@@ -161,32 +159,6 @@ export function TermsContent() {
         </p>
       </section>
 
-      {/* Contact Section */}
-      <section className="space-y-8 border-t border-border/50 pt-12 text-center">
-        <h2 className="text-3xl font-extrabold tracking-tight text-foreground">
-          {t("contact.heading")}
-        </h2>
-        <p className="text-lg text-muted-foreground">
-          {t("contact.description")}
-        </p>
-        <div className="inline-flex flex-col items-center gap-4 md:flex-row md:gap-6">
-          <a
-            href={`mailto:${t("contact.email")}`}
-            className="flex items-center gap-3 rounded-full border border-border/50 bg-card px-6 py-4 shadow-sm transition-colors hover:bg-muted"
-          >
-            <Mail className="h-5 w-5 text-primary" />
-            <span className="font-bold text-foreground">
-              {t("contact.email")}
-            </span>
-          </a>
-          <div className="flex items-center gap-3 rounded-full border border-border/50 bg-card px-6 py-4 shadow-sm">
-            <MapPin className="h-5 w-5 text-primary" />
-            <span className="font-bold text-foreground">
-              {t("contact.address")}
-            </span>
-          </div>
-        </div>
-      </section>
     </article>
   );
 }
