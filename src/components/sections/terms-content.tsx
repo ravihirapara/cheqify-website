@@ -102,7 +102,7 @@ export function TermsContent() {
 
       {/* Section 5: Disclaimer */}
       <section className="relative overflow-hidden rounded-3xl bg-foreground p-10 text-background md:p-16">
-        <div className="relative z-10 max-w-xl space-y-6">
+        <div className="relative z-10 space-y-6">
           <h2 className="text-3xl font-bold tracking-tight">
             {t("sections.disclaimerTitle")}
           </h2>
