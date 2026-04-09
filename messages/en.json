@@ -22,7 +22,13 @@
       "company": "Company",
       "legal": "Legal",
       "privacy": "Privacy Policy",
-      "compare": "Cheqify vs ChequePot"
+      "compare": "Cheqify vs ChequePot",
+      "ctaSubtext": "100% free. No credit card required.",
+      "ctaButton": "Start Free Now",
+      "stat1": "300+ Bank Layouts",
+      "stat2": "100% Free Forever",
+      "stat3": "Print in Under 2 Min",
+      "madeIn": "Made with care in India"
     },
     "language": {
       "en": "English",
