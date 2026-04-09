@@ -32,6 +32,7 @@ const FOOTER_LINKS = [
     titleKey: "legal",
     links: [
       { labelKey: "footer.privacy", href: "/privacy" },
+      { labelKey: "footer.terms", href: "/terms" },
     ],
   },
 ] as const;

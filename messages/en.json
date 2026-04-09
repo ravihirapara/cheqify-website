@@ -22,6 +22,7 @@
       "company": "Company",
       "legal": "Legal",
       "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
       "compare": "Cheqify vs ChequePot"
     },
     "language": {
@@ -373,6 +374,52 @@
     "contact": {
       "heading": "Contact Us",
       "description": "If you have questions or comments about this policy, you may contact us at:",
+      "email": "contact.cheqify@gmail.com",
+      "address": "813, Silver Trade Center, Near Moon Garden, VIP Circle, Utran, Surat 394105"
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Use | Cheqify.app",
+      "description": "Read the terms and conditions for using Cheqify.app cheque printing and management platform."
+    },
+    "hero": {
+      "badge": "Legal",
+      "title": "Terms of Use",
+      "description": "Please read these terms carefully before using our services.",
+      "lastUpdated": "Last Updated: April 9, 2026"
+    },
+    "sections": {
+      "acceptanceTitle": "1. Acceptance of Terms",
+      "acceptanceP1": "By accessing or using Cheqify.app (the \"Service\"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the Service.",
+      "acceptanceP2": "These terms apply to all users of the platform including individuals, businesses, accountants, and any other parties who access or use Cheqify.",
+      "eligibilityTitle": "2. Eligibility",
+      "eligibilityP1": "You must be at least 18 years of age and legally authorized to enter into contracts under Indian law to use this Service. By using Cheqify, you represent that you meet these requirements and that the information you provide is accurate.",
+      "useTitle": "3. Permitted Use",
+      "useIntro": "Cheqify is provided for lawful cheque management purposes. You agree to:",
+      "use1": "Use the Service only for legitimate cheque printing, tracking, and management purposes.",
+      "use2": "Ensure all cheque details entered are accurate, complete, and authorized by the account holder.",
+      "use3": "Maintain the confidentiality of your account credentials and restrict access to authorized team members only.",
+      "use4": "Comply with all applicable banking regulations, RBI guidelines, and Indian financial laws.",
+      "prohibitedTitle": "4. Prohibited Activities",
+      "prohibitedIntro": "You agree not to use Cheqify for any unlawful or unauthorized purpose, including but not limited to:",
+      "prohibited1": "Printing cheques on accounts you are not authorized to operate.",
+      "prohibited2": "Forging, altering, or creating fraudulent cheques or financial instruments.",
+      "prohibited3": "Attempting to reverse-engineer, hack, or disrupt the platform or its infrastructure.",
+      "prohibited4": "Using the Service to violate any applicable law, regulation, or third-party rights.",
+      "disclaimerTitle": "5. Disclaimer of Warranties",
+      "disclaimerP1": "Cheqify is provided on an \"as is\" and \"as available\" basis. We make no warranties, express or implied, regarding the reliability, accuracy, or availability of the Service. While we strive for pixel-perfect cheque alignment and error-free printing, the final responsibility for verifying cheque details lies with the user.",
+      "disclaimerP2": "We do not guarantee uninterrupted access to the Service. Scheduled maintenance, updates, or unforeseen technical issues may temporarily affect availability.",
+      "liabilityTitle": "6. Limitation of Liability",
+      "liabilityP1": "To the fullest extent permitted by Indian law, Cheqify and its operators shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Service. This includes but is not limited to cheque bounces, financial losses, printing errors, or data loss. Our total liability shall not exceed the amount paid by you for the Service (if any).",
+      "governingTitle": "7. Governing Law",
+      "governingP1": "These terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in Surat, Gujarat, India.",
+      "changesTitle": "8. Changes to Terms",
+      "changesP1": "We reserve the right to modify these Terms of Use at any time. Changes will be posted on this page with an updated date. Your continued use of the Service after changes constitutes acceptance of the revised terms."
+    },
+    "contact": {
+      "heading": "Questions?",
+      "description": "If you have any questions about these Terms of Use, please contact us at:",
       "email": "contact.cheqify@gmail.com",
       "address": "813, Silver Trade Center, Near Moon Garden, VIP Circle, Utran, Surat 394105"
     }
