@@ -52,9 +52,9 @@ export function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="Cheqify.app logo"
-                width={160}
-                height={45}
-                className="h-10 w-auto"
+                width={200}
+                height={56}
+                className="h-14 w-auto"
               />
             </Link>
             <p className="mt-6 max-w-xs leading-relaxed text-muted-foreground">
