@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "~/i18n/navigation";
-import { Globe, Mail } from "lucide-react";
+import { Globe, Mail, Youtube } from "lucide-react";
 
 const FOOTER_LINKS = [
   {
@@ -65,6 +65,15 @@ export function Footer() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-primary/5 text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:shadow-md"
               >
                 <Globe className="h-5 w-5" />
+              </a>
+              <a
+                href="https://youtube.com/@cheqify"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-primary/5 text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:shadow-md"
+                aria-label="YouTube"
+              >
+                <Youtube className="h-5 w-5" />
               </a>
               <a
                 href="mailto:contact.cheqify@gmail.com"
