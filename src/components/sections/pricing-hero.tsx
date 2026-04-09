@@ -8,7 +8,7 @@ export function PricingHero() {
 
   return (
     <section className="mx-auto mb-24 max-w-7xl px-6 pt-16 text-center md:pt-24">
-      <span className="mb-6 inline-block rounded-full bg-primary/20 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
+      <span className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">
         {t("badge")}
       </span>
       <h1 className="mb-8 text-5xl font-extrabold leading-tight tracking-tighter md:text-7xl">
