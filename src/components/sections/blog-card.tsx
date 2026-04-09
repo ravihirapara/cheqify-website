@@ -42,9 +42,9 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
   if (featured) {
     return (
       <article className="group relative flex min-h-[450px] flex-col overflow-hidden rounded-[2rem] bg-card transition-all hover:shadow-lg md:flex-row">
-        <div className="relative w-full overflow-hidden md:w-3/5">
+        <Link href={`/blog/${post.slug}`} className="relative w-full overflow-hidden md:w-3/5">
           <BlogImage post={post} className="h-full min-h-[250px] w-full" />
-        </div>
+        </Link>
         <div className="flex w-full flex-col justify-center p-8 md:w-2/5 md:p-12">
           <div className="mb-6 flex flex-wrap items-center gap-2">
             {post.tags.map((tag) => (
@@ -74,9 +74,9 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
 
   return (
     <article className="group">
-      <div className="mb-6 aspect-[16/10] overflow-hidden rounded-2xl">
+      <Link href={`/blog/${post.slug}`} className="mb-6 block aspect-[16/10] overflow-hidden rounded-2xl">
         <BlogImage post={post} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
-      </div>
+      </Link>
       <div className="mb-3 flex flex-wrap items-center gap-2">
         {post.tags.map((tag) => (
           <span key={tag} className="rounded-md bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
