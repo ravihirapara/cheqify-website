@@ -68,51 +68,24 @@ export function FeaturesCore() {
                       isOdd ? "lg:order-1" : "lg:order-2"
                     )}
                   >
-                    {feature.index === 1 ? (
-                      <div className="w-full">
-                        <Image
-                          src="/images/browse-cheque-templates-bank-layouts.webp"
-                          alt="Browse 300+ pre-built Indian bank cheque templates in Cheqify"
-                          width={1200}
-                          height={800}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    ) : feature.index === 3 ? (
-                      <div className="w-full">
-                        <Image
-                          src="/images/chequebook-management.webp"
-                          alt={t("feature3ScreenshotAlt")}
-                          width={800}
-                          height={600}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    ) : feature.index === 8 ? (
-                      <div className="w-full">
-                        <Image
-                          src="/images/multi-company.webp"
-                          alt={t("feature8ScreenshotAlt")}
-                          width={800}
-                          height={600}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    ) : feature.index === 9 ? (
-                      <div className="w-full">
-                        <Image
-                          src="/images/team-management.webp"
-                          alt={t("feature9ScreenshotAlt")}
-                          width={800}
-                          height={600}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    ) : (
-                    <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/30">
-                      <Icon className="h-12 w-12 text-muted-foreground/30" />
-                    </div>
-                    )}
+                    {(() => {
+                      const images: Record<number, { src: string; alt: string }> = {
+                        1: { src: "/images/browse-cheque-templates-bank-layouts.webp", alt: "Browse 300+ pre-built Indian bank cheque templates in Cheqify" },
+                        3: { src: "/images/chequebook-management.webp", alt: t("feature3ScreenshotAlt") },
+                        8: { src: "/images/multi-company.webp", alt: t("feature8ScreenshotAlt") },
+                        9: { src: "/images/team-management.webp", alt: t("feature9ScreenshotAlt") },
+                      };
+                      const img = images[feature.index];
+                      return img ? (
+                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                          <Image src={img.src} alt={img.alt} fill className="object-contain" />
+                        </div>
+                      ) : (
+                        <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/30">
+                          <Icon className="h-12 w-12 text-muted-foreground/30" />
+                        </div>
+                      );
+                    })()}
                   </div>
 
                   {/* Text Content - always on top on mobile */}
