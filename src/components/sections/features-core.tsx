@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import {
   Building2,
   Wand2,
-  ShieldCheck,
+  BookOpen,
   Layers,
   GitGraph,
   Bell,
@@ -19,7 +19,7 @@ import { cn } from "~/lib/utils";
 const FEATURES = [
   { index: 1, icon: Building2 },
   { index: 2, icon: Wand2 },
-  { index: 3, icon: ShieldCheck },
+  { index: 3, icon: BookOpen },
   { index: 4, icon: Layers },
   { index: 5, icon: GitGraph },
   { index: 6, icon: Bell },
@@ -75,6 +75,16 @@ export function FeaturesCore() {
                           alt="Browse 300+ pre-built Indian bank cheque templates in Cheqify"
                           width={1200}
                           height={800}
+                          className="h-auto w-full"
+                        />
+                      </div>
+                    ) : feature.index === 3 ? (
+                      <div className="w-full">
+                        <Image
+                          src="/images/chequebook-management.webp"
+                          alt={t("feature3ScreenshotAlt")}
+                          width={800}
+                          height={600}
                           className="h-auto w-full"
                         />
                       </div>
