@@ -63,6 +63,14 @@ export function BlogListing({ posts }: BlogListingProps) {
         ))}
       </nav>
 
+      {filteredPosts.length === 0 && (
+        <div className="py-20 text-center">
+          <p className="text-lg text-muted-foreground">
+            {t("noPosts")}
+          </p>
+        </div>
+      )}
+
       {featured && (
         <div className="mb-16">
           <BlogCard post={featured} featured />

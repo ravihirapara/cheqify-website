@@ -250,7 +250,8 @@
     "allPosts": "All Posts",
     "backToBlog": "Back to Blog",
     "prevPost": "Previous",
-    "nextPost": "Next"
+    "nextPost": "Next",
+    "noPosts": "No blog posts available yet. Check back soon!"
   },
   "pricing": {
     "meta": {
