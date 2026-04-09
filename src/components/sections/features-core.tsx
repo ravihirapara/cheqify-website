@@ -71,7 +71,7 @@ export function FeaturesCore() {
                     {feature.index === 1 ? (
                       <div className="w-full">
                         <Image
-                          src="/images/browse-cheque-templates-bank-layouts.png"
+                          src="/images/browse-cheque-templates-bank-layouts.webp"
                           alt="Browse 300+ pre-built Indian bank cheque templates in Cheqify"
                           width={1200}
                           height={800}

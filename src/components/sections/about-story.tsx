@@ -30,7 +30,7 @@ export function AboutStory() {
           <div>
             <div className="overflow-hidden rounded-xl shadow-2xl">
               <Image
-                src="/images/why-we-built-cheqify.png"
+                src="/images/why-we-built-cheqify.webp"
                 alt={t("imageAlt")}
                 width={600}
                 height={400}

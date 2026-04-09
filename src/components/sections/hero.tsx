@@ -74,7 +74,7 @@ export function Hero() {
                   {i === 1 ? (
                     <div className="w-full scale-110 lg:scale-125">
                       <Image
-                        src="/images/indian-bank-cheque-formats-hdfc-axis-baroda.png"
+                        src="/images/indian-bank-cheque-formats-hdfc-axis-baroda.webp"
                         alt="Indian bank cheque formats — HDFC, Axis Bank, Bank of Baroda printed cheques"
                         width={1200}
                         height={800}
@@ -84,7 +84,7 @@ export function Hero() {
                   ) : i === 2 ? (
                     <div className="w-full">
                       <Image
-                        src="/images/cheque-lifecycle-tracking-dashboard.png"
+                        src="/images/cheque-lifecycle-tracking-dashboard.webp"
                         alt="Cheqify cheque lifecycle tracking dashboard — track cheques from issue to clearance"
                         width={1200}
                         height={800}
@@ -94,7 +94,7 @@ export function Hero() {
                   ) : (
                     <div className="w-full">
                       <Image
-                        src="/images/print-error-free-cheque-in-minutes.png"
+                        src="/images/print-error-free-cheque-in-minutes.webp"
                         alt="Print error-free cheques in under 2 minutes with Cheqify"
                         width={1200}
                         height={800}
