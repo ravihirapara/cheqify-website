@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { PortableText } from "@portabletext/react";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
@@ -151,6 +152,19 @@ export default async function BlogPostPage({
               </>
             )}
           </div>
+
+          {/* Cover Image */}
+          {post.meta.image && (
+            <div className="mb-10 overflow-hidden rounded-2xl">
+              <Image
+                src={post.meta.image}
+                alt={post.meta.title}
+                width={1200}
+                height={630}
+                className="h-auto w-full"
+              />
+            </div>
+          )}
 
           {/* Content */}
           <div className="blog-content max-w-none text-foreground/90">

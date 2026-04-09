@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { Link } from "~/i18n/navigation";
-import { Printer, AlertTriangle, ArrowLeftRight, Shield, Calendar, ScanLine } from "lucide-react";
+import { Printer } from "lucide-react";
 import { cn } from "~/lib/utils";
 import type { BlogPostMeta } from "~/lib/blog";
 
@@ -10,31 +11,23 @@ interface BlogCardProps {
   featured?: boolean;
 }
 
-const SLUG_ICONS: Record<string, typeof Printer> = {
-  "how-to-print-cheque-at-home": Printer,
-  "cheque-bounce-reasons-and-solutions": AlertTriangle,
-  "cheqify-vs-manual-cheque-writing": ArrowLeftRight,
-  "how-to-avoid-cheque-fraud-in-india": Shield,
-  "post-dated-cheques-rules-and-best-practices": Calendar,
-  "what-is-micr-code-on-cheque": ScanLine,
-};
-
-const SLUG_COLORS: Record<string, string> = {
-  "how-to-print-cheque-at-home": "from-primary/20 to-primary/5",
-  "cheque-bounce-reasons-and-solutions": "from-red-400/20 to-orange-400/5",
-  "cheqify-vs-manual-cheque-writing": "from-blue-400/20 to-primary/5",
-  "how-to-avoid-cheque-fraud-in-india": "from-red-500/20 to-red-400/5",
-  "post-dated-cheques-rules-and-best-practices": "from-amber-400/20 to-yellow-400/5",
-  "what-is-micr-code-on-cheque": "from-blue-500/20 to-blue-400/5",
-};
-
-function BlogImage({ slug, className }: { slug: string; className?: string }) {
-  const Icon = SLUG_ICONS[slug] ?? Printer;
-  const gradient = SLUG_COLORS[slug] ?? "from-primary/20 to-primary/5";
+function BlogImage({ post, className }: { post: BlogPostMeta; className?: string }) {
+  if (post.image) {
+    return (
+      <div className={cn("relative overflow-hidden", className)}>
+        <Image
+          src={post.image}
+          alt={post.title}
+          fill
+          className="object-cover"
+        />
+      </div>
+    );
+  }
 
   return (
-    <div className={cn("flex items-center justify-center bg-gradient-to-br", gradient, className)}>
-      <Icon className="h-16 w-16 text-primary/40" />
+    <div className={cn("flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5", className)}>
+      <Printer className="h-16 w-16 text-primary/40" />
     </div>
   );
 }
@@ -50,7 +43,7 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
     return (
       <article className="group relative flex min-h-[450px] flex-col overflow-hidden rounded-[2rem] bg-card transition-all hover:shadow-lg md:flex-row">
         <div className="relative w-full overflow-hidden md:w-3/5">
-          <BlogImage slug={post.slug} className="h-full min-h-[250px] w-full" />
+          <BlogImage post={post} className="h-full min-h-[250px] w-full" />
         </div>
         <div className="flex w-full flex-col justify-center p-8 md:w-2/5 md:p-12">
           <div className="mb-6 flex flex-wrap items-center gap-2">
@@ -82,7 +75,7 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
   return (
     <article className="group">
       <div className="mb-6 aspect-[16/10] overflow-hidden rounded-2xl">
-        <BlogImage slug={post.slug} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
+        <BlogImage post={post} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
       </div>
       <div className="mb-3 flex flex-wrap items-center gap-2">
         {post.tags.map((tag) => (
