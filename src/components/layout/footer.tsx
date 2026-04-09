@@ -114,7 +114,7 @@ export function Footer() {
         {/* Punchline */}
         <div className="pb-6 text-center">
           <p className="text-lg font-semibold italic text-foreground/70">
-            &ldquo;{t("footer.punchline")}&rdquo;
+            {t("footer.punchline")}
           </p>
         </div>
 
