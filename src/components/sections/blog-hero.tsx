@@ -6,7 +6,7 @@ export function BlogHero() {
   const t = useTranslations("blog.hero");
 
   return (
-    <header className="mb-16">
+    <header className="mb-8">
       <div className="mx-auto max-w-3xl text-center">
         <span className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">
           {t("badge")}
