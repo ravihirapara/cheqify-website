@@ -307,7 +307,9 @@
       "paragraph1": "For decades, Indian businesses have relied on handwritten cheques — a process riddled with errors, bounces, and wasted time. Small business owners, accountants, and finance teams deserved better.",
       "paragraph2": "We started Cheqify with a simple observation: printing a cheque should be as easy as printing a letter. No expensive software, no complex setup, no recurring fees. Just pick your bank, enter the details, and print.",
       "quote": "Every bounced cheque costs time, money, and trust. We built Cheqify so that never has to happen again.",
-      "imageAlt": "Cheqify team workspace"
+      "imageAlt": "Cheqify team workspace",
+      "badgeTitle": "100% Precision",
+      "badgeDescription": "MICR validation and bank-format verification ensure every cheque prints correctly."
     },
     "values": {
       "heading": "What We Stand For",

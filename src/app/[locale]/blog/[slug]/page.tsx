@@ -27,7 +27,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
-  const post = await getBlogPost(locale, slug);
+  let post;
+  try {
+    post = await getBlogPost(locale, slug);
+  } catch {
+    return {};
+  }
 
   if (!post) {
     return {};

@@ -43,10 +43,10 @@ export function AboutStory() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <ShieldCheck className="h-6 w-6" />
                 </div>
-                <h4 className="font-bold text-foreground">100% Precision</h4>
+                <h4 className="font-bold text-foreground">{t("badgeTitle")}</h4>
               </div>
               <p className="text-sm text-muted-foreground">
-                MICR validation and bank-format verification ensure every cheque prints correctly.
+                {t("badgeDescription")}
               </p>
             </div>
           </div>

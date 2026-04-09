@@ -33,7 +33,12 @@ export default async function BlogPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const posts = await getBlogPosts(locale);
+  let posts: Awaited<ReturnType<typeof getBlogPosts>> = [];
+  try {
+    posts = await getBlogPosts(locale);
+  } catch (error) {
+    console.error("Failed to fetch blog posts:", error);
+  }
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Blog", path: "/blog" }]);
 
   return (

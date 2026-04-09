@@ -52,7 +52,7 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
   const posts = await sanityClient.fetch(query);
 
   return (posts || [])
-    .filter((p: Record<string, string>) => p.title)
+    .filter((p: Record<string, string>) => p.title && p.slug)
     .map((p: Record<string, unknown>) => ({
       title: (p.title as string) || "",
       description: (p.description as string) || "",

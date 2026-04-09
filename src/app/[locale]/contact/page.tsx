@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
+import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { routing } from "~/i18n/routing";
 import { ContactHero } from "~/components/sections/contact-hero";
 
@@ -32,8 +33,10 @@ export default async function ContactPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Contact", path: "/contact" }]);
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <ContactHero />
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
