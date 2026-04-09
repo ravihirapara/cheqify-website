@@ -111,8 +111,15 @@ export function Footer() {
           ))}
         </div>
 
+        {/* Punchline */}
+        <div className="border-t border-primary/10 pt-8 text-center">
+          <p className="text-lg font-semibold italic text-foreground/70">
+            &ldquo;{t("footer.punchline")}&rdquo;
+          </p>
+        </div>
+
         {/* Copyright */}
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-primary/10 pt-8 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 pt-6 md:flex-row">
           <p className="text-sm text-muted-foreground">
             {t("footer.copyright", { year })}
           </p>
