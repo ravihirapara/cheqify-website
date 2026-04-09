@@ -6,6 +6,13 @@ export const blogPost = defineType({
   type: "document",
   fields: [
     defineField({
+      name: "image",
+      title: "Cover Image",
+      type: "image",
+      options: { hotspot: true },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "slug",
       title: "Slug",
       type: "slug",

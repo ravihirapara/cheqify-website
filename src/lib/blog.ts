@@ -1,5 +1,12 @@
 import { sanityClient } from "./sanity";
+import imageUrlBuilder from "@sanity/image-url";
 import type { PortableTextBlock } from "@portabletext/react";
+const builder = imageUrlBuilder(sanityClient);
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function urlFor(source: any) {
+  return builder.image(source);
+}
 
 export interface BlogPostMeta {
   title: string;
@@ -35,6 +42,7 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
     "title": ${f.title},
     "description": ${f.description},
     "slug": slug.current,
+    image,
     tags,
     order,
     author,
@@ -53,7 +61,7 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
       slug: (p.slug as string) || "",
       lang: locale,
       tags: (p.tags as string[]) || [],
-      image: "",
+      image: p.image ? urlFor(p.image as Record<string, unknown>).width(800).url() : "",
       order: (p.order as number) || 999,
     }));
 }
@@ -69,6 +77,7 @@ export async function getBlogPost(
     "description": ${f.description},
     "body": ${f.body},
     "slug": slug.current,
+    image,
     tags,
     order,
     author,
@@ -88,7 +97,7 @@ export async function getBlogPost(
       slug: post.slug,
       lang: locale,
       tags: post.tags || [],
-      image: "",
+      image: post.image ? urlFor(post.image).width(1200).url() : "",
       order: post.order || 999,
     },
     content: post.body || [],
