@@ -9,11 +9,13 @@ export function buildSeoMetadata({
   description,
   locale,
   pathname = "",
+  image,
 }: {
   title: string;
   description: string;
   locale: string;
   pathname?: string;
+  image?: string;
 }): Metadata {
   const url = `${BASE_URL}/${locale}${pathname}`;
 
@@ -49,7 +51,7 @@ export function buildSeoMetadata({
       type: "website",
       images: [
         {
-          url: `${BASE_URL}${OG_IMAGE}`,
+          url: image || `${BASE_URL}${OG_IMAGE}`,
           width: 1200,
           height: 630,
           alt: `${title} — Free cheque printing software for Indian businesses`,
@@ -62,7 +64,7 @@ export function buildSeoMetadata({
       description,
       images: [
         {
-          url: `${BASE_URL}${OG_IMAGE}`,
+          url: image || `${BASE_URL}${OG_IMAGE}`,
           alt: `${title} — Free cheque printing software for Indian businesses`,
         },
       ],

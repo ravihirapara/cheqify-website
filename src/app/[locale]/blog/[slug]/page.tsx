@@ -39,19 +39,18 @@ export async function generateMetadata({
     return {};
   }
 
+  const seo = buildSeoMetadata({
+    title: `${post.meta.title} | Cheqify.app`,
+    description: post.meta.description,
+    locale,
+    pathname: `/blog/${slug}`,
+    image: post.meta.image || undefined,
+  });
+
   return {
-    ...buildSeoMetadata({
-      title: `${post.meta.title} | Cheqify.app`,
-      description: post.meta.description,
-      locale,
-      pathname: `/blog/${slug}`,
-    }),
+    ...seo,
     openGraph: {
-      title: post.meta.title,
-      description: post.meta.description,
-      url: `https://cheqify.app/${locale}/blog/${slug}`,
-      siteName: "Cheqify.app",
-      locale,
+      ...seo.openGraph,
       type: "article",
       publishedTime: post.meta.date,
       authors: [post.meta.author],

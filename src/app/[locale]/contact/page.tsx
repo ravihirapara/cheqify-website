@@ -34,9 +34,25 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Contact", path: "/contact" }]);
+  const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    mainEntity: {
+      "@type": "Organization",
+      name: "Cheqify.app",
+      url: "https://cheqify.app",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "support@cheqify.app",
+        availableLanguage: ["English", "Hindi", "Gujarati"],
+      },
+    },
+  };
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }} />
       <ContactHero />
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">

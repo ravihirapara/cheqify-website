@@ -35,9 +35,23 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "About", path: "/about" }]);
+  const aboutJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    mainEntity: {
+      "@type": "Organization",
+      name: "Cheqify.app",
+      url: "https://cheqify.app",
+      description: "Cheque printing and lifecycle management platform for Indian businesses.",
+      foundingDate: "2024",
+      areaServed: "IN",
+      knowsAbout: ["Cheque Printing", "Banking Software", "Financial Technology"],
+    },
+  };
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }} />
       <AboutHero />
       <AboutStory />
       <AboutValues />

@@ -35,9 +35,24 @@ export default async function FeaturesPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Features", path: "/features" }]);
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Cheqify.app",
+    description: "Cheque printing and lifecycle management software for Indian businesses. 300+ bank layouts, MICR validation, batch printing.",
+    brand: { "@type": "Brand", name: "Cheqify" },
+    url: "https://cheqify.app/en/features",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+    },
+  };
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
       <FeaturesHero />
       <FeaturesCore />
       <FeatureHighlights />
