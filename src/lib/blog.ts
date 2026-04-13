@@ -3,6 +3,20 @@ import imageUrlBuilder from "@sanity/image-url";
 import type { PortableTextBlock } from "@portabletext/react";
 const builder = imageUrlBuilder(sanityClient);
 
+export function estimateReadingTime(blocks: PortableTextBlock[]): number {
+  let wordCount = 0;
+  for (const block of blocks) {
+    if (block._type === "block" && Array.isArray(block.children)) {
+      for (const child of block.children) {
+        if (typeof child.text === "string") {
+          wordCount += child.text.split(/\s+/).filter(Boolean).length;
+        }
+      }
+    }
+  }
+  return Math.max(1, Math.round(wordCount / 200));
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function urlFor(source: any) {
   return builder.image(source);

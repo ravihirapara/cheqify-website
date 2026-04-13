@@ -5,9 +5,10 @@ import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { PortableText } from "@portabletext/react";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "~/i18n/navigation";
-import { getBlogPost, getBlogPosts } from "~/lib/blog";
+import { getBlogPost, getBlogPosts, estimateReadingTime } from "~/lib/blog";
 import { buildSeoMetadata } from "~/lib/seo";
 import { routing } from "~/i18n/routing";
+import { Clock } from "lucide-react";
 
 export async function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -72,11 +73,19 @@ export default async function BlogPostPage({
     notFound();
   }
 
-  // Get all posts to find prev/next
+  const readingTime = estimateReadingTime(post.content);
+
+  // Get all posts to find prev/next and related
   const allPosts = await getBlogPosts(locale);
   const currentIndex = allPosts.findIndex((p) => p.slug === slug);
   const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+
+  // Related posts: same tags, excluding current post
+  const currentTags = new Set(post.meta.tags);
+  const relatedPosts = allPosts
+    .filter((p) => p.slug !== slug && p.tags.some((tag) => currentTags.has(tag)))
+    .slice(0, 3);
 
   const formattedDate = new Date(post.meta.date).toLocaleDateString(locale, {
     year: "numeric",
@@ -135,17 +144,23 @@ export default async function BlogPostPage({
             <span>{formattedDate}</span>
             <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />
             <span>{post.meta.author}</span>
+            <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />
+            <span className="inline-flex items-center gap-1">
+              <Clock className="h-3.5 w-3.5" />
+              {t("readingTime", { minutes: readingTime })}
+            </span>
             {post.meta.tags.length > 0 && (
               <>
                 <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />
                 <div className="flex gap-2">
                   {post.meta.tags.map((tag) => (
-                    <span
+                    <Link
                       key={tag}
-                      className="rounded-md bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
+                      href={`/blog/tag/${encodeURIComponent(tag)}`}
+                      className="rounded-md bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary hover:bg-primary/20 transition-colors"
                     >
                       {tag}
-                    </span>
+                    </Link>
                   ))}
                 </div>
               </>
@@ -206,6 +221,42 @@ export default async function BlogPostPage({
             <div />
           )}
         </nav>
+
+        {/* Related Posts */}
+        {relatedPosts.length > 0 && (
+          <section className="mt-16">
+            <h2 className="mb-6 text-2xl font-bold text-foreground">{t("relatedPosts")}</h2>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((rp) => (
+                <Link
+                  key={rp.slug}
+                  href={`/blog/${rp.slug}`}
+                  className="group overflow-hidden rounded-xl border border-border transition-all hover:border-primary/30 hover:shadow-md"
+                >
+                  {rp.image && (
+                    <div className="aspect-video overflow-hidden">
+                      <Image
+                        src={rp.image}
+                        alt={rp.title}
+                        width={400}
+                        height={225}
+                        className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                      />
+                    </div>
+                  )}
+                  <div className="p-4">
+                    <p className="line-clamp-2 text-sm font-semibold text-foreground group-hover:text-primary">
+                      {rp.title}
+                    </p>
+                    <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">
+                      {rp.description}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </section>
   );

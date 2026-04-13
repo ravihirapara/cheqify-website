@@ -235,6 +235,20 @@
       "card5Description": "Desktop, tablet, or phone — access Cheqify from anywhere with no software installation required.",
       "card6Title": "Bank-Grade Security",
       "card6Description": "256-bit encryption and secure data handling ensure your financial information stays protected at all times."
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Everything you need to know about Cheqify's features.",
+      "faq1Question": "How many bank layouts does Cheqify support?",
+      "faq1Answer": "Cheqify supports 300+ pre-built bank layouts covering all major Indian banks including SBI, HDFC, ICICI, Axis, PNB, Bank of Baroda, Kotak Mahindra, and many more. New layouts are added regularly based on user requests.",
+      "faq2Question": "Can I import cheque data from Excel?",
+      "faq2Answer": "Yes, Cheqify supports batch importing from Excel and CSV files. Simply upload your file with payee names, amounts, and dates — Cheqify handles the rest, including auto-filling amount in words and formatting.",
+      "faq3Question": "How does cheque lifecycle tracking work?",
+      "faq3Answer": "Every cheque is tracked through its complete journey: Unused → Prepared → Signed → Issued → Cleared or Bounced. You get real-time status updates, alerts for bounced cheques, and reminders for post-dated cheques before their due dates.",
+      "faq4Question": "Is my financial data secure?",
+      "faq4Answer": "Absolutely. Cheqify uses 256-bit encryption for all data in transit and at rest. Your financial data is never shared with third parties. Every action is logged with timestamps and user identity for complete audit readiness.",
+      "faq5Question": "Can multiple team members use Cheqify?",
+      "faq5Answer": "Yes, Cheqify supports multi-user access with role-based permissions. You can control who can print, approve, and monitor cheques. The owner dashboard gives a bird's-eye view of all team activity across companies and projects."
     }
   },
   "blog": {
@@ -251,7 +265,10 @@
     "backToBlog": "Back to Blog",
     "prevPost": "Previous",
     "nextPost": "Next",
-    "noPosts": "No blog posts available yet. Check back soon!"
+    "noPosts": "No blog posts available yet. Check back soon!",
+    "readingTime": "{minutes} min read",
+    "relatedPosts": "Related Posts",
+    "taggedWith": "Posts tagged with \"{tag}\""
   },
   "pricing": {
     "meta": {
