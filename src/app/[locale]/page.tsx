@@ -57,10 +57,23 @@ const JSONLD_SOFTWARE = {
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   url: "https://app.cheqify.app",
+  author: {
+    "@type": "Organization",
+    name: "Cheqify.app",
+    url: "https://cheqify.app",
+  },
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "INR",
+    availability: "https://schema.org/InStock",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "50",
+    bestRating: "5",
+    worstRating: "1",
   },
   featureList:
     "Cheque Printing, MICR Validation, Batch Printing, Lifecycle Tracking, Bank Reconciliation, Multi-Language Support",
