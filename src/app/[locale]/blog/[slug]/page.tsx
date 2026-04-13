@@ -5,7 +5,7 @@ import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { PortableText } from "@portabletext/react";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "~/i18n/navigation";
-import { getBlogPost, getBlogPosts, estimateReadingTime } from "~/lib/blog";
+import { getBlogPost, getBlogPosts, estimateReadingTime, tagToSlug } from "~/lib/blog";
 import { buildSeoMetadata } from "~/lib/seo";
 import { routing } from "~/i18n/routing";
 import { Clock } from "lucide-react";
@@ -156,7 +156,7 @@ export default async function BlogPostPage({
                   {post.meta.tags.map((tag) => (
                     <Link
                       key={tag}
-                      href={`/blog/tag/${encodeURIComponent(tag)}`}
+                      href={`/blog/tag/${tagToSlug(tag)}`}
                       className="rounded-md bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary hover:bg-primary/20 transition-colors"
                     >
                       {tag}

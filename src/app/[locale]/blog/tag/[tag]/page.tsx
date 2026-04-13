@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildSeoMetadata } from "~/lib/seo";
 import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
 import { routing } from "~/i18n/routing";
-import { getBlogPosts } from "~/lib/blog";
+import { getBlogPosts, tagToSlug } from "~/lib/blog";
 import { BlogListing } from "~/components/sections/blog-listing";
 import { Link } from "~/i18n/navigation";
 import { ArrowLeft } from "lucide-react";
@@ -19,7 +19,7 @@ export async function generateStaticParams() {
       }
     }
     for (const tag of tags) {
-      params.push({ locale, tag });
+      params.push({ locale, tag: tagToSlug(tag) });
     }
   }
 
@@ -32,12 +32,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string; tag: string }>;
 }) {
   const { locale, tag } = await params;
-  const decodedTag = decodeURIComponent(tag);
+  const allPosts = await getBlogPosts(locale);
+  const originalTag = allPosts.flatMap((p) => p.tags).find((t) => tagToSlug(t) === tag) || tag;
   const t = await getTranslations({ locale, namespace: "blog" });
 
   return buildSeoMetadata({
-    title: `${t("taggedWith", { tag: decodedTag })} | Cheqify.app`,
-    description: t("taggedWith", { tag: decodedTag }),
+    title: `${t("taggedWith", { tag: originalTag })} | Cheqify.app`,
+    description: t("taggedWith", { tag: originalTag }),
     locale,
     pathname: `/blog/tag/${tag}`,
   });
@@ -50,11 +51,11 @@ export default async function BlogTagPage({
 }) {
   const { locale, tag } = await params;
   setRequestLocale(locale);
-  const decodedTag = decodeURIComponent(tag);
   const t = await getTranslations({ locale, namespace: "blog" });
 
   const allPosts = await getBlogPosts(locale);
-  const filteredPosts = allPosts.filter((p) => p.tags.includes(decodedTag));
+  const originalTag = allPosts.flatMap((p) => p.tags).find((t) => tagToSlug(t) === tag) || tag;
+  const filteredPosts = allPosts.filter((p) => p.tags.includes(originalTag));
 
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [
     { name: "Blog", path: "/blog" },
@@ -73,7 +74,7 @@ export default async function BlogTagPage({
           {t("backToBlog")}
         </Link>
         <h1 className="mb-8 text-3xl font-bold tracking-tight text-foreground">
-          {t("taggedWith", { tag: decodedTag })}
+          {t("taggedWith", { tag: originalTag })}
         </h1>
         <BlogListing posts={filteredPosts} />
       </div>

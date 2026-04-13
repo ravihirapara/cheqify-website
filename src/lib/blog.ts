@@ -3,6 +3,10 @@ import imageUrlBuilder from "@sanity/image-url";
 import type { PortableTextBlock } from "@portabletext/react";
 const builder = imageUrlBuilder(sanityClient);
 
+export function tagToSlug(tag: string): string {
+  return tag.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
 export function estimateReadingTime(blocks: PortableTextBlock[]): number {
   let wordCount = 0;
   for (const block of blocks) {
@@ -75,7 +79,7 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
       slug: (p.slug as string) || "",
       lang: locale,
       tags: (p.tags as string[]) || [],
-      image: p.image ? urlFor(p.image as Record<string, unknown>).width(800).url() : "",
+      image: p.image ? urlFor(p.image as Record<string, unknown>).width(800).quality(80).format("webp").url() : "",
       order: (p.order as number) || 999,
     }));
 }
@@ -111,7 +115,7 @@ export async function getBlogPost(
       slug: post.slug,
       lang: locale,
       tags: post.tags || [],
-      image: post.image ? urlFor(post.image).width(1200).url() : "",
+      image: post.image ? urlFor(post.image).width(1200).quality(80).format("webp").url() : "",
       order: post.order || 999,
     },
     content: post.body || [],

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getBlogPosts } from "~/lib/blog";
+import { getBlogPosts, tagToSlug } from "~/lib/blog";
 
 export const dynamic = "force-static";
 
@@ -41,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const tag of allTags) {
     for (const locale of LOCALES) {
       entries.push({
-        url: `${BASE_URL}/${locale}/blog/tag/${encodeURIComponent(tag)}`,
+        url: `${BASE_URL}/${locale}/blog/tag/${tagToSlug(tag)}`,
         lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 0.5,
