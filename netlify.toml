@@ -2,6 +2,13 @@
   command = "npm run build"
   publish = ".next"
 
+# Redirect root to default locale (avoids 302 redirect chain)
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 301
+  force = true
+
 # Cache static assets aggressively
 [[headers]]
   for = "/_next/static/*"
