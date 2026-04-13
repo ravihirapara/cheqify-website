@@ -273,7 +273,7 @@
   "pricing": {
     "meta": {
       "title": "Pricing | Cheqify.app",
-      "description": "Cheqify is 100% free. Every feature included. No credit card. No hidden costs. Free forever."
+      "description": "Cheqify is 100% free — every feature included with no credit card required. 300+ bank layouts, batch printing, lifecycle tracking, and MICR validation at zero cost. Free forever."
     },
     "hero": {
       "badge": "PRICING",
@@ -400,7 +400,7 @@
   "terms": {
     "meta": {
       "title": "Terms of Use | Cheqify.app",
-      "description": "Read the terms and conditions for using Cheqify.app cheque printing and management platform."
+      "description": "Read the terms and conditions for using Cheqify.app cheque printing and management platform. Covers usage policies, data handling, and user responsibilities."
     },
     "hero": {
       "badge": "Legal",
@@ -490,8 +490,8 @@
   },
   "comparison": {
     "meta": {
-      "title": "Cheqify vs ChequePot — Free Cheque Printing Comparison | Cheqify.app",
-      "description": "Compare Cheqify with ChequePot side-by-side. See why Cheqify is the best free ChequePot alternative with 300+ bank formats, lifecycle tracking, and zero cost."
+      "title": "Cheqify vs ChequePot — Free Comparison | Cheqify.app",
+      "description": "Compare Cheqify with ChequePot side-by-side. See why Cheqify is the best free alternative with 300+ bank formats and lifecycle tracking."
     },
     "hero": {
       "badge": "SIDE-BY-SIDE COMPARISON",

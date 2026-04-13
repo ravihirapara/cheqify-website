@@ -35,10 +35,10 @@ const JSONLD_ORGANIZATION = {
   "@type": "Organization",
   name: "Cheqify.app",
   url: "https://cheqify.app",
+  logo: "https://cheqify.app/images/logo.png",
   description:
     "Cheque printing and lifecycle management platform for Indian businesses.",
   areaServed: "IN",
-  sameAs: ["https://cheqify.app"],
 };
 
 const JSONLD_WEBSITE = {

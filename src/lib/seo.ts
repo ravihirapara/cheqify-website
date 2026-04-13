@@ -23,6 +23,7 @@ export function buildSeoMetadata({
   for (const loc of LOCALES) {
     languages[loc] = `${BASE_URL}/${loc}${pathname}`;
   }
+  languages["x-default"] = `${BASE_URL}/en${pathname}`;
 
   return {
     title,

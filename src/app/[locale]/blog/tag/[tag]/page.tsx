@@ -59,7 +59,7 @@ export default async function BlogTagPage({
 
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [
     { name: "Blog", path: "/blog" },
-    { name: decodedTag, path: `/blog/tag/${tag}` },
+    { name: originalTag, path: `/blog/tag/${tag}` },
   ]);
 
   return (
