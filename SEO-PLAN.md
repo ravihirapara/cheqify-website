@@ -9,11 +9,11 @@
 
 | # | Task | Impact | Effort | Status |
 |---|------|--------|--------|--------|
-| 1 | Add HSTS header in `netlify.toml` — `Strict-Transport-Security: max-age=31536000` | Security + SEO trust signal | 2 min | Pending |
-| 2 | Optimize OG image — current `og-cheqify.jpg` is 560KB, should be <200KB | Faster social sharing | 5 min | Pending |
-| 3 | Add font preload — Inter font not preloaded, causes flash of unstyled text | Core Web Vitals (CLS) | 5 min | Pending |
-| 4 | Request indexing for top 6 English pages in Search Console | Get indexed faster | 10 min | Pending |
-| 5 | Submit sitemap in Search Console if not already done | Crawl discovery | 2 min | Pending |
+| 1 | Add HSTS header in `netlify.toml` — `Strict-Transport-Security: max-age=31536000` | Security + SEO trust signal | 2 min | Done |
+| 2 | Optimize OG image — current `og-cheqify.jpg` is 560KB, should be <200KB | Faster social sharing | 5 min | Done |
+| 3 | Add font preload — Inter font not preloaded, causes flash of unstyled text | Core Web Vitals (CLS) | 5 min | Done |
+| 4 | Request indexing for top 6 English pages in Search Console | Get indexed faster | 10 min | Manual |
+| 5 | Submit sitemap in Search Console if not already done | Crawl discovery | 2 min | Manual |
 
 ---
 
@@ -21,10 +21,10 @@
 
 | # | Task | Impact | Effort | Status |
 |---|------|--------|--------|--------|
-| 6 | Enable image optimization — `unoptimized: true` in `next.config.ts` disables all Next.js image optimization (resizing, WebP/AVIF serving, compression). Evaluate if Netlify supports it or switch to a loader. | Page speed, bandwidth | 30 min | Pending |
-| 7 | Add page-specific OG images — all pages share one generic image. At minimum, blog posts should have their cover image as OG image. | Social CTR | 1 hr | Pending |
-| 8 | Add Content-Security-Policy header in `netlify.toml` | Security | 30 min | Pending |
-| 9 | Add more structured data — Contact page (ContactPoint schema), Features page (Product schema), About page (Organization with team) | Rich snippets | 1 hr | Pending |
+| 6 | Enable image optimization — `unoptimized: true` in `next.config.ts` disables all Next.js image optimization (resizing, WebP/AVIF serving, compression). Evaluate if Netlify supports it or switch to a loader. | Page speed, bandwidth | 30 min | Done |
+| 7 | Add page-specific OG images — all pages share one generic image. At minimum, blog posts should have their cover image as OG image. | Social CTR | 1 hr | Done |
+| 8 | Add Content-Security-Policy header in `netlify.toml` | Security | 30 min | Done |
+| 9 | Add more structured data — Contact page (ContactPoint schema), Features page (Product schema), About page (Organization with team) | Rich snippets | 1 hr | Done |
 
 ---
 
@@ -32,11 +32,11 @@
 
 | # | Task | Impact | Effort | Status |
 |---|------|--------|--------|--------|
-| 10 | Add "Related Posts" section to blog post pages — increases internal linking and session duration | Internal linking, engagement | 2 hr | Pending |
-| 11 | Add reading time to blog posts | User experience | 30 min | Pending |
-| 12 | Create tag/category archive pages for blog (e.g., `/blog/tag/cheque-fraud`) | New indexable pages, long-tail keywords | 3 hr | Pending |
-| 13 | Write more blog content — target 2 posts/week on Indian cheque-related keywords | Organic traffic | Ongoing | Pending |
-| 14 | Add FAQ section to Features page with FAQPage schema (like already on Pricing page) | Featured snippets | 1 hr | Pending |
+| 10 | Add "Related Posts" section to blog post pages — increases internal linking and session duration | Internal linking, engagement | 2 hr | Done |
+| 11 | Add reading time to blog posts | User experience | 30 min | Done |
+| 12 | Create tag/category archive pages for blog (e.g., `/blog/tag/cheque-fraud`) | New indexable pages, long-tail keywords | 3 hr | Done |
+| 13 | Write more blog content — target 2 posts/week on Indian cheque-related keywords | Organic traffic | Ongoing | Ongoing |
+| 14 | Add FAQ section to Features page with FAQPage schema (like already on Pricing page) | Featured snippets | 1 hr | Done |
 
 ---
 
@@ -44,10 +44,10 @@
 
 | # | Task | Impact | Effort | Status |
 |---|------|--------|--------|--------|
-| 15 | Build backlinks — submit to Indian SaaS directories, startup listings (ProductHunt, BetaList, SaaSHub) | Domain authority | Ongoing | Pending |
-| 16 | Google Business Profile — create if not exists, helps with "cheque printing software India" searches | Local SEO | 30 min | Pending |
-| 17 | Social signals — share blog posts on LinkedIn, Twitter, relevant Indian finance forums | Traffic + crawl signals | Ongoing | Pending |
-| 18 | Monitor Search Console weekly — track which pages get indexed, which queries drive impressions | Data-driven decisions | Ongoing | Pending |
+| 15 | Build backlinks — submit to Indian SaaS directories, startup listings (ProductHunt, BetaList, SaaSHub) | Domain authority | Ongoing | Manual |
+| 16 | Google Business Profile — create if not exists, helps with "cheque printing software India" searches | Local SEO | 30 min | Manual |
+| 17 | Social signals — share blog posts on LinkedIn, Twitter, relevant Indian finance forums | Traffic + crawl signals | Ongoing | Manual |
+| 18 | Monitor Search Console weekly — track which pages get indexed, which queries drive impressions | Data-driven decisions | Ongoing | Manual |
 
 ---
 
