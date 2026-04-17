@@ -122,6 +122,33 @@ export const blogPost = defineType({
       ],
       hidden: ({ parent }) => !parent?.isHowTo,
     }),
+
+    // FAQ Schema (optional — fill for posts targeting "People Also Ask")
+    defineField({
+      name: "hasFaq",
+      title: "Has FAQ section?",
+      type: "boolean",
+      initialValue: false,
+      description: "Enable to add FAQ questions for Google 'People Also Ask' rich snippets.",
+    }),
+    defineField({
+      name: "faqItems",
+      title: "FAQ Questions & Answers",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          fields: [
+            defineField({ name: "question", title: "Question", type: "string" }),
+            defineField({ name: "answer", title: "Answer", type: "text", rows: 3 }),
+          ],
+          preview: {
+            select: { title: "question", subtitle: "answer" },
+          },
+        },
+      ],
+      hidden: ({ parent }) => !parent?.hasFaq,
+    }),
   ],
   preview: {
     select: {

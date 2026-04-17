@@ -31,6 +31,11 @@ export interface HowToStep {
   text: string;
 }
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPostMeta {
   title: string;
   description: string;
@@ -43,6 +48,8 @@ export interface BlogPostMeta {
   order: number;
   isHowTo: boolean;
   howToSteps: HowToStep[];
+  hasFaq: boolean;
+  faqItems: FaqItem[];
 }
 
 export interface BlogPost {
@@ -90,6 +97,8 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
       order: (p.order as number) || 999,
       isHowTo: false,
       howToSteps: [],
+      hasFaq: false,
+      faqItems: [],
     }));
 }
 
@@ -110,6 +119,8 @@ export async function getBlogPost(
     author,
     isHowTo,
     howToSteps,
+    hasFaq,
+    faqItems,
     _createdAt
   }`;
 
@@ -130,6 +141,8 @@ export async function getBlogPost(
       order: post.order || 999,
       isHowTo: post.isHowTo || false,
       howToSteps: post.howToSteps || [],
+      hasFaq: post.hasFaq || false,
+      faqItems: post.faqItems || [],
     },
     content: post.body || [],
   };

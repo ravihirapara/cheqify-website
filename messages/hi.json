@@ -287,7 +287,19 @@
     "noPosts": "अभी कोई ब्लॉग पोस्ट उपलब्ध नहीं है। जल्द ही वापस आएं!",
     "readingTime": "{minutes} मिनट पढ़ें",
     "relatedPosts": "संबंधित पोस्ट",
-    "taggedWith": "\"{tag}\" टैग वाली पोस्ट"
+    "taggedWith": "\"{tag}\" टैग वाली पोस्ट",
+    "faqHeading": "अक्सर पूछे जाने वाले प्रश्न",
+    "exploreMore": "Cheqify से और जानें",
+    "linkFeatures": "सभी सुविधाएँ देखें",
+    "linkFeaturesDesc": "300+ बैंक लेआउट, MICR सत्यापन, बैच प्रिंटिंग और बहुत कुछ।",
+    "linkPricing": "मूल्य देखें — यह मुफ़्त है",
+    "linkPricingDesc": "हर सुविधा शून्य लागत पर शामिल। क्रेडिट कार्ड आवश्यक नहीं।",
+    "linkGlossary": "चेक शब्दावली",
+    "linkGlossaryDesc": "चेक शब्दावली जानें — MICR, CTS 2010, पेयी, ड्रॉअर और बहुत कुछ।",
+    "linkComparison": "Cheqify vs ChequePot",
+    "linkComparisonDesc": "सुविधाओं, मूल्य और सपोर्ट पर Cheqify की ChequePot से तुलना देखें।",
+    "linkStartFree": "मुफ़्त शुरू करें — अपना पहला चेक प्रिंट करें",
+    "linkStartFreeDesc": "सेकंडों में साइन अप करें और किसी भी डिवाइस पर त्रुटि-मुक्त चेक प्रिंट करें।"
   },
   "pricing": {
     "meta": {

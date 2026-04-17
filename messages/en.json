@@ -287,7 +287,19 @@
     "noPosts": "No blog posts available yet. Check back soon!",
     "readingTime": "{minutes} min read",
     "relatedPosts": "Related Posts",
-    "taggedWith": "Posts tagged with \"{tag}\""
+    "taggedWith": "Posts tagged with \"{tag}\"",
+    "faqHeading": "Frequently Asked Questions",
+    "exploreMore": "Explore More from Cheqify",
+    "linkFeatures": "Explore All Features",
+    "linkFeaturesDesc": "300+ bank layouts, MICR validation, batch printing, and more.",
+    "linkPricing": "See Pricing — It's Free",
+    "linkPricingDesc": "Every feature included at zero cost. No credit card required.",
+    "linkGlossary": "Cheque Glossary",
+    "linkGlossaryDesc": "Learn cheque terminology — MICR, CTS 2010, payee, drawer, and more.",
+    "linkComparison": "Cheqify vs ChequePot",
+    "linkComparisonDesc": "See how Cheqify compares to ChequePot on features, pricing, and support.",
+    "linkStartFree": "Start Free — Print Your First Cheque",
+    "linkStartFreeDesc": "Sign up in seconds and print error-free cheques on any device."
   },
   "pricing": {
     "meta": {

@@ -287,7 +287,19 @@
     "noPosts": "હજુ સુધી કોઈ બ્લોગ પોસ્ટ ઉપલબ્ધ નથી. ટૂંક સમયમાં ફરી તપાસો!",
     "readingTime": "{minutes} મિનિટ વાંચો",
     "relatedPosts": "સંબંધિત પોસ્ટ",
-    "taggedWith": "\"{tag}\" ટેગ વાળી પોસ્ટ"
+    "taggedWith": "\"{tag}\" ટેગ વાળી પોસ્ટ",
+    "faqHeading": "વારંવાર પૂછાતા પ્રશ્નો",
+    "exploreMore": "Cheqify થી વધુ જાણો",
+    "linkFeatures": "બધી સુવિધાઓ જુઓ",
+    "linkFeaturesDesc": "300+ બેંક લેઆઉટ, MICR ચકાસણી, બેચ પ્રિન્ટિંગ અને ઘણું બધું.",
+    "linkPricing": "કિંમત જુઓ — તે મફત છે",
+    "linkPricingDesc": "દરેક સુવિધા શૂન્ય ખર્ચે સામેલ. ક્રેડિટ કાર્ડની જરૂર નથી.",
+    "linkGlossary": "ચેક શબ્દાવલી",
+    "linkGlossaryDesc": "ચેક શબ્દાવલી જાણો — MICR, CTS 2010, પેયી, ડ્રોઅર અને ઘણું બધું.",
+    "linkComparison": "Cheqify vs ChequePot",
+    "linkComparisonDesc": "સુવિધાઓ, કિંમત અને સપોર્ટ પર Cheqify ની ChequePot સાથે સરખામણી જુઓ.",
+    "linkStartFree": "મફત શરૂ કરો — તમારો પહેલો ચેક છાપો",
+    "linkStartFreeDesc": "સેકન્ડોમાં સાઇન અપ કરો અને કોઈપણ ઉપકરણ પર ભૂલ-મુક્ત ચેક છાપો."
   },
   "pricing": {
     "meta": {

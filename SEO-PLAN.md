@@ -177,8 +177,8 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 | 34 | Add FAQ schema to homepage — target "People Also Ask" box in Google | Featured snippets | 1 hr | Done |
 | 35 | Add HowTo schema on step-by-step blog posts — Sanity CMS fields + JSON-LD rendering | Rich snippets in search results | 30 min/post | Done |
 | 36 | Create glossary page (`/[locale]/glossary`) — 20 cheque-related terms with DefinedTermSet schema | Captures informational queries | 3 hr | Done |
-| 37 | Strengthen internal linking — every blog post must link to relevant pages (features, pricing, other posts) | Link equity distribution | Ongoing | Pending |
-| 38 | Add "People Also Ask" style FAQ sections in blog posts | Increases content depth + featured snippet chances | 30 min/post | Pending |
+| 37 | Strengthen internal linking — "Explore More" section on every blog post links to features, pricing, glossary, comparison, and CTA | Link equity distribution | Ongoing | Done |
+| 38 | Add FAQ schema support for blog posts — Sanity CMS fields (hasFaq, faqItems) + FAQPage JSON-LD + accordion UI | Increases content depth + featured snippet chances | 30 min/post | Done |
 
 ---
 
