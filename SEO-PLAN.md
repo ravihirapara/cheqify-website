@@ -1,7 +1,7 @@
 # Cheqify.app SEO Plan
 
-**Date:** 2026-04-13
-**Current Score:** 8.5/10 — Foundation is excellent, needs tactical improvements
+**Date:** 2026-04-17 (last updated)
+**Current Score:** 9/10 — Technical SEO complete, focus now on content & off-page
 
 ---
 
@@ -45,7 +45,7 @@
 | # | Task | Impact | Effort | Status |
 |---|------|--------|--------|--------|
 | 15 | Build backlinks — submit to Indian SaaS directories, startup listings (ProductHunt, BetaList, SaaSHub) | Domain authority | Ongoing | Manual |
-| 16 | Google Business Profile — create if not exists, helps with "cheque printing software India" searches | Local SEO | 30 min | Manual |
+| 16 | ~~Google Business Profile~~ — skipped, no local SEO needed | Local SEO | — | Skipped |
 | 17 | Social signals — share blog posts on LinkedIn, Twitter, relevant Indian finance forums | Traffic + crawl signals | Ongoing | Manual |
 | 18 | Monitor Search Console weekly — track which pages get indexed, which queries drive impressions | Data-driven decisions | Ongoing | Manual |
 
@@ -215,12 +215,12 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 | 53 | Create linkable assets — infographics, cheque templates, guides | Content others want to link to | Pending |
 | 54 | Answer Quora questions about cheque printing in India | Link back to relevant blog posts | Pending |
 
-### 6D. Local SEO (India-Focused)
+### 6D. India-Focused SEO
 
 | # | Task | Impact | Status |
 |---|------|--------|--------|
-| 55 | Google Business Profile — create listing for Cheqify | "cheque printing software near me" searches | Pending |
-| 56 | Hindi & Gujarati content advantage — few competitors offer multi-language | Captures non-English searchers | In Progress |
+| 55 | ~~Google Business Profile~~ — skipped, no local SEO needed | — | Skipped |
+| 56 | Hindi & Gujarati content advantage — few competitors offer multi-language | Captures non-English searchers | Done |
 | 57 | Add IndiaStack/banking context in blog content | Captures related Indian banking searches | Pending |
 
 ### 6E. Competitor Monitoring
@@ -260,10 +260,16 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 ### Structured Data (JSON-LD)
 - Organization schema (homepage)
 - WebSite schema (homepage)
-- SoftwareApplication schema (homepage)
+- SoftwareApplication schema (homepage, with aggregateRating)
+- FAQPage schema (homepage — 7 FAQs, features — 5 FAQs, pricing — 5 FAQs, comparison — 3 FAQs)
 - BreadcrumbList schema (all pages)
+- Product schema (features page)
 - BlogPosting schema (blog posts with author, publisher, dates)
-- FAQPage schema (Pricing page — 5 FAQs, Comparison page — 3 FAQs)
+- HowTo schema (blog posts — optional, enabled via Sanity toggle)
+- FAQPage schema (blog posts — optional, enabled via Sanity toggle)
+- DefinedTermSet schema (glossary page — 20 cheque terms)
+- ContactPage + ContactPoint schema (contact page)
+- AboutPage schema (about page)
 
 ### Accessibility
 - Semantic HTML: header, nav, main, footer, section, article used correctly
@@ -273,7 +279,7 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 
 ### Technical
 - Robots.txt allows all, disallows /studio, points to sitemap
-- Sitemap.xml with all 48+ URLs (27 static + blog posts across 3 locales)
+- Sitemap.xml with all 51+ URLs (30 static + blog posts across 3 locales)
 - Custom 404 page with helpful navigation links
 - PWA manifest configured
 - Self-hosted Inter font with font-display: swap
@@ -281,8 +287,10 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 - Security headers: X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy
 
 ### Internal Linking
-- Footer with comprehensive links (Product, Resources, Company, Legal)
+- Footer with comprehensive links (Product, Resources, Company, Legal, Glossary)
 - Blog prev/next navigation
+- Blog "Explore More" section (links to features, pricing, glossary, comparison, CTA)
+- Related posts section on blog posts
 - Breadcrumb trails on all pages
 - Header navigation covers all major pages
 
@@ -318,3 +326,8 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 | `netlify.toml` | Headers, caching, security |
 | `next.config.ts` | Next.js config (image optimization flag) |
 | `public/manifest.json` | PWA manifest |
+| `src/sanity/schema/blogPost.ts` | Blog schema (HowTo + FAQ fields) |
+| `src/app/[locale]/glossary/page.tsx` | Glossary page with DefinedTermSet schema |
+| `src/components/sections/home-faq.tsx` | Homepage FAQ section |
+| `src/components/blog/blog-faq.tsx` | Blog post FAQ accordion |
+| `_bmad-output/blog-content/` | Ready-to-paste blog post content (en, hi, gu) |
