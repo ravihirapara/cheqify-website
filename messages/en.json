@@ -6,7 +6,8 @@
       "pricing": "Pricing",
       "blog": "Blog",
       "contact": "Contact Us",
-      "about": "About Us"
+      "about": "About Us",
+      "glossary": "Cheque Glossary"
     },
     "cta": {
       "startFree": "Start Free",
@@ -167,6 +168,24 @@
       "subheading": "Watch how easy it is to print error-free cheques",
       "playButton": "Play Demo Video",
       "placeholder": "Demo video coming soon"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Common questions about cheque printing and management in India.",
+      "faq1Question": "What is cheque printing software?",
+      "faq1Answer": "Cheque printing software lets you print cheques directly on bank cheque leaves using a regular printer. Instead of handwriting details, the software auto-fills payee name, amount, amount in words, date, and MICR code — eliminating errors that cause bounces.",
+      "faq2Question": "Can I print cheques on any Indian bank's cheque leaf?",
+      "faq2Answer": "Yes. Cheqify supports 300+ Indian bank layouts including SBI, HDFC, ICICI, Axis, PNB, Bank of Baroda, Kotak Mahindra, and many more. Each layout is pre-configured with correct MICR positioning for that bank's cheque format.",
+      "faq3Question": "Is it legal to print cheques in India?",
+      "faq3Answer": "Yes, it is completely legal to print cheques in India. The Reserve Bank of India (RBI) allows printed cheques as long as they comply with CTS 2010 standards and contain valid MICR codes. Cheqify ensures all printed cheques meet these standards.",
+      "faq4Question": "What is MICR code and why is it important?",
+      "faq4Answer": "MICR (Magnetic Ink Character Recognition) is a 9-digit code at the bottom of every cheque that identifies the bank, branch, and city. It is essential for automated cheque processing. Cheqify validates MICR codes automatically to prevent clearance failures.",
+      "faq5Question": "How much does cheque printing software cost?",
+      "faq5Answer": "Cheqify is 100% free — every feature included with no credit card required. You get 300+ bank layouts, batch printing, lifecycle tracking, MICR validation, and multi-user access at zero cost. There are no hidden fees or premium tiers.",
+      "faq6Question": "What is CTS 2010 cheque format?",
+      "faq6Answer": "CTS 2010 (Cheque Truncation System) is the standard mandated by RBI for all cheques in India. It requires specific security features, standardized dimensions, and machine-readable elements. Cheqify's bank layouts are fully CTS 2010 compliant.",
+      "faq7Question": "Can I print multiple cheques at once?",
+      "faq7Answer": "Yes, Cheqify supports batch printing. You can import cheque data from Excel or CSV files and print hundreds of cheques in minutes. This is especially useful for businesses that issue salary cheques, vendor payments, or monthly rent cheques."
     }
   },
   "features": {
@@ -573,6 +592,105 @@
       "a2": "Cheqify offers significantly more features than ChequePot including automatic MICR validation, lifecycle tracking, owner dashboard, team management, multi-language support (English, Hindi, Gujarati), mobile responsive design, and export reports in PDF, Excel, and CSV formats.",
       "q3": "Can I switch from ChequePot to Cheqify?",
       "a3": "Yes, switching is easy. Sign up for free at Cheqify, select your bank from 300+ pre-loaded formats, and start printing cheques immediately. No data migration needed — just start fresh with better tools at zero cost."
+    }
+  },
+  "glossary": {
+    "meta": {
+      "title": "Cheque Glossary | Cheqify.app",
+      "description": "Learn cheque terminology — MICR, CTS 2010, drawer, payee, endorsement, and more. A complete glossary of cheque printing and banking terms for Indian businesses."
+    },
+    "hero": {
+      "badge": "Reference",
+      "heading": "Cheque Glossary",
+      "subheading": "A complete guide to cheque printing and banking terminology used in India."
+    },
+    "breadcrumb": "Glossary",
+    "terms": [
+      {
+        "term": "Cheque (Check)",
+        "definition": "A written order instructing a bank to pay a specific amount from the drawer's account to the person named on the cheque (payee). In India, cheques must comply with CTS 2010 standards for automated processing."
+      },
+      {
+        "term": "MICR Code",
+        "definition": "Magnetic Ink Character Recognition — a 9-digit code printed at the bottom of every cheque using magnetic ink. It contains the city code (3 digits), bank code (3 digits), and branch code (3 digits). MICR is essential for automated cheque clearing through the banking system."
+      },
+      {
+        "term": "CTS 2010",
+        "definition": "Cheque Truncation System 2010 — the standard mandated by the Reserve Bank of India (RBI) for all cheques. CTS eliminates the physical movement of cheques between banks by using digital images for clearing. All cheques in India must comply with CTS 2010 specifications."
+      },
+      {
+        "term": "Drawer",
+        "definition": "The person or entity who writes and signs the cheque. The drawer instructs their bank to pay the specified amount from their account. Also known as the cheque issuer or maker."
+      },
+      {
+        "term": "Payee",
+        "definition": "The person or entity to whom the cheque is made payable. The payee's name is written on the 'Pay' line of the cheque. The payee presents the cheque to their bank for deposit or encashment."
+      },
+      {
+        "term": "Drawee Bank",
+        "definition": "The bank on which the cheque is drawn — i.e., the drawer's bank that holds the account from which the payment will be made. The drawee bank verifies the signature and available balance before clearing the cheque."
+      },
+      {
+        "term": "Bearer Cheque",
+        "definition": "A cheque payable to whoever holds (bears) it. Bearer cheques can be encashed by anyone presenting them at the bank counter. They carry higher risk if lost or stolen, as no identification is required for encashment."
+      },
+      {
+        "term": "Order Cheque",
+        "definition": "A cheque payable only to the person named on it (the payee) or their order. The word 'Bearer' is crossed out and replaced with 'Order'. It provides more security than a bearer cheque as the payee must endorse it for transfer."
+      },
+      {
+        "term": "Crossed Cheque",
+        "definition": "A cheque with two parallel lines drawn across its face, indicating it can only be deposited into a bank account and not encashed over the counter. Crossing adds a layer of security against fraud and theft."
+      },
+      {
+        "term": "Account Payee Cheque",
+        "definition": "A crossed cheque with the words 'Account Payee' or 'A/C Payee' written between the crossing lines. This cheque can only be credited to the account of the named payee and cannot be transferred or endorsed to anyone else."
+      },
+      {
+        "term": "Post-Dated Cheque (PDC)",
+        "definition": "A cheque bearing a future date. It cannot be presented for payment before that date. Post-dated cheques are commonly used in India for EMI payments, rent, and instalment-based transactions."
+      },
+      {
+        "term": "Stale Cheque",
+        "definition": "A cheque that has passed its validity period. In India, a cheque is valid for 3 months from the date of issue. After this period, the bank will not honour it, and a fresh cheque must be issued."
+      },
+      {
+        "term": "Cheque Bounce (Dishonour)",
+        "definition": "When a bank refuses to process a cheque due to insufficient funds, signature mismatch, overwriting, or other irregularities. Under the Negotiable Instruments Act (Section 138), cheque bouncing is a criminal offence in India."
+      },
+      {
+        "term": "Endorsement",
+        "definition": "The act of signing on the back of a cheque to transfer it to another person. The payee endorses the cheque by signing it, allowing the endorsed person (endorsee) to collect the payment. Not applicable to account payee cheques."
+      },
+      {
+        "term": "Cheque Leaf",
+        "definition": "A single cheque from a cheque book. Each cheque leaf has a unique serial number, the account holder's details, and a pre-printed MICR code band. Cheque printing software like Cheqify prints directly on blank cheque leaves."
+      },
+      {
+        "term": "Amount in Words",
+        "definition": "The written-out form of the cheque amount (e.g., 'Rupees Ten Thousand Only'). Both the numeric amount and amount in words must match for the cheque to be valid. Cheqify auto-generates the amount in words to prevent mismatch errors."
+      },
+      {
+        "term": "Batch Printing",
+        "definition": "The process of printing multiple cheques at once, typically by importing data from an Excel or CSV file. Batch printing saves significant time for businesses that issue many cheques for salaries, vendor payments, or rent."
+      },
+      {
+        "term": "Bank Reconciliation",
+        "definition": "The process of matching cheque records with bank statements to ensure all issued cheques are accounted for — cleared, pending, or bounced. Cheqify's lifecycle tracking automates this process."
+      },
+      {
+        "term": "IFSC Code",
+        "definition": "Indian Financial System Code — an 11-character alphanumeric code that uniquely identifies a bank branch in India. Format: first 4 characters are the bank code, 5th is always 0, and the last 6 identify the branch. Used in electronic fund transfers (NEFT, RTGS, IMPS)."
+      },
+      {
+        "term": "NEFT",
+        "definition": "National Electronic Funds Transfer — a nationwide electronic payment system maintained by RBI for transferring funds between bank accounts. While not directly related to cheques, NEFT is the digital alternative that handles many payments previously done by cheque."
+      }
+    ],
+    "relatedCta": {
+      "heading": "Ready to Print Error-Free Cheques?",
+      "subheading": "Now that you know the terminology, try Cheqify — 100% free cheque printing with 300+ Indian bank formats.",
+      "cta": "Start Free"
     }
   }
 }

@@ -26,6 +26,11 @@ function urlFor(source: any) {
   return builder.image(source);
 }
 
+export interface HowToStep {
+  name: string;
+  text: string;
+}
+
 export interface BlogPostMeta {
   title: string;
   description: string;
@@ -36,6 +41,8 @@ export interface BlogPostMeta {
   tags: string[];
   image: string;
   order: number;
+  isHowTo: boolean;
+  howToSteps: HowToStep[];
 }
 
 export interface BlogPost {
@@ -81,6 +88,8 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
       tags: (p.tags as string[]) || [],
       image: p.image ? urlFor(p.image as Record<string, unknown>).width(800).quality(80).format("webp").url() : "",
       order: (p.order as number) || 999,
+      isHowTo: false,
+      howToSteps: [],
     }));
 }
 
@@ -99,6 +108,8 @@ export async function getBlogPost(
     tags,
     order,
     author,
+    isHowTo,
+    howToSteps,
     _createdAt
   }`;
 
@@ -117,6 +128,8 @@ export async function getBlogPost(
       tags: post.tags || [],
       image: post.image ? urlFor(post.image).width(1200).quality(80).format("webp").url() : "",
       order: post.order || 999,
+      isHowTo: post.isHowTo || false,
+      howToSteps: post.howToSteps || [],
     },
     content: post.body || [],
   };

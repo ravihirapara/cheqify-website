@@ -95,6 +95,33 @@ export const blogPost = defineType({
       type: "array",
       of: [{ type: "block" }],
     }),
+
+    // HowTo Schema (optional — fill for step-by-step guide posts)
+    defineField({
+      name: "isHowTo",
+      title: "Is this a How-To guide?",
+      type: "boolean",
+      initialValue: false,
+      description: "Enable to add step-by-step instructions for Google HowTo rich snippets.",
+    }),
+    defineField({
+      name: "howToSteps",
+      title: "How-To Steps",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          fields: [
+            defineField({ name: "name", title: "Step Name", type: "string" }),
+            defineField({ name: "text", title: "Step Description", type: "text", rows: 2 }),
+          ],
+          preview: {
+            select: { title: "name", subtitle: "text" },
+          },
+        },
+      ],
+      hidden: ({ parent }) => !parent?.isHowTo,
+    }),
   ],
   preview: {
     select: {

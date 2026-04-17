@@ -116,6 +116,19 @@ export default async function BlogPostPage({
     mainEntityOfPage: `https://cheqify.app/${locale}/blog/${slug}`,
   };
 
+  const howToJsonLd = post.meta.isHowTo && post.meta.howToSteps.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: post.meta.title,
+    description: post.meta.description,
+    step: post.meta.howToSteps.map((step, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } : null;
+
   return (
     <section className="px-6 py-16 md:py-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
@@ -123,6 +136,9 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {howToJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      )}
       <div className="mx-auto max-w-5xl">
         {/* Back to blog */}
         <Link

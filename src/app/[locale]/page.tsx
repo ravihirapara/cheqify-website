@@ -13,6 +13,7 @@ import { DemoVideo } from "~/components/sections/demo-video";
 import { FeaturesTabs } from "~/components/sections/features-tabs";
 import { StatsBar } from "~/components/sections/stats-bar";
 import { Testimonials } from "~/components/sections/testimonials";
+import { HomeFaq } from "~/components/sections/home-faq";
 import { CtaSection } from "~/components/sections/cta-section";
 
 export async function generateMetadata({
@@ -79,6 +80,69 @@ const JSONLD_SOFTWARE = {
     "Cheque Printing, MICR Validation, Batch Printing, Lifecycle Tracking, Bank Reconciliation, Multi-Language Support",
 };
 
+const JSONLD_FAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is cheque printing software?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Cheque printing software lets you print cheques directly on bank cheque leaves using a regular printer. Instead of handwriting details, the software auto-fills payee name, amount, amount in words, date, and MICR code — eliminating errors that cause bounces.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I print cheques on any Indian bank's cheque leaf?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Cheqify supports 300+ Indian bank layouts including SBI, HDFC, ICICI, Axis, PNB, Bank of Baroda, Kotak Mahindra, and many more. Each layout is pre-configured with correct MICR positioning for that bank's cheque format.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is it legal to print cheques in India?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, it is completely legal to print cheques in India. The Reserve Bank of India (RBI) allows printed cheques as long as they comply with CTS 2010 standards and contain valid MICR codes. Cheqify ensures all printed cheques meet these standards.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is MICR code and why is it important?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "MICR (Magnetic Ink Character Recognition) is a 9-digit code at the bottom of every cheque that identifies the bank, branch, and city. It is essential for automated cheque processing. Cheqify validates MICR codes automatically to prevent clearance failures.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does cheque printing software cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Cheqify is 100% free — every feature included with no credit card required. You get 300+ bank layouts, batch printing, lifecycle tracking, MICR validation, and multi-user access at zero cost. There are no hidden fees or premium tiers.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is CTS 2010 cheque format?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "CTS 2010 (Cheque Truncation System) is the standard mandated by RBI for all cheques in India. It requires specific security features, standardized dimensions, and machine-readable elements. Cheqify's bank layouts are fully CTS 2010 compliant.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I print multiple cheques at once?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Cheqify supports batch printing. You can import cheque data from Excel or CSV files and print hundreds of cheques in minutes. This is especially useful for businesses that issue salary cheques, vendor payments, or monthly rent cheques.",
+      },
+    },
+  ],
+};
+
 export default async function Home({
   params,
 }: {
@@ -94,6 +158,10 @@ export default async function Home({
           __html: JSON.stringify([JSONLD_ORGANIZATION, JSONLD_WEBSITE, JSONLD_SOFTWARE]),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD_FAQ) }}
+      />
       <Hero />
       <TrustBar />
       <BankLogos />
@@ -102,6 +170,7 @@ export default async function Home({
       <FeaturesTabs />
       <StatsBar />
       <Testimonials />
+      <HomeFaq />
       <CtaSection />
     </>
   );

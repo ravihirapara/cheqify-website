@@ -19,6 +19,7 @@ const FOOTER_LINKS = [
     titleKey: "resources",
     links: [
       { labelKey: "nav.blog", href: "/blog" },
+      { labelKey: "nav.glossary", href: "/glossary" },
     ],
   },
   {
