@@ -92,9 +92,12 @@ _This file contains critical rules and patterns that AI agents must follow when 
 ### Third-Party Script Rules
 
 - GA4 and Tawk.to load ONLY after cookie consent — never before
+- PostHog (`posthog-js`) initializes on page load (first-party product analytics); input values masked in session recordings by default
 - Load third-party scripts asynchronously — never block page render
 - Site must remain fully functional if any third-party script fails to load
 - Formspree SDK loads with the page (lightweight, no consent needed)
+- To mask sensitive text in PostHog session recordings, add `data-ph-mask` attribute to the element
+- Custom PostHog events live in components (e.g. `posthog.capture('cta_signup_clicked', { location: 'header' })`) — use `snake_case` for event names and include a `location` property for CTAs
 
 ### Contact Form Rules
 
@@ -144,6 +147,8 @@ _This file contains critical rules and patterns that AI agents must follow when 
 - Never use inline styles or `@apply`
 - Never use arbitrary Tailwind values like `p-[13px]`
 - Never load GA4 or Tawk.to before cookie consent
+- Never disable PostHog input masking (`maskAllInputs: true`) — it prevents sensitive data leaking into session recordings
+- Never transcribe API keys/tokens from screenshots — copy as text to avoid `l`/`1`, `O`/`0` confusion (this already caused a PostHog 401 incident)
 - Never put multiple components in one file
 - Never use string concatenation for Tailwind classes — use `cn()`
 

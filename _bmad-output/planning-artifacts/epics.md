@@ -221,7 +221,7 @@ Visitors can read the company story, view team info, and access the full privacy
 **FRs covered:** FR33, FR34, FR35, FR36, FR37, FR38
 
 ### Epic 9: Cookie Consent & Analytics
-Visitors can accept/decline cookies, with GA4 and Tawk.to loading only after consent, and preferences persisted across sessions.
+Visitors can accept/decline cookies (gating GA4 and Tawk.to), with PostHog product analytics (session replay, heatmaps, exceptions, custom events) running as first-party analytics with input masking, and preferences persisted across sessions.
 **FRs covered:** FR39, FR40, FR41
 
 ### Epic 10: SEO & Multi-Language Content
@@ -652,6 +652,25 @@ So that I can measure traffic, conversions, and user behavior.
 **And** GA4 loads asynchronously without blocking page render
 **And** if consent is not given, GA4 does not load
 **And** the GA4 measurement ID is configured via environment variable
+
+### Story 9.3: PostHog Product Analytics
+
+As a product owner,
+I want comprehensive product analytics via PostHog,
+So that I can understand visitor behavior, replay sessions, and optimize conversion.
+
+**Acceptance Criteria:**
+
+**Given** a visitor lands on any page
+**When** PostHog initializes via `posthog-provider.tsx`
+**Then** autocapture records every click, form submission, and input change
+**And** session replay is recorded with input values masked by default
+**And** heatmaps and rageclick detection are enabled
+**And** client-side exceptions are captured automatically
+**And** a cross-subdomain cookie keeps the visitor's `distinct_id` consistent across cheqify.app and app.cheqify.app
+**And** custom conversion events fire for: `cta_login_clicked`, `cta_signup_clicked`, `language_changed`, `cookie_consent`
+**And** the PostHog project token and host are configured via `NEXT_PUBLIC_POSTHOG_KEY` and `NEXT_PUBLIC_POSTHOG_HOST` env vars
+**And** website and app.cheqify.app both report into the same PostHog project for end-to-end funnel analysis
 
 ## Epic 10: SEO & Multi-Language Content
 

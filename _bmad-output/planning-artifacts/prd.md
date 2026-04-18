@@ -98,6 +98,7 @@ Cheqify.app is a cheque printing and lifecycle management PWA already live at ap
 | **Cookie consent banner** | DPDP Act / GDPR compliance |
 | **SEO fundamentals** | Meta tags, structured data, sitemap, hreflang |
 | **Google Analytics 4** | Conversion tracking from day one |
+| **PostHog product analytics** | Session replay, heatmaps, exception tracking, custom conversion events |
 | **Blog with 3-5 seed articles** | SEO entry point (Amit journey), content in all 3 languages |
 | **Product screenshots** | Show, don't tell — throughout site |
 
@@ -124,7 +125,7 @@ Cheqify.app is a cheque printing and lifecycle management PWA already live at ap
 | Risk Type | Risk | Mitigation |
 |-----------|------|-----------|
 | **Technical** | Multi-language triples content/testing effort | JSON translation files with shared component structure — change once, renders in all languages |
-| **Technical** | Performance degradation from chat widget + analytics | Load Tawk.to and GA4 asynchronously, after page render, gated by cookie consent |
+| **Technical** | Performance degradation from chat widget + analytics | Load Tawk.to and GA4 asynchronously after consent; PostHog loads async with input-masking to minimize CPU/network overhead |
 | **Content** | Blog articles needed in 3 languages at launch | Create 3-5 seed articles focused on top search keywords, translated to all 3 languages |
 | **Content** | Product screenshots not yet available | Use placeholder screenshots initially, replace with real screenshots when ready |
 | **Market** | Low organic traffic initially | Seed blog with high-intent keywords, ensure technical SEO is perfect from day one |
@@ -216,15 +217,17 @@ Cheqify.app is a cheque printing and lifecycle management PWA already live at ap
 - **SSL/HTTPS** — Required on all pages (standard with Vercel deployment)
 - **Contact form via Formspree** — Third-party form processing
 - **Analytics** — Google Analytics 4 with cookie consent gating — do not load tracking scripts until user consents
+- **Product analytics** — PostHog (session replay with input masking, heatmaps, exception capture, custom conversion events); shares a single project with app.cheqify.app via cross-subdomain cookie
 - **Live chat** — Tawk.to widget; must be disclosed in Privacy Policy
 
 ### Integration Requirements
 
 - **Formspree** (formspree.io) — Contact form submission handling
 - **Google Analytics 4** — Traffic and conversion tracking
+- **PostHog** — Product analytics: session replay, heatmaps, exception autocapture, custom events; shared project with app.cheqify.app for end-to-end funnel analysis
 - **Tawk.to** — Real-time live chat support
 - **Google Search Console** — SEO monitoring
-- **Sanity.io** (future, Phase 2) — Blog CMS integration
+- **Sanity.io** — Blog CMS integration (live as of Apr 2026)
 
 ### Risk Mitigations
 
@@ -299,8 +302,9 @@ Statically generated multi-page application (MPA) built with Next.js App Router.
 - **Blog:** Static markdown files at MVP, Sanity.io CMS integration in Phase 2
 - **Forms:** Formspree integration for contact form
 - **Analytics:** Google Analytics 4 loaded conditionally after cookie consent
+- **Product Analytics:** PostHog (posthog-js) initialized on page load — session replay, heatmaps, rageclick detection, exception capture, cross-subdomain cookie
 - **Live Chat:** Tawk.to loaded asynchronously after cookie consent
-- **Deployment:** Vercel (automatic SSG, CDN, HTTPS)
+- **Deployment:** Netlify (automatic SSG, CDN, HTTPS)
 
 ## Functional Requirements
 
@@ -365,7 +369,7 @@ Statically generated multi-page application (MPA) built with Next.js App Router.
 ### Privacy Policy Page
 
 - **FR36:** Visitor can read the full privacy policy covering data collection, usage, and rights
-- **FR37:** Visitor can understand what data is collected via contact form, analytics, and chat
+- **FR37:** Visitor can understand what data is collected via contact form, analytics (GA4 + PostHog), and chat
 - **FR38:** Visitor can find contact information for privacy-related inquiries
 
 ### Cookie Consent & Compliance
@@ -378,6 +382,15 @@ Statically generated multi-page application (MPA) built with Next.js App Router.
 
 - **FR42:** Visitor can initiate a live chat conversation from any page via Tawk.to widget
 - **FR43:** System loads Tawk.to widget asynchronously without blocking page render
+
+### Product Analytics (PostHog)
+
+- **FR43a:** System captures autocapture events (clicks, form submissions, input changes) for every visitor
+- **FR43b:** System records session replays with input values masked by default; sensitive elements can opt in via `data-ph-mask` attribute
+- **FR43c:** System captures custom conversion events: `cta_login_clicked`, `cta_signup_clicked`, `language_changed`, `cookie_consent`
+- **FR43d:** System captures client-side exceptions for observability
+- **FR43e:** System uses a cross-subdomain cookie so visitor identity persists from cheqify.app → app.cheqify.app for funnel analysis
+- **FR43f:** System renders click/scroll heatmaps and detects rageclicks per page
 
 ### SEO & Discoverability
 
@@ -405,13 +418,13 @@ Statically generated multi-page application (MPA) built with Next.js App Router.
 - **NFR5:** Time to Interactive under 3 seconds on mobile
 - **NFR6:** Per-page JavaScript bundle under 150KB
 - **NFR7:** Images optimized with lazy loading for below-fold content
-- **NFR8:** Third-party scripts (Tawk.to, GA4) load asynchronously, never blocking page render
+- **NFR8:** Third-party scripts (Tawk.to, GA4, PostHog) load asynchronously, never blocking page render
 - **NFR9:** Font loading uses `font-display: swap`
 
 ### Security
 
 - **NFR10:** All pages served over HTTPS
-- **NFR11:** No tracking scripts load before explicit cookie consent
+- **NFR11:** GA4 and Tawk.to do not load before explicit cookie consent. PostHog initializes on page load as first-party product analytics with input values masked in session recordings; this is disclosed in the Privacy Policy
 - **NFR12:** Contact form protected against spam (Formspree built-in)
 - **NFR13:** No sensitive data stored on the website
 - **NFR14:** Content Security Policy headers configured
@@ -437,7 +450,7 @@ Statically generated multi-page application (MPA) built with Next.js App Router.
 
 - **NFR26:** Formspree submission completes within 3 seconds with user feedback
 - **NFR27:** Tawk.to loads within 5 seconds of page render (after consent) without layout shift
-- **NFR28:** GA4 tracks page views and CTA clicks accurately across all languages
+- **NFR28:** GA4 tracks page views and CTA clicks accurately across all languages; PostHog captures autocapture events, custom conversion events, session replays, and exceptions across all languages
 - **NFR29:** All third-party integrations degrade gracefully — site usable if any integration fails
 
 ### SEO

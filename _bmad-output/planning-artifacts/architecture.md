@@ -41,6 +41,7 @@ _This document builds collaboratively through step-by-step discovery. Sections a
 - **Formspree** — contact form backend, no custom API needed
 - **Tawk.to** — live chat, third-party widget injection
 - **Google Analytics 4** — analytics, loaded after consent
+- **PostHog** — product analytics (session replay, heatmaps, exceptions, custom events); shared project with app.cheqify.app via cross-subdomain cookie
 - **Static markdown blog** — MVP blog with Sanity.io migration path in Phase 2
 - **Inter font** — typography choice pre-decided from UX spec
 
@@ -191,7 +192,9 @@ image: string (optional)
 | Formspree | Form POST via `@formspree/react` | Loaded with page (lightweight SDK) |
 | Tawk.to | Script injection | Loaded async after cookie consent |
 | Google Analytics 4 | Script injection | Loaded async after cookie consent |
+| PostHog | `posthog-js` SDK | Initialized in root layout on page load (not consent-gated); masks inputs and sensitive text by default |
 | Google Search Console | Meta tag verification | Static, no runtime loading |
+| Sanity.io | `@sanity/client` | Build-time fetch for blog content via ISR |
 
 ### Frontend Architecture
 
@@ -283,9 +286,9 @@ No global state management library needed. Local component state (React useState
 - Lighthouse CI for performance regression testing
 
 **Environment Configuration:**
-- `.env.local` for development (Formspree ID, GA4 ID, Tawk.to property ID)
-- Vercel environment variables for production
-- No secrets in repository — all third-party IDs are public-facing widget IDs
+- `.env.local` for development (Formspree ID, GA4 ID, Tawk.to property ID + widget ID, PostHog project token + host, Sanity API token)
+- Netlify environment variables for production (must rebuild with "Clear cache and deploy" after any `NEXT_PUBLIC_*` change since Next.js inlines these at build time)
+- No secrets in repository — all `NEXT_PUBLIC_*` IDs are public-facing; Sanity API token is server-only
 
 ### Decision Impact Analysis
 
@@ -517,7 +520,7 @@ image: "/images/blog/print-cheque.webp"
 
 ```
 cheqify-website/
-├── .env.local                    # Formspree ID, GA4 ID, Tawk.to property ID
+├── .env.local                    # Formspree ID, GA4 ID, Tawk.to IDs, PostHog key + host, Sanity token
 ├── .env.example                  # Template for env vars
 ├── .gitignore
 ├── .github/
@@ -703,6 +706,8 @@ cheqify-website/
 | **Formspree** | `contact-form.tsx` via `@formspree/react` | With page (lightweight) |
 | **Tawk.to** | `[locale]/layout.tsx` script injection | After cookie consent |
 | **Google Analytics 4** | `[locale]/layout.tsx` script injection | After cookie consent |
+| **PostHog** | `posthog-provider.tsx` via `posthog-js` SDK | On page load (not consent-gated); inputs masked by default |
+| **Sanity.io** | `@sanity/client` build-time fetch | ISR for blog content |
 | **app.cheqify.app** | CTA button `href` links | Static links, no API |
 
 **Data Flow:**
@@ -714,9 +719,12 @@ Build Time:
 
 Runtime:
   Cookie consent (localStorage) → gates → GA4 + Tawk.to script loading
+  PostHog (posthog-js) → initializes on mount → pageviews, autocapture, session replay (input-masked), heatmaps, rageclicks, exceptions, cross-subdomain cookie
   Contact form submit → Formspree API → success/error state
   Theme toggle → next-themes → CSS variables → all components
   Language switch → next-intl routing → new locale page
+  Custom events: cta_login_clicked, cta_signup_clicked, language_changed, cookie_consent → PostHog
+  Sanity webhook → Netlify ISR revalidation → blog updates
 ```
 
 ## Architecture Validation Results
