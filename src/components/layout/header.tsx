@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import posthog from "posthog-js";
 import { Link, usePathname } from "~/i18n/navigation";
 import Image from "next/image";
 import { cn } from "~/lib/utils";
@@ -68,6 +69,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:inline-flex"
+            onClick={() => posthog.capture("cta_login_clicked", { location: "header" })}
           >
             <Button variant="ghost" size="default" className="h-9">
               {t("cta.login")}
@@ -78,6 +80,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:inline-flex"
+            onClick={() => posthog.capture("cta_signup_clicked", { location: "header" })}
           >
             <Button variant="default" size="default" className="h-9">
               {t("cta.startFree")}

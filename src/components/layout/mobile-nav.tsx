@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import posthog from "posthog-js";
 import Image from "next/image";
 import { Link, usePathname } from "~/i18n/navigation";
 import { cn } from "~/lib/utils";
@@ -75,7 +76,10 @@ export function MobileNav() {
             href="https://app.cheqify.app/register"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              posthog.capture("cta_signup_clicked", { location: "mobile_nav" });
+              setOpen(false);
+            }}
           >
             <Button variant="default" className="h-11 w-full">
               {t("cta.startFree")}
@@ -85,7 +89,10 @@ export function MobileNav() {
             href="https://app.cheqify.app/login"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              posthog.capture("cta_login_clicked", { location: "mobile_nav" });
+              setOpen(false);
+            }}
           >
             <Button variant="ghost" className="h-11 w-full">
               {t("cta.login")}

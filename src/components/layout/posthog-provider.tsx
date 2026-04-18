@@ -14,6 +14,16 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
         api_host: POSTHOG_HOST,
         capture_pageview: true,
         capture_pageleave: true,
+        autocapture: true,
+        capture_heatmaps: true,
+        rageclick: true,
+        capture_exceptions: true,
+        cross_subdomain_cookie: true,
+        persistence: "localStorage+cookie",
+        session_recording: {
+          maskAllInputs: true,
+          maskTextSelector: "[data-ph-mask]",
+        },
       });
     }
   }, []);

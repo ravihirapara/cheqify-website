@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import posthog from "posthog-js";
 import { Link } from "~/i18n/navigation";
 import { Button } from "~/components/ui/button";
 
@@ -24,11 +25,13 @@ export function CookieConsent() {
   function accept() {
     localStorage.setItem(STORAGE_KEY, "accepted");
     window.dispatchEvent(new Event("cookie-consent-change"));
+    posthog.capture("cookie_consent", { choice: "accepted" });
   }
 
   function decline() {
     localStorage.setItem(STORAGE_KEY, "declined");
     window.dispatchEvent(new Event("cookie-consent-change"));
+    posthog.capture("cookie_consent", { choice: "declined" });
   }
 
   if (consent !== null) return null;
