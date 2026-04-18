@@ -1,32 +1,25 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "~/i18n/navigation";
 import { Button } from "~/components/ui/button";
 
 const STORAGE_KEY = "cheqify-cookie-consent";
 
-function getConsentSnapshot() {
-  return localStorage.getItem(STORAGE_KEY);
-}
-
-function getConsentServerSnapshot() {
-  return "pending" as string | null;
-}
-
-function subscribeToConsent(callback: () => void) {
-  window.addEventListener("cookie-consent-change", callback);
-  return () => window.removeEventListener("cookie-consent-change", callback);
-}
-
 export function CookieConsent() {
   const t = useTranslations("common.cookies");
-  const consent = useSyncExternalStore(
-    subscribeToConsent,
-    getConsentSnapshot,
-    getConsentServerSnapshot,
-  );
+  const [consent, setConsent] = useState<string | null>("pending");
+
+  useEffect(() => {
+    function read() {
+      setConsent(localStorage.getItem(STORAGE_KEY));
+    }
+
+    read();
+    window.addEventListener("cookie-consent-change", read);
+    return () => window.removeEventListener("cookie-consent-change", read);
+  }, []);
 
   function accept() {
     localStorage.setItem(STORAGE_KEY, "accepted");
@@ -38,7 +31,6 @@ export function CookieConsent() {
     window.dispatchEvent(new Event("cookie-consent-change"));
   }
 
-  // "pending" = still loading from localStorage, null = no decision yet
   if (consent !== null) return null;
 
   return (
