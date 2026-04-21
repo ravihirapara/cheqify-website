@@ -156,7 +156,16 @@
       "t2Role": "Accounts Manager, Surat",
       "t3Quote": "I only print 2-3 cheques a year but Cheqify makes it effortless. The free plan is perfect for personal use.",
       "t3Name": "Amit Desai",
-      "t3Role": "Individual User, Mumbai"
+      "t3Role": "Individual User, Mumbai",
+      "t4Quote": "As a CA handling 50+ client accounts, Cheqify is a lifesaver. Batch printing vendor cheques used to take half a day. Now it's done in 20 minutes.",
+      "t4Name": "Vikram Shah",
+      "t4Role": "Chartered Accountant, Rajkot",
+      "t5Quote": "We switched from a paid desktop tool to Cheqify. Same features, better UX, and completely free. The MICR auto-validation catches errors before printing.",
+      "t5Name": "Neha Gupta",
+      "t5Role": "Finance Head, Pune",
+      "t6Quote": "Multi-user access lets my team of 3 work on cheques simultaneously without confusion. The audit trail on every issued cheque is a huge compliance win.",
+      "t6Name": "Rajesh Kumar",
+      "t6Role": "Partner, CA Firm, Delhi"
     },
     "finalCta": {
       "heading": "Ready to Print Error-Free Cheques?",

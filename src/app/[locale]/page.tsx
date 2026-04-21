@@ -76,6 +76,50 @@ const JSONLD_SOFTWARE = {
     bestRating: "5",
     worstRating: "1",
   },
+  review: [
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Ramesh Patel", jobTitle: "Trading Business Owner", address: { "@type": "PostalAddress", addressLocality: "Ahmedabad", addressCountry: "IN" } },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "Cheqify eliminated cheque errors completely. We used to have 2-3 bounced cheques a month due to handwriting mistakes. Now zero.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Priya Sharma", jobTitle: "Accounts Manager", address: { "@type": "PostalAddress", addressLocality: "Surat", addressCountry: "IN" } },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "The lifecycle tracking saved us hours every week. I no longer need to call vendors to ask if they deposited the cheque.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Amit Desai", jobTitle: "Individual User", address: { "@type": "PostalAddress", addressLocality: "Mumbai", addressCountry: "IN" } },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "I only print 2-3 cheques a year but Cheqify makes it effortless. The free plan is perfect for personal use.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Vikram Shah", jobTitle: "Chartered Accountant", address: { "@type": "PostalAddress", addressLocality: "Rajkot", addressCountry: "IN" } },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "As a CA handling 50+ client accounts, Cheqify is a lifesaver. Batch printing vendor cheques used to take half a day. Now it's done in 20 minutes.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Neha Gupta", jobTitle: "Finance Head", address: { "@type": "PostalAddress", addressLocality: "Pune", addressCountry: "IN" } },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "We switched from a paid desktop tool to Cheqify. Same features, better UX, and completely free. The MICR auto-validation catches errors before printing.",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Rajesh Kumar", jobTitle: "Partner, CA Firm", address: { "@type": "PostalAddress", addressLocality: "Delhi", addressCountry: "IN" } },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody:
+        "Multi-user access lets my team of 3 work on cheques simultaneously without confusion. The audit trail on every issued cheque is a huge compliance win.",
+    },
+  ],
   featureList:
     "Cheque Printing, MICR Validation, Batch Printing, Lifecycle Tracking, Bank Reconciliation, Multi-Language Support",
 };
