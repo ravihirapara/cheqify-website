@@ -86,7 +86,7 @@ const JSONLD_SOFTWARE = {
     },
     {
       "@type": "Review",
-      author: { "@type": "Person", name: "Priya Sharma", jobTitle: "Accounts Manager", address: { "@type": "PostalAddress", addressLocality: "Surat", addressCountry: "IN" } },
+      author: { "@type": "Person", name: "Haresh Gediya", jobTitle: "Owner, Embroidery Machine Business", address: { "@type": "PostalAddress", addressLocality: "Surat", addressCountry: "IN" } },
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       reviewBody:
         "The lifecycle tracking saved us hours every week. I no longer need to call vendors to ask if they deposited the cheque.",
@@ -114,7 +114,7 @@ const JSONLD_SOFTWARE = {
     },
     {
       "@type": "Review",
-      author: { "@type": "Person", name: "Rajesh Kumar", jobTitle: "Partner, CA Firm", address: { "@type": "PostalAddress", addressLocality: "Delhi", addressCountry: "IN" } },
+      author: { "@type": "Person", name: "Vaishali Hirapara", jobTitle: "Partner, CA Firm", address: { "@type": "PostalAddress", addressLocality: "Surat", addressCountry: "IN" } },
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
       reviewBody:
         "Multi-user access lets my team of 3 work on cheques simultaneously without confusion. The audit trail on every issued cheque is a huge compliance win.",
