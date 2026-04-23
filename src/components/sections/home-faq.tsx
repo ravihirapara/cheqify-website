@@ -11,7 +11,7 @@ export function HomeFaq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
       <h2 className="mb-2 text-center text-3xl font-bold tracking-tight text-foreground">
         {t("heading")}
       </h2>

@@ -9,10 +9,10 @@ import {
   GitGraph,
   Bell,
   BarChart3,
-  Briefcase,
   Users,
   FileSpreadsheet,
   Smartphone,
+  Network,
 } from "lucide-react";
 import { cn } from "~/lib/utils";
 
@@ -23,11 +23,23 @@ const FEATURES = [
   { index: 5, icon: GitGraph },
   { index: 6, icon: Bell },
   { index: 7, icon: BarChart3 },
-  { index: 8, icon: Briefcase },
   { index: 9, icon: Users },
   { index: 10, icon: FileSpreadsheet },
+  { index: 12, icon: Network },
   { index: 11, icon: Smartphone },
 ] as const;
+
+const FEATURE_IMAGES: Record<number, { src: string; width: number; height: number }> = {
+  1: { src: "/images/browse-cheque-templates-bank-layouts.webp", width: 1200, height: 800 },
+  2: { src: "/images/smart-auto-fill.webp", width: 1875, height: 1875 },
+  3: { src: "/images/chequebook-management.webp", width: 800, height: 600 },
+  5: { src: "/images/complete-lifecycle-tracking.webp", width: 1875, height: 1875 },
+  7: { src: "/images/owner-dashboard-analytics.webp", width: 1875, height: 1875 },
+  9: { src: "/images/team-management.webp", width: 800, height: 600 },
+  10: { src: "/images/export-bank-reconciliation.webp", width: 1875, height: 1875 },
+  11: { src: "/images/mobile-friendly-access.webp", width: 1875, height: 1875 },
+  12: { src: "/images/multi-organization.webp", width: 1875, height: 1875 },
+};
 
 export function FeaturesCore() {
   const t = useTranslations("features.core");
@@ -68,50 +80,20 @@ export function FeaturesCore() {
                       isOdd ? "lg:order-1" : "lg:order-2"
                     )}
                   >
-                    {feature.index === 1 ? (
+                    {FEATURE_IMAGES[feature.index] ? (
                       <div className="w-full">
                         <Image
-                          src="/images/browse-cheque-templates-bank-layouts.webp"
-                          alt="Browse 300+ pre-built Indian bank cheque templates in Cheqify"
-                          width={1200}
-                          height={800}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    ) : feature.index === 3 ? (
-                      <div className="w-full">
-                        <Image
-                          src="/images/chequebook-management.webp"
-                          alt={t("feature3ScreenshotAlt")}
-                          width={800}
-                          height={600}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    ) : feature.index === 8 ? (
-                      <div className="w-full">
-                        <Image
-                          src="/images/multi-company.webp"
-                          alt={t("feature8ScreenshotAlt")}
-                          width={800}
-                          height={600}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    ) : feature.index === 9 ? (
-                      <div className="w-full">
-                        <Image
-                          src="/images/team-management.webp"
-                          alt={t("feature9ScreenshotAlt")}
-                          width={800}
-                          height={600}
+                          src={FEATURE_IMAGES[feature.index].src}
+                          alt={t(`feature${feature.index}ScreenshotAlt`)}
+                          width={FEATURE_IMAGES[feature.index].width}
+                          height={FEATURE_IMAGES[feature.index].height}
                           className="h-auto w-full"
                         />
                       </div>
                     ) : (
-                    <div className="flex aspect-[3/2] max-h-[300px] items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/30">
-                      <Icon className="h-12 w-12 text-muted-foreground/30" />
-                    </div>
+                      <div className="flex aspect-[3/2] max-h-[300px] items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/30">
+                        <Icon className="h-12 w-12 text-muted-foreground/30" />
+                      </div>
                     )}
                   </div>
 
