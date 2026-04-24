@@ -1,19 +1,44 @@
 # Blog Post #25 — Best Free Cheque Printing Software in India
 
+> ⚠️ **Before publishing — legal/factual check required**
+>
+> The current draft names **ChequePot** repeatedly and makes specific claims about its pricing, CTS 2010 compliance, and feature set. If those claims are not fact-checked against ChequePot's current product, this risks a defamation or trademark complaint. Recommended safe rewrite: replace every "ChequePot" mention with generic phrasing like **"paid desktop cheque software"** or **"traditional cheque printing tools in India"**. Keep the comparison sharp but un-named. Only keep the ChequePot name if you have a dated screenshot proving their current pricing and feature list.
+
+---
+
 ## Sanity Fields
 
 - **Slug:** `best-free-cheque-printing-software-india`
-- **Tags:** `cheque-printing`, `comparison`, `free-software`
+- **Tags:** `Software Comparison`, `Cheque Productivity`
+  - (Matches existing Title-Case taxonomy.)
 - **Author:** Cheqify Team
-- **Order:** (set as needed)
+- **Order:** `12` (publishes right after Post #24 — verify against Sanity's current max `order` and set to `max + 2`)
 - **Is HowTo:** NO
 - **Has FAQ:** YES (toggle ON)
 
 ---
 
-## Cover Image
+## Publishing Metadata
 
-Use a comparison graphic or a split-screen showing Cheqify vs ChequePot interfaces.
+- **Scheduled publish date:** Thursday 2026-04-30, 10:00 IST
+- **Primary keyword:** `free cheque printing software india`
+- **Secondary keywords:** best cheque printing app, cheque printing software free download, free cheque software for SMB
+- **Reading time:** ~7 min (auto-calculated)
+- **Final URLs:**
+  - EN: `https://cheqify.app/en/blog/best-free-cheque-printing-software-india`
+  - HI: `https://cheqify.app/hi/blog/best-free-cheque-printing-software-india`
+  - GU: `https://cheqify.app/gu/blog/best-free-cheque-printing-software-india`
+
+---
+
+## Cover Image (Required by Sanity schema)
+
+- **Dimensions:** 1200 × 630 px
+- **Format:** WebP (quality 80)
+- **Filename:** `best-free-cheque-printing-software-cover.webp`
+- **Subject:** Split-screen "Free vs Paid" layout — left side Cheqify logo with "₹0 — all features", right side a generic competitor box with "₹₹₹ — limited features". Keep it clean, no real competitor logos.
+- **Alt text:** Comparing free cheque printing software options in India — Cheqify offers all features at zero cost.
+- **OG image:** Same as cover.
 
 ---
 
@@ -374,3 +399,58 @@ Cheqify ટ્રાન્ઝિટ અને રેસ્ટમાં બધા
 ### Q4
 - **Question:** How many cheques can I print with Cheqify?
 - **Answer:** There is no limit. You can print as many cheques as you need — whether it's 1 cheque or 1,000 cheques per month. Batch printing via Excel or CSV import makes high-volume printing easy and efficient.
+
+---
+
+## Internal Links — Insert Inside Body
+
+In Hindi/Gujarati bodies, use `/hi/...` or `/gu/...` prefixes accordingly.
+
+| Anchor text (EN) | Link target |
+|---|---|
+| "100% free" / "zero cost" | `/en/pricing` |
+| "300+ bank formats" | `/en/features` |
+| "lifecycle tracking" | `/en/features` |
+| "MICR validation" | `/en/blog/what-is-micr-code-on-cheque` |
+| "switch from handwriting" | `/en/blog/cheqify-vs-manual-cheque-writing` |
+| "detailed comparison" | `/en/comparison` |
+
+---
+
+## CTA Block (append to end of each language body, before the verdict section)
+
+### English
+> **Stop paying for cheque printing.** Get every feature — 300+ banks, batch printing, lifecycle tracking — free on Cheqify.
+>
+> **[Create free account →](https://app.cheqify.app/register)**
+
+### Hindi
+> **चेक प्रिंटिंग के लिए भुगतान करना बंद करें।** Cheqify पर हर सुविधा मुफ्त पाएं — 300+ बैंक, बैच प्रिंटिंग, लाइफसाइकल ट्रैकिंग।
+>
+> **[मुफ्त अकाउंट बनाएं →](https://app.cheqify.app/register)**
+
+### Gujarati
+> **ચેક પ્રિન્ટિંગ માટે ચુકવણી બંધ કરો.** Cheqify પર દરેક સુવિધા મફત મેળવો — 300+ બેંકો, બેચ પ્રિન્ટિંગ, લાઇફસાઇકલ ટ્રૅકિંગ.
+>
+> **[મફત એકાઉન્ટ બનાવો →](https://app.cheqify.app/register)**
+
+---
+
+## Post-Publish Checklist
+
+- [ ] Verify ChequePot references are either fact-checked or replaced with generic phrasing.
+- [ ] Cover image uploaded in Sanity; `hasFaq` toggle ON.
+- [ ] Scheduled publish confirmed for 2026-04-30 10:00 IST.
+- [ ] GSC → URL Inspection → Request Indexing for all 3 locale URLs.
+- [ ] LinkedIn post using the social copy below.
+- [ ] Share in 1 Indian CA / SMB finance community.
+
+---
+
+## Social Copy (LinkedIn)
+
+> Every "free" Indian cheque printing tool has a paywall hiding somewhere — trial caps, feature locks, forced upgrades. We broke down what genuinely free should mean, and why Cheqify gives you 300+ bank formats, batch printing, and lifecycle tracking at ₹0.
+>
+> https://cheqify.app/en/blog/best-free-cheque-printing-software-india
+>
+> #chequeprinting #freeSaaS #India #MSME
