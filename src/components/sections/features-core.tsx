@@ -34,10 +34,11 @@ const FEATURE_IMAGES: Record<number, { src: string; width: number; height: numbe
   2: { src: "/images/smart-auto-fill.webp", width: 1875, height: 1875 },
   3: { src: "/images/chequebook-management.webp", width: 800, height: 600 },
   5: { src: "/images/complete-lifecycle-tracking.webp", width: 1875, height: 1875 },
+  6: { src: "/images/alerts-notifications.webp", width: 576, height: 552 },
   7: { src: "/images/owner-dashboard-analytics.webp", width: 1875, height: 1875 },
   9: { src: "/images/team-management.webp", width: 800, height: 600 },
   10: { src: "/images/export-bank-reconciliation.webp", width: 1875, height: 1875 },
-  11: { src: "/images/mobile-friendly-access.webp", width: 1875, height: 1875 },
+  11: { src: "/images/mobile-friendly-access.webp", width: 576, height: 552 },
   12: { src: "/images/multi-organization.webp", width: 1875, height: 1875 },
 };
 

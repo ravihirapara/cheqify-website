@@ -145,6 +145,16 @@
   100% { transform: translateX(-50%); }
 }
 
+@keyframes laptop-zoom-out {
+  0%   { transform: scale(1.15) rotate(0deg);    opacity: 0; }
+  60%  { transform: scale(1.15) rotate(-360deg); opacity: 1; }
+  100% { transform: scale(1)    rotate(-360deg); opacity: 1; }
+}
+.animate-laptop-zoom-out {
+  animation: laptop-zoom-out 0.9s ease-out;
+  transform-origin: center;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

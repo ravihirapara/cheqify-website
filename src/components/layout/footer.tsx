@@ -49,7 +49,16 @@ export function Footer() {
         <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
           {/* Logo + Description + Social */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block">
+            <Link
+              href="/"
+              className="inline-block"
+              onClick={(e) => {
+                if (pathname === "/" || /^\/[a-z]{2}$/.test(pathname)) {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+            >
               <Image
                 src="/images/logo.png"
                 alt="Cheqify.app logo"
