@@ -41,6 +41,7 @@ export async function generateMetadata({
     description: t("taggedWith", { tag: originalTag }),
     locale,
     pathname: `/blog/tag/${tag}`,
+    noindex: true,
   });
 }
 

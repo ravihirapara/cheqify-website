@@ -10,12 +10,14 @@ export function buildSeoMetadata({
   locale,
   pathname = "",
   image,
+  noindex = false,
 }: {
   title: string;
   description: string;
   locale: string;
   pathname?: string;
   image?: string;
+  noindex?: boolean;
 }): Metadata {
   const url = `${BASE_URL}/${locale}${pathname}`;
 
@@ -29,10 +31,10 @@ export function buildSeoMetadata({
     title,
     description,
     robots: {
-      index: true,
+      index: !noindex,
       follow: true,
       googleBot: {
-        index: true,
+        index: !noindex,
         follow: true,
         "max-video-preview": -1,
         "max-image-preview": "large",

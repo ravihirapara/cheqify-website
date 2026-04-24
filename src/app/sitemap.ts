@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getBlogPosts, tagToSlug } from "~/lib/blog";
+import { getBlogPosts } from "~/lib/blog";
 
 export const dynamic = "force-static";
 
@@ -21,8 +21,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
-  const allTags = new Set<string>();
-
   for (const locale of LOCALES) {
     const posts = await getBlogPosts(locale);
     for (const post of posts) {
@@ -31,20 +29,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date(post.date),
         changeFrequency: "monthly",
         priority: 0.6,
-      });
-      for (const tag of post.tags) {
-        allTags.add(tag);
-      }
-    }
-  }
-
-  for (const tag of allTags) {
-    for (const locale of LOCALES) {
-      entries.push({
-        url: `${BASE_URL}/${locale}/blog/tag/${tagToSlug(tag)}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly",
-        priority: 0.5,
       });
     }
   }
