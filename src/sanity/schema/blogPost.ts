@@ -4,6 +4,13 @@ export const blogPost = defineType({
   name: "blogPost",
   title: "Blog Post",
   type: "document",
+  initialValue: async (_params, context) => {
+    const client = context.getClient({ apiVersion: "2024-01-01" });
+    const maxOrder = await client.fetch<number | null>(
+      `*[_type=="blogPost" && !(_id in path("drafts.**"))] | order(order desc)[0].order`,
+    );
+    return { order: (maxOrder ?? 0) + 1 };
+  },
   fields: [
     defineField({
       name: "image",
@@ -23,6 +30,9 @@ export const blogPost = defineType({
       name: "order",
       title: "Order",
       type: "number",
+      readOnly: true,
+      description:
+        "Auto-managed. Set to max+1 on create, re-compacted to 1..N on delete. Do not edit manually.",
     }),
     defineField({
       name: "author",
