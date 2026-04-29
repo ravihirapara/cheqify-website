@@ -2,9 +2,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { buildBreadcrumbJsonLd } from "~/lib/breadcrumbs";
-import { PortableText } from "@portabletext/react";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { BlogFaq } from "~/components/blog/blog-faq";
+import { BlogPortableText } from "~/components/blog/blog-portable-text";
 import { Link } from "~/i18n/navigation";
 import { getBlogPost, getBlogPosts, estimateReadingTime, tagToSlug } from "~/lib/blog";
 import { buildSeoMetadata } from "~/lib/seo";
@@ -215,7 +215,7 @@ export default async function BlogPostPage({
 
           {/* Content */}
           <div className="blog-content max-w-none text-foreground/90">
-            <PortableText value={post.content} />
+            <BlogPortableText value={post.content} />
           </div>
         </article>
 

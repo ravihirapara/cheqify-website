@@ -65,7 +65,7 @@ export const blogPost = defineType({
       name: "body_en",
       title: "Body (English)",
       type: "array",
-      of: [{ type: "block" }],
+      of: [{ type: "block" }, { type: "table" }],
     }),
 
     // Hindi
@@ -84,7 +84,7 @@ export const blogPost = defineType({
       name: "body_hi",
       title: "Body (Hindi)",
       type: "array",
-      of: [{ type: "block" }],
+      of: [{ type: "block" }, { type: "table" }],
     }),
 
     // Gujarati
@@ -103,7 +103,7 @@ export const blogPost = defineType({
       name: "body_gu",
       title: "Body (Gujarati)",
       type: "array",
-      of: [{ type: "block" }],
+      of: [{ type: "block" }, { type: "table" }],
     }),
 
     // HowTo Schema (optional — fill for step-by-step guide posts)
