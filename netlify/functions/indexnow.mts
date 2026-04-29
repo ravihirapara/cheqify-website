@@ -1,9 +1,11 @@
 import crypto from "node:crypto";
+import { compactBlogOrder, makeWriteClient } from "../../scripts/lib/compact-blog-order.mjs";
 
 const INDEXNOW_KEY = "d8eb73242a5a4abcbeb833d31fe081f2";
 const HOST = "cheqify.app";
 const LOCALES = ["en", "hi", "gu"] as const;
 const SIGNATURE_HEADER = "sanity-webhook-signature";
+const OPERATION_HEADER = "sanity-operation";
 const REPLAY_TOLERANCE_MS = 5 * 60 * 1000;
 
 function verifySanitySignature(
@@ -53,6 +55,25 @@ export default async (req: Request): Promise<Response> => {
 
   if (!verifySanitySignature(body, signature, secret)) {
     return new Response("Invalid signature", { status: 401 });
+  }
+
+  const operation = req.headers.get(OPERATION_HEADER);
+
+  // Delete events: re-compact blogPost order to 1..N. No IndexNow ping.
+  if (operation === "delete") {
+    const writeToken = process.env.SANITY_WRITE_TOKEN;
+    if (!writeToken) {
+      return new Response("SANITY_WRITE_TOKEN not configured", { status: 500 });
+    }
+    const client = makeWriteClient(writeToken);
+    const { total, changes } = await compactBlogOrder(client);
+    return Response.json({
+      operation,
+      action: "reorder",
+      total,
+      patched: changes.length,
+      changes,
+    });
   }
 
   let payload: { slug?: string | { current?: string } };
