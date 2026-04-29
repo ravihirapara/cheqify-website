@@ -152,7 +152,10 @@
       "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\('d:\\\\DT website\\\\Untitled design\\\\WEBP\\\\cheque priniting software - priniting.png'\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
       "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\('d:\\\\DT website\\\\Untitled design\\\\WEBP\\\\cheque priniting software - mobile feature.png'\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
       "PowerShell($img = Add-Type -AssemblyName System.Drawing; $i = [System.Drawing.Image]::FromFile\\('d:\\\\cheqify-website\\\\public\\\\images\\\\cheque-printing-screenshot.webp'\\); \"$\\($i.Width\\) x $\\($i.Height\\)\"; $i.Dispose\\(\\))",
-      "Bash(KillShell bsd24oqdg *)"
+      "Bash(KillShell bsd24oqdg *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(git ls-remote *)"
     ]
   }
 }
