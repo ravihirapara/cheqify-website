@@ -131,7 +131,7 @@ const JSONLD_VIDEO = {
   description:
     "See how Cheqify prints error-free cheques in under 2 minutes — 300+ bank layouts, MICR validation, batch printing, and lifecycle tracking.",
   thumbnailUrl: "https://i.ytimg.com/vi/DiihuB-hEiY/maxresdefault.jpg",
-  uploadDate: "2026-03-01",
+  uploadDate: "2026-04-07",
   embedUrl: "https://www.youtube.com/embed/DiihuB-hEiY",
   contentUrl: "https://www.youtube.com/watch?v=DiihuB-hEiY",
   publisher: {
