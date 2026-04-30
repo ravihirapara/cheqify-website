@@ -385,6 +385,34 @@ Cheqify દરેક જારી કરેલા ચેકને લૉગ ક�
 - **Question:** Does stopping payment protect me from a Section 138 case?
 - **Answer:** No. If the cheque was issued for a legally enforceable debt and you stop payment to avoid paying, the payee can still file a Section 138 case against you for dishonour due to "payment stopped by drawer."
 
+### Q5
+- **Question:** How to calculate cheque validity in India?
+- **Answer:** Cheque validity is calculated from the date written on the cheque (not the date of issue or signing). Add 3 calendar months to that date — that is the last day the cheque can be deposited. For example, a cheque dated 15 January 2026 is valid up to 14 April 2026. After that, it becomes stale and the bank will reject it.
+
+### Q6
+- **Question:** How to check cheque validity?
+- **Answer:** Look at the date printed on the cheque and add 3 months. If today's date is on or before that, the cheque is still valid. Banks reject any cheque presented after 3 months from its written date — this is a CTS-2010 mandate from RBI.
+
+### Q7
+- **Question:** How long can a cheque be valid?
+- **Answer:** A cheque, demand draft, or pay order is valid for 3 months from the date written on it. This applies to all banks in India under RBI rules effective since 1 April 2012. Older 6-month validity rules no longer apply.
+
+### Q8
+- **Question:** What is the validity of cheque date?
+- **Answer:** "Validity of cheque date" refers to the 3-month window starting from the date written on the cheque. If a cheque is post-dated, the 3-month clock starts on the post-dated future date, not the date of issue.
+
+### Q9
+- **Question:** What is the bank cheque validity period in India?
+- **Answer:** All Indian banks follow the same RBI rule: 3 months from the date written on the cheque. This is uniform across SBI, HDFC, ICICI, Axis, PNB, Bank of Baroda, Kotak Mahindra, and every other scheduled commercial bank.
+
+### Q10
+- **Question:** Cheque ki validity kitni hoti hai?
+- **Answer:** Bharat me cheque ki validity 3 mahine hoti hai — jo date cheque par likhi hai us se 3 mahine tak. RBI ke niyam ke anusaar, 3 mahine ke baad cheque "stale" ho jata hai aur bank usse accept nahi karta. Yah niyam sabhi Indian banks par lagu hota hai.
+
+### Q11
+- **Question:** What is the validity period of a cheque in India under RBI rules?
+- **Answer:** RBI mandates a 3-month validity period for cheques, demand drafts, banker's cheques, and pay orders. This rule has been in force since 1 April 2012 (replacing the earlier 6-month rule). Banks must reject any instrument presented after 3 months from its written date.
+
 ---
 
 ## Post-Publish Checklist
