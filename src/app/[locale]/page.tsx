@@ -124,6 +124,26 @@ const JSONLD_SOFTWARE = {
     "Cheque Printing, MICR Validation, Batch Printing, Lifecycle Tracking, Bank Reconciliation, Multi-Language Support",
 };
 
+const JSONLD_VIDEO = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Cheqify Demo — Free Cheque Printing Software for Indian Businesses",
+  description:
+    "See how Cheqify prints error-free cheques in under 2 minutes — 300+ bank layouts, MICR validation, batch printing, and lifecycle tracking.",
+  thumbnailUrl: "https://i.ytimg.com/vi/DiihuB-hEiY/maxresdefault.jpg",
+  uploadDate: "2026-03-01",
+  embedUrl: "https://www.youtube.com/embed/DiihuB-hEiY",
+  contentUrl: "https://www.youtube.com/watch?v=DiihuB-hEiY",
+  publisher: {
+    "@type": "Organization",
+    name: "Cheqify.app",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://cheqify.app/images/logo.png",
+    },
+  },
+};
+
 const JSONLD_FAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -199,7 +219,7 @@ export default async function Home({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([JSONLD_ORGANIZATION, JSONLD_WEBSITE, JSONLD_SOFTWARE]),
+          __html: JSON.stringify([JSONLD_ORGANIZATION, JSONLD_WEBSITE, JSONLD_SOFTWARE, JSONLD_VIDEO]),
         }}
       />
       <script
