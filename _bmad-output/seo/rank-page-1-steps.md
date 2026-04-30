@@ -14,13 +14,11 @@
 
 ## Step 2 — Validate target keywords (this week, manual)
 
-- Google Keyword Planner: search volumes for:
-  - "cheque printing software"
-  - "cheque print"
-  - "cheque printing app india"
-  - "free cheque printing software"
-- GSC → Performance → filter by impressions, sort by position.
-- **Find queries where Cheqify ranks #8–#20 — those are quick wins.** Small tweaks push them to page 1 faster than fighting for fresh keywords.
+**Status:** Step 2A complete (2026-04-30) — see `_bmad-output/seo/step-2-keyword-research-results.md` for full analysis.
+
+**Headline finding:** "free cheque printing software" / "cheque printing software free" are the #1 + #2 most-searched terms in India and growing +70% YoY. Cheqify's free positioning is the perfect product–market fit. MoneyFlex (incumbent) is declining -40% — direct comparison post is a high-leverage win.
+
+**Step 2B (still pending):** GSC → Performance → Date: Last 3 months → Filter: Position > 8 AND Position < 20 → Sort by Impressions desc → export top 20 rows as CSV → save at `_bmad-output/seo/step-2-gsc-quickwins.csv`.
 
 ## Step 3 — Publish content on a 2/week cadence
 
