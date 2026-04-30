@@ -1,8 +1,48 @@
 # Rank #1 for "Cheque Print" Searches — Action Plan
 
-**Saved:** 2026-04-30
+**Saved:** 2026-04-30 (last updated 2026-04-30)
 **Goal:** Cheqify.app on page 1 of Google for cheque-printing keywords (India)
 **Current state:** Technical SEO 9/10 (per SEO-PLAN.md). Blockers = content depth, backlinks, indexing.
+
+---
+
+## Status Snapshot — 2026-04-30 (end of session)
+
+### ✅ Completed
+- **Step 1** — Indexing requests submitted in GSC for top English pages + all 12 published blog posts. Hit daily quota mid-list. Sitemap confirmed submitted.
+- **Step 2A** — Keyword research done: Trends + Ubersuggest + Keyword Surfer + AnswerThePublic. Findings in `step-2-keyword-research-results.md`. Headline: `cheque printing software free` is #1 query (interest 100, +70% YoY).
+- **Step 2B** — GSC quick-wins exported. Found 7 query variants on positions 8–13, all hitting post-12 (`cheque-validity-period-stop-payment-india`). Raw export in `keyword-data/gsc-performance-2026-04-30/`.
+- **Step 4 prep** — Directory submission checklist drafted at `step-4-directory-submissions.md` (18 directories, 6-week cadence, copy-paste fields ready).
+- **Code/SEO ship** — all pushed, all on `master`, deployed by Netlify:
+  - GSC FAQ error fixed (commit `ef69e5a`) — defensive filter drops empty Q&A from JSON-LD.
+  - VideoObject JSON-LD added to homepage (commits `04c9856` + `daaf5ea`) — addresses GSC "Video isn't on a watch page" error.
+  - Title/meta rewrites for `/features`, `/pricing`, `/comparison` across en/hi/gu (commit `5c27a59`) — front-load "Free Cheque Printing Software" + value props to fix CTR (was 0% on /comparison @ 44 imps, /features @ 21 imps).
+- **Post-12 quick-win FAQs drafted** — 7 new Q&As (Q5–Q11) appended to `post-12-cheque-validity-stop-payment.md` matching exact GSC quick-win queries (commit `5682122`).
+
+### ⏳ Pending (manual — Ravi to do)
+1. **Sanity Studio → post-12** — paste Q5–Q11 into FAQ Items array → Publish.
+2. **Trigger Netlify rebuild** after Sanity publish (push any commit, or use Netlify dashboard "Trigger deploy").
+3. **GSC Request Indexing** for these 12 URLs after deploy goes green:
+   - `/en/features`, `/en/pricing`, `/en/comparison`
+   - `/hi/features`, `/hi/pricing`, `/hi/comparison`
+   - `/gu/features`, `/gu/pricing`, `/gu/comparison`
+   - `/en/blog/cheque-validity-period-stop-payment-india`
+   - `/hi/blog/cheque-validity-period-stop-payment-india`
+   - `/gu/blog/cheque-validity-period-stop-payment-india`
+4. **GSC Validate Fix**:
+   - FAQ → "Missing field 'text'" (after Sanity republish + rebuild)
+   - Videos → "Video isn't on a watch page" (already validating since 29/04, will re-evaluate with new schema)
+5. **Step 3 content backlog** — 4 high-priority new posts identified:
+   - `cheqify-vs-moneyflex` (high commercial intent, declining incumbent)
+   - `cheqify-vs-chrysanth-cheque-writer` (same logic)
+   - `excel-cheque-printing-template-vs-cheqify` (Excel-using SMBs)
+   - `cheque-number-in-cheque-book-explained` (2,400 mo searches, low competition)
+6. **Step 4 directory submissions** — start at 3–4/week per cadence in `step-4-directory-submissions.md`. Week 1 picks: Product Hunt prep, AlternativeTo, SaaSHub.
+
+### 🚫 Known limitation
+- Cheqify is currently invisible to Google for head terms (`cheque printing software free`, etc.) — not even in top 100. Content + on-page work alone won't move these. **Step 4 (backlinks) is the actual unlock.** Don't expect head-term ranking shifts without it.
+
+---
 
 ---
 
