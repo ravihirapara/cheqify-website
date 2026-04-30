@@ -117,10 +117,13 @@ export default async function BlogPostPage({
     mainEntityOfPage: `https://cheqify.app/${locale}/blog/${slug}`,
   };
 
-  const faqJsonLd = post.meta.hasFaq && post.meta.faqItems.length > 0 ? {
+  const validFaqItems = post.meta.hasFaq
+    ? post.meta.faqItems.filter((item) => item.question?.trim() && item.answer?.trim())
+    : [];
+  const faqJsonLd = validFaqItems.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: post.meta.faqItems.map((item) => ({
+    mainEntity: validFaqItems.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -220,8 +223,8 @@ export default async function BlogPostPage({
         </article>
 
         {/* FAQ Section */}
-        {post.meta.hasFaq && post.meta.faqItems.length > 0 && (
-          <BlogFaq items={post.meta.faqItems} heading={t("faqHeading")} />
+        {validFaqItems.length > 0 && (
+          <BlogFaq items={validFaqItems} heading={t("faqHeading")} />
         )}
 
         {/* Explore More — Internal Links */}
