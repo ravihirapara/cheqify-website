@@ -38,11 +38,17 @@ export default async function FeaturesPage({
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [{ name: "Features", path: "/features" }]);
   const productJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "SoftwareApplication",
     name: "Cheqify.app",
     description: "Cheque printing and lifecycle management software for Indian businesses. 300+ bank layouts, MICR validation, batch printing.",
-    brand: { "@type": "Brand", name: "Cheqify" },
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
     url: "https://cheqify.app/en/features",
+    author: {
+      "@type": "Organization",
+      name: "Cheqify.app",
+      url: "https://cheqify.app",
+    },
     offers: {
       "@type": "Offer",
       price: "0",
