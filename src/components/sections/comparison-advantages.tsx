@@ -12,8 +12,8 @@ const CARDS = [
   { key: "card6", icon: Globe },
 ] as const;
 
-export function ComparisonAdvantages() {
-  const t = useTranslations("comparison.advantages");
+export function ComparisonAdvantages({ namespace = "comparison" }: { namespace?: string }) {
+  const t = useTranslations(`${namespace}.advantages`);
 
   return (
     <section className="py-16 md:py-24" style={{ backgroundColor: "#eff4ff" }}>

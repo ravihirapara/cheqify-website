@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 import { Button } from "~/components/ui/button";
 import { Link } from "~/i18n/navigation";
 
-export function ComparisonHero() {
-  const t = useTranslations("comparison.hero");
+export function ComparisonHero({ namespace = "comparison" }: { namespace?: string }) {
+  const t = useTranslations(`${namespace}.hero`);
 
   return (
     <section className="py-16 md:py-24">
