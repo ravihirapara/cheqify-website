@@ -816,7 +816,7 @@
       "heading": "Cheque Printing Excel Template vs Cheqify",
       "subheading": "Side-by-side: an Excel template and the cloud alternative.",
       "colFeature": "Feature",
-      "colExcel": "Excel Format",
+      "colCompetitor": "Excel Format",
       "colCheqify": "Cheqify (Cloud)",
       "feature1": "Bank layouts",
       "excel1": "1 template per bank — manual",
@@ -862,6 +862,90 @@
     "cta": {
       "heading": "Skip the Excel headaches",
       "subheading": "Print error-free cheques without templates, formulas, or MICR guesswork. 300+ Indian banks ready. 100% free.",
+      "cta": "Try Cheqify Free"
+    }
+  },
+  "wordFormat": {
+    "meta": {
+      "title": "Cheque Printing Format in Word vs Cheqify | Free",
+      "description": "Cheque printing in Word format is fragile and slow. See why Indian businesses use Cheqify — free cloud cheque printing with 300+ bank layouts and auto MICR."
+    },
+    "breadcrumb": "Cheque Printing in Word Format",
+    "hero": {
+      "badge": "WORD FORMAT vs CLOUD",
+      "headlinePart1": "Cheque Printing in ",
+      "headlineHighlight": "Word ",
+      "headlinePart2": "— And a Better Way",
+      "subheading": "Looking for a cheque printing template in Word? Many Indian businesses still mail-merge cheques in Microsoft Word — and lose hours to printer mis-alignment, broken MICR positioning, and corrupted .docx files. Here's why cloud beats Word format.",
+      "cta": "Try the Cloud Alternative — Free",
+      "trustLine": "300+ Indian bank layouts. No download. No credit card."
+    },
+    "limitations": {
+      "heading": "Why Cheque Printing Format in Word Falls Short",
+      "subheading": "Six reasons every Indian business that prints cheques in Word ends up frustrated.",
+      "card1Title": "Printer mis-alignment is constant",
+      "card1Body": "Word treats every print job differently. One driver update, one font fallback, and your cheque numbers print 2mm off — straight onto the bank's MICR line.",
+      "card2Title": "Templates corrupt easily",
+      "card2Body": "A .docx with text boxes, custom margins, and tables is fragile. One auto-correct, one accidental Ctrl+Z too many, and your cheque template in Word is broken.",
+      "card3Title": "No mail merge for amounts in words",
+      "card3Body": "Word's mail merge doesn't natively convert numbers to Indian words (lakh, crore). You'll either type each amount manually or build a brittle macro that breaks on edge cases.",
+      "card4Title": "Multi-user is impossible",
+      "card4Body": "Two people opening the same .docx? One overwrites the other. Word + cheques + a team is a recipe for printing the same cheque number twice.",
+      "card5Title": "MICR validation is on you",
+      "card5Body": "Word can't tell you if your MICR code is wrong, missing a digit, or in the wrong position. Banks reject incorrect MICR cheques — and you find out days later.",
+      "card6Title": "No record of what was printed",
+      "card6Body": "Your .docx doesn't track what you printed last week. Reconciling printed cheques to your bank statement becomes a manual hunt across files."
+    },
+    "comparison": {
+      "heading": "Cheque Printing Word Template vs Cheqify",
+      "subheading": "Side-by-side: a Word template and the cloud alternative.",
+      "colFeature": "Feature",
+      "colCompetitor": "Word Format",
+      "colCheqify": "Cheqify (Cloud)",
+      "feature1": "Bank layouts",
+      "word1": "1 .docx per bank — manual",
+      "cheqify1": "300+ banks pre-loaded",
+      "feature2": "MICR validation",
+      "word2": "None",
+      "cheqify2": "Automatic",
+      "feature3": "Amount in words",
+      "word3": "Manual or fragile macro",
+      "cheqify3": "Auto-fills (lakh/crore/paise)",
+      "feature4": "Bulk / batch printing",
+      "word4": "Mail merge breaks easily",
+      "cheqify4": "Print 100 cheques in one click",
+      "feature5": "Printer alignment",
+      "word5": "Driver-dependent, fragile",
+      "cheqify5": "Per-bank pixel-perfect",
+      "feature6": "Multi-user access",
+      "word6": "File overwrites each other",
+      "cheqify6": "Role-based, real-time",
+      "feature7": "Audit trail",
+      "word7": "None",
+      "cheqify7": "Every cheque tracked",
+      "feature8": "Cost",
+      "word8": "Word licence ₹6,500+/yr",
+      "cheqify8": "100% free, forever"
+    },
+    "faq": {
+      "heading": "Cheque Printing in Word — FAQ",
+      "subheading": "Common questions about Word cheque templates and the cloud alternative",
+      "faq1Question": "Can I print cheques using a Word format?",
+      "faq1Answer": "Yes — many small businesses use Microsoft Word as a cheque printing template. You'd create a .docx with text boxes positioned to match your bank's cheque layout, type the payee and amount, and print. It works for low volumes, but breaks on alignment shifts, fails MICR validation, and doesn't scale beyond a single user.",
+      "faq2Question": "Where can I find a free cheque printing template in Word?",
+      "faq2Answer": "Free Word cheque printing templates are widely available online for SBI, HDFC, ICICI, Axis, and other major Indian banks. Quality varies — most don't include accurate CTS 2010 MICR positioning, none auto-fill amount in words for Indian numbering, and all break the moment your bank tweaks the cheque layout. Cheqify offers the same capability online, free, with all 300+ Indian bank formats pre-loaded and auto-updated.",
+      "faq3Question": "Is the Word cheque printing format CTS 2010 compliant?",
+      "faq3Answer": "Most Word cheque printing templates are NOT CTS 2010 compliant by default. CTS 2010 requires precise MICR line positioning (in millimetres), magnetic ink for the MICR characters, and exact layout dimensions. Word's printer-driver dependency means even a 'compliant' .docx can shift on a different printer. Cheqify is CTS 2010 compliant by default for every Indian bank.",
+      "faq4Question": "How do I auto-fill amount in words from a Word cheque template?",
+      "faq4Answer": "Word doesn't have a native function to convert ₹ amounts to Indian words (lakh, crore, paise). You'd need a custom VBA macro or external add-in — both fragile. Cheqify auto-fills amount in words for every cheque, with proper Indian numbering and 'Rupees [...] Only' formatting that prevents tampering.",
+      "faq5Question": "Why use cloud instead of Word for cheque printing?",
+      "faq5Answer": "Three big reasons: (1) printer alignment is calibrated per-bank, so cheques don't print off the line; (2) MICR is auto-validated, so the bank's clearing system accepts every cheque; (3) every printed cheque has a built-in audit trail, so you know exactly which cheques cleared, bounced, or are pending. Word can match none of these.",
+      "faq6Question": "How much does Cheqify cost compared to Word?",
+      "faq6Answer": "Cheqify is 100% free for cheque printing — no per-cheque charge, no monthly fee, no credit card required. Microsoft Word costs around ₹6,500+ per user per year. Even free Word cheque templates require Word licensing and your time to maintain. With Cheqify, both the software and the cheque printing are free."
+    },
+    "cta": {
+      "heading": "Skip the Word headaches",
+      "subheading": "Print error-free cheques without text boxes, mail merges, or MICR guesswork. 300+ Indian banks ready. 100% free.",
       "cta": "Try Cheqify Free"
     }
   }

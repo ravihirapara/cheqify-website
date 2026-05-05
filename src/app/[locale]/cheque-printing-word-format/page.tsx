@@ -18,27 +18,27 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "excelFormat.meta" });
+  const t = await getTranslations({ locale, namespace: "wordFormat.meta" });
 
   return buildSeoMetadata({
     title: t("title"),
     description: t("description"),
     locale,
-    pathname: "/cheque-printing-excel-format",
+    pathname: "/cheque-printing-word-format",
   });
 }
 
-export default async function ExcelFormatPage({
+export default async function WordFormatPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "excelFormat" });
+  const t = await getTranslations({ locale, namespace: "wordFormat" });
 
   const breadcrumbs = buildBreadcrumbJsonLd(locale, [
-    { name: t("breadcrumb"), path: "/cheque-printing-excel-format" },
+    { name: t("breadcrumb"), path: "/cheque-printing-word-format" },
   ]);
 
   const faqJsonLd = {
@@ -55,11 +55,11 @@ export default async function ExcelFormatPage({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <ExcelFormatHero locale={locale} namespace="excelFormat" />
-      <ExcelFormatLimitations locale={locale} namespace="excelFormat" />
-      <ExcelFormatComparison locale={locale} namespace="excelFormat" competitorKey="excel" />
-      <LandingFaq namespace="excelFormat.faq" faqCount={6} />
-      <LandingCta namespace="excelFormat.cta" />
+      <ExcelFormatHero locale={locale} namespace="wordFormat" />
+      <ExcelFormatLimitations locale={locale} namespace="wordFormat" />
+      <ExcelFormatComparison locale={locale} namespace="wordFormat" competitorKey="word" />
+      <LandingFaq namespace="wordFormat.faq" faqCount={6} />
+      <LandingCta namespace="wordFormat.cta" />
     </>
   );
 }

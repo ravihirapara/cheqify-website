@@ -3,8 +3,16 @@ import { Check, X } from "lucide-react";
 
 const ROWS = [1, 2, 3, 4, 5, 6, 7, 8] as const;
 
-export async function ExcelFormatComparison({ locale }: { locale: string }) {
-  const t = await getTranslations({ locale, namespace: "excelFormat.comparison" });
+export async function ExcelFormatComparison({
+  locale,
+  namespace,
+  competitorKey = "excel",
+}: {
+  locale: string;
+  namespace: string;
+  competitorKey?: string;
+}) {
+  const t = await getTranslations({ locale, namespace: `${namespace}.comparison` });
 
   return (
     <section className="py-16 md:py-24">
@@ -18,7 +26,7 @@ export async function ExcelFormatComparison({ locale }: { locale: string }) {
             <thead>
               <tr className="bg-muted/50 text-sm font-bold uppercase tracking-wider">
                 <th scope="col" className="px-4 py-4 text-left text-muted-foreground md:px-6">{t("colFeature")}</th>
-                <th scope="col" className="px-4 py-4 text-center text-muted-foreground md:px-6">{t("colExcel")}</th>
+                <th scope="col" className="px-4 py-4 text-center text-muted-foreground md:px-6">{t("colCompetitor")}</th>
                 <th scope="col" className="px-4 py-4 text-center text-primary md:px-6">{t("colCheqify")}</th>
               </tr>
             </thead>
@@ -28,7 +36,7 @@ export async function ExcelFormatComparison({ locale }: { locale: string }) {
                   <td className="px-4 py-3.5 font-medium text-foreground md:px-6">{t(`feature${n}`)}</td>
                   <td className="px-4 py-3.5 text-center md:px-6">
                     <X className="mr-1 inline h-5 w-5 text-red-500" />
-                    <span className="text-muted-foreground">{t(`excel${n}`)}</span>
+                    <span className="text-muted-foreground">{t(`${competitorKey}${n}`)}</span>
                   </td>
                   <td className="px-4 py-3.5 text-center md:px-6">
                     <Check className="mr-1 inline h-5 w-5 text-green-500" />

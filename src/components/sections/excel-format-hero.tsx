@@ -1,8 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import { Button } from "~/components/ui/button";
 
-export async function ExcelFormatHero({ locale }: { locale: string }) {
-  const t = await getTranslations({ locale, namespace: "excelFormat.hero" });
+export async function ExcelFormatHero({
+  locale,
+  namespace,
+}: {
+  locale: string;
+  namespace: string;
+}) {
+  const t = await getTranslations({ locale, namespace: `${namespace}.hero` });
 
   return (
     <section className="py-16 md:py-24">

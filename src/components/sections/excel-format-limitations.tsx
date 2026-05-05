@@ -10,8 +10,14 @@ const LIMITATIONS = [
   { key: "card6", icon: ShieldAlert },
 ] as const;
 
-export async function ExcelFormatLimitations({ locale }: { locale: string }) {
-  const t = await getTranslations({ locale, namespace: "excelFormat.limitations" });
+export async function ExcelFormatLimitations({
+  locale,
+  namespace,
+}: {
+  locale: string;
+  namespace: string;
+}) {
+  const t = await getTranslations({ locale, namespace: `${namespace}.limitations` });
 
   return (
     <section className="py-16 md:py-24" style={{ backgroundColor: "#eff4ff" }}>
