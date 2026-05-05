@@ -777,5 +777,68 @@
       "subheading": "Cheqify auto-fills the amount in words on every cheque you print. 300+ Indian bank formats. 100% free.",
       "cta": "Start Printing Free"
     }
+  },
+  "onlineChequePrinting": {
+    "meta": {
+      "title": "Online Cheque Printing — Print Cheques Online | Cheqify",
+      "description": "Print cheques online from any browser — no download, no install. 300+ Indian banks, automatic MICR validation, batch printing. 100% free."
+    },
+    "breadcrumb": "Online Cheque Printing",
+    "hero": {
+      "badge": "ONLINE CHEQUE PRINTING",
+      "headlinePart1": "Print Cheques ",
+      "headlineHighlight": "Online ",
+      "headlinePart2": "from Any Browser",
+      "subheading": "Online cheque printing for Indian businesses. No download, no software install — sign in, select your bank, and print error-free cheques in under 2 minutes.",
+      "cta": "Print Cheques Online — Free",
+      "trustLine": "No credit card required. 300+ Indian banks supported."
+    },
+    "steps": {
+      "heading": "How Online Cheque Printing Works",
+      "subheading": "From sign-up to your first printed cheque in under 2 minutes.",
+      "step1Title": "Sign up online",
+      "step1Body": "Create your free Cheqify account. No download, no installation — works in any browser on any device.",
+      "step2Title": "Select your bank",
+      "step2Body": "Choose from 300+ pre-loaded Indian bank formats — SBI, HDFC, ICICI, Axis, Kotak, PNB, and more. MICR positioning is auto-configured.",
+      "step3Title": "Print online — instantly",
+      "step3Body": "Enter the payee, amount, and date. Cheqify auto-fills the words version, validates MICR, and prints to any printer."
+    },
+    "benefits": {
+      "heading": "Why Online Cheque Printing Beats Desktop Software",
+      "subheading": "Six reasons Indian businesses are switching from Excel and downloads to cloud-based cheque printing.",
+      "card1Title": "Nothing to install",
+      "card1Body": "Online cheque printing means zero installation. No downloads, no patches, no IT department. Works on Windows, Mac, Chromebook, even iPad.",
+      "card2Title": "Print from anywhere",
+      "card2Body": "Print cheques online from your office, home, or while travelling. Your cheque history syncs across every device automatically.",
+      "card3Title": "Always up-to-date bank formats",
+      "card3Body": "When banks change MICR layouts or RBI updates CTS rules, Cheqify updates everyone instantly. No manual template fixes.",
+      "card4Title": "Mobile-ready",
+      "card4Body": "Print cheques online from your phone or tablet. Approve, share, or queue cheques from anywhere — your printer doesn't need to be next to you.",
+      "card5Title": "Multi-user collaboration",
+      "card5Body": "Online cheque printing means teams can collaborate. Owner, accountant, and assistant can all access the same cheque book with role-based permissions.",
+      "card6Title": "Auto-backups, every minute",
+      "card6Body": "No more lost Excel files or corrupt downloads. Every cheque is backed up to the cloud the moment you print."
+    },
+    "faq": {
+      "heading": "Online Cheque Printing FAQ",
+      "subheading": "Common questions about printing cheques online in India",
+      "faq1Question": "Is online cheque printing legal in India?",
+      "faq1Answer": "Yes. Online cheque printing is fully legal in India as long as the printed cheque complies with RBI's CTS 2010 standards (correct MICR positioning, magnetic ink for the MICR line, and valid bank format). Cheqify auto-applies all CTS 2010 requirements for 300+ Indian banks.",
+      "faq2Question": "Do I need to download any software?",
+      "faq2Answer": "No. Cheqify is fully online — print cheques online from any modern browser (Chrome, Edge, Safari, Firefox). No downloads, no installations, no plugin requirements. Open the app, sign in, and print.",
+      "faq3Question": "Which printers work with online cheque printing?",
+      "faq3Answer": "Any standard inkjet or laser printer works for online cheque printing. For CTS 2010 MICR compliance, banks recommend MICR-grade ink toner — but most modern HP, Canon, and Epson printers handle this fine. Cheqify auto-aligns to your specific cheque book layout.",
+      "faq4Question": "How much does online cheque printing cost?",
+      "faq4Answer": "Cheqify is 100% free for online cheque printing. Every feature — 300+ bank formats, MICR validation, bulk printing, lifecycle tracking, multi-user access — is included at no cost. No paid tiers, no per-cheque charges, no credit card required.",
+      "faq5Question": "Can I print cheques online for multiple bank accounts?",
+      "faq5Answer": "Yes. Cheqify supports unlimited bank accounts under one online cheque printing dashboard. Add as many companies and accounts as you need — each gets its own cheque book and audit trail.",
+      "faq6Question": "What banks support online cheque printing in India?",
+      "faq6Answer": "All 300+ scheduled commercial banks in India are supported, including SBI, HDFC, ICICI, Axis, Kotak Mahindra, PNB, Bank of Baroda, Canara, Union Bank, IndusInd, Yes Bank, IDFC FIRST, and major cooperative and rural banks. CTS 2010 compliance is built in."
+    },
+    "cta": {
+      "heading": "Start Online Cheque Printing — Free",
+      "subheading": "Join thousands of Indian businesses printing cheques online with Cheqify. No download. No credit card. 300+ banks ready.",
+      "cta": "Print Cheques Online Now"
+    }
   }
 }
