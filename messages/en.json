@@ -8,7 +8,7 @@
       "contact": "Contact Us",
       "about": "About Us",
       "glossary": "Cheque Glossary",
-      "amountInWordsTool": "Amount in Words Tool"
+      "amountInWordsTool": "Amount in Words"
     },
     "cta": {
       "startFree": "Start Free",
@@ -27,12 +27,12 @@
       "legal": "Legal",
       "privacy": "Privacy Policy",
       "terms": "Terms of Use",
-      "compare": "Cheqify vs ChequePot",
-      "compareMoneyflex": "Cheqify vs MoneyFlex",
-      "compareChrysanth": "Cheqify vs Chrysanth",
-      "onlineChequePrinting": "Online Cheque Printing",
-      "excelFormat": "Excel Cheque Format",
-      "wordFormat": "Word Cheque Format",
+      "compare": "vs ChequePot",
+      "compareMoneyflex": "vs MoneyFlex",
+      "compareChrysanth": "vs Chrysanth",
+      "onlineChequePrinting": "Online Printing",
+      "excelFormat": "Excel Format",
+      "wordFormat": "Word Format",
       "punchline": "Every cheque, printed right. Every time."
     },
     "language": {
