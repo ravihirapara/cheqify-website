@@ -199,8 +199,8 @@
   },
   "features": {
     "meta": {
-      "title": "Free Cheque Printing Features — MICR & Bulk Print | Cheqify",
-      "description": "Free cheque printing software with automatic MICR validation, 300+ Indian bank layouts, batch printing, lifecycle tracking, and multi-user access. No credit card required."
+      "title": "Cheque Printing Features — MICR, Bulk Print | Cheqify",
+      "description": "Free cheque printing software — auto MICR validation, 300+ Indian bank layouts, batch printing, lifecycle tracking, and multi-user access."
     },
     "hero": {
       "badge": "Product Features",
@@ -312,8 +312,8 @@
   },
   "pricing": {
     "meta": {
-      "title": "Free Cheque Printing Software Pricing — Zero Cost | Cheqify",
-      "description": "Cheqify is 100% free cheque printing software for India. Every feature included — 300+ bank formats, MICR validation, bulk printing, lifecycle tracking. No paid tiers, no hidden charges, no credit card."
+      "title": "Cheque Printing Software — 100% Free Pricing | Cheqify",
+      "description": "Cheqify is 100% free cheque printing software. Every feature included — 300+ banks, MICR validation, bulk printing. No paid tiers or hidden charges."
     },
     "hero": {
       "badge": "PRICING",
@@ -530,8 +530,8 @@
   },
   "comparison": {
     "meta": {
-      "title": "Cheqify vs ChequePot — Free Cheque Printing Compared (2026)",
-      "description": "Side-by-side comparison: Cheqify vs ChequePot. Free vs paid, 300+ vs limited bank formats, automatic vs manual MICR validation. See why Indian businesses are switching to Cheqify in 2026."
+      "title": "Cheqify vs ChequePot — Free Cheque Printing 2026",
+      "description": "Cheqify vs ChequePot compared — free vs paid, 300+ vs limited bank formats, auto vs manual MICR. See why Indian businesses switch in 2026."
     },
     "hero": {
       "badge": "SIDE-BY-SIDE COMPARISON",
@@ -618,7 +618,7 @@
   "glossary": {
     "meta": {
       "title": "Cheque Glossary | Cheqify.app",
-      "description": "Learn cheque terminology — MICR, CTS 2010, drawer, payee, endorsement, and more. A complete glossary of cheque printing and banking terms for Indian businesses."
+      "description": "Cheque terminology made simple — MICR, CTS 2010, drawer, payee, endorsement, and more. Complete glossary for Indian businesses."
     },
     "hero": {
       "badge": "Reference",
