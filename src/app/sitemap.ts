@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 
 const BASE_URL = "https://cheqify.app";
 const LOCALES = ["en", "hi", "gu"];
-const STATIC_PAGES = ["", "/features", "/pricing", "/blog", "/contact", "/about", "/privacy", "/terms", "/comparison", "/glossary", "/amount-in-words-tool", "/online-cheque-printing"];
+const STATIC_PAGES = ["", "/features", "/pricing", "/blog", "/contact", "/about", "/privacy", "/terms", "/comparison", "/glossary", "/amount-in-words-tool", "/online-cheque-printing", "/cheque-printing-excel-format"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
