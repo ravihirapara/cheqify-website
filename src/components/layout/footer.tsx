@@ -20,6 +20,7 @@ const FOOTER_LINKS = [
     links: [
       { labelKey: "nav.blog", href: "/blog" },
       { labelKey: "nav.glossary", href: "/glossary" },
+      { labelKey: "nav.amountInWordsTool", href: "/amount-in-words-tool" },
     ],
   },
   {

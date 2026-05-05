@@ -7,7 +7,8 @@
       "blog": "ब्लॉग",
       "contact": "संपर्क करें",
       "about": "हमारे बारे में",
-      "glossary": "चेक शब्दावली"
+      "glossary": "चेक शब्दावली",
+      "amountInWordsTool": "Amount in Words Tool"
     },
     "cta": {
       "startFree": "मुफ़्त शुरू करें",
@@ -652,6 +653,69 @@
       "heading": "त्रुटि-मुक्त चेक प्रिंट करने के लिए तैयार हैं?",
       "subheading": "अब जब आप शब्दावली जानते हैं, Cheqify आज़माएं — 300+ भारतीय बैंक फॉर्मेट के साथ 100% मुफ़्त चेक प्रिंटिंग।",
       "cta": "मुफ़्त शुरू करें"
+    }
+  },
+  "amountInWords": {
+    "meta": {
+      "title": "Amount in Words for Cheque — Free Tool | Cheqify",
+      "description": "Convert rupee amounts to words for cheques — supports lakh, crore, paise. Free tool with copy-ready output and a how-to guide for Indian cheques."
+    },
+    "breadcrumb": "Amount in Words Tool",
+    "hero": {
+      "badge": "FREE TOOL",
+      "headlinePart1": "Convert ",
+      "headlineHighlight": "Amount to Words ",
+      "headlinePart2": "for Cheques",
+      "subheading": "Type any rupee amount and get the cheque-ready words instantly. Supports lakh, crore, and paise — exactly the format Indian banks accept."
+    },
+    "tool": {
+      "label": "Enter amount in rupees",
+      "placeholder": "e.g. 150000.50",
+      "help": "Numbers up to 99,99,99,99,999.99. Indian comma format and decimals supported.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "copyAria": "Copy amount in words to clipboard",
+      "quickAmounts": "Try common amounts"
+    },
+    "guide": {
+      "heading": "How to Write Amount in Words on a Cheque",
+      "subheading": "Indian banks expect a specific format. Get it wrong and your cheque can be rejected or, worse, altered.",
+      "step1Title": "Always start with \"Rupees\"",
+      "step1Body": "Every Indian cheque begins with the word \"Rupees\" before the amount. This is the standard format Indian banks recognise.",
+      "step2Title": "Spell out the full amount",
+      "step2Body": "Use the Indian numbering system — lakh and crore, not millions or billions. Write \"Fifteen Lakh\", not \"One Million Five Hundred Thousand\".",
+      "step3Title": "End with \"Only\"",
+      "step3Body": "Always close with the word \"Only\" so no one can add extra digits or words after the amount.",
+      "step4Title": "Draw a line after \"Only\"",
+      "step4Body": "Draw a continuous line through any unused space on the words line. This stops fraudsters from inserting extra words.",
+      "step5Title": "Add paise correctly",
+      "step5Body": "If the amount has paise, write \"Rupees Five Hundred and Fifty Paise Only\" — separate the rupees and paise with \"and\".",
+      "tableHeading": "Common Cheque Amounts in Words",
+      "tableSubheading": "From ₹100 to ₹1 crore — copy any of these directly onto your cheque.",
+      "colNumber": "Number",
+      "colIndian": "Indian Format",
+      "colWords": "In Words (Cheque Format)"
+    },
+    "faq": {
+      "heading": "Amount in Words FAQ",
+      "subheading": "Common questions about writing rupee amounts on cheques",
+      "faq1Question": "How do I write 1,00,000 in words on a cheque?",
+      "faq1Answer": "Write \"Rupees One Lakh Only\" on the words line of the cheque. Always include \"Rupees\" at the start and \"Only\" at the end, then draw a line through the remaining space to prevent tampering.",
+      "faq2Question": "How do I write 2,00,000 in words on a cheque?",
+      "faq2Answer": "Write \"Rupees Two Lakh Only\". For two lakh rupees, the standard cheque format is \"Rupees Two Lakh Only\" — singular \"Lakh\", not \"Lakhs\".",
+      "faq3Question": "How do I write 15 lakh in words on a cheque?",
+      "faq3Answer": "Write \"Rupees Fifteen Lakh Only\". For ₹15,00,000, the cheque format is \"Rupees Fifteen Lakh Only\" — Indian banks expect lakh (singular) regardless of the multiplier.",
+      "faq4Question": "How do I write paise (decimals) in words?",
+      "faq4Answer": "After the rupees, add \"and X Paise\" before \"Only\". For example, ₹500.50 becomes \"Rupees Five Hundred and Fifty Paise Only\". Round to two decimal places — banks don't accept fractional paise.",
+      "faq5Question": "Should I write \"lakh\" or \"lakhs\" on a cheque?",
+      "faq5Answer": "Use \"Lakh\" (singular) regardless of the number. \"Two Lakh\", \"Fifteen Lakh\", \"Ninety Nine Lakh\" — never \"Lakhs\". The same rule applies to \"Crore\". This is the convention Indian banks recognise.",
+      "faq6Question": "Why is the amount in words required on a cheque?",
+      "faq6Answer": "It's a fraud-prevention check. If the numerical amount is altered, the words version takes precedence. Without amount in words, banks can reject the cheque or treat it as invalid under RBI guidelines."
+    },
+    "cta": {
+      "heading": "Skip manual writing — let Cheqify handle it",
+      "subheading": "Cheqify auto-fills the amount in words on every cheque you print. 300+ Indian bank formats. 100% free.",
+      "cta": "Start Printing Free"
     }
   }
 }
