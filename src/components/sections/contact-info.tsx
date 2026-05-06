@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { Headset, Briefcase, MapPin, Phone, Clock, Mail } from "lucide-react";
 

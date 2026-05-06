@@ -216,6 +216,13 @@ export default async function Home({
   setRequestLocale(locale);
   return (
     <>
+      <link
+        rel="preload"
+        as="image"
+        href="/_next/image?url=%2Fimages%2Fprint-error-free-cheque-in-minutes.webp&w=1200&q=75"
+        imageSrcSet="/_next/image?url=%2Fimages%2Fprint-error-free-cheque-in-minutes.webp&w=1200&q=75 1x, /_next/image?url=%2Fimages%2Fprint-error-free-cheque-in-minutes.webp&w=3840&q=75 2x"
+        fetchPriority="high"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

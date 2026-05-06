@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { Heart, ShieldCheck, Gift, Scale } from "lucide-react";
 const CARDS = [
