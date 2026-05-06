@@ -75,7 +75,8 @@ export function Footer() {
                 alt="Cheqify.app logo"
                 width={200}
                 height={56}
-                className="h-14 w-auto"
+                style={{ width: "auto", height: "auto" }}
+                className="h-14"
               />
             </Link>
             <p className="mt-6 max-w-xs leading-relaxed text-muted-foreground">

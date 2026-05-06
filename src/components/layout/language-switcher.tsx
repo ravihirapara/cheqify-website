@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
 import posthog from "posthog-js";
 import { usePathname, useRouter } from "~/i18n/navigation";
@@ -23,10 +24,26 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   function handleLocaleChange(newLocale: Locale) {
     posthog.capture("language_changed", { from: locale, to: newLocale });
     router.replace(pathname, { locale: newLocale });
+  }
+
+  if (!mounted) {
+    return (
+      <div
+        aria-label="Switch Language"
+        className="flex h-11 w-11 items-center justify-center"
+      >
+        <Globe className="h-5 w-5 opacity-70" />
+      </div>
+    );
   }
 
   return (
