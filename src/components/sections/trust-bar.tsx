@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { Shield, Building2, Smartphone, Sparkles } from "lucide-react";
 
