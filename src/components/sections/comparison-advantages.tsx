@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { Wallet, Monitor, Building2, GitGraph, Bell, Globe } from "lucide-react";
 
