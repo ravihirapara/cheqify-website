@@ -1,9 +1,10 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
+**Last updated:** 2026-05-06 — observed actual quota = 7/day (lower than the 10-12 estimate)
 **Total live URLs:** 90 (3 locales × 30 routes)
-**GSC daily quota:** ~10-12 URL Inspection submissions per property per day
-**Estimated days to clear:** 7-8 days at full quota
+**GSC daily quota:** ~7 URL Inspection submissions per property per day (observed)
+**Estimated days to clear:** 12-13 days at observed quota
 
 > Submit each URL via **GSC → URL Inspection → "Request Indexing"**. Bing/Yandex/DuckDuckGo are auto-pinged via IndexNow on every Sanity publish, so this list is Google-only.
 
@@ -17,20 +18,27 @@
 4. Mark the day complete (`[x]`) below.
 5. If quota hits mid-day, stop and resume tomorrow.
 
+## Quota reality check
+
+Quota observed on 2026-05-06: **7 URLs/day** (not the 10-12 in Google's docs). Plan is rebalanced to 7/day across 11 days. If your quota is higher one day, do extras and pull from the next day's block — just don't double-submit URLs already requested.
+
 ---
 
-## Day 1 — HI/GU SEO landing pages (12 URLs) — highest priority, just deployed
+## Day 1 — HI/GU SEO landing pages — DONE (7 of 12 submitted, quota hit)
 
-These are brand-new locale variants Google has likely never seen.
-
+✅ Submitted on 2026-05-06 before quota cap:
 ```
-https://cheqify.app/hi/amount-in-words-tool
-https://cheqify.app/gu/amount-in-words-tool
-https://cheqify.app/hi/online-cheque-printing
-https://cheqify.app/gu/online-cheque-printing
-https://cheqify.app/hi/cheque-printing-excel-format
-https://cheqify.app/gu/cheque-printing-excel-format
-https://cheqify.app/hi/cheque-printing-word-format
+✓ https://cheqify.app/hi/amount-in-words-tool
+✓ https://cheqify.app/gu/amount-in-words-tool
+✓ https://cheqify.app/hi/online-cheque-printing
+✓ https://cheqify.app/gu/online-cheque-printing
+✓ https://cheqify.app/hi/cheque-printing-excel-format
+✓ https://cheqify.app/gu/cheque-printing-excel-format
+✓ https://cheqify.app/hi/cheque-printing-word-format
+```
+
+⏭ Quota hit at this URL — moved to Day 2:
+```
 https://cheqify.app/gu/cheque-printing-word-format
 https://cheqify.app/hi/cheqify-vs-moneyflex
 https://cheqify.app/gu/cheqify-vs-moneyflex
@@ -38,15 +46,31 @@ https://cheqify.app/hi/cheqify-vs-chrysanth
 https://cheqify.app/gu/cheqify-vs-chrysanth
 ```
 
-- [ ] Day 1 done
+- [x] Day 1 done (7 submitted, 5 deferred)
 
 ---
 
-## Day 2 — EN SEO landing pages + bulk-cheque clean slug (12 URLs)
+## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs)
+
+Submit in this order. Stop when GSC reports quota hit.
 
 ```
+https://cheqify.app/gu/cheque-printing-word-format
+https://cheqify.app/hi/cheqify-vs-moneyflex
+https://cheqify.app/gu/cheqify-vs-moneyflex
+https://cheqify.app/hi/cheqify-vs-chrysanth
+https://cheqify.app/gu/cheqify-vs-chrysanth
 https://cheqify.app/en/amount-in-words-tool
 https://cheqify.app/en/online-cheque-printing
+```
+
+- [ ] Day 2 done
+
+---
+
+## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs)
+
+```
 https://cheqify.app/en/cheque-printing-excel-format
 https://cheqify.app/en/cheque-printing-word-format
 https://cheqify.app/en/cheqify-vs-moneyflex
@@ -54,24 +78,31 @@ https://cheqify.app/en/cheqify-vs-chrysanth
 https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india
 https://cheqify.app/hi/blog/bulk-cheque-printing-batch-guide-india
 https://cheqify.app/gu/blog/bulk-cheque-printing-batch-guide-india
-https://cheqify.app/en/blog/cheque-lifecycle-management-explained
-https://cheqify.app/hi/blog/cheque-lifecycle-management-explained
-https://cheqify.app/gu/blog/cheque-lifecycle-management-explained
 ```
 
-- [ ] Day 2 done
+- [ ] Day 3 done
 
 ---
 
-## Day 3 — Money pages (features, pricing, comparison) all 3 locales (12 URLs)
-
-These had title/meta rewrites on 2026-04-30 that should improve CTR — re-indexing surfaces the new metadata.
+## Day 4 — Lifecycle blog (3 locales) + money-page locales (7 URLs)
 
 ```
+https://cheqify.app/en/blog/cheque-lifecycle-management-explained
+https://cheqify.app/hi/blog/cheque-lifecycle-management-explained
+https://cheqify.app/gu/blog/cheque-lifecycle-management-explained
 https://cheqify.app/en/features
 https://cheqify.app/hi/features
 https://cheqify.app/gu/features
 https://cheqify.app/en/pricing
+```
+
+- [ ] Day 4 done
+
+---
+
+## Day 5 — Money pages (pricing/comparison) + homepages (7 URLs)
+
+```
 https://cheqify.app/hi/pricing
 https://cheqify.app/gu/pricing
 https://cheqify.app/en/comparison
@@ -79,40 +110,47 @@ https://cheqify.app/hi/comparison
 https://cheqify.app/gu/comparison
 https://cheqify.app/en
 https://cheqify.app/hi
-https://cheqify.app/gu
 ```
 
-- [ ] Day 3 done
+- [ ] Day 5 done
 
 ---
 
-## Day 4 — Static / supporting pages (12 URLs)
+## Day 6 — Homepage GU + about/contact (7 URLs)
 
 ```
+https://cheqify.app/gu
 https://cheqify.app/en/about
 https://cheqify.app/hi/about
 https://cheqify.app/gu/about
 https://cheqify.app/en/contact
 https://cheqify.app/hi/contact
 https://cheqify.app/gu/contact
+```
+
+- [ ] Day 6 done
+
+---
+
+## Day 7 — Glossary + blog index (7 URLs)
+
+```
 https://cheqify.app/en/glossary
 https://cheqify.app/hi/glossary
 https://cheqify.app/gu/glossary
 https://cheqify.app/en/blog
 https://cheqify.app/hi/blog
 https://cheqify.app/gu/blog
+https://cheqify.app/hi/blog/cheqify-vs-manual-cheque-writing
 ```
 
-- [ ] Day 4 done
+- [ ] Day 7 done
 
 ---
 
-## Day 5 — HI blog posts (9 URLs — partial day)
-
-EN was submitted on 2026-04-30. HI/GU were never explicitly submitted.
+## Day 8 — HI blog posts (7 URLs)
 
 ```
-https://cheqify.app/hi/blog/cheqify-vs-manual-cheque-writing
 https://cheqify.app/hi/blog/cheque-bounce-reasons-and-solutions
 https://cheqify.app/hi/blog/how-to-avoid-cheque-fraud-in-india
 https://cheqify.app/hi/blog/how-to-print-cheque-at-home
@@ -120,39 +158,50 @@ https://cheqify.app/hi/blog/post-dated-cheques-rules-and-best-practices
 https://cheqify.app/hi/blog/what-is-micr-code-on-cheque
 https://cheqify.app/hi/blog/how-to-print-cheque-in-india
 https://cheqify.app/hi/blog/how-to-reconcile-cheques-with-bank-statements
-https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses
 ```
 
-- [ ] Day 5 done
+- [ ] Day 8 done
 
 ---
 
-## Day 6 — GU blog posts (9 URLs — partial day)
+## Day 9 — Remaining HI blogs + GU blog posts start (7 URLs)
 
 ```
+https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses
+https://cheqify.app/hi/blog/best-free-cheque-printing-software-india
+https://cheqify.app/hi/blog/section-138-ni-act-cheque-bounce-india
+https://cheqify.app/hi/blog/cheque-validity-period-stop-payment-india
 https://cheqify.app/gu/blog/cheqify-vs-manual-cheque-writing
 https://cheqify.app/gu/blog/cheque-bounce-reasons-and-solutions
 https://cheqify.app/gu/blog/how-to-avoid-cheque-fraud-in-india
+```
+
+- [ ] Day 9 done
+
+---
+
+## Day 10 — GU blog posts (7 URLs)
+
+```
 https://cheqify.app/gu/blog/how-to-print-cheque-at-home
 https://cheqify.app/gu/blog/post-dated-cheques-rules-and-best-practices
 https://cheqify.app/gu/blog/what-is-micr-code-on-cheque
 https://cheqify.app/gu/blog/how-to-print-cheque-in-india
 https://cheqify.app/gu/blog/how-to-reconcile-cheques-with-bank-statements
 https://cheqify.app/gu/blog/cheque-printing-mistakes-indian-businesses
+https://cheqify.app/gu/blog/best-free-cheque-printing-software-india
 ```
 
-- [ ] Day 6 done
+- [ ] Day 10 done
 
 ---
 
-## Day 7 — Remaining HI/GU blog posts + privacy/terms (12 URLs)
+## Day 11 — Remaining GU blogs + privacy/terms (final batch, 8 URLs)
+
+If quota holds at 7, defer the 8th to a Day 12 cleanup; if you get a bonus slot, finish today.
 
 ```
-https://cheqify.app/hi/blog/best-free-cheque-printing-software-india
-https://cheqify.app/gu/blog/best-free-cheque-printing-software-india
-https://cheqify.app/hi/blog/section-138-ni-act-cheque-bounce-india
 https://cheqify.app/gu/blog/section-138-ni-act-cheque-bounce-india
-https://cheqify.app/hi/blog/cheque-validity-period-stop-payment-india
 https://cheqify.app/gu/blog/cheque-validity-period-stop-payment-india
 https://cheqify.app/en/privacy
 https://cheqify.app/hi/privacy
@@ -162,7 +211,7 @@ https://cheqify.app/hi/terms
 https://cheqify.app/gu/terms
 ```
 
-- [ ] Day 7 done
+- [ ] Day 11 done
 
 ---
 
