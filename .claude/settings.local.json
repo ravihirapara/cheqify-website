@@ -159,7 +159,9 @@
       "Bash(unzip -o \"c:/Users/developer/Downloads/cheqify.app-Performance-on-Search-2026-04-30.zip\" -d \"_bmad-output/seo/keyword-data/gsc-performance-2026-04-30/\")",
       "WebFetch(domain:cheqify.app)",
       "PowerShell(Get-Content *)",
-      "PowerShell(if \\(Test-Path .env.local\\) { $l = Select-String -Path .env.local -Pattern \"^SANITY_WRITE_TOKEN=\" -SimpleMatch; if \\($l\\) { if \\($l.Line -match \"^SANITY_WRITE_TOKEN=.+\"\\) { \"PRESENT\" } else { \"EMPTY\" } } else { \"MISSING\" } } else { \"NO_ENV_FILE\" })"
+      "PowerShell(if \\(Test-Path .env.local\\) { $l = Select-String -Path .env.local -Pattern \"^SANITY_WRITE_TOKEN=\" -SimpleMatch; if \\($l\\) { if \\($l.Line -match \"^SANITY_WRITE_TOKEN=.+\"\\) { \"PRESENT\" } else { \"EMPTY\" } } else { \"MISSING\" } } else { \"NO_ENV_FILE\" })",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(git checkout *)"
     ]
   }
 }
