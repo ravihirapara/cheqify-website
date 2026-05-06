@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test:e2e": "playwright test",
-    "blog:index": "node scripts/refresh-blog-index.mjs",
+    "blog:index": "node scripts/refresh-blog-index.mjs && node scripts/update-indexing-queue.mjs",
     "blog:reorder": "node scripts/compact-blog-order.mjs"
   },
   "dependencies": {
