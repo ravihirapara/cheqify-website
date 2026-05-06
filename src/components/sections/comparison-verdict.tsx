@@ -3,8 +3,8 @@
 import { useTranslations } from "next-intl";
 import { Button } from "~/components/ui/button";
 
-export function ComparisonVerdict() {
-  const t = useTranslations("comparison.verdict");
+export function ComparisonVerdict({ namespace = "comparison" }: { namespace?: string }) {
+  const t = useTranslations(`${namespace}.verdict`);
 
   return (
     <section className="py-16 md:py-24">

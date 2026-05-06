@@ -1,11 +1,8 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Button } from "~/components/ui/button";
-import { Link } from "~/i18n/navigation";
 
-export function ComparisonHero({ namespace = "comparison" }: { namespace?: string }) {
-  const t = useTranslations(`${namespace}.hero`);
+export async function OnlineChequePrintingHero({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale, namespace: "onlineChequePrinting.hero" });
 
   return (
     <section className="py-16 md:py-24">
@@ -19,25 +16,15 @@ export function ComparisonHero({ namespace = "comparison" }: { namespace?: strin
             <span className="text-primary">{t("headlineHighlight")}</span>
             {t("headlinePart2")}
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            {t("subheading")}
-          </p>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">{t("subheading")}</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="https://app.cheqify.app/register"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://app.cheqify.app/register" target="_blank" rel="noopener noreferrer">
               <Button variant="default" className="h-12 px-8 text-base">
                 {t("cta")}
               </Button>
             </a>
-            <Link href="/features">
-              <Button variant="outline" className="h-12 px-8 text-base">
-                {t("cta2")}
-              </Button>
-            </Link>
           </div>
+          <p className="mt-4 text-sm text-muted-foreground">{t("trustLine")}</p>
         </div>
       </div>
     </section>

@@ -12,7 +12,22 @@ const FOOTER_LINKS = [
     links: [
       { labelKey: "nav.features", href: "/features" },
       { labelKey: "nav.pricing", href: "/pricing" },
+    ],
+  },
+  {
+    titleKey: "solutions",
+    links: [
+      { labelKey: "footer.onlineChequePrinting", href: "/online-cheque-printing" },
+      { labelKey: "footer.excelFormat", href: "/cheque-printing-excel-format" },
+      { labelKey: "footer.wordFormat", href: "/cheque-printing-word-format" },
+    ],
+  },
+  {
+    titleKey: "compareColumn",
+    links: [
       { labelKey: "footer.compare", href: "/comparison" },
+      { labelKey: "footer.compareMoneyflex", href: "/cheqify-vs-moneyflex" },
+      { labelKey: "footer.compareChrysanth", href: "/cheqify-vs-chrysanth" },
     ],
   },
   {
@@ -20,6 +35,7 @@ const FOOTER_LINKS = [
     links: [
       { labelKey: "nav.blog", href: "/blog" },
       { labelKey: "nav.glossary", href: "/glossary" },
+      { labelKey: "nav.amountInWordsTool", href: "/amount-in-words-tool" },
     ],
   },
   {
@@ -27,11 +43,6 @@ const FOOTER_LINKS = [
     links: [
       { labelKey: "nav.about", href: "/about" },
       { labelKey: "nav.contact", href: "/contact" },
-    ],
-  },
-  {
-    titleKey: "legal",
-    links: [
       { labelKey: "footer.privacy", href: "/privacy" },
       { labelKey: "footer.terms", href: "/terms" },
     ],
@@ -46,7 +57,7 @@ export function Footer() {
   return (
     <footer className="border-t border-primary/10 bg-gradient-to-b from-primary/5 to-background py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
+        <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-7">
           {/* Logo + Description + Social */}
           <div className="lg:col-span-2">
             <Link

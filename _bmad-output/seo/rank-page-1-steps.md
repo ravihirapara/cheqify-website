@@ -1,12 +1,57 @@
 # Rank #1 for "Cheque Print" Searches — Action Plan
 
-**Saved:** 2026-04-30 (last updated 2026-04-30)
+**Saved:** 2026-04-30 (last updated 2026-05-05)
 **Goal:** Cheqify.app on page 1 of Google for cheque-printing keywords (India)
 **Current state:** Technical SEO 9/10 (per SEO-PLAN.md). Blockers = content depth, backlinks, indexing.
 
 ---
 
-## Status Snapshot — 2026-04-30 (end of session)
+## Status Snapshot — 2026-05-05 (end of session)
+
+### ✅ Completed today
+- **Ahrefs site audit cleanup** — trimmed oversized titles + meta descriptions across en/hi/gu (commit `ff062d9`). All titles now ≤55 chars; descriptions in 110–160 sweet spot for features, pricing, comparison, glossary.
+- **6 new SEO landing pages built** (EN content live; hi/gu use EN placeholders pending translation):
+  - `/amount-in-words-tool` — interactive INR rupees-to-words widget (lakh/crore/paise) with how-to guide and FAQ. Targets ~3,470 vol cluster: "amt in words", "how to write amount in words", "100000/200000/15 lakh in words for cheque".
+  - `/online-cheque-printing` — targets ~2,360 vol cluster: "online cheque printing", "cheque print online", "print cheque online", "cheque printing online".
+  - `/cheque-printing-excel-format` — targets ~2,560 vol cluster: "cheque printing excel format", "cheque print format in excel", "cheque printing template excel", "free cheque printing software in excel".
+  - `/cheque-printing-word-format` — targets ~1,560 vol cluster: "cheque print format in word", "cheque printing format in word", "cheque printing template word".
+  - `/cheqify-vs-moneyflex` — targets ~2,860 vol cluster: "moneyflex cheque printing software", "money flex check printing software", "money flex check print".
+  - `/cheqify-vs-chrysanth` — targets ~980 vol cluster: "chrysanth cheque writer", "chrysanth cheque writer free for india", "chrysanth cheque writer free download".
+- **Tier-1 keyword density** — wove "cheque writer software", "cheque writing software", "cheque print software" into existing home and features FAQ copy (commit `42225fa`).
+- **Footer reorganized** — added Solutions and Compare columns linking to all 6 new pages so they're crawlable from every page.
+- **Sitemap updated** — 16 static routes × 3 locales (was 10 × 3).
+- **Reusable components** — extracted `LandingFaq` and `LandingCta`, refactored `comparison-*` and `excel-format-*` to take a namespace prop so the same components serve multiple landing pages.
+
+### ⏳ Pending (next session)
+1. **Translate hi/gu content** for the 6 new pages (currently EN placeholders). High priority for the comparison pages (MoneyFlex, Chrysanth) since competitor brand searches happen in Hindi/Gujarati too.
+2. **Rebuild + GSC Request Indexing** for all 18 new URLs (6 pages × 3 locales) once Netlify deploys.
+3. **Backlink push** to make the new comparison pages rank — the comparison cluster is the highest commercial-intent and easiest to win.
+4. **Investigate the 3 new 404s** flagged in Ahrefs (still pending — needs URL list export).
+
+### 🚫 Known limitation (unchanged)
+- Cheqify is still invisible to Google for head terms. The new pages need backlinks to rank. **Step 4 (backlinks) remains the unlock.**
+
+---
+
+## Keyword Cluster Map (2026-05-05)
+
+| Cluster | Volume | Page | Status |
+|---|---:|---|---|
+| amt in words / amount in words / 100000/200000/15 lakh in words | ~3,470 | `/amount-in-words-tool` | ✅ live |
+| online cheque printing variants | ~2,360 | `/online-cheque-printing` | ✅ live |
+| cheque printing excel format / template / software in excel | ~2,560 | `/cheque-printing-excel-format` | ✅ live |
+| cheque printing word format / template variants | ~1,560 | `/cheque-printing-word-format` | ✅ live |
+| moneyflex cheque printing software variants | ~2,860 | `/cheqify-vs-moneyflex` | ✅ live |
+| chrysanth cheque writer variants | ~980 | `/cheqify-vs-chrysanth` | ✅ live |
+| cheque printing software / cheque print | 3,600 | `/` + `/features` | density injection done |
+| cheque writer / cheque writing | 1,300 each | `/` FAQ | density injection done |
+| cheque printing software free / free cheque printing software | 1,300 + 1,000 | `/pricing` | already covered |
+
+**Total new addressable volume:** ~14,000 monthly searches across the 6 new pages.
+
+---
+
+## Status Snapshot — 2026-04-30 (previous session)
 
 ### ✅ Completed
 - **Step 1** — Indexing requests submitted in GSC for top English pages + all 12 published blog posts. Hit daily quota mid-list. Sitemap confirmed submitted.

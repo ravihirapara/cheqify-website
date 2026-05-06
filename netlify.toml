@@ -9,6 +9,11 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/:locale/blog/bulk-cheque-printing-batch-guide-india-cheqify"
+  to = "/:locale/blog/bulk-cheque-printing-batch-guide-india"
+  status = 301
+
 # Cache static assets aggressively
 [[headers]]
   for = "/_next/static/*"

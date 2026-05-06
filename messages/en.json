@@ -7,7 +7,8 @@
       "blog": "Blog",
       "contact": "Contact Us",
       "about": "About Us",
-      "glossary": "Cheque Glossary"
+      "glossary": "Cheque Glossary",
+      "amountInWordsTool": "Amount in Words"
     },
     "cta": {
       "startFree": "Start Free",
@@ -19,12 +20,19 @@
       "tagline": "Print Error-Free Cheques in Under 2 Minutes",
       "description": "Simplifying cheque management for Indian businesses with error-free printing, lifecycle tracking, and real-time visibility.",
       "product": "Product",
+      "solutions": "Solutions",
+      "compareColumn": "Compare",
       "resources": "Resources",
       "company": "Company",
       "legal": "Legal",
       "privacy": "Privacy Policy",
       "terms": "Terms of Use",
-      "compare": "Cheqify vs ChequePot",
+      "compare": "vs ChequePot",
+      "compareMoneyflex": "vs MoneyFlex",
+      "compareChrysanth": "vs Chrysanth",
+      "onlineChequePrinting": "Online Printing",
+      "excelFormat": "Excel Format",
+      "wordFormat": "Word Format",
       "punchline": "Every cheque, printed right. Every time."
     },
     "language": {
@@ -181,8 +189,8 @@
     "faq": {
       "heading": "Frequently Asked Questions",
       "subheading": "Common questions about cheque printing and management in India.",
-      "faq1Question": "What is cheque printing software?",
-      "faq1Answer": "Cheque printing software lets you print cheques directly on bank cheque leaves using a regular printer. Instead of handwriting details, the software auto-fills payee name, amount, amount in words, date, and MICR code — eliminating errors that cause bounces.",
+      "faq1Question": "What is cheque printing software (also called cheque writer software)?",
+      "faq1Answer": "Cheque printing software — also known as cheque writer software or cheque writing software — lets you print cheques directly on bank cheque leaves using a regular printer. Instead of handwriting details, the software auto-fills payee name, amount, amount in words, date, and MICR code — eliminating errors that cause bounces. Cheqify is a free cheque print software that works online, with no download required.",
       "faq2Question": "Can I print cheques on any Indian bank's cheque leaf?",
       "faq2Answer": "Yes. Cheqify supports 300+ Indian bank layouts including SBI, HDFC, ICICI, Axis, PNB, Bank of Baroda, Kotak Mahindra, and many more. Each layout is pre-configured with correct MICR positioning for that bank's cheque format.",
       "faq3Question": "Is it legal to print cheques in India?",
@@ -190,7 +198,7 @@
       "faq4Question": "What is MICR code and why is it important?",
       "faq4Answer": "MICR (Magnetic Ink Character Recognition) is a 9-digit code at the bottom of every cheque that identifies the bank, branch, and city. It is essential for automated cheque processing. Cheqify validates MICR codes automatically to prevent clearance failures.",
       "faq5Question": "How much does cheque printing software cost?",
-      "faq5Answer": "Cheqify is 100% free — every feature included with no credit card required. You get 300+ bank layouts, batch printing, lifecycle tracking, MICR validation, and multi-user access at zero cost. There are no hidden fees or premium tiers.",
+      "faq5Answer": "Cheqify is 100% free cheque printing software — every feature included with no credit card required. Unlike paid cheque writer software, paid cheque print software, or limited free downloads, Cheqify gives you 300+ bank layouts, batch printing, lifecycle tracking, MICR validation, and multi-user access at zero cost. There are no hidden fees or premium tiers.",
       "faq6Question": "What is CTS 2010 cheque format?",
       "faq6Answer": "CTS 2010 (Cheque Truncation System) is the standard mandated by RBI for all cheques in India. It requires specific security features, standardized dimensions, and machine-readable elements. Cheqify's bank layouts are fully CTS 2010 compliant.",
       "faq7Question": "Can I print multiple cheques at once?",
@@ -199,8 +207,8 @@
   },
   "features": {
     "meta": {
-      "title": "Free Cheque Printing Features — MICR & Bulk Print | Cheqify",
-      "description": "Free cheque printing software with automatic MICR validation, 300+ Indian bank layouts, batch printing, lifecycle tracking, and multi-user access. No credit card required."
+      "title": "Cheque Printing Features — MICR, Bulk Print | Cheqify",
+      "description": "Free cheque printing software — auto MICR validation, 300+ Indian bank layouts, batch printing, lifecycle tracking, and multi-user access."
     },
     "hero": {
       "badge": "Product Features",
@@ -217,8 +225,8 @@
       "feature1Title": "300+ Pre-Built Bank Layouts",
       "feature1Description": "Just select your bank from 300+ pre-loaded Indian bank layouts and start printing instantly. No manual setup, no template creation — everything is ready to use out of the box.",
       "feature1ScreenshotAlt": "Bank layout selection interface",
-      "feature2Title": "Smart Auto-Fill",
-      "feature2Description": "Automatically fills amount in words, formats dates per bank requirements, and suggests payees from your saved contacts. Eliminates manual typing errors completely.",
+      "feature2Title": "Smart Auto-Fill (the cheque writer that does it for you)",
+      "feature2Description": "Cheqify works as a complete cheque writer — automatically filling amount in words (lakh/crore/paise), formatting dates per bank requirements, and suggesting payees from your saved contacts. Eliminates manual typing errors completely.",
       "feature2ScreenshotAlt": "Smart auto-fill in action",
       "feature3Title": "Multi-Chequebook Management",
       "feature3Description": "Manage multiple chequebooks across different bank accounts within a single organization. Track cheque ranges, usage status, and remaining leaves for every chequebook — all from one dashboard.",
@@ -312,8 +320,8 @@
   },
   "pricing": {
     "meta": {
-      "title": "Free Cheque Printing Software Pricing — Zero Cost | Cheqify",
-      "description": "Cheqify is 100% free cheque printing software for India. Every feature included — 300+ bank formats, MICR validation, bulk printing, lifecycle tracking. No paid tiers, no hidden charges, no credit card."
+      "title": "Cheque Printing Software — 100% Free Pricing | Cheqify",
+      "description": "Cheqify is 100% free cheque printing software. Every feature included — 300+ banks, MICR validation, bulk printing. No paid tiers or hidden charges."
     },
     "hero": {
       "badge": "PRICING",
@@ -530,8 +538,8 @@
   },
   "comparison": {
     "meta": {
-      "title": "Cheqify vs ChequePot — Free Cheque Printing Compared (2026)",
-      "description": "Side-by-side comparison: Cheqify vs ChequePot. Free vs paid, 300+ vs limited bank formats, automatic vs manual MICR validation. See why Indian businesses are switching to Cheqify in 2026."
+      "title": "Cheqify vs ChequePot — Free Cheque Printing 2026",
+      "description": "Cheqify vs ChequePot compared — free vs paid, 300+ vs limited bank formats, auto vs manual MICR. See why Indian businesses switch in 2026."
     },
     "hero": {
       "badge": "SIDE-BY-SIDE COMPARISON",
@@ -618,7 +626,7 @@
   "glossary": {
     "meta": {
       "title": "Cheque Glossary | Cheqify.app",
-      "description": "Learn cheque terminology — MICR, CTS 2010, drawer, payee, endorsement, and more. A complete glossary of cheque printing and banking terms for Indian businesses."
+      "description": "Cheque terminology made simple — MICR, CTS 2010, drawer, payee, endorsement, and more. Complete glossary for Indian businesses."
     },
     "hero": {
       "badge": "Reference",
@@ -712,6 +720,490 @@
       "heading": "Ready to Print Error-Free Cheques?",
       "subheading": "Now that you know the terminology, try Cheqify — 100% free cheque printing with 300+ Indian bank formats.",
       "cta": "Start Free"
+    }
+  },
+  "amountInWords": {
+    "meta": {
+      "title": "Amount in Words for Cheque — Free Tool | Cheqify",
+      "description": "Convert rupee amounts to words for cheques — supports lakh, crore, paise. Free tool with copy-ready output and a how-to guide for Indian cheques."
+    },
+    "breadcrumb": "Amount in Words Tool",
+    "hero": {
+      "badge": "FREE TOOL",
+      "headlinePart1": "Convert ",
+      "headlineHighlight": "Amount to Words ",
+      "headlinePart2": "for Cheques",
+      "subheading": "Type any rupee amount and get the cheque-ready words instantly. Supports lakh, crore, and paise — exactly the format Indian banks accept."
+    },
+    "tool": {
+      "label": "Enter amount in rupees",
+      "placeholder": "e.g. 150000.50",
+      "help": "Numbers up to 99,99,99,99,999.99. Indian comma format and decimals supported.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "copyAria": "Copy amount in words to clipboard",
+      "quickAmounts": "Try common amounts"
+    },
+    "guide": {
+      "heading": "How to Write Amount in Words on a Cheque",
+      "subheading": "Indian banks expect a specific format. Get it wrong and your cheque can be rejected or, worse, altered.",
+      "step1Title": "Always start with \"Rupees\"",
+      "step1Body": "Every Indian cheque begins with the word \"Rupees\" before the amount. This is the standard format Indian banks recognise.",
+      "step2Title": "Spell out the full amount",
+      "step2Body": "Use the Indian numbering system — lakh and crore, not millions or billions. Write \"Fifteen Lakh\", not \"One Million Five Hundred Thousand\".",
+      "step3Title": "End with \"Only\"",
+      "step3Body": "Always close with the word \"Only\" so no one can add extra digits or words after the amount.",
+      "step4Title": "Draw a line after \"Only\"",
+      "step4Body": "Draw a continuous line through any unused space on the words line. This stops fraudsters from inserting extra words.",
+      "step5Title": "Add paise correctly",
+      "step5Body": "If the amount has paise, write \"Rupees Five Hundred and Fifty Paise Only\" — separate the rupees and paise with \"and\".",
+      "tableHeading": "Common Cheque Amounts in Words",
+      "tableSubheading": "From ₹100 to ₹1 crore — copy any of these directly onto your cheque.",
+      "colNumber": "Number",
+      "colIndian": "Indian Format",
+      "colWords": "In Words (Cheque Format)"
+    },
+    "faq": {
+      "heading": "Amount in Words FAQ",
+      "subheading": "Common questions about writing rupee amounts on cheques",
+      "faq1Question": "How do I write 1,00,000 in words on a cheque?",
+      "faq1Answer": "Write \"Rupees One Lakh Only\" on the words line of the cheque. Always include \"Rupees\" at the start and \"Only\" at the end, then draw a line through the remaining space to prevent tampering.",
+      "faq2Question": "How do I write 2,00,000 in words on a cheque?",
+      "faq2Answer": "Write \"Rupees Two Lakh Only\". For two lakh rupees, the standard cheque format is \"Rupees Two Lakh Only\" — singular \"Lakh\", not \"Lakhs\".",
+      "faq3Question": "How do I write 15 lakh in words on a cheque?",
+      "faq3Answer": "Write \"Rupees Fifteen Lakh Only\". For ₹15,00,000, the cheque format is \"Rupees Fifteen Lakh Only\" — Indian banks expect lakh (singular) regardless of the multiplier.",
+      "faq4Question": "How do I write paise (decimals) in words?",
+      "faq4Answer": "After the rupees, add \"and X Paise\" before \"Only\". For example, ₹500.50 becomes \"Rupees Five Hundred and Fifty Paise Only\". Round to two decimal places — banks don't accept fractional paise.",
+      "faq5Question": "Should I write \"lakh\" or \"lakhs\" on a cheque?",
+      "faq5Answer": "Use \"Lakh\" (singular) regardless of the number. \"Two Lakh\", \"Fifteen Lakh\", \"Ninety Nine Lakh\" — never \"Lakhs\". The same rule applies to \"Crore\". This is the convention Indian banks recognise.",
+      "faq6Question": "Why is the amount in words required on a cheque?",
+      "faq6Answer": "It's a fraud-prevention check. If the numerical amount is altered, the words version takes precedence. Without amount in words, banks can reject the cheque or treat it as invalid under RBI guidelines."
+    },
+    "cta": {
+      "heading": "Skip manual writing — let Cheqify handle it",
+      "subheading": "Cheqify auto-fills the amount in words on every cheque you print. 300+ Indian bank formats. 100% free.",
+      "cta": "Start Printing Free"
+    }
+  },
+  "onlineChequePrinting": {
+    "meta": {
+      "title": "Online Cheque Printing — Print Cheques Online | Cheqify",
+      "description": "Print cheques online from any browser — no download, no install. 300+ Indian banks, automatic MICR validation, batch printing. 100% free."
+    },
+    "breadcrumb": "Online Cheque Printing",
+    "hero": {
+      "badge": "ONLINE CHEQUE PRINTING",
+      "headlinePart1": "Print Cheques ",
+      "headlineHighlight": "Online ",
+      "headlinePart2": "from Any Browser",
+      "subheading": "Online cheque printing for Indian businesses. No download, no software install — sign in, select your bank, and print error-free cheques in under 2 minutes.",
+      "cta": "Print Cheques Online — Free",
+      "trustLine": "No credit card required. 300+ Indian banks supported."
+    },
+    "steps": {
+      "heading": "How Online Cheque Printing Works",
+      "subheading": "From sign-up to your first printed cheque in under 2 minutes.",
+      "step1Title": "Sign up online",
+      "step1Body": "Create your free Cheqify account. No download, no installation — works in any browser on any device.",
+      "step2Title": "Select your bank",
+      "step2Body": "Choose from 300+ pre-loaded Indian bank formats — SBI, HDFC, ICICI, Axis, Kotak, PNB, and more. MICR positioning is auto-configured.",
+      "step3Title": "Print online — instantly",
+      "step3Body": "Enter the payee, amount, and date. Cheqify auto-fills the words version, validates MICR, and prints to any printer."
+    },
+    "benefits": {
+      "heading": "Why Online Cheque Printing Beats Desktop Software",
+      "subheading": "Six reasons Indian businesses are switching from Excel and downloads to cloud-based cheque printing.",
+      "card1Title": "Nothing to install",
+      "card1Body": "Online cheque printing means zero installation. No downloads, no patches, no IT department. Works on Windows, Mac, Chromebook, even iPad.",
+      "card2Title": "Print from anywhere",
+      "card2Body": "Print cheques online from your office, home, or while travelling. Your cheque history syncs across every device automatically.",
+      "card3Title": "Always up-to-date bank formats",
+      "card3Body": "When banks change MICR layouts or RBI updates CTS rules, Cheqify updates everyone instantly. No manual template fixes.",
+      "card4Title": "Mobile-ready",
+      "card4Body": "Print cheques online from your phone or tablet. Approve, share, or queue cheques from anywhere — your printer doesn't need to be next to you.",
+      "card5Title": "Multi-user collaboration",
+      "card5Body": "Online cheque printing means teams can collaborate. Owner, accountant, and assistant can all access the same cheque book with role-based permissions.",
+      "card6Title": "Auto-backups, every minute",
+      "card6Body": "No more lost Excel files or corrupt downloads. Every cheque is backed up to the cloud the moment you print."
+    },
+    "faq": {
+      "heading": "Online Cheque Printing FAQ",
+      "subheading": "Common questions about printing cheques online in India",
+      "faq1Question": "Is online cheque printing legal in India?",
+      "faq1Answer": "Yes. Online cheque printing is fully legal in India as long as the printed cheque complies with RBI's CTS 2010 standards (correct MICR positioning, magnetic ink for the MICR line, and valid bank format). Cheqify auto-applies all CTS 2010 requirements for 300+ Indian banks.",
+      "faq2Question": "Do I need to download any software?",
+      "faq2Answer": "No. Cheqify is fully online — print cheques online from any modern browser (Chrome, Edge, Safari, Firefox). No downloads, no installations, no plugin requirements. Open the app, sign in, and print.",
+      "faq3Question": "Which printers work with online cheque printing?",
+      "faq3Answer": "Any standard inkjet or laser printer works for online cheque printing. For CTS 2010 MICR compliance, banks recommend MICR-grade ink toner — but most modern HP, Canon, and Epson printers handle this fine. Cheqify auto-aligns to your specific cheque book layout.",
+      "faq4Question": "How much does online cheque printing cost?",
+      "faq4Answer": "Cheqify is 100% free for online cheque printing. Every feature — 300+ bank formats, MICR validation, bulk printing, lifecycle tracking, multi-user access — is included at no cost. No paid tiers, no per-cheque charges, no credit card required.",
+      "faq5Question": "Can I print cheques online for multiple bank accounts?",
+      "faq5Answer": "Yes. Cheqify supports unlimited bank accounts under one online cheque printing dashboard. Add as many companies and accounts as you need — each gets its own cheque book and audit trail.",
+      "faq6Question": "What banks support online cheque printing in India?",
+      "faq6Answer": "All 300+ scheduled commercial banks in India are supported, including SBI, HDFC, ICICI, Axis, Kotak Mahindra, PNB, Bank of Baroda, Canara, Union Bank, IndusInd, Yes Bank, IDFC FIRST, and major cooperative and rural banks. CTS 2010 compliance is built in."
+    },
+    "cta": {
+      "heading": "Start Online Cheque Printing — Free",
+      "subheading": "Join thousands of Indian businesses printing cheques online with Cheqify. No download. No credit card. 300+ banks ready.",
+      "cta": "Print Cheques Online Now"
+    }
+  },
+  "excelFormat": {
+    "meta": {
+      "title": "Cheque Printing in Excel Format vs Cheqify | Free",
+      "description": "Cheque printing in Excel format is risky and slow. See why Indian businesses use Cheqify — free cloud cheque printing with 300+ bank layouts and auto MICR."
+    },
+    "breadcrumb": "Cheque Printing in Excel Format",
+    "hero": {
+      "badge": "EXCEL FORMAT vs CLOUD",
+      "headlinePart1": "Cheque Printing in ",
+      "headlineHighlight": "Excel ",
+      "headlinePart2": "— And a Better Way",
+      "subheading": "Looking for a cheque printing template in Excel? Most Indian businesses still use Excel for cheques — and lose hours to broken formulas, mismatched MICR, and version chaos. Here's why cloud beats Excel format.",
+      "cta": "Try the Cloud Alternative — Free",
+      "trustLine": "300+ Indian bank layouts. No download. No credit card."
+    },
+    "limitations": {
+      "heading": "Why Cheque Printing in Excel Format Falls Short",
+      "subheading": "Six reasons every Indian business that prints cheques in Excel ends up frustrated.",
+      "card1Title": "Manual MICR is risky",
+      "card1Body": "Excel templates can't validate MICR codes. One wrong digit and your cheque is rejected by the bank's clearing system.",
+      "card2Title": "Templates break easily",
+      "card2Body": "Cell merges, font changes, hidden formulas — one accidental edit and your entire cheque format in Excel stops working. There's no undo for printed cheques.",
+      "card3Title": "No real updates",
+      "card3Body": "When a bank changes its cheque layout or RBI updates CTS rules, every Excel template across your company has to be re-fixed manually. Cloud updates push to everyone instantly.",
+      "card4Title": "Multi-user is a nightmare",
+      "card4Body": "Excel files emailed back and forth or shared on a drive create version chaos. Two people printing at once on the same cheque book is a fraud waiting to happen.",
+      "card5Title": "No amount-in-words automation",
+      "card5Body": "Excel formulas for converting numbers to Indian words (lakh, crore) are clunky. Cloud tools handle paise, lakh, crore correctly every time, with built-in fraud-prevention formatting.",
+      "card6Title": "Audit trail is missing",
+      "card6Body": "Excel can't tell you who printed which cheque, when, or whether it cleared. Every printed cheque becomes a guess at month-end reconciliation."
+    },
+    "comparison": {
+      "heading": "Cheque Printing Excel Template vs Cheqify",
+      "subheading": "Side-by-side: an Excel template and the cloud alternative.",
+      "colFeature": "Feature",
+      "colCompetitor": "Excel Format",
+      "colCheqify": "Cheqify (Cloud)",
+      "feature1": "Bank layouts",
+      "excel1": "1 template per bank — manual",
+      "cheqify1": "300+ banks pre-loaded",
+      "feature2": "MICR validation",
+      "excel2": "None",
+      "cheqify2": "Automatic",
+      "feature3": "Amount in words",
+      "excel3": "Clunky formulas",
+      "cheqify3": "Auto-fills (lakh/crore/paise)",
+      "feature4": "Bulk / batch printing",
+      "excel4": "Copy-paste rows",
+      "cheqify4": "Print 100 cheques in one click",
+      "feature5": "Multi-user access",
+      "excel5": "File version chaos",
+      "cheqify5": "Role-based, real-time",
+      "feature6": "Audit trail",
+      "excel6": "Manual logs",
+      "cheqify6": "Every cheque tracked",
+      "feature7": "Mobile access",
+      "excel7": "Excel on mobile? No.",
+      "cheqify7": "Print from phone, tablet, web",
+      "feature8": "Cost",
+      "excel8": "Excel licence ₹6,500+/yr",
+      "cheqify8": "100% free, forever"
+    },
+    "faq": {
+      "heading": "Cheque Printing in Excel — FAQ",
+      "subheading": "Common questions about Excel cheque templates and the cloud alternative",
+      "faq1Question": "Can I print cheques using an Excel format?",
+      "faq1Answer": "Yes — many Indian businesses use Excel as a cheque printing template. You'd typically download a free cheque printing software in Excel, customise the cell positions for your bank's layout, and feed cheque leaves into your printer. It works, but breaks easily and lacks MICR validation. For a more reliable approach, cloud-based tools like Cheqify auto-handle 300+ bank formats with no manual setup.",
+      "faq2Question": "Where can I find a free cheque printing software in Excel?",
+      "faq2Answer": "Several free Excel cheque printing templates exist online — but quality varies wildly. Most don't include CTS 2010 MICR positioning, can't auto-fill amount in words for Indian numbering (lakh, crore), and break the moment your bank tweaks its cheque layout. Cheqify offers the same capability online, free, with all 300+ Indian bank formats pre-loaded.",
+      "faq3Question": "Is the Excel cheque printing format CTS 2010 compliant?",
+      "faq3Answer": "Most Excel cheque printing templates are NOT CTS 2010 compliant out of the box. CTS 2010 requires precise MICR line positioning (in millimetres), magnetic ink for the MICR characters, and specific layout dimensions. Excel can be made CTS-compliant only with careful manual measurement — and even then, every bank update breaks the template. Cheqify is CTS 2010 compliant by default for every Indian bank.",
+      "faq4Question": "Can I import my existing Excel cheque data into Cheqify?",
+      "faq4Answer": "Yes. If you have a list of payees, amounts, and dates in an Excel sheet, you can paste them directly into Cheqify's bulk-print interface. The cloud handles formatting, MICR, and amount-in-words automatically — no need to maintain a separate Excel template.",
+      "faq5Question": "Why use cloud instead of Excel for cheque printing?",
+      "faq5Answer": "Three big reasons: (1) MICR is auto-validated, so cheques aren't rejected; (2) bank format updates push instantly to your account, so you never re-fix a template; (3) every printed cheque has a built-in audit trail, so you know exactly which cheques cleared, bounced, or are pending. Excel can match none of these without a developer.",
+      "faq6Question": "How much does Cheqify cost compared to an Excel solution?",
+      "faq6Answer": "Cheqify is 100% free for cheque printing — no per-cheque charge, no monthly fee, no credit card required. Microsoft Excel itself costs around ₹6,500+ per user per year. Even the free Excel cheque templates require Excel licensing and your time to maintain. With Cheqify, both the software and the cheque printing are free."
+    },
+    "cta": {
+      "heading": "Skip the Excel headaches",
+      "subheading": "Print error-free cheques without templates, formulas, or MICR guesswork. 300+ Indian banks ready. 100% free.",
+      "cta": "Try Cheqify Free"
+    }
+  },
+  "wordFormat": {
+    "meta": {
+      "title": "Cheque Printing Format in Word vs Cheqify | Free",
+      "description": "Cheque printing in Word format is fragile and slow. See why Indian businesses use Cheqify — free cloud cheque printing with 300+ bank layouts and auto MICR."
+    },
+    "breadcrumb": "Cheque Printing in Word Format",
+    "hero": {
+      "badge": "WORD FORMAT vs CLOUD",
+      "headlinePart1": "Cheque Printing in ",
+      "headlineHighlight": "Word ",
+      "headlinePart2": "— And a Better Way",
+      "subheading": "Looking for a cheque printing template in Word? Many Indian businesses still mail-merge cheques in Microsoft Word — and lose hours to printer mis-alignment, broken MICR positioning, and corrupted .docx files. Here's why cloud beats Word format.",
+      "cta": "Try the Cloud Alternative — Free",
+      "trustLine": "300+ Indian bank layouts. No download. No credit card."
+    },
+    "limitations": {
+      "heading": "Why Cheque Printing Format in Word Falls Short",
+      "subheading": "Six reasons every Indian business that prints cheques in Word ends up frustrated.",
+      "card1Title": "Printer mis-alignment is constant",
+      "card1Body": "Word treats every print job differently. One driver update, one font fallback, and your cheque numbers print 2mm off — straight onto the bank's MICR line.",
+      "card2Title": "Templates corrupt easily",
+      "card2Body": "A .docx with text boxes, custom margins, and tables is fragile. One auto-correct, one accidental Ctrl+Z too many, and your cheque template in Word is broken.",
+      "card3Title": "No mail merge for amounts in words",
+      "card3Body": "Word's mail merge doesn't natively convert numbers to Indian words (lakh, crore). You'll either type each amount manually or build a brittle macro that breaks on edge cases.",
+      "card4Title": "Multi-user is impossible",
+      "card4Body": "Two people opening the same .docx? One overwrites the other. Word + cheques + a team is a recipe for printing the same cheque number twice.",
+      "card5Title": "MICR validation is on you",
+      "card5Body": "Word can't tell you if your MICR code is wrong, missing a digit, or in the wrong position. Banks reject incorrect MICR cheques — and you find out days later.",
+      "card6Title": "No record of what was printed",
+      "card6Body": "Your .docx doesn't track what you printed last week. Reconciling printed cheques to your bank statement becomes a manual hunt across files."
+    },
+    "comparison": {
+      "heading": "Cheque Printing Word Template vs Cheqify",
+      "subheading": "Side-by-side: a Word template and the cloud alternative.",
+      "colFeature": "Feature",
+      "colCompetitor": "Word Format",
+      "colCheqify": "Cheqify (Cloud)",
+      "feature1": "Bank layouts",
+      "word1": "1 .docx per bank — manual",
+      "cheqify1": "300+ banks pre-loaded",
+      "feature2": "MICR validation",
+      "word2": "None",
+      "cheqify2": "Automatic",
+      "feature3": "Amount in words",
+      "word3": "Manual or fragile macro",
+      "cheqify3": "Auto-fills (lakh/crore/paise)",
+      "feature4": "Bulk / batch printing",
+      "word4": "Mail merge breaks easily",
+      "cheqify4": "Print 100 cheques in one click",
+      "feature5": "Printer alignment",
+      "word5": "Driver-dependent, fragile",
+      "cheqify5": "Per-bank pixel-perfect",
+      "feature6": "Multi-user access",
+      "word6": "File overwrites each other",
+      "cheqify6": "Role-based, real-time",
+      "feature7": "Audit trail",
+      "word7": "None",
+      "cheqify7": "Every cheque tracked",
+      "feature8": "Cost",
+      "word8": "Word licence ₹6,500+/yr",
+      "cheqify8": "100% free, forever"
+    },
+    "faq": {
+      "heading": "Cheque Printing in Word — FAQ",
+      "subheading": "Common questions about Word cheque templates and the cloud alternative",
+      "faq1Question": "Can I print cheques using a Word format?",
+      "faq1Answer": "Yes — many small businesses use Microsoft Word as a cheque printing template. You'd create a .docx with text boxes positioned to match your bank's cheque layout, type the payee and amount, and print. It works for low volumes, but breaks on alignment shifts, fails MICR validation, and doesn't scale beyond a single user.",
+      "faq2Question": "Where can I find a free cheque printing template in Word?",
+      "faq2Answer": "Free Word cheque printing templates are widely available online for SBI, HDFC, ICICI, Axis, and other major Indian banks. Quality varies — most don't include accurate CTS 2010 MICR positioning, none auto-fill amount in words for Indian numbering, and all break the moment your bank tweaks the cheque layout. Cheqify offers the same capability online, free, with all 300+ Indian bank formats pre-loaded and auto-updated.",
+      "faq3Question": "Is the Word cheque printing format CTS 2010 compliant?",
+      "faq3Answer": "Most Word cheque printing templates are NOT CTS 2010 compliant by default. CTS 2010 requires precise MICR line positioning (in millimetres), magnetic ink for the MICR characters, and exact layout dimensions. Word's printer-driver dependency means even a 'compliant' .docx can shift on a different printer. Cheqify is CTS 2010 compliant by default for every Indian bank.",
+      "faq4Question": "How do I auto-fill amount in words from a Word cheque template?",
+      "faq4Answer": "Word doesn't have a native function to convert ₹ amounts to Indian words (lakh, crore, paise). You'd need a custom VBA macro or external add-in — both fragile. Cheqify auto-fills amount in words for every cheque, with proper Indian numbering and 'Rupees [...] Only' formatting that prevents tampering.",
+      "faq5Question": "Why use cloud instead of Word for cheque printing?",
+      "faq5Answer": "Three big reasons: (1) printer alignment is calibrated per-bank, so cheques don't print off the line; (2) MICR is auto-validated, so the bank's clearing system accepts every cheque; (3) every printed cheque has a built-in audit trail, so you know exactly which cheques cleared, bounced, or are pending. Word can match none of these.",
+      "faq6Question": "How much does Cheqify cost compared to Word?",
+      "faq6Answer": "Cheqify is 100% free for cheque printing — no per-cheque charge, no monthly fee, no credit card required. Microsoft Word costs around ₹6,500+ per user per year. Even free Word cheque templates require Word licensing and your time to maintain. With Cheqify, both the software and the cheque printing are free."
+    },
+    "cta": {
+      "heading": "Skip the Word headaches",
+      "subheading": "Print error-free cheques without text boxes, mail merges, or MICR guesswork. 300+ Indian banks ready. 100% free.",
+      "cta": "Try Cheqify Free"
+    }
+  },
+  "comparisonMoneyflex": {
+    "meta": {
+      "title": "Cheqify vs MoneyFlex — Free Cloud Cheque Printing 2026",
+      "description": "Cheqify vs MoneyFlex compared — free cloud vs paid desktop, 300+ banks vs limited library, auto MICR vs manual. See why Indian businesses switch in 2026."
+    },
+    "breadcrumb": "Cheqify vs MoneyFlex",
+    "hero": {
+      "badge": "MONEYFLEX vs CHEQIFY",
+      "headlinePart1": "Cheqify vs ",
+      "headlineHighlight": "MoneyFlex ",
+      "headlinePart2": "— Free Cloud vs Paid Desktop",
+      "subheading": "MoneyFlex is a popular paid desktop cheque printing software in India. Cheqify is the cloud-based alternative — free, browser-first, with 300+ Indian banks pre-loaded. Here's how they compare in 2026.",
+      "cta": "Try Cheqify Free",
+      "cta2": "See Features"
+    },
+    "table": {
+      "heading": "Cheqify vs MoneyFlex — Feature Comparison",
+      "subheading": "Side-by-side: free cloud cheque printing software vs paid desktop tool",
+      "cheqify": "Cheqify",
+      "moneyflex": "MoneyFlex",
+      "feature1": "Pricing",
+      "cheqify1": "Free forever",
+      "moneyflex1": "Paid licence",
+      "feature2": "Platform",
+      "cheqify2": "Cloud — any browser",
+      "moneyflex2": "Windows desktop only",
+      "feature3": "Bank formats",
+      "cheqify3": "300+ Indian banks pre-loaded",
+      "moneyflex3": "Limited library, manual setup",
+      "feature4": "Multi-user access",
+      "cheqify4": "Unlimited, role-based",
+      "moneyflex4": "Single-user / limited",
+      "feature5": "MICR validation",
+      "cheqify5": "Auto-validated",
+      "moneyflex5": "Manual MICR entry",
+      "feature6": "Mobile / tablet access",
+      "cheqify6": "Yes — print from phone",
+      "moneyflex6": "Desktop-only",
+      "feature7": "Bank format updates",
+      "cheqify7": "Auto-pushed instantly",
+      "moneyflex7": "Manual download patches",
+      "feature8": "Audit trail",
+      "cheqify8": "Full per-cheque history",
+      "moneyflex8": "Local file-based",
+      "feature9": "Multi-company support",
+      "cheqify9": "Unlimited companies",
+      "moneyflex9": "Per-licence",
+      "feature10": "Bulk / batch printing",
+      "cheqify10": "100 cheques in one click",
+      "moneyflex10": "Yes",
+      "feature11": "Cloud backup",
+      "cheqify11": "Automatic, every minute",
+      "moneyflex11": "Manual local backup",
+      "feature12": "Amount in words (Indian)",
+      "cheqify12": "Auto (lakh/crore/paise)",
+      "moneyflex12": "Auto"
+    },
+    "advantages": {
+      "heading": "Why Indian Businesses Switch from MoneyFlex to Cheqify",
+      "subheading": "Six clear wins for cloud over paid desktop cheque printing",
+      "card1Title": "₹0 vs paid licence",
+      "card1Description": "MoneyFlex charges per user, per year. Cheqify is 100% free — every feature, no paid tiers, no per-cheque charge, no credit card required.",
+      "card2Title": "Print from anywhere",
+      "card2Description": "MoneyFlex runs on one Windows machine. Cheqify runs in your browser — print cheques from your office desktop, laptop, phone, or tablet.",
+      "card3Title": "300+ banks ready",
+      "card3Description": "Cheqify ships with 300+ Indian bank cheque layouts pre-loaded — SBI, HDFC, ICICI, Axis, PNB, Kotak, and every major and cooperative bank. No template setup.",
+      "card4Title": "Zero installation",
+      "card4Description": "MoneyFlex requires download, install, licence keys, and patches. Cheqify needs a browser. Sign in and print.",
+      "card5Title": "Real-time multi-user",
+      "card5Description": "Owner, accountant, and assistant can all access the same cheque book in Cheqify with role-based permissions. MoneyFlex is single-user out of the box.",
+      "card6Title": "Auto bank updates",
+      "card6Description": "When RBI tweaks CTS rules or a bank changes its layout, Cheqify updates everyone instantly. MoneyFlex requires you to download and install patches — if they're released."
+    },
+    "verdict": {
+      "heading": "Cheqify is the free, cloud-first alternative to MoneyFlex",
+      "subheading": "Get every cheque printing feature MoneyFlex offers, plus cloud, mobile, multi-user, auto-updates — at zero cost.",
+      "cta": "Start Free with Cheqify"
+    },
+    "faq": {
+      "heading": "Cheqify vs MoneyFlex — FAQ",
+      "subheading": "Common questions about switching from MoneyFlex cheque printing software to Cheqify",
+      "faq1Question": "Is Cheqify a free alternative to MoneyFlex?",
+      "faq1Answer": "Yes. Cheqify is a 100% free cloud-based alternative to MoneyFlex cheque printing software. Every feature is included — 300+ Indian bank formats, automatic MICR validation, bulk printing, lifecycle tracking, multi-user access — at no cost. No paid tiers, no per-cheque fees, no credit card required.",
+      "faq2Question": "How does Cheqify compare to MoneyFlex on bank coverage?",
+      "faq2Answer": "Cheqify ships with 300+ Indian bank cheque layouts pre-loaded — every major commercial bank (SBI, HDFC, ICICI, Axis, Kotak, PNB, Bank of Baroda, etc.), cooperative banks, and RRBs. MoneyFlex requires you to download or manually configure cheque templates per bank. With Cheqify, just select your bank and start printing.",
+      "faq3Question": "Can I migrate from MoneyFlex to Cheqify?",
+      "faq3Answer": "Yes. There's no formal migration process needed because Cheqify is cloud-first — sign up, select your bank, and start fresh. If you want to import historical cheque records, you can paste them into Cheqify's bulk-print interface from a spreadsheet. No file transfers or licence transfers required.",
+      "faq4Question": "Does Cheqify run on Windows / Mac / mobile like MoneyFlex?",
+      "faq4Answer": "Cheqify runs in any modern browser — Chrome, Edge, Safari, Firefox — on Windows, Mac, Linux, Chromebook, iPad, or any phone. MoneyFlex is Windows desktop only. With Cheqify, your accountant on a Mac and your owner on an iPhone share the same cheque book in real time.",
+      "faq5Question": "Is Cheqify CTS 2010 compliant like MoneyFlex?",
+      "faq5Answer": "Yes. Cheqify is fully CTS 2010 compliant for every Indian bank — correct MICR positioning, magnetic-ink-friendly fonts, valid layout dimensions. Updates are pushed automatically the moment RBI or a bank changes specifications. With MoneyFlex you'd need to download and install a patch.",
+      "faq6Question": "Can multiple users access Cheqify like a multi-user version of MoneyFlex?",
+      "faq6Answer": "Cheqify supports unlimited users out of the box with role-based permissions (owner, admin, accountant, viewer). MoneyFlex multi-user requires extra licences, manual setup on each machine, and a network share. With Cheqify, simply invite a teammate by email — no extra cost."
+    }
+  },
+  "comparisonChrysanth": {
+    "meta": {
+      "title": "Cheqify vs Chrysanth Cheque Writer — Free India 2026",
+      "description": "Cheqify vs Chrysanth Cheque Writer compared — free India-first cloud vs international desktop, 300+ Indian banks, CTS 2010 native, auto MICR validation."
+    },
+    "breadcrumb": "Cheqify vs Chrysanth",
+    "hero": {
+      "badge": "CHRYSANTH vs CHEQIFY",
+      "headlinePart1": "Cheqify vs ",
+      "headlineHighlight": "Chrysanth Cheque Writer ",
+      "headlinePart2": "— Built for India",
+      "subheading": "Chrysanth Cheque Writer is a popular international cheque writing software with a free version for India. Cheqify is the India-first cloud alternative — free, browser-first, with 300+ Indian bank formats and CTS 2010 compliance built in.",
+      "cta": "Try Cheqify Free",
+      "cta2": "See Features"
+    },
+    "table": {
+      "heading": "Cheqify vs Chrysanth Cheque Writer — Feature Comparison",
+      "subheading": "Side-by-side: India-first cloud cheque writer vs international desktop tool",
+      "cheqify": "Cheqify",
+      "chrysanth": "Chrysanth",
+      "feature1": "Pricing",
+      "cheqify1": "Free forever (all features)",
+      "chrysanth1": "Free trial / paid for full",
+      "feature2": "Platform",
+      "cheqify2": "Cloud — any browser",
+      "chrysanth2": "Windows desktop only",
+      "feature3": "India-specific bank formats",
+      "cheqify3": "300+ Indian banks pre-loaded",
+      "chrysanth3": "Limited Indian library",
+      "feature4": "Multi-user access",
+      "cheqify4": "Unlimited, role-based",
+      "chrysanth4": "Single-user",
+      "feature5": "CTS 2010 compliance",
+      "cheqify5": "Built-in for every bank",
+      "chrysanth5": "Generic templates, manual config",
+      "feature6": "Mobile / tablet access",
+      "cheqify6": "Yes — print from phone",
+      "chrysanth6": "Desktop-only",
+      "feature7": "Bank format updates",
+      "cheqify7": "Auto-pushed instantly",
+      "chrysanth7": "Manual download patches",
+      "feature8": "Audit trail",
+      "cheqify8": "Full per-cheque history",
+      "chrysanth8": "Local file-based",
+      "feature9": "Indian numbering (lakh/crore)",
+      "cheqify9": "Native auto-fill",
+      "chrysanth9": "Limited / manual",
+      "feature10": "Bulk / batch printing",
+      "cheqify10": "100 cheques in one click",
+      "chrysanth10": "Yes",
+      "feature11": "Cloud backup",
+      "cheqify11": "Automatic, every minute",
+      "chrysanth11": "Manual local backup",
+      "feature12": "Support",
+      "cheqify12": "India-based, multi-language",
+      "chrysanth12": "International"
+    },
+    "advantages": {
+      "heading": "Why Indian Businesses Choose Cheqify Over Chrysanth Cheque Writer",
+      "subheading": "Six clear wins for India-first cloud over international desktop",
+      "card1Title": "Truly free, every feature",
+      "card1Description": "Chrysanth Cheque Writer free for India is limited — paid tiers unlock the rest. Cheqify is 100% free for every feature: 300+ banks, multi-user, audit trail, all included.",
+      "card2Title": "300+ Indian banks pre-loaded",
+      "card2Description": "Cheqify ships with every Indian commercial, cooperative, and rural bank cheque layout pre-loaded — SBI, HDFC, ICICI, Axis, Kotak, PNB, BoB, and more. Chrysanth's library is international-first.",
+      "card3Title": "CTS 2010 native",
+      "card3Description": "Cheqify is built around RBI's CTS 2010 standard — correct MICR positioning, magnetic-ink-friendly fonts, valid layouts. Chrysanth uses generic templates that need configuration.",
+      "card4Title": "Lakh, crore, paise — auto",
+      "card4Description": "Cheqify auto-fills amount in words using Indian numbering (Lakh, Crore, Paise) with proper 'Rupees [...] Only' formatting. Chrysanth's number-to-words is international, not Indian-first.",
+      "card5Title": "Print from any device",
+      "card5Description": "Cheqify runs in any browser — print cheques from phone, tablet, or any computer. Chrysanth Cheque Writer is Windows desktop only.",
+      "card6Title": "India-based support",
+      "card6Description": "Cheqify support understands Indian banks, RBI guidelines, and CTS 2010 requirements. Get help in English, Hindi, or Gujarati. Chrysanth support is international."
+    },
+    "verdict": {
+      "heading": "Cheqify is the India-first, free alternative to Chrysanth Cheque Writer",
+      "subheading": "Built for Indian banks, RBI-compliant by default, free for every feature.",
+      "cta": "Start Free with Cheqify"
+    },
+    "faq": {
+      "heading": "Cheqify vs Chrysanth Cheque Writer — FAQ",
+      "subheading": "Common questions about switching from Chrysanth Cheque Writer to Cheqify",
+      "faq1Question": "Is Cheqify a free alternative to Chrysanth Cheque Writer?",
+      "faq1Answer": "Yes. Cheqify is a 100% free cloud-based alternative to Chrysanth Cheque Writer. Where Chrysanth offers a free trial or limited free version with paid tiers for full features, Cheqify includes every feature — 300+ Indian bank formats, MICR validation, bulk printing, lifecycle tracking, multi-user access — at no cost. No paid tiers, no per-cheque fees.",
+      "faq2Question": "Is there a Chrysanth Cheque Writer free download for India?",
+      "faq2Answer": "Chrysanth Cheque Writer offers a free version for India that's limited in features (cheque count, bank library, or bulk printing capability). For full functionality you typically need a paid licence. Cheqify is fully free in India — no licence to buy, no trial limits, no feature gates. Just sign up online and start printing.",
+      "faq3Question": "How does Cheqify compare to Chrysanth on Indian bank coverage?",
+      "faq3Answer": "Cheqify ships with 300+ Indian bank cheque layouts pre-loaded — every major commercial bank (SBI, HDFC, ICICI, Axis, Kotak, PNB, BoB), cooperative banks, and regional rural banks. Chrysanth Cheque Writer has an international focus with a smaller Indian bank library; you may need to configure templates manually.",
+      "faq4Question": "Can I migrate from Chrysanth Cheque Writer to Cheqify?",
+      "faq4Answer": "Yes. Cheqify is cloud-first — sign up, select your bank, and start printing. If you have historical cheque records in Chrysanth, you can paste them into Cheqify's bulk-print interface from a spreadsheet. No file transfers, no licence transfers required.",
+      "faq5Question": "Does Cheqify handle Indian amount-in-words (lakh, crore) like Chrysanth?",
+      "faq5Answer": "Cheqify natively handles Indian numbering — lakh, crore, and paise — with auto-fill amount-in-words on every cheque ('Rupees Fifteen Lakh Only'). The format follows RBI guidelines for cheque writing. Chrysanth's amount-in-words is international by default; Indian formatting may need manual setup.",
+      "faq6Question": "Is Cheqify CTS 2010 compliant for Indian cheques?",
+      "faq6Answer": "Yes. Cheqify is fully CTS 2010 compliant for every Indian bank — correct MICR positioning, magnetic-ink-friendly fonts, valid layout dimensions. Updates push automatically when RBI or a bank changes specifications. Chrysanth uses generic templates that need manual configuration to match each Indian bank's CTS 2010 layout."
     }
   }
 }
