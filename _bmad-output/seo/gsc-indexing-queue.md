@@ -1,9 +1,9 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-05-06 — observed actual quota = 7/day (lower than the 10-12 estimate)
-**Total live URLs:** 90 (3 locales × 30 routes)
-**GSC daily quota:** ~7 URL Inspection submissions per property per day (observed)
+**Last updated:** 2026-05-07 — added /demo (3 locales, priority for Video Indexing fix)
+**Total live URLs:** 93 (3 locales × 31 routes)
+**GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07
 **Estimated days to clear:** 12-13 days at observed quota
 
 > Submit each URL via **GSC → URL Inspection → "Request Indexing"**. Bing/Yandex/DuckDuckGo are auto-pinged via IndexNow on every Sanity publish, so this list is Google-only.
@@ -21,6 +21,25 @@
 ## Quota reality check
 
 Quota observed on 2026-05-06: **7 URLs/day** (not the 10-12 in Google's docs). Plan is rebalanced to 7/day across 11 days. If your quota is higher one day, do extras and pull from the next day's block — just don't double-submit URLs already requested.
+
+---
+
+## ⚡ PRIORITY — /demo watch page (Video Indexing fix)
+
+These 3 URLs unlock the GSC Video Indexing validation fix (the "Video isn't on a watch page" failure on en/hi/gu home URLs). Submit on the next day after the master deploy goes green and the new sitemap entries are live.
+
+**Pre-flight:** verify https://cheqify.app/sitemap.xml shows the three `/demo` URLs before submitting — if not, the deploy hasn't completed yet.
+
+```
+https://cheqify.app/en/demo
+https://cheqify.app/hi/demo
+https://cheqify.app/gu/demo
+```
+
+After submitting all 3: open GSC → Video indexing report → "Validate Fix" on the failing item. Google recrawls homepage, sees the VideoObject schema is gone, and clears the failure for the 3 affected home URLs.
+
+- [ ] /demo URLs submitted to GSC
+- [ ] "Validate Fix" clicked in Video Indexing report
 
 ---
 
