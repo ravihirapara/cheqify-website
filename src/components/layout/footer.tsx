@@ -12,6 +12,7 @@ const FOOTER_LINKS = [
     links: [
       { labelKey: "nav.features", href: "/features" },
       { labelKey: "nav.pricing", href: "/pricing" },
+      { labelKey: "nav.demo", href: "/demo" },
     ],
   },
   {

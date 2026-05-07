@@ -8,7 +8,8 @@
       "contact": "Contact Us",
       "about": "About Us",
       "glossary": "Cheque Glossary",
-      "amountInWordsTool": "Amount in Words"
+      "amountInWordsTool": "Amount in Words",
+      "demo": "Demo"
     },
     "cta": {
       "startFree": "Start Free",
@@ -33,7 +34,8 @@
       "onlineChequePrinting": "Online Printing",
       "excelFormat": "Excel Format",
       "wordFormat": "Word Format",
-      "punchline": "Every cheque, printed right. Every time."
+      "punchline": "Every cheque, printed right. Every time.",
+      "watchDemo": "Watch Demo"
     },
     "language": {
       "en": "English",
@@ -356,11 +358,11 @@
       "card1Title": "Accessible to Everyone",
       "card1Description": "We believe cheque management should be accessible to every business, regardless of size or budget.",
       "card2Title": "No Hidden Costs",
-      "card2Description": "No hidden costs \u2014 we\u2019re funded to grow, not to charge. You will never see a surprise bill.",
+      "card2Description": "No hidden costs — we’re funded to grow, not to charge. You will never see a surprise bill.",
       "card3Title": "Core is Always Free",
       "card3Description": "Premium features may come later, but the core product you see today will always remain free.",
       "card4Title": "Compare with ChequePot",
-      "card4Description": "Other tools like ChequePot charge for basic cheque printing. Cheqify gives you everything \u2014 for free."
+      "card4Description": "Other tools like ChequePot charge for basic cheque printing. Cheqify gives you everything — for free."
     }
   },
   "about": {
@@ -1204,6 +1206,63 @@
       "faq5Answer": "Cheqify natively handles Indian numbering — lakh, crore, and paise — with auto-fill amount-in-words on every cheque ('Rupees Fifteen Lakh Only'). The format follows RBI guidelines for cheque writing. Chrysanth's amount-in-words is international by default; Indian formatting may need manual setup.",
       "faq6Question": "Is Cheqify CTS 2010 compliant for Indian cheques?",
       "faq6Answer": "Yes. Cheqify is fully CTS 2010 compliant for every Indian bank — correct MICR positioning, magnetic-ink-friendly fonts, valid layout dimensions. Updates push automatically when RBI or a bank changes specifications. Chrysanth uses generic templates that need manual configuration to match each Indian bank's CTS 2010 layout."
+    }
+  },
+  "demo": {
+    "meta": {
+      "title": "Cheqify Demo — Watch Free Cheque Printing Software in Action",
+      "description": "Watch the Cheqify demo and see how Indian businesses print error-free cheques in under 2 minutes. 300+ bank layouts, MICR validation, batch printing — all free."
+    },
+    "breadcrumb": "Demo",
+    "hero": {
+      "badge": "PRODUCT DEMO",
+      "title": "Watch Cheqify in Action",
+      "subtitle": "See how Indian businesses print error-free cheques in under 2 minutes — 300+ bank layouts, MICR validation, and batch printing in one free tool.",
+      "videoTitle": "Cheqify Demo — Free Cheque Printing Software for Indian Businesses",
+      "ctaPrimary": "Start Free",
+      "ctaSecondary": "View Features"
+    },
+    "highlights": {
+      "heading": "What You'll See in the Demo",
+      "subheading": "A 2-minute walkthrough of every core feature",
+      "items": {
+        "item1": {
+          "title": "300+ Bank Layouts",
+          "description": "Pre-configured cheque formats for SBI, HDFC, ICICI, Axis, and 296+ more Indian banks — no setup required."
+        },
+        "item2": {
+          "title": "Auto MICR Validation",
+          "description": "Cheqify validates the 9-digit MICR code automatically before printing, preventing clearance failures."
+        },
+        "item3": {
+          "title": "Amount in Words Engine",
+          "description": "Indian numbering format (lakhs, crores) auto-generated from the digit amount — eliminates handwriting errors."
+        },
+        "item4": {
+          "title": "Batch Printing from Excel",
+          "description": "Import cheque data from Excel or CSV and print hundreds of cheques in minutes — perfect for vendor and salary payments."
+        },
+        "item5": {
+          "title": "Lifecycle Tracking",
+          "description": "Track every issued cheque from print to clear — full audit trail and reconciliation built in."
+        },
+        "item6": {
+          "title": "Multi-User & Multi-Language",
+          "description": "Team access with role-based permissions, available in English, Hindi, and Gujarati."
+        }
+      }
+    },
+    "transcript": {
+      "heading": "Demo Highlights",
+      "p1": "The demo opens with the Cheqify dashboard, where every issued cheque is tracked from print to clearance. From there it walks through creating a new cheque — selecting the bank format from the 300+ pre-configured layouts, entering the payee name and amount, and watching the amount in words auto-fill in Indian rupee format with lakhs and crores.",
+      "p2": "Next is the MICR validation step, where Cheqify checks the 9-digit code against the bank's branch directory and flags any mismatch before the cheque is printed. The print preview shows a pixel-perfect cheque ready for any standard inkjet or laser printer — no special hardware required.",
+      "p3": "The demo finishes with a batch print example — uploading a CSV of 50 vendor cheques and printing them all in under 60 seconds, complete with a unique cheque number assigned to each entry and a full audit trail recorded on the dashboard."
+    },
+    "cta": {
+      "heading": "Try Cheqify Free Today",
+      "subheading": "Every feature you saw — completely free, no credit card.",
+      "ctaPrimary": "Start Free",
+      "ctaSecondary": "See Pricing"
     }
   }
 }
