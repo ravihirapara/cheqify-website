@@ -1,7 +1,7 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-05-06 — observed actual quota = 7/day (lower than the 10-12 estimate)
+**Last updated:** 2026-05-07 — Day 1 + Day 2 done, partial Day 3; resume at `en/cheqify-vs-chrysanth`
 **Total live URLs:** 90 (3 locales × 30 routes)
 **GSC daily quota:** ~7 URL Inspection submissions per property per day (observed)
 **Estimated days to clear:** 12-13 days at observed quota
@@ -20,67 +20,68 @@
 
 ## Quota reality check
 
-Quota observed on 2026-05-06: **7 URLs/day** (not the 10-12 in Google's docs). Plan is rebalanced to 7/day across 11 days. If your quota is higher one day, do extras and pull from the next day's block — just don't double-submit URLs already requested.
+Quota observed:
+- **2026-05-06:** 7 URLs/day (cap hit at 8th URL).
+- **2026-05-07:** 10 URLs/day (Day 2 + 3 from Day 3 went through, capped before `en/cheqify-vs-chrysanth`).
+
+Variance is normal — Google's quota is rolling and account-state-dependent. Plan day blocks are 7 URLs as a conservative baseline; if you get more on a given day, pull from the next day's block (don't double-submit). Resume marker is the first URL **after** the strikethrough.
 
 ---
 
 ## Day 1 — HI/GU SEO landing pages — DONE (7 of 12 submitted, quota hit)
 
 ✅ Submitted on 2026-05-06 before quota cap:
-```
-✓ https://cheqify.app/hi/amount-in-words-tool
-✓ https://cheqify.app/gu/amount-in-words-tool
-✓ https://cheqify.app/hi/online-cheque-printing
-✓ https://cheqify.app/gu/online-cheque-printing
-✓ https://cheqify.app/hi/cheque-printing-excel-format
-✓ https://cheqify.app/gu/cheque-printing-excel-format
-✓ https://cheqify.app/hi/cheque-printing-word-format
-```
+- ~~https://cheqify.app/hi/amount-in-words-tool~~
+- ~~https://cheqify.app/gu/amount-in-words-tool~~
+- ~~https://cheqify.app/hi/online-cheque-printing~~
+- ~~https://cheqify.app/gu/online-cheque-printing~~
+- ~~https://cheqify.app/hi/cheque-printing-excel-format~~
+- ~~https://cheqify.app/gu/cheque-printing-excel-format~~
+- ~~https://cheqify.app/hi/cheque-printing-word-format~~
 
-⏭ Quota hit at this URL — moved to Day 2:
-```
-https://cheqify.app/gu/cheque-printing-word-format
-https://cheqify.app/hi/cheqify-vs-moneyflex
-https://cheqify.app/gu/cheqify-vs-moneyflex
-https://cheqify.app/hi/cheqify-vs-chrysanth
-https://cheqify.app/gu/cheqify-vs-chrysanth
-```
+⏭ Originally deferred to Day 2 — all submitted on 2026-05-07:
+- ~~https://cheqify.app/gu/cheque-printing-word-format~~
+- ~~https://cheqify.app/hi/cheqify-vs-moneyflex~~
+- ~~https://cheqify.app/gu/cheqify-vs-moneyflex~~
+- ~~https://cheqify.app/hi/cheqify-vs-chrysanth~~
+- ~~https://cheqify.app/gu/cheqify-vs-chrysanth~~
 
-- [x] Day 1 done (7 submitted, 5 deferred)
+- [x] Day 1 done (7 submitted, 5 deferred → all cleared on 2026-05-07)
 
 ---
 
-## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs)
+## Day 2 — Carry-over HI/GU landing pages + EN SEO landing — DONE on 2026-05-07
 
-Submit in this order. Stop when GSC reports quota hit.
+✅ All 7 submitted on 2026-05-07:
+- ~~https://cheqify.app/gu/cheque-printing-word-format~~
+- ~~https://cheqify.app/hi/cheqify-vs-moneyflex~~
+- ~~https://cheqify.app/gu/cheqify-vs-moneyflex~~
+- ~~https://cheqify.app/hi/cheqify-vs-chrysanth~~
+- ~~https://cheqify.app/gu/cheqify-vs-chrysanth~~
+- ~~https://cheqify.app/en/amount-in-words-tool~~
+- ~~https://cheqify.app/en/online-cheque-printing~~
 
-```
-https://cheqify.app/gu/cheque-printing-word-format
-https://cheqify.app/hi/cheqify-vs-moneyflex
-https://cheqify.app/gu/cheqify-vs-moneyflex
-https://cheqify.app/hi/cheqify-vs-chrysanth
-https://cheqify.app/gu/cheqify-vs-chrysanth
-https://cheqify.app/en/amount-in-words-tool
-https://cheqify.app/en/online-cheque-printing
-```
-
-- [ ] Day 2 done
+- [x] Day 2 done (all 7)
 
 ---
 
-## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs)
+## Day 3 — EN SEO landing pages + bulk-cheque clean slug (partial — 3/7 done on 2026-05-07)
+
+✅ Submitted on 2026-05-07 (along with full Day 2 block — quota was 10 today, not 7):
+- ~~https://cheqify.app/en/cheque-printing-excel-format~~
+- ~~https://cheqify.app/en/cheque-printing-word-format~~
+- ~~https://cheqify.app/en/cheqify-vs-moneyflex~~
+
+⏭ Quota hit at this point — **resume here on next submission day**:
 
 ```
-https://cheqify.app/en/cheque-printing-excel-format
-https://cheqify.app/en/cheque-printing-word-format
-https://cheqify.app/en/cheqify-vs-moneyflex
 https://cheqify.app/en/cheqify-vs-chrysanth
 https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india
 https://cheqify.app/hi/blog/bulk-cheque-printing-batch-guide-india
 https://cheqify.app/gu/blog/bulk-cheque-printing-batch-guide-india
 ```
 
-- [ ] Day 3 done
+- [ ] Day 3 done (3/7 submitted, 4 deferred)
 
 ---
 
