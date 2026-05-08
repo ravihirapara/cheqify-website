@@ -8,7 +8,6 @@ import { Footer } from "~/components/layout/footer";
 import { TawkTo } from "~/components/layout/tawk-to";
 import { CookieConsent } from "~/components/layout/cookie-consent";
 import { GoogleAnalytics } from "~/components/layout/google-analytics";
-import { GoogleAdsense } from "~/components/layout/google-adsense";
 import { PostHogProvider } from "~/components/layout/posthog-provider";
 
 interface LocaleLayoutProps {
@@ -42,6 +41,11 @@ export default async function LocaleLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://embed.tawk.to" />
         <link rel="dns-prefetch" href="https://embed.tawk.to" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7192327503479654"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <PostHogProvider>
@@ -55,7 +59,6 @@ export default async function LocaleLayout({
               <CookieConsent />
               <TawkTo />
               <GoogleAnalytics />
-              <GoogleAdsense />
             </NextIntlClientProvider>
           </ThemeProvider>
         </PostHogProvider>
