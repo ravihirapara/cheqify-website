@@ -43,7 +43,7 @@ After submitting all 3: open GSC → Video indexing report → "Validate Fix" on
 
 ---
 
-## Day 1 — HI/GU SEO landing pages — DONE (7 of 12 submitted, quota hit)
+## Day 1 — HI/GU SEO landing pages (7 of 12 submitted, quota hit)
 
 ✅ Submitted on 2026-05-06 before quota cap:
 ```
@@ -69,7 +69,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs) — DONE
+## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs)
 
 - ~~https://cheqify.app/gu/cheque-printing-word-format~~
 - ~~https://cheqify.app/hi/cheqify-vs-moneyflex~~
@@ -83,7 +83,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs) — DONE
+## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs)
 
 - ~~https://cheqify.app/en/cheque-printing-excel-format~~
 - ~~https://cheqify.app/en/cheque-printing-word-format~~
@@ -97,7 +97,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 4 — Lifecycle blog (3 locales) + money-page locales (7 URLs) — DONE
+## Day 4 — Lifecycle blog (3 locales) + money-page locales (7 URLs)
 
 - ~~https://cheqify.app/en/blog/cheque-lifecycle-management-explained~~
 - ~~https://cheqify.app/hi/blog/cheque-lifecycle-management-explained~~
@@ -111,7 +111,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 5 — Money pages (pricing/comparison) + homepages (7 URLs) — DONE
+## Day 5 — Money pages (pricing/comparison) + homepages (7 URLs)
 
 - ~~https://cheqify.app/hi/pricing~~
 - ~~https://cheqify.app/gu/pricing~~
@@ -125,7 +125,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 6 — Homepage GU + about/contact (7 URLs) — DONE
+## Day 6 — Homepage GU + about/contact (7 URLs)
 
 - ~~https://cheqify.app/gu~~
 - ~~https://cheqify.app/en/about~~
@@ -139,7 +139,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 7 — Glossary + blog index (7 URLs) — DONE
+## Day 7 — Glossary + blog index (7 URLs)
 
 - ~~https://cheqify.app/en/glossary~~
 - ~~https://cheqify.app/hi/glossary~~
@@ -165,7 +165,7 @@ https://cheqify.app/hi/blog/how-to-print-cheque-in-india
 https://cheqify.app/hi/blog/how-to-reconcile-cheques-with-bank-statements
 ```
 
-- [ ] Day 8 done
+- [ ] Day 8
 
 ---
 
@@ -181,7 +181,7 @@ https://cheqify.app/gu/blog/cheque-bounce-reasons-and-solutions
 https://cheqify.app/gu/blog/how-to-avoid-cheque-fraud-in-india
 ```
 
-- [ ] Day 9 done
+- [ ] Day 9
 
 ---
 
@@ -197,7 +197,7 @@ https://cheqify.app/gu/blog/cheque-printing-mistakes-indian-businesses
 https://cheqify.app/gu/blog/best-free-cheque-printing-software-india
 ```
 
-- [ ] Day 10 done
+- [ ] Day 10
 
 ---
 
@@ -216,7 +216,7 @@ https://cheqify.app/hi/terms
 https://cheqify.app/gu/terms
 ```
 
-- [ ] Day 11 done
+- [ ] Day 11
 
 ---
 
