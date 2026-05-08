@@ -81,35 +81,45 @@ Paste the following into Sanity's Body (English) rich text editor. Use heading b
 
 ### [H2] What "Cheque Number" Actually Means
 
-The **cheque number** is the unique 6-digit serial printed in the **top-left corner** of every cheque leaf in your cheque book. It identifies that one specific cheque — and only that cheque — across every system that touches it: your bank's clearing system, your books, the receiving bank's records, and any audit trail that asks "which cheque was this?"
+Pull out a cheque from your HDFC or SBI cheque book. Look at the top-left corner. That little 6-digit number? That's your cheque number.
 
-If you have a 50-leaf cheque book, the cheque numbers run sequentially — say, `008473`, `008474`, `008475`, all the way through `008522`. The bank assigns these when it issues your cheque book, and no two cheques in India ever carry the same number on the same account.
+Most people never give it a second glance.
 
-Most Indian SMBs glance at the cheque number once when writing a cheque and never think about it again — until something goes wrong. Then it suddenly becomes the single most important number on the page.
+Then a vendor in Surat calls saying the payment never arrived, or a stop-payment goes wrong, or an auditor wants the supporting cheque from three years ago. Suddenly that little number is the only thing that matters on the page.
 
-### [H2] Where Exactly Is the Cheque Number on the Cheque?
+The cheque number is a unique serial. One per cheque. It identifies exactly one cheque on your account, and no other. Your bank uses it. The receiving bank uses it. The clearing house uses it. Your books should use it too, but most SMBs we talk to don't bother tracking it. We'll get to why that's a problem.
 
-Stand a fresh cheque from any Indian bank in front of you. The cheque number is in **two places**:
+If you've got a 50-leaf cheque book, the numbers run straight through. Say your book opens at `008473`. The next leaf is `008474`, then `008475`, and so on, all the way to `008522` on leaf number 50. When the book finishes, the bank issues you a fresh book starting at `008523`. The numbering never resets. You'll never see `008473` again on that account, ever.
 
-1. **Top-left corner**, printed in regular ink — usually 6 digits, sometimes preceded by a short bank code (e.g., `001 008473`).
-2. **Inside the MICR band at the bottom**, printed in the special MICR-readable font, as the **first** field — before the city code, the bank/branch code, and the account-type code.
+That's the rule. One number, one cheque, forever.
 
-Both versions are the same number. The visible top-left version is for humans (you, the payee, the teller). The MICR-band version is for automated cheque sorters at the clearing house. We've covered the [MICR code in detail in a separate guide](https://cheqify.app/en/blog/what-is-micr-code-on-cheque) — the cheque number is one of the four fields encoded in that band.
+### [H2] Where Exactly Is the Cheque Number Printed?
+
+Two places. Look once at the top-left of any Indian bank cheque — HDFC, ICICI, Axis, Kotak, doesn't matter. You'll see the cheque number there in regular ink. Sometimes it's bare 6 digits. Sometimes the bank adds a 3-digit series prefix and prints it as `001 008473`. Same number, just dressed up.
+
+Now flip your eyes to the bottom of the cheque. See that thin band of weird-looking digits? That's the MICR band. The cheque number is printed there too — but in a special font that machines can read. It's the first field in that band, before the city code, bank code, and account-type code.
+
+Why two places? Because two different readers need it. The top-left version is for you and the teller and the payee. The MICR band version is for the high-speed sorting machines at the clearing centre that process millions of cheques a night.
+
+We've covered the [MICR code in detail in a separate guide](https://cheqify.app/en/blog/what-is-micr-code-on-cheque) if you want to dig into how that band works. For now, just know: cheque number sits in both spots, and both versions are identical.
 
 ### [H2] What Format Does the Cheque Number Follow?
 
-Standard Indian retail and current-account cheque books use a **6-digit serial**. Some banks add a 3-digit prefix as a series indicator (so the full printed string can look like `001 008473`), but the cheque-number portion is always 6 digits.
+In India, every standard retail or current-account cheque book uses a **6-digit serial**. Pretty much across the board. HDFC, SBI, Axis, Yes Bank, Bank of Baroda, all of them.
 
-Two important properties:
+Some banks slap a 3-digit prefix on top as a series indicator, which is why you'll occasionally see `001 008473` printed on the cheque. The 6-digit part is what counts.
 
-- **Sequential within a book.** If your book starts at `008473`, the leaves go `008473 → 008522` (50 leaves) or `008473 → 008572` (100 leaves). Skipped numbers are a red flag — usually an extracted leaf.
-- **Unique within an account, forever.** When a cheque book is exhausted and the bank issues a new one, numbering picks up from where the last book ended (e.g., next book starts at `008523`). Cheque numbers do not reset to zero, do not repeat across books, and stay associated with that account for retention purposes.
+Two things you should know:
 
-This is why a cheque number, on its own, is enough to uniquely identify a cheque — you don't need date, amount, or payee to look it up.
+**Sequential inside the book.** Open your cheque book to the first leaf. Note the number. Now flip to the last leaf. The numbers should run unbroken between them. If you see a gap, something's wrong. Either a leaf got torn out, or your book has a printing defect — and either way, call your branch.
 
-### [H2] Cheque Number vs MICR vs IFSC vs Account Number — Side by Side
+**Unique forever, per account.** A cheque number doesn't reset when the book runs out. Your next book picks up where the old one ended. If your last book ended at `008522`, your new book starts at `008523`. There is no `008473` happening twice on your account, period.
 
-The single biggest source of confusion. They are all printed on the same piece of paper but mean very different things.
+That's actually pretty useful. It means a cheque number, all on its own, is enough to look up exactly one cheque. You don't need the date. You don't need the amount. You don't need the payee name. Six digits, and the bank can pull the record.
+
+### [H2] Cheque Number vs MICR vs IFSC vs Account Number — The Side-by-Side
+
+This is where 9 out of 10 people get confused. All four numbers live on the same piece of paper. They mean completely different things.
 
 | Number | What it identifies | Where on the cheque | Length |
 |---|---|---|---|
@@ -118,65 +128,80 @@ The single biggest source of confusion. They are all printed on the same piece o
 | **IFSC code** | The branch (used for NEFT / RTGS / IMPS, not clearing) | Top of cheque, near branch name | 11 alphanumeric |
 | **Account number** | Your account at that branch | Pre-printed on the cheque, usually below the payee line | 9–18 digits |
 
-Quick check the next time someone asks: cheque number = the cheque, MICR = the branch (for clearing), IFSC = the branch (for digital transfers), account number = the customer at that branch.
+If someone ever asks you to explain it, here's the cheat code: cheque number = the cheque itself. MICR = the branch (for clearing). IFSC = the branch (for digital transfers like NEFT). Account number = you, the customer.
 
-### [H2] How Banks Use the Cheque Number
+Four numbers, four jobs. Different jobs. Don't mix them up.
 
-When you write a cheque and the payee deposits it, the cheque number is the field the bank's systems hash on at every step:
+### [H2] How Banks Actually Use the Cheque Number
 
-- **Clearing.** The MICR sorter reads the cheque number first, looks up your account, and queues the cheque for honour or return.
-- **Stop-payment.** When you instruct the bank to stop payment on cheque number `008473`, the cheque-number field is what the bank flags. If you give the wrong number — say `008374` — the bank stops the wrong cheque, and the right one still clears.
-- **Bounce returns.** A returned/bounced cheque is recorded against its number. Section 138 notices cite the cheque number, the date, and the amount — the number is the single most important field of the three. We covered the [Section 138 process in depth here](https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india).
-- **Audit and reconciliation.** When your bank statement says "ChqNo 008473 cleared 12/05/2026 ₹50,000," the number is what your books match against to confirm reconciliation. We've gone deep on [reconciliation mechanics](https://cheqify.app/en/blog/how-to-reconcile-cheques-with-bank-statements).
+Every step of a cheque's life inside the banking system runs on the cheque number. It's the field the bank's systems hash on. Honestly, calling it the "primary key" of a cheque is the most accurate way to think about it.
 
-In every one of those flows, the bank treats the cheque number as the **primary key**. Get it wrong and the wrong cheque gets touched.
+**Clearing.** When the receiving bank deposits your cheque, the MICR sorter reads the cheque number first. It uses that number to find your account, check the balance, and either honour or return the cheque. If your cheque clears, your books should reflect it on the same number.
 
-### [H2] When the Cheque Number Suddenly Matters to You
+**Stop-payment.** Say you wrote cheque `008473` to a vendor and now want to stop it. You walk into the branch, fill the form, write `008473`. The bank flags that exact number. If you accidentally write `008374` — easy mistake, similar digits — the bank stops the wrong cheque. The right one keeps going. Verify your number twice before submitting a stop-payment request. We've covered this end-to-end in our [stop-payment guide](https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india).
 
-Most days, you don't think about it. Then one of these happens:
+**Bounce records.** When a cheque bounces, the bank logs it against its number. If the vendor sues you under [Section 138 of the NI Act](https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india), the demand notice and the eventual case papers reference the cheque number, the amount, and the date. Of those three, the cheque number is the most important. The amount can be disputed. The date can be argued. The cheque number cannot.
 
-**A cheque goes missing.** You wrote it, you're not sure if you posted it, you can't find the carbon copy. The first thing the bank asks is "what's the cheque number?" Without that, no stop-payment, no investigation. We've covered the formal process in our [cheque validity and stop-payment guide](https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india).
+**Audit and reconciliation.** Your bank statement comes in. It says `ChqNo 008473 cleared 12/05/2026 ₹47,500`. You match that against your books on the cheque number. Tally? Done. Mismatch? You've got a reconciliation problem to investigate. We've written about [the full reconciliation flow](https://cheqify.app/en/blog/how-to-reconcile-cheques-with-bank-statements) for SMBs who want to get this right.
 
-**A vendor claims they never received your payment.** "What's the cheque number you issued?" If your books only say "₹50,000 to Suresh on 12 April" — and not the cheque number — you can't prove which cheque, when it cleared, or whether it cleared at all.
+The bank doesn't care about your internal voucher numbers. It cares about the cheque number. Match on that, or you're going to spend hours every month doing manual reconciliation that should take minutes.
 
-**An auditor pulls a sample.** "Show me the supporting cheque for this payment voucher." The reverse lookup runs through cheque number. A payment voucher without a cheque number is half-evidence.
+### [H2] When the Cheque Number Suddenly Becomes Critical
 
-**Cheque fraud or duplicate issuance.** When a fraud investigation starts, every conversation reduces to cheque numbers. We wrote the [cheque fraud playbook](https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india) on this.
+You're not going to think about cheque numbers most days. Then a Tuesday morning rolls around and one of these happens.
 
-In each of these moments, the cheque number is the field that makes a fast resolution possible — or impossible if you didn't capture it.
+**A cheque goes missing.** You wrote `008473` to a Pune vendor on the 12th. It's the 19th and they're calling, payment hasn't shown up. You're not sure if you posted it, gave it to a peon, or left it in your drawer. The bank's first question, every time: "What's the cheque number?" If you can't answer, no stop-payment instruction, no investigation, no nothing.
 
-### [H2] How Cheqify Uses the Cheque Number
+**A vendor claims they never got paid.** "Sir, payment kahan hai?" If your books only say "₹47,500 paid to Suresh Textiles, 12 April" — without the cheque number — how do you prove which cheque, whether it was cashed, or whether it's still floating? You can't. You're stuck calling the bank, asking them to dig through your statement, hoping to spot the right one.
 
-In Cheqify, the cheque number is captured on every cheque you issue and becomes the searchable identifier across the full lifecycle. Specifically:
+**An auditor pulls a sample.** Three years after the fact, the CA shows up. "I want supporting documents for this payment voucher." The reverse lookup runs on the cheque number. No cheque number? Half your evidence is missing. Auditors notice this. So do tax assessing officers under Section 133(6) inquiries.
 
-- **Auto-increment.** When you start a new cheque book in Cheqify, you set the starting cheque number once. Every cheque you print or write to the system after that increments automatically — no chance of skipping or duplicating.
-- **Searchable register.** Type `008473` into the search bar and Cheqify pulls up the full record — payee, amount, date, status, who authorized, when it was printed.
-- **Status pipeline.** The cheque number is tied to a status — drafted, printed, dispatched, presented, cleared, bounced, stopped — that you update as the cheque moves. This is the [end-to-end lifecycle approach](https://cheqify.app/en/blog/cheque-lifecycle-management-explained) we built the product around.
-- **Reconciliation match.** Bank statements list cheque numbers. Cheqify matches against the issued register on cheque number, automatically, instead of you doing line-by-line reconciliation.
-- **Audit retrieval.** Three years later, an auditor asks for cheque `008473`. It's a search, not a hunt through a steel almirah.
+**Cheque fraud surfaces.** When fraud kicks in — a duplicate cheque, a forged signature, an unauthorized issue — every conversation reduces to numbers. Which cheque was issued? Who authorized it? When did it print? When did it clear? Without numbers, fraud becomes impossible to prove. We wrote the [cheque fraud playbook](https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india) on this.
 
-If you've been managing cheque numbers in a spreadsheet column, the upgrade to Cheqify is small but the audit-resilience gain is significant.
+Bottom line: the moment something goes wrong, the cheque number is the only thing the bank, the auditor, the lawyer, and the police care about.
 
-### [H2] Common Myths About the Cheque Number
+### [H2] How Cheqify Handles Cheque Numbers
 
-**"The cheque number and the MICR code are the same thing."** No. The MICR code is the 9-digit branch identifier; the cheque number is the 6-digit cheque identifier. They sit next to each other in the MICR band, which is why they get confused.
+We built Cheqify around this exact pain point. Tracking cheque numbers in spreadsheets is how SMBs lose them.
 
-**"You can reuse a cheque number."** No. Within a single account, every cheque number is unique forever. Banks never reuse a cheque-book serial.
+Here's how the product handles it.
 
-**"If I lose the carbon copy, I've lost the cheque number too."** Only if the cheque book is also gone. Many SMBs forget that the **un-used** leaves still in the book carry the next-up cheque numbers — so by inspecting the book, you can usually deduce which numbers were issued.
+**Auto-increment when you start a new book.** When your old book runs out and you grab a new one, you tell Cheqify the starting number once. Every cheque after that increments automatically. No skipping. No duplicates. No "wait, what was the last number I used?" moments.
 
-**"The bank can't trace a cheque without the date and amount."** They can — cheque number alone is sufficient because it's the primary key. Date and amount are useful confirmations, not requirements.
+**Searchable register, instantly.** Type `008473` into the search bar. The full record pops up — payee, amount, date, status, who authorized it, when it was printed. Three years from now, when an auditor asks for that cheque, this is a 5-second lookup, not a 30-minute hunt through a steel almirah.
 
-**"I don't need to track cheque numbers; my bank has them."** Your bank has them, but only for cheques that *cleared*. Drafts you started, printed, but never dispatched — those exist only in your records, identified by their cheque numbers. If you don't track them, you lose visibility into the most fraud-prone segment.
+**Status pipeline.** Every cheque number lives in a status: drafted, printed, dispatched, presented, cleared, bounced, stopped. You update the status as life happens. This is the [end-to-end cheque lifecycle](https://cheqify.app/en/blog/cheque-lifecycle-management-explained) approach we believe makes cheque ops sane.
+
+**Auto-match against bank statements.** Upload your statement, Cheqify matches each line against your issued register on cheque number. What used to take half a Saturday now takes 30 seconds.
+
+**Audit-ready exports.** When the CA asks, you export. Done.
+
+If you've been doing this in a Tally column, an Excel sheet, or a paper register, switching to Cheqify is a small change. The pay-off shows up the day something goes wrong, which inevitably it will.
+
+### [H2] Common Myths About the Cheque Number (And the Truth)
+
+We hear these over and over. Let's clear them up.
+
+**"Cheque number and MICR code are the same."** No, completely different. MICR is a 9-digit branch identifier. Cheque number is a 6-digit cheque identifier. They sit next to each other in the MICR band at the bottom, which is why so many people mix them up.
+
+**"You can reuse a cheque number after some time."** Nope. Within a single account, every cheque number is permanent. The bank never recycles a number. If your book ended at `008522`, your next book starts at `008523`. The number `008473` exists for one cheque on your account, ever.
+
+**"If I lose the carbon copy, I've lost the number."** Only if you lost the cheque book too. The unused leaves still sitting in your book carry the next-up cheque numbers. By looking at the book, you can usually figure out which numbers got issued and which didn't. Pro tip: write the cheque number in your accounting software the moment you write the cheque, not later. Memory is unreliable.
+
+**"The bank can't trace a cheque without the date and amount."** Yes, they can. The cheque number is enough. Date and amount are useful confirmations, not requirements. We've heard branch staff say "Sir, date toh do" — that's just because dates make their search faster, not because the system needs it.
+
+**"My bank tracks cheque numbers, so I don't need to."** Your bank tracks the cheques that *cleared*. The drafts you started, the cheques you printed but never dispatched, the ones the courier lost — those exist only in your records. The fraud-prone segment of the cheque lifecycle is exactly the segment your bank does NOT see. So if you're not tracking, that segment is invisible.
 
 ### [H2] Quick Reference
 
-- The cheque number is the 6-digit serial in the top-left corner of every cheque, repeated in the MICR band at the bottom.
-- It uniquely identifies one specific cheque on your account, forever.
-- It's distinct from MICR (branch identifier), IFSC (digital-transfer branch identifier), and account number.
-- Banks use it as the primary key for clearing, stop-payment, bounces, and reconciliation.
-- Capturing it in your own records — not just on the cheque — is the difference between fast incident resolution and slow forensics.
-- Cheqify auto-captures and auto-increments cheque numbers across the [full cheque lifecycle](https://cheqify.app/en/blog/cheque-lifecycle-management-explained), so this stops being something you have to remember to do.
+For when you forget everything else and just need the gist:
+
+- The cheque number is the 6-digit serial in the top-left corner of every cheque, repeated in the MICR band at the bottom. Same number, two places.
+- It identifies one specific cheque on your account, forever. Banks never reuse it.
+- Don't confuse it with MICR (9-digit branch code), IFSC (11-character branch code for digital transfers), or your account number (9-18 digits).
+- Banks use the cheque number as the primary key for everything: clearing, stop-payment, bounces, audit trail, fraud investigation.
+- Capturing it in your own books — not just on the cheque — is the difference between a 5-minute fix and a 5-hour forensic exercise when something goes wrong.
+- Cheqify auto-captures and auto-increments cheque numbers across the [full cheque lifecycle](https://cheqify.app/en/blog/cheque-lifecycle-management-explained), so you stop having to remember.
 
 ---
 

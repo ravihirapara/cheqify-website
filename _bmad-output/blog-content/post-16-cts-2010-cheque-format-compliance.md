@@ -81,110 +81,146 @@ Paste the following into Sanity's Body (English) rich text editor. Use heading b
 
 ### [H2] What CTS 2010 Actually Is
 
-**CTS 2010** stands for **Cheque Truncation System 2010** — the standardised cheque format and processing system that the Reserve Bank of India (RBI) made mandatory across the country. "Truncation" here means the physical cheque does not have to travel from the receiving bank to the issuing bank for clearance; instead, an electronic image of the cheque is captured and sent. Faster clearing, less paper movement, lower fraud surface.
+You've probably seen "CTS 2010 compliant" stamped on cheque software pitches, RBI circulars, and bank notices for years. Most people nod along without ever being told what it actually means.
 
-For every Indian business that issues cheques, CTS 2010 sets out two things: (1) the **physical specifications** every printed cheque must meet so that scanners can read it reliably, and (2) the **security features** every cheque must carry so that an electronic image can be relied upon as a valid instrument. Non-compliant cheques are returned by the clearing house — meaning the cheque doesn't bounce, it simply isn't processed.
+Here's the short version. **CTS 2010** stands for **Cheque Truncation System 2010**. RBI rolled it out as the country's standard cheque format and clearing pipeline. The word "truncation" is doing the heavy lifting here. It means the physical cheque doesn't have to travel from the bank where it was deposited to the bank where it was drawn. Instead, the receiving bank captures a high-resolution image of the cheque and sends that to the issuing bank. The paper stops at the receiving end. Only the image moves.
 
-If you've heard "CTS 2010 compliant" thrown around in cheque-software pitches and never been told what it actually checks for, this post is the answer.
+That tiny shift — image instead of paper — changed everything about how cheques clear in India.
+
+For SMBs writing or printing cheques, CTS 2010 boils down to two things. One, the physical specs every printed cheque has to meet so scanners can read it without errors. Two, the security features every cheque has to carry so the captured image can stand up as a legally valid instrument.
+
+If your cheque doesn't pass both, the clearing house won't process it. Note: not bounce. Just won't process. Different problem, same headache.
 
 ### [H2] Why RBI Mandated CTS 2010
 
-Before CTS, every cheque physically travelled from the depositing bank's branch to the issuing bank's branch. A cheque deposited in Mumbai drawn on an SBI branch in Chennai would clear in five to seven business days. Multiply that by the volume of cheques in circulation, and the entire banking system was carrying a paper backlog measured in tons.
+Before CTS, the system was a nightmare to operate.
 
-CTS 2010 fixed three problems at once:
+Imagine you deposit a cheque at HDFC Mumbai drawn on an SBI Chennai branch. That paper had to be physically couriered to Chennai. The Chennai branch checks signature, balance, the works. Then a confirmation comes back. Best case? Five business days. Worst case? Seven, eight, sometimes ten if the courier got delayed.
 
-- **Speed.** With the image-based clearing model, T+1 became achievable for most cheques. Same-region clearing dropped to a single business day.
-- **Fraud.** The standardised security features made it harder to forge cheques and easier to detect alteration. Because banks now relied on captured images, the security features had to survive scanning — that's why CTS 2010 specifies things like void pantographs and ultra-violet ink.
-- **Cost.** Physical movement, sorting, and storage of cheques was a major operational expense. CTS 2010 collapsed it into a digital pipeline.
+Now multiply that by the millions of cheques flying around the country every week. The volume of paper moving through the banking system was, literally, measured in tons. Storage rooms full of cheques. Risk of loss, fraud, and damage all up.
 
-The full rollout was completed by 2013, but the format spec is still called CTS 2010 because that's when RBI issued it.
+CTS 2010 attacked three problems at the same time.
+
+**Speed got fixed.** Image-based clearing brought T+1 to most cheques. Same-region clearing dropped to a single business day. A cheque deposited Monday morning at your Indore branch would clear by Tuesday end-of-day, even if the issuing bank was in Kolkata.
+
+**Fraud got harder.** When clearing relies on a scanned image, the security features have to be visible AND have to survive scanning. So RBI specified things that defeat photocopiers — the void pantograph, the UV ink, the embedded watermark. None of these worked in the old system because the original paper was right there. They became necessary the moment images replaced paper.
+
+**Costs collapsed.** All that physical sorting, courier, storage? Gone. Replaced with a digital pipeline that runs on standard hardware.
+
+Full rollout finished by April 2013. The format spec still wears the "2010" tag because that's when RBI first published it (RBI circular DPSS.CO.CHD.No. 1671/04.07.05/2009-10, for the compliance nerds).
 
 ### [H2] The Six Security Features That Define a CTS-2010 Cheque
 
-Every cheque your bank gives you in 2026 already carries these — banks do not issue non-compliant cheque books anymore. But you'll see these features called out repeatedly in any cheque-software brochure, so it pays to know what each one is and why it's there.
+Every cheque your bank gives you in 2026 already carries these. Banks stopped issuing non-compliant books years ago. But because every cheque-printing tool brochure namedrops these features, you should know what each one does and why it's there.
 
 #### [H3] 1. CTS-INDIA Watermark
 
-A watermark spelling **CTS-INDIA** is embedded into the cheque paper itself, visible against light. This is a paper-level security feature — it cannot be photocopied or reproduced by a desktop printer. Anyone trying to forge a cheque from blank paper will fail this check immediately.
+Hold a cheque up against your laptop screen. Or any bright source of light. You'll see the word **CTS-INDIA** faintly visible in the paper itself.
+
+That's the watermark, and it's baked into the paper at the mill before the cheque book gets printed. You can't photocopy it. You can't laser-print it. Anyone trying to forge a cheque from a blank A4 sheet fails this test before they even start. It's the most basic anti-forgery layer.
 
 #### [H3] 2. Printer's Name in Ultra-Violet (UV) Ink
 
-The cheque printer's name appears in ink that is invisible under normal light but glows under a UV lamp. Banks and large clearing houses scan with UV-equipped readers. Cheques from unauthorised printers fail this check.
+There's a small line of text on every cheque — the name of the security printer who printed the leaf — that you can't see in normal light. Stick a UV lamp on it and the text glows. RBI maintains a list of authorised cheque printers. The bank's clearing house has UV-equipped scanners that check this on every cheque image.
+
+A cheque from an unauthorised printer fails this check. The clearing system sends it back without explanation.
 
 #### [H3] 3. Void Pantograph
 
-A faint **VOID** or **COPY** word appears across the cheque background. On the original cheque it's nearly invisible. The moment someone photocopies the cheque, the pattern resolves into the readable word "VOID" or "COPY", flagging the photocopy as a duplicate.
+This one's clever. Across the background of every cheque, there's a pattern designed to look uniform to your naked eye. But the pattern is actually two interlocking dot-densities. When you photocopy the cheque, the photocopier can only resolve one of the densities. The other becomes the word **VOID** or **COPY**, written in big letters across the duplicate.
+
+So if a fraudster photocopies your cheque hoping to deposit the duplicate, the moment the bank scans it, "VOID" appears written across the page. Game over.
 
 #### [H3] 4. MICR Band at the Bottom
 
-The bottom of every cheque carries a **9-digit MICR code** plus the cheque number, account-type code, and other routing fields, all printed in magnetic ink readable by automated sorters. We covered the [MICR code in detail in a separate guide](https://cheqify.app/en/blog/what-is-micr-code-on-cheque) — the exact field layout is part of the CTS 2010 spec.
+The bottom strip of every Indian cheque carries the **9-digit MICR code**, the cheque number, the account-type code, and a few other routing fields. All printed in magnetic ink that automated sorters read at thousands of cheques per minute.
+
+We've gone deep on the [MICR code in a separate guide](https://cheqify.app/en/blog/what-is-micr-code-on-cheque) if you want the full breakdown. The CTS 2010 spec defines exactly which digits go where, with what spacing, and in what font. No exceptions.
 
 #### [H3] 5. Standardised Field Positions
 
-Payee name, amount in figures, amount in words, date, signature — every field on a CTS 2010 cheque is in a **standard pixel position** so that automated extraction works. This is why aligning the layout on your bank's blank cheque is non-trivial — get the alignment wrong, and the cheque will be flagged at clearing.
+This is the spec that screws up most "we built our own cheque software" attempts.
 
-This is also why we wrote a [step-by-step printing workflow](https://cheqify.app/en/blog/how-to-print-cheque-in-india) — half of "successful printing" is matching the field positions exactly.
+Payee name, amount in figures, amount in words, date, signature — every one of these fields has to land at a specific pixel position on the cheque. Not "approximately." Specific. The clearing house's image-extraction software looks for the amount field at coordinates X,Y on every cheque. If your printer dropped the figure off by 3mm, extraction fails, and the cheque gets flagged.
+
+This is why we wrote a [step-by-step printing workflow](https://cheqify.app/en/blog/how-to-print-cheque-in-india). Half the battle of printing cheques in India is just getting the alignment exactly right, every time, on every printer.
 
 #### [H3] 6. Bank Logo and Branch Information in Standard Format
 
-Bank name, logo, and branch address appear in a fixed position with a fixed minimum size, so the captured image is unambiguous. Custom layouts that move the bank logo around fail this requirement.
+Bank name, logo, branch address — all of these have minimum size requirements and fixed positions. Banks that move their logo around or shrink it fail. So do cheques where someone got cute with branch-name placement.
+
+Boring? Yes. Important? Also yes. The clearing house treats this as a yes/no check.
 
 ### [H2] When Indian SMBs Need to Worry About CTS 2010
 
-The honest answer for most SMBs: **almost never** — your bank already issues compliant cheque books. The compliance worry only kicks in when you start *printing* cheques, not just writing them.
+For most SMBs, the truthful answer is: **almost never**.
 
-Here's the decision tree:
+Your bank handed you compliant cheque books on day one. As long as you write or print on those leaves, the leaf side of compliance is already done. You don't have to think about it.
 
-**Hand-written cheques on bank-issued cheque books.** No compliance worry. The leaf is already CTS-2010 compliant; you're just filling in fields.
+The worry only kicks in the moment you start *printing* cheques instead of just writing them. Then a different question shows up: is your printing software respecting the leaf, or is it stomping all over the security features?
 
-**Printed cheques on bank-issued cheque books (i.e., the leaf has the watermark, UV print, etc., and you're printing fields onto it).** Compliance worry shifts entirely to your **printing software**. The leaf is compliant; the question is whether the software prints fields in the standardised positions, with the right alignment, and without overprinting any of the security features. We've covered the [common printing mistakes that break this](https://cheqify.app/en/blog/cheque-printing-mistakes-indian-businesses) in detail.
+Here's the decision tree we walk customers through.
 
-**Bulk-printed cheques for high-volume operations.** Same compliance as single printed cheques, applied across multiple cheques in one print run. The risk is that one mis-aligned cheque in a batch of 50 contaminates the run. Our [bulk batch-printing guide](https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india) walks through how to verify alignment before running the full batch.
+**You hand-write cheques on your bank's cheque book.** No compliance to worry about. The leaf is already compliant. You're just filling in payee name, amount, signature. Done.
 
-**"Custom-printed" cheques (i.e., printing on blank paper, not bank-issued leaves).** Generally not allowed for retail SMBs. Some corporate customers with RBI-approved arrangements can print full cheques on demand from a bank-supplied authorised printer, but this is a regulated process. If anyone offers you "we'll print your full cheque from blank paper" without bank authorisation, walk away — the cheque won't be honoured at clearing.
+**You print cheques on bank-issued cheque books.** Now compliance shifts entirely to your printing software. The leaf has the watermark, the UV printer name, the void pantograph, the works. The question is: does your software print fields in the right positions, with the right alignment, and without dropping ink on any of the security features? Get this wrong and you've broken a compliant leaf. We covered the [printing mistakes that break this](https://cheqify.app/en/blog/cheque-printing-mistakes-indian-businesses) in detail.
+
+**You bulk-print cheques in batches of 50 or 100.** Same compliance question, scaled up. The new risk: one misaligned cheque can ruin a whole batch run. Our [bulk batch-printing guide](https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india) walks through how to verify alignment before you commit a full batch.
+
+**Someone offers to "print your cheque from blank paper."** Walk away. Right now. For retail SMBs, printing full cheques on blank paper is not allowed. Some corporates with RBI-approved on-demand cheque printing arrangements can do this through bank-authorised printers, but that's a regulated setup with paperwork and audits. If a vendor is offering it without that backing, the cheque won't honour at clearing — and you'll be the one explaining why to your vendor.
 
 ### [H2] What "CTS 2010 Compliant Software" Actually Has to Do
 
-When a cheque-printing tool calls itself "CTS 2010 compliant," it's making three specific claims:
+Every cheque-printing tool on the market calls itself "CTS 2010 compliant." Most don't explain what they mean. Here's what compliance actually requires from the software side.
 
-1. **Field positions are accurate to the bank's specific layout.** Different banks position fields slightly differently within the CTS 2010 envelope. Compliant software has the exact layout for every Indian bank you operate with.
-2. **Printing does not overprint security features.** The void pantograph, UV markings, and MICR band must remain undisturbed. Printing software that drops ink on those zones makes the cheque non-compliant even if the leaf was.
-3. **MICR-zone fields are not modified.** The MICR band carries fields the bank pre-prints. Software that prints into the MICR band — or near it in a way that interferes with the magnetic read — fails compliance.
+**Field positions match the bank's specific layout.** Different banks place fields slightly differently within the CTS 2010 envelope. SBI's amount-in-figures box is in a different spot than HDFC's. ICICI does the date in a slightly different position than Axis. Compliant software stores the exact layout for every bank you write cheques on. Generic "one layout fits all" tools fail this on most banks.
 
-These are software-side checks, not paper-side. The cheque leaf is already compliant when your bank issued it; your software's job is to *not break* the compliance.
+**Printing leaves the security features alone.** Void pantograph, UV-ink printer name, watermark zones, MICR band — these areas of the cheque are reserved. The software must never drop ink on them. Even one stray pixel into the void pantograph zone breaks compliance, because it can interfere with the photocopy-detection pattern.
 
-### [H2] How Cheqify Ensures CTS 2010 Compliance
+**MICR-zone fields stay untouched.** The MICR band has fields the bank pre-printed when it issued the book. Your software has no business writing into that band. Software that does — or even prints close enough to it that the magnetic read gets confused — fails compliance hard. This is the most common compliance failure we see in DIY printing setups.
 
-The product was built India-first, so CTS 2010 is treated as a baseline rather than a feature.
+These are all software-side checks. The cheque leaf is already compliant. Your software's only job is: *don't break it*.
 
-- **30+ Indian bank templates** with field positions calibrated per bank — SBI, HDFC, ICICI, Axis, Kotak, PNB, BOB, Canara, BOI, IDBI, Yes Bank, IndusInd, Federal, IDFC First, RBL, AU Small Finance, and more. Each template respects the CTS 2010 envelope.
-- **Alignment calibration tool** so you verify the field positions on a test print before issuing real cheques. We've made calibration a one-time setup per bank per printer.
-- **Reserved zones** the printer never touches — the void pantograph area, UV-ink zones, watermark zones, and MICR band stay untouched in every print.
-- **MICR-band field validation** — Cheqify validates the bank, branch, and cheque-number portions before letting you print. Wrong MICR data won't ship to the printer.
-- **Audit log** of every printed cheque — including the bank template version used — so if a cheque is later disputed at clearing, you have a record of which compliant template was applied.
+### [H2] How Cheqify Handles CTS 2010 Compliance
 
-For a deeper look at how this fits into the broader operational picture, see our [end-to-end cheque lifecycle explainer](https://cheqify.app/en/blog/cheque-lifecycle-management-explained).
+We built Cheqify India-first. That means CTS 2010 isn't a checkbox we ticked late in development. It's a baseline. Everything in the printing pipeline assumes it.
 
-### [H2] Common CTS 2010 Myths
+Here's how it shows up in the product.
 
-**"CTS 2010 only applies to large banks."** No. Every bank operating in India is required to issue CTS 2010 compliant cheque books and route through CTS clearing. Cooperative banks, small finance banks, payments banks — all included.
+**30+ Indian bank templates, calibrated per bank.** SBI, HDFC, ICICI, Axis, Kotak, PNB, BOB, Canara, BOI, IDBI, Yes Bank, IndusInd, Federal, IDFC First, RBL, AU Small Finance, and more. Each template has the exact pixel positions for that bank's specific cheque layout. You pick your bank during setup. The right template loads automatically.
 
-**"CTS 2010 is optional if my cheque is presented at the same branch."** No. CTS clearing is the default mechanism for inter-branch and inter-bank clearing. Even within a single branch, banks today follow CTS workflows for consistency.
+**Alignment calibration before first cheque.** Different printers (HP, Canon, Epson, Brother) align paper feed slightly differently. Cheqify ships a one-time calibration step where you print a test page, see how your printer's alignment compares to expected, and the system adjusts. After that, every cheque prints on the same offsets. Per bank, per printer, set once.
 
-**"Old non-CTS cheques are still valid until used up."** No. RBI deprecated non-CTS cheques in 2014. Any non-CTS cheque presented today is returned unprocessed.
+**Reserved zones the printer never touches.** Watermark area? Off-limits. UV-ink zone? Off-limits. Void pantograph? Off-limits. MICR band? Off-limits. The system has these zones marked at the layout level. The printer driver gets instructions that exclude them.
 
-**"My printer brand is what matters for CTS 2010 compliance."** No. The cheque leaf is already compliant. What matters is your **printing software** — does it respect the layout and not overprint security features? Most home and office inkjet/laser printers work fine with Cheqify on standard cheque leaves.
+**MICR-band field validation.** Before any cheque ships to the printer, Cheqify validates that the bank, branch, and cheque-number portions match the cheque you're trying to print. A mismatch (you swapped books, you typed the wrong cheque number) gets caught here, not at the bank's clearing house.
 
-**"If my cheque looks good visually, it's compliant."** Visual correctness is necessary but not sufficient. The clearing house's image-capture and MICR-read systems are the actual judges. We've gone deep on how this plays out at [the cheque bounce stage](https://cheqify.app/en/blog/cheque-bounce-reasons-and-solutions).
+**Per-cheque audit log.** Every printed cheque has a record: which bank template version was used, what alignment offsets applied, when it printed, who triggered the print. If three years from now a cheque is disputed at clearing, you have the trail.
+
+For how this fits the broader cheque ops picture, see our [cheque lifecycle explainer](https://cheqify.app/en/blog/cheque-lifecycle-management-explained).
+
+### [H2] Common CTS 2010 Myths (And the Reality)
+
+**"CTS 2010 only applies to big banks."** Wrong. Every bank that operates in India — including cooperative banks, small finance banks, payments banks — has to issue CTS-compliant cheque books and route everything through CTS clearing. There are no exceptions for size.
+
+**"If my cheque is presented at the same branch, CTS doesn't apply."** Also wrong. Even single-branch transactions today run through CTS workflows. Banks unified everything for consistency. Same branch, different branch, different bank — all CTS, all the time.
+
+**"Old non-CTS cheques are still valid until I use them up."** No. RBI deprecated non-CTS cheques in 2014. If you're holding old cheque leaves from a pre-2013 book, they cannot be honoured. Any non-CTS cheque presented today gets returned unprocessed. Toss them, get a new book from your branch.
+
+**"What printer I use determines compliance."** Mostly false. Your printer brand barely matters. What matters is your printing software — does it respect the layout, leave the security zones alone, and validate the MICR band? Most home and office inkjet or laser printers (HP DeskJet, Canon PIXMA, Epson EcoTank, Brother HL-series) work fine with Cheqify on standard cheque leaves. Where printer matters is alignment consistency, which we calibrate for.
+
+**"If my cheque looks visually fine, it's compliant."** Looks aren't the standard here. The clearing house doesn't care if your cheque looks pretty. It cares whether the image-extraction system can read every field, the MICR sorter picks up the band cleanly, and none of the security features got disturbed. We covered what happens when these checks fail at the [cheque bounce stage](https://cheqify.app/en/blog/cheque-bounce-reasons-and-solutions).
 
 ### [H2] Quick Reference
 
-- CTS 2010 is RBI's mandatory cheque format and clearing system, in effect across India since 2013.
-- Six security features define a compliant cheque: CTS-INDIA watermark, UV-ink printer name, void pantograph, MICR band, standardised field positions, and standardised bank-info layout.
-- Bank-issued cheque books are compliant by default — you don't need to worry about the **leaf**.
-- The compliance question shifts to your **printing software** when you print onto cheques: it must respect field positions and never overprint security zones.
-- Cheqify is built around the CTS 2010 envelope: 30+ Indian bank templates, calibration, reserved zones, MICR validation, and audit log.
-- Your cheque is compliant if (a) the leaf is bank-issued and (b) your software didn't break the layout. That's the whole picture.
+The summary version, in case you skimmed everything above:
+
+- CTS 2010 is RBI's mandatory cheque format and clearing system. In effect across India since 2013.
+- Six security features make a cheque compliant: CTS-INDIA watermark, UV-ink printer name, void pantograph, MICR band, standardised field positions, standardised bank-info layout.
+- Your bank-issued cheque book is compliant by default. The leaf is not your problem.
+- Compliance shifts to your printing software the moment you print onto cheques. The software must respect field positions, leave the six security zones alone, and never write into the MICR band.
+- Cheqify ships with 30+ Indian bank templates, calibration, reserved zones, MICR validation, and per-cheque audit logs. CTS 2010 compliance is the default.
+- Your cheque is compliant if the leaf is bank-issued AND your software didn't break the layout. That's the entire picture.
 
 ---
 
