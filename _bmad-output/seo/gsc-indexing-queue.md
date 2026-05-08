@@ -43,7 +43,7 @@ After submitting all 3: open GSC → Video indexing report → "Validate Fix" on
 
 ---
 
-## Day 1 — HI/GU SEO landing pages (7 of 12 submitted, quota hit)
+## Day 1 — HI/GU SEO landing pages (7 of 12 submitted, quota hit) — Done
 
 ✅ Submitted on 2026-05-06 before quota cap:
 ```
@@ -69,7 +69,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs)
+## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs) — Done
 
 - ~~https://cheqify.app/gu/cheque-printing-word-format~~
 - ~~https://cheqify.app/hi/cheqify-vs-moneyflex~~
@@ -83,7 +83,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs)
+## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs) — Done
 
 - ~~https://cheqify.app/en/cheque-printing-excel-format~~
 - ~~https://cheqify.app/en/cheque-printing-word-format~~
@@ -97,7 +97,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 4 — Lifecycle blog (3 locales) + money-page locales (7 URLs)
+## Day 4 — Lifecycle blog (3 locales) + money-page locales (7 URLs) — Done
 
 - ~~https://cheqify.app/en/blog/cheque-lifecycle-management-explained~~
 - ~~https://cheqify.app/hi/blog/cheque-lifecycle-management-explained~~
@@ -111,7 +111,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 5 — Money pages (pricing/comparison) + homepages (7 URLs)
+## Day 5 — Money pages (pricing/comparison) + homepages (7 URLs) — Done
 
 - ~~https://cheqify.app/hi/pricing~~
 - ~~https://cheqify.app/gu/pricing~~
@@ -125,7 +125,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 6 — Homepage GU + about/contact (7 URLs)
+## Day 6 — Homepage GU + about/contact (7 URLs) — Done
 
 - ~~https://cheqify.app/gu~~
 - ~~https://cheqify.app/en/about~~
@@ -139,7 +139,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 7 — Glossary + blog index (7 URLs)
+## Day 7 — Glossary + blog index (7 URLs) — Done
 
 - ~~https://cheqify.app/en/glossary~~
 - ~~https://cheqify.app/hi/glossary~~
