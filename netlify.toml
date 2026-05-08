@@ -2,6 +2,12 @@
   command = "npm run build"
   publish = ".next"
 
+# Explicit plugin declaration so Netlify always installs @netlify/plugin-nextjs,
+# rather than relying on framework auto-detection. Without this, the plugin
+# fails to install on fresh accounts and dynamic Next.js routes return 404.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 # Redirect root to default locale (avoids 302 redirect chain)
 [[redirects]]
   from = "/"
