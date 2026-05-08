@@ -8,6 +8,7 @@ import { Footer } from "~/components/layout/footer";
 import { TawkTo } from "~/components/layout/tawk-to";
 import { CookieConsent } from "~/components/layout/cookie-consent";
 import { GoogleAnalytics } from "~/components/layout/google-analytics";
+import { GoogleAdsense } from "~/components/layout/google-adsense";
 import { PostHogProvider } from "~/components/layout/posthog-provider";
 
 interface LocaleLayoutProps {
@@ -54,6 +55,7 @@ export default async function LocaleLayout({
               <CookieConsent />
               <TawkTo />
               <GoogleAnalytics />
+              <GoogleAdsense />
             </NextIntlClientProvider>
           </ThemeProvider>
         </PostHogProvider>
