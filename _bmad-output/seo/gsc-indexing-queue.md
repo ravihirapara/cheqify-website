@@ -69,101 +69,87 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs)
+## Day 2 — Carry-over HI/GU landing pages + EN SEO landing + bulk-cheque clean slug (7 URLs) — DONE
 
-Submit in this order. Stop when GSC reports quota hit.
+- ~~https://cheqify.app/gu/cheque-printing-word-format~~
+- ~~https://cheqify.app/hi/cheqify-vs-moneyflex~~
+- ~~https://cheqify.app/gu/cheqify-vs-moneyflex~~
+- ~~https://cheqify.app/hi/cheqify-vs-chrysanth~~
+- ~~https://cheqify.app/gu/cheqify-vs-chrysanth~~
+- ~~https://cheqify.app/en/amount-in-words-tool~~
+- ~~https://cheqify.app/en/online-cheque-printing~~
 
-```
-https://cheqify.app/gu/cheque-printing-word-format
-https://cheqify.app/hi/cheqify-vs-moneyflex
-https://cheqify.app/gu/cheqify-vs-moneyflex
-https://cheqify.app/hi/cheqify-vs-chrysanth
-https://cheqify.app/gu/cheqify-vs-chrysanth
-https://cheqify.app/en/amount-in-words-tool
-https://cheqify.app/en/online-cheque-printing
-```
-
-- [ ] Day 2 done
+- [x] Day 2 done
 
 ---
 
-## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs)
+## Day 3 — EN SEO landing pages + bulk-cheque clean slug (7 URLs) — DONE
 
-```
-https://cheqify.app/en/cheque-printing-excel-format
-https://cheqify.app/en/cheque-printing-word-format
-https://cheqify.app/en/cheqify-vs-moneyflex
-https://cheqify.app/en/cheqify-vs-chrysanth
-https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india
-https://cheqify.app/hi/blog/bulk-cheque-printing-batch-guide-india
-https://cheqify.app/gu/blog/bulk-cheque-printing-batch-guide-india
-```
+- ~~https://cheqify.app/en/cheque-printing-excel-format~~
+- ~~https://cheqify.app/en/cheque-printing-word-format~~
+- ~~https://cheqify.app/en/cheqify-vs-moneyflex~~
+- ~~https://cheqify.app/en/cheqify-vs-chrysanth~~
+- ~~https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india~~
+- ~~https://cheqify.app/hi/blog/bulk-cheque-printing-batch-guide-india~~
+- ~~https://cheqify.app/gu/blog/bulk-cheque-printing-batch-guide-india~~
 
-- [ ] Day 3 done
+- [x] Day 3 done
 
 ---
 
-## Day 4 — Lifecycle blog (3 locales) + money-page locales (7 URLs)
+## Day 4 — Lifecycle blog (3 locales) + money-page locales (7 URLs) — DONE
 
-```
-https://cheqify.app/en/blog/cheque-lifecycle-management-explained
-https://cheqify.app/hi/blog/cheque-lifecycle-management-explained
-https://cheqify.app/gu/blog/cheque-lifecycle-management-explained
-https://cheqify.app/en/features
-https://cheqify.app/hi/features
-https://cheqify.app/gu/features
-https://cheqify.app/en/pricing
-```
+- ~~https://cheqify.app/en/blog/cheque-lifecycle-management-explained~~
+- ~~https://cheqify.app/hi/blog/cheque-lifecycle-management-explained~~
+- ~~https://cheqify.app/gu/blog/cheque-lifecycle-management-explained~~
+- ~~https://cheqify.app/en/features~~
+- ~~https://cheqify.app/hi/features~~
+- ~~https://cheqify.app/gu/features~~
+- ~~https://cheqify.app/en/pricing~~
 
-- [ ] Day 4 done
+- [x] Day 4 done
 
 ---
 
-## Day 5 — Money pages (pricing/comparison) + homepages (7 URLs)
+## Day 5 — Money pages (pricing/comparison) + homepages (7 URLs) — DONE
 
-```
-https://cheqify.app/hi/pricing
-https://cheqify.app/gu/pricing
-https://cheqify.app/en/comparison
-https://cheqify.app/hi/comparison
-https://cheqify.app/gu/comparison
-https://cheqify.app/en
-https://cheqify.app/hi
-```
+- ~~https://cheqify.app/hi/pricing~~
+- ~~https://cheqify.app/gu/pricing~~
+- ~~https://cheqify.app/en/comparison~~
+- ~~https://cheqify.app/hi/comparison~~
+- ~~https://cheqify.app/gu/comparison~~
+- ~~https://cheqify.app/en~~
+- ~~https://cheqify.app/hi~~
 
-- [ ] Day 5 done
+- [x] Day 5 done
 
 ---
 
-## Day 6 — Homepage GU + about/contact (7 URLs)
+## Day 6 — Homepage GU + about/contact (7 URLs) — DONE
 
-```
-https://cheqify.app/gu
-https://cheqify.app/en/about
-https://cheqify.app/hi/about
-https://cheqify.app/gu/about
-https://cheqify.app/en/contact
-https://cheqify.app/hi/contact
-https://cheqify.app/gu/contact
-```
+- ~~https://cheqify.app/gu~~
+- ~~https://cheqify.app/en/about~~
+- ~~https://cheqify.app/hi/about~~
+- ~~https://cheqify.app/gu/about~~
+- ~~https://cheqify.app/en/contact~~
+- ~~https://cheqify.app/hi/contact~~
+- ~~https://cheqify.app/gu/contact~~
 
-- [ ] Day 6 done
+- [x] Day 6 done
 
 ---
 
-## Day 7 — Glossary + blog index (7 URLs)
+## Day 7 — Glossary + blog index (7 URLs) — DONE
 
-```
-https://cheqify.app/en/glossary
-https://cheqify.app/hi/glossary
-https://cheqify.app/gu/glossary
-https://cheqify.app/en/blog
-https://cheqify.app/hi/blog
-https://cheqify.app/gu/blog
-https://cheqify.app/hi/blog/cheqify-vs-manual-cheque-writing
-```
+- ~~https://cheqify.app/en/glossary~~
+- ~~https://cheqify.app/hi/glossary~~
+- ~~https://cheqify.app/gu/glossary~~
+- ~~https://cheqify.app/en/blog~~
+- ~~https://cheqify.app/hi/blog~~
+- ~~https://cheqify.app/gu/blog~~
+- ~~https://cheqify.app/hi/blog/cheqify-vs-manual-cheque-writing~~
 
-- [ ] Day 7 done
+- [x] Day 7 done
 
 ---
 
