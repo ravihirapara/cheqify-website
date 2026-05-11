@@ -8,11 +8,13 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Redirect root to default locale (avoids 302 redirect chain)
+# Rewrite root to default locale content (200, not 301) so GSC does not flag
+# the bare domain as "Page with redirect". URL stays as cheqify.app/; the
+# canonical tag inside the rendered HTML points to /en, which Google honours.
 [[redirects]]
   from = "/"
   to = "/en"
-  status = 301
+  status = 200
   force = true
 
 [[redirects]]
@@ -50,6 +52,28 @@
   for = "/robots.txt"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+# Non-HTML assets must not appear in Google's index. Returning X-Robots-Tag:
+# noindex stops them from showing up as "Crawled - currently not indexed" in GSC.
+[[headers]]
+  for = "/manifest.json"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/favicon-*.png"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/apple-touch-icon*.png"
+  [headers.values]
+    X-Robots-Tag = "noindex"
 
 # Security headers
 [[headers]]
