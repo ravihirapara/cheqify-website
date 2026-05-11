@@ -24,6 +24,48 @@ Quota observed on 2026-05-06: **7 URLs/day** (not the 10-12 in Google's docs). P
 
 ---
 
+## ⚡ PRIORITY — GSC validation-failure fix (2026-05-11)
+
+Two GSC failures (Page with redirect × 2, Crawled-not-indexed × 1) addressed by the fix shipped on 2026-05-11.
+
+### Action 1 — Page with redirect (NO indexing submission needed, just Validate Fix)
+
+After Netlify deploy completes, verify the root no longer 301s:
+
+```
+curl -I https://cheqify.app/    →  HTTP/2 200  (was 301 before)
+```
+
+Then in GSC:
+- Page indexing → "Page with redirect" → **Validate Fix**
+- Google re-tests `https://cheqify.app/` and `http://cheqify.app/` over 2-7 days
+- Validation should pass because `https://cheqify.app/` now returns 200, not 301
+
+⚠ DO NOT submit `https://cheqify.app/` via URL Inspection → Request Indexing. The canonical is `/en`, so Google should keep indexing `/en` (not `/`).
+
+### Action 2 — Crawled - currently not indexed (HI reconcile-cheques)
+
+After the expanded Hindi body (from `_bmad-output/blog-content/post-08-how-to-reconcile-cheques-HI-expansion.md`) is pasted into Sanity AND Netlify redeploy completes:
+
+```
+https://cheqify.app/hi/blog/how-to-reconcile-cheques-with-bank-statements
+```
+
+Submit via GSC → URL Inspection → **Request Indexing** (counts against daily quota).
+
+⚠ This URL is already listed under Day 8 below — leave the Day 8 entry as-is; this priority submission supersedes it. Strike through the Day 8 line once submitted here.
+
+Then in GSC:
+- Page indexing → "Crawled - currently not indexed" → **Validate Fix**
+
+- [ ] Confirmed `https://cheqify.app/` returns 200 after deploy
+- [ ] "Validate Fix" clicked on "Page with redirect"
+- [ ] HI reconcile-cheques body pasted into Sanity
+- [ ] HI reconcile-cheques URL submitted for re-indexing
+- [ ] "Validate Fix" clicked on "Crawled - currently not indexed"
+
+---
+
 ## ⚡ PRIORITY — /demo watch page (Video Indexing fix)
 
 These 3 URLs unlock the GSC Video Indexing validation fix (the "Video isn't on a watch page" failure on en/hi/gu home URLs). Submit on the next day after the master deploy goes green and the new sitemap entries are live.
