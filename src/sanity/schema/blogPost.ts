@@ -46,6 +46,7 @@ export const blogPost = defineType({
       type: "array",
       of: [{ type: "string" }],
       options: { layout: "tags" },
+      validation: (Rule) => Rule.required().min(1).error("At least one tag is required."),
     }),
 
     // English
