@@ -40,6 +40,7 @@ export interface BlogPostMeta {
   title: string;
   description: string;
   date: string;
+  lastModified: string;
   author: string;
   slug: string;
   lang: string;
@@ -78,7 +79,8 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
     tags,
     order,
     author,
-    _createdAt
+    _createdAt,
+    _updatedAt
   }`;
 
   const posts = await sanityClient.fetch(query);
@@ -89,6 +91,7 @@ export async function getBlogPosts(locale: string): Promise<BlogPostMeta[]> {
       title: (p.title as string) || "",
       description: (p.description as string) || "",
       date: (p._createdAt as string) || "",
+      lastModified: (p._updatedAt as string) || (p._createdAt as string) || "",
       author: (p.author as string) || "Cheqify Team",
       slug: (p.slug as string) || "",
       lang: locale,
@@ -121,7 +124,8 @@ export async function getBlogPost(
     howToSteps,
     hasFaq,
     faqItems,
-    _createdAt
+    _createdAt,
+    _updatedAt
   }`;
 
   const post = await sanityClient.fetch(query, { slug });
@@ -133,6 +137,7 @@ export async function getBlogPost(
       title: post.title || "",
       description: post.description || "",
       date: post._createdAt || "",
+      lastModified: post._updatedAt || post._createdAt || "",
       author: post.author || "Cheqify Team",
       slug: post.slug,
       lang: locale,
