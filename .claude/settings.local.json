@@ -161,7 +161,16 @@
       "PowerShell(Get-Content *)",
       "PowerShell(if \\(Test-Path .env.local\\) { $l = Select-String -Path .env.local -Pattern \"^SANITY_WRITE_TOKEN=\" -SimpleMatch; if \\($l\\) { if \\($l.Line -match \"^SANITY_WRITE_TOKEN=.+\"\\) { \"PRESENT\" } else { \"EMPTY\" } } else { \"MISSING\" } } else { \"NO_ENV_FILE\" })",
       "Bash(echo \"EXIT=$?\")",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(git pull *)",
+      "Bash(git merge *)",
+      "Bash(git diff *)",
+      "Bash(gh --version)",
+      "Bash(awk '/## Body \\\\\\(English\\\\\\)/,/## Body \\\\\\(Hindi\\\\\\)/' \"_bmad-output/blog-content/post-15-cheque-number-in-cheque-book-explained.md\")",
+      "Bash(awk '/## Body \\\\\\(English\\\\\\)/,/## Body \\\\\\(Hindi\\\\\\)/' \"_bmad-output/blog-content/post-16-cts-2010-cheque-format-compliance.md\")",
+      "Bash(awk '/## Body \\\\\\(English\\\\\\)/,/## Body \\\\\\(Hindi\\\\\\)/' _bmad-output/blog-content/__TRACKED_VAR__)",
+      "Bash(Select-String -Pattern 'from = \"/\"' -Context 0,3)",
+      "Bash(git restore *)"
     ]
   }
 }
