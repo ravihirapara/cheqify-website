@@ -18,6 +18,19 @@
   to = "/:locale/blog/bulk-cheque-printing-batch-guide-india"
   status = 301
 
+# /register on the marketing domain doesn't exist — the real signup page
+# is on the webapp subdomain. Bing flagged the 404 as "thin content"
+# (2026-05-14). Send anyone who lands here to the actual signup page.
+[[redirects]]
+  from = "/register"
+  to = "https://app.cheqify.app/register"
+  status = 301
+
+[[redirects]]
+  from = "/:locale/register"
+  to = "https://app.cheqify.app/register"
+  status = 301
+
 # Cache static assets aggressively
 [[headers]]
   for = "/_next/static/*"
