@@ -8,14 +8,10 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Rewrite root to default locale content (200, not 301) so GSC does not flag
-# the bare domain as "Page with redirect". URL stays as cheqify.app/; the
-# canonical tag inside the rendered HTML points to /en, which Google honours.
-[[redirects]]
-  from = "/"
-  to = "/en"
-  status = 200
-  force = true
+# Note: the / → /en internal rewrite is handled by Next.js (next.config.ts
+# rewrites). Doing it here at the Netlify edge does not work because the
+# @netlify/plugin-nextjs handler intercepts / before edge redirects apply,
+# even with force=true.
 
 [[redirects]]
   from = "/:locale/blog/bulk-cheque-printing-batch-guide-india-cheqify"
