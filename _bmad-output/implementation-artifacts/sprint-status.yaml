@@ -92,16 +92,38 @@ development_status:
   epic-9: done
   9-1-cookie-consent-banner: done
   9-2-google-analytics-4-integration: done
+  9-3-posthog-product-analytics: done
   epic-9-retrospective: optional
 
   # Epic 10: SEO & Multi-Language Content
   epic-10: done
   10-1-per-page-seo-metadata: done
   10-2-structured-data-and-sitemap: done
-  10-3-multi-language-content-population: done
+  # NOTE: the planned Story 10.3 (multi-language content population) shipped
+  # for the original 7 pages, but the actual file at 10-3-demo-watch-page.md
+  # is a later addition (the /demo watch page that fixed GSC video indexing,
+  # 2026-05-07). Multi-language gap on newer pages tracked in Phase 2.
+  10-3-demo-watch-page: done
   epic-10-retrospective: optional
 
   # Epic 11: Competitor Comparison Pages
   epic-11: done
   11-1-cheqify-vs-chequepot-comparison-page: done
+  11-2-cheqify-vs-chrysanth: done
+  11-3-cheqify-vs-moneyflex: done
   epic-11-retrospective: optional
+
+  # ----------------------------------------------------------------
+  # Phase 2 — Post-launch additions (no formal story files).
+  # See epics.md "Phase 2" section for context. Memory holds details.
+  # ----------------------------------------------------------------
+  phase-2-sanity-cms: done
+  phase-2-adsense: done
+  phase-2-indexnow-auto-ping: done
+  phase-2-posthog-dashboards: done
+  phase-2-amount-in-words-tool: done
+  phase-2-seo-landing-pages-en: done
+  phase-2-seo-landing-pages-hi-gu: backlog  # hi/gu translations of new SEO pages pending
+  phase-2-glossary-page: done
+  phase-2-terms-page: done
+  phase-2-gsc-seo-fixes: done  # video facade, page-with-redirect, sitemap lastmod, noindex headers

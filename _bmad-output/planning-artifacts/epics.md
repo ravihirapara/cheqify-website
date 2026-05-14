@@ -723,3 +723,50 @@ So that I can understand the entire website without switching to English.
 **And** language-specific URLs work correctly (/hi/features, /gu/pricing, etc.)
 **And** language switching preserves the current page (e.g., /en/pricing → /hi/pricing)
 **And** blog articles are available in all 3 languages
+
+> **As-built note (2026-05-14):** Done for the original 7 pages. Later-added
+> SEO landing pages (`/amount-in-words-tool`, `/online-cheque-printing`,
+> `/cheque-printing-excel-format`, `/cheque-printing-word-format`,
+> `/glossary`) are EN-only — hi/gu translations tracked in Phase 2 as
+> `phase-2-seo-landing-pages-hi-gu`. The implementation file
+> `10-3-demo-watch-page.md` is a separate later story (the /demo watch
+> page that fixed GSC video indexing on 2026-05-07), not Story 10.3.
+
+---
+
+## Phase 2: Post-launch additions
+
+The original epics 1–11 covered the MVP that shipped in April 2026. Everything below was added after launch to address SEO ranking, monetization, and operational needs. These items don't have full BMAD story files — they were built directly. Detail lives in auto-memory (`MEMORY.md`) and git history. This section is the canonical index of "what was added after the original plan."
+
+### Phase 2.1: Content Management & Editorial
+
+- **Sanity CMS integration** — Studio at `/studio`, webhook → IndexNow auto-ping, table support via `@sanity/table`, blog `order` field auto-management (max+1 on create, re-compact on delete). See `[[project_sanity_integration]]`, `[[project_sanity_table_support]]`, `[[project_blog_order_automation]]`.
+- **Blog content pipeline** — `npm run blog:index` rewrites published-index from Sanity. Drafts queued in `_bmad-output/blog-content/`. Quality gate: ≤30% AI-detector score AND >1200 words EN body. See `[[feedback_blog_low_ai_score]]`.
+
+### Phase 2.2: SEO Expansion
+
+- **5 new SEO landing pages** built 2026-05-05 targeting cheque-print keywords: `/amount-in-words-tool`, `/online-cheque-printing`, `/cheque-printing-excel-format`, `/cheque-printing-word-format`, plus `/glossary`. EN live, hi/gu translations pending.
+- **GSC fixes** — `/demo` watch page (story file `10-3-demo-watch-page.md`, 2026-05-07) replaces iframe video embed for clean GSC video indexing. Page-with-redirect fix on `/` (2026-05-11, 2026-05-14). Sitemap `lastmod` from Sanity `_updatedAt`. Noindex headers on non-HTML assets. Lite-youtube facade pattern for video embeds outside watch pages.
+- **IndexNow auto-ping** — Sanity webhook → Netlify Function `/api/indexnow` → Bing/Yandex/DuckDuckGo. Removes manual submission step. See `[[project_indexnow_integration]]`.
+- **Comparison pages beyond chequepot** — `cheqify-vs-chrysanth`, `cheqify-vs-moneyflex` (Story 11.1's scope grew to multiple competitors).
+- **Rank-Page-1 plan** — 5-step doc at `_bmad-output/seo/rank-page-1-steps.md`. See `[[project_rank_page1_plan]]`.
+
+### Phase 2.3: Analytics & Monetization
+
+- **PostHog full tracking** — session replay, heatmaps, exceptions, cross-subdomain cookies, 5 custom events. Two dashboards live ("Cheqify.app site" marketing, "app.cheqify.app — webapp" product). DAU uses `app_opened`, not `$pageview`. See `[[project_posthog_tracking_complete]]`, `[[project_posthog_dashboards_complete]]`.
+- **Google AdSense** — verified 2026-05-08, pub-7192327503479654, ads-on-blog-only. Script must stay raw in `<head>` (next/script broke verification). See `[[project_adsense_setup]]`.
+
+### Phase 2.4: Legal & Operational
+
+- **Terms of Service page** (`/terms`) — added in the April 9 session.
+- **Multi-remote git push** — `git push origin master` fans out to 3 repos (CodeTailorSoftech, ravihirapara, cheqifyapp). `cheqifyapp` uses inline-PAT URLs (GCM hangs). See `[[project_multi_remote_push_setup]]`.
+
+### Phase 2.5: Open work (not done yet)
+
+- hi/gu translations of the 5 Phase 2.2 SEO landing pages.
+- Sanity `SANITY_WRITE_TOKEN` env var in Netlify + Delete trigger on existing webhook (for blog order re-compact). See `[[project_blog_order_automation]]`.
+- Blog drafts #15, #16 (committed but failing AI-score gate at 73%, need rewrite to ≤30%).
+- GSC "Validate Fix" click after the 2026-05-11 page-with-redirect deploy.
+- SEO-PLAN.md Phase 5-6 — 42 tasks pending (keyword ranking + off-page strategy).
+
+> No PRD/Architecture rewrite was done for Phase 2. The original docs (April 2026) remain the MVP record; this section is the as-built delta. Update this list when adding post-launch work; don't retro-edit Epics 1–11.
