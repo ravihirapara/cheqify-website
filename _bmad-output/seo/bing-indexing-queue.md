@@ -33,141 +33,141 @@ Before submitting anything, verify:
 ## Batch 1 — Money pages + homepages (10 URLs)
 
 ```
-https://cheqify.app/en
-https://cheqify.app/hi
-https://cheqify.app/gu
-https://cheqify.app/en/demo
-https://cheqify.app/hi/demo
-https://cheqify.app/gu/demo
-https://cheqify.app/en/pricing
-https://cheqify.app/hi/pricing
-https://cheqify.app/gu/pricing
-https://cheqify.app/en/features
+~~https://cheqify.app/en~~
+~~https://cheqify.app/hi~~
+~~https://cheqify.app/gu~~
+~~https://cheqify.app/en/demo~~
+~~https://cheqify.app/hi/demo~~
+~~https://cheqify.app/gu/demo~~
+~~https://cheqify.app/en/pricing~~
+~~https://cheqify.app/hi/pricing~~
+~~https://cheqify.app/gu/pricing~~
+~~https://cheqify.app/en/features~~
 ```
 
-- [ ] Batch 1 done
+- [x] Batch 1 done
 
 ---
 
 ## Batch 2 — Features + comparison + tools (10 URLs)
 
 ```
-https://cheqify.app/hi/features
-https://cheqify.app/gu/features
-https://cheqify.app/en/comparison
-https://cheqify.app/hi/comparison
-https://cheqify.app/gu/comparison
-https://cheqify.app/en/amount-in-words-tool
-https://cheqify.app/hi/amount-in-words-tool
-https://cheqify.app/gu/amount-in-words-tool
-https://cheqify.app/en/online-cheque-printing
-https://cheqify.app/hi/online-cheque-printing
+~~https://cheqify.app/hi/features~~
+~~https://cheqify.app/gu/features~~
+~~https://cheqify.app/en/comparison~~
+~~https://cheqify.app/hi/comparison~~
+~~https://cheqify.app/gu/comparison~~
+~~https://cheqify.app/en/amount-in-words-tool~~
+~~https://cheqify.app/hi/amount-in-words-tool~~
+~~https://cheqify.app/gu/amount-in-words-tool~~
+~~https://cheqify.app/en/online-cheque-printing~~
+~~https://cheqify.app/hi/online-cheque-printing~~
 ```
 
-- [ ] Batch 2 done
+- [x] Batch 2 done
 
 ---
 
 ## Batch 3 — SEO landing pages (10 URLs)
 
 ```
-https://cheqify.app/gu/online-cheque-printing
-https://cheqify.app/en/cheque-printing-excel-format
-https://cheqify.app/hi/cheque-printing-excel-format
-https://cheqify.app/gu/cheque-printing-excel-format
-https://cheqify.app/en/cheque-printing-word-format
-https://cheqify.app/hi/cheque-printing-word-format
-https://cheqify.app/gu/cheque-printing-word-format
-https://cheqify.app/en/cheqify-vs-moneyflex
-https://cheqify.app/hi/cheqify-vs-moneyflex
-https://cheqify.app/gu/cheqify-vs-moneyflex
+~~https://cheqify.app/gu/online-cheque-printing~~
+~~https://cheqify.app/en/cheque-printing-excel-format~~
+~~https://cheqify.app/hi/cheque-printing-excel-format~~
+~~https://cheqify.app/gu/cheque-printing-excel-format~~
+~~https://cheqify.app/en/cheque-printing-word-format~~
+~~https://cheqify.app/hi/cheque-printing-word-format~~
+~~https://cheqify.app/gu/cheque-printing-word-format~~
+~~https://cheqify.app/en/cheqify-vs-moneyflex~~
+~~https://cheqify.app/hi/cheqify-vs-moneyflex~~
+~~https://cheqify.app/gu/cheqify-vs-moneyflex~~
 ```
 
-- [ ] Batch 3 done
+- [x] Batch 3 done
 
 ---
 
 ## Batch 4 — Comparison landing + about/contact (10 URLs)
 
 ```
-https://cheqify.app/en/cheqify-vs-chrysanth
-https://cheqify.app/hi/cheqify-vs-chrysanth
-https://cheqify.app/gu/cheqify-vs-chrysanth
-https://cheqify.app/en/about
-https://cheqify.app/hi/about
-https://cheqify.app/gu/about
-https://cheqify.app/en/contact
-https://cheqify.app/hi/contact
-https://cheqify.app/gu/contact
-https://cheqify.app/en/glossary
+~~https://cheqify.app/en/cheqify-vs-chrysanth~~
+~~https://cheqify.app/hi/cheqify-vs-chrysanth~~
+~~https://cheqify.app/gu/cheqify-vs-chrysanth~~
+~~https://cheqify.app/en/about~~
+~~https://cheqify.app/hi/about~~
+~~https://cheqify.app/gu/about~~
+~~https://cheqify.app/en/contact~~
+~~https://cheqify.app/hi/contact~~
+~~https://cheqify.app/gu/contact~~
+~~https://cheqify.app/en/glossary~~
 ```
 
-- [ ] Batch 4 done
+- [x] Batch 4 done
 
 ---
 
 ## Batch 5 — Glossary tail + blog index pages (5 URLs, short batch)
 
 ```
-https://cheqify.app/hi/glossary
-https://cheqify.app/gu/glossary
-https://cheqify.app/en/blog
-https://cheqify.app/hi/blog
-https://cheqify.app/gu/blog
+~~https://cheqify.app/hi/glossary~~
+~~https://cheqify.app/gu/glossary~~
+~~https://cheqify.app/en/blog~~
+~~https://cheqify.app/hi/blog~~
+~~https://cheqify.app/gu/blog~~
 ```
 
-- [ ] Batch 5 done
+- [x] Batch 5 done
 
 ---
 
 ## Batch 6 — EN blog posts, part 1 (10 URLs)
 
 ```
-https://cheqify.app/en/blog/cheqify-vs-manual-cheque-writing
-https://cheqify.app/en/blog/cheque-bounce-reasons-and-solutions
-https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india
-https://cheqify.app/en/blog/how-to-print-cheque-at-home
-https://cheqify.app/en/blog/post-dated-cheques-rules-and-best-practices
-https://cheqify.app/en/blog/what-is-micr-code-on-cheque
-https://cheqify.app/en/blog/how-to-print-cheque-in-india
-https://cheqify.app/en/blog/how-to-reconcile-cheques-with-bank-statements
-https://cheqify.app/en/blog/cheque-printing-mistakes-indian-businesses
-https://cheqify.app/en/blog/best-free-cheque-printing-software-india
+~~https://cheqify.app/en/blog/cheqify-vs-manual-cheque-writing~~
+~~https://cheqify.app/en/blog/cheque-bounce-reasons-and-solutions~~
+~~https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india~~
+~~https://cheqify.app/en/blog/how-to-print-cheque-at-home~~
+~~https://cheqify.app/en/blog/post-dated-cheques-rules-and-best-practices~~
+~~https://cheqify.app/en/blog/what-is-micr-code-on-cheque~~
+~~https://cheqify.app/en/blog/how-to-print-cheque-in-india~~
+~~https://cheqify.app/en/blog/how-to-reconcile-cheques-with-bank-statements~~
+~~https://cheqify.app/en/blog/cheque-printing-mistakes-indian-businesses~~
+~~https://cheqify.app/en/blog/best-free-cheque-printing-software-india~~
 ```
 
-- [ ] Batch 6 done
+- [x] Batch 6 done
 
 ---
 
 ## Batch 7 — EN blog posts, part 2 (4 URLs, short batch)
 
 ```
-https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india
-https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india
-https://cheqify.app/en/blog/cheque-lifecycle-management-explained
-https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india
+~~https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india~~
+~~https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india~~
+~~https://cheqify.app/en/blog/cheque-lifecycle-management-explained~~
+~~https://cheqify.app/en/blog/bulk-cheque-printing-batch-guide-india~~
 ```
 
-- [ ] Batch 7 done
+- [x] Batch 7 done
 
 ---
 
 ## Batch 8 — HI blog posts, part 1 (10 URLs)
 
 ```
-https://cheqify.app/hi/blog/cheqify-vs-manual-cheque-writing
-https://cheqify.app/hi/blog/cheque-bounce-reasons-and-solutions
-https://cheqify.app/hi/blog/how-to-avoid-cheque-fraud-in-india
-https://cheqify.app/hi/blog/how-to-print-cheque-at-home
-https://cheqify.app/hi/blog/post-dated-cheques-rules-and-best-practices
-https://cheqify.app/hi/blog/what-is-micr-code-on-cheque
-https://cheqify.app/hi/blog/how-to-print-cheque-in-india
-https://cheqify.app/hi/blog/how-to-reconcile-cheques-with-bank-statements
-https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses
-https://cheqify.app/hi/blog/best-free-cheque-printing-software-india
+~~https://cheqify.app/hi/blog/cheqify-vs-manual-cheque-writing~~
+~~https://cheqify.app/hi/blog/cheque-bounce-reasons-and-solutions~~
+~~https://cheqify.app/hi/blog/how-to-avoid-cheque-fraud-in-india~~
+~~https://cheqify.app/hi/blog/how-to-print-cheque-at-home~~
+~~https://cheqify.app/hi/blog/post-dated-cheques-rules-and-best-practices~~
+~~https://cheqify.app/hi/blog/what-is-micr-code-on-cheque~~
+~~https://cheqify.app/hi/blog/how-to-print-cheque-in-india~~
+~~https://cheqify.app/hi/blog/how-to-reconcile-cheques-with-bank-statements~~
+~~https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses~~
+~~https://cheqify.app/hi/blog/best-free-cheque-printing-software-india~~
 ```
 
-- [ ] Batch 8 done
+- [x] Batch 8 done
 
 ---
 
