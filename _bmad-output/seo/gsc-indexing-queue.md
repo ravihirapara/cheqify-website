@@ -58,8 +58,8 @@ Submit via GSC → URL Inspection → **Request Indexing** (counts against daily
 Then in GSC:
 - Page indexing → "Crawled - currently not indexed" → **Validate Fix**
 
-- [ ] Confirmed `https://cheqify.app/` returns 200 after deploy
-- [ ] "Validate Fix" clicked on "Page with redirect"
+- [x] Confirmed `https://cheqify.app/` returns 200 after deploy
+- [x] "Validate Fix" clicked on "Page with redirect" (2026-05-15)
 - [ ] HI reconcile-cheques body pasted into Sanity
 - [ ] HI reconcile-cheques URL submitted for re-indexing
 - [ ] "Validate Fix" clicked on "Crawled - currently not indexed"

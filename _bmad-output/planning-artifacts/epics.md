@@ -767,7 +767,7 @@ The original epics 1–11 covered the MVP that shipped in April 2026. Everything
 ### Phase 2.5: Open work (not done yet)
 
 - Sanity `SANITY_WRITE_TOKEN` env var in Netlify + Delete trigger on existing webhook. See `[[project_blog_order_automation]]`. Order-field assignment is owned by Sanity (and Ravi) — not by code or scripts. The `blog:reorder` script exists but is NOT to be run against production; treat any post-order state in Sanity as authoritative.
-- GSC "Validate Fix" click after the 2026-05-11 page-with-redirect deploy (still pending Ravi's manual click).
+- GSC "Validate Fix" for "Crawled - currently not indexed" (HI reconcile-cheques) — still pending; depends on Sanity body paste from `_bmad-output/blog-content/post-08-how-to-reconcile-cheques-HI-expansion.md` + Request Indexing first. The page-with-redirect Validate Fix was clicked 2026-05-15.
 - Bing submission batches 9+ — batches 1-8 done (69 URLs), more URLs queued in `_bmad-output/seo/bing-indexing-queue.md`.
 - SEO-PLAN.md Phase 5-6 — keyword ranking + off-page strategy items still Pending (see status column in SEO-PLAN.md).
 - Blog scheduled but not yet live: #17 (cheque-clearing-time-india, Mon 2026-05-18), #18 (cheque-types-india, Thu 2026-05-21). After publish, run `npm run blog:index` and add reciprocal internal links from older posts.
