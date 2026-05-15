@@ -53,17 +53,17 @@ Both are old desktop-download tools. The market is shifting to web-based / mobil
 
 | # | Slug | Title (working) | Target Keyword | Why |
 |---|---|---|---|---|
-| 1 | `cheqify-vs-moneyflex` | Cheqify vs MoneyFlex — Free Cloud Alternative for Indian Businesses (2026) | `moneyflex alternative`, `cheque printing software online` | High commercial intent, declining incumbent, easy win |
-| 2 | `cheqify-vs-chrysanth-cheque-writer` | Cheqify vs Chrysanth Cheque Writer — Modern Free Alternative | `chrysanth alternative` | Same logic as #1 |
-| 3 | `excel-cheque-printing-template-vs-cheqify` | Cheque Printing in Excel vs Cheqify — Why It's Time to Upgrade | `free cheque printing software in excel`, `excel cheque printing template` | Captures Excel-using SMBs |
-| 4 | `cheque-number-in-cheque-book-explained` | Cheque Number — Where to Find It and What It Means | `cheque number in cheque book` (2,400 vol) | Top-of-funnel informational, very low competition |
+| 1 | ~~`cheqify-vs-moneyflex`~~ | ✅ Built as comparison landing page `/cheqify-vs-moneyflex` (2026-05-05). | `moneyflex alternative`, `cheque printing software online` | Shipped |
+| 2 | ~~`cheqify-vs-chrysanth-cheque-writer`~~ | ✅ Built as comparison landing page `/cheqify-vs-chrysanth` (2026-05-05). | `chrysanth alternative` | Shipped |
+| 3 | ~~`excel-cheque-printing-template-vs-cheqify`~~ | ✅ Covered by `/cheque-printing-excel-format` landing page (2026-05-05). | `free cheque printing software in excel`, `excel cheque printing template` | Shipped |
+| 4 | ~~`cheque-number-in-cheque-book-explained`~~ | ✅ Published as blog post #15 (2026-05-14). | `cheque number in cheque book` (2,400 vol) | Shipped |
 
 ### Tier 3 — Already on the SEO-PLAN.md backlog (lower priority now)
 
 Defer these in favour of Tier 2:
-- ~~`how-to-print-cheque-in-india`~~ — already published as post #8
+- ~~`how-to-print-cheque-in-india`~~ — already published as post #7
 - ~~`best-free-cheque-printing-software-india`~~ — already published as post #10
-- `cts-2010-cheque-format-compliance` — keep on backlog
+- ~~`cts-2010-cheque-format-compliance`~~ — already published as post #16 (slug `cts-2010-cheque-format-compliance-india`)
 - `cheque-vs-digital-payment-india` — keep on backlog
 - `how-to-fill-cheque-correctly` — keep on backlog
 

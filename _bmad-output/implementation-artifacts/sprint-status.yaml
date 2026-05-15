@@ -123,7 +123,7 @@ development_status:
   phase-2-posthog-dashboards: done
   phase-2-amount-in-words-tool: done
   phase-2-seo-landing-pages-en: done
-  phase-2-seo-landing-pages-hi-gu: backlog  # hi/gu translations of new SEO pages pending
+  phase-2-seo-landing-pages-hi-gu: done  # all 6 SEO landing pages fully translated (verified 2026-05-15: 908 keys × 3 locales, zero missing)
   phase-2-glossary-page: done
   phase-2-terms-page: done
   phase-2-gsc-seo-fixes: done  # video facade, page-with-redirect, sitemap lastmod, noindex headers

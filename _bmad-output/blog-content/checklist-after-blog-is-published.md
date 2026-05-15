@@ -56,9 +56,9 @@ Example — if you publish Post #11 (Section 138), go edit the existing `cheque-
 
 Do this in all 3 languages, using locale-matching URLs.
 
-### 5. Submit to Bing Webmaster Tools
+### 5. Bing / Yandex / DuckDuckGo — auto-pinged via IndexNow ✅
 
-Not just Google. Sign in to [Bing Webmaster Tools](https://www.bing.com/webmasters) → URL Inspection → Submit URL. Bing now powers ChatGPT / Copilot results too, so this matters more than it used to.
+No manual step required for new Sanity publishes. The Sanity webhook hits Netlify Function `/api/indexnow` on every publish, which pings Bing, Yandex, and DuckDuckGo. See `[[project_indexnow_integration]]`. Only fall back to manual Bing Webmaster URL submission if IndexNow telemetry shows the URL was rejected.
 
 ### 6. Social distribution (drives crawl signals)
 
@@ -97,10 +97,10 @@ Every Monday, 10 minutes:
 
 ## One-Time Setup (do once, saves work forever)
 
-- [ ] **Google Search Console** — verified ✓
-- [ ] **Bing Webmaster Tools** — verified?
-- [ ] **IndexNow protocol** — free, pings Bing/Yandex automatically on new publishes. Netlify supports it via a plugin. Takes ~10 min to set up, saves manual Bing submissions forever.
-- [ ] **RSS feed** — does your blog expose an RSS feed at `/rss.xml` or `/feed.xml`? If not, aggregators (Feedly, newsletter tools) can't pull your posts.
+- [x] **Google Search Console** — verified
+- [x] **Bing Webmaster Tools** — verified (Bing batches 1-8 submitted, batches 9+ pending in `_bmad-output/seo/bing-indexing-queue.md`)
+- [x] **IndexNow protocol** — live (Sanity webhook → Netlify Function `/api/indexnow` → Bing/Yandex/DuckDuckGo). See `[[project_indexnow_integration]]`.
+- [ ] **RSS feed** — not yet exposed at `/rss.xml` or `/feed.xml`. Aggregators (Feedly, newsletter tools) can't pull posts until this exists.
 
 ---
 
@@ -116,7 +116,7 @@ Every Monday, 10 minutes:
 [ ] GSC: Requested indexing for /gu URL
 [ ] GSC: Sitemap resubmitted
 [ ] Added internal links FROM 2+ existing posts TO the new post (all 3 languages)
-[ ] Bing Webmaster: URL submitted
+[ ] Bing / Yandex / DuckDuckGo — auto-pinged by IndexNow (no manual action; only fall back if IndexNow rejected)
 [ ] Posted on LinkedIn with social copy
 [ ] Shared in 1 relevant community
 [ ] Calendar reminder set: check GSC at Day 7

@@ -77,11 +77,11 @@
 4. **GSC Validate Fix**:
    - FAQ → "Missing field 'text'" (after Sanity republish + rebuild)
    - Videos → "Video isn't on a watch page" (already validating since 29/04, will re-evaluate with new schema)
-5. **Step 3 content backlog** — 4 high-priority new posts identified:
-   - `cheqify-vs-moneyflex` (high commercial intent, declining incumbent)
-   - `cheqify-vs-chrysanth-cheque-writer` (same logic)
-   - `excel-cheque-printing-template-vs-cheqify` (Excel-using SMBs)
-   - `cheque-number-in-cheque-book-explained` (2,400 mo searches, low competition)
+5. **Step 3 content backlog** — original 4 high-priority new posts (now all shipped, status updated 2026-05-15):
+   - ✅ `cheqify-vs-moneyflex` — built as comparison landing page (2026-05-05)
+   - ✅ `cheqify-vs-chrysanth-cheque-writer` — built as `/cheqify-vs-chrysanth` comparison landing page (2026-05-05)
+   - ✅ `excel-cheque-printing-template-vs-cheqify` — covered by `/cheque-printing-excel-format` landing page (2026-05-05)
+   - ✅ `cheque-number-in-cheque-book-explained` — published as blog post #15 (2026-05-14)
 6. **Step 4 directory submissions** — start at 3–4/week per cadence in `step-4-directory-submissions.md`. Week 1 picks: Product Hunt prep, AlternativeTo, SaaSHub.
 
 ### 🚫 Known limitation

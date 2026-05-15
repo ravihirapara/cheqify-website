@@ -30,7 +30,7 @@ _This file contains critical rules and patterns that AI agents must follow when 
 | Inter | self-hosted | Typography |
 | Playwright | latest | E2E testing |
 
-**Deployment:** Vercel (auto SSG, CDN, HTTPS)
+**Deployment:** Netlify (auto SSG via `@netlify/plugin-nextjs`, CDN, HTTPS). Two git remotes auto-mirror: `CodeTailorSoftech/cheqify-website` + `ravihirapara/cheqify-website` + `cheqifyapp/cheqify-website` — see `[[project_multi_remote_push_setup]]`.
 
 ## Critical Implementation Rules
 
@@ -108,11 +108,13 @@ _This file contains critical rules and patterns that AI agents must follow when 
 
 ### Blog Rules
 
-- Blog markdown files at `content/blog/{lang}/{slug}.md`
-- Required frontmatter: title, description, date (YYYY-MM-DD), author, slug, lang, tags, image
-- Slug must match filename (without .md)
-- Every post must exist in all 3 languages with the same slug
-- In-article CTA ("Start Free") in every blog post
+- Blog content lives in **Sanity CMS** (project `4lvsthqk`, dataset `production`), NOT markdown files. Sanity Studio at `/studio`.
+- Required Sanity fields per post: `title_en/_hi/_gu`, `slug.current`, `body_en/_hi/_gu` (PortableText), `author`, `image`, `tags`, `order` (auto max+1, readOnly in Studio), `isHowTo`, `hasFaq`. Optional: `howToSteps`, `faqItems`.
+- Every post must have all 3 language bodies populated under the same slug (`/en/blog/{slug}`, `/hi/blog/{slug}`, `/gu/blog/{slug}`).
+- In-article CTA ("Start Free") in every blog post (rendered via `blog-portable-text.tsx`).
+- Reference drafts live at `_bmad-output/blog-content/post-NN-{slug}.md` — these mirror published Sanity posts as historical/reference docs only. Edits there do NOT update Sanity.
+- After publishing in Sanity Studio: run `npm run blog:index` (rewrites `PUBLISHED-INDEX.md` + auto-appends new URLs to `gsc-indexing-queue.md`). Static-export sitemap requires `npm run build` + redeploy before GSC discovers the new post — see `[[project_static_export_sitemap_gotcha]]`.
+- Quality gate (2026-05-14 onward): Human ≥90% / AI ≤10% on any detector AND >1200 words EN body. See `[[feedback_blog_low_ai_score]]`.
 
 ### Accessibility Rules
 
@@ -170,4 +172,4 @@ _This file contains critical rules and patterns that AI agents must follow when 
 - Review quarterly for outdated rules
 - Remove rules that become obvious over time
 
-Last Updated: 2026-04-03
+Last Updated: 2026-05-15 (consistency sweep: corrected Vercel→Netlify deployment, rewrote Blog Rules for Sanity reality)
