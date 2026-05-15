@@ -766,7 +766,7 @@ The original epics 1–11 covered the MVP that shipped in April 2026. Everything
 
 ### Phase 2.5: Open work (not done yet)
 
-- Sanity `SANITY_WRITE_TOKEN` env var in Netlify + Delete trigger on existing webhook (for blog order re-compact). See `[[project_blog_order_automation]]`. Currently blocks the order-field duplicate-cleanup (posts #13/#14 share order=13 and #15/#16 share order=14 in Sanity as of 2026-05-15 — observed via `npm run blog:index`).
+- Sanity `SANITY_WRITE_TOKEN` env var in Netlify + Delete trigger on existing webhook. See `[[project_blog_order_automation]]`. Order-field assignment is owned by Sanity (and Ravi) — not by code or scripts. The `blog:reorder` script exists but is NOT to be run against production; treat any post-order state in Sanity as authoritative.
 - GSC "Validate Fix" click after the 2026-05-11 page-with-redirect deploy (still pending Ravi's manual click).
 - Bing submission batches 9+ — batches 1-8 done (69 URLs), more URLs queued in `_bmad-output/seo/bing-indexing-queue.md`.
 - SEO-PLAN.md Phase 5-6 — keyword ranking + off-page strategy items still Pending (see status column in SEO-PLAN.md).
