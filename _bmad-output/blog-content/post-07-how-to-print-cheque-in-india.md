@@ -1,4 +1,6 @@
-# Blog Post #24 — How to Print a Cheque in India
+# Blog Post #7 — How to Print a Cheque in India
+
+> ✅ **Published in Sanity.** Live as post #7 (slug: `how-to-print-cheque-in-india`). This draft is kept as historical reference; the live copy in Sanity is the source of truth.
 
 ## Sanity Fields
 

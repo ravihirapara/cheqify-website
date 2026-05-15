@@ -1,4 +1,6 @@
-# Blog Post #25 — Best Free Cheque Printing Software in India
+# Blog Post #10 — Best Free Cheque Printing Software in India
+
+> ✅ **Published in Sanity.** Live as post #10 (slug: `best-free-cheque-printing-software-india`). This draft is kept as historical reference; the live copy in Sanity is the source of truth.
 
 > ⚠️ **Before publishing — legal/factual check required**
 >
@@ -12,7 +14,7 @@
 - **Tags:** `Software Comparison`, `Cheque Productivity`
   - (Matches existing Title-Case taxonomy.)
 - **Author:** Cheqify Team
-- **Order:** `12` (publishes right after Post #24 — verify against Sanity's current max `order` and set to `max + 2`)
+- **Order:** `12` (published right after Post #7. Original draft note kept for historical accuracy.)
 - **Is HowTo:** NO
 - **Has FAQ:** YES (toggle ON)
 

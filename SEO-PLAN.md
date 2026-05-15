@@ -71,8 +71,8 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 
 | # | Target Keyword | Blog Post Idea | Priority | Status |
 |---|---------------|----------------|----------|--------|
-| 24 | "how to print cheque in india" | Step-by-step guide with screenshots using Cheqify | High | Next Week |
-| 25 | "cheque printing software free" | Why Cheqify is the best free cheque printing solution | High | Next Week |
+| 24 | "how to print cheque in india" | Step-by-step guide with screenshots using Cheqify | High | ✅ Published (live as post #7) |
+| 25 | "cheque printing software free" | Why Cheqify is the best free cheque printing solution | High | ✅ Published (live as post #10) |
 | 26 | "MICR code cheque printing" | What is MICR code and why it matters for cheque printing | High | Pending |
 | 27 | "bulk cheque printing for business" | Guide to batch printing cheques for SMBs | Medium | Pending |
 | 28 | "cheque bounce reasons india" | Common cheque errors and how Cheqify prevents them | Medium | Pending |
@@ -82,7 +82,7 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 | 32 | "cheque lifecycle management" | End-to-end cheque tracking explained | Low | Pending |
 | 33 | "chequepot alternative free" | Detailed comparison — Cheqify vs ChequePot vs others | High | Pending |
 
-### 5B-1. Blog Post #24 — Ready for Sanity (Week of 2026-04-21)
+### 5B-1. Blog Post #24 — ✅ Published (live as post #7, slug `how-to-print-cheque-in-india`)
 
 **Slug:** `how-to-print-cheque-in-india`
 **Tags:** `cheque-printing`, `cheque-guide`, `how-to`
@@ -123,7 +123,7 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 
 ---
 
-### 5B-2. Blog Post #25 — Ready for Sanity (Week of 2026-04-21)
+### 5B-2. Blog Post #25 — ✅ Published (live as post #10, slug `best-free-cheque-printing-software-india`)
 
 **Slug:** `best-free-cheque-printing-software-india`
 **Tags:** `cheque-printing`, `comparison`, `free-software`
