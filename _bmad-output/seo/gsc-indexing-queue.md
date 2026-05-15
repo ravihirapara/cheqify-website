@@ -195,35 +195,38 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 8 — HI blog posts (7 URLs)
+## Day 8 — HI blog posts (7 URLs) — Done
 
-```
-https://cheqify.app/hi/blog/cheque-bounce-reasons-and-solutions
-https://cheqify.app/hi/blog/how-to-avoid-cheque-fraud-in-india
-https://cheqify.app/hi/blog/how-to-print-cheque-at-home
-https://cheqify.app/hi/blog/post-dated-cheques-rules-and-best-practices
-https://cheqify.app/hi/blog/what-is-micr-code-on-cheque
-https://cheqify.app/hi/blog/how-to-print-cheque-in-india
-https://cheqify.app/hi/blog/how-to-reconcile-cheques-with-bank-statements
-```
+- ~~https://cheqify.app/hi/blog/cheque-bounce-reasons-and-solutions~~
+- ~~https://cheqify.app/hi/blog/how-to-avoid-cheque-fraud-in-india~~
+- ~~https://cheqify.app/hi/blog/how-to-print-cheque-at-home~~
+- ~~https://cheqify.app/hi/blog/post-dated-cheques-rules-and-best-practices~~
+- ~~https://cheqify.app/hi/blog/what-is-micr-code-on-cheque~~
+- ~~https://cheqify.app/hi/blog/how-to-print-cheque-in-india~~
+- ~~https://cheqify.app/hi/blog/how-to-reconcile-cheques-with-bank-statements~~
 
-- [ ] Day 8
+- [x] Day 8 done
 
 ---
 
-## Day 9 — Remaining HI blogs + GU blog posts start (7 URLs)
+## Day 9 — Remaining HI blogs + GU blog posts start (7 URLs) — Partial (6 of 7 done)
+
+✅ Submitted (per Ravi 2026-05-15):
+
+- ~~https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses~~
+- ~~https://cheqify.app/hi/blog/best-free-cheque-printing-software-india~~
+- ~~https://cheqify.app/hi/blog/section-138-ni-act-cheque-bounce-india~~
+- ~~https://cheqify.app/hi/blog/cheque-validity-period-stop-payment-india~~
+- ~~https://cheqify.app/gu/blog/cheqify-vs-manual-cheque-writing~~
+- ~~https://cheqify.app/gu/blog/cheque-bounce-reasons-and-solutions~~
+
+⏭ Still pending (rolled forward — submit on the next available slot, before Day 10):
 
 ```
-https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses
-https://cheqify.app/hi/blog/best-free-cheque-printing-software-india
-https://cheqify.app/hi/blog/section-138-ni-act-cheque-bounce-india
-https://cheqify.app/hi/blog/cheque-validity-period-stop-payment-india
-https://cheqify.app/gu/blog/cheqify-vs-manual-cheque-writing
-https://cheqify.app/gu/blog/cheque-bounce-reasons-and-solutions
 https://cheqify.app/gu/blog/how-to-avoid-cheque-fraud-in-india
 ```
 
-- [ ] Day 9
+- [ ] Day 9 — final URL only
 
 ---
 
