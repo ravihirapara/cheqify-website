@@ -27,9 +27,11 @@ Copy-paste these fields into every directory form:
 | **Headquarters** | Surat, Gujarat, India |
 | **Founder** | Ravi Hirapara |
 | **Logo URL** | https://cheqify.app/images/logo.png |
-| **Cover/screenshot** | Use OG image: https://cheqify.app/og-cheqify.jpg |
+| **Cover/screenshot** | https://cheqify.app/images/og-cheqify.jpg (OG image) |
 | **Demo video URL** | https://www.youtube.com/watch?v=DiihuB-hEiY |
-| **Contact email** | contact@cheqify.app *(verify)* |
+| **Contact email** | support@cheqify.app |
+| **Screenshot assets** | All `public/images/*-screenshot.webp` and feature WebPs are submission-ready. Pre-cropped 1270×760 versions for Product Hunt should be exported from these before launch. |
+| **Per-directory ready-to-paste copy** | See `directory-submission-packets.md` in this folder — different character limits per directory pre-fitted. |
 
 **Tags / keywords (paste 5–10 from this list):** cheque printing, cheque management, MICR validation, batch printing, CTS 2010, Indian banking, SMB tools, fintech India, financial software, free cheque software
 
