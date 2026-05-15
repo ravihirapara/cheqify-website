@@ -31,7 +31,7 @@ const liveBlogSlugs = result.map((p) => p.slug).filter(Boolean);
 
 const queue = readFileSync(queuePath, "utf8");
 const queueUrls = new Set(
-  (queue.match(/https:\/\/cheqify\.app\/[^\s)]+/g) || []).map((u) => u.replace(/[)\s]+$/, ""))
+  (queue.match(/https:\/\/cheqify\.app\/[^\s)~]+/g) || []).map((u) => u.replace(/[)\s~]+$/, ""))
 );
 
 const missing = [];

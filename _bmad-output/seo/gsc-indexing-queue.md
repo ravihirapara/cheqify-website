@@ -1,8 +1,8 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-05-07 — added /demo (3 locales, priority for Video Indexing fix)
-**Total live URLs:** 93 (3 locales × 31 routes)
+**Last updated:** 2026-05-15 — promoted posts #15 + #16 from Future → Day 12; refreshed Future section with #17 + #18
+**Total live URLs:** 99 (3 locales × 33 routes; +6 for posts #15/#16)
 **GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07
 **Estimated days to clear:** 12-13 days at observed quota
 
@@ -262,6 +262,25 @@ https://cheqify.app/gu/terms
 
 ---
 
+## Day 12 — Posts #15 + #16 (6 URLs)
+
+Posts went live in Sanity 2026-05-14. Submit after Netlify rebuild has them in the sitemap (per [[project_static_export_sitemap_gotcha]]).
+
+**Pre-flight:** `curl -I https://cheqify.app/sitemap.xml | grep -q 200` then confirm the new slugs appear in https://cheqify.app/sitemap.xml.
+
+```
+https://cheqify.app/en/blog/cheque-number-in-cheque-book-explained
+https://cheqify.app/hi/blog/cheque-number-in-cheque-book-explained
+https://cheqify.app/gu/blog/cheque-number-in-cheque-book-explained
+https://cheqify.app/en/blog/cts-2010-cheque-format-compliance-india
+https://cheqify.app/hi/blog/cts-2010-cheque-format-compliance-india
+https://cheqify.app/gu/blog/cts-2010-cheque-format-compliance-india
+```
+
+- [ ] Day 12
+
+---
+
 ## Already submitted on 2026-04-30 (skip unless needed)
 
 Per `_bmad-output/seo/rank-page-1-steps.md`, these EN URLs were submitted on 2026-04-30 and may already be indexed. Re-submit only if GSC still reports them as not indexed.
@@ -285,18 +304,18 @@ https://cheqify.app/en/blog/what-is-micr-code-on-cheque
 
 ## Future (queue for later)
 
-Add to a future day after these go live:
+Add to a future day after these go live (both scheduled in Sanity 2026-05-15):
 
 ```
-# After post-15 publishes (Mon 2026-05-11)
-https://cheqify.app/en/blog/cheque-number-in-cheque-book-explained
-https://cheqify.app/hi/blog/cheque-number-in-cheque-book-explained
-https://cheqify.app/gu/blog/cheque-number-in-cheque-book-explained
+# After post-17 publishes (Mon 2026-05-18)
+https://cheqify.app/en/blog/cheque-clearing-time-india
+https://cheqify.app/hi/blog/cheque-clearing-time-india
+https://cheqify.app/gu/blog/cheque-clearing-time-india
 
-# After post-16 publishes (Thu 2026-05-14)
-https://cheqify.app/en/blog/cts-2010-cheque-format-compliance-india
-https://cheqify.app/hi/blog/cts-2010-cheque-format-compliance-india
-https://cheqify.app/gu/blog/cts-2010-cheque-format-compliance-india
+# After post-18 publishes (Thu 2026-05-21)
+https://cheqify.app/en/blog/cheque-types-india
+https://cheqify.app/hi/blog/cheque-types-india
+https://cheqify.app/gu/blog/cheque-types-india
 ```
 
 ---
