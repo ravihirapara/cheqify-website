@@ -73,14 +73,14 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 |---|---------------|----------------|----------|--------|
 | 24 | "how to print cheque in india" | Step-by-step guide with screenshots using Cheqify | High | ✅ Published (live as post #7) |
 | 25 | "cheque printing software free" | Why Cheqify is the best free cheque printing solution | High | ✅ Published (live as post #10) |
-| 26 | "MICR code cheque printing" | What is MICR code and why it matters for cheque printing | High | Pending |
-| 27 | "bulk cheque printing for business" | Guide to batch printing cheques for SMBs | Medium | Pending |
-| 28 | "cheque bounce reasons india" | Common cheque errors and how Cheqify prevents them | Medium | Pending |
-| 29 | "CTS 2010 cheque format" | CTS 2010 compliance explained — what businesses need to know | Medium | Pending |
+| 26 | "MICR code cheque printing" | What is MICR code and why it matters for cheque printing | High | ✅ Published (live as post #6) |
+| 27 | "bulk cheque printing for business" | Guide to batch printing cheques for SMBs | Medium | ✅ Published (live as post #14) |
+| 28 | "cheque bounce reasons india" | Common cheque errors and how Cheqify prevents them | Medium | ✅ Published (live as post #2) |
+| 29 | "CTS 2010 cheque format" | CTS 2010 compliance explained — what businesses need to know | Medium | ✅ Published (live as post #16) |
 | 30 | "cheque vs digital payment india" | When cheques are still necessary for Indian businesses | Medium | Pending |
 | 31 | "how to fill cheque correctly" | Common cheque-filling mistakes and how to avoid them | Low | Pending |
-| 32 | "cheque lifecycle management" | End-to-end cheque tracking explained | Low | Pending |
-| 33 | "chequepot alternative free" | Detailed comparison — Cheqify vs ChequePot vs others | High | Pending |
+| 32 | "cheque lifecycle management" | End-to-end cheque tracking explained | Low | ✅ Published (live as post #13) |
+| 33 | "chequepot alternative free" | Detailed comparison — Cheqify vs ChequePot vs others | High | ✅ Published (covered by post #10) |
 
 ### 5B-1. Blog Post #24 — ✅ Published (live as post #7, slug `how-to-print-cheque-in-india`)
 

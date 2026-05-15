@@ -32,60 +32,38 @@
 
 ## Topics Already Covered — Do NOT Duplicate
 
+- ❌ Cheqify vs manual cheque writing (post #1)
+- ❌ Cheque bounce reasons & solutions (post #2)
+- ❌ Cheque fraud prevention (post #3)
+- ❌ How to print a cheque at home (post #4)
+- ❌ Post-dated cheques — RBI rules (post #5)
 - ❌ MICR code explained (post #6)
-- ❌ How to print cheque (posts #4 home, #8 step-by-step)
-- ❌ Cheque bounce reasons (post #2)
-- ❌ Cheque vs manual / software comparison (posts #1, #10)
+- ❌ How to print a cheque in India — step-by-step (post #7)
+- ❌ Reconciliation with bank statements (post #8)
+- ❌ Common cheque printing mistakes (post #9)
+- ❌ Best free cheque printing software / Cheqify vs ChequePot (post #10)
 - ❌ Section 138 NI Act (post #11)
 - ❌ Cheque validity / stop payment (post #12)
-- ❌ Post-dated cheques (post #5)
-- ❌ Cheque fraud (post #3)
-- ❌ Reconciliation with bank statements (post #7)
-- ❌ Common cheque printing mistakes (post #9b)
-- ❌ Cheqify vs ChequePot (post #10)
-
----
-
----
-
----
-
----
-
----
-
----
+- ❌ Cheque lifecycle management (post #13)
+- ❌ Bulk cheque printing for SMBs (post #14)
+- ❌ Cheque number in cheque book explained (post #15)
+- ❌ CTS 2010 cheque format compliance (post #16)
+- 📅 Cheque clearing time in India (post #17 — scheduled Mon 2026-05-18)
+- 📅 All types of cheques in India (post #18 — scheduled Thu 2026-05-21)
 
 ---
 
 ## Open Topic Backlog (Not Yet Written)
 
-Cross-reference with `SEO-PLAN.md` Phase 5B. Verify priority before picking.
+Cross-reference with `SEO-PLAN.md` Phase 5B. Verify priority before picking. Items live or scheduled in Sanity have been removed from this list (last sweep: 2026-05-15).
 
 | Slug idea | Title idea | Why fresh angle |
 |---|---|---|
-| `cts-2010-cheque-format-compliance` | CTS 2010 Cheque Format — What Indian Businesses Must Know | Compliance/format topic, no overlap |
 | `cheque-vs-digital-payment-india` | When to Use a Cheque vs UPI / NEFT / RTGS in India | Decision-tree angle, comparative |
-| `how-to-fill-cheque-correctly` | How to Fill a Cheque Correctly — Field-by-Field Guide | Mechanics of writing, complements #4/#8 |
-| `bulk-cheque-printing-batch-guide` | Batch Cheque Printing for Indian SMBs — Complete Guide | Volume/operational, distinct from single-cheque guides |
-| `cheque-lifecycle-management-explained` | Cheque Lifecycle Management — From Issue to Reconciliation | Concept piece tying together other posts |
-| `cheque-truncation-system-explained` | What is the Cheque Truncation System (CTS) and How It Works | Process explainer, banking infra |
-| `crossed-cheque-vs-account-payee` | Crossed Cheque vs Account Payee — What's the Difference? | Definitional disambiguation |
-| `cheque-types-india` | All Types of Cheques in India — Bearer, Order, Crossed, Self, Banker's | Reference / glossary-driven |
+| `how-to-fill-cheque-correctly` | How to Fill a Cheque Correctly — Field-by-Field Guide | Mechanics of writing, complements #4/#7 |
+| `cheque-truncation-system-explained` | What is the Cheque Truncation System (CTS) and How It Works | Process explainer (CTS infra), distinct from CTS 2010 format (#16) |
+| `crossed-cheque-vs-account-payee` | Crossed Cheque vs Account Payee — What's the Difference? | Definitional disambiguation, deeper than #18 cheque-types overview |
 | `gst-payment-by-cheque-india` | Can You Pay GST by Cheque in India? Rules and Limits | Tax-niche, high-intent |
-| `cheque-clearing-time-india` | How Long Does a Cheque Take to Clear in India? (CTS Timelines) | Timing question, frequent searcher intent |
-
----
-
----
-
----
-
----
-
----
-
----
 
 ---
 
