@@ -170,7 +170,15 @@
       "Bash(awk '/## Body \\\\\\(English\\\\\\)/,/## Body \\\\\\(Hindi\\\\\\)/' \"_bmad-output/blog-content/post-16-cts-2010-cheque-format-compliance.md\")",
       "Bash(awk '/## Body \\\\\\(English\\\\\\)/,/## Body \\\\\\(Hindi\\\\\\)/' _bmad-output/blog-content/__TRACKED_VAR__)",
       "Bash(Select-String -Pattern 'from = \"/\"' -Context 0,3)",
-      "Bash(git restore *)"
+      "Bash(git restore *)",
+      "Bash(git credential *)",
+      "Bash(git update-ref *)",
+      "Bash(sed -n '155,170p' _bmad-output/seo/bing-indexing-queue.md)",
+      "Bash(sed -n '172,185p' _bmad-output/seo/bing-indexing-queue.md)",
+      "Bash(awk '/^## Body \\\\\\(English\\\\\\)/,/^## Body \\\\\\(Hindi\\\\\\)/' _bmad-output/blog-content/post-17-cheque-clearing-time-india.md)",
+      "Bash(awk '/^## Body \\\\\\(English\\\\\\)/,/^## Body \\\\\\(Hindi\\\\\\)/' _bmad-output/blog-content/post-18-cheque-types-india.md)",
+      "Bash(git fetch *)",
+      "Bash(git mv *)"
     ]
   }
 }
