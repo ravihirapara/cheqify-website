@@ -1,8 +1,8 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-05-15 — promoted posts #15 + #16 from Future → Day 12; refreshed Future section with #17 + #18
-**Total live URLs:** 99 (3 locales × 33 routes; +6 for posts #15/#16)
+**Last updated:** 2026-05-18 — promoted posts #17 + #18 to Day 13; marked Day 9 final URL + all of Day 10 + Day 11 (URLs through `/en/privacy`) as done
+**Total live URLs:** 105 (3 locales × 33 routes; +12 for posts #15–#18)
 **GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07
 **Estimated days to clear:** 12-13 days at observed quota
 
@@ -209,9 +209,7 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 
 ---
 
-## Day 9 — Remaining HI blogs + GU blog posts start (7 URLs) — Partial (6 of 7 done)
-
-✅ Submitted (per Ravi 2026-05-15):
+## Day 9 — Remaining HI blogs + GU blog posts start (7 URLs) — Done
 
 - ~~https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses~~
 - ~~https://cheqify.app/hi/blog/best-free-cheque-printing-software-india~~
@@ -219,41 +217,37 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 - ~~https://cheqify.app/hi/blog/cheque-validity-period-stop-payment-india~~
 - ~~https://cheqify.app/gu/blog/cheqify-vs-manual-cheque-writing~~
 - ~~https://cheqify.app/gu/blog/cheque-bounce-reasons-and-solutions~~
+- ~~https://cheqify.app/gu/blog/how-to-avoid-cheque-fraud-in-india~~
 
-⏭ Still pending (rolled forward — submit on the next available slot, before Day 10):
-
-```
-https://cheqify.app/gu/blog/how-to-avoid-cheque-fraud-in-india
-```
-
-- [ ] Day 9 — final URL only
+- [x] Day 9 done
 
 ---
 
-## Day 10 — GU blog posts (7 URLs)
+## Day 10 — GU blog posts (7 URLs) — Done
 
-```
-https://cheqify.app/gu/blog/how-to-print-cheque-at-home
-https://cheqify.app/gu/blog/post-dated-cheques-rules-and-best-practices
-https://cheqify.app/gu/blog/what-is-micr-code-on-cheque
-https://cheqify.app/gu/blog/how-to-print-cheque-in-india
-https://cheqify.app/gu/blog/how-to-reconcile-cheques-with-bank-statements
-https://cheqify.app/gu/blog/cheque-printing-mistakes-indian-businesses
-https://cheqify.app/gu/blog/best-free-cheque-printing-software-india
-```
+- ~~https://cheqify.app/gu/blog/how-to-print-cheque-at-home~~
+- ~~https://cheqify.app/gu/blog/post-dated-cheques-rules-and-best-practices~~
+- ~~https://cheqify.app/gu/blog/what-is-micr-code-on-cheque~~
+- ~~https://cheqify.app/gu/blog/how-to-print-cheque-in-india~~
+- ~~https://cheqify.app/gu/blog/how-to-reconcile-cheques-with-bank-statements~~
+- ~~https://cheqify.app/gu/blog/cheque-printing-mistakes-indian-businesses~~
+- ~~https://cheqify.app/gu/blog/best-free-cheque-printing-software-india~~
 
-- [ ] Day 10
+- [x] Day 10 done
 
 ---
 
-## Day 11 — Remaining GU blogs + privacy/terms (final batch, 8 URLs)
+## Day 11 — Remaining GU blogs + privacy/terms (final batch, 8 URLs) — Partial (3 of 8 done)
 
-If quota holds at 7, defer the 8th to a Day 12 cleanup; if you get a bonus slot, finish today.
+✅ Submitted:
+
+- ~~https://cheqify.app/gu/blog/section-138-ni-act-cheque-bounce-india~~
+- ~~https://cheqify.app/gu/blog/cheque-validity-period-stop-payment-india~~
+- ~~https://cheqify.app/en/privacy~~
+
+⏭ Still pending (resume here at next quota window):
 
 ```
-https://cheqify.app/gu/blog/section-138-ni-act-cheque-bounce-india
-https://cheqify.app/gu/blog/cheque-validity-period-stop-payment-india
-https://cheqify.app/en/privacy
 https://cheqify.app/hi/privacy
 https://cheqify.app/gu/privacy
 https://cheqify.app/en/terms
@@ -261,7 +255,7 @@ https://cheqify.app/hi/terms
 https://cheqify.app/gu/terms
 ```
 
-- [ ] Day 11
+- [ ] Day 11 — 5 URLs remaining
 
 ---
 
@@ -281,6 +275,25 @@ https://cheqify.app/gu/blog/cts-2010-cheque-format-compliance-india
 ```
 
 - [ ] Day 12
+
+---
+
+## Day 13 — Posts #17 + #18 (6 URLs)
+
+Both posts went live in Sanity 2026-05-18 (after Sanity → Netlify build hook URL fix; old hook `69ef2114...` was dead on the previous Netlify account, replaced with `6a0a9b35...` "Sanity Publish" hook — see [[project_sanity_netlify_build_hook]]).
+
+**Pre-flight (already done 2026-05-18):** all 6 URLs return 200 and appear in https://cheqify.app/sitemap.xml.
+
+```
+https://cheqify.app/en/blog/cheque-clearing-time-india
+https://cheqify.app/hi/blog/cheque-clearing-time-india
+https://cheqify.app/gu/blog/cheque-clearing-time-india
+https://cheqify.app/en/blog/cheque-types-india
+https://cheqify.app/hi/blog/cheque-types-india
+https://cheqify.app/gu/blog/cheque-types-india
+```
+
+- [ ] Day 13
 
 ---
 
@@ -307,19 +320,7 @@ https://cheqify.app/en/blog/what-is-micr-code-on-cheque
 
 ## Future (queue for later)
 
-Add to a future day after these go live (both scheduled in Sanity 2026-05-15):
-
-```
-# After post-17 publishes (Mon 2026-05-18)
-https://cheqify.app/en/blog/cheque-clearing-time-india
-https://cheqify.app/hi/blog/cheque-clearing-time-india
-https://cheqify.app/gu/blog/cheque-clearing-time-india
-
-# After post-18 publishes (Thu 2026-05-21)
-https://cheqify.app/en/blog/cheque-types-india
-https://cheqify.app/hi/blog/cheque-types-india
-https://cheqify.app/gu/blog/cheque-types-india
-```
+Empty — posts #17 + #18 promoted to Day 13 on 2026-05-18. Add new entries here when drafts #19–#23 are scheduled in Sanity (see [[project_blog_drafts_post19_to_23.md]]).
 
 ---
 
