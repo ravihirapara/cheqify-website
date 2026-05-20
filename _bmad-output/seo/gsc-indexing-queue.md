@@ -1,7 +1,7 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-05-18 — promoted posts #17 + #18 to Day 13; marked Day 9 final URL + all of Day 10 + Day 11 (URLs through `/en/privacy`) as done
+**Last updated:** 2026-05-20 — opened Day 14 (EN re-submissions from 2026-04-30 batch), 7 of 12 done, 5 pending from `how-to-print-cheque-in-india`
 **Total live URLs:** 105 (3 locales × 33 routes; +12 for posts #15–#18)
 **GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07
 **Estimated days to clear:** 12-13 days at observed quota
@@ -278,14 +278,19 @@ https://cheqify.app/gu/blog/cts-2010-cheque-format-compliance-india
 
 ---
 
-## Day 13 — Posts #17 + #18 (6 URLs)
+## Day 13 — Posts #17 + #18 (6 URLs) — Partial (1 of 6 done)
 
 Both posts went live in Sanity 2026-05-18 (after Sanity → Netlify build hook URL fix; old hook `69ef2114...` was dead on the previous Netlify account, replaced with `6a0a9b35...` "Sanity Publish" hook — see [[project_sanity_netlify_build_hook]]).
 
 **Pre-flight (already done 2026-05-18):** all 6 URLs return 200 and appear in https://cheqify.app/sitemap.xml.
 
+✅ Submitted:
+
+- ~~https://cheqify.app/en/blog/cheque-clearing-time-india~~
+
+⏭ Still pending (resume here at next quota window):
+
 ```
-https://cheqify.app/en/blog/cheque-clearing-time-india
 https://cheqify.app/hi/blog/cheque-clearing-time-india
 https://cheqify.app/gu/blog/cheque-clearing-time-india
 https://cheqify.app/en/blog/cheque-types-india
@@ -293,28 +298,35 @@ https://cheqify.app/hi/blog/cheque-types-india
 https://cheqify.app/gu/blog/cheque-types-india
 ```
 
-- [ ] Day 13
+- [ ] Day 13 — 5 URLs remaining
 
 ---
 
-## Already submitted on 2026-04-30 (skip unless needed)
+## Day 14 — EN blog re-submissions (originally submitted 2026-04-30) — Partial (7 of 12 done)
 
-Per `_bmad-output/seo/rank-page-1-steps.md`, these EN URLs were submitted on 2026-04-30 and may already be indexed. Re-submit only if GSC still reports them as not indexed.
+Per `_bmad-output/seo/rank-page-1-steps.md`, these EN URLs were originally submitted on 2026-04-30. Re-submitting because GSC still reports them as not indexed.
+
+✅ Submitted:
+
+- ~~https://cheqify.app/en/blog/best-free-cheque-printing-software-india~~
+- ~~https://cheqify.app/en/blog/cheqify-vs-manual-cheque-writing~~
+- ~~https://cheqify.app/en/blog/cheque-bounce-reasons-and-solutions~~
+- ~~https://cheqify.app/en/blog/cheque-printing-mistakes-indian-businesses~~
+- ~~https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india~~
+- ~~https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india~~
+- ~~https://cheqify.app/en/blog/how-to-print-cheque-at-home~~
+
+⏭ Still pending (resume here at next quota window):
 
 ```
-https://cheqify.app/en/blog/best-free-cheque-printing-software-india
-https://cheqify.app/en/blog/cheqify-vs-manual-cheque-writing
-https://cheqify.app/en/blog/cheque-bounce-reasons-and-solutions
-https://cheqify.app/en/blog/cheque-printing-mistakes-indian-businesses
-https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india
-https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india
-https://cheqify.app/en/blog/how-to-print-cheque-at-home
 https://cheqify.app/en/blog/how-to-print-cheque-in-india
 https://cheqify.app/en/blog/how-to-reconcile-cheques-with-bank-statements
 https://cheqify.app/en/blog/post-dated-cheques-rules-and-best-practices
 https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india
 https://cheqify.app/en/blog/what-is-micr-code-on-cheque
 ```
+
+- [ ] Day 14 — 5 URLs remaining
 
 ---
 
