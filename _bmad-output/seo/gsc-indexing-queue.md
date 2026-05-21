@@ -302,7 +302,7 @@ https://cheqify.app/gu/blog/cheque-types-india
 
 ---
 
-## Day 14 — EN blog re-submissions (originally submitted 2026-04-30) — Partial (7 of 12 done)
+## Day 14 — EN blog re-submissions (originally submitted 2026-04-30) — Partial (8 of 12 done)
 
 Per `_bmad-output/seo/rank-page-1-steps.md`, these EN URLs were originally submitted on 2026-04-30. Re-submitting because GSC still reports them as not indexed.
 
@@ -315,6 +315,7 @@ Per `_bmad-output/seo/rank-page-1-steps.md`, these EN URLs were originally submi
 - ~~https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india~~
 - ~~https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india~~
 - ~~https://cheqify.app/en/blog/how-to-print-cheque-at-home~~
+- ~~https://cheqify.app/en/blog/what-is-micr-code-on-cheque~~
 
 ⏭ Still pending (resume here at next quota window):
 
@@ -323,10 +324,9 @@ https://cheqify.app/en/blog/how-to-print-cheque-in-india
 https://cheqify.app/en/blog/how-to-reconcile-cheques-with-bank-statements
 https://cheqify.app/en/blog/post-dated-cheques-rules-and-best-practices
 https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india
-https://cheqify.app/en/blog/what-is-micr-code-on-cheque
 ```
 
-- [ ] Day 14 — 5 URLs remaining
+- [ ] Day 14 — 4 URLs remaining
 
 ---
 
