@@ -86,7 +86,7 @@ I've watched this happen more times than I can count. Someone signs above their 
 
 Here's the field-by-field walkthrough that would have saved them all. CTS-2010 standard, applies to every Indian bank — SBI, HDFC, ICICI, Axis, Kotak, PNB, the cooperative banks, all of them. If you fill these six things correctly, your cheque clears on time. Get any one wrong, you bounce.
 
-### Field 1 — The Date (Top Right Corner)
+### [H2] Field 1 — The Date (Top Right Corner)
 
 The date box on an Indian cheque is the smallest field and the one people get wrong most often. CTS-2010 lays it out in DDMMYYYY boxes. Eight digits, no slashes, no dots. If your branch printed dd/mm/yyyy guides under the boxes, fine — match that exactly. Don't write "25th May 2026". Write **25052026**. One digit per box.
 
@@ -97,7 +97,7 @@ Two common mistakes:
 - **Post-dating** by accident. You're filling out the cheque at 11pm and put tomorrow's date because that's when you'll hand it over. Then you forget. The payee deposits it the next morning — bank holds it till the date arrives. Not strictly wrong, but slow.
 - **Back-dating** to "save tax this quarter". Two problems: (1) the cheque is closer to expiry, and (2) if the date is more than ~3 months before deposit, it's stale and bounces. Don't.
 
-### Field 2 — Pay To (The Long Line)
+### [H2] Field 2 — Pay To (The Long Line)
 
 This is the payee field. Whoever you're paying — a person, a vendor, a company — their **full legal name** goes here. Not the casual name. If their bank account says "Sharma Trading Co. Pvt. Ltd.", write exactly that. Not "Sharma Trading" or "Sharma & Co.". The bank matches this line against the account name on the credit side. Mismatch → returned cheque.
 
@@ -105,7 +105,7 @@ Right at the end of the name, draw a horizontal line all the way to the edge of 
 
 If you don't yet know the payee's name (say, you're writing a refundable advance), don't write "Self" unless the cheque is genuinely for yourself. "Self" is treated as a bearer instruction — anyone holding the cheque can encash it. Use it only when you're walking the cheque to your own bank counter.
 
-### Field 3 — Amount in Figures (The Boxed Field on the Right)
+### [H2] Field 3 — Amount in Figures (The Boxed Field on the Right)
 
 The boxed field with the ₹ symbol pre-printed. Indian cheques follow the Indian numbering system: lakhs and crores, with commas at 2–2–3 from the right. ₹1,25,000 — not ₹125,000.
 
@@ -116,7 +116,7 @@ Two rules:
 
 If your amount is short (say, ₹500), draw a line through the empty boxes to the right. Pen-fill the unused space so it can't be tampered with.
 
-### Field 4 — Amount in Words (The Long Line)
+### [H2] Field 4 — Amount in Words (The Long Line)
 
 The most-rejected field on Indian cheques. People write it casually and the bank rejects the cheque under "amount in words and figures differ". Here's the safe template:
 
@@ -134,7 +134,7 @@ Paise: if you must, write "Rupees One Lakh Twenty Five Thousand and Fifty Paise 
 
 If the words and figures disagree (Field 3 vs Field 4), most Indian banks honour the **amount in words**, but they're well within their rights to return the cheque. Mismatches are the #1 reason for non-malicious cheque returns at the SBI counters I've stood at in Pune.
 
-### Field 5 — Signature (Bottom Right)
+### [H2] Field 5 — Signature (Bottom Right)
 
 The signature on the bottom right has to match the **specimen signature** the bank has on file for the account. Not "close enough". Not "I sign slightly differently when I'm in a hurry". The same signature.
 
@@ -144,7 +144,7 @@ For company cheques, the **signature panel** is usually below the amount-in-word
 
 Two-signature accounts (joint or partnership): both signatures, both on file. One missing → returned.
 
-### Field 6 — Crossing (Top Left, Optional but Important)
+### [H2] Field 6 — Crossing (Top Left, Optional but Important)
 
 The two parallel lines drawn diagonally across the top-left corner of the cheque. This is the **crossing**, and it tells the bank: don't pay cash over the counter — credit only to a bank account.
 
@@ -156,7 +156,7 @@ Three flavours every cheque writer should know (and a full deep-dive in [All Typ
 
 If you don't cross the cheque, it's a **bearer cheque** — whoever physically holds it can cash it. Lost cheque + no crossing = lost money. Cross every cheque you don't personally hand to the payee at the counter.
 
-### The Six Fields, In Order, In One Glance
+### [H2] The Six Fields, In Order, In One Glance
 
 1. **Date** — DDMMYYYY, eight digits, no slashes.
 2. **Pay To** — full legal name + line to the right edge.
@@ -167,7 +167,7 @@ If you don't cross the cheque, it's a **bearer cheque** — whoever physically h
 
 That's it. Six fields, ten seconds when you know the rules, zero bank returns.
 
-### The Things Bank Counters Always Reject
+### [H2] The Things Bank Counters Always Reject
 
 If you ever wonder why your cheque was returned without bouncing for funds, these are the usual suspects:
 
@@ -177,11 +177,11 @@ If you ever wonder why your cheque was returned without bouncing for funds, thes
 - **MICR band smudged or written on** — the magnetic ink band at the bottom is sacred. Don't write over it, don't fold through it. ([What MICR is and why it matters](/en/blog/what-is-micr-code-on-cheque).)
 - **Wrong cheque book** — if you've moved branches and are still using the old cheque book, the IFSC / account number won't match the new branch. Reissue from the new book.
 
-### When You Mess Up: Cancellation, Not Correction
+### [H2] When You Mess Up: Cancellation, Not Correction
 
 Made a mistake on Field 3? Don't strike through and rewrite. Write **CANCELLED** across the whole leaf in big letters, tear it lengthwise (so the MICR band is destroyed), and start a new leaf. Banks will not honour a corrected cheque under CTS-2010, full stop. Keep the cancelled leaf in your records — it's part of your audit trail. ([Background on CTS-2010 standards](/en/blog/cts-2010-cheque-format-compliance-india).)
 
-### What This Looks Like in Practice
+### [H2] What This Looks Like in Practice
 
 A real example, sanitised, from a Mumbai SMB I helped:
 
@@ -193,7 +193,7 @@ A real example, sanitised, from a Mumbai SMB I helped:
 
 Six seconds with the rules in your head. Cheque deposited 25th May, credited 26th May (T+1), no return, no follow-up. That's the whole point of doing it correctly — boring is good, predictable is good. [How long cheques take to clear](/en/blog/cheque-clearing-time-india) once they're filled right is a separate concern.
 
-### Why This Still Matters in 2026
+### [H2] Why This Still Matters in 2026
 
 UPI exists. NEFT exists. RTGS exists. And cheques are still the default for rent, security deposits, large vendor payments, partnership settlements, government refunds, post-dated salary advances, and a hundred B2B scenarios where digital rails are either disallowed or unreliable. The Reserve Bank of India still clears tens of crores worth of cheque value every working day. The skill of filling a cheque correctly is not going to retire.
 
@@ -255,7 +255,7 @@ Cheque देखने में simple लगता है. छह fields, ए�
 
 ये रहा field-by-field walkthrough जो उन सबको बचा सकता था. CTS-2010 standard, हर Indian bank पर applicable — SBI, HDFC, ICICI, Axis, Kotak, PNB, cooperative banks, सबको. अगर ये छह चीज़ें सही से भरीं, cheque time पर clear हो जाएगा. एक भी गलत — bounce.
 
-### Field 1 — Date (Top Right Corner)
+### [H2] Field 1 — Date (Top Right Corner)
 
 Indian cheque का date box सबसे छोटा field है और सबसे ज़्यादा गलत भरा जाने वाला. CTS-2010 इसे DDMMYYYY boxes में layout करता है. आठ digits, no slashes, no dots. अगर आपकी branch ने dd/mm/yyyy guides print की हैं boxes के नीचे, ठीक है — exactly वैसे ही match करें. "25th May 2026" मत लिखें. लिखें **25052026**. एक digit per box.
 
@@ -266,7 +266,7 @@ Indian cheque का date box सबसे छोटा field है और स�
 - **गलती से Post-dating.** रात 11 बजे cheque भर रहे हैं और कल की date लिख दी क्योंकि कल hand over करेंगे. फिर भूल गए. Payee अगली सुबह deposit करता है — bank उसे date आने तक hold कर लेता है. Strictly wrong नहीं, पर slow.
 - **"इस quarter में tax bachane के लिए" Back-dating.** दो problems: (1) cheque expiry के closer है, और (2) अगर date deposit से ~3 months से ज़्यादा पुरानी है, stale है, bounce. मत करिए.
 
-### Field 2 — Pay To (The Long Line)
+### [H2] Field 2 — Pay To (The Long Line)
 
 ये payee field है. जिसको आप pay कर रहे हैं — person, vendor, company — उनका **full legal name** यहाँ जाता है. Casual name नहीं. अगर उनके bank account में लिखा है "Sharma Trading Co. Pvt. Ltd.", exactly वही लिखिए. "Sharma Trading" या "Sharma & Co." नहीं. Bank इस line को account name से match करता है credit side पर. Mismatch → returned cheque.
 
@@ -274,7 +274,7 @@ Name के end पर, field के right edge तक एक horizontal line �
 
 अगर अभी payee का नाम पता नहीं (मान लो, refundable advance लिख रहे हैं), "Self" मत लिखिए unless cheque genuinely अपने लिए है. "Self" को bearer instruction समझा जाता है — जिसके पास cheque है वो encash कर सकता है. इसका use सिर्फ़ तब करें जब आप खुद bank counter तक cheque ले जा रहे हैं.
 
-### Field 3 — Amount in Figures (Right Side का Boxed Field)
+### [H2] Field 3 — Amount in Figures (Right Side का Boxed Field)
 
 जो ₹ symbol pre-printed है उसके साथ boxed field. Indian cheques Indian numbering system follow करते हैं: lakhs और crores, commas 2–2–3 right से. ₹1,25,000 — न कि ₹125,000.
 
@@ -285,7 +285,7 @@ Name के end पर, field के right edge तक एक horizontal line �
 
 अगर amount short है (मान लो ₹500), right side के empty boxes में line खींच दीजिए. Unused space को pen से भर दीजिए ताकि tamper न हो सके.
 
-### Field 4 — Amount in Words (The Long Line)
+### [H2] Field 4 — Amount in Words (The Long Line)
 
 Indian cheques का सबसे ज़्यादा rejected field. लोग casually लिखते हैं और bank "amount in words and figures differ" के तहत reject कर देता है. Safe template ये है:
 
@@ -303,7 +303,7 @@ Paise: अगर ज़रूरी है, लिखें "Rupees One Lakh Twe
 
 अगर words और figures match नहीं करते (Field 3 vs Field 4), ज़्यादातर Indian banks **amount in words** को honour करते हैं, पर वो cheque return करने के पूरे right में हैं. Mismatches Pune के SBI counters पर मैंने जो देखे हैं — non-malicious cheque returns का #1 reason.
 
-### Field 5 — Signature (Bottom Right)
+### [H2] Field 5 — Signature (Bottom Right)
 
 Bottom right का signature आपके account के लिए bank के पास जो **specimen signature** है, उससे match करना चाहिए. "Close enough" नहीं. "मैं थोड़ा different sign करता हूँ when in a hurry" नहीं. Same signature.
 
@@ -313,7 +313,7 @@ Company cheques के लिए, **signature panel** usually amount-in-words li
 
 Two-signature accounts (joint या partnership): दोनों signatures, दोनों file पर. एक missing → returned.
 
-### Field 6 — Crossing (Top Left, Optional पर Important)
+### [H2] Field 6 — Crossing (Top Left, Optional पर Important)
 
 Cheque के top-left corner पर diagonal दो parallel lines. ये **crossing** है, और bank को बताता है: cash counter पर मत दो — सिर्फ़ bank account में credit करो.
 
@@ -325,7 +325,7 @@ Cheque के top-left corner पर diagonal दो parallel lines. ये **cr
 
 अगर आप cheque cross नहीं करते, वो **bearer cheque** है — जो physically hold करता है, वो cash कर सकता है. Lost cheque + no crossing = lost money. हर cheque cross करें जिसे आप personally counter पर payee को hand नहीं कर रहे.
 
-### छह Fields, In Order, In One Glance
+### [H2] छह Fields, In Order, In One Glance
 
 1. **Date** — DDMMYYYY, आठ digits, no slashes.
 2. **Pay To** — full legal name + line to the right edge.
@@ -336,7 +336,7 @@ Cheque के top-left corner पर diagonal दो parallel lines. ये **cr
 
 बस इतना. छह fields, rules पता हों तो दस seconds, zero bank returns.
 
-### वो चीज़ें जो Bank Counter हमेशा Reject करते हैं
+### [H2] वो चीज़ें जो Bank Counter हमेशा Reject करते हैं
 
 अगर कभी सोचा कि funds होते हुए भी cheque क्यों returned हुआ — ये usual suspects हैं:
 
@@ -346,11 +346,11 @@ Cheque के top-left corner पर diagonal दो parallel lines. ये **cr
 - **MICR band smudged या उस पर लिखा हुआ** — bottom पर magnetic ink band sacred है. ऊपर मत लिखिए, उससे होकर मत fold करिए. ([MICR क्या है और क्यों matter करता है](/hi/blog/what-is-micr-code-on-cheque).)
 - **Wrong cheque book** — अगर आप branches बदल चुके हैं और अभी भी पुराने cheque book से लिख रहे हैं, IFSC / account number नई branch से match नहीं करेगा. नई book से reissue करें.
 
-### जब Mistake हो जाए: Cancellation, Correction नहीं
+### [H2] जब Mistake हो जाए: Cancellation, Correction नहीं
 
 Field 3 पर mistake हुई? Strike through करके rewrite मत करिए. पूरे leaf पर बड़े letters में **CANCELLED** लिखें, lengthwise तोड़ें (ताकि MICR band destroy हो जाए), और नया leaf start करें. CTS-2010 के तहत banks corrected cheque honour नहीं करते, full stop. Cancelled leaf अपने records में रखें — आपके audit trail का part है. ([CTS-2010 standards पर background](/hi/blog/cts-2010-cheque-format-compliance-india).)
 
-### Practice में ये कैसा दिखता है
+### [H2] Practice में ये कैसा दिखता है
 
 एक real example, sanitised, Mumbai के एक SMB से जिसकी मैंने help की:
 
@@ -362,7 +362,7 @@ Field 3 पर mistake हुई? Strike through करके rewrite मत क
 
 Six seconds rules head में हों तो. 25 May को deposit, 26 May को credit (T+1), no return, no follow-up. ये पूरा point है correctly करने का — boring is good, predictable is good. [Cheques कितने time में clear होते हैं](/hi/blog/cheque-clearing-time-india) once सही से fill हो गए, ये separate concern है.
 
-### 2026 में ये अभी भी क्यों Matter करता है
+### [H2] 2026 में ये अभी भी क्यों Matter करता है
 
 UPI है. NEFT है. RTGS है. और cheques अभी भी default हैं — rent, security deposits, large vendor payments, partnership settlements, government refunds, post-dated salary advances, और सौ B2B scenarios में जहाँ digital rails या तो disallowed हैं या unreliable. Reserve Bank of India अभी भी हर working day करोड़ों rupees worth cheque value clear करता है. सही से cheque भरने की skill retire होने वाली नहीं है.
 
@@ -386,7 +386,7 @@ Cheque જોવામાં simple લાગે છે. છ fields, એક pen,
 
 આ રહ્યો field-by-field walkthrough જે એ બધાને બચાવી શકતો. CTS-2010 standard, દરેક Indian bank પર applicable — SBI, HDFC, ICICI, Axis, Kotak, PNB, cooperative banks, બધાને. જો આ છ વસ્તુઓ સાચી રીતે ભરી, cheque time પર clear થઈ જશે. એક પણ ખોટું — bounce.
 
-### Field 1 — Date (Top Right Corner)
+### [H2] Field 1 — Date (Top Right Corner)
 
 Indian cheque નું date box સૌથી નાનું field છે અને સૌથી વધારે ખોટું ભરાય છે. CTS-2010 એને DDMMYYYY boxes માં layout કરે છે. આઠ digits, no slashes, no dots. જો તમારી branch એ dd/mm/yyyy guides print કરી છે boxes ની નીચે, ઠીક છે — exactly એ રીતે match કરો. "25th May 2026" ન લખો. લખો **25052026**. એક digit per box.
 
@@ -397,7 +397,7 @@ Indian cheque નું date box સૌથી નાનું field છે અ�
 - **ભૂલમાં Post-dating.** રાત્રે 11 વાગ્યે cheque ભરી રહ્યા છો અને કાલની date લખી દીધી કારણ કે કાલે hand over કરશો. પછી ભૂલી ગયા. Payee બીજી સવારે deposit કરે છે — bank એને date આવે ત્યાં સુધી hold કરે છે. Strictly wrong નહીં, પણ slow.
 - **"આ quarter માં tax બચાવવા" Back-dating.** બે problems: (1) cheque expiry નજીક છે, અને (2) જો date deposit થી ~3 months કરતા જૂની છે, stale છે, bounce. ન કરો.
 
-### Field 2 — Pay To (The Long Line)
+### [H2] Field 2 — Pay To (The Long Line)
 
 આ payee field છે. જેને તમે pay કરી રહ્યા છો — person, vendor, company — એમનું **full legal name** અહીં જાય છે. Casual name નહીં. જો એમના bank account માં લખ્યું છે "Sharma Trading Co. Pvt. Ltd.", exactly એ જ લખો. "Sharma Trading" કે "Sharma & Co." નહીં. Bank આ line ને account name સાથે match કરે છે credit side પર. Mismatch → returned cheque.
 
@@ -405,7 +405,7 @@ Name ના end પર, field ના right edge સુધી એક horizontal l
 
 જો અત્યારે payee નું નામ ખબર નથી (માની લો, refundable advance લખી રહ્યા છો), "Self" ન લખો unless cheque genuinely પોતાના માટે છે. "Self" ને bearer instruction માનવામાં આવે છે — જે physically hold કરે છે એ encash કરી શકે છે. એનો use ત્યારે જ કરો જ્યારે તમે પોતે bank counter સુધી cheque લઈ જઈ રહ્યા છો.
 
-### Field 3 — Amount in Figures (Right Side નું Boxed Field)
+### [H2] Field 3 — Amount in Figures (Right Side નું Boxed Field)
 
 જે ₹ symbol pre-printed છે એની સાથેનું boxed field. Indian cheques Indian numbering system follow કરે છે: lakhs અને crores, commas 2–2–3 right થી. ₹1,25,000 — ન કે ₹125,000.
 
@@ -416,7 +416,7 @@ Name ના end પર, field ના right edge સુધી એક horizontal l
 
 જો amount short છે (માની લો ₹500), right side ના empty boxes માં line દોરો. Unused space ને pen થી ભરી દો જેથી tamper ન થાય.
 
-### Field 4 — Amount in Words (The Long Line)
+### [H2] Field 4 — Amount in Words (The Long Line)
 
 Indian cheques નું સૌથી વધારે rejected field. લોકો casually લખે છે અને bank "amount in words and figures differ" હેઠળ reject કરી દે છે. Safe template આ છે:
 
@@ -434,7 +434,7 @@ Paise: જો જરૂરી છે, લખો "Rupees One Lakh Twenty Five Tho
 
 જો words અને figures match નથી થતા (Field 3 vs Field 4), મોટાભાગની Indian banks **amount in words** ને honour કરે છે, પણ એ cheque return કરવાના પૂરા right માં છે. Mismatches Pune ના SBI counters પર મેં જે જોયા છે — non-malicious cheque returns નું #1 reason.
 
-### Field 5 — Signature (Bottom Right)
+### [H2] Field 5 — Signature (Bottom Right)
 
 Bottom right નો signature તમારા account માટે bank પાસે જે **specimen signature** છે, એની સાથે match કરવો જોઈએ. "Close enough" નહીં. "હું થોડું different sign કરું છું when in a hurry" નહીં. Same signature.
 
@@ -444,7 +444,7 @@ Company cheques માટે, **signature panel** usually amount-in-words line �
 
 Two-signature accounts (joint કે partnership): બંને signatures, બંને file પર. એક missing → returned.
 
-### Field 6 — Crossing (Top Left, Optional પણ Important)
+### [H2] Field 6 — Crossing (Top Left, Optional પણ Important)
 
 Cheque ના top-left corner પર diagonal બે parallel lines. આ **crossing** છે, અને bank ને કહે છે: cash counter પર ન આપો — ફક્ત bank account માં credit કરો.
 
@@ -456,7 +456,7 @@ Cheque ના top-left corner પર diagonal બે parallel lines. આ **cross
 
 જો તમે cheque cross નથી કરતા, એ **bearer cheque** છે — જે physically hold કરે છે, એ cash કરી શકે છે. Lost cheque + no crossing = lost money. દરેક cheque cross કરો જે તમે personally counter પર payee ને hand નથી કરી રહ્યા.
 
-### છ Fields, In Order, In One Glance
+### [H2] છ Fields, In Order, In One Glance
 
 1. **Date** — DDMMYYYY, આઠ digits, no slashes.
 2. **Pay To** — full legal name + line to the right edge.
@@ -467,7 +467,7 @@ Cheque ના top-left corner પર diagonal બે parallel lines. આ **cross
 
 બસ આટલું. છ fields, rules ખબર હોય તો દસ seconds, zero bank returns.
 
-### એ વસ્તુઓ જે Bank Counter હંમેશા Reject કરે છે
+### [H2] એ વસ્તુઓ જે Bank Counter હંમેશા Reject કરે છે
 
 જો ક્યારેય વિચાર્યું કે funds હોવા છતાં cheque કેમ returned થયું — આ usual suspects છે:
 
@@ -477,11 +477,11 @@ Cheque ના top-left corner પર diagonal બે parallel lines. આ **cross
 - **MICR band smudged કે એના પર લખેલું** — bottom પર magnetic ink band sacred છે. ઉપર ન લખો, એમાંથી fold ન કરો. ([MICR શું છે અને કેમ matter કરે છે](/gu/blog/what-is-micr-code-on-cheque).)
 - **Wrong cheque book** — જો તમે branches બદલી છે અને હજુ જૂના cheque book થી લખી રહ્યા છો, IFSC / account number નવી branch સાથે match નહીં થાય. નવી book થી reissue કરો.
 
-### જ્યારે Mistake થઈ જાય: Cancellation, Correction નહીં
+### [H2] જ્યારે Mistake થઈ જાય: Cancellation, Correction નહીં
 
 Field 3 પર mistake થઈ? Strike through કરીને rewrite ન કરો. આખા leaf પર મોટા letters માં **CANCELLED** લખો, lengthwise તોડો (જેથી MICR band destroy થઈ જાય), અને નવું leaf start કરો. CTS-2010 હેઠળ banks corrected cheque honour નથી કરતી, full stop. Cancelled leaf તમારા records માં રાખો — તમારા audit trail નો part છે. ([CTS-2010 standards પર background](/gu/blog/cts-2010-cheque-format-compliance-india).)
 
-### Practice માં આ કેવું દેખાય છે
+### [H2] Practice માં આ કેવું દેખાય છે
 
 એક real example, sanitised, Mumbai ના એક SMB થી જેને મેં help કરી:
 
@@ -493,7 +493,7 @@ Field 3 પર mistake થઈ? Strike through કરીને rewrite ન કર
 
 Six seconds rules head માં હોય તો. 25 May ના રોજ deposit, 26 May ના રોજ credit (T+1), no return, no follow-up. આ આખો point છે correctly કરવાનો — boring is good, predictable is good. [Cheques કેટલા time માં clear થાય છે](/gu/blog/cheque-clearing-time-india) once સાચી રીતે fill થઈ ગયા, એ separate concern છે.
 
-### 2026 માં આ હજુ કેમ Matter કરે છે
+### [H2] 2026 માં આ હજુ કેમ Matter કરે છે
 
 UPI છે. NEFT છે. RTGS છે. અને cheques હજુ default છે — rent, security deposits, large vendor payments, partnership settlements, government refunds, post-dated salary advances, અને સો B2B scenarios માં જ્યાં digital rails કાં તો disallowed છે કાં તો unreliable. Reserve Bank of India હજુ દરેક working day કરોડો rupees worth cheque value clear કરે છે. સાચી રીતે cheque ભરવાની skill retire થવાની નથી.
 
