@@ -87,7 +87,7 @@ The Negotiable Instruments Act (Sections 123–131) lays all of this out cleanly
 
 Here's the full taxonomy, in plain language, with real-world usage.
 
-### What "Crossing" Actually Is
+### [H2] What "Crossing" Actually Is
 
 A crossing is two parallel transverse lines drawn across the face of the cheque, usually in the top-left corner. That's the structural definition. The legal effect: a crossed cheque cannot be paid out as cash over the counter. The bank must credit it to a bank account.
 
@@ -95,7 +95,7 @@ That's the only universal rule. What kind of account, whose account, and whether
 
 If you don't cross the cheque, it's a **bearer cheque**. Whoever physically holds it can walk into the drawee bank and ask for cash. Lost bearer cheque = lost money. Default to crossing every cheque you don't personally hand to the named payee at the bank counter.
 
-### Type 1 — General Crossing
+### [H2] Type 1 — General Crossing
 
 **What it looks like:** Two parallel diagonal lines in the top-left corner. Nothing written between them. Or with "& Co." between them — same legal effect.
 
@@ -105,7 +105,7 @@ If you don't cross the cheque, it's a **bearer cheque**. Whoever physically hold
 
 **Practical risk:** If the cheque is lost or stolen mid-route, the finder can theoretically open an account under a similar name, endorse the cheque to themselves, and deposit it. Account payee crossing blocks this; general crossing doesn't.
 
-### Type 2 — Special Crossing
+### [H2] Type 2 — Special Crossing
 
 **What it looks like:** Two parallel lines (or just the name across the face — lines are optional) with the **name of a specific bank** written between them. Example: "State Bank of India" or "HDFC Bank".
 
@@ -115,7 +115,7 @@ If you don't cross the cheque, it's a **bearer cheque**. Whoever physically hold
 
 **Practical risk:** If the named bank is closed, merged, or the payee doesn't have an account there, the cheque becomes effectively unbankable until reissued. Most businesses skip this.
 
-### Type 3 — Account Payee Crossing (The Common One)
+### [H2] Type 3 — Account Payee Crossing (The Common One)
 
 **What it looks like:** Two parallel lines with **"A/c Payee Only"** or **"Account Payee"** written between them. Sometimes abbreviated "A/C Only".
 
@@ -125,7 +125,7 @@ If you don't cross the cheque, it's a **bearer cheque**. Whoever physically hold
 
 **Why this became the default:** Through the 1990s and 2000s, Indian courts repeatedly held collecting banks liable when account-payee cheques were credited to unauthorised accounts. This pushed banks to enforce account-payee crossings more strictly, which made the crossing genuinely safer in practice. The market response was: use it on everything.
 
-### Type 4 — Not Negotiable Crossing
+### [H2] Type 4 — Not Negotiable Crossing
 
 **What it looks like:** Two parallel lines with **"Not Negotiable"** written between them (sometimes combined with "A/c Payee Only").
 
@@ -135,7 +135,7 @@ If you don't cross the cheque, it's a **bearer cheque**. Whoever physically hold
 
 **Practical effect:** Combined with "A/c Payee Only", you get maximum protection — non-transferable + the protection-against-stolen-endorsement rule of Section 130.
 
-### Type 5 — Restrictive Crossing (Less Common)
+### [H2] Type 5 — Restrictive Crossing (Less Common)
 
 **What it looks like:** Crossing with specific instructions like "Pay only to the named payee" or "Not to be encashed before [date]".
 
@@ -143,7 +143,7 @@ If you don't cross the cheque, it's a **bearer cheque**. Whoever physically hold
 
 **When to use:** Rarely. Some corporate cheques carry "valid for 90 days only" or "presentable from 1st April" type restrictions. Generally a worse mechanism than just dating the cheque appropriately ([cheque validity rules](/en/blog/cheque-validity-period-stop-payment-india)).
 
-### Side-by-Side at a Glance
+### [H2] Side-by-Side at a Glance
 
 | Crossing type | Visible mark | Legal effect | Practical use 2026 |
 |---|---|---|---|
@@ -154,7 +154,7 @@ If you don't cross the cheque, it's a **bearer cheque**. Whoever physically hold
 | **Not Negotiable** | Two lines + "Not Negotiable" | Endorsable but no holder-in-due-course protection | Inter-business transfers |
 | **Restrictive** | Two lines + custom instruction | Bank-discretion enforcement | Rare |
 
-### So What Should You Actually Do
+### [H2] So What Should You Actually Do
 
 The 2026 default for almost every business cheque written in India:
 
@@ -164,7 +164,7 @@ This combination gives you the strongest legally-recognised protection — the c
 
 Add "Not Negotiable" only if you're sending the cheque through a courier or other multi-touch chain and want maximum stolen-cheque protection. For routine vendor payments handed directly to the payee, A/c Payee Only is enough.
 
-### What Happens If You Skip the Crossing
+### [H2] What Happens If You Skip the Crossing
 
 A cheque with no crossing is a **bearer cheque**. Three implications:
 
@@ -174,7 +174,7 @@ A cheque with no crossing is a **bearer cheque**. Three implications:
 
 Self-cheques you walk to your own bank counter — fine, bearer is intentional there. Everything else — cross it.
 
-### Common Misconceptions
+### [H2] Common Misconceptions
 
 A few things people get wrong that cost real money:
 
@@ -188,13 +188,13 @@ A few things people get wrong that cost real money:
 
 **"Special crossing protects me more."** No. Special crossing is *narrower* in who can clear it (only the named bank), but it doesn't carry the no-endorsement / payee-account-only protection of A/c Payee Only. Special crossing was historically about trust in a specific bank; A/c Payee Only is about protecting the payee.
 
-### When Crossing Matters in a Dispute
+### [H2] When Crossing Matters in a Dispute
 
 If a cheque goes to court — say a Section 138 case ([NI Act explainer](/en/blog/section-138-ni-act-cheque-bounce-india)) or a fraud suit — the crossing on the cheque becomes evidence. A bearer cheque with no crossing is harder to tie to a specific payee's intent. An A/c Payee Only cheque deposited into the named payee's bank account creates a clean chain: drawer → payee account → ledger entry → deposit slip. Courts read this evidence chain in routine cases and rule accordingly.
 
 This is one of the underrated reasons cheques retain legal weight in B2B India ([head-to-head against UPI/NEFT/RTGS](/en/blog/cheque-vs-digital-payment-india)). The crossing is part of the instrument's evidence story.
 
-### A Final Practical Note
+### [H2] A Final Practical Note
 
 For 99% of Indian businesses writing 99% of their cheques: cross the top-left corner with two diagonal lines, write "A/c Payee Only" between them, and that's the end of the crossing decision.
 
@@ -247,7 +247,7 @@ Negotiable Instruments Act (Sections 123–131) ये सब cleanly lay out �
 
 यहाँ है full taxonomy, plain language में, real-world usage के साथ.
 
-### "Crossing" Actually क्या है
+### [H2] "Crossing" Actually क्या है
 
 Crossing two parallel transverse lines हैं cheque के face पर, usually top-left corner में. ये structural definition है. Legal effect: crossed cheque counter पर cash के तौर पर pay नहीं हो सकता. Bank को इसे bank account में credit करना है.
 
@@ -255,7 +255,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 अगर आप cheque cross नहीं करते, ये **bearer cheque** है. जो physically hold करता है वो drawee bank में जाकर cash मांग सकता है. Lost bearer cheque = lost money. हर cheque cross करें default में जो आप personally bank counter पर named payee को hand नहीं कर रहे.
 
-### Type 1 — General Crossing
+### [H2] Type 1 — General Crossing
 
 **कैसा दिखता है:** Top-left corner में दो parallel diagonal lines. बीच में कुछ नहीं लिखा. या "& Co." के साथ बीच में — same legal effect.
 
@@ -265,7 +265,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 **Practical risk:** अगर cheque mid-route में lost या stolen हो जाए, finder theoretically similar name से account खोल सकता है, खुद को cheque endorse कर सकता है, और deposit कर सकता है. Account payee crossing ये block करती है; general crossing नहीं.
 
-### Type 2 — Special Crossing
+### [H2] Type 2 — Special Crossing
 
 **कैसा दिखता है:** Two parallel lines (या face पर सिर्फ़ name across — lines optional) **specific bank के name** के साथ बीच में लिखा. Example: "State Bank of India" या "HDFC Bank".
 
@@ -275,7 +275,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 **Practical risk:** अगर named bank closed है, merged है, या payee का वहाँ account नहीं है, cheque effectively unbankable हो जाता है reissue होने तक. ज़्यादातर businesses ये skip करते हैं.
 
-### Type 3 — Account Payee Crossing (Common वाला)
+### [H2] Type 3 — Account Payee Crossing (Common वाला)
 
 **कैसा दिखता है:** Two parallel lines **"A/c Payee Only"** या **"Account Payee"** के साथ बीच में लिखा. कभी-कभी "A/C Only" abbreviated.
 
@@ -285,7 +285,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 **ये default कैसे बना:** 1990s और 2000s में, Indian courts ने repeatedly collecting banks को liable hold किया जब account-payee cheques unauthorised accounts में credit हुए. इसने banks को account-payee crossings strictly enforce करने पर push किया, जिसने crossing को practice में genuinely safer बनाया. Market response ये था: हर चीज़ पर use करो.
 
-### Type 4 — Not Negotiable Crossing
+### [H2] Type 4 — Not Negotiable Crossing
 
 **कैसा दिखता है:** Two parallel lines **"Not Negotiable"** के साथ बीच में लिखा (कभी-कभी "A/c Payee Only" के साथ combined).
 
@@ -295,7 +295,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 **Practical effect:** "A/c Payee Only" के साथ combined, maximum protection मिलती है — non-transferable + Section 130 की protection-against-stolen-endorsement rule.
 
-### Type 5 — Restrictive Crossing (Less Common)
+### [H2] Type 5 — Restrictive Crossing (Less Common)
 
 **कैसा दिखता है:** Crossing specific instructions के साथ जैसे "Pay only to the named payee" या "Not to be encashed before [date]".
 
@@ -303,7 +303,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 **कब use करें:** Rarely. कुछ corporate cheques "valid for 90 days only" या "presentable from 1st April" type restrictions carry करते हैं. Generally बस cheque को appropriately date करने से worse mechanism है ([cheque validity rules](/hi/blog/cheque-validity-period-stop-payment-india)).
 
-### एक नज़र में Side-by-Side
+### [H2] एक नज़र में Side-by-Side
 
 | Crossing type | Visible mark | Legal effect | Practical use 2026 |
 |---|---|---|---|
@@ -314,7 +314,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 | **Not Negotiable** | Two lines + "Not Negotiable" | Endorsable पर no holder-in-due-course protection | Inter-business transfers |
 | **Restrictive** | Two lines + custom instruction | Bank-discretion enforcement | Rare |
 
-### So Actually आपको क्या करना चाहिए
+### [H2] So Actually आपको क्या करना चाहिए
 
 2026 default लगभग हर business cheque के लिए जो India में लिखा जाता है:
 
@@ -324,7 +324,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 "Not Negotiable" add करें सिर्फ़ अगर आप cheque को courier या multi-touch chain के through भेज रहे हैं और maximum stolen-cheque protection चाहिए. Routine vendor payments directly payee को hand करने के लिए, A/c Payee Only enough है.
 
-### Crossing Skip करने पर क्या होता है
+### [H2] Crossing Skip करने पर क्या होता है
 
 बिना crossing वाला cheque **bearer cheque** है. तीन implications:
 
@@ -334,7 +334,7 @@ Crossing two parallel transverse lines हैं cheque के face पर, usua
 
 Self-cheques जो आप अपने bank counter तक walk करते हैं — fine, bearer intentional है वहाँ. बाकी सब — cross करें.
 
-### Common Misconceptions
+### [H2] Common Misconceptions
 
 कुछ चीज़ें जो लोग गलत करते हैं और real money लगती है:
 
@@ -348,13 +348,13 @@ Self-cheques जो आप अपने bank counter तक walk करते �
 
 **"Special crossing मुझे ज़्यादा protect करती है."** नहीं. Special crossing *narrower* है कौन clear कर सकता है उसमें (सिर्फ़ named bank), पर ये A/c Payee Only की no-endorsement / payee-account-only protection carry नहीं करती. Special crossing historically specific bank पर trust के बारे में थी; A/c Payee Only payee को protect करने के बारे में है.
 
-### Dispute में Crossing कब Matter करती है
+### [H2] Dispute में Crossing कब Matter करती है
 
 अगर cheque court जाता है — मान लें Section 138 case ([NI Act explainer](/hi/blog/section-138-ni-act-cheque-bounce-india)) या fraud suit — cheque पर crossing evidence बन जाती है. बिना crossing वाला bearer cheque specific payee's intent से tie करना harder है. Named payee के bank account में deposited A/c Payee Only cheque clean chain create करता है: drawer → payee account → ledger entry → deposit slip. Courts ये evidence chain routine cases में read करते हैं और accordingly rule करते हैं.
 
 यही एक underrated reason है कि cheques B2B India में legal weight retain करते हैं ([UPI/NEFT/RTGS के against head-to-head](/hi/blog/cheque-vs-digital-payment-india)). Crossing instrument की evidence story का part है.
 
-### एक Final Practical Note
+### [H2] एक Final Practical Note
 
 99% Indian businesses 99% cheques के लिए: top-left corner cross करें दो diagonal lines से, बीच में "A/c Payee Only" लिखें, और crossing decision का end.
 
@@ -382,7 +382,7 @@ Negotiable Instruments Act (Sections 123–131) આ બધું cleanly lay out
 
 અહીં છે full taxonomy, plain language માં, real-world usage સાથે.
 
-### "Crossing" Actually શું છે
+### [H2] "Crossing" Actually શું છે
 
 Crossing two parallel transverse lines છે cheque ના face પર, usually top-left corner માં. આ structural definition છે. Legal effect: crossed cheque counter પર cash તરીકે pay નથી થઈ શકતો. Bank ને એને bank account માં credit કરવો જ પડે છે.
 
@@ -390,7 +390,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 
 જો તમે cheque cross નથી કરતા, એ **bearer cheque** છે. જે physically hold કરે છે એ drawee bank માં જઈને cash માંગી શકે છે. Lost bearer cheque = lost money. દરેક cheque cross કરો default માં જે તમે personally bank counter પર named payee ને hand નથી કરી રહ્યા.
 
-### Type 1 — General Crossing
+### [H2] Type 1 — General Crossing
 
 **કેવો દેખાય છે:** Top-left corner માં બે parallel diagonal lines. વચ્ચે કંઈ નહીં લખેલું. કે "& Co." સાથે વચ્ચે — same legal effect.
 
@@ -400,7 +400,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 
 **Practical risk:** જો cheque mid-route માં lost કે stolen થઈ જાય, finder theoretically similar name થી account ખોલી શકે છે, પોતાને cheque endorse કરી શકે છે, અને deposit કરી શકે છે. Account payee crossing આ block કરે છે; general crossing નહીં.
 
-### Type 2 — Special Crossing
+### [H2] Type 2 — Special Crossing
 
 **કેવો દેખાય છે:** Two parallel lines (કે face પર ફક્ત name across — lines optional) **specific bank ના name** સાથે વચ્ચે લખેલું. Example: "State Bank of India" કે "HDFC Bank".
 
@@ -410,7 +410,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 
 **Practical risk:** જો named bank closed છે, merged છે, કે payee નું ત્યાં account નથી, cheque effectively unbankable થઈ જાય છે reissue થાય ત્યાં સુધી. મોટાભાગના businesses આ skip કરે છે.
 
-### Type 3 — Account Payee Crossing (Common વાળું)
+### [H2] Type 3 — Account Payee Crossing (Common વાળું)
 
 **કેવો દેખાય છે:** Two parallel lines **"A/c Payee Only"** કે **"Account Payee"** સાથે વચ્ચે લખેલું. ક્યારેક "A/C Only" abbreviated.
 
@@ -420,7 +420,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 
 **આ default કેવી રીતે બન્યું:** 1990s અને 2000s માં, Indian courts એ repeatedly collecting banks ને liable hold કર્યા જ્યારે account-payee cheques unauthorised accounts માં credit થયા. એણે banks ને account-payee crossings strictly enforce કરવા push કર્યા, જેણે crossing ને practice માં genuinely safer બનાવ્યું. Market response આ હતો: દરેક વસ્તુ પર use કરો.
 
-### Type 4 — Not Negotiable Crossing
+### [H2] Type 4 — Not Negotiable Crossing
 
 **કેવો દેખાય છે:** Two parallel lines **"Not Negotiable"** સાથે વચ્ચે લખેલું (ક્યારેક "A/c Payee Only" સાથે combined).
 
@@ -430,7 +430,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 
 **Practical effect:** "A/c Payee Only" સાથે combined, maximum protection મળે છે — non-transferable + Section 130 ની protection-against-stolen-endorsement rule.
 
-### Type 5 — Restrictive Crossing (Less Common)
+### [H2] Type 5 — Restrictive Crossing (Less Common)
 
 **કેવો દેખાય છે:** Crossing specific instructions સાથે જેમ કે "Pay only to the named payee" કે "Not to be encashed before [date]".
 
@@ -438,7 +438,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 
 **ક્યારે use કરો:** Rarely. કેટલીક corporate cheques "valid for 90 days only" કે "presentable from 1st April" type restrictions carry કરે છે. Generally બસ cheque ને appropriately date કરવાથી worse mechanism છે ([cheque validity rules](/gu/blog/cheque-validity-period-stop-payment-india)).
 
-### એક નજરમાં Side-by-Side
+### [H2] એક નજરમાં Side-by-Side
 
 | Crossing type | Visible mark | Legal effect | Practical use 2026 |
 |---|---|---|---|
@@ -449,7 +449,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 | **Not Negotiable** | Two lines + "Not Negotiable" | Endorsable પણ no holder-in-due-course protection | Inter-business transfers |
 | **Restrictive** | Two lines + custom instruction | Bank-discretion enforcement | Rare |
 
-### So Actually તમારે શું કરવું જોઈએ
+### [H2] So Actually તમારે શું કરવું જોઈએ
 
 2026 default લગભગ દરેક business cheque માટે જે India માં લખાય છે:
 
@@ -459,7 +459,7 @@ Crossing two parallel transverse lines છે cheque ના face પર, usually
 
 "Not Negotiable" add કરો ફક્ત જો તમે cheque ને courier કે multi-touch chain ના through મોકલી રહ્યા છો અને maximum stolen-cheque protection જોઈએ. Routine vendor payments directly payee ને hand કરવા માટે, A/c Payee Only enough છે.
 
-### Crossing Skip કરવાથી શું થાય છે
+### [H2] Crossing Skip કરવાથી શું થાય છે
 
 Crossing વગરનો cheque **bearer cheque** છે. ત્રણ implications:
 
@@ -469,7 +469,7 @@ Crossing વગરનો cheque **bearer cheque** છે. ત્રણ implicati
 
 Self-cheques જે તમે તમારી bank counter સુધી walk કરો છો — fine, bearer intentional છે ત્યાં. બાકી બધું — cross કરો.
 
-### Common Misconceptions
+### [H2] Common Misconceptions
 
 કેટલીક વસ્તુઓ જે લોકો ખોટી કરે છે અને real money લાગે છે:
 
@@ -483,13 +483,13 @@ Self-cheques જે તમે તમારી bank counter સુધી walk ક
 
 **"Special crossing મને વધારે protect કરે છે."** નહીં. Special crossing *narrower* છે કોણ clear કરી શકે છે એમાં (ફક્ત named bank), પણ એ A/c Payee Only ની no-endorsement / payee-account-only protection carry નથી કરતી. Special crossing historically specific bank પર trust વિશે હતી; A/c Payee Only payee ને protect કરવા વિશે છે.
 
-### Dispute માં Crossing ક્યારે Matter કરે છે
+### [H2] Dispute માં Crossing ક્યારે Matter કરે છે
 
 જો cheque court જાય છે — માની લો Section 138 case ([NI Act explainer](/gu/blog/section-138-ni-act-cheque-bounce-india)) કે fraud suit — cheque પર crossing evidence બની જાય છે. Crossing વગરનો bearer cheque specific payee ના intent થી tie કરવો harder છે. Named payee ના bank account માં deposited A/c Payee Only cheque clean chain create કરે છે: drawer → payee account → ledger entry → deposit slip. Courts આ evidence chain routine cases માં read કરે છે અને accordingly rule કરે છે.
 
 એ જ એક underrated reason છે કે cheques B2B India માં legal weight retain કરે છે ([UPI/NEFT/RTGS ની against head-to-head](/gu/blog/cheque-vs-digital-payment-india)). Crossing instrument ની evidence story નો part છે.
 
-### એક Final Practical Note
+### [H2] એક Final Practical Note
 
 99% Indian businesses 99% cheques માટે: top-left corner cross કરો બે diagonal lines થી, વચ્ચે "A/c Payee Only" લખો, અને crossing decision નો end.
 
