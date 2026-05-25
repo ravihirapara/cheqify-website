@@ -13,8 +13,6 @@ https://cheqify.app/en/about
 https://cheqify.app/en/contact
 https://cheqify.app/en/blog
 https://cheqify.app/en/glossary
-https://cheqify.app/en/privacy
-https://cheqify.app/en/terms
 https://cheqify.app/en/blog/cheqify-vs-manual-cheque-writing
 https://cheqify.app/en/blog/cheque-bounce-reasons-and-solutions
 https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india
@@ -48,9 +46,6 @@ https://cheqify.app/hi/cheqify-vs-chrysanth
 https://cheqify.app/hi/about
 https://cheqify.app/hi/contact
 https://cheqify.app/hi/blog
-https://cheqify.app/hi/glossary
-https://cheqify.app/hi/privacy
-https://cheqify.app/hi/terms
 https://cheqify.app/hi/blog/cheqify-vs-manual-cheque-writing
 https://cheqify.app/hi/blog/cheque-bounce-reasons-and-solutions
 https://cheqify.app/hi/blog/how-to-avoid-cheque-fraud-in-india
@@ -84,9 +79,6 @@ https://cheqify.app/gu/cheqify-vs-chrysanth
 https://cheqify.app/gu/about
 https://cheqify.app/gu/contact
 https://cheqify.app/gu/blog
-https://cheqify.app/gu/glossary
-https://cheqify.app/gu/privacy
-https://cheqify.app/gu/terms
 https://cheqify.app/gu/blog/cheqify-vs-manual-cheque-writing
 https://cheqify.app/gu/blog/cheque-bounce-reasons-and-solutions
 https://cheqify.app/gu/blog/how-to-avoid-cheque-fraud-in-india
