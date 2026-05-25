@@ -270,6 +270,104 @@ A more detailed explainer with examples from real cheque leaves is here: https:/
 
 ---
 
+## Answer Draft 8 — "How do I fill a cheque correctly in India?"
+
+> *Word count: ~330. Maps to post #19. High-recency: post went live 2026-05-25, so this answer is good to post any time after that.*
+
+```
+A cheque looks simple — six fields, ten seconds, done. And then the bank returns it with an "irregular drawing" stamp and you've lost a week.
+
+The six fields, in the order you actually fill them:
+
+1. Date (top-right). CTS-2010 cheques use DDMMYYYY boxes, no slashes. Write 25052026, one digit per box. Don't write "25th May 2026". The cheque is valid 3 months from this date, not 3 months from when you handed it over.
+
+2. Pay To. Write the payee's full legal name exactly as their bank account shows it. If their account says "Sharma Trading Co. Pvt. Ltd.", write that — not "Sharma Trading". Draw a horizontal line from the last character to the right edge. Without that line, someone can add words after the name and alter the payee. This is a real fraud pattern.
+
+3. Amount in figures. Use Indian numbering: ₹1,25,000 (not ₹125,000). End with /- like this: ₹1,25,000/-. The /- closes the field so nobody can append a zero. Pen-fill any empty space to the right. This single suffix is the highest-leverage fraud defence and most people skip it.
+
+4. Amount in words. Format: "Rupees [amount] Only". Use Indian-system words ("One Lakh Twenty Five Thousand" not "One Hundred Twenty Five Thousand"). End with "Only" and a line to the right edge. The "Only" matters — without it someone can write "and Fifty Paise" after your amount. Mismatch between figures and words is the #1 reason for non-malicious cheque returns.
+
+5. Signature (bottom-right). Must match the specimen the bank has on file. If your signature has evolved over years, update the specimen at the branch — 10 minutes at most banks. For company cheques sign above the printed "Authorised Signatory" line, never below.
+
+6. Crossing (top-left). Two diagonal lines with "A/c Payee Only" between them. Restricts the cheque to bank-account credit only. The default for almost every Indian business cheque post-2010. Skip this and it's a bearer cheque — anyone holding it can encash it.
+
+One rule for mistakes: never strike through and rewrite. Write CANCELLED across the leaf, tear through the MICR band, start a new leaf. Banks will not honour a corrected cheque under CTS-2010.
+
+A field-by-field walkthrough with examples is here: https://cheqify.app/en/blog/how-to-fill-cheque-correctly
+
+— Ravi
+```
+
+---
+
+## Answer Draft 9 — "Cheque vs UPI — which is better for business payments?"
+
+> *Word count: ~340. Maps to post #20. High-recency: post lives Thursday 2026-05-28 — do not post this answer until then (link will 404).*
+
+```
+The honest answer is "both, for different jobs". UPI is brilliant. Cheques are not obsolete. They solve different B2B problems and the smart 2026 finance stack uses each where it actually wins.
+
+UPI wins clearly for:
+- Routine vendor payments under ₹2 lakh — instant, free, traceable
+- Customer refunds — speed matters more than evidence
+- Subscription / SaaS payments — auto-mandates handle it cleanly
+- Personal P2P — nothing comes close
+
+Where UPI breaks:
+- ₹1 lakh per-transaction cap on most banks (₹2 lakh on some verified P2M flows). Above that you're forced to NEFT, RTGS, or cheque.
+- No future-dating. You can't hand a landlord a "May 25th, ₹1,25,000" instrument today.
+- No physical handover ritual. For a partnership buyout or property registration, UPI has no paper-trail weight.
+- Final in seconds. Once tapped, the money is gone. You cannot stop a UPI transaction.
+
+The seven scenarios where Indian businesses still pick cheque, and it's the right call:
+
+1. Annual rent with post-dated cheques. The landlord wants 11 PDCs because a PDC is a commitment instrument — if you don't honour it on the 5th, the landlord can present it and trigger Section 138 (criminal liability under NI Act). UPI mandates can be cancelled silently by the payer. That asymmetry is exactly what landlords are buying.
+
+2. Refundable security deposits (₹5-10 lakh+). The cheque sits in the receiver's drawer for 2 years. If the relationship sours, it can be stopped before clearance. A UPI transfer is gone the moment you tap Confirm.
+
+3. Partnership buyouts, M&A, equity settlements. Cheque + counterfoil + bank statement + ack receipt = clean court-admissible evidence 5 years later. UPI screenshots can be tampered with.
+
+4. Court-ordered payments — usually specify "by demand draft or cheque", not UPI.
+
+5. Government refunds — state revenue depts still process via cheque because the recipient's UPI ID isn't on file but the account number is.
+
+6. Trust-building first transactions with new vendors — a 7-day post-dated cheque gives both sides a structured handshake UPI removes.
+
+7. Large same-day transfers above ₹2 lakh that need legal weight — RTGS settles fast but cheque retains the stop-payment window.
+
+Cost is rarely the reason cheque survives — legal weight and counterparty trust are. The full decision matrix with use cases is here: https://cheqify.app/en/blog/cheque-vs-digital-payment-india
+
+— Ravi
+```
+
+---
+
+## Top 5 to Post — Next 2 Weeks (2026-05-25 → 2026-06-08)
+
+Recommended sequence. Two answers per week, posted Mon + Thu, ordered for diversity (don't link the same Cheqify post in back-to-back weeks).
+
+| Slot | Date | Draft # | Question | Links to post | Why this slot |
+|---|---|---|---|---|---|
+| 1 | Mon 2026-05-26 | **Draft 8** | "How to fill a cheque correctly?" | #19 (live 2026-05-25) | Freshly indexed post; question has high evergreen traffic |
+| 2 | Thu 2026-05-29 | **Draft 5** | "Is there free cheque printing software in India?" | #10 | Highest commercial intent in the cluster |
+| 3 | Mon 2026-06-02 | **Draft 9** | "Cheque vs UPI — which is better for business?" | #20 (live 2026-05-28) | Post must be live + indexed; mid-cluster timing |
+| 4 | Thu 2026-06-05 | **Draft 1** | "How do I print a cheque in India?" | #7 + #4 | Highest pure-traffic question, well-established answer |
+| 5 | Mon 2026-06-09 | **Draft 4** | "Why does my cheque get returned?" | #2 + #11 | High traffic + introduces Section 138 angle |
+
+**Posting checklist for each slot:**
+
+1. Quora India → search the exact question phrasing
+2. Pick the variant with **highest views + fewest existing quality answers** (skip if all top 3 answers are >500 upvotes — too saturated)
+3. Confirm the question is **>2 days old** (rule #7)
+4. Paste the draft, tweak the opening 1–2 sentences to reference something specific in the question (avoid copy-paste detection)
+5. Hit Post → wait 2 hours → reply to your own answer with a related observation (this signals engagement to the algorithm)
+6. Tag your answer with the relevant Topics (Cheques, Banking in India, Small Business in India, India)
+7. Update the **Tracking Sheet** below with Posted-date + Quora URL
+
+**After Slot 5 (week of 2026-06-08):** audit PostHog `?utm_source=quora` sessions before doubling cadence. If 0 sessions: tighten the link-context paragraph. If 50+ sessions: double down on the topic that converted, draft 2 more answers in that cluster.
+
+---
+
 ## Tracking Sheet
 
 Mark each answer once posted. Track its impact monthly.
@@ -283,6 +381,8 @@ Mark each answer once posted. Track its impact monthly.
 | 5 | Free cheque printing software | | | | | | |
 | 6 | Section 138 NI Act | | | | | | |
 | 7 | MICR code on cheque | | | | | | |
+| 8 | How to fill cheque correctly | | | | | | |
+| 9 | Cheque vs UPI for business | | | | | | |
 
 Append rows as new answers go up.
 
