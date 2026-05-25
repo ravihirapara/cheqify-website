@@ -1,12 +1,25 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-05-20 — opened Day 14 (EN re-submissions from 2026-04-30 batch), 7 of 12 done, 5 pending from `how-to-print-cheque-in-india`
-**Total live URLs:** 105 (3 locales × 33 routes; +12 for posts #15–#18)
-**GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07
-**Estimated days to clear:** 12-13 days at observed quota
+**Last updated:** 2026-05-25 — Day 11/12/13/14 backlog reportedly cleared by Ravi in one large session; post #19 (`how-to-fill-cheque-correctly`) went live today, added as Day 15 (verification pending)
+**Total live URLs:** 108 (51 static [17 routes × 3 locales] + 57 blog [19 posts × 3 locales])
+**GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07; 20+/day reported 2026-05-25 (unusual — needs reconciliation)
+**Estimated days to clear remaining backlog:** see "Next Pending Batch" below — usually 1-3 days at normal quota
 
 > Submit each URL via **GSC → URL Inspection → "Request Indexing"**. Bing/Yandex/DuckDuckGo are auto-pinged via IndexNow on every Sanity publish, so this list is Google-only.
+
+---
+
+## 🎯 NEXT PENDING BATCH (for team handoff)
+
+**Status as of 2026-05-25 evening:** Awaiting verification of Ravi's 2026-05-25 bulk submission claim. Pending below assumes nothing post-Day-14 has shipped yet.
+
+**For the next person to do GSC:**
+1. Skip everything marked `[x] Done` below
+2. Start at the first un-checked `[ ]` Day block
+3. Submit each URL via URL Inspection → "Request Indexing"
+4. Mark complete with `[x]` and strikethrough `~~url~~`
+5. Stop when quota hits (~7 URLs/day typical)
 
 ---
 
@@ -330,9 +343,57 @@ https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india
 
 ---
 
+## Day 15 — Post #19 (3 URLs)
+
+Post #19 (`how-to-fill-cheque-correctly`) went live in Sanity 2026-05-25 (Mon slot). Sanity → Netlify build hook should have triggered an auto-rebuild + sitemap refresh.
+
+**Pre-flight (mandatory before submitting):**
+
+```
+curl -I https://cheqify.app/sitemap.xml | grep -q 200
+```
+
+Then confirm the 3 new slugs appear in https://cheqify.app/sitemap.xml — search for `how-to-fill-cheque-correctly`.
+
+⚠ Ravi reported submitting **2 of these 3 URLs** on 2026-05-25 morning as part of bulk session. Which 2 is unconfirmed — verify via GSC URL Inspection history before re-submitting (don't double-submit).
+
+```
+https://cheqify.app/en/blog/how-to-fill-cheque-correctly
+https://cheqify.app/hi/blog/how-to-fill-cheque-correctly
+https://cheqify.app/gu/blog/how-to-fill-cheque-correctly
+```
+
+- [ ] Day 15 — verify Ravi's 2 submissions in GSC history, then submit the missing 1
+
+---
+
 ## Future (queue for later)
 
-Empty — posts #17 + #18 promoted to Day 13 on 2026-05-18. Add new entries here when drafts #19–#23 are scheduled in Sanity (see [[project_blog_drafts_post19_to_23.md]]).
+Add to a future day after these go live:
+
+```
+# Post #20 (cheque-vs-digital-payment-india) — scheduled Thu 2026-05-28
+https://cheqify.app/en/blog/cheque-vs-digital-payment-india
+https://cheqify.app/hi/blog/cheque-vs-digital-payment-india
+https://cheqify.app/gu/blog/cheque-vs-digital-payment-india
+
+# Post #21 (gst-payment-by-cheque-india) — scheduled Mon 2026-06-01
+https://cheqify.app/en/blog/gst-payment-by-cheque-india
+https://cheqify.app/hi/blog/gst-payment-by-cheque-india
+https://cheqify.app/gu/blog/gst-payment-by-cheque-india
+
+# Post #22 (cheque-truncation-system-explained) — scheduled Thu 2026-06-04
+https://cheqify.app/en/blog/cheque-truncation-system-explained
+https://cheqify.app/hi/blog/cheque-truncation-system-explained
+https://cheqify.app/gu/blog/cheque-truncation-system-explained
+
+# Post #23 (crossed-cheque-vs-account-payee) — scheduled Mon 2026-06-08
+https://cheqify.app/en/blog/crossed-cheque-vs-account-payee
+https://cheqify.app/hi/blog/crossed-cheque-vs-account-payee
+https://cheqify.app/gu/blog/crossed-cheque-vs-account-payee
+```
+
+Each post needs Sanity → Netlify rebuild → sitemap verification before submission (per [[project_static_export_sitemap_gotcha]]).
 
 ---
 

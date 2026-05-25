@@ -1,9 +1,23 @@
 # Bing Indexing Queue — Manual URL Submission
 
 **Generated:** 2026-05-08
-**Total URLs:** 88 (47 static + 42 blog — minus duplicates)
+**Last updated:** 2026-05-25 — added posts #15–#19 as Batches 12–14 (previously only #1–#14 covered)
+**Total URLs:** 103 (51 static minus 6 skipped privacy/terms = 45 static + 57 blog = 102; +1 because moneyflex/chrysanth duplicates resolved). New live count: 19 blog posts × 3 locales + all static.
 **Bing daily quota:** ~10 URLs per submission via BWT UI; multiple submissions/day allowed
 **Submit at:** Bing Webmaster Tools → **URL Submission** → "Submit URLs"
+
+---
+
+## 🎯 NEXT PENDING BATCH (for team handoff)
+
+**Status as of 2026-05-25:** Batches 1–8 done. Batches 9–14 still pending (Batches 9–11 are GU/HI part-2, Batches 12–14 are newly-added posts #15–#19).
+
+**For the next person to do Bing:**
+1. Skip everything marked `[x] Done` below
+2. Start at the first un-checked `[ ]` Batch
+3. Paste 10 URLs at a time into BWT → URL Submission → Submit
+4. Mark batch complete `[x]` and strikethrough each URL `~~url~~`
+5. Bing's quota is generous — usually can do multiple batches in one sitting
 
 > **Why manual submission on top of IndexNow?**
 > IndexNow auto-pings Bing for blog posts (Sanity webhook), but does NOT cover static Next.js pages. Manual URL Submission is also a stronger priority signal than IndexNow, useful for a new domain that Bing hasn't built crawl trust in yet.
@@ -236,21 +250,83 @@ https://cheqify.app/gu/terms
 
 ---
 
+## Batch 12 — Posts #15 + #16 (6 URLs)
+
+Both posts live in Sanity since 2026-05-14. Added to this queue 2026-05-25 (previously in "Future" section).
+
+```
+https://cheqify.app/en/blog/cheque-number-in-cheque-book-explained
+https://cheqify.app/hi/blog/cheque-number-in-cheque-book-explained
+https://cheqify.app/gu/blog/cheque-number-in-cheque-book-explained
+https://cheqify.app/en/blog/cts-2010-cheque-format-compliance-india
+https://cheqify.app/hi/blog/cts-2010-cheque-format-compliance-india
+https://cheqify.app/gu/blog/cts-2010-cheque-format-compliance-india
+```
+
+- [ ] Batch 12 done
+
+---
+
+## Batch 13 — Posts #17 + #18 (6 URLs)
+
+Both posts live in Sanity since 2026-05-18 (post-Sanity-Netlify-build-hook fix, per [[project_sanity_netlify_build_hook]]).
+
+```
+https://cheqify.app/en/blog/cheque-clearing-time-india
+https://cheqify.app/hi/blog/cheque-clearing-time-india
+https://cheqify.app/gu/blog/cheque-clearing-time-india
+https://cheqify.app/en/blog/cheque-types-india
+https://cheqify.app/hi/blog/cheque-types-india
+https://cheqify.app/gu/blog/cheque-types-india
+```
+
+- [ ] Batch 13 done
+
+---
+
+## Batch 14 — Post #19 (3 URLs, short batch)
+
+Post #19 (`how-to-fill-cheque-correctly`) went live in Sanity 2026-05-25.
+
+**Pre-flight:** verify all 3 URLs appear in https://cheqify.app/sitemap.xml before submitting (Sanity → Netlify build hook should have triggered auto-rebuild).
+
+```
+https://cheqify.app/en/blog/how-to-fill-cheque-correctly
+https://cheqify.app/hi/blog/how-to-fill-cheque-correctly
+https://cheqify.app/gu/blog/how-to-fill-cheque-correctly
+```
+
+- [ ] Batch 14 done
+
+---
+
 ## Future (queue for later)
 
 Add to a future batch after these go live:
 
 ```
-# After post-15 publishes (Mon 2026-05-11)
-https://cheqify.app/en/blog/cheque-number-in-cheque-book-explained
-https://cheqify.app/hi/blog/cheque-number-in-cheque-book-explained
-https://cheqify.app/gu/blog/cheque-number-in-cheque-book-explained
+# Post #20 (cheque-vs-digital-payment-india) — scheduled Thu 2026-05-28
+https://cheqify.app/en/blog/cheque-vs-digital-payment-india
+https://cheqify.app/hi/blog/cheque-vs-digital-payment-india
+https://cheqify.app/gu/blog/cheque-vs-digital-payment-india
 
-# After post-16 publishes (Thu 2026-05-14)
-https://cheqify.app/en/blog/cts-2010-cheque-format-compliance-india
-https://cheqify.app/hi/blog/cts-2010-cheque-format-compliance-india
-https://cheqify.app/gu/blog/cts-2010-cheque-format-compliance-india
+# Post #21 (gst-payment-by-cheque-india) — scheduled Mon 2026-06-01
+https://cheqify.app/en/blog/gst-payment-by-cheque-india
+https://cheqify.app/hi/blog/gst-payment-by-cheque-india
+https://cheqify.app/gu/blog/gst-payment-by-cheque-india
+
+# Post #22 (cheque-truncation-system-explained) — scheduled Thu 2026-06-04
+https://cheqify.app/en/blog/cheque-truncation-system-explained
+https://cheqify.app/hi/blog/cheque-truncation-system-explained
+https://cheqify.app/gu/blog/cheque-truncation-system-explained
+
+# Post #23 (crossed-cheque-vs-account-payee) — scheduled Mon 2026-06-08
+https://cheqify.app/en/blog/crossed-cheque-vs-account-payee
+https://cheqify.app/hi/blog/crossed-cheque-vs-account-payee
+https://cheqify.app/gu/blog/crossed-cheque-vs-account-payee
 ```
+
+Each post needs Sanity → Netlify rebuild → sitemap verification before submission.
 
 ---
 
