@@ -381,7 +381,7 @@ Mark each answer once posted. Track its impact monthly.
 | 5 | Free cheque printing software | | | | | | |
 | 6 | Section 138 NI Act | | | | | | |
 | 7 | MICR code on cheque | | | | | | |
-| 8 | How to fill cheque correctly | | | | | | |
+| 8 | How to fill cheque correctly | 2026-05-25 | https://qr.ae/pFKMY0 | 104.3K (q-level @ post time) | 0 (post time) | 0 (post time) | TBD |
 | 9 | Cheque vs UPI for business | | | | | | |
 
 Append rows as new answers go up.
