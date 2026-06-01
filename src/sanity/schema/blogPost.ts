@@ -66,7 +66,21 @@ export const blogPost = defineType({
       name: "body_en",
       title: "Body (English)",
       type: "array",
-      of: [{ type: "block" }, { type: "table" }],
+      of: [
+        {
+          type: "block",
+          styles: [
+            { title: "Normal", value: "normal" },
+            { title: "H1", value: "h1" },
+            { title: "H2", value: "h2" },
+            { title: "H3", value: "h3" },
+            { title: "H4", value: "h4" },
+            { title: "Quote", value: "blockquote" },
+            { title: "Callout box", value: "callout" },
+          ],
+        },
+        { type: "table" },
+      ],
     }),
 
     // Hindi
@@ -85,7 +99,21 @@ export const blogPost = defineType({
       name: "body_hi",
       title: "Body (Hindi)",
       type: "array",
-      of: [{ type: "block" }, { type: "table" }],
+      of: [
+        {
+          type: "block",
+          styles: [
+            { title: "Normal", value: "normal" },
+            { title: "H1", value: "h1" },
+            { title: "H2", value: "h2" },
+            { title: "H3", value: "h3" },
+            { title: "H4", value: "h4" },
+            { title: "Quote", value: "blockquote" },
+            { title: "Callout box", value: "callout" },
+          ],
+        },
+        { type: "table" },
+      ],
     }),
 
     // Gujarati
@@ -104,7 +132,21 @@ export const blogPost = defineType({
       name: "body_gu",
       title: "Body (Gujarati)",
       type: "array",
-      of: [{ type: "block" }, { type: "table" }],
+      of: [
+        {
+          type: "block",
+          styles: [
+            { title: "Normal", value: "normal" },
+            { title: "H1", value: "h1" },
+            { title: "H2", value: "h2" },
+            { title: "H3", value: "h3" },
+            { title: "H4", value: "h4" },
+            { title: "Quote", value: "blockquote" },
+            { title: "Callout box", value: "callout" },
+          ],
+        },
+        { type: "table" },
+      ],
     }),
 
     // HowTo Schema (optional — fill for step-by-step guide posts)

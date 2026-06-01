@@ -5,6 +5,9 @@ type TableRow = { _key?: string; cells?: string[] };
 type TableValue = { rows?: TableRow[] };
 
 const components: PortableTextComponents = {
+  block: {
+    callout: ({ children }) => <aside className="callout">{children}</aside>,
+  },
   types: {
     table: ({ value }: { value: TableValue }) => {
       const rows = value?.rows ?? [];

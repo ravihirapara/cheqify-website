@@ -14,6 +14,20 @@
 | CTA Block (EN/HI/GU) | *pasted as the LAST paragraph of each `body_*`* | Conversion element — drives app.cheqify.app signups. |
 | FAQ Items | `faqItems` | Renders FAQPage schema → "People Also Ask". |
 
+### Sanity block styles in this draft
+
+When pasting body paragraphs into Sanity Studio, the `> ...` markdown blocks below should be split into two Sanity block types:
+
+**Apply as Callout block (grey rounded box):**
+- `> **Print A/c Payee crossed cheques...** / **Cheqify के साथ...** / **Cheqify સાથે...**` (final CTA paragraph in each body) → **Callout**
+
+**Apply as Quote block (italic + left bar):**
+- `> **Two parallel lines in the top-left corner...** / **Top-left corner में...** / **Top-left corner માં...**` (pull quote in each body) → **Quote**
+
+To apply: paste as a normal paragraph → click the block style dropdown above the editor → choose **"Callout box"** or **"Quote"**.
+
+**Do NOT paste:** `> **Editor note:** ...` lines — those are instructions to you, not body content.
+
 ---
 
 ## Why This Topic

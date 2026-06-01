@@ -258,3 +258,19 @@
   font-style: italic;
   color: var(--muted-foreground);
 }
+.blog-content .callout {
+  background-color: var(--muted);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--foreground);
+}
+.blog-content .callout > :last-child {
+  margin-bottom: 0;
+}
+.blog-content .callout p {
+  margin-bottom: 0.5rem;
+}
+.blog-content .callout a {
+  font-weight: 500;
+}

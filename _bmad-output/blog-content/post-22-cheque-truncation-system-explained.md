@@ -14,6 +14,14 @@
 | CTA Block (EN/HI/GU) | *pasted as the LAST paragraph of each `body_*`* | Conversion element — drives app.cheqify.app signups. |
 | FAQ Items | `faqItems` | Renders FAQPage schema → "People Also Ask". |
 
+### Sanity block styles in this draft
+
+When pasting body paragraphs into Sanity Studio, every `> ...` markdown block in this file should become a **Callout** block (grey rounded box), NOT a Quote block. To apply: paste as a normal paragraph → click the block style dropdown above the editor → choose **"Callout box"**.
+
+- `> **Print CTS-grade cheques...** / **Cheqify के साथ...** / **Cheqify સાથે...**` (final CTA paragraph in each body) → **Callout**
+
+**Do NOT paste:** `> **Editor note:** ...` lines — those are instructions to you, not body content.
+
 ---
 
 ## Why This Topic
