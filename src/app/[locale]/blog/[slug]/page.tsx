@@ -334,7 +334,7 @@ export default async function BlogPostPage({
                   className="group overflow-hidden rounded-xl border border-border transition-all hover:border-primary/30 hover:shadow-md"
                 >
                   {rp.image && (
-                    <div className="aspect-video overflow-hidden">
+                    <div className="aspect-[1200/630] overflow-hidden">
                       <Image
                         src={rp.image}
                         alt={rp.title}
