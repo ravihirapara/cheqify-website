@@ -367,26 +367,43 @@ https://cheqify.app/gu/blog/how-to-fill-cheque-correctly
 
 ---
 
+## Day 16 — Posts #20 + #21 + #22 (9 URLs)
+
+- Post #20 (`cheque-vs-digital-payment-india`) — LIVE Thu 2026-05-28
+- Post #21 (`gst-payment-by-cheque-india`) — LIVE Mon 2026-06-01
+- Post #22 (`cheque-truncation-system-explained`) — LIVE Mon 2026-06-01 (published early; originally scheduled Thu 2026-06-04)
+
+Sanity → Netlify build hook auto-rebuilt the site on each publish. All 9 URLs should be in the live sitemap.
+
+**Pre-flight (mandatory before submitting):**
+
+```
+curl -I https://cheqify.app/sitemap.xml | grep -q 200
+```
+
+Then confirm all 3 new slugs appear in https://cheqify.app/sitemap.xml — search for `cheque-vs-digital-payment-india`, `gst-payment-by-cheque-india`, `cheque-truncation-system-explained`.
+
+```
+https://cheqify.app/en/blog/cheque-vs-digital-payment-india
+https://cheqify.app/hi/blog/cheque-vs-digital-payment-india
+https://cheqify.app/gu/blog/cheque-vs-digital-payment-india
+https://cheqify.app/en/blog/gst-payment-by-cheque-india
+https://cheqify.app/hi/blog/gst-payment-by-cheque-india
+https://cheqify.app/gu/blog/gst-payment-by-cheque-india
+https://cheqify.app/en/blog/cheque-truncation-system-explained
+https://cheqify.app/hi/blog/cheque-truncation-system-explained
+https://cheqify.app/gu/blog/cheque-truncation-system-explained
+```
+
+- [ ] Day 16 — 9 URLs (will likely span 2 days at ~7/day quota)
+
+---
+
 ## Future (queue for later)
 
 Add to a future day after these go live:
 
 ```
-# Post #20 (cheque-vs-digital-payment-india) — scheduled Thu 2026-05-28
-https://cheqify.app/en/blog/cheque-vs-digital-payment-india
-https://cheqify.app/hi/blog/cheque-vs-digital-payment-india
-https://cheqify.app/gu/blog/cheque-vs-digital-payment-india
-
-# Post #21 (gst-payment-by-cheque-india) — scheduled Mon 2026-06-01
-https://cheqify.app/en/blog/gst-payment-by-cheque-india
-https://cheqify.app/hi/blog/gst-payment-by-cheque-india
-https://cheqify.app/gu/blog/gst-payment-by-cheque-india
-
-# Post #22 (cheque-truncation-system-explained) — scheduled Thu 2026-06-04
-https://cheqify.app/en/blog/cheque-truncation-system-explained
-https://cheqify.app/hi/blog/cheque-truncation-system-explained
-https://cheqify.app/gu/blog/cheque-truncation-system-explained
-
 # Post #23 (crossed-cheque-vs-account-payee) — scheduled Mon 2026-06-08
 https://cheqify.app/en/blog/crossed-cheque-vs-account-payee
 https://cheqify.app/hi/blog/crossed-cheque-vs-account-payee

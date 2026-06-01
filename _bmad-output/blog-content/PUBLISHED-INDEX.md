@@ -7,7 +7,7 @@
 
 ---
 
-## Live Posts (20)
+## Live Posts (22)
 
 | # | Order | Slug | Title (EN) | Tags | Type |
 |---|---|---|---|---|---|
@@ -31,6 +31,8 @@
 | 18 | 15 | `cheque-types-india` | All Types of Cheques in India — Bearer, Order, Crossed, Self, Banker's (2026 Guide) | Cheque Guide, Banking & RBI | FAQ |
 | 19 | 16 | `how-to-fill-cheque-correctly` | How to Fill a Cheque Correctly — A Field-by-Field Guide for India (2026) | Cheque Guide, Cheque Productivity | FAQ |
 | 20 | 16 | `cheque-vs-digital-payment-india` | Cheque vs UPI / NEFT / RTGS in India — When Each One Actually Wins (2026) | Banking & RBI, Cheque Guide | FAQ |
+| 21 | 17 | `gst-payment-by-cheque-india` | Can You Pay GST by Cheque in India? OTC Rules, Limits, and Alternatives (2026) | Banking & RBI, Cheque Guide | HowTo + FAQ |
+| 22 | 18 | `cheque-truncation-system-explained` | Cheque Truncation System (CTS) Explained — How India's Cheque Clearing Actually Works (2026) | Banking & RBI, Cheque Guide | FAQ |
 
 ---
 
@@ -40,9 +42,7 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 
 | # | Slug | Draft file | Target publish date | EN words | HowTo | FAQ items | Notes |
 |---|---|---|---|---|---|---|---|
-| 21 | `gst-payment-by-cheque-india` | `post-21-gst-payment-by-cheque-india.md` | Mon 2026-06-01 | 1,402 | YES (6 steps) | 7 | ⚠️ Pre-publish: verify ₹10,000 OTC threshold + authorised-bank list against current gst.gov.in + CBIC circulars (block in draft) |
-| 22 | `cheque-truncation-system-explained` | `post-22-cheque-truncation-system-explained.md` | Thu 2026-06-04 | 1,575 | NO | 7 | Process-explainer for CTS infra, distinct from CTS 2010 format (post #15) |
-| 23 | `crossed-cheque-vs-account-payee` | `post-23-crossed-cheque-vs-account-payee.md` | Mon 2026-06-08 | 1,886 | NO | 7 | Definitional deep-dive, complements post #18 (cheque types overview) |
+| 23 | `crossed-cheque-vs-account-payee` | `post-23-crossed-cheque-vs-account-payee.md` | Mon 2026-06-08 (next week) | 1,886 | NO | 7 | Definitional deep-dive, complements post #18 (cheque types overview) |
 
 **Per-post pre-publish steps:**
 1. Validate EN body on AI detector → must hit ≥90% Human / ≤10% AI (per [[feedback_blog_low_ai_score]]).
@@ -59,7 +59,9 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 
 ## Pending Topics — Not Yet Drafted
 
-Next open publish slot: **Thu 2026-06-11 (would be post #24)**, then Mon 2026-06-15 (#25), Thu 2026-06-18 (#26)...
+Next open publish slot AFTER #23: **Thu 2026-06-11 (would be post #24)**, then Mon 2026-06-15 (#25), Thu 2026-06-18 (#26)...
+
+(#21 + #22 were both pushed out today 2026-06-01 ahead of schedule. #23 will publish Mon 2026-06-08 as originally planned.)
 
 The original "Open Topic Backlog" (5 items: `cheque-vs-digital-payment-india`, `how-to-fill-cheque-correctly`, `cheque-truncation-system-explained`, `crossed-cheque-vs-account-payee`, `gst-payment-by-cheque-india`) was fully consumed into drafts #19–#23 on 2026-05-15. SEO-PLAN.md Phase 5B is also fully published.
 
@@ -78,7 +80,7 @@ Pick 2 from this list (or propose alternatives) → write drafts → move them d
 
 ## Topics Already Covered — Do NOT Duplicate
 
-Live in Sanity (20):
+Live in Sanity (22):
 
 - ❌ Cheqify vs manual cheque writing (post #1)
 - ❌ Cheque bounce reasons & solutions (post #2)
@@ -100,12 +102,12 @@ Live in Sanity (20):
 - ❌ All types of cheques in India (post #18)
 - ❌ How to fill a cheque correctly — field-by-field (post #19)
 - ❌ Cheque vs UPI / NEFT / RTGS in India (post #20)
+- ❌ GST payment by cheque — rules & limits (post #21)
+- ❌ Cheque Truncation System (CTS) explained (post #22)
 
-Drafted on disk, pending publish (3):
+Drafted on disk, pending publish (1):
 
-- 📝 GST payment by cheque — rules & limits (post #21 — Mon 2026-06-01)
-- 📝 Cheque Truncation System (CTS) explained (post #22 — Thu 2026-06-04)
-- 📝 Crossed cheque vs account payee (post #23 — Mon 2026-06-08)
+- 📝 Crossed cheque vs account payee (post #23 — next slot Mon 2026-06-08)
 
 ---
 
