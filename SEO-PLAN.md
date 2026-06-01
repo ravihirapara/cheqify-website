@@ -77,8 +77,8 @@ Write keyword-targeted blog posts via Sanity CMS. Target: 2 posts/week.
 | 27 | "bulk cheque printing for business" | Guide to batch printing cheques for SMBs | Medium | ✅ Published (live as post #14) |
 | 28 | "cheque bounce reasons india" | Common cheque errors and how Cheqify prevents them | Medium | ✅ Published (live as post #2) |
 | 29 | "CTS 2010 cheque format" | CTS 2010 compliance explained — what businesses need to know | Medium | ✅ Published (live as post #16) |
-| 30 | "cheque vs digital payment india" | When cheques are still necessary for Indian businesses | Medium | Pending |
-| 31 | "how to fill cheque correctly" | Common cheque-filling mistakes and how to avoid them | Low | Pending |
+| 30 | "cheque vs digital payment india" | When cheques are still necessary for Indian businesses | Medium | ✅ Published (live as post #20) |
+| 31 | "how to fill cheque correctly" | Common cheque-filling mistakes and how to avoid them | Low | ✅ Published (live as post #19) |
 | 32 | "cheque lifecycle management" | End-to-end cheque tracking explained | Low | ✅ Published (live as post #13) |
 | 33 | "chequepot alternative free" | Detailed comparison — Cheqify vs ChequePot vs others | High | ✅ Published (covered by post #10) |
 
