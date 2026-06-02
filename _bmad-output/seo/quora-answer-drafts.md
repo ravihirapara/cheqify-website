@@ -342,17 +342,17 @@ Cost is rarely the reason cheque survives — legal weight and counterparty trus
 
 ---
 
-## Top 5 to Post — Next 2 Weeks (2026-05-25 → 2026-06-08)
+## Top 5 to Post — Re-synced after the 05-29 slip (2026-05-25 → 2026-06-11)
 
-Recommended sequence. Two answers per week, posted Mon + Thu, ordered for diversity (don't link the same Cheqify post in back-to-back weeks).
+Recommended sequence. Two answers per week, ordered for diversity (don't link the same Cheqify post in back-to-back weeks). **Re-synced on 2026-06-02** after the Thu 05-29 slot slipped. On 06-02 the "best cheque printing software in India" question turned out to be a moderation hotspot (4 deleted answers in its Question Log, ~1.5 views/day) — so we posted **Draft 1 (how to print, on an "any bank / Excel utilities" question)** instead and re-queued Draft 5 to the end until a clean software question turns up. All links verified live 2026-06-02.
 
-| Slot | Date | Draft # | Question | Links to post | Why this slot |
+| Slot | Date | Draft # | Question | Links to post | Status |
 |---|---|---|---|---|---|
-| 1 | Mon 2026-05-26 | **Draft 8** | "How to fill a cheque correctly?" | #19 (live 2026-05-25) | Freshly indexed post; question has high evergreen traffic |
-| 2 | Thu 2026-05-29 | **Draft 5** | "Is there free cheque printing software in India?" | #10 | Highest commercial intent in the cluster |
-| 3 | Mon 2026-06-02 | **Draft 9** | "Cheque vs UPI — which is better for business?" | #20 (live 2026-05-28) | Post must be live + indexed; mid-cluster timing |
-| 4 | Thu 2026-06-05 | **Draft 1** | "How do I print a cheque in India?" | #7 + #4 | Highest pure-traffic question, well-established answer |
-| 5 | Mon 2026-06-09 | **Draft 4** | "Why does my cheque get returned?" | #2 + #11 | High traffic + introduces Section 138 angle |
+| 1 | Mon 2026-05-25 | **Draft 8** | "How to fill a cheque correctly?" | #19 | ✅ Posted → qr.ae/pFKMY0 |
+| 2 | Tue 2026-06-02 | **Draft 1** | "Print cheques for any bank (Excel utilities)" | #4 + #7 | ✅ Posted → qr.ae/pF2rd4 |
+| 3 | Thu 2026-06-05 | **Draft 9** | "Cheque vs UPI — which is better for business?" | #20 (live) | Pending |
+| 4 | Mon 2026-06-08 | **Draft 4** | "Why does my cheque get returned?" | #2 + #11 | Pending |
+| 5 | Thu 2026-06-11 | **Draft 5** | "Best / free cheque printing software" | #10 (live) | Pending — needs a clean question (avoid moderation hotspots) |
 
 **Posting checklist for each slot:**
 
@@ -364,7 +364,7 @@ Recommended sequence. Two answers per week, posted Mon + Thu, ordered for divers
 6. Tag your answer with the relevant Topics (Cheques, Banking in India, Small Business in India, India)
 7. Update the **Tracking Sheet** below with Posted-date + Quora URL
 
-**After Slot 5 (week of 2026-06-08):** audit PostHog `?utm_source=quora` sessions before doubling cadence. If 0 sessions: tighten the link-context paragraph. If 50+ sessions: double down on the topic that converted, draft 2 more answers in that cluster.
+**After Slot 5 (week of 2026-06-11):** audit PostHog `?utm_source=quora` sessions before doubling cadence. If 0 sessions: tighten the link-context paragraph. If 50+ sessions: double down on the topic that converted, draft 2 more answers in that cluster.
 
 ---
 
@@ -374,7 +374,7 @@ Mark each answer once posted. Track its impact monthly.
 
 | # | Question topic | Posted (date) | Quora URL | Views (30d) | Upvotes | Comments | Cheqify clicks (PostHog) |
 |---|---|---|---|---|---|---|---|
-| 1 | How to print a cheque | | | | | | |
+| 1 | How to print a cheque (any bank / Excel utilities) | 2026-06-02 | https://qr.ae/pF2rd4 | TBD | 0 (post time) | 0 (post time) | TBD |
 | 2 | How long cheque takes to clear | | | | | | |
 | 3 | Crossed vs account payee | | | | | | |
 | 4 | Why cheque bounces | | | | | | |
