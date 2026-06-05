@@ -43,6 +43,8 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 | # | Slug | Draft file | Target publish date | EN words | HowTo | FAQ items | Notes |
 |---|---|---|---|---|---|---|---|
 | 23 | `crossed-cheque-vs-account-payee` | `post-23-crossed-cheque-vs-account-payee.md` | Mon 2026-06-08 (next week) | 1,886 | NO | 7 | Definitional deep-dive, complements post #18 (cheque types overview) |
+| 24 | `loan-repayment-by-cheque-india` | `post-24-loan-repayment-by-cheque-india.md` | Thu 2026-06-11 (next week) | 2,273 | YES (6 steps) | 7 | Ravi's topic suggestion (2026-06-05): EMI = interest + principal, prepayment cuts principal (reduce-EMI vs reduce-tenure with worked ₹30L example), branch handover steps, "advance EMI" trap, RBI Pre-payment Charges Directions 2025 (eff. 2026-01-01). Money post — resolve its ⚠️ fact-check block before publish. |
+| 25 | `how-to-write-cancelled-cheque-safely` | `post-25-how-to-write-cancelled-cheque-safely.md` | Mon 2026-06-15 | 2,439 | YES (5 steps) | 7 | Pairs with #24 — EMI/NACH mandate setup demands a cancelled cheque; in-body link in all 3 locales points to #24's slug, so **publish #24 first**. Has ⚠️ fact-check block (EPFO claim-rule change, per-leaf charges). |
 
 **Per-post pre-publish steps:**
 1. Validate EN body on AI detector → must hit ≥90% Human / ≤10% AI (per [[feedback_blog_low_ai_score]]).
@@ -59,22 +61,17 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 
 ## Pending Topics — Not Yet Drafted
 
-Next open publish slot AFTER #23: **Thu 2026-06-11 (would be post #24)**, then Mon 2026-06-15 (#25), Thu 2026-06-18 (#26)...
+**Topic queue (created 2026-06-05).** Every pending topic now sits in a dated slot on the Mon+Thu cadence. When drafting, take the top row, write the draft, move the row up to "Drafted on Disk". New topic ideas get appended to the bottom of the queue (verify against "Already Covered" first).
 
-(#21 + #22 were both pushed out today 2026-06-01 ahead of schedule. #23 will publish Mon 2026-06-08 as originally planned.)
+| Queue pos | # | Slug | Title idea | Target publish date | Why this angle | Source |
+|---|---|---|---|---|---|---|
+| 1 | 26 | `demand-draft-vs-cheque-vs-bankers-cheque` | Demand Draft vs Cheque vs Banker's Cheque — Which to Use, When | Thu 2026-06-18 | Three bank instruments compared (issuance, clearing, charges, legality) — distinct from #18 (cheque types) and #20 (cheque vs UPI/NEFT). High intent: govt fee payments, admissions, tenders. | Candidate list 2026-06-01 |
+| 2 | 27 | `how-to-request-cheque-book-online-india` | How to Request a Cheque Book Online — SBI, HDFC, ICICI, Axis, Kotak (2026) | Mon 2026-06-22 | Step-by-step per top 5 banks via net banking + mobile app. HowTo schema. Evergreen banking task. | Candidate list 2026-06-01 |
+| 3 | 28 | `cheque-return-reasons-india-2026` | Why Did My Cheque Bounce? 20 RBI Return Reason Codes Explained (2026) | Thu 2026-06-25 | RBI return reason codes + per-bank dishonour charges. Builds on post #2 (bounce) with deeper troubleshooting + money-keyword. | Candidate list 2026-06-01 |
+
+(#24 `loan-repayment-by-cheque-india` — Ravi's suggestion 2026-06-05 — and #25 `how-to-write-cancelled-cheque-safely` were pulled from this queue and drafted on 2026-06-05; see "Drafted on Disk" above.)
 
 The original "Open Topic Backlog" (5 items: `cheque-vs-digital-payment-india`, `how-to-fill-cheque-correctly`, `cheque-truncation-system-explained`, `crossed-cheque-vs-account-payee`, `gst-payment-by-cheque-india`) was fully consumed into drafts #19–#23 on 2026-05-15. SEO-PLAN.md Phase 5B is also fully published.
-
-**No pre-validated topics queued.** Candidate ideas for the next pick (all verified non-duplicate against "Already Covered" below):
-
-| Slug idea | Title idea | Why fresh angle | Intent |
-|---|---|---|---|
-| `how-to-write-cancelled-cheque-safely` | How to Write a Cancelled Cheque Safely (and Why Banks Ask) | "CANCELLED" marking how-to + safe-handling for KYC/EMI/mandate use cases | High (KYC docs, EMI setup, salary onboarding) |
-| `demand-draft-vs-cheque-vs-bankers-cheque` | Demand Draft vs Cheque vs Banker's Cheque — Which to Use, When | Three bank instruments compared (issuance, clearing, charges, legality) — distinct from #18 (cheque types) and #20 (cheque vs UPI/NEFT) | High (govt fee payments, admissions, tenders) |
-| `how-to-request-cheque-book-online-india` | How to Request a Cheque Book Online — SBI, HDFC, ICICI, Axis, Kotak (2026) | Step-by-step per top 5 banks via net banking + mobile app. HowTo schema. | High (evergreen banking task) |
-| `cheque-return-reasons-india-2026` | Why Did My Cheque Bounce? 20 RBI Return Reason Codes Explained (2026) | RBI return reason codes + per-bank dishonour charges. Builds on post #2 (bounce) with deeper troubleshooting + money-keyword. | High (troubleshooting, comparison) |
-
-Pick 2 from this list (or propose alternatives) → write drafts → move them down to "Drafted on Disk" section.
 
 ---
 
