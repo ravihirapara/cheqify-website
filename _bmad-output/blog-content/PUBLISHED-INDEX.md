@@ -54,6 +54,7 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 | 32 | `self-cheque-rules-withdrawal-limits` | `post-32-self-cheque-rules-withdrawal-limits.md` | Thu 2026-07-09 | 1,950 | YES (5 steps) | 7 | Self cheque deep-dive: home vs non-home limits, third-party encashment, 194N TDS (2%/₹1cr; non-filer 2%/₹20L + 5%/₹1cr), 269ST aside. ⚠️ fact-check CRITICAL: verify 194N rates/thresholds against current law — tax figures age. |
 | 33 | `cheque-signature-mismatch` | `post-33-cheque-signature-mismatch.md` | Mon 2026-07-13 | 1,800 | YES (5 steps) | 7 | Code-12 deep-dive: signature drift, SC 2012 position (138 applies), specimen update walkthrough. After publish: add deferred reciprocal link FROM #28's signature section to here. ⚠️ fact-check: Laxmi Dyechem citation only if named. |
 | 34 | `rent-payment-by-cheque-hra-proof` | `post-34-rent-payment-by-cheque-hra-proof.md` | Thu 2026-07-16 | 1,900 | YES (5 steps) | 7 | Rent/HRA tax angle: revenue-stamp cheque exemption, landlord PAN ₹1L rule, 194-IB TDS (2% > ₹50K/mo), 11-PDC convention, rent-to-parents. ⚠️ fact-check CRITICAL: most fact-dense post — verify all tax figures at publish; consider old-regime note for HRA. |
+| 35 | `salary-payment-by-cheque-india` | `post-35-salary-payment-by-cheque-india.md` | Mon 2026-07-20 | 1,950 | YES (5 steps) | 7 | SMB payroll compliance: PoW Act 2017 amendment + ₹24K ceiling, 40A(3) ₹10K cash trap, 7th/10th deadlines, bounced-salary-cheque stakes. Links #25 + #30 (both live by then). ⚠️ fact-check: labour-code rollout status; 40A(3) figures. Best reciprocal: post #14 (bulk). |
 
 **Per-post pre-publish steps:**
 1. Validate EN body on AI detector → must hit ≥90% Human / ≤10% AI (per [[feedback_blog_low_ai_score]]).
@@ -70,13 +71,11 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 
 ## Pending Topics — Not Yet Drafted
 
-**Topic queue (created 2026-06-05).** Every pending topic now sits in a dated slot on the Mon+Thu cadence. When drafting, take the top row, write the draft, move the row up to "Drafted on Disk". New topic ideas get appended to the bottom of the queue (verify against "Already Covered" first).
+**Queue is EMPTY as of 2026-06-05.** The entire 10-topic lineup (#26–#35, approved by Ravi 2026-06-05) was drafted same-day and moved to "Drafted on Disk" above — every Mon+Thu slot through **Mon 2026-07-20** is covered. Next open publish slot: **Thu 2026-07-23 (would be post #36).**
 
-| Queue pos | # | Slug | Title idea | Target publish date | Why this angle | Source |
-|---|---|---|---|---|---|---|
-| 1 | 35 | `salary-payment-by-cheque-india` | Paying Salaries by Cheque — SMB Compliance Guide | Mon 2026-07-20 | SMB compliance angle (Payment of Wages Act, 40A(3)); ties into #14 bulk printing. | Lineup 2026-06-05 |
+When adding new topics: verify against "Already Covered" below, then append rows here in the dated-slot format (`Queue pos | # | Slug | Title idea | Target publish date | Why this angle | Source`).
 
-(#24 `loan-repayment-by-cheque-india` — Ravi's suggestion 2026-06-05 — and #25 `how-to-write-cancelled-cheque-safely` were pulled from this queue and drafted on 2026-06-05; see "Drafted on Disk" above.)
+Topic ideas previously considered but NOT drafted (re-evaluate for #36+): IFSC vs MICR vs SWIFT comparison; lost cheque book emergency guide; cheque for income-tax/advance-tax payment; minor's account cheque rules.
 
 The original "Open Topic Backlog" (5 items: `cheque-vs-digital-payment-india`, `how-to-fill-cheque-correctly`, `cheque-truncation-system-explained`, `crossed-cheque-vs-account-payee`, `gst-payment-by-cheque-india`) was fully consumed into drafts #19–#23 on 2026-05-15. SEO-PLAN.md Phase 5B is also fully published.
 
@@ -109,9 +108,21 @@ Live in Sanity (22):
 - ❌ GST payment by cheque — rules & limits (post #21)
 - ❌ Cheque Truncation System (CTS) explained (post #22)
 
-Drafted on disk, pending publish (1):
+Drafted on disk, pending publish (13):
 
-- 📝 Crossed cheque vs account payee (post #23 — next slot Mon 2026-06-08)
+- 📝 Crossed cheque vs account payee (post #23 — Mon 2026-06-08)
+- 📝 Loan repayment by cheque (post #24 — Thu 2026-06-11)
+- 📝 How to write a cancelled cheque safely (post #25 — Mon 2026-06-15)
+- 📝 DD vs cheque vs banker's cheque (post #26 — Thu 2026-06-18)
+- 📝 Request cheque book online (post #27 — Mon 2026-06-22)
+- 📝 Cheque return reason codes (post #28 — Thu 2026-06-25)
+- 📝 Positive Pay System (post #29 — Mon 2026-06-29)
+- 📝 How to deposit a cheque (post #30 — Thu 2026-07-02)
+- 📝 Best printer for cheque printing (post #31 — Mon 2026-07-06)
+- 📝 Self cheque rules + 194N (post #32 — Thu 2026-07-09)
+- 📝 Cheque signature mismatch (post #33 — Mon 2026-07-13)
+- 📝 Rent by cheque + HRA proof (post #34 — Thu 2026-07-16)
+- 📝 Salary by cheque SMB guide (post #35 — Mon 2026-07-20)
 
 ---
 
