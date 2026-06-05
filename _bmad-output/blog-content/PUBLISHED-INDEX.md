@@ -45,6 +45,7 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 | 23 | `crossed-cheque-vs-account-payee` | `post-23-crossed-cheque-vs-account-payee.md` | Mon 2026-06-08 (next week) | 1,886 | NO | 7 | Definitional deep-dive, complements post #18 (cheque types overview) |
 | 24 | `loan-repayment-by-cheque-india` | `post-24-loan-repayment-by-cheque-india.md` | Thu 2026-06-11 (next week) | 2,273 | YES (6 steps) | 7 | Ravi's topic suggestion (2026-06-05): EMI = interest + principal, prepayment cuts principal (reduce-EMI vs reduce-tenure with worked ₹30L example), branch handover steps, "advance EMI" trap, RBI Pre-payment Charges Directions 2025 (eff. 2026-01-01). Money post — resolve its ⚠️ fact-check block before publish. |
 | 25 | `how-to-write-cancelled-cheque-safely` | `post-25-how-to-write-cancelled-cheque-safely.md` | Mon 2026-06-15 | 2,439 | YES (5 steps) | 7 | Pairs with #24 — EMI/NACH mandate setup demands a cancelled cheque; in-body link in all 3 locales points to #24's slug, so **publish #24 first**. Has ⚠️ fact-check block (EPFO claim-rule change, per-leaf charges). |
+| 26 | `demand-draft-vs-cheque-vs-bankers-cheque` | `post-26-demand-draft-vs-cheque-vs-bankers-cheque.md` | Thu 2026-06-18 | 2,050 | NO | 7 | Paper-vs-paper comparison ("whose promise is it"). Side-by-side comparison table → paste as Sanity Table block in all 3 bodies. Links #23 (must be live first — publishes 2026-06-08, safe). ⚠️ fact-check: ₹50K cash rule, Sept 2018 purchaser-name rule, ₹20K crossing rule. |
 
 **Per-post pre-publish steps:**
 1. Validate EN body on AI detector → must hit ≥90% Human / ≤10% AI (per [[feedback_blog_low_ai_score]]).
@@ -65,9 +66,15 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 
 | Queue pos | # | Slug | Title idea | Target publish date | Why this angle | Source |
 |---|---|---|---|---|---|---|
-| 1 | 26 | `demand-draft-vs-cheque-vs-bankers-cheque` | Demand Draft vs Cheque vs Banker's Cheque — Which to Use, When | Thu 2026-06-18 | Three bank instruments compared (issuance, clearing, charges, legality) — distinct from #18 (cheque types) and #20 (cheque vs UPI/NEFT). High intent: govt fee payments, admissions, tenders. | Candidate list 2026-06-01 |
-| 2 | 27 | `how-to-request-cheque-book-online-india` | How to Request a Cheque Book Online — SBI, HDFC, ICICI, Axis, Kotak (2026) | Mon 2026-06-22 | Step-by-step per top 5 banks via net banking + mobile app. HowTo schema. Evergreen banking task. | Candidate list 2026-06-01 |
-| 3 | 28 | `cheque-return-reasons-india-2026` | Why Did My Cheque Bounce? 20 RBI Return Reason Codes Explained (2026) | Thu 2026-06-25 | RBI return reason codes + per-bank dishonour charges. Builds on post #2 (bounce) with deeper troubleshooting + money-keyword. | Candidate list 2026-06-01 |
+| 1 | 27 | `how-to-request-cheque-book-online-india` | How to Request a Cheque Book Online — SBI, HDFC, ICICI, Axis, Kotak (2026) | Mon 2026-06-22 | Step-by-step per top 5 banks via net banking + mobile app. HowTo schema. Evergreen banking task. | Candidate list 2026-06-01 |
+| 2 | 28 | `cheque-return-reasons-india-2026` | Why Did My Cheque Bounce? 20 RBI Return Reason Codes Explained (2026) | Thu 2026-06-25 | RBI return reason codes + per-bank dishonour charges. Builds on post #2 (bounce) with deeper troubleshooting + money-keyword. | Candidate list 2026-06-01 |
+| 3 | 29 | `positive-pay-system-cheque-india` | Positive Pay System — RBI Rule, ₹50K/₹5L Thresholds, How to Register at Your Bank | Mon 2026-06-29 | Strongest RBI/security cheque keyword not yet covered; dedicated deep-dive vs the passing mention in #3 (fraud). | Lineup 2026-06-05 |
+| 4 | 30 | `how-to-deposit-cheque-india` | How to Deposit a Cheque — Branch, Drop Box, CDM, Doorstep Banking | Thu 2026-07-02 | High-volume evergreen HowTo; deposit side is uncovered (we cover writing, printing, clearing — not depositing). | Lineup 2026-06-05 |
+| 5 | 31 | `best-printer-for-cheque-printing` | Which Printer for Cheque Printing? Inkjet vs Laser, Settings, Alignment | Mon 2026-07-06 | Direct commercial intent for Cheqify; printer/settings angle untouched by #4/#7/#9. | Lineup 2026-06-05 |
+| 6 | 32 | `self-cheque-rules-withdrawal-limits` | Self Cheque Rules — Cash Withdrawal Limits + Section 194N TDS | Thu 2026-07-09 | Money/tax angle on the self cheque (#18 only defines it); 194N TDS keyword. | Lineup 2026-06-05 |
+| 7 | 33 | `cheque-signature-mismatch` | Cheque Bounced for Signature Mismatch? Why It Happens, How to Update Your Specimen | Mon 2026-07-13 | Deep-dive on one high-volume return reason (code 12); complements #28. | Lineup 2026-06-05 |
+| 8 | 34 | `rent-payment-by-cheque-hra-proof` | Paying Rent by Cheque — HRA Proof, Rent Receipts, Revenue Stamp Rules | Thu 2026-07-16 | High-intent tax-season keyword (HRA proof); rent angle untouched. | Lineup 2026-06-05 |
+| 9 | 35 | `salary-payment-by-cheque-india` | Paying Salaries by Cheque — SMB Compliance Guide | Mon 2026-07-20 | SMB compliance angle (Payment of Wages Act, 40A(3)); ties into #14 bulk printing. | Lineup 2026-06-05 |
 
 (#24 `loan-repayment-by-cheque-india` — Ravi's suggestion 2026-06-05 — and #25 `how-to-write-cancelled-cheque-safely` were pulled from this queue and drafted on 2026-06-05; see "Drafted on Disk" above.)
 
