@@ -53,6 +53,7 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 | 31 | `best-printer-for-cheque-printing` | `post-31-best-printer-for-cheque-printing.md` | Mon 2026-07-06 | 1,900 | YES (6 steps) | 7 | Hardware companion to #4/#7: kills the MICR-printer myth, mono-laser verdict, driver settings, maintenance. Strong commercial intent. Links #28 (safe). ⚠️ fact-check: leaf dimensions vs CTS-2010 spec; brand mentions stay category-level. |
 | 32 | `self-cheque-rules-withdrawal-limits` | `post-32-self-cheque-rules-withdrawal-limits.md` | Thu 2026-07-09 | 1,950 | YES (5 steps) | 7 | Self cheque deep-dive: home vs non-home limits, third-party encashment, 194N TDS (2%/₹1cr; non-filer 2%/₹20L + 5%/₹1cr), 269ST aside. ⚠️ fact-check CRITICAL: verify 194N rates/thresholds against current law — tax figures age. |
 | 33 | `cheque-signature-mismatch` | `post-33-cheque-signature-mismatch.md` | Mon 2026-07-13 | 1,800 | YES (5 steps) | 7 | Code-12 deep-dive: signature drift, SC 2012 position (138 applies), specimen update walkthrough. After publish: add deferred reciprocal link FROM #28's signature section to here. ⚠️ fact-check: Laxmi Dyechem citation only if named. |
+| 34 | `rent-payment-by-cheque-hra-proof` | `post-34-rent-payment-by-cheque-hra-proof.md` | Thu 2026-07-16 | 1,900 | YES (5 steps) | 7 | Rent/HRA tax angle: revenue-stamp cheque exemption, landlord PAN ₹1L rule, 194-IB TDS (2% > ₹50K/mo), 11-PDC convention, rent-to-parents. ⚠️ fact-check CRITICAL: most fact-dense post — verify all tax figures at publish; consider old-regime note for HRA. |
 
 **Per-post pre-publish steps:**
 1. Validate EN body on AI detector → must hit ≥90% Human / ≤10% AI (per [[feedback_blog_low_ai_score]]).
@@ -73,8 +74,7 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 
 | Queue pos | # | Slug | Title idea | Target publish date | Why this angle | Source |
 |---|---|---|---|---|---|---|
-| 1 | 34 | `rent-payment-by-cheque-hra-proof` | Paying Rent by Cheque — HRA Proof, Rent Receipts, Revenue Stamp Rules | Thu 2026-07-16 | High-intent tax-season keyword (HRA proof); rent angle untouched. | Lineup 2026-06-05 |
-| 9 | 35 | `salary-payment-by-cheque-india` | Paying Salaries by Cheque — SMB Compliance Guide | Mon 2026-07-20 | SMB compliance angle (Payment of Wages Act, 40A(3)); ties into #14 bulk printing. | Lineup 2026-06-05 |
+| 1 | 35 | `salary-payment-by-cheque-india` | Paying Salaries by Cheque — SMB Compliance Guide | Mon 2026-07-20 | SMB compliance angle (Payment of Wages Act, 40A(3)); ties into #14 bulk printing. | Lineup 2026-06-05 |
 
 (#24 `loan-repayment-by-cheque-india` — Ravi's suggestion 2026-06-05 — and #25 `how-to-write-cancelled-cheque-safely` were pulled from this queue and drafted on 2026-06-05; see "Drafted on Disk" above.)
 
