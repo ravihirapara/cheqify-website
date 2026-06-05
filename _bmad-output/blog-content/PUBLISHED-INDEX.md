@@ -49,6 +49,7 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 | 27 | `how-to-request-cheque-book-online-india` | `post-27-how-to-request-cheque-book-online-india.md` | Mon 2026-06-22 | 1,850 | YES (6 steps) | 7 | Generic any-bank flow + 5 bank sections (SBI/HDFC/ICICI/Axis/Kotak). ⚠️ fact-check: walk the 5 bank flows at publish time — menu paths drift; SBI ATM channel; Kotak 811 policy. |
 | 28 | `cheque-return-reasons-india-2026` | `post-28-cheque-return-reasons-india-2026.md` | Thu 2026-06-25 | 2,150 | NO | 7 | Return-code decoder grouped by family + at-a-glance table (→ Sanity Table block). ⚠️ fact-check CRITICAL: verify entire code table against URRBCH Annexure D. Do NOT link #33 (signature mismatch) yet — publishes later; add reciprocal link after 2026-07-13. |
 | 29 | `positive-pay-system-cheque-india` | `post-29-positive-pay-system-cheque-india.md` | Mon 2026-06-29 | 1,950 | YES (5 steps) | 7 | RBI Positive Pay deep-dive: ₹50K optional / ₹5L may-mandate thresholds, dispute-resolution catch, 5-facts-must-match failure modes. ⚠️ fact-check: circular number only if verified; don't name specific banks' mandates. Best reciprocal: post #3 (fraud). |
+| 30 | `how-to-deposit-cheque-india` | `post-30-how-to-deposit-cheque-india.md` | Thu 2026-07-02 | 1,950 | YES (6 steps) | 7 | Receiving-side guide: 4 channels (counter/drop box/machine/doorstep), pay-in slip, pre-deposit inspection. Links #28 (live by then, safe). ⚠️ fact-check: re-confirm "no consumer mobile cheque deposit in India" claim freshness at publish. |
 
 **Per-post pre-publish steps:**
 1. Validate EN body on AI detector → must hit ≥90% Human / ≤10% AI (per [[feedback_blog_low_ai_score]]).
@@ -69,8 +70,7 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 
 | Queue pos | # | Slug | Title idea | Target publish date | Why this angle | Source |
 |---|---|---|---|---|---|---|
-| 1 | 30 | `how-to-deposit-cheque-india` | How to Deposit a Cheque — Branch, Drop Box, CDM, Doorstep Banking | Thu 2026-07-02 | High-volume evergreen HowTo; deposit side is uncovered (we cover writing, printing, clearing — not depositing). | Lineup 2026-06-05 |
-| 5 | 31 | `best-printer-for-cheque-printing` | Which Printer for Cheque Printing? Inkjet vs Laser, Settings, Alignment | Mon 2026-07-06 | Direct commercial intent for Cheqify; printer/settings angle untouched by #4/#7/#9. | Lineup 2026-06-05 |
+| 1 | 31 | `best-printer-for-cheque-printing` | Which Printer for Cheque Printing? Inkjet vs Laser, Settings, Alignment | Mon 2026-07-06 | Direct commercial intent for Cheqify; printer/settings angle untouched by #4/#7/#9. | Lineup 2026-06-05 |
 | 6 | 32 | `self-cheque-rules-withdrawal-limits` | Self Cheque Rules — Cash Withdrawal Limits + Section 194N TDS | Thu 2026-07-09 | Money/tax angle on the self cheque (#18 only defines it); 194N TDS keyword. | Lineup 2026-06-05 |
 | 7 | 33 | `cheque-signature-mismatch` | Cheque Bounced for Signature Mismatch? Why It Happens, How to Update Your Specimen | Mon 2026-07-13 | Deep-dive on one high-volume return reason (code 12); complements #28. | Lineup 2026-06-05 |
 | 8 | 34 | `rent-payment-by-cheque-hra-proof` | Paying Rent by Cheque — HRA Proof, Rent Receipts, Revenue Stamp Rules | Thu 2026-07-16 | High-intent tax-season keyword (HRA proof); rent angle untouched. | Lineup 2026-06-05 |
