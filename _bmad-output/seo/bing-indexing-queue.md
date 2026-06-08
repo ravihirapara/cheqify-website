@@ -37,6 +37,8 @@ https://cheqify.app/en/blog/how-to-fill-cheque-correctly
 https://cheqify.app/en/blog/cheque-vs-digital-payment-india
 https://cheqify.app/en/blog/gst-payment-by-cheque-india
 https://cheqify.app/en/blog/cheque-truncation-system-explained
+https://cheqify.app/en/blog/loan-repayment-by-cheque-india
+https://cheqify.app/en/blog/how-to-write-cancelled-cheque-safely
 https://cheqify.app/hi
 https://cheqify.app/hi/features
 https://cheqify.app/hi/pricing
@@ -76,6 +78,8 @@ https://cheqify.app/hi/blog/how-to-fill-cheque-correctly
 https://cheqify.app/hi/blog/cheque-vs-digital-payment-india
 https://cheqify.app/hi/blog/gst-payment-by-cheque-india
 https://cheqify.app/hi/blog/cheque-truncation-system-explained
+https://cheqify.app/hi/blog/loan-repayment-by-cheque-india
+https://cheqify.app/hi/blog/how-to-write-cancelled-cheque-safely
 https://cheqify.app/gu
 https://cheqify.app/gu/features
 https://cheqify.app/gu/pricing
@@ -115,3 +119,5 @@ https://cheqify.app/gu/blog/how-to-fill-cheque-correctly
 https://cheqify.app/gu/blog/cheque-vs-digital-payment-india
 https://cheqify.app/gu/blog/gst-payment-by-cheque-india
 https://cheqify.app/gu/blog/cheque-truncation-system-explained
+https://cheqify.app/gu/blog/loan-repayment-by-cheque-india
+https://cheqify.app/gu/blog/how-to-write-cancelled-cheque-safely
