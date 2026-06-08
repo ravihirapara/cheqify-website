@@ -12,6 +12,14 @@ Every new blog post on Cheqify.app needs these steps after going live on Sanity.
 
 ## Per-Post SEO Workflow (run immediately after publish)
 
+### ⚠️ First (in Sanity, before rebuild): verify the slug field is clean
+
+When pasting a post into Studio, the **Slug field sometimes picks up the trailing category tag** (e.g. it becomes `how-to-write-cancelled-cheque-safelyBanking & RBI` instead of `how-to-write-cancelled-cheque-safely`). A corrupted slug 404s on every locale and bakes the bad URL into the sitemap.
+
+- In Sanity Studio, look at the **Slug** field and confirm it ends at the title — no category text, spaces, ampersands, or uppercase stuck on the end.
+- It must be pure kebab-case and exactly match the slug in the draft's canonical-URL block.
+- If wrong, fix it and re-publish **before** rebuilding (one such corruption hit post #25 on 2026-06-08).
+
 ### 0. Rebuild and verify sitemap contains the new URL
 
 This step is mandatory before doing anything else. Without a rebuild, GSC will never discover the new post via the sitemap.
@@ -107,6 +115,7 @@ Every Monday, 10 minutes:
 ## Quick Copy-Paste Checklist (per post)
 
 ```
+[ ] Slug field in Sanity is clean (no trailing category tag, e.g. "Banking & RBI")
 [ ] Rebuild triggered (npm run build + redeploy, or auto-deploy via Sanity webhook)
 [ ] Confirmed all 3 new URLs appear in https://cheqify.app/sitemap.xml
 [ ] Verified all 3 locale URLs render correctly
