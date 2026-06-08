@@ -102,7 +102,7 @@ They don't, and here's why:
 
 > **You are not printing a cheque. You are printing ON a cheque. Your bank already printed the cheque — the MICR band, the account number, the layout — when it issued your book. Your printer only adds the payee, amount, and date.**
 
-The [MICR band](/en/blog/what-is-micr-code-on-cheque) on an Indian cheque leaf is pre-printed by the bank's security printers, in magnetic ink, on [CTS-2010 compliant stock](/en/blog/cts-2010-cheque-format-compliance-india). Nothing your printer does touches it — in fact the one hard rule is that nothing your printer prints should *overlap* it. So the question isn't "which MICR printer." It's much cheaper and much simpler: **which ordinary printer puts sharp, permanent text in exactly the right spots on a small piece of paper, hundreds of times, without drifting?**
+The [MICR band](https://cheqify.app/en/blog/what-is-micr-code-on-cheque) on an Indian cheque leaf is pre-printed by the bank's security printers, in magnetic ink, on [CTS-2010 compliant stock](https://cheqify.app/en/blog/cts-2010-cheque-format-compliance-india). Nothing your printer does touches it — in fact the one hard rule is that nothing your printer prints should *overlap* it. So the question isn't "which MICR printer." It's much cheaper and much simpler: **which ordinary printer puts sharp, permanent text in exactly the right spots on a small piece of paper, hundreds of times, without drifting?**
 
 That question has a clear answer.
 
@@ -110,7 +110,7 @@ That question has a clear answer.
 
 The cheque is a document designed to be scanned, transported, and disputed. That ranking flips the usual home-printer logic on its head.
 
-**Laser (the recommendation).** Toner is plastic powder fused into the paper with heat. The result: waterproof, smudge-proof, fade-proof text with razor edges. Drop the cheque in a puddle, run a wet thumb across the amount — the text survives. For an instrument that clears as a *scanned image*, that crispness is a functional requirement, not aesthetics: faded or smudged entries are exactly what triggers the "image not clear" return in clearing ([reason code 39 and friends](/en/blog/cheque-return-reasons-india-2026)). A basic **monochrome laser** — entry models from HP, Canon, or Brother — is the sweet spot. You're printing black text; colour is irrelevant; mono lasers are cheap to buy and famously cheap per page.
+**Laser (the recommendation).** Toner is plastic powder fused into the paper with heat. The result: waterproof, smudge-proof, fade-proof text with razor edges. Drop the cheque in a puddle, run a wet thumb across the amount — the text survives. For an instrument that clears as a *scanned image*, that crispness is a functional requirement, not aesthetics: faded or smudged entries are exactly what triggers the "image not clear" return in clearing ([reason code 39 and friends](https://cheqify.app/en/blog/cheque-return-reasons-india-2026)). A basic **monochrome laser** — entry models from HP, Canon, or Brother — is the sweet spot. You're printing black text; colour is irrelevant; mono lasers are cheap to buy and famously cheap per page.
 
 **Inkjet (the caveat case).** Standard dye-based inkjet ink is water-soluble — a wet thumb can smear the payee name, and that's a security and clearing problem on a cheque. If an inkjet is what you already own, two mitigations: use **pigment black** ink (far more water-resistant than dye — most ink-tank systems like Epson EcoTank and HP Smart Tank use pigment or pigment-class black for documents), and give each leaf a few seconds to dry before stacking. An ink-tank printer with pigment black is an acceptable dual-duty choice if your office genuinely needs colour printing too.
 
@@ -137,13 +137,13 @@ The layout software positions the payee, amount, and date; the driver's job is t
 - **Quality: text/high.** Draft mode prints grey — and grey scans badly.
 - **Orientation and feed direction** as your layout expects — and then *physically mark* the feed direction (a pencil arrow on a sticky note at the slot) so every person in the office loads leaves the same way up.
 
-Then the ritual that saves leaves: **test on plain paper first.** Print the layout onto a plain sheet, hold it against a real leaf in front of a light, check every field lands in its box. Only then feed the real thing. One plain-paper test per session catches the drift that wastes leaves ([the wasted-leaf math](/en/blog/cheque-printing-mistakes-indian-businesses) is uglier than people think).
+Then the ritual that saves leaves: **test on plain paper first.** Print the layout onto a plain sheet, hold it against a real leaf in front of a light, check every field lands in its box. Only then feed the real thing. One plain-paper test per session catches the drift that wastes leaves ([the wasted-leaf math](https://cheqify.app/en/blog/cheque-printing-mistakes-indian-businesses) is uglier than people think).
 
 ### [H2] What the Printer Must Never Touch
 
 Worth its own section because the failure is expensive: the bottom band of the cheque — the MICR line — is machine-read territory. Your print layout should leave it absolutely clean. The same goes for overprinting the bank's pre-printed text anywhere on the leaf. A good layout system positions everything clear of these zones by design; your job at the hardware level is just to keep alignment honest so "clear by design" stays clear in practice.
 
-This, incidentally, is the real division of labour in cheque printing: **software owns the where, the printer owns the how sharp.** Get a layout engine that knows your bank's exact leaf geometry ([how home cheque printing works end-to-end](/en/blog/how-to-print-cheque-at-home)), pair it with any competent mono laser, and you've matched the output quality of a corporate treasury at one-twentieth the setup cost ([the full India-specific process](/en/blog/how-to-print-cheque-in-india)).
+This, incidentally, is the real division of labour in cheque printing: **software owns the where, the printer owns the how sharp.** Get a layout engine that knows your bank's exact leaf geometry ([how home cheque printing works end-to-end](https://cheqify.app/en/blog/how-to-print-cheque-at-home)), pair it with any competent mono laser, and you've matched the output quality of a corporate treasury at one-twentieth the setup cost ([the full India-specific process](https://cheqify.app/en/blog/how-to-print-cheque-in-india)).
 
 ### [H2] Maintenance — The Boring Habits That Prevent Jammed Leaves
 
@@ -159,7 +159,7 @@ A jammed cheque leaf isn't a paper jam; it's a destroyed financial instrument th
 
 If you're setting up today: an **entry-level monochrome laser with a manual feed slot and custom-paper-size support** — from any of the major brands — does everything cheque printing demands, for less than the cost of the cheque leaves a busy business wastes in a year of handwriting. Already own an ink-tank inkjet with pigment black? Use it; mind the drying. Already own a dye-ink inkjet? It'll work, but treat every leaf gently until dry, and upgrade when you can.
 
-Then spend the money you saved on the part that actually causes bounced cheques — which was never the printer. It's the layout, the amount-in-words, the records. That part is software ([and the good one is free](/en/blog/best-free-cheque-printing-software-india)).
+Then spend the money you saved on the part that actually causes bounced cheques — which was never the printer. It's the layout, the amount-in-words, the records. That part is software ([and the good one is free](https://cheqify.app/en/blog/best-free-cheque-printing-software-india)).
 
 ---
 
@@ -223,7 +223,7 @@ US में, businesses पूरे cheques print करते हैं — m
 
 > **आप cheque print नहीं कर रहे. आप cheque के ऊपर print कर रहे हैं. आपका bank already cheque print कर चुका — MICR band, account number, layout — जब उसने आपकी book issue की. आपका printer सिर्फ़ payee, amount, और date add करता है.**
 
-Indian cheque leaf पर [MICR band](/hi/blog/what-is-micr-code-on-cheque) bank के security printers द्वारा pre-printed है, magnetic ink में, [CTS-2010 compliant stock](/hi/blog/cts-2010-cheque-format-compliance-india) पर. आपका printer जो भी करे वो इसे touch नहीं करता — actually एक hard rule यही है कि आपका printer जो print करे वो इसे *overlap* न करे. तो question "कौन सा MICR printer" नहीं है. ये much cheaper और much simpler है: **कौन सा ordinary printer एक small piece of paper पर sharp, permanent text exactly सही spots पर रखता है, सैकड़ों बार, बिना drift किए?**
+Indian cheque leaf पर [MICR band](https://cheqify.app/hi/blog/what-is-micr-code-on-cheque) bank के security printers द्वारा pre-printed है, magnetic ink में, [CTS-2010 compliant stock](https://cheqify.app/hi/blog/cts-2010-cheque-format-compliance-india) पर. आपका printer जो भी करे वो इसे touch नहीं करता — actually एक hard rule यही है कि आपका printer जो print करे वो इसे *overlap* न करे. तो question "कौन सा MICR printer" नहीं है. ये much cheaper और much simpler है: **कौन सा ordinary printer एक small piece of paper पर sharp, permanent text exactly सही spots पर रखता है, सैकड़ों बार, बिना drift किए?**
 
 उस question का एक clear answer है.
 
@@ -231,7 +231,7 @@ Indian cheque leaf पर [MICR band](/hi/blog/what-is-micr-code-on-cheque) bank
 
 Cheque एक document है जो scan होने, transport होने, और dispute होने के लिए designed है. वो ranking usual home-printer logic को सर के बल पलट देती है.
 
-**Laser (recommendation).** Toner plastic powder है जो heat से paper में fuse होता है. Result: waterproof, smudge-proof, fade-proof text razor edges के साथ. Cheque को puddle में गिराएँ, amount पर गीला अंगूठा चलाएँ — text survive करता है. एक instrument के लिए जो *scanned image* के तौर पर clear होता है, वो crispness एक functional requirement है, aesthetics नहीं: faded या smudged entries exactly वही हैं जो clearing में "image not clear" return trigger करती हैं ([reason code 39 and friends](/hi/blog/cheque-return-reasons-india-2026)). एक basic **monochrome laser** — HP, Canon, या Brother के entry models — sweet spot है. आप black text print कर रहे हैं; colour irrelevant है; mono lasers खरीदने में सस्ते और per page famously सस्ते हैं.
+**Laser (recommendation).** Toner plastic powder है जो heat से paper में fuse होता है. Result: waterproof, smudge-proof, fade-proof text razor edges के साथ. Cheque को puddle में गिराएँ, amount पर गीला अंगूठा चलाएँ — text survive करता है. एक instrument के लिए जो *scanned image* के तौर पर clear होता है, वो crispness एक functional requirement है, aesthetics नहीं: faded या smudged entries exactly वही हैं जो clearing में "image not clear" return trigger करती हैं ([reason code 39 and friends](https://cheqify.app/hi/blog/cheque-return-reasons-india-2026)). एक basic **monochrome laser** — HP, Canon, या Brother के entry models — sweet spot है. आप black text print कर रहे हैं; colour irrelevant है; mono lasers खरीदने में सस्ते और per page famously सस्ते हैं.
 
 **Inkjet (caveat case).** Standard dye-based inkjet ink water-soluble है — एक गीला अंगूठा payee name smear कर सकता है, और cheque पर ये एक security और clearing problem है. अगर inkjet वही है जो आपके पास already है, दो mitigations: **pigment black** ink use करें (dye से far more water-resistant — ज़्यादातर ink-tank systems जैसे Epson EcoTank और HP Smart Tank documents के लिए pigment या pigment-class black use करते हैं), और हर leaf को stack करने से पहले कुछ seconds सूखने दें. Pigment black वाला ink-tank printer एक acceptable dual-duty choice है अगर आपके office को genuinely colour printing भी चाहिए.
 
@@ -258,13 +258,13 @@ Layout software payee, amount, और date position करता है; driver 
 - **Quality: text/high.** Draft mode grey print करता है — और grey badly scan होता है.
 - **Orientation और feed direction** जैसा आपका layout expect करता है — और फिर feed direction को *physically mark* करें (slot पर एक sticky note पर pencil arrow) ताकि office का हर person leaves same way up load करे.
 
-फिर वो ritual जो leaves बचाती है: **पहले plain paper पर test करें.** Layout को एक plain sheet पर print करें, इसे एक real leaf के against light के सामने hold करें, check करें कि हर field अपने box में land होती है. तभी real चीज़ feed करें. Per session एक plain-paper test वो drift पकड़ता है जो leaves waste करती है ([wasted-leaf math](/hi/blog/cheque-printing-mistakes-indian-businesses) लोगों की सोच से uglier है).
+फिर वो ritual जो leaves बचाती है: **पहले plain paper पर test करें.** Layout को एक plain sheet पर print करें, इसे एक real leaf के against light के सामने hold करें, check करें कि हर field अपने box में land होती है. तभी real चीज़ feed करें. Per session एक plain-paper test वो drift पकड़ता है जो leaves waste करती है ([wasted-leaf math](https://cheqify.app/hi/blog/cheque-printing-mistakes-indian-businesses) लोगों की सोच से uglier है).
 
 ### [H2] जो Printer को कभी Touch नहीं करना चाहिए
 
 अपने section के लायक क्योंकि failure expensive है: cheque का bottom band — MICR line — machine-read territory है. आपके print layout को इसे absolutely clean छोड़ना चाहिए. Same बात leaf पर कहीं भी bank के pre-printed text को overprint करने की. एक अच्छा layout system सब कुछ design से इन zones से clear position करता है; hardware level पर आपका काम बस alignment honest रखना है ताकि "clear by design" practice में clear रहे.
 
-यही, incidentally, cheque printing में real division of labour है: **software कहाँ का owner है, printer कितना sharp का.** एक layout engine लें जो आपके bank की exact leaf geometry जानता है ([home cheque printing end-to-end कैसे काम करती है](/hi/blog/how-to-print-cheque-at-home)), इसे किसी भी competent mono laser से pair करें, और आपने corporate treasury की output quality match कर ली setup cost के one-twentieth पर ([full India-specific process](/hi/blog/how-to-print-cheque-in-india)).
+यही, incidentally, cheque printing में real division of labour है: **software कहाँ का owner है, printer कितना sharp का.** एक layout engine लें जो आपके bank की exact leaf geometry जानता है ([home cheque printing end-to-end कैसे काम करती है](https://cheqify.app/hi/blog/how-to-print-cheque-at-home)), इसे किसी भी competent mono laser से pair करें, और आपने corporate treasury की output quality match कर ली setup cost के one-twentieth पर ([full India-specific process](https://cheqify.app/hi/blog/how-to-print-cheque-in-india)).
 
 ### [H2] Maintenance — वो Boring Habits जो Jammed Leaves Prevent करती हैं
 
@@ -280,7 +280,7 @@ Layout software payee, amount, और date position करता है; driver 
 
 अगर आप आज setup कर रहे हैं: एक **entry-level monochrome laser, manual feed slot और custom-paper-size support के साथ** — किसी भी major brand से — cheque printing की हर demand पूरी करता है, उस cost से कम में जो एक busy business handwriting के एक साल में wasted leaves पर खोता है. Already pigment black वाला ink-tank inkjet है? Use करें; drying का ध्यान रखें. Already dye-ink inkjet है? चलेगा, पर हर leaf को dry होने तक gently treat करें, और जब हो सके upgrade करें.
 
-फिर बचाया हुआ पैसा उस part पर खर्च करें जो actually cheques bounce करवाता है — जो कभी printer था ही नहीं. वो layout है, amount-in-words है, records हैं. वो part software है ([और अच्छा वाला free है](/hi/blog/best-free-cheque-printing-software-india)).
+फिर बचाया हुआ पैसा उस part पर खर्च करें जो actually cheques bounce करवाता है — जो कभी printer था ही नहीं. वो layout है, amount-in-words है, records हैं. वो part software है ([और अच्छा वाला free है](https://cheqify.app/hi/blog/best-free-cheque-printing-software-india)).
 
 ---
 
@@ -306,7 +306,7 @@ US માં, businesses આખા cheques print કરે છે — magnetic M
 
 > **તમે cheque print નથી કરી રહ્યા. તમે cheque ની ઉપર print કરી રહ્યા છો. તમારું bank already cheque print કરી ચૂક્યું — MICR band, account number, layout — જ્યારે એણે તમારી book issue કરી. તમારું printer ફક્ત payee, amount, અને date add કરે છે.**
 
-Indian cheque leaf પર [MICR band](/gu/blog/what-is-micr-code-on-cheque) bank ના security printers દ્વારા pre-printed છે, magnetic ink માં, [CTS-2010 compliant stock](/gu/blog/cts-2010-cheque-format-compliance-india) પર. તમારું printer જે પણ કરે એ આને touch નથી કરતું — actually એક hard rule આ જ છે કે તમારું printer જે print કરે એ આને *overlap* ન કરે. તો question "કયું MICR printer" નથી. આ much cheaper અને much simpler છે: **કયું ordinary printer એક small piece of paper પર sharp, permanent text exactly સાચા spots પર મૂકે છે, સેંકડો વાર, drift કર્યા વગર?**
+Indian cheque leaf પર [MICR band](https://cheqify.app/gu/blog/what-is-micr-code-on-cheque) bank ના security printers દ્વારા pre-printed છે, magnetic ink માં, [CTS-2010 compliant stock](https://cheqify.app/gu/blog/cts-2010-cheque-format-compliance-india) પર. તમારું printer જે પણ કરે એ આને touch નથી કરતું — actually એક hard rule આ જ છે કે તમારું printer જે print કરે એ આને *overlap* ન કરે. તો question "કયું MICR printer" નથી. આ much cheaper અને much simpler છે: **કયું ordinary printer એક small piece of paper પર sharp, permanent text exactly સાચા spots પર મૂકે છે, સેંકડો વાર, drift કર્યા વગર?**
 
 એ question નો એક clear answer છે.
 
@@ -314,7 +314,7 @@ Indian cheque leaf પર [MICR band](/gu/blog/what-is-micr-code-on-cheque) bank
 
 Cheque એક document છે જે scan થવા, transport થવા, અને dispute થવા માટે designed છે. એ ranking usual home-printer logic ને માથા પર પલટી દે છે.
 
-**Laser (recommendation).** Toner plastic powder છે જે heat થી paper માં fuse થાય છે. Result: waterproof, smudge-proof, fade-proof text razor edges સાથે. Cheque ને puddle માં પાડો, amount પર ભીનો અંગૂઠો ચલાવો — text survive કરે છે. એક instrument માટે જે *scanned image* તરીકે clear થાય છે, એ crispness એક functional requirement છે, aesthetics નહીં: faded કે smudged entries exactly એ જ છે જે clearing માં "image not clear" return trigger કરે છે ([reason code 39 and friends](/gu/blog/cheque-return-reasons-india-2026)). એક basic **monochrome laser** — HP, Canon, કે Brother ના entry models — sweet spot છે. તમે black text print કરી રહ્યા છો; colour irrelevant છે; mono lasers ખરીદવામાં સસ્તા અને per page famously સસ્તા છે.
+**Laser (recommendation).** Toner plastic powder છે જે heat થી paper માં fuse થાય છે. Result: waterproof, smudge-proof, fade-proof text razor edges સાથે. Cheque ને puddle માં પાડો, amount પર ભીનો અંગૂઠો ચલાવો — text survive કરે છે. એક instrument માટે જે *scanned image* તરીકે clear થાય છે, એ crispness એક functional requirement છે, aesthetics નહીં: faded કે smudged entries exactly એ જ છે જે clearing માં "image not clear" return trigger કરે છે ([reason code 39 and friends](https://cheqify.app/gu/blog/cheque-return-reasons-india-2026)). એક basic **monochrome laser** — HP, Canon, કે Brother ના entry models — sweet spot છે. તમે black text print કરી રહ્યા છો; colour irrelevant છે; mono lasers ખરીદવામાં સસ્તા અને per page famously સસ્તા છે.
 
 **Inkjet (caveat case).** Standard dye-based inkjet ink water-soluble છે — એક ભીનો અંગૂઠો payee name smear કરી શકે છે, અને cheque પર આ એક security અને clearing problem છે. જો inkjet એ જ છે જે તમારી પાસે already છે, બે mitigations: **pigment black** ink use કરો (dye થી far more water-resistant — મોટાભાગની ink-tank systems જેમ કે Epson EcoTank અને HP Smart Tank documents માટે pigment કે pigment-class black use કરે છે), અને દરેક leaf ને stack કરતા પહેલા થોડી seconds સૂકવા દો. Pigment black વાળું ink-tank printer એક acceptable dual-duty choice છે જો તમારી office ને genuinely colour printing પણ જોઈએ.
 
@@ -341,13 +341,13 @@ Layout software payee, amount, અને date position કરે છે; driver 
 - **Quality: text/high.** Draft mode grey print કરે છે — અને grey badly scan થાય છે.
 - **Orientation અને feed direction** જેવું તમારું layout expect કરે છે — અને પછી feed direction ને *physically mark* કરો (slot પર એક sticky note પર pencil arrow) જેથી office નો દરેક person leaves same way up load કરે.
 
-પછી એ ritual જે leaves બચાવે છે: **પહેલા plain paper પર test કરો.** Layout ને એક plain sheet પર print કરો, એને એક real leaf ની against light ની સામે hold કરો, check કરો કે દરેક field પોતાના box માં land થાય છે. ત્યારે જ real વસ્તુ feed કરો. Per session એક plain-paper test એ drift પકડે છે જે leaves waste કરે છે ([wasted-leaf math](/gu/blog/cheque-printing-mistakes-indian-businesses) લોકોની ધારણા કરતા uglier છે).
+પછી એ ritual જે leaves બચાવે છે: **પહેલા plain paper પર test કરો.** Layout ને એક plain sheet પર print કરો, એને એક real leaf ની against light ની સામે hold કરો, check કરો કે દરેક field પોતાના box માં land થાય છે. ત્યારે જ real વસ્તુ feed કરો. Per session એક plain-paper test એ drift પકડે છે જે leaves waste કરે છે ([wasted-leaf math](https://cheqify.app/gu/blog/cheque-printing-mistakes-indian-businesses) લોકોની ધારણા કરતા uglier છે).
 
 ### [H2] જે Printer ને ક્યારેય Touch નથી કરવાનું
 
 પોતાના section ના લાયક કારણ કે failure expensive છે: cheque નો bottom band — MICR line — machine-read territory છે. તમારા print layout એ આને absolutely clean છોડવું જોઈએ. Same વાત leaf પર ક્યાંય પણ bank ના pre-printed text ને overprint કરવાની. એક સારી layout system બધું design થી આ zones થી clear position કરે છે; hardware level પર તમારું કામ બસ alignment honest રાખવાનું છે જેથી "clear by design" practice માં clear રહે.
 
-આ જ, incidentally, cheque printing માં real division of labour છે: **software ક્યાં નું owner છે, printer કેટલું sharp નું.** એક layout engine લો જે તમારા bank ની exact leaf geometry જાણે છે ([home cheque printing end-to-end કેવી રીતે કામ કરે છે](/gu/blog/how-to-print-cheque-at-home)), એને કોઈ પણ competent mono laser સાથે pair કરો, અને તમે corporate treasury ની output quality match કરી લીધી setup cost ના one-twentieth પર ([full India-specific process](/gu/blog/how-to-print-cheque-in-india)).
+આ જ, incidentally, cheque printing માં real division of labour છે: **software ક્યાં નું owner છે, printer કેટલું sharp નું.** એક layout engine લો જે તમારા bank ની exact leaf geometry જાણે છે ([home cheque printing end-to-end કેવી રીતે કામ કરે છે](https://cheqify.app/gu/blog/how-to-print-cheque-at-home)), એને કોઈ પણ competent mono laser સાથે pair કરો, અને તમે corporate treasury ની output quality match કરી લીધી setup cost ના one-twentieth પર ([full India-specific process](https://cheqify.app/gu/blog/how-to-print-cheque-in-india)).
 
 ### [H2] Maintenance — એ Boring Habits જે Jammed Leaves Prevent કરે છે
 
@@ -363,7 +363,7 @@ Layout software payee, amount, અને date position કરે છે; driver 
 
 જો તમે આજે setup કરી રહ્યા છો: એક **entry-level monochrome laser, manual feed slot અને custom-paper-size support સાથે** — કોઈ પણ major brand થી — cheque printing ની દરેક demand પૂરી કરે છે, એ cost થી ઓછામાં જે એક busy business handwriting ના એક વર્ષમાં wasted leaves પર ખુએ છે. Already pigment black વાળું ink-tank inkjet છે? Use કરો; drying નું ધ્યાન રાખો. Already dye-ink inkjet છે? ચાલશે, પણ દરેક leaf ને dry થાય ત્યાં સુધી gently treat કરો, અને જ્યારે થઈ શકે upgrade કરો.
 
-પછી બચાવેલા પૈસા એ part પર ખર્ચો જે actually cheques bounce કરાવે છે — જે ક્યારેય printer હતું જ નહીં. એ layout છે, amount-in-words છે, records છે. એ part software છે ([અને સારું વાળું free છે](/gu/blog/best-free-cheque-printing-software-india)).
+પછી બચાવેલા પૈસા એ part પર ખર્ચો જે actually cheques bounce કરાવે છે — જે ક્યારેય printer હતું જ નહીં. એ layout છે, amount-in-words છે, records છે. એ part software છે ([અને સારું વાળું free છે](https://cheqify.app/gu/blog/best-free-cheque-printing-software-india)).
 
 ---
 

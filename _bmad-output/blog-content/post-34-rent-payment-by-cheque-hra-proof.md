@@ -125,13 +125,13 @@ Miss it and the interest and late-fee meter runs against *you*, not the landlord
 
 ### [H2] The Eleven-Cheque Convention — PDCs and the Lease
 
-Plenty of landlords ask for the year upfront: eleven or twelve **post-dated cheques**, one per month, handed over at lease signing. It's a legitimate, widespread practice — and it's governed by everything we covered in the [post-dated cheque guide](/en/blog/post-dated-cheques-rules-and-best-practices): each cheque becomes presentable on its written date, each is valid three months from that date, and each is a [Section 138-armed instrument](/en/blog/section-138-ni-act-cheque-bounce-india) if it bounces.
+Plenty of landlords ask for the year upfront: eleven or twelve **post-dated cheques**, one per month, handed over at lease signing. It's a legitimate, widespread practice — and it's governed by everything we covered in the [post-dated cheque guide](https://cheqify.app/en/blog/post-dated-cheques-rules-and-best-practices): each cheque becomes presentable on its written date, each is valid three months from that date, and each is a [Section 138-armed instrument](https://cheqify.app/en/blog/section-138-ni-act-cheque-bounce-india) if it bounces.
 
 Tenant-side discipline for the PDC stack:
 
-- **Cross every cheque "account payee"** ([why this matters](/en/blog/crossed-cheque-vs-account-payee)) — a stack of bearer cheques in someone's drawer is a fraud kit.
+- **Cross every cheque "account payee"** ([why this matters](https://cheqify.app/en/blog/crossed-cheque-vs-account-payee)) — a stack of bearer cheques in someone's drawer is a fraud kit.
 - **Write the landlord's name exactly** as their bank account knows it — eleven cheques with a nickname on them is eleven returns waiting.
-- **Record every leaf** — number, date, amount — before handing the stack over ([the register habit](/en/blog/cheque-lifecycle-management-explained)). When the lease ends early, you want to know precisely which leaves to recover or stop.
+- **Record every leaf** — number, date, amount — before handing the stack over ([the register habit](https://cheqify.app/en/blog/cheque-lifecycle-management-explained)). When the lease ends early, you want to know precisely which leaves to recover or stop.
 - **Keep the float funded.** A rent cheque bouncing isn't just a charge — it's a 138 notice risk and a relationship problem in one envelope.
 
 And the security deposit: pay it by cheque too, *always*. The deposit is the amount most likely to be disputed at exit; a cleared cheque is the receipt that can't be lost or denied.
@@ -238,13 +238,13 @@ Receipts के साथ cash rent *legal* है. पर scrutiny time पर,
 
 ### [H2] Eleven-Cheque Convention — PDCs और Lease
 
-कई landlords साल upfront मांगते हैं: ग्यारह या बारह **post-dated cheques**, हर महीने का एक, lease signing पर handed over. ये एक legitimate, widespread practice है — और इसे वो सब govern करता है जो हमने [post-dated cheque guide](/hi/blog/post-dated-cheques-rules-and-best-practices) में cover किया: हर cheque अपनी written date पर presentable बनता है, हर एक उस date से तीन months valid है, और हर एक bounce होने पर एक [Section 138-armed instrument](/hi/blog/section-138-ni-act-cheque-bounce-india) है.
+कई landlords साल upfront मांगते हैं: ग्यारह या बारह **post-dated cheques**, हर महीने का एक, lease signing पर handed over. ये एक legitimate, widespread practice है — और इसे वो सब govern करता है जो हमने [post-dated cheque guide](https://cheqify.app/hi/blog/post-dated-cheques-rules-and-best-practices) में cover किया: हर cheque अपनी written date पर presentable बनता है, हर एक उस date से तीन months valid है, और हर एक bounce होने पर एक [Section 138-armed instrument](https://cheqify.app/hi/blog/section-138-ni-act-cheque-bounce-india) है.
 
 PDC stack के लिए tenant-side discipline:
 
-- **हर cheque "account payee" cross करें** ([ये क्यों matter करता है](/hi/blog/crossed-cheque-vs-account-payee)) — किसी के drawer में bearer cheques का एक stack एक fraud kit है.
+- **हर cheque "account payee" cross करें** ([ये क्यों matter करता है](https://cheqify.app/hi/blog/crossed-cheque-vs-account-payee)) — किसी के drawer में bearer cheques का एक stack एक fraud kit है.
 - **Landlord का name exactly वैसे लिखें** जैसे उनका bank account जानता है — nickname वाले ग्यारह cheques ग्यारह returns हैं waiting.
-- **हर leaf record करें** — number, date, amount — stack hand over करने से पहले ([register habit](/hi/blog/cheque-lifecycle-management-explained)). जब lease जल्दी end हो, आप precisely जानना चाहते हैं कौन सी leaves recover या stop करनी हैं.
+- **हर leaf record करें** — number, date, amount — stack hand over करने से पहले ([register habit](https://cheqify.app/hi/blog/cheque-lifecycle-management-explained)). जब lease जल्दी end हो, आप precisely जानना चाहते हैं कौन सी leaves recover या stop करनी हैं.
 - **Float funded रखें.** एक rent cheque का bounce होना सिर्फ़ एक charge नहीं — ये एक envelope में 138 notice risk और relationship problem है.
 
 और security deposit: इसे भी cheque से pay करें, *हमेशा*. Deposit वो amount है जो exit पर सबसे ज़्यादा disputed होता है; एक cleared cheque वो receipt है जो खो या deny नहीं हो सकती.
@@ -314,13 +314,13 @@ Receipts સાથે cash rent *legal* છે. પણ scrutiny time પર, એ
 
 ### [H2] Eleven-Cheque Convention — PDCs અને Lease
 
-ઘણા landlords વર્ષ upfront માંગે છે: અગિયાર કે બાર **post-dated cheques**, દર મહિનાનો એક, lease signing પર handed over. આ એક legitimate, widespread practice છે — અને એને એ બધું govern કરે છે જે અમે [post-dated cheque guide](/gu/blog/post-dated-cheques-rules-and-best-practices) માં cover કર્યું: દરેક cheque પોતાની written date પર presentable બને છે, દરેક એ date થી ત્રણ months valid છે, અને દરેક bounce થવા પર એક [Section 138-armed instrument](/gu/blog/section-138-ni-act-cheque-bounce-india) છે.
+ઘણા landlords વર્ષ upfront માંગે છે: અગિયાર કે બાર **post-dated cheques**, દર મહિનાનો એક, lease signing પર handed over. આ એક legitimate, widespread practice છે — અને એને એ બધું govern કરે છે જે અમે [post-dated cheque guide](https://cheqify.app/gu/blog/post-dated-cheques-rules-and-best-practices) માં cover કર્યું: દરેક cheque પોતાની written date પર presentable બને છે, દરેક એ date થી ત્રણ months valid છે, અને દરેક bounce થવા પર એક [Section 138-armed instrument](https://cheqify.app/gu/blog/section-138-ni-act-cheque-bounce-india) છે.
 
 PDC stack માટે tenant-side discipline:
 
-- **દરેક cheque "account payee" cross કરો** ([આ કેમ matter કરે છે](/gu/blog/crossed-cheque-vs-account-payee)) — કોઈના drawer માં bearer cheques નો એક stack એક fraud kit છે.
+- **દરેક cheque "account payee" cross કરો** ([આ કેમ matter કરે છે](https://cheqify.app/gu/blog/crossed-cheque-vs-account-payee)) — કોઈના drawer માં bearer cheques નો એક stack એક fraud kit છે.
 - **Landlord નું name exactly એમ લખો** જેમ એમનું bank account જાણે છે — nickname વાળા અગિયાર cheques અગિયાર returns છે waiting.
-- **દરેક leaf record કરો** — number, date, amount — stack hand over કરતા પહેલા ([register habit](/gu/blog/cheque-lifecycle-management-explained)). જ્યારે lease વહેલી end થાય, તમે precisely જાણવા માંગો છો કઈ leaves recover કે stop કરવાની છે.
+- **દરેક leaf record કરો** — number, date, amount — stack hand over કરતા પહેલા ([register habit](https://cheqify.app/gu/blog/cheque-lifecycle-management-explained)). જ્યારે lease વહેલી end થાય, તમે precisely જાણવા માંગો છો કઈ leaves recover કે stop કરવાની છે.
 - **Float funded રાખો.** એક rent cheque નું bounce થવું ફક્ત એક charge નથી — આ એક envelope માં 138 notice risk અને relationship problem છે.
 
 અને security deposit: એને પણ cheque થી pay કરો, *હંમેશા*. Deposit એ amount છે જે exit પર સૌથી વધારે disputed થાય છે; એક cleared cheque એ receipt છે જે ખોવાઈ કે deny નથી થઈ શકતી.
