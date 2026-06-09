@@ -350,7 +350,7 @@ Recommended sequence. Two answers per week, ordered for diversity (don't link th
 |---|---|---|---|---|---|
 | 1 | Mon 2026-05-25 | **Draft 8** | "How to fill a cheque correctly?" | #19 | ✅ Posted → qr.ae/pFKMY0 |
 | 2 | Tue 2026-06-02 | **Draft 1** | "Print cheques for any bank (Excel utilities)" | #4 + #7 | ✅ Posted → qr.ae/pF2rd4 |
-| 3 | Thu 2026-06-05 | **Draft 9** | "Cheque vs UPI — which is better for business?" | #20 (live) | Pending |
+| 3 | Posted 2026-06-09 | **Draft 9** | "Why do companies use cheques vs electronic transfers?" (India/UPI-anchored opening) | #20 (live) | ✅ Posted → qr.ae/pFY6Z8 |
 | 4 | Mon 2026-06-08 | **Draft 4** | "Why does my cheque get returned?" | #2 + #11 | Pending |
 | 5 | Thu 2026-06-11 | **Draft 5** | "Best / free cheque printing software" | #10 (live) | Pending — needs a clean question (avoid moderation hotspots) |
 
@@ -382,7 +382,7 @@ Mark each answer once posted. Track its impact monthly.
 | 6 | Section 138 NI Act | | | | | | |
 | 7 | MICR code on cheque | | | | | | |
 | 8 | How to fill cheque correctly | 2026-05-25 | https://qr.ae/pFKMY0 | 104.3K (q-level @ post time) | 0 (post time) | 0 (post time) | TBD |
-| 9 | Cheque vs UPI for business | | | | | | |
+| 9 | Cheque vs UPI for business | 2026-06-09 | https://qr.ae/pFY6Z8 | TBD | 0 (post time) | 0 (post time) | TBD |
 
 Append rows as new answers go up.
 
