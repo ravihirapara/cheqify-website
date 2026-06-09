@@ -351,7 +351,7 @@ Recommended sequence. Two answers per week, ordered for diversity (don't link th
 | 1 | Mon 2026-05-25 | **Draft 8** | "How to fill a cheque correctly?" | #19 | ✅ Posted → qr.ae/pFKMY0 |
 | 2 | Tue 2026-06-02 | **Draft 1** | "Print cheques for any bank (Excel utilities)" | #4 + #7 | ✅ Posted → qr.ae/pF2rd4 |
 | 3 | Posted 2026-06-09 | **Draft 9** | "Why do companies use cheques vs electronic transfers?" (India/UPI-anchored opening) | #20 (live) | ✅ Posted → qr.ae/pFY6Z8 |
-| 4 | Mon 2026-06-08 | **Draft 4** | "Why does my cheque get returned?" | #2 + #11 | Pending |
+| 4 | Posted 2026-06-09 | **Draft 4** | "What are the reasons for a cheque being dishonoured?" | #2 + #11 | ✅ Posted → qr.ae/pFY3Nf |
 | 5 | Thu 2026-06-11 | **Draft 5** | "Best / free cheque printing software" | #10 (live) | Pending — needs a clean question (avoid moderation hotspots) |
 
 **Posting checklist for each slot:**
@@ -377,7 +377,7 @@ Mark each answer once posted. Track its impact monthly.
 | 1 | How to print a cheque (any bank / Excel utilities) | 2026-06-02 | https://qr.ae/pF2rd4 | TBD | 0 (post time) | 0 (post time) | TBD |
 | 2 | How long cheque takes to clear | | | | | | |
 | 3 | Crossed vs account payee | | | | | | |
-| 4 | Why cheque bounces | | | | | | |
+| 4 | Why cheque bounces | 2026-06-09 | https://qr.ae/pFY3Nf | TBD | 0 (post time) | 0 (post time) | TBD |
 | 5 | Free cheque printing software | | | | | | |
 | 6 | Section 138 NI Act | | | | | | |
 | 7 | MICR code on cheque | | | | | | |
