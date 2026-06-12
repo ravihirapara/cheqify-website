@@ -178,32 +178,48 @@ A practical reasons-and-solutions breakdown for each return code is here: https:
 
 ---
 
-## Answer Draft 5 — "Is there free cheque printing software in India?"
+## Answer Draft 5 — "Is there any cheque data printing software for free?"
 
-> *Word count: ~290. Maps to post #10. High commercial intent.*
+> *Target: quora.com/Is-there-any-cheque-data-printing-software-for-free (Slot 5). Word count: ~270. Maps to post #10. High commercial intent. Cloud-based + free emphasised; soft cheqify.app link + blog link. Status: ✅ Posted 2026-06-12 → qr.ae/pFA5Dg*
 
 ```
-Yes — there are a few, and the landscape has shifted significantly in the last 2 years. Quick rundown of the actual free options worth considering for Indian SMBs:
+Yes — a few exist, but "free" deserves a hard look, because most tools that advertise it are really free *trials* that turn into ₹3,000+/year. Here's the honest breakdown for Indian SMBs:
 
-Free, browser-based, India-first:
-- Cheqify — 300+ Indian bank formats, automatic MICR validation, batch from Excel, lifecycle tracking, multi-user. Trilingual UI (English/Hindi/Gujarati). Browser-based, no install. Forever free, no paid tier. Built in Surat for Indian SMB workflows specifically. Disclosure: I founded this one.
+Actually free and cloud-based, India-first:
+- Cheqify — 300+ Indian bank formats, automatic MICR validation, batch printing from Excel, lifecycle tracking, multi-user. Fully cloud-based and trilingual (English/Hindi/Gujarati) — runs in any browser, nothing to install, and your data's accessible from any device. Forever free, no paid tier. Built in Surat for Indian SMB workflows. You can try it at cheqify.app. Disclosure: I founded this one.
 
-Free trials of paid software (not actually free long-term):
-- MoneyFlex — desktop, Windows-only, free trial then ₹3,000+/year.
-- Chrysanth Cheque Writer — desktop, free trial then paid licence.
+"Free trial" only (paid long-term):
+- MoneyFlex — Windows desktop, free trial then ₹3,000+/year.
+- Chrysanth Cheque Writer — free trial then paid licence.
 - ChequePot — paid, no real free tier.
 
-Generic spreadsheet templates:
-- Excel + Word templates floating around — technically free, but fragile. Alignment breaks every time you change printer/tray, and they don't validate MICR. Most accountants I know have moved off these in the last 2 years.
+Free but fragile:
+- Excel/Word templates — technically free, but alignment breaks every time you switch printer or tray, and they don't validate MICR. Most accountants I know have moved off these.
 
-What to look for in any cheque printing tool:
-1. CTS-2010 compliance (or at least matches the bank's pre-printed layout).
-2. MICR auto-validation — the #1 cause of cheque returns is MICR mis-print, and humans miss it visually.
-3. Batch processing from Excel — if you print more than 10 cheques a month, manual one-by-one is a waste.
-4. Bank-format library — at minimum SBI, HDFC, ICICI, Axis, PNB, BoB, Kotak. 300+ banks is gold-standard.
-5. Multi-user with role-based access if multiple people in the office print cheques.
+Whatever you pick, check for: CTS-2010 compliance, MICR auto-validation (the #1 cause of cheque returns), batch-from-Excel, and a wide bank-format library.
 
-A more detailed comparison of options and what's actually free vs. what advertises itself as free is at: https://cheqify.app/en/blog/best-free-cheque-printing-software-india
+Fuller comparison of what's actually free vs. trial-ware: https://cheqify.app/en/blog/best-free-cheque-printing-software-india
+
+— Ravi
+```
+
+---
+
+## Answer Draft 5B — "How can I print checks online for free?"
+
+> *Target: quora.com/How-can-I-print-checks-online-for-free (Slot 6). Word count: ~250. Maps to post #10. Step-by-step how-to framing (distinct body from Draft 5 — no duplicate-detection risk). Cloud-based + free emphasised; soft cheqify.app link + blog link. Status: ✅ Posted 2026-06-12 → qr.ae/pFA5Db*
+
+```
+You can, and you don't need to install anything — a cloud-based tool handles it from your browser. The process:
+
+1. Get your stock — either pre-printed cheque leaves from your bank, or blank cheque stock if your bank/region allows it.
+2. Open a cloud-based cheque printing tool (no desktop install needed). Enter the payee, amount, and date once; good tools store your bank's layout so you're not realigning every time.
+3. Do a test print on plain paper first, hold it against the actual cheque leaf to confirm alignment, then print on the real leaf.
+4. If your cheque uses MICR (the magnetic numbers at the bottom), make sure the tool validates the MICR line — a mis-printed MICR is the single most common reason a printed cheque gets returned.
+
+The free, cloud-based option I'd point you to is Cheqify — runs entirely in your browser (nothing to install, accessible from any device), batch-prints from Excel, auto-validates MICR, and is genuinely free with no paid tier. You can try it free at cheqify.app. (Disclosure: I'm the founder.) Most of the "free check printing" downloads you'll find are trial-ware that expires.
+
+I broke down what's actually free vs. what just looks free here: https://cheqify.app/en/blog/best-free-cheque-printing-software-india
 
 — Ravi
 ```
@@ -352,7 +368,8 @@ Recommended sequence. Two answers per week, ordered for diversity (don't link th
 | 2 | Tue 2026-06-02 | **Draft 1** | "Print cheques for any bank (Excel utilities)" | #4 + #7 | ✅ Posted → qr.ae/pF2rd4 |
 | 3 | Posted 2026-06-09 | **Draft 9** | "Why do companies use cheques vs electronic transfers?" (India/UPI-anchored opening) | #20 (live) | ✅ Posted → qr.ae/pFY6Z8 |
 | 4 | Posted 2026-06-09 | **Draft 4** | "What are the reasons for a cheque being dishonoured?" | #2 + #11 | ✅ Posted → qr.ae/pFY3Nf |
-| 5 | Thu 2026-06-11 | **Draft 5** | "Best / free cheque printing software" | #10 (live) | Pending — needs a clean question (avoid moderation hotspots) |
+| 5 | Posted 2026-06-12 | **Draft 5** | "Is there any cheque data printing software for free?" | #10 (live) | ✅ Posted → qr.ae/pFA5Dg |
+| 6 | Posted 2026-06-12 | **Draft 5B** | "How can I print checks online for free?" | #10 (live) | ✅ Posted → qr.ae/pFA5Db |
 
 **Posting checklist for each slot:**
 
@@ -378,7 +395,8 @@ Mark each answer once posted. Track its impact monthly.
 | 2 | How long cheque takes to clear | | | | | | |
 | 3 | Crossed vs account payee | | | | | | |
 | 4 | Why cheque bounces | 2026-06-09 | https://qr.ae/pFY3Nf | TBD | 0 (post time) | 0 (post time) | TBD |
-| 5 | Free cheque printing software | | | | | | |
+| 5 | Free cheque printing software (cloud-based, list) | 2026-06-12 | https://qr.ae/pFA5Dg | TBD | 0 (post time) | 0 (post time) | TBD |
+| 5B | Print checks online for free (cloud-based how-to) | 2026-06-12 | https://qr.ae/pFA5Db | TBD | 0 (post time) | 0 (post time) | TBD |
 | 6 | Section 138 NI Act | | | | | | |
 | 7 | MICR code on cheque | | | | | | |
 | 8 | How to fill cheque correctly | 2026-05-25 | https://qr.ae/pFKMY0 | 104.3K (q-level @ post time) | 0 (post time) | 0 (post time) | TBD |
