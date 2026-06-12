@@ -203,6 +203,9 @@ Fuller comparison of what's actually free vs. trial-ware: https://cheqify.app/en
 — Ravi
 ```
 
+**Self-comment (post ~2h after the original, as a reply on your own answer):**
+> One thing worth adding: the biggest hidden cost of the "free" Excel/Word templates isn't money — it's re-alignment time. Every printer or tray change throws the layout off, and people lose 10–15 minutes per run nudging margins. That, more than the licence fee, is what pushes most accountants off them.
+
 ---
 
 ## Answer Draft 5B — "How can I print checks online for free?"
@@ -223,6 +226,9 @@ I broke down what's actually free vs. what just looks free here: https://cheqify
 
 — Ravi
 ```
+
+**Self-comment (post ~2h after the original, as a reply on your own answer):**
+> Quick tip on step 3: once you've dialled in the alignment for a given bank, keep that test sheet and tape it near the printer as a reference. Saves you re-testing every time you load a fresh cheque leaf — small thing, but it adds up if you print weekly.
 
 ---
 
