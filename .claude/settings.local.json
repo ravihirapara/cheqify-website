@@ -178,7 +178,22 @@
       "Bash(awk '/^## Body \\\\\\(English\\\\\\)/,/^## Body \\\\\\(Hindi\\\\\\)/' _bmad-output/blog-content/post-17-cheque-clearing-time-india.md)",
       "Bash(awk '/^## Body \\\\\\(English\\\\\\)/,/^## Body \\\\\\(Hindi\\\\\\)/' _bmad-output/blog-content/post-18-cheque-types-india.md)",
       "Bash(git fetch *)",
-      "Bash(git mv *)"
+      "Bash(git mv *)",
+      "Bash(awk '/## Body \\\\\\(English\\\\\\)/,/## FAQ Items/' _bmad-output/blog-content/post-19-how-to-fill-cheque-correctly.md)",
+      "Bash(awk '/## Body \\\\\\(English\\\\\\)/,/## FAQ Items/' _bmad-output/blog-content/post-20-cheque-vs-digital-payment-india.md)",
+      "Bash(awk '/^## Body \\\\\\(English\\\\\\)/{flag=1;next}/^---$/{if\\(flag==2\\){flag=0}}/^## /{if\\(flag==2\\){flag=0}}flag{if\\($0!~/^Paste the following/ && $0!~/^---$/\\){print}}flag==1&&/^---$/{flag=2}' _bmad-output/blog-content/post-19-how-to-fill-cheque-correctly.md)",
+      "Read(//tmp/**)",
+      "Bash(where python *)",
+      "Bash(node --version)",
+      "WebFetch(domain:qr.ae)",
+      "Bash(awk -F: 'NR==1{prev=$2} {if \\($2 ~ /\\\\/hi\\\\//\\) {if \\(split\\(prev, a, \"/\"\\)[3] == \"en\"\\) print \"EN ends:\", NR-1; prev_locale=\"hi\"} else if \\($2 ~ /\\\\/gu\\\\//\\) {if \\(split\\(prev, a, \"/\"\\)[3] == \"hi\"\\) print \"HI ends:\", NR-1; prev_locale=\"gu\"} prev=$2} END{print \"GU ends:\", NR}')",
+      "WebFetch(domain:www.quora.com)",
+      "WebFetch(domain:4lvsthqk.api.sanity.io)",
+      "Bash(git rev-list *)",
+      "Bash(claude update *)",
+      "PowerShell(code *)",
+      "WebFetch(domain:code.visualstudio.com)",
+      "Skill(claude-api)"
     ]
   }
 }

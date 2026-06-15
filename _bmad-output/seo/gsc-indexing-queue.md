@@ -1,8 +1,8 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-05-25 — Day 11/12/13/14 backlog reportedly cleared by Ravi in one large session; post #19 (`how-to-fill-cheque-correctly`) went live today, added as Day 15 (verification pending)
-**Total live URLs:** 108 (51 static [17 routes × 3 locales] + 57 blog [19 posts × 3 locales])
+**Last updated:** 2026-06-15 — posts #24–#27 went live in Sanity (loan-repayment, cancelled-cheque, demand-draft, request-cheque-book); added as Day 17. Note: post #23 (crossed-cheque) is still NOT live despite its 2026-06-08 slot.
+**Total live URLs:** 129 (51 static [17 routes × 3 locales] + 78 blog [26 posts × 3 locales])
 **GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07; 20+/day reported 2026-05-25 (unusual — needs reconciliation)
 **Estimated days to clear remaining backlog:** see "Next Pending Batch" below — usually 1-3 days at normal quota
 
@@ -396,6 +396,43 @@ https://cheqify.app/gu/blog/cheque-truncation-system-explained
 ```
 
 - [ ] Day 16 — 9 URLs (will likely span 2 days at ~7/day quota)
+
+---
+
+## Day 17 — Posts #24 + #25 + #26 + #27 (12 URLs)
+
+All four went live in Sanity on/around 2026-06-15:
+- Post #24 (`loan-repayment-by-cheque-india`)
+- Post #25 (`how-to-write-cancelled-cheque-safely`)
+- Post #26 (`demand-draft-vs-cheque-vs-bankers-cheque`)
+- Post #27 (`how-to-request-cheque-book-online-india`)
+
+Sanity → Netlify build hook auto-rebuilt the site on each publish. All 12 URLs should be in the live sitemap.
+
+**Pre-flight (mandatory before submitting):**
+
+```
+curl -I https://cheqify.app/sitemap.xml | grep -q 200
+```
+
+Then confirm all 4 new slugs appear in https://cheqify.app/sitemap.xml.
+
+```
+https://cheqify.app/en/blog/loan-repayment-by-cheque-india
+https://cheqify.app/hi/blog/loan-repayment-by-cheque-india
+https://cheqify.app/gu/blog/loan-repayment-by-cheque-india
+https://cheqify.app/en/blog/how-to-write-cancelled-cheque-safely
+https://cheqify.app/hi/blog/how-to-write-cancelled-cheque-safely
+https://cheqify.app/gu/blog/how-to-write-cancelled-cheque-safely
+https://cheqify.app/en/blog/demand-draft-vs-cheque-vs-bankers-cheque
+https://cheqify.app/hi/blog/demand-draft-vs-cheque-vs-bankers-cheque
+https://cheqify.app/gu/blog/demand-draft-vs-cheque-vs-bankers-cheque
+https://cheqify.app/en/blog/how-to-request-cheque-book-online-india
+https://cheqify.app/hi/blog/how-to-request-cheque-book-online-india
+https://cheqify.app/gu/blog/how-to-request-cheque-book-online-india
+```
+
+- [ ] Day 17 — 12 URLs (will span ~2 days at ~7/day quota)
 
 ---
 
