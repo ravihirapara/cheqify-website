@@ -1,4 +1,4 @@
-# Blog Post #14 — Cheque Lifecycle Management Explained
+# Blog Post #13 — Cheque Lifecycle Management Explained
 
 ## How to Use This Document (Field-by-Field → Sanity Studio)
 

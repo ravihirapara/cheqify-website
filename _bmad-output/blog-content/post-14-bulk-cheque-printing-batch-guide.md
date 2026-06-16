@@ -1,4 +1,4 @@
-# Blog Post #13 — Bulk / Batch Cheque Printing for Indian SMBs
+# Blog Post #14 — Bulk / Batch Cheque Printing for Indian SMBs
 
 ## How to Use This Document (Field-by-Field → Sanity Studio)
 

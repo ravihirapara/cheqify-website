@@ -1,4 +1,4 @@
-# Blog Post #15 — Cheque Number in Cheque Book Explained
+# Blog Post #16 — Cheque Number in Cheque Book Explained
 
 ## How to Use This Document (Field-by-Field → Sanity Studio)
 

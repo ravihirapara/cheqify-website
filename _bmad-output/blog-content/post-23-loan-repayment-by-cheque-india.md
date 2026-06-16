@@ -1,4 +1,4 @@
-# Blog Post #24 — How to Repay a Loan by Cheque in India — EMI, Prepayment & Principal Reduction (2026)
+# Blog Post #23 — How to Repay a Loan by Cheque in India — EMI, Prepayment & Principal Reduction (2026)
 
 ## How to Use This Document (Field-by-Field → Sanity Studio)
 

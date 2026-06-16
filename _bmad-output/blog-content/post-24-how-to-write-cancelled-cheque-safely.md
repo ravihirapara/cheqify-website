@@ -1,4 +1,4 @@
-# Blog Post #25 — How to Write a Cancelled Cheque Safely — and Why Everyone Keeps Asking for One (2026)
+# Blog Post #24 — How to Write a Cancelled Cheque Safely — and Why Everyone Keeps Asking for One (2026)
 
 ## How to Use This Document (Field-by-Field → Sanity Studio)
 

@@ -441,7 +441,7 @@ https://cheqify.app/gu/blog/how-to-request-cheque-book-online-india
 Add to a future day after these go live:
 
 ```
-# Post #23 (crossed-cheque-vs-account-payee) — scheduled Mon 2026-06-08
+# crossed-cheque-vs-account-payee — PUBLISHED to Sanity 2026-06-16 (order 27, via API). ACTIVATE after next Netlify rebuild confirms 200 + sitemap.
 https://cheqify.app/en/blog/crossed-cheque-vs-account-payee
 https://cheqify.app/hi/blog/crossed-cheque-vs-account-payee
 https://cheqify.app/gu/blog/crossed-cheque-vs-account-payee

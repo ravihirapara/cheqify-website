@@ -1,4 +1,4 @@
-# Blog Post #23 — Crossed Cheque vs Account Payee — The Full Disambiguation (India 2026)
+# Blog Post #27 — Crossed Cheque vs Account Payee — The Full Disambiguation (India 2026)
 
 ## How to Use This Document (Field-by-Field → Sanity Studio)
 
@@ -49,7 +49,8 @@ To apply: paste as a normal paragraph → click the block style dropdown above t
 
 ## Publishing Metadata
 
-- **Scheduled publish date:** Monday 2026-06-08, 10:00 IST (auto-set in Sanity)
+- **Status:** ✅ PUBLISHED to Sanity 2026-06-16 via API (order 27, newest). Draft kept as reference. Pending: Netlify rebuild to go live on site + GSC submission.
+- **Scheduled publish date:** Monday 2026-06-08, 10:00 IST (missed — published 2026-06-16 instead)
 - **Primary keyword:** `crossed cheque vs account payee`
 - **Secondary keywords:** account payee cheque, crossed cheque meaning, types of cheque crossing, general crossing vs special crossing, not negotiable cheque, what is a c/c cheque
 - **Reading time:** ~7 min

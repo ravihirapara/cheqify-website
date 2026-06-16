@@ -1,4 +1,4 @@
-# Blog Post #16 — CTS 2010 Cheque Format Compliance Explained
+# Blog Post #15 — CTS 2010 Cheque Format Compliance Explained
 
 ## How to Use This Document (Field-by-Field → Sanity Studio)
 
