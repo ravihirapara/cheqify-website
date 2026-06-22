@@ -41,6 +41,8 @@ https://cheqify.app/en/blog/loan-repayment-by-cheque-india
 https://cheqify.app/en/blog/how-to-write-cancelled-cheque-safely
 https://cheqify.app/en/blog/demand-draft-vs-cheque-vs-bankers-cheque
 https://cheqify.app/en/blog/how-to-request-cheque-book-online-india
+https://cheqify.app/en/blog/crossed-cheque-vs-account-payee
+https://cheqify.app/en/blog/cheque-return-reasons-india-2026
 https://cheqify.app/hi
 https://cheqify.app/hi/features
 https://cheqify.app/hi/pricing
@@ -84,6 +86,8 @@ https://cheqify.app/hi/blog/loan-repayment-by-cheque-india
 https://cheqify.app/hi/blog/how-to-write-cancelled-cheque-safely
 https://cheqify.app/hi/blog/demand-draft-vs-cheque-vs-bankers-cheque
 https://cheqify.app/hi/blog/how-to-request-cheque-book-online-india
+https://cheqify.app/hi/blog/crossed-cheque-vs-account-payee
+https://cheqify.app/hi/blog/cheque-return-reasons-india-2026
 https://cheqify.app/gu
 https://cheqify.app/gu/features
 https://cheqify.app/gu/pricing
@@ -127,3 +131,5 @@ https://cheqify.app/gu/blog/loan-repayment-by-cheque-india
 https://cheqify.app/gu/blog/how-to-write-cancelled-cheque-safely
 https://cheqify.app/gu/blog/demand-draft-vs-cheque-vs-bankers-cheque
 https://cheqify.app/gu/blog/how-to-request-cheque-book-online-india
+https://cheqify.app/gu/blog/crossed-cheque-vs-account-payee
+https://cheqify.app/gu/blog/cheque-return-reasons-india-2026

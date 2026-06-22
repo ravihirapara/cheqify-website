@@ -10,6 +10,18 @@
 
 ---
 
+## Newly Added — Pending Indexing
+
+> Auto-appended by `scripts/update-indexing-queue.mjs` on 2026-06-22. Move these URLs into a Day block (or new day) before submitting, then delete this section.
+
+```
+https://cheqify.app/en/blog/cheque-return-reasons-india-2026
+https://cheqify.app/hi/blog/cheque-return-reasons-india-2026
+https://cheqify.app/gu/blog/cheque-return-reasons-india-2026
+```
+
+---
+
 ## 🎯 NEXT PENDING BATCH (for team handoff)
 
 **Status as of 2026-05-25 evening:** Awaiting verification of Ravi's 2026-05-25 bulk submission claim. Pending below assumes nothing post-Day-14 has shipped yet.
