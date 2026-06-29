@@ -1,8 +1,8 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-06-15 — posts #24–#27 went live in Sanity (loan-repayment, cancelled-cheque, demand-draft, request-cheque-book); added as Day 17. Note: post #23 (crossed-cheque) is still NOT live despite its 2026-06-08 slot.
-**Total live URLs:** 129 (51 static [17 routes × 3 locales] + 78 blog [26 posts × 3 locales])
+**Last updated:** 2026-06-29 — posts #29 (positive-pay-system-cheque-india) and #30 (how-to-deposit-cheque-india) went live in Sanity; added as Day 18. Sitemap already includes all 3 locales of both (verified live). Earlier: #24–#27 added as Day 17 (2026-06-15).
+**Total live URLs:** 141 (51 static [17 routes × 3 locales] + 90 blog [30 posts × 3 locales])
 **GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07; 20+/day reported 2026-05-25 (unusual — needs reconciliation)
 **Estimated days to clear remaining backlog:** see "Next Pending Batch" below — usually 1-3 days at normal quota
 
@@ -10,15 +10,20 @@
 
 ---
 
-## Newly Added — Pending Indexing
+## Day 18 — posts #29 + #30 (2026-06-29) — Pending Indexing
 
-> Auto-appended by `scripts/update-indexing-queue.mjs` on 2026-06-22. Move these URLs into a Day block (or new day) before submitting, then delete this section.
+> 6 URLs. positive-pay-system-cheque-india + how-to-deposit-cheque-india, all 3 locales. Sitemap verified live. Submit via GSC URL Inspection → "Request Indexing" (~7/day quota). Bing/Yandex/DuckDuckGo already auto-pinged via IndexNow on publish.
 
 ```
-https://cheqify.app/en/blog/cheque-return-reasons-india-2026
-https://cheqify.app/hi/blog/cheque-return-reasons-india-2026
-https://cheqify.app/gu/blog/cheque-return-reasons-india-2026
+https://cheqify.app/en/blog/positive-pay-system-cheque-india
+https://cheqify.app/hi/blog/positive-pay-system-cheque-india
+https://cheqify.app/gu/blog/positive-pay-system-cheque-india
+https://cheqify.app/en/blog/how-to-deposit-cheque-india
+https://cheqify.app/hi/blog/how-to-deposit-cheque-india
+https://cheqify.app/gu/blog/how-to-deposit-cheque-india
 ```
+
+- [ ] Day 18 — 6 URLs
 
 ---
 
