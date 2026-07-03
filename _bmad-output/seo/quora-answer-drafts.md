@@ -367,6 +367,12 @@ Cost is rarely the reason cheque survives — legal weight and counterparty trus
 ## Answer Draft 10 — "Can a post-dated cheque be presented before its date?"
 
 > *Word count: ~300. Maps to post #5 (post-dated-cheques). Status: DRAFT — queue slot 11. Question angle: "Is a post-dated cheque valid before its date?" / "Can PDC be encashed early?"*
+>
+> **Target candidates (vet `/log` + views before posting):**
+> 1. https://www.quora.com/What-is-a-post-dated-cheque-What-happens-if-you-try-to-use-a-post-dated-cheque-before-the-date-on-it (best match)
+> 2. https://www.quora.com/Can-we-deposit-a-post-dated-cheque
+> 3. https://www.quora.com/What-is-the-maximum-validity-for-a-post-dated-cheque-in-India (fallback — validity overlaps Draft 14)
+> ⚠️ Skip the legal-suit variants (before-date lawsuit / token-money cancellation) — legal-advice-seeking, higher moderation risk.
 
 ```
 No — and if your bank pays a post-dated cheque before the date written on it, that's the bank's error, not yours. A post-dated cheque (PDC) is simply a cheque carrying a future date. Legally it isn't "payable" until that date arrives, so a bank presented with it early is supposed to return it with the reason "post-dated".
@@ -395,6 +401,11 @@ Worth adding for anyone issuing a stack of PDCs (rent, EMIs): track the dates yo
 ## Answer Draft 11 — "What is a cancelled cheque and why is it required?"
 
 > *Word count: ~290. Maps to post #24 (how-to-write-cancelled-cheque-safely). Status: DRAFT — queue slot 12. High volume (KYC/onboarding). Question angle: "Why do companies ask for a cancelled cheque?" / "How to make a cancelled cheque?"*
+>
+> **Target candidates (vet `/log` + views before posting):**
+> 1. https://www.quora.com/What-is-a-cancelled-cheque (definitional — also check near-dup https://www.quora.com/What-is-cancelled-cheque, pick higher views)
+> 2. https://www.quora.com/Why-the-financial-institution-ask-for-cancelled-cheque
+> 3. https://www.quora.com/Why-do-banks-take-cancelled-checks-while-approving-loans (narrower loan angle — fallback)
 
 ```
 A cancelled cheque is just a normal cheque leaf with two parallel lines drawn across it and the word CANCELLED written between them — and crucially, no signature. You're not paying anyone with it. You're handing over the printed details on the leaf as proof that the bank account is real and belongs to you.
@@ -692,8 +703,8 @@ Written after the original 9-draft set was fully posted. Each maps to a **distin
 
 | Slot | Draft # | Question angle | Links to post | Status |
 |---|---|---|---|---|
-| 11 | **Draft 10** | "Can a post-dated cheque be presented before its date?" | #5 (live) | Ready — needs question vet |
-| 12 | **Draft 11** | "What is a cancelled cheque & why is it required?" | #24 (live) | Ready — needs question vet |
+| 11 | **Draft 10** | "Can a post-dated cheque be presented before its date?" | #5 (live) | Candidates picked (see Draft 10 header) — vet + post |
+| 12 | **Draft 11** | "What is a cancelled cheque & why is it required?" | #24 (live) | Candidates picked (see Draft 11 header) — vet + post |
 | 13 | **Draft 12** | "Difference between a cheque and a demand draft" | #26 (live) | Ready — needs question vet |
 | 14 | **Draft 13** | "Different types of cheques in India" | #18 (live) | Ready — needs question vet |
 | 15 | **Draft 14** | "Validity period of a cheque in India" | #12 (live) | Ready — needs question vet |
