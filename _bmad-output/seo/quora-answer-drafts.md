@@ -364,6 +364,349 @@ Cost is rarely the reason cheque survives — legal weight and counterparty trus
 
 ---
 
+## Answer Draft 10 — "Can a post-dated cheque be presented before its date?"
+
+> *Word count: ~300. Maps to post #5 (post-dated-cheques). Status: DRAFT — queue slot 11. Question angle: "Is a post-dated cheque valid before its date?" / "Can PDC be encashed early?"*
+
+```
+No — and if your bank pays a post-dated cheque before the date written on it, that's the bank's error, not yours. A post-dated cheque (PDC) is simply a cheque carrying a future date. Legally it isn't "payable" until that date arrives, so a bank presented with it early is supposed to return it with the reason "post-dated".
+
+The practical points people get wrong:
+
+1. The date on the cheque is the earliest it can be paid — not the day you handed it over. A cheque dated 10 August is dead paper until 10 August, no matter when the payee received it.
+2. If it does slip through early (CTS scanning is automated and occasionally a genuinely post-dated cheque gets processed), you can dispute it — the payment was made against the instrument's own terms. Keep the counterfoil.
+3. A PDC is still a valid cheque for Section 138 purposes. If it bounces on its due date for insufficient funds, the criminal liability under the NI Act applies exactly as it would for a normal cheque. Handing over a PDC you can't honour later is not a loophole.
+4. Validity runs 3 months from the date on the cheque, not from when it was written or given.
+
+This is why landlords and lenders love PDCs — they're a dated commitment instrument. You're not just promising to pay on the 5th; you've handed over the means to enforce it.
+
+A fuller breakdown of the RBI rules and the safe way to issue and accept PDCs is here: https://cheqify.app/en/blog/post-dated-cheques-rules-and-best-practices
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+Worth adding for anyone issuing a stack of PDCs (rent, EMIs): track the dates yourself rather than trusting memory. The single most common PDC mishap I see isn't fraud — it's the issuer forgetting a cheque is due, leaving the account short on that exact day, and turning a routine payment into a bounce.
+```
+
+---
+
+## Answer Draft 11 — "What is a cancelled cheque and why is it required?"
+
+> *Word count: ~290. Maps to post #24 (how-to-write-cancelled-cheque-safely). Status: DRAFT — queue slot 12. High volume (KYC/onboarding). Question angle: "Why do companies ask for a cancelled cheque?" / "How to make a cancelled cheque?"*
+
+```
+A cancelled cheque is just a normal cheque leaf with two parallel lines drawn across it and the word CANCELLED written between them — and crucially, no signature. You're not paying anyone with it. You're handing over the printed details on the leaf as proof that the bank account is real and belongs to you.
+
+What it actually proves: a cheque leaf carries your account number, your IFSC and MICR codes, your bank and branch name, and (on most leaves) your name as the account holder. That's the exact bundle of details anyone needs to credit money to your account. So a cancelled cheque is the cleanest single-document proof of account.
+
+Where you'll be asked for one:
+- Salary account setup with a new employer
+- ECS / NACH auto-debit mandates (SIPs, loan EMIs, insurance premiums)
+- EPF and insurance claim payouts
+- Loan disbursal and mutual-fund redemptions
+- KYC for demat and trading accounts
+
+Two rules that keep you safe:
+1. Never sign a cancelled cheque. A signed cheque with two lines is still a cheque someone could try to misuse. The CANCELLED marking + no signature is what neutralises it.
+2. It still exposes your account number and IFSC. Only give it to institutions you trust, and prefer writing the purpose ("for salary account") in a corner so it can't be repurposed.
+
+If your bank account is fully digital and you don't have a physical cheque book, most banks now accept a bank-verified account statement or passbook copy instead — ask first.
+
+Step-by-step on drawing one safely, plus what to do if you have no cheque book, is here: https://cheqify.app/en/blog/how-to-write-cancelled-cheque-safely
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+One small addition that has saved people grief: write what the cheque is for ("for HDFC salary account — CANCELLED") right across the leaf, not just the word CANCELLED. It ties the leaf to a single purpose, so even if it's mishandled later, it can't be passed off as a general proof-of-account for something you never authorised.
+```
+
+---
+
+## Answer Draft 12 — "What is the difference between a cheque and a demand draft?"
+
+> *Word count: ~300. Maps to post #26 (demand-draft-vs-cheque-vs-bankers-cheque). Status: DRAFT — queue slot 13. High volume. Question angle: "Cheque vs DD — which is better?" / "Why demand draft instead of cheque?"*
+
+```
+The one-line difference: a cheque can bounce, a demand draft cannot. Everything else follows from that.
+
+A cheque is drawn on your own account. When the payee deposits it, the bank checks whether your balance covers it at that moment. If it doesn't — insufficient funds, stop payment, signature mismatch — the cheque is returned. The payee carries that risk until it clears.
+
+A demand draft (DD) is prepaid. You pay the bank the amount upfront (plus a small commission), the bank debits it from you immediately, and the bank itself becomes the payer. The DD is the bank's own promise to pay. It cannot bounce for insufficient funds, because the money already left your account when the DD was issued.
+
+When each one wins:
+
+- Use a cheque for routine payments where the payee trusts you — vendors, staff, regular suppliers. It's free and convenient.
+- Use a DD where the payee needs certainty from a stranger — college admissions, government tenders, property registrations, court deposits. They don't know you, so they won't accept the bounce risk of a personal cheque.
+
+A few practical notes:
+1. A banker's cheque (or pay order) is essentially a DD for payment within the same city; a DD is the version used for outstation payees. Both are prepaid and bank-guaranteed.
+2. A DD has a validity of 3 months, same as a cheque. After that it needs revalidation by the issuing bank.
+3. If a DD is lost, you can't just cancel it freely — you'll need an indemnity and the bank's process, which takes time. Treat it like cash.
+
+The full comparison of cheque vs DD vs banker's cheque, with when to reach for each, is here: https://cheqify.app/en/blog/demand-draft-vs-cheque-vs-bankers-cheque
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+Quick cost note people forget: a DD isn't free — banks charge a commission that scales with the amount (and it's often waived only for very small values or certain account tiers). For a large payment to someone who'd happily take a cheque, that commission is pure waste. Only pay for the DD's guarantee when the payee actually requires it.
+```
+
+---
+
+## Answer Draft 13 — "What are the different types of cheques in India?"
+
+> *Word count: ~300. Maps to post #18 (cheque-types-india). Status: DRAFT — queue slot 14. Question angle: "How many types of cheques are there?" / "Bearer vs order vs crossed cheque."*
+
+```
+Indian cheques get classified two different ways at once, which is why the lists you find online look inconsistent. There's classification by who can encash it, and classification by when/how it's dated or issued. Here's the whole set, sorted:
+
+By who can encash it:
+1. Bearer cheque — payable to whoever holds it. No name check at the counter. Convenient but dangerous: lose it and you've effectively lost cash.
+2. Order cheque — payable to the named person "or order". The bank verifies identity; it can be transferred by endorsement.
+3. Crossed cheque — two parallel lines in the top-left corner mean it can only be paid into a bank account, never as cash over the counter.
+4. Account payee cheque — a crossing with "A/c Payee Only" written in. It can only be credited to the named payee's account, not endorsed onward. This is the modern default for business cheques.
+
+By dating / issuer:
+5. Self cheque — you write "Self" or "Yourself" as payee to withdraw your own cash.
+6. Post-dated cheque — carries a future date; not payable until that date.
+7. Stale cheque — older than 3 months from its date; banks won't honour it.
+8. Ante-dated cheque — carries a past date (still valid until 3 months from that date).
+
+Special instruments that behave like cheques:
+9. Banker's cheque / pay order — prepaid and bank-guaranteed, for same-city payments.
+
+For everyday business, you'll almost only ever issue crossed account-payee cheques — the rest matter mostly when you're on the receiving end and need to know what you're holding.
+
+A plain-language guide to each type with when it's used is here: https://cheqify.app/en/blog/cheque-types-india
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+If you remember only one distinction, make it bearer vs crossed. A bearer, uncrossed cheque is the one that behaves like cash — anyone holding it can walk into the branch and encash it. Crossing every cheque you don't personally hand to the named payee is the cheapest fraud insurance there is.
+```
+
+---
+
+## Answer Draft 14 — "What is the validity period of a cheque in India?"
+
+> *Word count: ~280. Maps to post #12 (cheque-validity-period-stop-payment-india). Status: DRAFT — queue slot 15. Question angle: "How many months is a cheque valid?" / "What is a stale cheque?"*
+
+```
+Three months from the date written on the cheque. Not from when it was handed over — from the date on the leaf itself.
+
+This changed in 2012. Before 1 April 2012 the validity was six months; the RBI cut it to three to reduce the risk of old cheques being presented long after the underlying payment situation had changed. The three-month rule applies not just to ordinary cheques but also to demand drafts, pay orders, and banker's cheques.
+
+What "expired" actually means: after three months the cheque becomes a stale cheque, and banks will refuse to honour it at clearing. It doesn't matter that funds are available — the instrument itself has lapsed.
+
+The parts people trip on:
+
+1. For a post-dated cheque, the three months run from the future date on it, not from when it was written. A cheque dated 1 September is valid until roughly 1 December.
+2. You can't "extend" a stale cheque yourself. The only fix is revalidation by the issuer — in practice, the issuer cancels the old one and writes a fresh cheque with a current date.
+3. If you're holding a cheque, deposit it well before the three-month edge. Clearing, holidays, and any return-and-reissue cycle eat into that window fast.
+
+While we're here: if you need to prevent a cheque from being paid before it expires on its own, that's a stop-payment instruction — a separate process with its own rules.
+
+The full guide to validity plus how to place a stop-payment correctly is here: https://cheqify.app/en/blog/cheque-validity-period-stop-payment-india
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+A trap worth flagging: people assume a stale cheque can never come back to bite them, so they stop tracking it. But if you reissue a replacement without confirming the original was actually returned unpaid, you can end up with both getting presented. Always reconcile the old one out before writing the new one.
+```
+
+---
+
+## Answer Draft 15 — "What is CTS-2010, and why did my bank ask me to replace my cheque book?"
+
+> *Word count: ~300. Maps to post #15 (cts-2010-cheque-format-compliance-india). Status: DRAFT — queue slot 16. Question angle: "What is CTS 2010 cheque?" / "Why is my old cheque not accepted?"*
+
+```
+CTS-2010 is the standard set of security features every Indian cheque has to carry, mandated by the RBI so that cheques can be cleared from a scanned image instead of the physical paper moving between banks. If your bank asked you to swap an old cheque book, it's because the old leaves predate this standard and can no longer go through clearing.
+
+The features baked into a CTS-2010 leaf:
+
+1. A watermark reading "CTS-INDIA" — visible when you hold the cheque up to light. Hard to reproduce on a photocopier or ordinary printer.
+2. A void pantograph — a hidden pattern that makes the word "COPY" appear if the cheque is photocopied, so a duplicate is obvious.
+3. The bank's logo printed in invisible ink, visible only under UV light.
+4. Standardised placement of every field, light pastel background colours, and a prohibition on any alteration — under CTS-2010 you cannot correct a cheque, you must write a fresh one.
+
+Why the switch mattered: before CTS, the physical cheque travelled to the drawee bank for clearing, which is why outstation cheques took a week. With image-based truncation, only a scan and the MICR data move, so clearing dropped to T+1 nationwide. But that only works if every cheque carries machine-readable, tamper-evident features — hence the standard.
+
+Non-CTS cheque books were phased out of the normal clearing grid, so a leftover old book simply won't clear. Your bank issues a replacement CTS-2010 book, usually free.
+
+A full walkthrough of the CTS-2010 features and what compliance means for a business is here: https://cheqify.app/en/blog/cts-2010-cheque-format-compliance-india
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+One consequence of CTS-2010 people discover the hard way: because any alteration voids the cheque, the old habit of striking through a mistake and initialling next to it no longer works. A single correction to the payee or amount means the whole leaf is dead — write "CANCELLED" across it and start fresh.
+```
+
+---
+
+## Answer Draft 16 — "How can I prevent cheque fraud?"
+
+> *Word count: ~300. Maps to post #3 (how-to-avoid-cheque-fraud-in-india). Status: DRAFT — queue slot 17. Question angle: "How to avoid cheque fraud/alteration?" / "How to write a cheque safely?"*
+
+```
+Most cheque fraud in India isn't sophisticated forgery — it's alteration of a genuine cheque you signed. Someone changes the payee name or bumps the amount because you left room to do it. So the bulk of protection is about closing the gaps on the cheque itself.
+
+The high-leverage habits, in order of impact:
+
+1. Cross every cheque "A/c Payee Only" unless you're physically handing it to the named person at the bank. This restricts it to bank-account credit, so it can't be encashed as cash if intercepted.
+2. Close every field. Draw a horizontal line from the end of the payee's name to the edge, so no words can be added after it. End the amount in figures with /- and the amount in words with "Only", each followed by a line. These two suffixes stop a 5,000 becoming 5,00,000.
+3. Use the Indian numbering format and permanent blue or black ink — never pencil, gel-metallic, or erasable pens.
+4. Never sign a blank or partly filled cheque "to be completed later". That single habit is behind a large share of cheque fraud losses.
+5. For high-value cheques, register for the Positive Pay System — you pre-declare the cheque details to your bank, which cross-checks them at clearing and flags any mismatch.
+6. Keep your cheque book physically secure, enable SMS alerts on your account, and reconcile issued cheques against your statement regularly so an anomaly surfaces in days, not months.
+
+The account-level backstop: SMS alerts plus weekly reconciliation mean even a cheque that slips through gets caught quickly enough to dispute.
+
+A complete cheque-fraud prevention checklist for Indian businesses is here: https://cheqify.app/en/blog/how-to-avoid-cheque-fraud-in-india
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+The one I'd underline is #4 — never sign a blank cheque. It feels convenient when you're rushing out and want an assistant to "fill in the vendor later," but a signed blank cheque is a signed blank cheque. If you must delegate, use crossed account-payee leaves with the payee already written, so the instrument is locked to one recipient before your signature ever goes on it.
+```
+
+---
+
+## Answer Draft 17 — "What is the Positive Pay System for cheques?"
+
+> *Word count: ~290. Maps to post #29 (positive-pay-system-cheque-india). Status: DRAFT — queue slot 18. Question angle: "What is Positive Pay in banking?" / "Is Positive Pay mandatory?"*
+
+```
+Positive Pay System (PPS) is an RBI-mandated anti-fraud check for high-value cheques, live since 1 January 2021. In plain terms: before you hand over a large cheque, you tell your bank the key details of that cheque in advance, so the bank can match them when the cheque comes in for clearing.
+
+How it works in practice:
+
+1. You issue a cheque, then submit its details electronically to your bank — cheque number, cheque date, payee name, and amount. You can do this through net banking, the mobile app, SMS, or at the branch.
+2. When the payee deposits the cheque, the CTS clearing system cross-checks the scanned cheque against what you declared.
+3. If everything matches, it clears normally. If something's off — a different payee, a tampered amount — it's flagged for the banks to investigate before money moves.
+
+The thresholds:
+- PPS applies to cheques of ₹50,000 and above, but at that level it's generally optional (bank's discretion to offer it).
+- Many banks make it mandatory for cheques of ₹5,00,000 and above. If you don't submit Positive Pay details for such a cheque, the bank can refuse to clear it.
+
+The point of it: the single biggest high-value cheque fraud is alteration of a genuine cheque after it leaves your hands. Positive Pay defeats that, because the bank already has your version of the truth to compare against.
+
+Two things to remember: the details you submit must match the cheque exactly, and you should submit them before the payee deposits it — not after.
+
+A full guide to registering for Positive Pay and the details that must match is here: https://cheqify.app/en/blog/positive-pay-system-cheque-india
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+Practical tip if you issue high-value cheques regularly: submit the Positive Pay details at the moment you write the cheque, not when you remember later. The whole safeguard depends on your declaration reaching the bank before the cheque does — and for a large payment the payee often banks it the same day.
+```
+
+---
+
+## Answer Draft 18 — "How can I apply for a cheque book online?"
+
+> *Word count: ~280. Maps to post #25 (how-to-request-cheque-book-online-india). Status: DRAFT — queue slot 19. Question angle: "How to order cheque book in SBI/HDFC online?" / "Request cheque book net banking."*
+
+```
+Every major Indian bank lets you request a cheque book online now — you don't need to visit the branch. The path is nearly identical across banks; it's tucked under "Service Requests".
+
+Net banking route (works for SBI, HDFC, ICICI, Axis, Kotak):
+1. Log in to net banking or the mobile app.
+2. Go to Services / Service Requests / e-Services (label varies by bank).
+3. Select "Cheque Book Request".
+4. Pick the account (if you have more than one) and the number of leaves — usually 25, 50, or 100.
+5. Confirm the delivery address — it goes to your registered address by post. Some banks let you choose branch pickup.
+6. Submit and note the reference number.
+
+App-specific names: SBI does it through YONO or the net-banking "Request Cheque Book" tile; ICICI through iMobile; HDFC, Axis, and Kotak through their apps under Accounts → Services.
+
+A few practical notes:
+- Delivery is typically 5–7 working days by registered/speed post.
+- Banks usually give a set number of free leaves per year (often around 25–50); beyond that a nominal charge applies.
+- You can also request via ATM, phone banking, SMS, or a branch kiosk if you don't use net banking.
+- The book is dispatched to your registered address only — if you've moved, update the address first, or the book goes to the old one.
+
+A bank-by-bank walkthrough (SBI, HDFC, ICICI, Axis, Kotak) with the exact menu paths is here: https://cheqify.app/en/blog/how-to-request-cheque-book-online-india
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+One thing to check before you tap submit: your registered address. Cheque books are sent to the address the bank has on file, by post, and they won't be handed to just anyone. If you've shifted, update the address first and let it reflect — otherwise the book quietly ships to where you used to live.
+```
+
+---
+
+## Answer Draft 19 — "How do I deposit a cheque in India?"
+
+> *Word count: ~290. Maps to post #30 (how-to-deposit-cheque-india). Status: DRAFT — queue slot 20. Question angle: "How to deposit a cheque?" / "Ways to deposit cheque without going to branch."*
+
+```
+You've got four ways to deposit a cheque in India, and they clear on the same timeline — so pick whichever is most convenient.
+
+1. Branch counter. Fill a pay-in slip with your account number, the cheque number, and the amount; hand both to the teller; keep the stamped counterfoil. Slowest option, but you get an acknowledged receipt on the spot.
+2. Cheque drop box. Drop the cheque (with a filled pay-in slip) into the box at any branch or ATM lobby. Fast, but there's no instant acknowledgement — note the details before you drop it.
+3. Cheque Deposit Machine (CDM). Available at many branches; it scans the cheque and prints a receipt. Best of both — quick and acknowledged.
+4. Doorstep banking. Several banks (and the doorstep-banking services for seniors) will collect a cheque from your home for deposit.
+
+A few things that decide whether it clears cleanly:
+- Fill the pay-in slip completely and correctly. A wrong account number is a common cause of misposting.
+- If it's an order cheque made out to you, sign the back (endorse it) if the bank asks.
+- Deposit before your branch's clearing cut-off (usually late morning to early afternoon) to catch same-day capture. A CTS cheque then clears T+1.
+- "Outstation" is effectively gone — since the national CTS grid, a cheque drawn on another city clears in the same T+1 as a local one.
+
+One thing India doesn't have yet, unlike the US: consumer mobile cheque deposit by photo. You still need the physical leaf to reach the bank through one of the channels above.
+
+A full guide to each deposit channel and what to check first is here: https://cheqify.app/en/blog/how-to-deposit-cheque-india
+
+— Ravi
+```
+
+**Self-comment (post ~2h later):**
+```
+If you use a drop box, jot down the cheque number, amount, and drawer before you drop it — or snap a quick photo of the cheque. The drop box gives you no receipt, so if it's ever misplaced in transit, that note is the only record you'll have to trace it. The CDM or counter avoids this entirely by giving you an acknowledgement.
+```
+
+---
+
+## Next 10 Queue — Drafts 10–19 (added 2026-07-03)
+
+Written after the original 9-draft set was fully posted. Each maps to a **distinct** live blog post (no URL over-linked in a week), spans a mix of legal / KYC / how-to / comparison intent, and follows the same post-then-self-comment protocol. Post ~2/week (Mon+Thu), rotate topic type, vet each question's `/log` before posting.
+
+| Slot | Draft # | Question angle | Links to post | Status |
+|---|---|---|---|---|
+| 11 | **Draft 10** | "Can a post-dated cheque be presented before its date?" | #5 (live) | Ready — needs question vet |
+| 12 | **Draft 11** | "What is a cancelled cheque & why is it required?" | #24 (live) | Ready — needs question vet |
+| 13 | **Draft 12** | "Difference between a cheque and a demand draft" | #26 (live) | Ready — needs question vet |
+| 14 | **Draft 13** | "Different types of cheques in India" | #18 (live) | Ready — needs question vet |
+| 15 | **Draft 14** | "Validity period of a cheque in India" | #12 (live) | Ready — needs question vet |
+| 16 | **Draft 15** | "What is CTS-2010 / why replace my cheque book?" | #15 (live) | Ready — needs question vet |
+| 17 | **Draft 16** | "How to prevent cheque fraud" | #3 (live) | Ready — needs question vet |
+| 18 | **Draft 17** | "What is the Positive Pay System?" | #29 (live) | Ready — needs question vet |
+| 19 | **Draft 18** | "How to apply for a cheque book online" | #25 (live) | Ready — needs question vet |
+| 20 | **Draft 19** | "How to deposit a cheque in India" | #30 (live) | Ready — needs question vet |
+
+**Before posting each:** search the exact question on Quora → pick highest-views / least-saturated variant → check `/log` for moderation deletions → confirm >2 days old → tweak opening 1–2 lines → post → self-comment ~2h later → record qr.ae URL in the Tracking Sheet below.
+
+---
+
 ## Top 5 to Post — Re-synced after the 05-29 slip (2026-05-25 → 2026-06-11)
 
 Recommended sequence. Two answers per week, ordered for diversity (don't link the same Cheqify post in back-to-back weeks). **Re-synced on 2026-06-02** after the Thu 05-29 slot slipped. On 06-02 the "best cheque printing software in India" question turned out to be a moderation hotspot (4 deleted answers in its Question Log, ~1.5 views/day) — so we posted **Draft 1 (how to print, on an "any bank / Excel utilities" question)** instead and re-queued Draft 5 to the end until a clean software question turns up. All links verified live 2026-06-02.
