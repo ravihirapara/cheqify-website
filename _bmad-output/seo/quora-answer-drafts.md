@@ -440,6 +440,12 @@ One small addition that has saved people grief: write what the cheque is for ("f
 ## Answer Draft 12 — "What is the difference between a cheque and a demand draft?"
 
 > *Word count: ~300. Maps to post #26 (demand-draft-vs-cheque-vs-bankers-cheque). Status: DRAFT — queue slot 13. High volume. Question angle: "Cheque vs DD — which is better?" / "Why demand draft instead of cheque?"*
+>
+> **Target candidates (vet `/log` + views before posting):**
+> 1. https://www.quora.com/How-is-a-cheque-different-from-a-DD-demand-draft (India-anchored, best match)
+> 2. https://www.quora.com/Whats-the-difference-between-cheque-and-demand-draft
+> 3. https://www.quora.com/Why-is-a-demand-draft-more-acceptable-than-a-cheque (matches the draft's "guarantee" thesis)
+> ⚠️ Skip bill-of-exchange and manager's-cheque variants — off-angle for this draft.
 
 ```
 The one-line difference: a cheque can bounce, a demand draft cannot. Everything else follows from that.
@@ -473,6 +479,11 @@ Quick cost note people forget: a DD isn't free — banks charge a commission tha
 ## Answer Draft 13 — "What are the different types of cheques in India?"
 
 > *Word count: ~300. Maps to post #18 (cheque-types-india). Status: DRAFT — queue slot 14. Question angle: "How many types of cheques are there?" / "Bearer vs order vs crossed cheque."*
+>
+> **Target candidates (vet `/log` + views before posting):**
+> 1. https://www.quora.com/What-are-the-different-types-of-cheques-issued-in-India (exact match)
+> 2. https://www.quora.com/How-many-types-of-cheques-are-used-in-Indian-banks-and-what-is-the-difference-between-them (exact match, India-anchored)
+> 3. https://www.quora.com/What-is-the-difference-between-order-cheque-and-bearer-cheque (narrower but high-volume — fallback)
 
 ```
 Indian cheques get classified two different ways at once, which is why the lists you find online look inconsistent. There's classification by who can encash it, and classification by when/how it's dated or issued. Here's the whole set, sorted:
@@ -705,8 +716,8 @@ Written after the original 9-draft set was fully posted. Each maps to a **distin
 |---|---|---|---|---|
 | 11 | **Draft 10** | "Can a post-dated cheque be presented before its date?" | #5 (live) | Candidates picked (see Draft 10 header) — vet + post |
 | 12 | **Draft 11** | "What is a cancelled cheque & why is it required?" | #24 (live) | Candidates picked (see Draft 11 header) — vet + post |
-| 13 | **Draft 12** | "Difference between a cheque and a demand draft" | #26 (live) | Ready — needs question vet |
-| 14 | **Draft 13** | "Different types of cheques in India" | #18 (live) | Ready — needs question vet |
+| 13 | **Draft 12** | "Difference between a cheque and a demand draft" | #26 (live) | Candidates picked (see Draft 12 header) — vet + post |
+| 14 | **Draft 13** | "Different types of cheques in India" | #18 (live) | Candidates picked (see Draft 13 header) — vet + post |
 | 15 | **Draft 14** | "Validity period of a cheque in India" | #12 (live) | Ready — needs question vet |
 | 16 | **Draft 15** | "What is CTS-2010 / why replace my cheque book?" | #15 (live) | Ready — needs question vet |
 | 17 | **Draft 16** | "How to prevent cheque fraud" | #3 (live) | Ready — needs question vet |
