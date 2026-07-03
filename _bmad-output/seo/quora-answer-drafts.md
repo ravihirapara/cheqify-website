@@ -93,7 +93,7 @@ For a step-by-step walkthrough of the modern browser-based way, including the 30
 
 ## Answer Draft 2 — "How long does a cheque take to clear in India?"
 
-> *Word count: ~310. Maps to post #17.*
+> *Word count: ~310. Maps to post #17. Status: ✅ Posted 2026-06-24 → qr.ae/pFHhfU*
 
 ```
 T+1 is the official answer the RBI quotes, but the actual answer depends on three things: when you deposited it, where it was drawn, and whether anything on the cheque is unusual.
@@ -119,7 +119,7 @@ If you want the full step-by-step of what happens between deposit and credit, th
 
 ## Answer Draft 3 — "What is the difference between a crossed cheque and an account payee cheque?"
 
-> *Word count: ~330. Maps to post #23.*
+> *Word count: ~330. Maps to post #27 (crossed-cheque-vs-account-payee). Status: ✅ Posted 2026-06-24 → qr.ae/pFHhdr*
 
 ```
 This is one of the most-confused questions in Indian banking, so the short answer first: account payee is a kind of crossing. They're not separate things — every "account payee cheque" is also a crossed cheque, but not every crossed cheque is account payee.
@@ -234,7 +234,7 @@ I broke down what's actually free vs. what just looks free here: https://cheqify
 
 ## Answer Draft 6 — "What is Section 138 of NI Act?" / "What happens if a cheque bounces in court?"
 
-> *Word count: ~310. Maps to post #11.*
+> *Word count: ~310. Maps to post #11. Status: ✅ Posted 2026-07-03 → qr.ae/pFPn1g (on "What is Section 138 for cheque bouncing?")*
 
 ```
 Section 138 of the Negotiable Instruments Act 1881 is the criminal provision that lets a cheque payee take a cheque issuer to court when the cheque bounces for "insufficient funds" or "exceeds arrangement" — not for any other return reason.
@@ -265,7 +265,7 @@ This is general information, not legal advice — for any actual case, consult a
 
 ## Answer Draft 7 — "What is MICR code on a cheque?"
 
-> *Word count: ~280. Maps to post #6.*
+> *Word count: ~280. Maps to post #6. Status: ✅ Posted 2026-07-03 → qr.ae/pFPnNm (on "What exactly is MICR on cheques in India?")*
 
 ```
 MICR stands for Magnetic Ink Character Recognition. The MICR codeline is the row of slightly weird-looking numbers and symbols at the very bottom of every Indian cheque — printed in magnetic ink so it can be read by bank scanners even if the rest of the cheque is faded, smudged, or partially obscured.
@@ -376,6 +376,12 @@ Recommended sequence. Two answers per week, ordered for diversity (don't link th
 | 4 | Posted 2026-06-09 | **Draft 4** | "What are the reasons for a cheque being dishonoured?" | #2 + #11 | ✅ Posted → qr.ae/pFY3Nf |
 | 5 | Posted 2026-06-12 | **Draft 5** | "Is there any cheque data printing software for free?" | #10 (live) | ✅ Posted → qr.ae/pFA5Dg |
 | 6 | Posted 2026-06-12 | **Draft 5B** | "How can I print checks online for free?" | #10 (live) | ✅ Posted → qr.ae/pFA5Db |
+| 7 | Posted 2026-06-24 | **Draft 2** | "How many days does a cheque take to clear in India" | #17 (live) | ✅ Posted → qr.ae/pFHhfU |
+| 8 | Posted 2026-06-24 | **Draft 3** | "Crossed cheque vs account payee cheque" | #27 (live) | ✅ Posted → qr.ae/pFHhdr |
+| 9 | Posted 2026-07-03 | **Draft 6** | "What is Section 138 for cheque bouncing?" | #11 (live) | ✅ Posted → qr.ae/pFPn1g |
+| 10 | Posted 2026-07-03 | **Draft 7** | "What exactly is MICR on cheques in India?" | #6 (live) | ✅ Posted → qr.ae/pFPnNm |
+
+**Queue status (2026-07-03): all 9 pre-written drafts (1–9 + 5B) now posted. Next slot needs NEW question research + a new draft — see "A Note on Quora India" cluster ideas, or draft from the Target Question List rows still unmapped (stop payment #12, validity period, GST by cheque #21, reconcile cheques #8).**
 
 **Posting checklist for each slot:**
 
@@ -407,6 +413,10 @@ Mark each answer once posted. Track its impact monthly.
 | 7 | MICR code on cheque | | | | | | |
 | 8 | How to fill cheque correctly | 2026-05-25 | https://qr.ae/pFKMY0 | 104.3K (q-level @ post time) | 0 (post time) | 0 (post time) | TBD |
 | 9 | Cheque vs UPI for business | 2026-06-09 | https://qr.ae/pFY6Z8 | TBD | 0 (post time) | 0 (post time) | TBD |
+| 2 | How long cheque takes to clear (#17) | 2026-06-24 | https://qr.ae/pFHhfU | TBD | 0 (post time) | 0 (post time) | TBD |
+| 3 | Crossed vs account payee (#27) | 2026-06-24 | https://qr.ae/pFHhdr | TBD | 0 (post time) | 0 (post time) | TBD |
+| 6 | Section 138 NI Act (#11) | 2026-07-03 | https://qr.ae/pFPn1g | TBD | 0 (post time) | 0 (post time) | TBD |
+| 7 | MICR code on cheque (#6) | 2026-07-03 | https://qr.ae/pFPnNm | TBD | 0 (post time) | 0 (post time) | TBD |
 
 Append rows as new answers go up.
 
