@@ -7,6 +7,10 @@ type TableValue = { rows?: TableRow[] };
 const components: PortableTextComponents = {
   block: {
     callout: ({ children }) => <aside className="callout">{children}</aside>,
+    // SEO guard: the post title is already the page's single <h1>. Demote any
+    // stray body H1 (drafts should use [H2]/[H3] only) to <h2> so a post can
+    // never render two <h1> tags — Bing flags that as a High-severity error.
+    h1: ({ children }) => <h2>{children}</h2>,
   },
   types: {
     table: ({ value }: { value: TableValue }) => {
