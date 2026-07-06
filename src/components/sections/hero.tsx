@@ -25,7 +25,12 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Slides — fade transition */}
         <div className="relative">
-          {Array.from({ length: SLIDE_COUNT }).map((_, i) => (
+          {Array.from({ length: SLIDE_COUNT }).map((_, i) => {
+            // Only the first slide is the page's <h1>; the other carousel
+            // slides are always in the DOM (opacity-toggled), so demote them to
+            // <h2> to avoid multiple <h1> tags on the page (SEO).
+            const Heading = i === 0 ? "h1" : "h2";
+            return (
             <div
               key={i}
               className={`${i === 0 ? "" : "absolute inset-0"} transition-opacity duration-700 ease-in-out ${
@@ -38,11 +43,11 @@ export function Hero() {
                   <div className="mb-6 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold tracking-wide text-primary">
                     {t(`hero.slides.${i}.badge`)}
                   </div>
-                  <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
+                  <Heading className="text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
                     {t(`hero.slides.${i}.part1`)}
                     <span className="text-primary">{t(`hero.slides.${i}.highlight`)}</span>
                     {t(`hero.slides.${i}.part2`)}
-                  </h1>
+                  </Heading>
                   <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                     {t(`hero.slides.${i}.description`)}
                   </p>
@@ -106,7 +111,8 @@ export function Hero() {
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Dot Indicators */}
