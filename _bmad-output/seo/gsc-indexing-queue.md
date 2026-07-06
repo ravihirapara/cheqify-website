@@ -1,12 +1,54 @@
 # GSC Indexing Queue — All Sitemap URLs
 
 **Generated:** 2026-05-06 (sitemap snapshot after merge `9552ebc`)
-**Last updated:** 2026-06-29 — posts #29 (positive-pay-system-cheque-india) and #30 (how-to-deposit-cheque-india) went live in Sanity; added as Day 18. Sitemap already includes all 3 locales of both (verified live). Earlier: #24–#27 added as Day 17 (2026-06-15).
-**Total live URLs:** 141 (51 static [17 routes × 3 locales] + 90 blog [30 posts × 3 locales])
+**Last updated:** 2026-07-06 — post #31 (best-printer-for-cheque-printing) went live + #28 (cheque-return-reasons-india-2026) was never queued → added together as Day 19 (6 URLs, verified 200 + in sitemap). Post #32 (self-cheque) had a corrupted Sanity slug (`...limitsBanking & RBI`) that 404'd all 3 locales AND broke the sitemap XML (raw `&`, GSC "unable to read Sitemap" error at line 496) — slug fixed via API to `self-cheque-rules-withdrawal-limits`, Netlify rebuild triggered; submit once 200 confirmed (see BLOCKED section). Earlier: #29+#30 added as Day 18 (2026-06-29); #24–#27 as Day 17 (2026-06-15).
+**Total live URLs:** 147 (51 static [17 routes × 3 locales] + 96 blog [32 posts × 3 locales])
 **GSC daily quota:** ~7 URL Inspection submissions per property per day (observed); 10/day observed on 2026-05-07; 20+/day reported 2026-05-25 (unusual — needs reconciliation)
 **Estimated days to clear remaining backlog:** see "Next Pending Batch" below — usually 1-3 days at normal quota
 
 > Submit each URL via **GSC → URL Inspection → "Request Indexing"**. Bing/Yandex/DuckDuckGo are auto-pinged via IndexNow on every Sanity publish, so this list is Google-only.
+
+---
+
+## Day 19 — post #31 (best-printer) + #28 (cheque-return-reasons) (6 URLs) — Pending Indexing
+
+> Added 2026-07-06. Both verified **200 + in sitemap**.
+> - #31 `best-printer-for-cheque-printing` — LIVE Mon 2026-07-06
+> - #28 `cheque-return-reasons-india-2026` — was live since ~2026-06-25 but never queued for GSC; catching up now.
+>
+> Submit via GSC URL Inspection → "Request Indexing" (~7/day quota). Bing/Yandex/DuckDuckGo already auto-pinged via IndexNow on publish.
+
+```
+https://cheqify.app/en/blog/best-printer-for-cheque-printing
+https://cheqify.app/hi/blog/best-printer-for-cheque-printing
+https://cheqify.app/gu/blog/best-printer-for-cheque-printing
+https://cheqify.app/en/blog/cheque-return-reasons-india-2026
+https://cheqify.app/hi/blog/cheque-return-reasons-india-2026
+https://cheqify.app/gu/blog/cheque-return-reasons-india-2026
+```
+
+- [ ] Day 19 — 6 URLs
+
+---
+
+## ⚠️ BLOCKED — post #32 (self-cheque) has a broken slug in Sanity
+
+Post #32 published to Sanity with the slug field corrupted to **`self-cheque-rules-withdrawal-limitsBanking & RBI`** (the "Banking & RBI" tag was pasted into the slug). Result:
+
+- `https://cheqify.app/en/blog/self-cheque-rules-withdrawal-limits` → **404**
+- `https://cheqify.app/en/blog/self-cheque-rules-withdrawal-limitsBanking%20&%20RBI` → **404** (the space + `&` break routing)
+
+The post is live in Sanity but **unreachable**, and the bad slug is already in the live sitemap. **Do NOT submit any self-cheque URL to GSC until the Sanity slug is fixed to `self-cheque-rules-withdrawal-limits` and the URL returns 200.** Once fixed, add these 3 to a new day block:
+
+```
+https://cheqify.app/en/blog/self-cheque-rules-withdrawal-limits
+https://cheqify.app/hi/blog/self-cheque-rules-withdrawal-limits
+https://cheqify.app/gu/blog/self-cheque-rules-withdrawal-limits
+```
+
+- [ ] Fix slug in Sanity Studio (post #32)
+- [ ] Verify all 3 locales return 200 + appear in sitemap
+- [ ] Add self-cheque URLs to a day block and submit
 
 ---
 

@@ -45,6 +45,8 @@ https://cheqify.app/en/blog/crossed-cheque-vs-account-payee
 https://cheqify.app/en/blog/cheque-return-reasons-india-2026
 https://cheqify.app/en/blog/positive-pay-system-cheque-india
 https://cheqify.app/en/blog/how-to-deposit-cheque-india
+https://cheqify.app/en/blog/best-printer-for-cheque-printing
+https://cheqify.app/en/blog/self-cheque-rules-withdrawal-limits
 https://cheqify.app/hi
 https://cheqify.app/hi/features
 https://cheqify.app/hi/pricing
@@ -92,6 +94,8 @@ https://cheqify.app/hi/blog/crossed-cheque-vs-account-payee
 https://cheqify.app/hi/blog/cheque-return-reasons-india-2026
 https://cheqify.app/hi/blog/positive-pay-system-cheque-india
 https://cheqify.app/hi/blog/how-to-deposit-cheque-india
+https://cheqify.app/hi/blog/best-printer-for-cheque-printing
+https://cheqify.app/hi/blog/self-cheque-rules-withdrawal-limits
 https://cheqify.app/gu
 https://cheqify.app/gu/features
 https://cheqify.app/gu/pricing
@@ -139,3 +143,5 @@ https://cheqify.app/gu/blog/crossed-cheque-vs-account-payee
 https://cheqify.app/gu/blog/cheque-return-reasons-india-2026
 https://cheqify.app/gu/blog/positive-pay-system-cheque-india
 https://cheqify.app/gu/blog/how-to-deposit-cheque-india
+https://cheqify.app/gu/blog/best-printer-for-cheque-printing
+https://cheqify.app/gu/blog/self-cheque-rules-withdrawal-limits

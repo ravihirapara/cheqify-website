@@ -193,7 +193,10 @@
       "Bash(claude update *)",
       "PowerShell(code *)",
       "WebFetch(domain:code.visualstudio.com)",
-      "Skill(claude-api)"
+      "Skill(claude-api)",
+      "Bash(xmllint --noout /tmp/sm.xml)",
+      "Bash(echo \"clean URL: $\\(curl -s -o /dev/null -w '%{http_code}' https://cheqify.app/en/blog/self-cheque-rules-withdrawal-limits\\)\")",
+      "Bash(xargs echo \"bad-slug lines still in sitemap:\")"
     ]
   }
 }
