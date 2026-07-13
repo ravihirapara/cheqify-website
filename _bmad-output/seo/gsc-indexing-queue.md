@@ -10,6 +10,21 @@
 
 ---
 
+## Day 20 — post #33 (signature-mismatch) + #34 (rent-by-cheque HRA) (6 URLs) — Pending Indexing
+
+> Added 2026-07-13. **⚠️ Both had the recurring "Cheque Guide" tag-in-slug corruption** (same class as #32's `...limitsBanking & RBI`) — 404'd all locales + broke sitemap XML (raw space in `<loc>`). Slugs fixed via Sanity API to the values below, order collisions cleaned (33/34), Netlify rebuild triggered. **Submit only once 200 + in-sitemap confirmed.**
+
+```
+https://cheqify.app/en/blog/cheque-signature-mismatch
+https://cheqify.app/hi/blog/cheque-signature-mismatch
+https://cheqify.app/gu/blog/cheque-signature-mismatch
+https://cheqify.app/en/blog/rent-payment-by-cheque-hra-proof
+https://cheqify.app/hi/blog/rent-payment-by-cheque-hra-proof
+https://cheqify.app/gu/blog/rent-payment-by-cheque-hra-proof
+```
+
+---
+
 ## Day 19 — post #31 (best-printer) + #28 (cheque-return-reasons) (6 URLs) — Pending Indexing
 
 > Added 2026-07-06. Both verified **200 + in sitemap**.
