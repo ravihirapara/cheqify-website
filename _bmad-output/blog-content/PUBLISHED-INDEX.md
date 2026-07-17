@@ -55,8 +55,23 @@ These posts have **draft `.md` files committed to the repo** but are **not yet i
 | # | Slug | Draft file | Target publish date | EN words | HowTo | FAQ items | Notes |
 |---|---|---|---|---|---|---|---|
 | 35 | `salary-payment-by-cheque-india` | `post-35-salary-payment-by-cheque-india.md` | Mon 2026-07-20 | 1,950 | YES (5 steps) | 7 | SMB payroll compliance: PoW Act 2017 amendment + ₹24K ceiling, 40A(3) ₹10K cash trap, 7th/10th deadlines, bounced-salary-cheque stakes. Links #25 + #30 (both live by then). ⚠️ fact-check: labour-code rollout status; 40A(3) figures. Best reciprocal: post #14 (bulk). |
+| 36 | `ifsc-vs-micr-vs-swift-code` | `post-36-ifsc-vs-micr-vs-swift-code.md` | Ravi-managed | 1,764 | NO | 7 | IFSC (11-char, NEFT/RTGS routing) vs MICR (9-digit clearing band) vs SWIFT (cross-border). Compare table → Sanity Table. Links #6, #8. |
+| 37 | `lost-cheque-book-what-to-do` | `post-37-lost-cheque-book-what-to-do.md` | Ravi-managed | 1,750 | YES (6 steps) | 7 | Emergency guide: block, stop-payment on leaf range, FIR if stolen, reissue, monitor. Links #12, #3. |
+| 38 | `income-tax-payment-by-cheque-india` | `post-38-income-tax-payment-by-cheque-india.md` | Ravi-managed | 1,742 | YES (5 steps) | 7 | Challan 280 / e-Pay Tax, advance-tax dates, realisation-date = payment-date. Links #21, #23. ⚠️ fact-check CRITICAL: challan/portal rules + due dates. |
+| 39 | `authorised-signatory-cheque-rules-company` | `post-39-authorised-signatory-cheque-rules-company.md` | Ravi-managed | 1,922 | NO | 7 | Board resolution, bank mandate, single vs joint signatories, 138 liability of company + signatory. Links #14, #24, #11. |
+| 40 | `joint-account-cheque-signing-rules` | `post-40-joint-account-cheque-signing-rules.md` | Ravi-managed | 1,768 | NO | 7 | Either-or-survivor / former-or-survivor / jointly mandates → who signs. Compare table → Sanity Table. Links #18, #12, #25. |
+| 41 | `multicity-at-par-cheque-explained` | `post-41-multicity-at-par-cheque-explained.md` | Ravi-managed | 1,751 | NO | 7 | At-par cheques honoured at any branch, local-clearing treatment, CTS blurring local/outstation. Links #17, #18. |
+| 42 | `bearer-vs-order-cheque-difference` | `post-42-bearer-vs-order-cheque-difference.md` | Ravi-managed | 1,744 | NO | 7 | 'or bearer' intact vs struck; counter encashment risk; crossing interaction. Compare table → Sanity Table. Links #18, #27. |
+| 43 | `cheque-endorsement-explained-india` | `post-43-cheque-endorsement-explained-india.md` | Ravi-managed | 1,745 | YES (5 steps) | 7 | Blank/full/restrictive/conditional endorsement; account-payee can't be endorsed onward. Links #19, #27. |
+| 44 | `outstation-foreign-cheque-clearing-india` | `post-44-outstation-foreign-cheque-clearing-india.md` | Ravi-managed | 1,880 | NO | 7 | Outstation vs foreign (collection basis, correspondent banks, forex at realisation, recourse). Links #17, #22. |
+| 45 | `how-to-write-amount-in-words-on-cheque` | `post-45-how-to-write-amount-in-words-on-cheque.md` | Ravi-managed | 1,560 | YES (5 steps) | 7 | Rupees/Only convention, paise, lakh-crore, word-vs-figure mismatch = return reason. Links #19 + **amount-in-words-tool** page. |
+| 46 | `security-cheque-blank-cheque-risks` | `post-46-security-cheque-blank-cheque-risks.md` | Ravi-managed | 1,725 | NO | 7 | Security/undated cheques as collateral; 138 exposure; how to protect (cross, acknowledge, reclaim). Links #23, #34, #12. |
+| 47 | `cheque-bounce-charges-penalty-india` | `post-47-cheque-bounce-charges-penalty-india.md` | Ravi-managed | 1,758 | NO | 7 | Return charges (illustrative per-bank table → Sanity Table), repeat-dishonour facility withdrawal, 138 penalty. Links #2, #11. ⚠️ fact-check: bank charges + ₹1cr/4-times rule. |
+| 48 | `minor-account-cheque-rules-india` | `post-48-minor-account-cheque-rules-india.md` | Ravi-managed | 1,717 | NO | 7 | Guardian-operated vs 10+ independent operation, cheque-book discretion, no OD, conversion at 18. Links #18, #25. |
+| 49 | `cheque-discounting-for-businesses-india` | `post-49-cheque-discounting-for-businesses-india.md` | Ravi-managed | 1,859 | YES (5 steps) | 7 | Early funds against received/PDC cheques; vs bill discounting & TReDS; with-recourse risk. Links #23, #13. ⚠️ fact-check: TReDS framing + indicative rates. |
+| 50 | `bank-cheque-printing-format-alignment` | `post-50-bank-cheque-printing-format-alignment.md` | Ravi-managed | 1,691 | YES (6 steps) | 7 | Per-bank leaf layouts, test-print overlay, never print MICR band, save per-bank template. **Commercial** → links **online-cheque-printing** page + #4, #7, #31, #15. |
 
-_Posts #28–#34 are all LIVE in Sanity (last: #33 signature-mismatch + #34 rent-HRA, 2026-07-13). Only #35 remains on disk._
+_Posts #28–#34 are all LIVE in Sanity (last: #33 signature-mismatch + #34 rent-HRA, 2026-07-13). #35 plus the full #36–#50 batch (drafted 2026-07-17) remain on disk. **Publish dates for #36–#50 are Ravi-managed** — the batch has no fixed schedule and no cross-links between its own posts, so they can be published in ANY order._
 
 **Per-post pre-publish steps:**
 1. Validate EN body on AI detector → must hit ≥90% Human / ≤10% AI (per [[feedback_blog_low_ai_score]]).
@@ -73,13 +88,11 @@ _Posts #28–#34 are all LIVE in Sanity (last: #33 signature-mismatch + #34 rent
 
 ## Pending Topics — Not Yet Drafted
 
-**Queue is EMPTY as of 2026-06-05.** The entire 10-topic lineup (#26–#35, approved by Ravi 2026-06-05) was drafted same-day and moved to "Drafted on Disk" above — every Mon+Thu slot through **Mon 2026-07-20** is covered. Next open publish slot: **Thu 2026-07-23 (would be post #36).**
+**Queue is EMPTY as of 2026-07-17.** The 15-topic lineup #36–#50 (approved 2026-07-17) was drafted same-day and moved to "Drafted on Disk" above — 16 drafts (#35 + #36–#50) now sit on disk with **no fixed publish dates** (Ravi manages the schedule). Next post to draft: **#51**.
 
-When adding new topics: verify against "Already Covered" below, then append rows here in the dated-slot format (`Queue pos | # | Slug | Title idea | Target publish date | Why this angle | Source`).
+When adding new topics: verify against "Already Covered" below, then append rows here in the format (`# | Slug | Title idea | HowTo | FAQ | Angle / reciprocal links | Fact-check`).
 
-Topic ideas previously considered but NOT drafted (re-evaluate for #36+): IFSC vs MICR vs SWIFT comparison; lost cheque book emergency guide; cheque for income-tax/advance-tax payment; minor's account cheque rules.
-
-The original "Open Topic Backlog" (5 items: `cheque-vs-digital-payment-india`, `how-to-fill-cheque-correctly`, `cheque-truncation-system-explained`, `crossed-cheque-vs-account-payee`, `gst-payment-by-cheque-india`) was fully consumed into drafts #19–#23 on 2026-05-15. SEO-PLAN.md Phase 5B is also fully published.
+Topic ideas considered but NOT selected for the #36–#50 batch (re-evaluate for #51+): e-cheque / digital cheque in India; NEFT vs RTGS vs IMPS for SMBs; business current account opening for cheque ops; gift cheques for weddings/festivals; TDS payment by cheque; cheque bounce legal-notice format & 30-day rule.
 
 ---
 
@@ -114,19 +127,32 @@ Live in Sanity (27):
 - ❌ Request a cheque book online — SBI/HDFC/ICICI/Axis/Kotak (post #25)
 - ❌ DD vs cheque vs banker's cheque (post #26)
 - ❌ Crossed cheque vs account payee — every crossing type (post #27 — published 2026-06-16)
+- ❌ Cheque return reason codes (post #28)
+- ❌ Positive Pay System (post #29)
+- ❌ How to deposit a cheque (post #30)
+- ❌ Best printer for cheque printing (post #31)
+- ❌ Self cheque rules + 194N (post #32)
+- ❌ Cheque signature mismatch (post #33 — published 2026-07-13)
+- ❌ Rent by cheque + HRA proof (post #34 — published 2026-07-13)
 
-Drafted on disk, pending publish (8):
+Drafted on disk, pending publish (16) — _dates Ravi-managed; publishable in any order_:
 
-_Cadence: 2 posts every Monday._
-
-- 📝 Cheque return reason codes (post #28 — Mon 2026-06-22)
-- 📝 Positive Pay System (post #29 — Mon 2026-06-22)
-- 📝 How to deposit a cheque (post #30 — Mon 2026-06-29)
-- 📝 Best printer for cheque printing (post #31 — Mon 2026-06-29)
-- 📝 Self cheque rules + 194N (post #32 — Mon 2026-07-06)
-- 📝 Cheque signature mismatch (post #33 — Mon 2026-07-06)
-- 📝 Rent by cheque + HRA proof (post #34 — Mon 2026-07-13)
-- 📝 Salary by cheque SMB guide (post #35 — Mon 2026-07-13)
+- 📝 Salary by cheque SMB guide (post #35 — Mon 2026-07-20)
+- 📝 IFSC vs MICR vs SWIFT (post #36)
+- 📝 Lost / stolen cheque book (post #37)
+- 📝 Income tax by cheque — Challan 280 (post #38)
+- 📝 Authorised signatory & board resolution (post #39)
+- 📝 Joint account cheque signing mandates (post #40)
+- 📝 Multicity / at-par cheques (post #41)
+- 📝 Bearer vs order cheque (post #42)
+- 📝 Cheque endorsement (post #43)
+- 📝 Outstation & foreign cheque clearing (post #44)
+- 📝 Amount in words on a cheque (post #45)
+- 📝 Security / blank cheque risks (post #46)
+- 📝 Cheque bounce charges & penalties (post #47)
+- 📝 Minor's account cheque rules (post #48)
+- 📝 Cheque discounting for SMBs (post #49)
+- 📝 Bank cheque printing format & alignment (post #50)
 
 ---
 
